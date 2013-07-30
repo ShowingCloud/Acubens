@@ -12,6 +12,7 @@
 
 # Ignore all logfiles and tempfiles.
 /log/*.log
+/log/production.log.*
 /tmp
 # Rails
 .bundle
@@ -29,8 +30,11 @@ doc/app
 coverage
 
 # Public Uploads
-public/system/*
-public/themes/*
+#public/system/*
+#public/themes/*
+
+# Don't upload precompiled assets
+public/assets/*
 
 # Public Cache
 public/javascripts/cache
@@ -91,3 +95,29 @@ capybara-*html
 
 # vendor/extensions dummy applications.
 vendor/extensions/**/spec/dummy
+
+
+# sensitive data
+config/database.yml
+config/initializers/secret_token.rb
+config/initializers/alipay.rb
+db/data.yml
+
+# needed for migration
+db/schema.rb
+
+# test data
+db/datadump/orders.yml
+db/datadump/refinery_inquiries_inquiries.yml
+db/datadump/refinery_resources.yml
+db/datadump/refinery_roles.yml
+db/datadump/refinery_roles_users.yml
+db/datadump/refinery_settings.yml
+db/datadump/refinery_users.yml
+db/datadump/refinery_user_plugins.yml
+db/datadump/seo_meta.yml
+
+# rvm files
+.ruby-gemset
+.ruby-version
+db/datadump/sessions.yml
