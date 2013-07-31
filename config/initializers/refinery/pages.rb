@@ -41,7 +41,7 @@ Refinery::Pages.configure do |config|
 
   config.layout_template_whitelist = ["application","testlayout"]
 
-  config.view_template_whitelist = ["home", "exchangeverify","resettel","resetpwd","membersystem","changeinfo","firstlogin","mailverify","pwdverify","memberinfo","showexchangehistory","exchangepoints","exchangeverifyjx","myorder","mypoints"]
+  config.view_template_whitelist = ["home", "exchangeverify","resettel","resetpwd","membersystem","changeinfo","firstlogin","mailverify","pwdverify","memberinfo","showexchangehistory","exchangepoints","exchangeverifyjx","myorder","mypoints","show"]
 
   config.use_layout_templates = true
 
