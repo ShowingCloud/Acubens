@@ -1,0 +1,58 @@
+@charset "utf-8";
+/* CSS Document */
+.institution_middle_1{
+	height:266px;
+	width:720px;
+	border-bottom-style:dashed;
+	border-color:#7a7a7a;
+	border-width:1px;
+}
+.institution_middle_title{
+	font-size:13px;
+	color:#9dd073;
+	padding-top:20px;
+}
+.middle_1_content ul{
+	padding-left:17px;
+}
+.middle_1_content ul li{
+	color:#9dd073;
+	font-size:18px;
+}
+.middle_content_txt{
+	font-size:12px;
+	color:#666666;	
+}
+.institution_middle_2{
+	height:393px;
+	width:720px;
+	border-bottom-style:dashed;
+	border-color:#7a7a7a;
+	border-width:1px;
+}
+.middle_2_top ul{
+	list-style:none;
+	padding-left:0;
+}
+.middle_2_top ul li{
+	padding-bottom:6px;
+}
+.middle_2_content ul{
+	padding-left:17px;
+}
+.middle_2_content ul li{
+	color:#9dd073;
+	font-size:18px;
+}
+.middle_2_bottom ul{
+	list-style:none;
+	padding-left:0;
+	
+}
+.middle_2_bottom ul li{
+	padding-bottom:6px;
+}
+.middle_href{
+	color:#9dd073;
+	text-decoration:underline;
+}

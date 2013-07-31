@@ -1,0 +1,153 @@
+<!doctype html>
+<html>
+<head>
+<style type="text/css">
+a{ text-decoration:none;}
+a:hover{ text-decoration:underline;}
+</style>
+<link href="/assets/layout-ld.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="/assets/css/index-part.css" rel="stylesheet" type="text/css" media="screen" />
+<script type="text/javascript" src="/assets/js/jquery.js"></script>
+<script>
+$(document).ready(function(){
+	$("#news-text1").show();
+	$("#news-text2").hide();	
+  $("#index-text1").mouseover(function(){
+    ;
+	$("#news-text1").show();
+	$("#news-text2").hide();
+	$("#index-text2").addClass("text-color");
+	$("#index-text1").addClass("text-white");
+	$("#index-text1").addClass("bacground-green position");
+ $("#index-text2").removeClass("bacground-green");
+ $("#index-text2").addClass("bacground-white-green");
+
+
+  });
+    $("#index-text2").mouseover(function(){
+    ;
+	$("#news-text2").show();
+	$("#news-text1").hide();
+	$("#index-text2").addClass("bacground-green position");
+ $("#index-text2").removeClass("bacground-white-green");
+	$("#index-text2").removeClass("text-color");
+	$("#index-text1").addClass("text-color");
+	$("#index-text1").removeClass("bacground-green");
+		$("#index-text1").removeClass("text-white");
+  });
+
+});
+</script>
+
+
+<meta charset="utf-8">
+<title>gelnic</title>
+</head>
+
+<body>
+<div id="page_container1"  style="border-bottom:dashed; border-bottom-color:#e7f6d9; border-bottom-width:1px;">
+  <div class="kv">
+  <img src="/assets/img/kv1.png" width="970px">
+  </div>
+    <div class="media-movie" style="background-color:#0F0;">
+       
+     
+    </div>
+    
+  <div class="basket-ad1" >
+        
+    <div class="basket-ad2">
+          <img src="/assets/img/ad1.jpg" class="img1">
+    </div>
+        
+    <div class="basket-ad3"><img src="/assets/img/ad2.jpg" class="img2"></div>
+    
+  </div>
+    
+  <div class="news-blank">
+    <div class="new-head">
+       <div class="index-text1"  id="index-text1">
+            品牌动态
+      </div>     
+      <div class="index-text2" id="index-text2">
+      网站公告
+      
+      </div>      
+    </div>
+    
+    
+    <div class="news-text1" id="news-text1">
+      <img src="/assets/img/info.png" class="notice">
+      <ul>
+      <li class="mar1">2013/07/03</li>
+      <li class="mar1">新闻标题</li>
+      </ul>
+    </div>
+	<div class="news-text2" id="news-text2">
+      <img src="/assets/img/notice.png" class="notice">
+      
+     <ul>
+      <li class="mar1">xxxx/xx/xx</li>
+      <li class="mar1">另一个新闻标题</li>
+</ul>
+    </div>
+    
+
+  
+   
+  </div>
+
+  <div class="last-blank" >
+       <div class="last-text-head">
+       从这里可以联系我们
+       </div>
+     </div>
+     
+  <div class="last-wechat">
+    <div class="last-text-tail">官方微信
+      </div>
+    <img src="/assets/img/wechat-gray.png" class="wechat">
+  </div>
+  
+  <div class="last-weibo">
+      <div class="last-text-tail">官方微博
+      </div>
+      <img src="/assets/img/MicBlog-gray.png" class="wobo">
+      <li class="http-li">
+      <a href="http://www.weibo.com" class="http-li">http://weibo.com/</a>
+      </li>
+  </div>
+  
+  <div class="last-tell">
+    <div class="last-text-tail">
+     客服电话
+     </div>
+     
+     <img src="/assets/img/phone.png" class="wobo">
+     
+     <div class="cesstte">
+     <img src="/assets/img/cesstte.png" class="wobo">
+     800-000-0000
+     
+         <li class="last-text-tail-small">周一至周五，除国定节假日外
+         </li>  
+      
+      
+      </div>
+  </div>  
+  
+  <div class="last-online">
+    <div class="last-text-tail">
+     在线客服
+    </div>
+     <img src="/assets/img/person.png" class="person">
+     <div class="cesstte">
+     <img src="/assets/img/IAMCALLING.png"  class="I-am-calling">
+     <li class="last-text-tail-small">
+     9:00-12:00周一至周五，除国定节假日外
+     </li>
+     </div>
+  </div> 
+</div>
+</body>
+</html>

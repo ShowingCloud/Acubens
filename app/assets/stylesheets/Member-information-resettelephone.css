@@ -1,0 +1,47 @@
+@charset "utf-8";
+/* CSS Document */
+
+.tel_middle{
+	height:118px;
+	width:720px;
+	border-bottom-style:dashed;
+	border-color:#7a7a7a;
+	border-width:1px;
+}
+.tel_middle_form{
+	padding-top:3px;
+}
+.tel_middle_form ul{
+	list-style:none;
+}
+.tel_middle_form ul li{
+	text-indent:-30px;
+	text-align:left;	
+	font-size:13px;
+	line-height:33px;	
+}
+.tel_middle_1{
+	border:#bbe09d 1px solid;
+	width:250px;
+	height:18px;
+}
+.tel_middle_2{
+	text-align:left;
+	background-color:#6eb92b;
+	width:83px;
+	height:18px;
+	border-width:0px;
+	color:#FFF;
+	border-radius: 8px;
+}
+.tel_middle_3{
+	margin-bottom:-3px;
+	margin-left:-30px;
+	margin-right:10px;
+}
+.tel_middle_4{
+	border:#bbe09d 1px solid;
+	width:70px;
+	height:18px;
+	color:#d3d3d3;
+}

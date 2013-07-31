@@ -1,0 +1,140 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+	font-family:"Microsoft YaHei"!important;
+	font-family:"Microsoft YaHei";
+	text-align:left;
+	margin:0px 0px 0px 0px;
+	padding:0px 0px 0px 0px;
+	margin:0 auto;
+}
+#page_container{
+	width:970px;
+	height:920px;
+	margin:0 auto;
+	border-left:solid;
+	border-right:solid;
+	border-color:#e7f6d9;
+	border-width:1px;
+}
+.header_top{	
+	background-color:#f0fee4;	
+	width::970px;
+	height:28px;
+	border-bottom:solid;
+	border-color:#d6f0c0;
+	border-width:1px;
+}
+.header_top_left{
+	font-size:10px;
+	width:250px;
+	height:28px;
+	color:#8fcb5a;
+	float:left;
+}
+.header_top_left ul{
+	padding-left:8px;
+	list-style:none;
+	float:left;	
+	margin-top:7px;
+}
+.header_top_left ul li{	
+	float:left;
+}
+.header_top_right{
+	float:left;
+	height:28px;
+	width:280px;
+	margin-left:440px
+}
+.login_info{
+	float:left;
+    height: 28px;
+	margin-top:0px;	
+}
+.login_info ul{
+	font-size:12px;
+	color:#FFF;
+	text-decoration:none;
+	list-style:none;
+}
+.login_info ul li{
+	float:left;			
+}
+.login_info_txt1{
+	padding-top:5px;
+	padding-left:14px;
+	width:88px;
+	height:23px;
+	background-color:#bbe09d;
+	border-right:dashed;
+	border-color:#FFF;
+	border-width:1px;
+	margin-top:-12px;
+	margin-left:60px;
+}
+.login_info_txt2{
+	margin-top:-12px;
+}
+.login_info_txt3{
+	margin-top:-12px;
+	padding-top:5px;
+	width:57px;
+	height:23px;
+	background-color:#bbe09d;
+}
+.header_bottom{
+	height:94px;
+	border-bottom:solid;
+	border-color:#d6f0c0;
+	border-width:1px;
+}
+.header_bottom_left{
+	width:228px;
+	height:94px;
+	float:left;
+}
+.logo{
+	margin-left:35px;
+}
+.header_bottom_right{
+	width:740px;
+	float:left;
+}
+.nav{
+	margin-left:48px;
+	margin-top:36px;
+}
+.nav ul{
+	text-align:center;
+	font-size:15px;
+	color:#6eb92b;
+	list-style:none;
+}
+.nav ul li{
+	float:left;
+}
+.bor_1{
+	border-style:solid dashed solid solid;	
+	border-color:#6eb92b;
+	border-width:1px;
+    width:92px;
+	height:28px;
+	padding-top:8px;
+}
+.bor_2{
+	border-style:solid dashed solid none;
+	border-color:#6eb92b;
+	border-width:1px;
+	width:92px;
+	height:28px;
+	padding-top:8px;
+}
+.bor_3{
+	border-style:solid  solid solid none;
+	border-color:#6eb92b;
+	border-width:1px;
+	width:92px;
+	height:28px;
+	padding-top:8px;
+}
