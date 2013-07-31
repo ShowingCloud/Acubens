@@ -115,7 +115,7 @@ body{
 #menu ul li{
 	float:left;
 }
-.bor_1{
+#menu li .first{
 	border-style:solid dashed solid solid;	
 	border-color:#6eb92b;
 	border-width:1px;
@@ -123,7 +123,7 @@ body{
 	height:28px;
 	padding-top:8px;
 }
-.bor_2{
+#menu li + li{
 	border-style:solid dashed solid none;
 	border-color:#6eb92b;
 	border-width:1px;
@@ -131,7 +131,7 @@ body{
 	height:28px;
 	padding-top:8px;
 }
-.bor_3{
+#menu li .last{
 	border-style:solid  solid solid none;
 	border-color:#6eb92b;
 	border-width:1px;
