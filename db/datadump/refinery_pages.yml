@@ -1,0 +1,311 @@
+
+---
+refinery_pages:
+  columns:
+  - id
+  - parent_id
+  - path
+  - slug
+  - show_in_menu
+  - link_url
+  - menu_match
+  - deletable
+  - draft
+  - skip_to_first_child
+  - lft
+  - rgt
+  - depth
+  - view_template
+  - layout_template
+  - created_at
+  - updated_at
+  records: 
+  - - 2
+    - 
+    - 
+    - home
+    - true
+    - /
+    - ^/$
+    - false
+    - false
+    - false
+    - 1
+    - 8
+    - 0
+    - 
+    - 
+    - 2013-07-31 05:57:29.000000000 Z
+    - 2013-07-31 05:57:29.000000000 Z
+  - - 3
+    - 2
+    - 
+    - page-not-found
+    - false
+    - 
+    - ^/404$
+    - false
+    - false
+    - false
+    - 6
+    - 7
+    - 1
+    - 
+    - 
+    - 2013-07-31 05:57:29.000000000 Z
+    - 2013-07-31 05:57:29.000000000 Z
+  - - 4
+    - 2
+    - 
+    - about
+    - true
+    - 
+    - 
+    - true
+    - false
+    - false
+    - 2
+    - 3
+    - 1
+    - 
+    - 
+    - 2013-07-31 05:57:29.000000000 Z
+    - 2013-07-31 05:57:29.000000000 Z
+  - - 5
+    - 2
+    - 
+    - member-information
+    - true
+    - ''
+    - 
+    - true
+    - false
+    - true
+    - 4
+    - 5
+    - 1
+    - memberinfo
+    - testlayout
+    - 2013-07-31 08:41:27.000000000 Z
+    - 2013-07-31 08:47:09.000000000 Z
+  - - 6
+    - 
+    - 
+    - firstlogin
+    - true
+    - ''
+    - 
+    - true
+    - false
+    - false
+    - 9
+    - 10
+    - 0
+    - firstlogin
+    - testlayout
+    - 2013-07-31 12:44:18.000000000 Z
+    - 2013-07-31 12:44:18.000000000 Z
+  - - 7
+    - 
+    - 
+    - exchangeverify
+    - true
+    - ''
+    - 
+    - true
+    - false
+    - false
+    - 13
+    - 14
+    - 0
+    - exchangeverify
+    - testlayout
+    - 2013-07-31 13:07:51.000000000 Z
+    - 2013-07-31 13:07:51.000000000 Z
+  - - 8
+    - 
+    - 
+    - resettel
+    - true
+    - ''
+    - 
+    - true
+    - false
+    - false
+    - 11
+    - 12
+    - 0
+    - resettel
+    - testlayout
+    - 2013-07-31 13:51:22.000000000 Z
+    - 2013-07-31 13:51:22.000000000 Z
+  - - 9
+    - 
+    - 
+    - resetpwd
+    - true
+    - ''
+    - 
+    - true
+    - false
+    - false
+    - 15
+    - 16
+    - 0
+    - resetpwd
+    - testlayout
+    - 2013-07-31 13:52:11.000000000 Z
+    - 2013-07-31 13:52:11.000000000 Z
+  - - 10
+    - 
+    - 
+    - changeinfo
+    - true
+    - ''
+    - 
+    - true
+    - false
+    - false
+    - 17
+    - 18
+    - 0
+    - changeinfo
+    - testlayout
+    - 2013-07-31 13:52:55.000000000 Z
+    - 2013-07-31 13:52:55.000000000 Z
+  - - 11
+    - 
+    - 
+    - membersystem
+    - true
+    - ''
+    - 
+    - true
+    - false
+    - false
+    - 19
+    - 20
+    - 0
+    - membersystem
+    - testlayout
+    - 2013-07-31 13:53:24.000000000 Z
+    - 2013-07-31 13:53:24.000000000 Z
+  - - 12
+    - 
+    - 
+    - mailverify
+    - true
+    - ''
+    - 
+    - true
+    - false
+    - false
+    - 21
+    - 22
+    - 0
+    - mailverify
+    - application
+    - 2013-07-31 13:53:57.000000000 Z
+    - 2013-07-31 13:53:57.000000000 Z
+  - - 13
+    - 
+    - 
+    - pwdverify
+    - true
+    - ''
+    - 
+    - true
+    - false
+    - false
+    - 23
+    - 24
+    - 0
+    - pwdverify
+    - testlayout
+    - 2013-07-31 13:54:26.000000000 Z
+    - 2013-07-31 13:54:26.000000000 Z
+  - - 14
+    - 
+    - 
+    - showexchangehistory
+    - true
+    - ''
+    - 
+    - true
+    - false
+    - false
+    - 25
+    - 26
+    - 0
+    - showexchangehistory
+    - testlayout
+    - 2013-07-31 13:54:56.000000000 Z
+    - 2013-07-31 13:54:56.000000000 Z
+  - - 15
+    - 
+    - 
+    - exchangepoints
+    - true
+    - ''
+    - 
+    - true
+    - false
+    - false
+    - 27
+    - 28
+    - 0
+    - exchangepoints
+    - testlayout
+    - 2013-07-31 13:55:40.000000000 Z
+    - 2013-07-31 13:55:40.000000000 Z
+  - - 16
+    - 
+    - 
+    - exchangeverifyjx
+    - true
+    - ''
+    - 
+    - true
+    - false
+    - false
+    - 29
+    - 30
+    - 0
+    - exchangeverifyjx
+    - testlayout
+    - 2013-07-31 13:56:13.000000000 Z
+    - 2013-07-31 13:56:27.000000000 Z
+  - - 17
+    - 
+    - 
+    - myorder
+    - true
+    - ''
+    - 
+    - true
+    - false
+    - false
+    - 31
+    - 32
+    - 0
+    - myorder
+    - application
+    - 2013-07-31 13:56:50.000000000 Z
+    - 2013-07-31 13:56:50.000000000 Z
+  - - 18
+    - 
+    - 
+    - mypoints
+    - true
+    - ''
+    - 
+    - true
+    - false
+    - false
+    - 33
+    - 34
+    - 0
+    - mypoints
+    - testlayout
+    - 2013-07-31 13:57:10.000000000 Z
+    - 2013-07-31 13:57:10.000000000 Z

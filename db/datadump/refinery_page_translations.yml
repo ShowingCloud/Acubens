@@ -1,0 +1,167 @@
+
+---
+refinery_page_translations:
+  columns:
+  - id
+  - refinery_page_id
+  - locale
+  - title
+  - custom_slug
+  - menu_title
+  - slug
+  - created_at
+  - updated_at
+  records: 
+  - - 2
+    - 2
+    - en
+    - Home
+    - 
+    - 
+    - home
+    - 2013-07-31 05:57:29.000000000 Z
+    - 2013-07-31 05:57:29.000000000 Z
+  - - 3
+    - 3
+    - en
+    - Page not found
+    - 
+    - 
+    - page-not-found
+    - 2013-07-31 05:57:29.000000000 Z
+    - 2013-07-31 05:57:29.000000000 Z
+  - - 4
+    - 4
+    - en
+    - About
+    - 
+    - 
+    - about
+    - 2013-07-31 05:57:29.000000000 Z
+    - 2013-07-31 05:57:29.000000000 Z
+  - - 5
+    - 5
+    - en
+    - memberinfo
+    - 
+    - member information
+    - member-information
+    - 2013-07-31 08:41:27.000000000 Z
+    - 2013-07-31 08:41:27.000000000 Z
+  - - 6
+    - 6
+    - en
+    - firstlogin
+    - 
+    - firstlogin
+    - firstlogin
+    - 2013-07-31 12:44:18.000000000 Z
+    - 2013-07-31 12:44:18.000000000 Z
+  - - 7
+    - 7
+    - en
+    - exchangeverify
+    - 
+    - ''
+    - exchangeverify
+    - 2013-07-31 13:07:51.000000000 Z
+    - 2013-07-31 13:07:51.000000000 Z
+  - - 8
+    - 8
+    - en
+    - resettel
+    - 
+    - resettel
+    - resettel
+    - 2013-07-31 13:51:22.000000000 Z
+    - 2013-07-31 13:51:22.000000000 Z
+  - - 9
+    - 9
+    - en
+    - resetpwd
+    - 
+    - resetpwd
+    - resetpwd
+    - 2013-07-31 13:52:11.000000000 Z
+    - 2013-07-31 13:52:11.000000000 Z
+  - - 10
+    - 10
+    - en
+    - changeinfo
+    - 
+    - changeinfo
+    - changeinfo
+    - 2013-07-31 13:52:55.000000000 Z
+    - 2013-07-31 13:52:55.000000000 Z
+  - - 11
+    - 11
+    - en
+    - membersystem
+    - 
+    - membersystem
+    - membersystem
+    - 2013-07-31 13:53:24.000000000 Z
+    - 2013-07-31 13:53:24.000000000 Z
+  - - 12
+    - 12
+    - en
+    - mailferify
+    - 
+    - mailverify
+    - mailverify
+    - 2013-07-31 13:53:57.000000000 Z
+    - 2013-07-31 13:53:57.000000000 Z
+  - - 13
+    - 13
+    - en
+    - pwdverify
+    - 
+    - pwdverify
+    - pwdverify
+    - 2013-07-31 13:54:26.000000000 Z
+    - 2013-07-31 13:54:26.000000000 Z
+  - - 14
+    - 14
+    - en
+    - showexchangehistory
+    - 
+    - showexchangehistory
+    - showexchangehistory
+    - 2013-07-31 13:54:56.000000000 Z
+    - 2013-07-31 13:54:56.000000000 Z
+  - - 15
+    - 15
+    - en
+    - exchangepoints
+    - 
+    - exchangepoints
+    - exchangepoints
+    - 2013-07-31 13:55:40.000000000 Z
+    - 2013-07-31 13:55:40.000000000 Z
+  - - 16
+    - 16
+    - en
+    - exchangeverifyjx
+    - 
+    - exchangeverifyjx
+    - exchangeverifyjx
+    - 2013-07-31 13:56:13.000000000 Z
+    - 2013-07-31 13:56:13.000000000 Z
+  - - 17
+    - 17
+    - en
+    - myorder
+    - 
+    - myorder
+    - myorder
+    - 2013-07-31 13:56:50.000000000 Z
+    - 2013-07-31 13:56:50.000000000 Z
+  - - 18
+    - 18
+    - en
+    - mypoints
+    - 
+    - mypoints
+    - mypoints
+    - 2013-07-31 13:57:10.000000000 Z
+    - 2013-07-31 13:57:10.000000000 Z
