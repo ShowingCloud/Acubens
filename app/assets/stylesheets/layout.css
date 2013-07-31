@@ -106,7 +106,8 @@ body{
 	margin-left:48px;
 	margin-top:36px;
 }
-#menu ul{
+#menu ul,
+#menu a{
 	text-align:center;
 	font-size:15px;
 	color:#6eb92b;
@@ -115,15 +116,7 @@ body{
 #menu ul li{
 	float:left;
 }
-#menu li .first{
-	border-style:solid dashed solid solid;	
-	border-color:#6eb92b;
-	border-width:1px;
-    width:92px;
-	height:28px;
-	padding-top:8px;
-}
-#menu li + li{
+#menu ul li{
 	border-style:solid dashed solid none;
 	border-color:#6eb92b;
 	border-width:1px;
@@ -131,7 +124,15 @@ body{
 	height:28px;
 	padding-top:8px;
 }
-#menu li .last{
+#menu ul li:first-child{
+	border-style:solid dashed solid solid;	
+	border-color:#6eb92b;
+	border-width:1px;
+        width:92px;
+	height:28px;
+	padding-top:8px;
+}
+#menu ul li:last-child{
 	border-style:solid  solid solid none;
 	border-color:#6eb92b;
 	border-width:1px;
