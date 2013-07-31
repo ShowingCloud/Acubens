@@ -20,22 +20,16 @@
      </div>
 </div>
 <div class="header_bottom">
-<div class="header_bottom_left">
-     <div class="logo">
-          <img src="/assets/img/logo_05.jpg" width="197" height="93" />
+     <div class="header_bottom_left">
+          <div class="logo">
+               <img src="/assets/img/logo_05.jpg" width="197" height="93" />
+          </div>
      </div>
-</div>
-<div class="header_bottom_right">
-     <div class="nav">
-           <ul>
-                    <li class="bor_1">关于简尼</li>
-                    <li class="bor_2">产品资讯</li>
-<a href="pages/5">                    <li class="bor_2">会员专区</li></a>
-                    <li class="bor_2">如何购买</li>
-                     <li class="bor_2">美容小贴士</li>
-                     <li class="bor_2">老师课堂</li>
-                      <li class="bor_3">联系我们</li>
-           </ul>
+     <div class="header_bottom_right">
+          <%= render(:partial => "/refinery/menu", :locals => {
+               :dom_id => 'menu',
+               :css => 'menu'
+          }) %>
      </div>
 </div>
 </html>

@@ -101,17 +101,17 @@ body{
 	width:740px;
 	float:left;
 }
-.nav{
+#menu{
 	margin-left:48px;
 	margin-top:36px;
 }
-.nav ul{
+#menu ul{
 	text-align:center;
 	font-size:15px;
 	color:#6eb92b;
 	list-style:none;
 }
-.nav ul li{
+#menu ul li{
 	float:left;
 }
 .bor_1{
