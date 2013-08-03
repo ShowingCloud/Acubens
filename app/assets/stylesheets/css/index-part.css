@@ -61,17 +61,17 @@
 .new-head{
 	height:23px;
 	width:273px;
-	background-color:#CFC;
+	background-color:#f0ffe3;
 	border-bottom:solid;
-	border-bottom-color:#3C3;
+	border-bottom-color:#bbdf9d;
 	border-bottom-width:2px;
 	}
 	
 .index-text1{
 	font-family:"微软雅黑";
 	font-weight:bold;
-	color:#6eb92b;
-	font-size:15px;
+	color:#7fc244;
+	font-size:14px;
 	width:85px;
 	padding-top:4px;
 	text-align:center;
@@ -80,9 +80,9 @@
 .index-text2{
 	font-family:"微软雅黑";
 	font-weight:bold;
-background-color:#3C3;
+background-color:#bbdf9d;
 	color:#FFF;
-	font-size:15px;
+	font-size:14px;
 	width:85px;
 	height:21px;
 	text-align:center;
@@ -108,6 +108,7 @@ background-color:#3C3;
 .last-text-head{
 	padding-top:3px;
 	margin-left:4px;
+	font-size:14px;
 	letter-spacing: 3px;
 	}
 .last-wechat{
@@ -123,7 +124,7 @@ background-color:#3C3;
 	}
 	
 .last-tell{
-	width:250px;
+	width:220px;
 	height:78px;
 	float:left;
 }
@@ -135,20 +136,20 @@ background-color:#3C3;
 }
 
 .last-text-tail{
-	font-size:15px;
+	font-size:12px;
 	color:#000;
-	font-family:"微软雅黑";
+	font-family:"幼圆";
 	font-weight:bold;
 	margin-left:6px;
 	padding-top:6px;
 	width:66px;
-	float:left
+	float:left;
 }
 
 .last-text-tail-small{
 	font-size:11px;
-	color:#000;
-	font-family:"微软雅黑";
+	color:#a7a7a7;
+	font-family:"幼圆";
 	font-weight:bold;
 	margin-top:-5px;
 	list-style-type:none;
@@ -158,7 +159,24 @@ background-color:#3C3;
 .news-text1{
 	width:270px;
 	height:65px;
-	font-family:"微软雅黑";
+	font-family:"幼圆";
+	font-weight:bold;
+	font-size:11px;
+	color:#000;
+	list-style-type:none;
+    padding-top:13px;
+	float:left;
+
+	line-height:13px;
+	border-bottom:dashed;
+	border-bottom-color:#F0F0F0;
+	border-bottom-width:1px;
+}
+
+.news-text2{
+	width:270px;
+	height:65px;
+	font-family: "幼圆";
 	font-size:11px;
 	font-weight:bold;
 	color:#000;
@@ -171,7 +189,6 @@ background-color:#3C3;
 	border-bottom-color:#F0F0F0;
 	border-bottom-width:1px;
 }
-
 .new-banner{
 	float:left;
 	width:33px;
@@ -179,14 +196,19 @@ background-color:#3C3;
 }
 
 .mar1{
-	margin-left:53px;
+	margin-left:15px;
+	margin-top:-10px;
 	list-style-type:none;
 }
 	
+.mar2{
+	margin-left:15px;
+	list-style-type:none;
+}
 .news-text3{
 	width:270px;
 	height:65px;
-	font-family:"微软雅黑";
+	font-family: "幼圆";
 	font-size:11px;
 	font-weight:bold;
 	color:#000;
@@ -204,20 +226,19 @@ background-color:#3C3;
 	
 	
 	.bacground-green{
-		background-color:#3C3;
+		background-color:#bbdf9d;
 		width:85px;
 	height:26px;
 
 	}
 
 .bacground-white-green{
-	background-color:#CFC;
+	background-color:#f0ffe3;
 	width:85px;
 	height:19px;
 }
 	
 	.position{
-		margin-tpo:3px;
 		height:20px;
 		}
 		
