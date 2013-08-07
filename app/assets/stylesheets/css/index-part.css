@@ -64,7 +64,7 @@
 	background-color:#f0ffe3;
 	border-bottom:solid;
 	border-bottom-color:#bbdf9d;
-	border-bottom-width:2px;
+	border-bottom-width:1px;
 	}
 	
 .index-text1{
@@ -137,7 +137,7 @@ background-color:#bbdf9d;
 
 .last-text-tail{
 	font-size:12px;
-	color:#000;
+	color:#666666;
 	font-family:"幼圆";
 	font-weight:bold;
 	margin-left:6px;
