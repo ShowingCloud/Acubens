@@ -1,8 +1,8 @@
 @charset "utf-8";
 /* CSS Document */
 body{
-	font-family:"Microsoft YaHei"!important;
-	font-family:"Microsoft YaHei";
+	font-family:‘YouYuan’!important;
+	font-family:‘YouYuan’;
 	text-align:left;
 	margin:0px 0px 0px 0px;
 	padding:0px 0px 0px 0px;
@@ -164,7 +164,7 @@ body{
 	height:28px;
 	padding-top:8px;
 	font-size:14px;
-	font-family:"幼圆";
+	font-family:‘YouYuan’;
 }
 .bor_2{
 	border-style:solid dashed solid none;
@@ -174,7 +174,7 @@ body{
 	height:28px;
 	padding-top:8px;
 	font-size:14px;
-	font-family:"幼圆";
+	font-family:‘YouYuan’;
 }
 .bor_3{
 	border-style:solid  solid solid none;
@@ -184,7 +184,7 @@ body{
 	height:28px;
 	padding-top:8px;
 	font-size:14px;
-	font-family:"幼圆";
+	font-family:‘YouYuan’;
 }
 #menu{
         margin-left:48px;
@@ -228,7 +228,7 @@ body{
 }
 
 .member-text{
-	font-family:"微软雅黑";
+	font-family:‘YouYuan’;
 	font-weight:bold;
 	color:#6eb92b;
 	font-size:15px;
@@ -253,7 +253,7 @@ width:12px;
 	
 .member-text2{
 	padding-top:26px;
-	font-family:"微软雅黑";
+	font-family:‘YouYuan’;
 	font-weight:bold;
 	color:#6eb92b;
 	font-size:15px;
@@ -263,7 +263,7 @@ width:12px;
 
 .member-text3{
 	padding-top:26px;
-	font-family:"微软雅黑";
+	font-family:‘YouYuan’;
 	font-weight:bold;
 	color:#6eb92b;
 	font-size:15px;
@@ -274,7 +274,7 @@ margin-top:-12px;
 }
 
 .member-text4{
-	font-family:"微软雅黑";
+	font-family:‘YouYuan’;
 	font-weight:bold;
 	color:#6eb92b;
 	font-size:15px;
@@ -284,7 +284,7 @@ margin-top:-12px;
 	}
 	
 .member-text5{
-	font-family:"微软雅黑";
+	font-family:‘YouYuan’;
 	font-weight:bold;
 	text-align:left;
 	font-size:13px;
@@ -380,18 +380,18 @@ margin-top:-12px;
 	margin-left:7px;
 	font-size:18px;
 	color:#666666;
-	font-family:"微软雅黑";
+	font-family:‘YouYuan’;
 	font-weight:bold;
 	line-height:25px; 
 }
 
 .cesstte1{
 	height:60px;
-	width:250px;
+	width:270px;
 	margin-left:7px;
-	font-size:18px;
+	font-size:11px;
 	color:#666666;
-	font-family:"微软雅黑";
+	font-family:‘YouYuan’;
 	font-weight:bold;
 	line-height:25px; 
 }
@@ -447,10 +447,10 @@ margin-top:-12px;
 
 .atthelast1{
 	font-size:10px;
-	font-family: "幼圆";
+	font-family: ‘YouYuan’;
 }
 
 .atthelast2{
 	font-size:12px;
-	font-family: "幼圆";
+	font-family: ‘YouYuan’;
 }
