@@ -1,12 +1,14 @@
 @charset "utf-8";
 /* CSS Document */
 
+
 .complete_middle_top{
 	height:45px;
 	width:720px;
 	font-size:13px;
 	margin-top:0px;
 }
+
 .middle_top_left{
 	float:left;
 	color:#9dd073;
