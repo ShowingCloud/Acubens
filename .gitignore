@@ -121,3 +121,6 @@ db/datadump/seo_meta.yml
 .ruby-gemset
 .ruby-version
 db/datadump/sessions.yml
+
+# bundle cache
+Gemfile.lock
