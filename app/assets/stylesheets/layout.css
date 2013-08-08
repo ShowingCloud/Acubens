@@ -97,7 +97,7 @@ body{
 	float:left;
 }
 .logo{
-	margin-left:35px;
+	margin-left:18px;
 }
 .header_bottom_right{
 	width:740px;
@@ -119,37 +119,72 @@ body{
 #menu ul li{
 	float:left;
 }
+
+
 #menu ul li{
 	border-style:solid dashed solid none;
 	border-color:#6eb92b;
 	border-width:1px;
 	width:92px;
-	height:28px;
-	padding-top:8px;
+	height:26px;
+	padding-top:10px;
 }
 #menu ul li:first-child{
 	border-style:solid dashed solid solid;	
 	border-color:#6eb92b;
 	border-width:1px;
         width:92px;
-	height:28px;
-	padding-top:8px;
+	height:26px;
+	padding-top:10px;
 }
 #menu ul li:last-child{
 	border-style:solid  solid solid none;
 	border-color:#6eb92b;
 	border-width:1px;
 	width:92px;
-	height:28px;
-	padding-top:8px;
+	height:26px;
+	padding-top:10px;
 }
 #menu ul ul{
+	
 	display:none;
+	z-index:10;
+	position:absolute;
 }
 
-#menu ul li:hover a{
-display:inline-block;
+#menu ul li:hover ul{
+       display:block;
+       margin-top:12px;
+       margin-left:-41px;
+       
 }
+
+#menu ul li:hover ul li {
+	float:none;
+	border-top-style:none;
+	border-right-style:solid;
+	//margin-left:-41px;
+	border-left-style:solid;
+	border-bottom-style:dashed;
+	background-color:#ffffff ;
+       //list-style:circle; 
+       //background:url("../assets/img/right-angle-green-1.png") left no-repeat;
+}
+#menu ul li:hover ul li:first-child {
+	        float:none;
+	        background-color:#ffffff ;
+                border-top-style:none;	
+	border-right-style:solid;
+border-bottom-style:dashed;	
+}
+
+#menu ul li:hover ul li:last-child {
+	        float:none;
+		        background-color:#ffffff ;
+		border-top-style:none;
+		border-left-style:solid;
+border-bottom-style:solid;	
+	}
 
 .nav{
 	margin-left:48px;
