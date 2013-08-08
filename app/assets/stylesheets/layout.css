@@ -102,10 +102,13 @@ body{
 .header_bottom_right{
 	width:740px;
 	float:left;
+	/*border-right-style:solid;*/
 }
 
 #menu{
-	margin-left:48px;
+	/*border-right-style:solid;*/
+	/*border-right-width:1px;*/
+	margin-left:8px;
 	margin-top:36px;
 }
 
@@ -133,7 +136,7 @@ body{
 	border-style:solid dashed solid solid;	
 	border-color:#6eb92b;
 	border-width:1px;
-        width:92px;
+    width:92px;
 	height:26px;
 	padding-top:10px;
 }
@@ -145,6 +148,9 @@ body{
 	height:26px;
 	padding-top:10px;
 }
+
+
+
 #menu ul ul{
 	
 	display:none;
@@ -156,19 +162,20 @@ body{
        display:block;
        margin-top:10px;
        margin-left:-41px;
-       
+      
 }
 
 #menu ul li:hover ul li {
 	float:none;
 	border-top-style:none;
 	border-right-style:solid;
-	//margin-left:-41px;
+	
 	border-left-style:solid;
 	border-bottom-style:dashed;
 	background-color:#ffffff ;
        //list-style:circle; 
        //background:url("../assets/img/right-angle-green-1.png") left no-repeat;
+       //margin-left:-41px;
 }
 #menu ul li:hover ul li:first-child {
 	        float:none;
@@ -177,6 +184,7 @@ body{
 		border-right-style:solid;
 border-bottom-style:dashed;	
 }
+
 
 #menu ul li:hover ul li:last-child {
 	        float:none;
@@ -191,26 +199,40 @@ border-bottom-style:solid;
 	position:absolute;
 	z-index:10;
 }
-#menu ul li:hover ul li:hover ul li{
+#menu ul li:hover ul li:hover ul{
 	display:block;
+	margin-left:92px;
+	margin-top:-28px;
+	padding:0px;
 //	float:left;
+    background-color:#ffffff;
+}
+
+#menu ul li:hover ul li:hover ul li{
+	
+//	float:left;
+//margin-top:28px;
 	border-top-style:none;
-	border-bottom-style:solid;
-        background-color:#ffffff;
+	border-right-style:solid;
+	border-bottom-style:dashed;
+    background-color:#ffffff;	
+	border-left-style:solid;
+	
+        
 }
 
 
 #menu ul li:hover ul li:hover ul li:first-child{
-	float:left;
-	display:block;
+	//float:left;
+	//display:block;
 	background-color:#ffffff;
 	border-top-style:solid;
-	border-bottom-style:none;
+	border-bottom-style:dashed;
 }
 
 
 #menu ul li:hover ul li:hover ul li:last-child{
-        display:block;
+    //display:block;
 	border-top-style:none;
 	border-bottom-style:solid;
 	background-color:#ffffff;
