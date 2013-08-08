@@ -1,8 +1,8 @@
 @charset "utf-8";
 /* CSS Document */
 body{
-	font-family:'YouYuan'!important;
-	font-family:'YouYuan';
+	/*font-family:"幼圆" !important;*/
+	font-family:'幼圆';
 	text-align:left;
 	margin:0px 0px 0px 0px;
 	padding:0px 0px 0px 0px;
@@ -154,7 +154,7 @@ body{
 
 #menu ul li:hover ul{
        display:block;
-       margin-top:12px;
+       margin-top:10px;
        margin-left:-41px;
        
 }
@@ -174,7 +174,7 @@ body{
 	        float:none;
 	        background-color:#ffffff ;
                 border-top-style:none;	
-	border-right-style:solid;
+		border-right-style:solid;
 border-bottom-style:dashed;	
 }
 
@@ -185,6 +185,36 @@ border-bottom-style:dashed;
 		border-left-style:solid;
 border-bottom-style:solid;	
 	}
+
+#menu ul li:hover ul li ul{
+	display:none;
+	position:absolute;
+	z-index:10;
+}
+#menu ul li:hover ul li:hover ul li{
+	display:block;
+//	float:left;
+	border-top-style:none;
+	border-bottom-style:solid;
+        background-color:#ffffff;
+}
+
+
+#menu ul li:hover ul li:hover ul li:first-child{
+	float:left;
+	display:block;
+	background-color:#ffffff;
+	border-top-style:solid;
+	border-bottom-style:none;
+}
+
+
+#menu ul li:hover ul li:hover ul li:last-child{
+        display:block;
+	border-top-style:none;
+	border-bottom-style:solid;
+	background-color:#ffffff;
+}
 
 .nav{
 	margin-left:48px;
