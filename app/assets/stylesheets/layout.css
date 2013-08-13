@@ -291,7 +291,8 @@ border-bottom-style:solid;
 	height:920px;
 	width:231px;
 	border-style:solid;
-	border-color:#6eb92b;
+	border-top-style:none;
+	border-color:#d6f0c0;
 	border-width:1px;
 }
 
@@ -299,19 +300,54 @@ border-bottom-style:solid;
 	width:231px;
 	height:92px;
 	border-bottom:solid;
-	border-bottom-color:#6eb92b;
+	
+	border-bottom-color:#d6f0c0;
 	border-bottom-width:1px;
 }
 
 .basket2{
 	width:212px;
 	border-bottom:dashed;
-	height:68px;
-	border-bottom-color:#6eb92b;
+	height:70px;
+	border-bottom-color:#d6f0c0;
 	border-bottom-width:1px;
 	
 }
+
+.basket2-missJu{
+	width:212px;
+	border-bottom:dashed;
+	height:70px;
+	border-bottom-color:#d6f0c0;
+	border-bottom-width:1px;	
+}
+
+.basket2-missJu-tech{
+	width:231px;
+	border-bottom:solid;
+	height:75px;
+	border-bottom-color:#d6f0c0;
+	border-bottom-width:1px;
+}
 	
+	.basket2-missJu-tech-aboutJN{
+	width:213px;
+	border-bottom:dashed;
+	height:75px;
+	border-bottom-color:#d6f0c0;
+	border-bottom-width:1px;
+	
+}
+
+.basket2-missJu-tech-aboutJN-lastone{
+	width:231px;
+	border-bottom:solid;
+	height:75px;
+	border-bottom-color:#d6f0c0;
+	border-bottom-width:1px;
+		height:80px;
+}
+
 
 .zone{
 	background-color:#f0fee4;
@@ -337,7 +373,7 @@ border-bottom-style:solid;
 .img-margin{
 	width:12px;
 	margin-top:8px;
-	 margin-left:15px;
+	 margin-left:17px;
 }
 
 .img-margin2{
@@ -353,8 +389,65 @@ width:12px;
 	color:#6eb92b;
 	font-size:15px;
 	margin-right:100px;
-	
 }
+
+.member-text2-aboutJN{
+	padding-top:26px;
+	font-family:'YouYuan';
+	font-weight:bold;
+	color:#6eb92b;
+	font-size:15px;
+	margin-right:100px;
+	text-align:left;
+	margin-left:18px;
+	width:200px;
+}
+
+.member-text2-aboutJN-lastone{
+	padding-top:26px;
+	font-family:'YouYuan';
+	font-weight:bold;
+	color:#6eb92b;
+	font-size:15px;
+	margin-right:100px;
+	text-align:left;
+	margin-left:27px;
+	width:150px;
+
+}
+
+
+
+
+
+.member-text2-tips{
+	padding-top:26px;
+	font-family:'YouYuan';
+	font-weight:bold;
+	color:#6eb92b;
+	font-size:15px;
+	background-color:#f0fee4;
+	margin-top:12px;
+	height:45px;
+	text-align:left;
+	padding-left:16px;
+
+}
+
+.member-text2-tips-tech{
+	padding-top:26px;
+	font-family:'YouYuan';
+	font-weight:bold;
+	color:#6eb92b;
+	font-size:15px;
+	background-color:#f0fee4;
+	margin-top:12px;
+	height:45px;
+	text-align:left;
+	padding-left:16px;
+
+}
+
 
 .member-text3{
 	padding-top:26px;
@@ -387,6 +480,7 @@ margin-top:-12px;
 	 color:#666666; 
 	 margin-left:-30px; 
 	 height:51px;
+	margin-top:-3px;
 }
 
 .empty1{
@@ -414,11 +508,11 @@ margin-top:-12px;
 	
 
 .bor-4{
-	border-bottom:dashed;
-	border-top:solid;
-	border-bottom-color:#6eb92b;
-	border-top-color:#6eb92b;
-	border-bottom-width:1px;
+
+	border-top:none;
+
+	border-top-color:#d6f0c0;
+	
 	border-top-width:1px;
 	height:112px;
 	text-align:center;
@@ -428,7 +522,7 @@ margin-top:-12px;
 
 .bor-5{
 	border-bottom:solid;
-	border-bottom-color:#6eb92b;
+	border-bottom-color:#d6f0c0;
 	border-bottom-width:1px;
 	height:112px;
 	text-align:center;
@@ -523,7 +617,21 @@ margin-top:-12px;
 
 .wechatweibo
 {
-	width:23px;
+	width:24px;
+	height:18px;
+	margin-top:2px;
+	margin-left:3px;
+
+	
+}
+.wechatweibo1
+{
+	width:24px;
+	height:22px;
+	margin-top:2px;
+	margin-left:3px;
+
+	
 }
 
 .http{
@@ -531,10 +639,12 @@ margin-top:-12px;
 	margin-top:-20px;
 	 margin-left:-30px;
 	  font-weight:bold;
+	 
 	  }
 .http1{
 	color: #666666;
-	 font-family: 'Microsoft YaHei';
+	 font-family: 'YouYuan';
+	 margin-bottom:23px;
 }
 
 
@@ -549,4 +659,40 @@ margin-top:-12px;
 .atthelast2{
 	font-size:12px;
 	font-family: 'YouYuan';
+}
+/*联系我们的新加的css*/
+
+.contactus-weibobor-1{
+	  margin-bottom:23px;
+	  border-bottom-style:solid;
+	  border-bottom-color:#d6f0c0;
+	  border-bottom-width:1px;
+}
+
+.between-the-ads{
+	border-bottom-style:dashed;
+	border-bottom-color:#d6f0c0;
+	border-bottom-width:1px;
+	width:213px;
+}
+
+.between-the-tech{
+	border-bottom-style:solid;
+	border-bottom-color:#d6f0c0;
+	border-bottom-width:1px;
+	width:231px;
+	height:13px;
+}
+
+.between-the-ads-tech{
+	border-bottom-style:dashed;
+	border-bottom-color:#d6f0c0;
+	border-bottom-width:1px;
+	width:213px;
+	height:13px;
+}
+
+.alter-the-weibopositon{
+	float:left;
+	margin-top:5px;
 }
