@@ -119,6 +119,12 @@ body{
 	color:#6eb92b;
 	list-style:none;
 }
+
+/*.last {
+	border-bottom-style:solid;
+	border-right-style:dashed;
+}
+*/
 #menu ul li{
 	float:left;
 }
@@ -188,10 +194,10 @@ border-bottom-style:dashed;
 
 #menu ul li:hover ul li:last-child {
 	        float:none;
-		        background-color:#ffffff ;
+		background-color:#ffffff ;
 		border-top-style:none;
 		border-left-style:solid;
-border-bottom-style:solid;	
+		border-bottom-style:solid;	
 	}
 
 #menu ul li:hover ul li ul{
