@@ -106,7 +106,7 @@ body{
 }
 
 #menu{
-	/*border-right-style:solid;*/
+	/*(border-right-style:solid;*/
 	/*border-right-width:1px;*/
 	margin-left:8px;
 	margin-top:36px;
@@ -120,40 +120,49 @@ body{
 	list-style:none;
 }
 
-/*.last {
-	border-bottom-style:solid;
-	border-right-style:dashed;
+nav ul .last {
+	border-right-style:solid;
 }
-*/
+
+
 #menu ul li{
 	float:left;
-}
-
-
-#menu ul li{
-	border-style:solid dashed solid none;
+	/*border-style:solid none solid none*/
+	border-top-style:solid;
+	border-bottom-style:solid;
 	border-color:#6eb92b;
 	border-width:1px;
 	width:92px;
 	height:26px;
 	padding-top:10px;
 }
+
 #menu ul li:first-child{
-	border-style:solid dashed solid solid;	
+	border-top-style:solid;
+	border-left-style:solid;
+	border-bottom-style:solid;	
 	border-color:#6eb92b;
 	border-width:1px;
     width:92px;
 	height:26px;
 	padding-top:10px;
 }
+
+#menu li+li {
+	border-left-style:dashed;
+	
+}
+
+
 #menu ul li:last-child{
-	border-style:solid  solid solid none;
+	border-style:solid  solid solid dashed;
 	border-color:#6eb92b;
 	border-width:1px;
 	width:92px;
 	height:26px;
 	padding-top:10px;
-}
+} 
+
 
 
 
@@ -174,30 +183,40 @@ body{
 #menu ul li:hover ul li {
 	float:none;
 	border-top-style:none;
+	border-right-style:solid;	
+	border-left-style:solid;
+	background-color:#ffffff ;
+}
+
+#menu ul li:hover ul li+li {
+	border-bottom-style:dashed;
+}
+
+/*nav ul li:hover ul .last {
+	border-bottom-style:solid;
+}
+*/
+#menu ul li:hover ul .last {
+	border-bottom-style:solid;
+}
+
+#menu ul li:hover ul li:first-child {
+	float:none;
+	background-color:#ffffff;
+    border-top-style:none;	
 	border-right-style:solid;
-	
 	border-left-style:solid;
 	border-bottom-style:dashed;
-	background-color:#ffffff ;
-       //list-style:circle; 
-       //background:url("../assets/img/right-angle-green-1.png") left no-repeat;
-       //margin-left:-41px;
-}
-#menu ul li:hover ul li:first-child {
-	        float:none;
-	        background-color:#ffffff ;
-                border-top-style:none;	
-		border-right-style:solid;
-border-bottom-style:dashed;	
+	
 }
 
 
 #menu ul li:hover ul li:last-child {
-	        float:none;
-		background-color:#ffffff ;
+	    float:none;
+		background-color:#ffffff;
 		border-top-style:none;
 		border-left-style:solid;
-		border-bottom-style:solid;	
+		border-bottom-style:solid;
 	}
 
 #menu ul li:hover ul li ul{
@@ -220,13 +239,16 @@ border-bottom-style:dashed;
 //margin-top:28px;
 	border-top-style:none;
 	border-right-style:solid;
-	border-bottom-style:dashed;
+//	border-bottom-style:dashed;
     background-color:#ffffff;	
 	border-left-style:solid;
 	
         
 }
 
+#menu ul li:hover ul li:hover ul .last {
+	border-bottom-style:solid;
+}
 
 #menu ul li:hover ul li:hover ul li:first-child{
 	//float:left;
