@@ -187,7 +187,7 @@ nav ul .last {
 #menu ul li:hover ul{
        display:block;
        margin-top:10px;
-       margin-left:-41px;
+       margin-left:-57px;
       
 }
 
@@ -237,7 +237,7 @@ nav ul .last {
 }
 #menu ul li:hover ul li:hover ul{
 	display:block;
-	margin-left:92px;
+	margin-left:80px;
 	margin-top:-28px;
 	padding:0px;
 //	float:left;
