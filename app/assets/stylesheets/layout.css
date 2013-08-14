@@ -99,6 +99,15 @@ body{
 .logo{
 	margin-left:18px;
 }
+
+.teacher{
+	position:absolute;
+	z-index:99;
+	margin-left:750px;
+	margin-top:-82px;
+	
+}
+
 .header_bottom_right{
 	width:740px;
 	float:left;
@@ -108,7 +117,7 @@ body{
 #menu{
 	/*(border-right-style:solid;*/
 	/*border-right-width:1px;*/
-	margin-left:8px;
+	margin-left:4px;
 	margin-top:36px;
 }
 
@@ -132,9 +141,11 @@ nav ul .last {
 	border-bottom-style:solid;
 	border-color:#6eb92b;
 	border-width:1px;
-	width:92px;
+	/*width:92px;*/
 	height:26px;
 	padding-top:10px;
+	padding-left:16px;
+	padding-right:16px;
 }
 
 #menu ul li:first-child{
@@ -143,7 +154,7 @@ nav ul .last {
 	border-bottom-style:solid;	
 	border-color:#6eb92b;
 	border-width:1px;
-    width:92px;
+  /*  width:92px;*/
 	height:26px;
 	padding-top:10px;
 }
@@ -158,7 +169,7 @@ nav ul .last {
 	border-style:solid  solid solid dashed;
 	border-color:#6eb92b;
 	border-width:1px;
-	width:92px;
+	/*  width:92px;*/
 	height:26px;
 	padding-top:10px;
 } 
@@ -309,11 +320,11 @@ nav ul .last {
 	font-size:14px;
 	font-family:'YouYuan';
 }
-#menu{
+/*#menu{
         margin-left:48px;
         margin-top:36px;
 }
-
+*/
 #member-left{
 	float:left;
 	height:920px;
