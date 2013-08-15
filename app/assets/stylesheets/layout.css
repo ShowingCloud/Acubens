@@ -40,6 +40,7 @@ body{
 }
 .header_top_left ul li{	
 	float:left;
+	font-size:12px;
 }
 .header_top_right{
 	float:left;
@@ -127,6 +128,7 @@ body{
 	font-size:15px;
 	color:#6eb92b;
 	list-style:none;
+	font-size:16px !important;
 }
 
 nav ul .last {
@@ -248,6 +250,7 @@ nav ul .last {
 	
 //	float:left;
 //margin-top:28px;
+	width:100px;
 	border-top-style:none;
 	border-right-style:solid;
 //	border-bottom-style:dashed;
