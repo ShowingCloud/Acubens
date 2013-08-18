@@ -40,6 +40,7 @@ body{
 }
 .header_top_left ul li{	
 	float:left;
+	font-size:12px;
 }
 .header_top_right{
 	float:left;
@@ -99,6 +100,15 @@ body{
 .logo{
 	margin-left:18px;
 }
+
+.teacher{
+	position:absolute;
+	z-index:99;
+	margin-left:750px;
+	margin-top:-82px;
+	
+}
+
 .header_bottom_right{
 	width:740px;
 	float:left;
@@ -106,9 +116,9 @@ body{
 }
 
 #menu{
-	/*border-right-style:solid;*/
+	/*(border-right-style:solid;*/
 	/*border-right-width:1px;*/
-	margin-left:8px;
+	margin-left:4px;
 	margin-top:36px;
 }
 
@@ -118,36 +128,54 @@ body{
 	font-size:15px;
 	color:#6eb92b;
 	list-style:none;
+	font-size:16px !important;
 }
+
+nav ul .last {
+	border-right-style:solid;
+}
+
+
 #menu ul li{
 	float:left;
-}
-
-
-#menu ul li{
-	border-style:solid dashed solid none;
+	/*border-style:solid none solid none*/
+	border-top-style:solid;
+	border-bottom-style:solid;
 	border-color:#6eb92b;
 	border-width:1px;
-	width:92px;
+	/*width:92px;*/
 	height:26px;
 	padding-top:10px;
+	padding-left:16px;
+	padding-right:16px;
 }
+
 #menu ul li:first-child{
-	border-style:solid dashed solid solid;	
+	border-top-style:solid;
+	border-left-style:solid;
+	border-bottom-style:solid;	
 	border-color:#6eb92b;
 	border-width:1px;
-    width:92px;
+  /*  width:92px;*/
 	height:26px;
 	padding-top:10px;
 }
+
+#menu li+li {
+	border-left-style:dashed;
+	
+}
+
+
 #menu ul li:last-child{
-	border-style:solid  solid solid none;
+	border-style:solid  solid solid dashed;
 	border-color:#6eb92b;
 	border-width:1px;
-	width:92px;
+	/*  width:92px;*/
 	height:26px;
 	padding-top:10px;
-}
+} 
+
 
 
 
@@ -161,37 +189,47 @@ body{
 #menu ul li:hover ul{
        display:block;
        margin-top:10px;
-       margin-left:-41px;
+       margin-left:-57px;
       
 }
 
 #menu ul li:hover ul li {
 	float:none;
 	border-top-style:none;
+	border-right-style:solid;	
+	border-left-style:solid;
+	background-color:#ffffff ;
+}
+
+#menu ul li:hover ul li+li {
+	border-bottom-style:dashed;
+}
+
+/*nav ul li:hover ul .last {
+	border-bottom-style:solid;
+}
+*/
+#menu ul li:hover ul .last {
+	border-bottom-style:solid;
+}
+
+#menu ul li:hover ul li:first-child {
+	float:none;
+	background-color:#ffffff;
+    border-top-style:none;	
 	border-right-style:solid;
-	
 	border-left-style:solid;
 	border-bottom-style:dashed;
-	background-color:#ffffff ;
-       //list-style:circle; 
-       //background:url("../assets/img/right-angle-green-1.png") left no-repeat;
-       //margin-left:-41px;
-}
-#menu ul li:hover ul li:first-child {
-	        float:none;
-	        background-color:#ffffff ;
-                border-top-style:none;	
-		border-right-style:solid;
-border-bottom-style:dashed;	
+	
 }
 
 
 #menu ul li:hover ul li:last-child {
-	        float:none;
-		        background-color:#ffffff ;
+	    float:none;
+		background-color:#ffffff;
 		border-top-style:none;
 		border-left-style:solid;
-border-bottom-style:solid;	
+		border-bottom-style:solid;
 	}
 
 #menu ul li:hover ul li ul{
@@ -201,7 +239,7 @@ border-bottom-style:solid;
 }
 #menu ul li:hover ul li:hover ul{
 	display:block;
-	margin-left:92px;
+	margin-left:80px;
 	margin-top:-28px;
 	padding:0px;
 //	float:left;
@@ -212,15 +250,19 @@ border-bottom-style:solid;
 	
 //	float:left;
 //margin-top:28px;
+	width:100px;
 	border-top-style:none;
 	border-right-style:solid;
-	border-bottom-style:dashed;
+//	border-bottom-style:dashed;
     background-color:#ffffff;	
 	border-left-style:solid;
 	
         
 }
 
+#menu ul li:hover ul li:hover ul .last {
+	border-bottom-style:solid;
+}
 
 #menu ul li:hover ul li:hover ul li:first-child{
 	//float:left;
@@ -281,11 +323,11 @@ border-bottom-style:solid;
 	font-size:14px;
 	font-family:'YouYuan';
 }
-#menu{
+/*#menu{
         margin-left:48px;
         margin-top:36px;
 }
-
+*/
 #member-left{
 	float:left;
 	height:920px;
@@ -452,6 +494,7 @@ width:12px;
 .member-text3{
 	padding-top:26px;
 	font-family:'YouYuan';
+	font-weight:bold;
 	color:#6eb92b;
 	font-size:15px;
 	margin-right:100px;
@@ -709,7 +752,17 @@ margin-top:-12px;
 
 /*修改history的左边部分*/
 .put-on-left-block{
-	border-bottom-style:dashed;
-	border-bottom-width:1px;
-	border-bottom-color:#d6f0c0;
+  border-bottom-style:dashed;
+  border-bottom-width:1px;
+  border-bottom-color:#d6f0c0;
 }
+
+.member-text3-history{
+  padding-top:26px;
+  font-family:'YouYuan';
+  color:#6eb92b;
+  font-size:15px;
+  margin-right:74px;
+  width:212px;
+list-style-type:none; 
+margin-top:-12px;}
