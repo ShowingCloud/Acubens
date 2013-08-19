@@ -36,22 +36,10 @@ refinery_page_parts:
   - - 4
     - 3
     - Body
-    - ! '<p>This is just a standard text page example. Lorem ipsum dolor sit amet,
-      consectetur adipiscing elit. Proin metus dolor, hendrerit sit amet, aliquet
-      nec, posuere sed, purus. Nullam et velit iaculis odio sagittis placerat. Duis
-      metus tellus, pellentesque ut, luctus id, egestas a, lorem. Praesent vitae mauris.
-      Aliquam sed nulla. Sed id nunc vitae leo suscipit viverra. Proin at leo ut lacus
-      consequat rhoncus. In hac habitasse platea dictumst. Nunc quis tortor sed libero
-      hendrerit dapibus.
+    - |-
+      <p>This is just a standard text page example. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin metus dolor, hendrerit sit amet, aliquet nec, posuere sed, purus. Nullam et velit iaculis odio sagittis placerat. Duis metus tellus, pellentesque ut, luctus id, egestas a, lorem. Praesent vitae mauris. Aliquam sed nulla. Sed id nunc vitae leo suscipit viverra. Proin at leo ut lacus consequat rhoncus. In hac habitasse platea dictumst. Nunc quis tortor sed libero hendrerit dapibus.
 
-
-      Integer interdum purus id erat. Duis nec velit vitae dolor mattis euismod. Class
-      aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
-      Suspendisse pellentesque dignissim lacus. Nulla semper euismod arcu. Suspendisse
-      egestas, erat a consectetur dapibus, felis orci cursus eros, et sollicitudin
-      purus urna et metus. Integer eget est sed nunc euismod vestibulum. Integer nulla
-      dui, tristique in, euismod et, interdum imperdiet, enim. Mauris at lectus. Sed
-      egestas tortor nec mi.</p>'
+      Integer interdum purus id erat. Duis nec velit vitae dolor mattis euismod. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse pellentesque dignissim lacus. Nulla semper euismod arcu. Suspendisse egestas, erat a consectetur dapibus, felis orci cursus eros, et sollicitudin purus urna et metus. Integer eget est sed nunc euismod vestibulum. Integer nulla dui, tristique in, euismod et, interdum imperdiet, enim. Mauris at lectus. Sed egestas tortor nec mi.</p>
     - 0
     - 2013-07-31 17:59:13.000000000 Z
     - 2013-07-31 17:59:13.000000000 Z
@@ -72,182 +60,182 @@ refinery_page_parts:
     - ''
     - 0
     - 2013-07-31 18:37:18.000000000 Z
-    - 2013-07-31 18:58:12.000000000 Z
+    - 2013-08-15 12:22:13.000000000 Z
   - - 7
     - 4
     - Side Body
     - ''
     - 1
     - 2013-07-31 18:37:18.000000000 Z
-    - 2013-07-31 18:58:12.000000000 Z
+    - 2013-08-15 12:22:13.000000000 Z
   - - 8
     - 5
     - Body
     - ''
     - 0
     - 2013-07-31 18:37:39.000000000 Z
-    - 2013-07-31 18:58:31.000000000 Z
+    - 2013-08-15 12:27:14.000000000 Z
   - - 9
     - 5
     - Side Body
     - ''
     - 1
     - 2013-07-31 18:37:39.000000000 Z
-    - 2013-07-31 18:58:31.000000000 Z
+    - 2013-08-15 12:27:14.000000000 Z
   - - 10
     - 6
     - Body
     - ''
     - 0
     - 2013-07-31 18:37:57.000000000 Z
-    - 2013-07-31 18:58:59.000000000 Z
+    - 2013-08-15 12:22:45.000000000 Z
   - - 11
     - 6
     - Side Body
     - ''
     - 1
     - 2013-07-31 18:37:57.000000000 Z
-    - 2013-07-31 18:58:59.000000000 Z
+    - 2013-08-15 12:22:45.000000000 Z
   - - 12
     - 7
     - Body
     - ''
     - 0
     - 2013-07-31 18:38:21.000000000 Z
-    - 2013-07-31 19:01:29.000000000 Z
+    - 2013-08-15 12:21:33.000000000 Z
   - - 13
     - 7
     - Side Body
     - ''
     - 1
     - 2013-07-31 18:38:21.000000000 Z
-    - 2013-07-31 19:01:29.000000000 Z
+    - 2013-08-15 12:21:33.000000000 Z
   - - 14
     - 8
     - Body
     - ''
     - 0
     - 2013-07-31 18:38:45.000000000 Z
-    - 2013-07-31 18:59:12.000000000 Z
+    - 2013-08-15 12:22:33.000000000 Z
   - - 15
     - 8
     - Side Body
     - ''
     - 1
     - 2013-07-31 18:38:45.000000000 Z
-    - 2013-07-31 18:59:12.000000000 Z
+    - 2013-08-15 12:22:33.000000000 Z
   - - 16
     - 9
     - Body
     - ''
     - 0
     - 2013-07-31 18:39:08.000000000 Z
-    - 2013-07-31 19:01:16.000000000 Z
+    - 2013-08-15 12:27:59.000000000 Z
   - - 17
     - 9
     - Side Body
     - ''
     - 1
     - 2013-07-31 18:39:08.000000000 Z
-    - 2013-07-31 19:01:16.000000000 Z
+    - 2013-08-15 12:27:59.000000000 Z
   - - 18
     - 10
     - Body
     - ''
     - 0
     - 2013-07-31 18:39:25.000000000 Z
-    - 2013-07-31 19:01:42.000000000 Z
+    - 2013-08-15 12:30:38.000000000 Z
   - - 19
     - 10
     - Side Body
     - ''
     - 1
     - 2013-07-31 18:39:26.000000000 Z
-    - 2013-07-31 19:01:42.000000000 Z
+    - 2013-08-15 12:30:38.000000000 Z
   - - 20
     - 11
     - Body
     - ''
     - 0
     - 2013-07-31 18:40:22.000000000 Z
-    - 2013-07-31 18:59:27.000000000 Z
+    - 2013-08-15 12:23:24.000000000 Z
   - - 21
     - 11
     - Side Body
     - ''
     - 1
     - 2013-07-31 18:40:22.000000000 Z
-    - 2013-07-31 18:59:27.000000000 Z
+    - 2013-08-15 12:23:24.000000000 Z
   - - 22
     - 12
     - Body
     - ''
     - 0
     - 2013-07-31 18:40:54.000000000 Z
-    - 2013-07-31 19:00:51.000000000 Z
+    - 2013-08-15 12:34:44.000000000 Z
   - - 23
     - 12
     - Side Body
     - ''
     - 1
     - 2013-07-31 18:40:54.000000000 Z
-    - 2013-07-31 19:00:51.000000000 Z
+    - 2013-08-15 12:34:44.000000000 Z
   - - 24
     - 13
     - Body
     - ''
     - 0
     - 2013-07-31 18:41:14.000000000 Z
-    - 2013-07-31 19:01:04.000000000 Z
+    - 2013-08-15 12:35:05.000000000 Z
   - - 25
     - 13
     - Side Body
     - ''
     - 1
     - 2013-07-31 18:41:14.000000000 Z
-    - 2013-07-31 19:01:04.000000000 Z
+    - 2013-08-15 12:35:05.000000000 Z
   - - 26
     - 14
     - Body
     - ''
     - 0
     - 2013-07-31 18:41:32.000000000 Z
-    - 2013-07-31 19:00:22.000000000 Z
+    - 2013-08-15 12:34:58.000000000 Z
   - - 27
     - 14
     - Side Body
     - ''
     - 1
     - 2013-07-31 18:41:32.000000000 Z
-    - 2013-07-31 19:00:22.000000000 Z
+    - 2013-08-15 12:34:58.000000000 Z
   - - 28
     - 15
     - Body
     - ''
     - 0
     - 2013-07-31 18:42:03.000000000 Z
-    - 2013-07-31 19:00:33.000000000 Z
+    - 2013-08-15 12:35:39.000000000 Z
   - - 29
     - 15
     - Side Body
     - ''
     - 1
     - 2013-07-31 18:42:03.000000000 Z
-    - 2013-07-31 19:00:33.000000000 Z
+    - 2013-08-15 12:35:39.000000000 Z
   - - 30
     - 16
     - Body
     - ''
     - 0
     - 2013-07-31 18:42:43.000000000 Z
-    - 2013-07-31 19:00:07.000000000 Z
+    - 2013-08-15 12:34:51.000000000 Z
   - - 31
     - 16
     - Side Body
     - ''
     - 1
     - 2013-07-31 18:42:43.000000000 Z
-    - 2013-07-31 19:00:07.000000000 Z
+    - 2013-08-15 12:34:51.000000000 Z
   - - 32
     - 17
     - Body
@@ -360,3 +348,17 @@ refinery_page_parts:
     - 1
     - 2013-07-31 19:09:53.000000000 Z
     - 2013-07-31 19:09:53.000000000 Z
+  - - 52
+    - 27
+    - Body
+    - ''
+    - 0
+    - 2013-08-15 12:33:25.000000000 Z
+    - 2013-08-15 12:33:25.000000000 Z
+  - - 53
+    - 27
+    - Side Body
+    - ''
+    - 1
+    - 2013-08-15 12:33:25.000000000 Z
+    - 2013-08-15 12:33:25.000000000 Z

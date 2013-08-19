@@ -32,22 +32,10 @@ refinery_page_part_translations:
   - - 4
     - 4
     - en
-    - ! '<p>This is just a standard text page example. Lorem ipsum dolor sit amet,
-      consectetur adipiscing elit. Proin metus dolor, hendrerit sit amet, aliquet
-      nec, posuere sed, purus. Nullam et velit iaculis odio sagittis placerat. Duis
-      metus tellus, pellentesque ut, luctus id, egestas a, lorem. Praesent vitae mauris.
-      Aliquam sed nulla. Sed id nunc vitae leo suscipit viverra. Proin at leo ut lacus
-      consequat rhoncus. In hac habitasse platea dictumst. Nunc quis tortor sed libero
-      hendrerit dapibus.
+    - |-
+      <p>This is just a standard text page example. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin metus dolor, hendrerit sit amet, aliquet nec, posuere sed, purus. Nullam et velit iaculis odio sagittis placerat. Duis metus tellus, pellentesque ut, luctus id, egestas a, lorem. Praesent vitae mauris. Aliquam sed nulla. Sed id nunc vitae leo suscipit viverra. Proin at leo ut lacus consequat rhoncus. In hac habitasse platea dictumst. Nunc quis tortor sed libero hendrerit dapibus.
 
-
-      Integer interdum purus id erat. Duis nec velit vitae dolor mattis euismod. Class
-      aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
-      Suspendisse pellentesque dignissim lacus. Nulla semper euismod arcu. Suspendisse
-      egestas, erat a consectetur dapibus, felis orci cursus eros, et sollicitudin
-      purus urna et metus. Integer eget est sed nunc euismod vestibulum. Integer nulla
-      dui, tristique in, euismod et, interdum imperdiet, enim. Mauris at lectus. Sed
-      egestas tortor nec mi.</p>'
+      Integer interdum purus id erat. Duis nec velit vitae dolor mattis euismod. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse pellentesque dignissim lacus. Nulla semper euismod arcu. Suspendisse egestas, erat a consectetur dapibus, felis orci cursus eros, et sollicitudin purus urna et metus. Integer eget est sed nunc euismod vestibulum. Integer nulla dui, tristique in, euismod et, interdum imperdiet, enim. Mauris at lectus. Sed egestas tortor nec mi.</p>
     - 2013-07-31 17:59:13.000000000 Z
     - 2013-07-31 17:59:13.000000000 Z
   - - 5
@@ -312,3 +300,15 @@ refinery_page_part_translations:
     - ''
     - 2013-07-31 19:09:53.000000000 Z
     - 2013-07-31 19:09:53.000000000 Z
+  - - 52
+    - 52
+    - en
+    - ''
+    - 2013-08-15 12:33:25.000000000 Z
+    - 2013-08-15 12:33:25.000000000 Z
+  - - 53
+    - 53
+    - en
+    - ''
+    - 2013-08-15 12:33:25.000000000 Z
+    - 2013-08-15 12:33:25.000000000 Z

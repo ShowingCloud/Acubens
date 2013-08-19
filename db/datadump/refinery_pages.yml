@@ -74,7 +74,7 @@ refinery_pages:
   - - 4
     - 20
     - 
-    - exchangeverify
+    - 兑换积分确认
     - false
     - ''
     - 
@@ -87,28 +87,11 @@ refinery_pages:
     - exchangeverify
     - application
     - 2013-07-31 18:37:18.000000000 Z
-    - 2013-07-31 18:58:12.000000000 Z
+    - 2013-08-15 12:22:13.000000000 Z
   - - 5
     - 20
     - 
-    - resettel
-    - false
-    - ''
-    - 
-    - true
-    - false
-    - false
-    - 14
-    - 15
-    - 1
-    - resettel
-    - application
-    - 2013-07-31 18:37:39.000000000 Z
-    - 2013-07-31 18:58:31.000000000 Z
-  - - 6
-    - 20
-    - 
-    - resetpwd
+    - 修改手机
     - false
     - ''
     - 
@@ -118,31 +101,48 @@ refinery_pages:
     - 16
     - 17
     - 1
-    - resetpwd
+    - resettel
     - application
-    - 2013-07-31 18:37:57.000000000 Z
-    - 2013-07-31 18:58:59.000000000 Z
-  - - 7
+    - 2013-07-31 18:37:39.000000000 Z
+    - 2013-08-15 12:27:14.000000000 Z
+  - - 6
     - 20
     - 
-    - membersystem
+    - 重置密码
     - false
     - ''
     - 
     - true
     - false
     - false
-    - 36
-    - 37
+    - 20
+    - 21
+    - 1
+    - resetpwd
+    - application
+    - 2013-07-31 18:37:57.000000000 Z
+    - 2013-08-15 12:22:45.000000000 Z
+  - - 7
+    - 20
+    - 
+    - 会员制度
+    - true
+    - ''
+    - 
+    - true
+    - false
+    - false
+    - 14
+    - 15
     - 1
     - membersystem
     - application
     - 2013-07-31 18:38:21.000000000 Z
-    - 2013-07-31 19:01:29.000000000 Z
+    - 2013-08-15 12:21:33.000000000 Z
   - - 8
     - 20
     - 
-    - changeinfo
+    - 改变信息
     - false
     - ''
     - 
@@ -155,130 +155,11 @@ refinery_pages:
     - changeinfo
     - application
     - 2013-07-31 18:38:45.000000000 Z
-    - 2013-07-31 18:59:12.000000000 Z
+    - 2013-08-15 12:22:33.000000000 Z
   - - 9
     - 20
     - 
-    - firstlogin
-    - false
-    - ''
-    - 
-    - true
-    - false
-    - false
-    - 34
-    - 35
-    - 1
-    - firstlogin
-    - application
-    - 2013-07-31 18:39:08.000000000 Z
-    - 2013-07-31 19:01:16.000000000 Z
-  - - 10
-    - 20
-    - 
-    - mailferify
-    - false
-    - ''
-    - 
-    - true
-    - false
-    - false
-    - 38
-    - 39
-    - 1
-    - mailverify
-    - application
-    - 2013-07-31 18:39:25.000000000 Z
-    - 2013-07-31 19:01:42.000000000 Z
-  - - 11
-    - 20
-    - 
-    - pwdverify
-    - false
-    - ''
-    - 
-    - true
-    - false
-    - false
-    - 20
-    - 21
-    - 1
-    - pwdverify
-    - application
-    - 2013-07-31 18:40:22.000000000 Z
-    - 2013-07-31 18:59:27.000000000 Z
-  - - 12
-    - 20
-    - 
-    - memberinfo
-    - false
-    - ''
-    - 
-    - true
-    - false
-    - false
-    - 30
-    - 31
-    - 1
-    - memberinfo
-    - application
-    - 2013-07-31 18:40:54.000000000 Z
-    - 2013-07-31 19:00:51.000000000 Z
-  - - 13
-    - 20
-    - 
-    - showexchangehistory
-    - false
-    - ''
-    - 
-    - true
-    - false
-    - false
-    - 32
-    - 33
-    - 1
-    - showexchangehistory
-    - application
-    - 2013-07-31 18:41:14.000000000 Z
-    - 2013-07-31 19:01:04.000000000 Z
-  - - 14
-    - 20
-    - 
-    - exchangepoints
-    - false
-    - ''
-    - 
-    - true
-    - false
-    - false
-    - 26
-    - 27
-    - 1
-    - exchangepoints
-    - application
-    - 2013-07-31 18:41:32.000000000 Z
-    - 2013-07-31 19:00:22.000000000 Z
-  - - 15
-    - 20
-    - 
-    - myorder
-    - false
-    - ''
-    - 
-    - true
-    - false
-    - false
-    - 28
-    - 29
-    - 1
-    - myorder
-    - application
-    - 2013-07-31 18:42:03.000000000 Z
-    - 2013-07-31 19:00:33.000000000 Z
-  - - 16
-    - 20
-    - 
-    - mypoints
+    - 初次登录
     - false
     - ''
     - 
@@ -288,14 +169,31 @@ refinery_pages:
     - 24
     - 25
     - 1
-    - mypoints
+    - firstlogin
     - application
-    - 2013-07-31 18:42:43.000000000 Z
-    - 2013-07-31 19:00:07.000000000 Z
-  - - 17
+    - 2013-07-31 18:39:08.000000000 Z
+    - 2013-08-15 12:27:59.000000000 Z
+  - - 10
     - 20
     - 
-    - show
+    - 找回密码（修改邮箱）
+    - false
+    - ''
+    - 
+    - true
+    - false
+    - false
+    - 26
+    - 27
+    - 1
+    - mailverify
+    - application
+    - 2013-07-31 18:39:25.000000000 Z
+    - 2013-08-15 12:30:38.000000000 Z
+  - - 11
+    - 20
+    - 
+    - 重置密码
     - false
     - ''
     - 
@@ -305,6 +203,108 @@ refinery_pages:
     - 22
     - 23
     - 1
+    - pwdverify
+    - application
+    - 2013-07-31 18:40:22.000000000 Z
+    - 2013-08-15 12:23:24.000000000 Z
+  - - 12
+    - 27
+    - 
+    - 个人信息
+    - true
+    - ''
+    - 
+    - true
+    - false
+    - false
+    - 29
+    - 30
+    - 2
+    - memberinfo
+    - application
+    - 2013-07-31 18:40:54.000000000 Z
+    - 2013-08-15 12:34:44.000000000 Z
+  - - 13
+    - 27
+    - 
+    - 查看兑换历史
+    - true
+    - ''
+    - 
+    - true
+    - false
+    - false
+    - 35
+    - 36
+    - 2
+    - showexchangehistory
+    - application
+    - 2013-07-31 18:41:14.000000000 Z
+    - 2013-08-15 12:35:05.000000000 Z
+  - - 14
+    - 27
+    - 
+    - 兑换积分
+    - true
+    - ''
+    - 
+    - true
+    - false
+    - false
+    - 33
+    - 34
+    - 2
+    - exchangepoints
+    - application
+    - 2013-07-31 18:41:32.000000000 Z
+    - 2013-08-15 12:34:58.000000000 Z
+  - - 15
+    - 27
+    - 
+    - 我的订单
+    - true
+    - ''
+    - 
+    - true
+    - false
+    - false
+    - 37
+    - 38
+    - 2
+    - myorder
+    - application
+    - 2013-07-31 18:42:03.000000000 Z
+    - 2013-08-15 12:35:39.000000000 Z
+  - - 16
+    - 27
+    - 
+    - 我的积分
+    - true
+    - ''
+    - 
+    - true
+    - false
+    - false
+    - 31
+    - 32
+    - 2
+    - mypoints
+    - application
+    - 2013-07-31 18:42:43.000000000 Z
+    - 2013-08-15 12:34:51.000000000 Z
+  - - 17
+    - 
+    - 
+    - show
+    - false
+    - ''
+    - 
+    - true
+    - false
+    - false
+    - 41
+    - 42
+    - 0
     - show
     - application
     - 2013-07-31 18:43:01.000000000 Z
@@ -370,8 +370,8 @@ refinery_pages:
     - true
     - false
     - false
-    - 41
-    - 42
+    - 43
+    - 44
     - 0
     - home
     - application
@@ -387,8 +387,8 @@ refinery_pages:
     - true
     - false
     - false
-    - 43
-    - 44
+    - 45
+    - 46
     - 0
     - home
     - application
@@ -404,8 +404,8 @@ refinery_pages:
     - true
     - false
     - false
-    - 47
-    - 48
+    - 49
+    - 50
     - 0
     - home
     - application
@@ -421,10 +421,27 @@ refinery_pages:
     - true
     - false
     - false
-    - 45
-    - 46
+    - 47
+    - 48
     - 0
     - home
     - application
     - 2013-07-31 19:09:53.000000000 Z
     - 2013-07-31 19:09:53.000000000 Z
+  - - 27
+    - 20
+    - 
+    - 会员中心
+    - true
+    - ''
+    - 
+    - true
+    - false
+    - false
+    - 28
+    - 39
+    - 1
+    - memberinfo
+    - application
+    - 2013-08-15 12:33:25.000000000 Z
+    - 2013-08-15 12:33:25.000000000 Z
