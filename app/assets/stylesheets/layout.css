@@ -330,7 +330,7 @@ nav ul .last {
 */
 #member-left{
 	float:left;
-	height:920px;
+	min-height:920px;
 	width:231px;
 	border-style:solid;
 	border-top-style:none;
