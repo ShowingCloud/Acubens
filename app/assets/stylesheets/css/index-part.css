@@ -3,11 +3,12 @@
 
 #page_container1{
 	width:970px;
-	height:720px;
+	height:735px;
 	margin:0 auto;
-	border-left:solid;
-	border-right:solid;
+	//border-left:solid;
+	//border-right:solid;
 	border-color:#e7f6d9;
+	margin-bottom:28px;
 	border-width:1px;
 }
 
