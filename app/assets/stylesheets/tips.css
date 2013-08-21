@@ -281,8 +281,8 @@
 	font-size:12px;	
 	letter-spacing:2px;
 	background-color:#f0ffe3;
-	padding-top:17px;
-	padding-bottom:4px;
+	padding-top:15px;
+	padding-bottom:12px;
 	padding-left:47px;	
 	padding-right:47px;
 	border-style:solid;
@@ -294,7 +294,7 @@
 	border-bottom-color:#FFF;
 }
 .customer_middle{ 
-    margin-top:40px;        
+    margin-top:46px;        
 	float:left;
 	width:707px;
 	height:1740px;
