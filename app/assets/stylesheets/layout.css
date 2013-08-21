@@ -440,6 +440,24 @@ width:12px;
 	margin-right:100px;
 }
 
+.member-text2-mid{
+	padding-top:26px;
+	font-family:Arial,'YouYuan','SimSun';
+	font-weight:bold;
+	color:#6eb92b;
+	font-size:15px;
+	background-color:#f0fee4;
+	height:32px;
+	width:220px;
+	margin-top:5px;
+	text-align:left;
+	margin-right:55px;
+}
+
+.member-text2-mid-position{
+	margin-left:17px;
+}
+
 .member-text2-aboutJN{
 	padding-top:26px;
 	font-family:Arial,'YouYuan','SimSun';
@@ -509,6 +527,19 @@ width:12px;
 list-style-type:none; 
 margin-top:-12px;
 }
+
+.member-text3-1-1{
+	padding-top:26px;
+	font-family:Arial,'YouYuan','SimSun';
+	font-weight:bold;
+	color:#6eb92b;
+	font-size:15px;
+	width:212px;
+list-style-type:none; 
+margin-left:-70px;
+margin-top:-12px;
+}
+
 
 .member-text3-history{
 	padding-top:26px;
@@ -729,6 +760,13 @@ margin-top:-12px;
 	  border-bottom-width:1px;
 }
 
+.contactus-weibobor-1-1{
+	  margin-bottom:23px;
+	  border-bottom-style:solid;
+	  border-bottom-color:#d6f0c0;
+	  border-bottom-width:1px;
+}
+
 .between-the-ads{
 	border-bottom-style:dashed;
 	border-bottom-color:#d6f0c0;
@@ -764,6 +802,12 @@ margin-top:-12px;
   border-bottom-color:#d6f0c0;
 }
 
+.put-on-left-block-1{
+  border-bottom-style:solid;
+  border-bottom-width:1px;
+  border-bottom-color:#d6f0c0;
+}
+
 .member-text3-history{
   padding-top:26px;
   font-family:Arial,'YouYuan','SimSun';
@@ -773,3 +817,13 @@ margin-top:-12px;
   width:212px;
 list-style-type:none; 
 margin-top:-12px;}
+
+/*写在最后的修改处*/
+
+.for-one-line-left{
+	border-bottom-style:solid;
+	border-bottom-color:#d6f0c0;
+	border-bottom-width:1px;
+	width:229px;
+}
+	
