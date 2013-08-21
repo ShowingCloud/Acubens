@@ -1,8 +1,7 @@
 @charset "utf-8";
 /* CSS Document */
 body{
-	/*font-family:"幼圆" !important;*/
-	font-family:'幼圆';
+	font-family:Arial,'YouYuan','SimSun';
 	text-align:left;
 	margin:0px 0px 0px 0px;
 	padding:0px 0px 0px 0px;
