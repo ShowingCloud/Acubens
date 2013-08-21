@@ -68,7 +68,7 @@
 	}
 	
 .index-text1{
-	font-family:'YouYuan';
+	font-family:Arial,'YouYuan','SimSun';
 	font-weight:bold;
 	color:#7fc244;
 	font-size:14px;
@@ -78,7 +78,7 @@
 	float:left;	
 }
 .index-text2{
-	font-family:'YouYuan';
+	font-family:Arial,'YouYuan','SimSun';
 	font-weight:bold;
 background-color:#bbdf9d;
 	color:#FFF;
@@ -98,7 +98,7 @@ background-color:#bbdf9d;
 	margin-top:20px;
 	height:26px;
 	margin-top:270px;
-	font-family:'YouYuan';
+	font-family:Arial,'YouYuan','SimSun';
 	font-weight:bold;
 	color:#666666;
 	font-size:15px;
@@ -138,7 +138,7 @@ background-color:#bbdf9d;
 .last-text-tail{
 	font-size:12px;
 	color:#666666;
-	font-family:'YouYuan';
+	font-family:Arial,'YouYuan','SimSun';
 	font-weight:bold;
 	margin-left:6px;
 	padding-top:6px;
@@ -149,7 +149,7 @@ background-color:#bbdf9d;
 .last-text-tail-small{
 	font-size:11px;
 	color:#a7a7a7;
-	font-family:'YouYuan';
+	font-family:Arial,'YouYuan','SimSun';
 	font-weight:bold;
 	margin-top:-5px;
 	list-style-type:none;
@@ -159,7 +159,7 @@ background-color:#bbdf9d;
 .news-text1{
 	width:270px;
 	height:65px;
-	font-family:'YouYuan';
+	font-family:Arial,'YouYuan','SimSun';
 	font-weight:bold;
 	font-size:11px;
 	color:#666666;
@@ -176,7 +176,7 @@ background-color:#bbdf9d;
 .news-text2{
 	width:270px;
 	height:65px;
-	font-family: 'YouYuan';
+	font-family: Arial,'YouYuan','SimSun';
 	font-size:11px;
 	font-weight:bold;
 	color:#666666;
