@@ -47,12 +47,6 @@
 	padding-top:4px;
 	border-color:#f0ffe3;
 }
-/*.clean_right{
-	float:right;
-	width:650px;
-	height:294px;
-	background-color:#FF0;
-}*/
 .clean_right01{
 	float:left;
 	padding-top:110px;
@@ -175,4 +169,191 @@
 	border-width:0px;
 	color:#ffffff;
 	border-radius:8px;
+}
+/*products-homecream*/
+.cream_left{
+	height:580px;
+	width:70px;
+	float:left;
+	margin-top:20px;
+}
+.leftcontent_left{
+	width:35px;
+	height:548px;
+	float:left;
+	background-color:#f0ffe3;
+}
+.cream_left01{
+	float:left;
+	width:25px;
+	font-size:12px;
+	color:#6eb92b;
+	letter-spacing:17px;
+	padding-left:10px;
+	padding-top:20px;
+}
+.cream_left02{
+	float:left;
+	width:18px;
+	background-color:#bbdf9d;
+	font-size:12px;
+	color:#ffffff;
+	letter-spacing:17px;
+	margin-left:6px;
+	padding-left:4px;
+	margin-top:8px;
+	margin-bottom:70px;
+	border-radius:8px;
+	border-width:0px;	
+}
+.cream_left03{
+	float:right;
+	width:24px;
+	height:434px;
+	font-size:12px;
+	color:#bbdf9d;
+	letter-spacing:17px;
+	padding-left:10px;
+	border-style:none solid solid none;
+	border-width:1px;
+	padding-top:112px;
+	border-color:#f0ffe3;
+}
+.cream_right01{
+	float:left;
+	padding-top:145px;
+	padding-bottom:10px;
+	padding-left:45px;
+}
+.cream_right02{
+	float:left;
+	padding-top:125px;
+	padding-bottom:10px;
+	padding-left:75px;
+}
+.cream_right03{
+	float:left;
+	padding-top:65px;
+	padding-bottom:10px;
+	padding-left:60px;
+}
+.cream_right04{
+	float:left;
+	padding-top:113px;
+	padding-bottom:10px;
+	padding-left:40px;
+}
+.cream_right05{
+	float:left;
+	padding-top:125px;
+	padding-bottom:10px;
+	padding-left:30px;
+}
+.cream_right06{
+	float:left;
+	padding-top:125px;
+	padding-bottom:10px;
+	padding-left:70px;
+}
+.cream_right07{
+	float:left;
+	padding-top:65px;
+	padding-bottom:10px;
+	padding-left:55px;
+}
+.cream_right08{
+	float:left;
+	padding-top:113px;
+	padding-bottom:10px;
+	padding-left:35px;
+}
+/*products-peeling*/
+.peeling_left02{
+	float:left;
+	width:25px;
+	height:194px;
+	background-color:#f0ffe3;
+	font-size:12px;
+	color:#6eb92b;
+	letter-spacing:17px;
+	padding-left:10px;
+	padding-top:65px;
+}
+.peeling_left03{
+	float:right;
+	width:24px;
+	height:203px;
+	font-size:12px;
+	color:#bbdf9d;
+	letter-spacing:17px;
+	padding-left:10px;
+	border-style:none solid solid none;
+	border-width:1px;
+	line-height:14px;
+	padding-top:56px;
+	border-color:#f0ffe3;
+}
+.peeling_right01{
+	float:left;
+	padding-top:105px;
+	padding-bottom:10px;
+	padding-left:24px;
+}
+.peeling_right02{
+	float:left;
+	padding-top:105px;
+	padding-bottom:10px;
+	padding-left:50px;
+}
+.peeling_right03{
+	float:left;
+	padding-top:13px;
+	padding-bottom:10px;
+	padding-left:50px;
+}
+.peeling_right04{
+	float:left;
+	padding-top:13px;
+	padding-bottom:10px;
+	padding-left:50px;
+}
+/*products-ind-slogan*/
+.slogan_left{
+	height:240px;
+	width:120px;
+	float:left;
+	margin-top:20px;
+	border-top-left-radius:20px;
+	background-color:#f0ffe3;	
+}
+.slogan_left01{
+	font-size:24px;
+	color:#bbdf9d;
+	text-align:center;
+	line-height:35px;
+}
+.slogan_left02{
+	font-size:14px;
+	color:#6eb92b;
+	text-align:center;
+}
+.slogan_pic01{
+	float:left;
+	width:156px;
+	height:240px;
+	margin-top:20px;
+	padding-left:30px;
+}
+.slogan_txt01{
+	float:left;
+	font-size:14px;
+	color:#6eb92b;
+	margin-top:50px;
+}
+.slogan_txt02{
+	float:left;
+	width:414px;
+	margin-top:27px;
+	font-size:12px;
+	color:#999999;
 }
