@@ -341,9 +341,8 @@ nav ul .last {
 
 .basket1{
 	width:231px;
-	height:92px;
-	border-bottom:solid;
-	
+	height:85.5px;
+	border-bottom:solid;	
 	border-bottom-color:#d6f0c0;
 	border-bottom-width:1px;
 }
@@ -404,14 +403,14 @@ nav ul .last {
 	height:80px;
 	text-align:center;
 	margin-left:5.5px;
-	margin-top:8px;
+	margin-top:5.5px;
 }
 
 .member-text{
 	font-family:Arial,'YouYuan','SimSun';
 	font-weight:bold;
 	color:#6eb92b;
-	font-size:15px;
+	font-size:16px;
 	padding-top:35px;	
 }
 
@@ -420,15 +419,15 @@ nav ul .last {
 }
 
 .img-margin{
-	width:12px;
+	width:10px;
 	margin-top:8px;
-	 margin-left:17px;
+	margin-left:4px;
 }
 
 .img-margin2{
-	margin-top:8px; 
-margin-left:-5px;
-width:12px;
+	margin-top:10px; 
+	margin-left:-5px;
+	width:10px;
 }
 	
 .member-text2{
@@ -436,7 +435,7 @@ width:12px;
 	font-family:Arial,'YouYuan','SimSun';
 	font-weight:bold;
 	color:#6eb92b;
-	font-size:15px;
+	font-size:14px;
 	margin-right:100px;
 }
 
@@ -521,7 +520,7 @@ width:12px;
 	font-family:Arial,'YouYuan','SimSun';
 	font-weight:bold;
 	color:#6eb92b;
-	font-size:15px;
+	font-size:12px;
 	margin-right:100px;
 	width:212px;
 list-style-type:none; 
