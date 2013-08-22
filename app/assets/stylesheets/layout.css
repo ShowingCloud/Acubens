@@ -462,11 +462,16 @@ nav ul .last {
 	font-family:Arial,'YouYuan','SimSun';
 	font-weight:bold;
 	color:#6eb92b;
-	font-size:15px;
+	font-size:14px;
 	margin-right:100px;
 	text-align:left;
 	margin-left:18px;
 	width:200px;
+}
+
+.member-text2-aboutJN a {
+	color:#6eb92b;
+
 }
 
 .member-text2-aboutJN-lastone{
@@ -481,7 +486,9 @@ nav ul .last {
 	width:150px;
 
 }
-
+.member-text2-aboutJN-lastone a {
+	color:#6eb92b;
+}
 
 
 
@@ -505,7 +512,7 @@ nav ul .last {
 	font-family:Arial,'YouYuan','SimSun';
 	font-weight:bold;
 	color:#6eb92b;
-	font-size:15px;
+	font-size:14px;
 	background-color:#f0fee4;
 	margin-top:12px;
 	height:45px;
