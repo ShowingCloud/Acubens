@@ -194,7 +194,7 @@
 }
 .cream_left02{
 	float:left;
-	width:18px;
+	width:16px;
 	background-color:#bbdf9d;
 	font-size:12px;
 	color:#ffffff;
@@ -318,6 +318,10 @@
 	padding-left:50px;
 }
 /*products-ind-slogan*/
+.slogan_content{
+	width:720px;
+	float:left;
+}
 .slogan_left{
 	height:240px;
 	width:120px;
@@ -352,8 +356,52 @@
 }
 .slogan_txt02{
 	float:left;
-	width:414px;
+	width:385px;
 	margin-top:27px;
 	font-size:12px;
 	color:#999999;
+}
+.slogan_right{
+	float:right;
+	width:414px;
+	height:260px;
+}
+.slogan_right01{
+	width:100px;
+	float:left;
+}
+.slogan_right02{
+	float:left;
+	width:414px;
+}
+.slogan_detail{
+	margin-top:18px;
+	float:left;
+    text-align:left;
+	background-color:#6eb92b;
+	width:75px;
+	height:18px;
+	border-width:0px;
+	color:#ffffff;
+	border-radius:8px;
+}
+.slogan_pic{
+	margin-top:18px;
+	margin-left:-16px;
+}
+.slogan_left03{
+	height:474px;
+	width:120px;
+	float:left;
+	margin-top:20px;
+	border-top-left-radius:20px;
+	background-color:#f0ffe3;
+}
+.slogan_pic02{
+	padding-top:48px;
+	float:left;
+	width:156px;
+	height:192px;
+	margin-top:20px;
+	padding-left:30px;
 }
