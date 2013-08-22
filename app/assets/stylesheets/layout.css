@@ -351,7 +351,7 @@ nav ul .last {
 	width:212px;
 	border-bottom:dashed;
 	height:70px;
-	border-bottom-color:#d6f0c0;
+	border-color:#d6f0c0;
 	border-bottom-width:1px;
 	
 }
@@ -437,6 +437,10 @@ nav ul .last {
 	color:#6eb92b;
 	font-size:14px;
 	margin-right:100px;
+}
+
+.member-text2 a {
+	color:#6eb92b;
 }
 
 .member-text2-mid{
@@ -534,16 +538,20 @@ list-style-type:none;
 margin-top:-12px;
 }
 
+.member-text3 a {
+	color:#6eb92b;
+}
+
 .member-text3-1-1{
 	padding-top:26px;
 	font-family:Arial,'YouYuan','SimSun';
 	font-weight:bold;
 	color:#6eb92b;
-	font-size:15px;
+	font-size:12px;
 	width:212px;
-list-style-type:none; 
-margin-left:-70px;
-margin-top:-12px;
+	list-style-type:none; 
+	margin-left:-74px;
+	margin-top:-12px;
 }
 
 
@@ -592,6 +600,8 @@ margin-top:-12px;
 	margin-left:-36px;
 	 margin-top:14px;
 }
+
+
 
 .zone3{
 	background-color:#f0fee4;
