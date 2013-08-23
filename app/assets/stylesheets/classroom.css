@@ -20,9 +20,6 @@
 	float:right;
 	width:480px;
 }
-.rightclass_middle_right span{
-	display:block;
-}
 .rightclass_middle_right01{
 	width:480px;
 	height:54px;
@@ -63,6 +60,7 @@
 	font-size:12px;
 	color:#666666;
 	line-height:20px;
+	width:470px;
 }
 .rightclass_middle_right05{
 	width:480px;
@@ -98,7 +96,8 @@
 	float:left;
 	width:60px;
 	font-size:12px;
-	color:#bbdf9d;	
+	color:#bbdf9d;
+	padding-left:5px;	
 }
 
 .classcontent_txt01 a{
@@ -163,10 +162,12 @@
 	font-size:14px;
 	color:#6eb92b;
 	margin-top:17px;
+	padding-left:5px;
 }
 .classcontent_middle_right02{
-	height:70px;
 	font-size:12px;
 	color:#666666;
 	line-height:20px;
+	width:450px;
+	padding-left:5px;
 }
