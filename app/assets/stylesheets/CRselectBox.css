@@ -1,0 +1,57 @@
+/** Dev by CssRain.cn **/
+html,body,ul,li,div,a{margin:0;padding:0;font-size:12px;}
+.CRselectBox {
+	background:#FFFFFF url(./images/select_box_off.gif) no-repeat right center;
+	border:1px solid #999;
+	cursor:pointer;
+	display:block;
+	width: 100px; height: 20px;
+}
+.CRselectBoxHover {
+	background:#FFFFFF url(./images/select_box_on.gif) no-repeat right center;
+}
+.CRselectBox a.CRselectValue {
+	display:block;
+	margin:1px 1px 2px;
+	padding:1px 20px 2px 4px;
+	white-space:nowrap;
+	color:#000;	
+	overflow:hidden;
+	width:74px;
+}
+.CRselectBoxOptions {
+	background:#FFFFFF;
+	border:1px solid #999;
+	margin-left:-1px;
+	list-style:none;
+	overflow-y:auto;
+	z-index:1000;
+	position: absolute;
+	width:100px;height:100px;display:none;
+	overflow:auto;
+}
+.CRselectBoxOptions a{
+	color:#000;
+	display:block;
+	height:22px;
+	line-height:22px;
+	padding-left:4px;
+	background:#fff;	
+	overflow:hidden;
+	white-space:nowrap;
+}
+.CRselectBoxOptions a:hover{
+	background:#bbb
+}
+.CRselectBoxOptions a.selected{
+	background:#bbb
+}
+/* ��� firefox ����Ŵ�������߿򣬴Ӷ��¹�����������  */
+.CRselectBox a { 
+	outline: none; 
+	text-decoration:none;
+}
+.CRselectBox a:focus { 
+	outline: none; 
+	text-decoration:none;
+} 
