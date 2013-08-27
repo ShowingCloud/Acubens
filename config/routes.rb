@@ -3,6 +3,7 @@ Acubens::Application.routes.draw do
   resources :membership do
 	  collection do
 		  get :index
+		  post :verifymobile
 	  end
   end
 
