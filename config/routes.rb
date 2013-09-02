@@ -4,6 +4,7 @@ Acubens::Application.routes.draw do
 	  collection do
 		  get :index
 		  post :verifymobile
+		  post :register
 	  end
   end
 

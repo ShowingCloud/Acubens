@@ -53,3 +53,5 @@ gem 'refinerycms-i18n', '~> 2.0.0'
 gem 'yaml_db'
 
 gem 'savon'
+
+gem "galetahub-simple_captcha", :require => "simple_captcha"
