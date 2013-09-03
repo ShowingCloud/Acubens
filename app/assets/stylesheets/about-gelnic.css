@@ -64,7 +64,8 @@
 	color:#999999;	
 }
 .concept_middle_2_txt04 p{
-	line-height:24px;
+	line-height:12px;
+	margin-top:4px;
 }
 .concept_middle_2_right03{
 	float:right;
@@ -82,13 +83,14 @@
 }
 .concept_middle_3_pic{
 	margin-top:28px;
-	margin-left:3px;
+	margin-left:6px;
 	margin-right:54px;
 }
 .concept_middle_3_bottom{
 	margin-top:16px;
 	width:144px;
 	height:68px;
+	float:left;
 }
 .concept_middle_3_txt03{
 	width:120px;
@@ -124,7 +126,7 @@
 	line-height:24px;
 	letter-spacing:1px;
 	padding-left:18px;
-	width:684px;
+	width:657px;
 }
 .history_middle_2_txt01{
 	font-size:14px;
@@ -312,7 +314,6 @@
 .story_middle_14{
 	height:64px;
 	float:left;
-	height:64px;
 }
 .story_middle_14_left{
 	float:left;
@@ -320,6 +321,7 @@
 	color:#aaaaaa;
 	line-height:18px;
 	margin-left:16px;
+	width:700px;
 }
 .story_middle_14_txt01{
 	letter-spacing:10px;
@@ -327,7 +329,7 @@
 }
 .story_middle_14_right{
 	float:left;
-	width:686px;
+	width:650px;
 	height:64px;
 	font-size:12px;
 	color:#aaaaaa;
