@@ -98,8 +98,8 @@ refinery_pages:
     - true
     - false
     - false
-    - 42
-    - 43
+    - 40
+    - 41
     - 1
     - resettel
     - application
@@ -115,30 +115,13 @@ refinery_pages:
     - true
     - false
     - false
-    - 46
-    - 47
+    - 44
+    - 45
     - 1
     - resetpwd
     - application
     - 2013-07-31 18:37:57.000000000 Z
     - 2013-08-15 12:22:45.000000000 Z
-  - - 7
-    - 20
-    - 
-    - 会员制度
-    - true
-    - ''
-    - 
-    - true
-    - false
-    - false
-    - 40
-    - 41
-    - 1
-    - membersystem
-    - application
-    - 2013-07-31 18:38:21.000000000 Z
-    - 2013-08-15 12:21:33.000000000 Z
   - - 8
     - 20
     - 
@@ -149,8 +132,8 @@ refinery_pages:
     - true
     - false
     - false
-    - 44
-    - 45
+    - 42
+    - 43
     - 1
     - changeinfo
     - application
@@ -166,8 +149,8 @@ refinery_pages:
     - true
     - false
     - false
-    - 50
-    - 51
+    - 48
+    - 49
     - 1
     - firstlogin
     - application
@@ -183,8 +166,8 @@ refinery_pages:
     - true
     - false
     - false
-    - 52
-    - 53
+    - 50
+    - 51
     - 1
     - mailverify
     - application
@@ -200,8 +183,8 @@ refinery_pages:
     - true
     - false
     - false
-    - 48
-    - 49
+    - 46
+    - 47
     - 1
     - pwdverify
     - application
@@ -427,7 +410,7 @@ refinery_pages:
     - home
     - application
     - 2013-07-31 19:09:53.000000000 Z
-    - 2013-08-21 05:12:33.000000000 Z
+    - 2013-09-03 15:53:04.000000000 Z
   - - 27
     - 20
     - 
@@ -461,7 +444,7 @@ refinery_pages:
     - concept-last
     - application
     - 2013-08-20 07:11:49.000000000 Z
-    - 2013-08-20 07:11:49.000000000 Z
+    - 2013-09-03 16:28:29.000000000 Z
   - - 29
     - 19
     - 
@@ -478,7 +461,7 @@ refinery_pages:
     - history-last
     - application
     - 2013-08-20 07:12:22.000000000 Z
-    - 2013-08-20 07:52:02.000000000 Z
+    - 2013-09-03 16:50:00.000000000 Z
   - - 30
     - 19
     - 
@@ -495,7 +478,7 @@ refinery_pages:
     - about-safety-last
     - application
     - 2013-08-20 07:12:49.000000000 Z
-    - 2013-08-20 07:13:12.000000000 Z
+    - 2013-09-03 16:31:21.000000000 Z
   - - 31
     - 19
     - 
@@ -512,7 +495,7 @@ refinery_pages:
     - story-at-last
     - application
     - 2013-08-20 07:14:07.000000000 Z
-    - 2013-08-22 09:54:37.000000000 Z
+    - 2013-09-03 16:47:06.000000000 Z
   - - 32
     - 1
     - 
@@ -563,7 +546,7 @@ refinery_pages:
     - tips-tech-last-pig
     - application
     - 2013-08-21 10:25:20.000000000 Z
-    - 2013-08-21 10:26:46.000000000 Z
+    - 2013-09-03 15:41:58.000000000 Z
   - - 35
     - 22
     - 
@@ -580,7 +563,7 @@ refinery_pages:
     - customers-voice-last-pig
     - application
     - 2013-08-21 10:26:29.000000000 Z
-    - 2013-08-21 10:26:29.000000000 Z
+    - 2013-09-03 15:45:14.000000000 Z
   - - 36
     - 1
     - 
@@ -597,7 +580,7 @@ refinery_pages:
     - missJu-class-last-pig
     - application
     - 2013-08-21 10:28:04.000000000 Z
-    - 2013-08-21 10:45:17.000000000 Z
+    - 2013-09-03 15:55:07.000000000 Z
   - - 37
     - 1
     - 
@@ -614,7 +597,7 @@ refinery_pages:
     - missJu-detail-last-pig
     - application
     - 2013-08-21 11:06:54.000000000 Z
-    - 2013-08-21 16:37:33.000000000 Z
+    - 2013-09-03 15:59:24.000000000 Z
   - - 38
     - 18
     - 
@@ -625,8 +608,8 @@ refinery_pages:
     - true
     - false
     - false
-    - 30
-    - 31
+    - 28
+    - 29
     - 1
     - products-cleansing
     - application
@@ -659,8 +642,8 @@ refinery_pages:
     - true
     - false
     - false
-    - 28
-    - 29
+    - 32
+    - 33
     - 1
     - products-homecream
     - application
@@ -676,8 +659,8 @@ refinery_pages:
     - true
     - false
     - false
-    - 32
-    - 33
+    - 30
+    - 31
     - 1
     - products-peeling
     - application
@@ -700,3 +683,20 @@ refinery_pages:
     - application
     - 2013-08-26 17:56:58.000000000 Z
     - 2013-08-26 18:05:52.000000000 Z
+  - - 43
+    - 20
+    - 
+    - 会员制度
+    - true
+    - ''
+    - 
+    - true
+    - false
+    - false
+    - 52
+    - 53
+    - 1
+    - membersystem
+    - application
+    - 2013-09-03 15:08:32.000000000 Z
+    - 2013-09-03 15:30:43.000000000 Z

@@ -96,20 +96,6 @@ refinery_page_parts:
     - 1
     - 2013-07-31 18:37:57.000000000 Z
     - 2013-08-15 12:22:45.000000000 Z
-  - - 12
-    - 7
-    - Body
-    - ''
-    - 0
-    - 2013-07-31 18:38:21.000000000 Z
-    - 2013-08-15 12:21:33.000000000 Z
-  - - 13
-    - 7
-    - Side Body
-    - ''
-    - 1
-    - 2013-07-31 18:38:21.000000000 Z
-    - 2013-08-15 12:21:33.000000000 Z
   - - 14
     - 8
     - Body
@@ -334,20 +320,13 @@ refinery_page_parts:
     - 1
     - 2013-07-31 18:49:52.000000000 Z
     - 2013-08-20 07:34:21.000000000 Z
-  - - 48
-    - 25
-    - Body
-    - ''
-    - 0
-    - 2013-07-31 19:09:53.000000000 Z
-    - 2013-08-21 05:12:34.000000000 Z
   - - 49
     - 25
     - Side Body
     - ''
-    - 1
+    - 0
     - 2013-07-31 19:09:53.000000000 Z
-    - 2013-08-21 05:12:34.000000000 Z
+    - 2013-09-03 15:53:04.000000000 Z
   - - 52
     - 27
     - Body
@@ -362,62 +341,34 @@ refinery_page_parts:
     - 1
     - 2013-08-15 12:33:25.000000000 Z
     - 2013-08-15 12:33:25.000000000 Z
-  - - 54
-    - 28
-    - Body
-    - ''
-    - 0
-    - 2013-08-20 07:11:49.000000000 Z
-    - 2013-08-20 07:11:49.000000000 Z
   - - 55
     - 28
     - Side Body
     - ''
-    - 1
-    - 2013-08-20 07:11:49.000000000 Z
-    - 2013-08-20 07:11:49.000000000 Z
-  - - 56
-    - 29
-    - Body
-    - ''
     - 0
-    - 2013-08-20 07:12:22.000000000 Z
-    - 2013-08-20 07:52:02.000000000 Z
+    - 2013-08-20 07:11:49.000000000 Z
+    - 2013-09-03 16:28:29.000000000 Z
   - - 57
     - 29
     - Side Body
     - ''
-    - 1
-    - 2013-08-20 07:12:22.000000000 Z
-    - 2013-08-20 07:52:02.000000000 Z
-  - - 58
-    - 30
-    - Body
-    - ''
     - 0
-    - 2013-08-20 07:12:49.000000000 Z
-    - 2013-08-20 07:13:12.000000000 Z
+    - 2013-08-20 07:12:22.000000000 Z
+    - 2013-09-03 16:50:00.000000000 Z
   - - 59
     - 30
     - Side Body
     - ''
-    - 1
-    - 2013-08-20 07:12:49.000000000 Z
-    - 2013-08-20 07:13:12.000000000 Z
-  - - 60
-    - 31
-    - Body
-    - ''
     - 0
-    - 2013-08-20 07:14:07.000000000 Z
-    - 2013-08-22 09:54:37.000000000 Z
+    - 2013-08-20 07:12:49.000000000 Z
+    - 2013-09-03 16:31:21.000000000 Z
   - - 61
     - 31
     - Side Body
     - ''
-    - 1
+    - 0
     - 2013-08-20 07:14:07.000000000 Z
-    - 2013-08-22 09:54:37.000000000 Z
+    - 2013-09-03 16:47:06.000000000 Z
   - - 62
     - 32
     - Body
@@ -446,62 +397,27 @@ refinery_page_parts:
     - 1
     - 2013-08-20 08:36:18.000000000 Z
     - 2013-08-20 08:36:18.000000000 Z
-  - - 66
-    - 34
-    - Body
-    - ''
-    - 0
-    - 2013-08-21 10:25:20.000000000 Z
-    - 2013-08-21 10:26:46.000000000 Z
-  - - 67
-    - 34
-    - Side Body
-    - ''
-    - 1
-    - 2013-08-21 10:25:20.000000000 Z
-    - 2013-08-21 10:26:46.000000000 Z
-  - - 68
-    - 35
-    - Body
-    - ''
-    - 0
-    - 2013-08-21 10:26:29.000000000 Z
-    - 2013-08-21 10:26:29.000000000 Z
   - - 69
     - 35
     - Side Body
     - ''
-    - 1
-    - 2013-08-21 10:26:29.000000000 Z
-    - 2013-08-21 10:26:29.000000000 Z
-  - - 70
-    - 36
-    - Body
-    - ''
     - 0
-    - 2013-08-21 10:28:04.000000000 Z
-    - 2013-08-21 10:45:17.000000000 Z
+    - 2013-08-21 10:26:29.000000000 Z
+    - 2013-09-03 15:45:14.000000000 Z
   - - 71
     - 36
     - Side Body
     - ''
-    - 1
-    - 2013-08-21 10:28:04.000000000 Z
-    - 2013-08-21 10:45:17.000000000 Z
-  - - 72
-    - 37
-    - Body
-    - ''
     - 0
-    - 2013-08-21 11:06:54.000000000 Z
-    - 2013-08-21 16:37:33.000000000 Z
+    - 2013-08-21 10:28:04.000000000 Z
+    - 2013-09-03 15:55:07.000000000 Z
   - - 73
     - 37
     - Side Body
     - ''
-    - 1
+    - 0
     - 2013-08-21 11:06:54.000000000 Z
-    - 2013-08-21 16:37:33.000000000 Z
+    - 2013-09-03 15:59:24.000000000 Z
   - - 74
     - 38
     - Body
@@ -572,3 +488,738 @@ refinery_page_parts:
     - 1
     - 2013-08-26 17:56:59.000000000 Z
     - 2013-08-26 18:05:52.000000000 Z
+  - - 86
+    - 43
+    - memsys
+    - "<div class=\"institution_middle_1\">\r\n                <div class=\"institution_middle_title\">\r\n
+      \                会员权益\r\n                </div>\r\n                <div class=\"middle_1_content\">\r\n
+      \                    <ul>\r\n                              <li>\r\n                                    \r\n
+      \                                   注册送积分：注册即送100积分，并有机会获得Gelnic【洁面+去角质+多效滋润凝露】惊喜感受套装\r\n
+      \                                   \r\n                              </li>\r\n
+      \                             <li>\r\n                                    \r\n
+      \                                   积分换礼：每年2次换礼申请，臻选心动好礼\r\n                                    \r\n
+      \                             </li>\r\n                              <li>\r\n
+      \                                  \r\n                                   最新促销信息：提前得知最新促销活动等信息\r\n
+      \                                 \r\n                              </li>\r\n
+      \                             <li>\r\n                                   \r\n
+      \                                  会员专享优惠：享受会员专属促销优惠\r\n                                   \r\n
+      \                             </li>\r\n                              <li>\r\n
+      \                               \r\n                                   新品体验：优先获得新品或限定品体验机会\r\n
+      \                                  \r\n                              </li>\r\n
+      \                             <li>\r\n                               \r\n                                   美研沙龙：有机会受邀参加美研沙龙或讲座\r\n
+      \                                 \r\n                              </li>\r\n
+      \                             <li>\r\n                                   \r\n
+      \                                  健康贴士及资讯：定期获取温馨健康贴士及专业资讯\r\n                                 \r\n
+      \                             </li>\r\n                              <li>\r\n
+      \                                  \r\n                                   电子会刊：定期会员电子专刊\r\n
+      \                                \r\n                              </li>\r\n
+      \                    </ul>\r\n                </div>\r\n           </div>\r\n<div
+      class=\"institution_middle_2\">\r\n                <div class=\"institution_middle_title\">\r\n
+      \               会员积分规则\r\n                </div>\r\n                <div class=\"middle_2_top\">\r\n
+      \                    <ul>\r\n                              <li>\r\n                              1元消费=1个积分\r\n
+      \                             </li>\r\n                              <li>\r\n
+      \                           绑定天猫账号、京东账号后，在天猫商城及京东商城上购买gelnic商品，享受1元消费=1个积分的积分累计奖励。（绑定账号后系统自\r\n
+      \                             </li>\r\n                              <li>\r\n
+      \                             动累计积分）积分可在积分商城兑换相应礼品。\r\n                              </li>\r\n
+      \                    </ul>\r\n                </div>\r\n                <div
+      class=\"middle_2_content\">\r\n                     <ul>\r\n                              <li>\r\n
+      \                                  \r\n                                     积分累计暂时只针对大陆地区会员开放。\r\n
+      \                                 \r\n                              </li>\r\n
+      \                             <li>\r\n                                     \r\n
+      \                                    会员积分有效期为2年。\r\n                                    \r\n
+      \                             </li>\r\n                              <li>\r\n
+      \                                    \r\n                                     发生退货时会相应地影响积分。\r\n
+      \                                   \r\n                              </li>\r\n
+      \                             <li>\r\n                                     \r\n
+      \                                    会员身份失效积分亦相应失效。\r\n                                   \r\n
+      \                             </li>\r\n                              <li>\r\n
+      \                                    \r\n                                     会员推荐好友至gelnic官网并注册成功，即或200积分奖励\r\n
+      \                                   \r\n                              </li>\r\n
+      \                             \r\n                     </ul>\r\n                </div>\r\n
+      \               <div class=\"middle_2_bottom\">\r\n                     <ul>\r\n
+      \                             <li>\r\n                              积分兑换及查询途径\r\n
+      \                             </li>\r\n                              <li>\r\n
+      \                             A.登陆官方网站查询：&#160;&#160;www.gelnic.com.cn\r\n                              </li>\r\n
+      \                             <li>\r\n                              B.拨打客户热线查询：&#160;&#160;800-000-0000\r\n
+      \                             </li>\r\n                     </ul>\r\n                </div>
+      \  \r\n          </div>"
+    - 0
+    - 2013-09-03 15:27:00.000000000 Z
+    - 2013-09-03 15:30:43.000000000 Z
+  - - 87
+    - 34
+    - tiptech
+    - "<div class=\"tips1_top\">\r\n                 <div class=\"tips1_middle_pic01\">\r\n
+      \                      <img src=\"/assets/img/tips-tips.png\" width=\"720\"
+      height=\"181\" />\r\n                 </div>                \r\n           </div>\r\n
+      \          <div class=\"tips1_middle\">\r\n                <div class=\"tips1_middle_01\">\r\n
+      \                      <div class=\"tips1_middle_pic01\">\r\n                             <img
+      src=\"/assets/img/days-protect.png\" width=\"68\" height=\"73\" />\r\n                       </div>\r\n
+      \                      <div class=\"tips1_middle_txt01\">日常护肤</div>\r\n                       <div
+      class=\"tips1_middle_txt02\">需注意的事项</div>\r\n                </div>\r\n                <div
+      class=\"tips1_middle_left01\">\r\n                       <div class=\"tips1_middle_left02\">\r\n
+      \                            <div class=\"tips1_middle_txt03\">夏季护理注意事项：</div>\r\n
+      \                      </div>\r\n                       <div class=\"tips1_middle_left05\">\r\n
+      \                            <ul>\r\n                                 <li>\r\n
+      \                                      油性和混合性皮肤要关注控油的工作，一周最好做两次深入清洁的周护理，当然，千万别因为出油而过度清洁，这样做也会破坏肌肤PH值，给细菌乘虚而入的机会。\r\n
+      \                                </li>\r\n                                 <li>\r\n
+      \                              干性皮肤要更为注重保湿，流汗并不代表皮肤处于湿润状态，汗水蒸发后，表皮会更为干燥。\r\n
+      \                                </li>\r\n                            </ul>\r\n
+      \                      </div>\r\n                </div>\r\n                <div
+      class=\"tips1_middle_right01\">\r\n                        <img src=\"/assets/img/summer-pro-without-shadow.png\"
+      width=\"276\" height=\"210\" />\r\n                </div>\r\n                <div
+      class=\"tips1_middle_left06\">\r\n                        <img src=\"/assets/img/autumn-pro-only-without-shadow.png\"
+      width=\"276\" height=\"210\" />\r\n                </div>\r\n                <div
+      class=\"tips1_middle_right02\">\r\n                       <div class=\"tips1_middle_left02\">\r\n
+      \                            <div class=\"tips1_middle_txt03\">秋季护理注意事项：</div>\r\n
+      \                      </div>\r\n                       <div class=\"tips1_middle_right03\">\r\n
+      \                             <div class=\"tips1_middle_txt04\">美白防晒是一年四季的功课，千万不能\"三天打渔，两天晒网\"，夏季虽然过去，秋季还要坚持，秋冬季是重要的美白时机，如能及时的将夏季遗留下的黑色素分解，就会预防和缓解色斑的出现。</div>\r\n
+      \                            <div class=\"tips1_middle_txt04\">秋季也是特别适合\"进补\"的时节，在日常护理后，可以特别加入精华的护理，保护好肌底，秋季干燥阴冷，油脂，汗液分泌减少，需注意加强保湿，让皮肤喝饱水。</div>\r\n
+      \                      </div>\r\n                </div>\r\n                <div
+      class=\"tips1_middle_left07\">\r\n                       <div class=\"tips1_middle_left02\">\r\n
+      \                            <div class=\"tips1_middle_txt03\">卸妆注意事项：</div>\r\n
+      \                      </div>\r\n                      <div class=\"tips1_middle_left10\">\r\n
+      \                            <ul>\r\n                                    <li>\r\n
+      \                                         卸妆顺序：先卸除眼部、唇部的彩妆，再卸除脸部全部妆容。\r\n                                    </li>\r\n
+      \                                   <li>\r\n                                          卸妆前：要保持手和脸部干燥，以免减弱油分融合化妆品的能力。\r\n
+      \                                   </li>\r\n                                    <li>\r\n
+      \                                         卸妆后：不要让卸妆产品在皮肤上停留太久，以温水冲洗，之后再用洗面乳清洗一次，再用爽肤液对肌肤做最后的清洁。\r\n
+      \                                   </li>\r\n                            </ul>\r\n
+      \                     </div>\r\n                </div>\r\n                <div
+      class=\"tips1_middle_right04\">\r\n                       <img src=\"/assets/img/take-off-the-dress.png\"
+      width=\"230\" height=\"200\" />\r\n                </div>\r\n                <div
+      class=\"tips1_middle_left11\">\r\n                       <div class=\"tips1_middle_left02\">\r\n
+      \                            <div class=\"tips1_middle_txt03\">去角质注意事项：</div>\r\n
+      \                      </div>\r\n                       <div class=\"tips1_middle_left10\">\r\n
+      \                            <ul>\r\n                                     <li>\r\n
+      \                                            不是每个人都需要去角质\r\n                                     </li>\r\n
+      \                                    <li>\r\n                                            不可过度去角质\r\n
+      \                                    </li>\r\n                            </ul>\r\n
+      \                      </div>\r\n                </div>\r\n                <div
+      class=\"tips1_middle_left12\">\r\n                       <div class=\"tips1_middle_left02\">\r\n
+      \                            <span class=\"tips1_middle_txt03\">清洁注意事项：</span>\r\n
+      \                      </div>\r\n                        <div class=\"tips1_middle_left13\">\r\n
+      \                            <ul>\r\n                                   <li>\r\n
+      \                                        首先必须把手洗净，否则洗面乳都拿来洗手了，泡沫型的洗面乳也无法揉搓出丰富的泡沫。
+      \r\n                                   </li>\r\n                                   <li>\r\n
+      \                                        将洗面乳以螺旋状在面部轻轻按摩30″～1′,不可让清洁剂在脸部停留过久；油脂多的部位可重点多按摩一会儿,然后以流水冲洗干净。\r\n
+      \                                  </li>\r\n                                   <li>\r\n
+      \                                        不要用毛巾用力擦脸，而要用轻按方式将水拭干。\r\n                                   </li>\r\n
+      \                          </ul>\r\n                      </div>\r\n                </div>\r\n
+      \               <div class=\"tips1_middle_left14\">\r\n                       <img
+      src=\"/assets/img/notice-the-tips.png\" width=\"250\" height=\"230\" />\r\n
+      \               </div>\r\n                <div class=\"tips1_middle_right05\">\r\n
+      \                       <div class=\"tips1_middle_right06\">\r\n                            <ul>\r\n
+      \                                 <li>\r\n                                         洗脸的合适水温应在34゜C左右，用手试有温热感，但不觉得烫。水温过冷对皮肤
+      有收敛作用，但皮肤清洁会不彻底；水温过热有镇痛和扩张毛细血管的作用，但经常使用会使皮肤脱脂，皮肤变得松弛、出现皱纹。较推荐使用温水和冷水交替清洗法，温水清洗，最后用冷水冲洗，冷热交替可促进血液循环，增强皮肤呼吸。\r\n
+      \                                 </li>\r\n                                  <li>\r\n
+      \                                        不宜过度频繁洗脸，早晚各一次即可，油性皮肤夏季可酌情增加一次。\r\n
+      \                                 </li>\r\n                            </ul>\r\n
+      \                      </div>\r\n                       <div>\r\n                             <img
+      class=\"tips1_middle_pic02\" src=\"/assets/img/notice-the-tips-grass.png\" width=\"426\"
+      height=\"56\" />\r\n                       </div>\r\n                </div>\r\n
+      \          </div>\r\n           <div class=\"tips1_bottom\">\r\n                <div
+      class=\"tips1_bottom_01\">\r\n                       <div class=\"tips1_bottom_pic01\">\r\n
+      \                           <img src=\"/assets/img/steps-protect.png\" width=\"68\"
+      height=\"73\" />\r\n                       </div>\r\n                       <div
+      class=\"tips1_bottom_txt01\">护肤步骤</div>\r\n                       <div class=\"tips1_middle_txt02\">正确护肤步骤</div>\r\n
+      \               </div>\r\n                <div class=\"tips1_bottom_left01\">\r\n
+      \                      <div class=\"tips1_middle_left02\">\r\n                             <div
+      class=\"tips1_middle_txt03\">夏季护理注意事项：</div>\r\n                       </div>\r\n
+      \                      <div class=\"tips1_bottom_left02\">\r\n                             <ul>\r\n
+      \                                 <li>\r\n                                        每日步骤：清洁、爽肤、均衡滋润、保护\r\n
+      \                                 </li>\r\n                                  <li>\r\n
+      \                                       周护理步骤：可在清洁完毕后，涂抹面膜达到调整肌肤纹理\r\n                                  </li>\r\n
+      \                            </ul>\r\n                       </div>\r\n                       <div
+      class=\"tips1_bottom_left02\">\r\n                             <span class=\"tips1_middle_txt04\">产品使用顺序通用原则：由稀到厚，一般依次为：水-精华-露-乳-霜</span>\r\n
+      \                      </div>\r\n                </div>\r\n                <div
+      class=\"tips1_bottom_right01\">\r\n                       <img src=\"/assets/img/the-step-of-pro.png\"
+      width=\"285\" height=\"250\" />\r\n                </div>\r\n                <div
+      class=\"tips1_bottom_left03\">\r\n                       <img src=\"/assets/img/the-step-of-pro-face.png\"
+      width=\"250\" height=\"216\" />\r\n                </div>\r\n                <div
+      class=\"tips1_bottom_right02\">\r\n                       <div class=\"tips1_bottom_pic02\">\r\n
+      \                             <img src=\"/assets/img/the-step-of-pro-face-right-leaves.png\"
+      width=\"200\" height=\"50\" />\r\n                       </div>\r\n                       <div
+      class=\"tips1_bottom_right03\">\r\n                             <a class=\"tips_bottom_txt\">更多美肤养成秘技</a>\r\n
+      \                      </div>\r\n                       <div class=\"tips1_bottom_pic03\"><img
+      src=\"/assets/img/right-angle-green.jpg\" width=\"5\" height=\"10\" /></div>\r\n
+      \               </div>\r\n           </div>"
+    - 0
+    - 2013-09-03 15:41:58.000000000 Z
+    - 2013-09-03 15:41:59.000000000 Z
+  - - 88
+    - 35
+    - voice
+    - "<div class=\"tips1_top\">\r\n                <div class=\"tips1_middle_pic01\">\r\n
+      \                      <img src=\"/assets/img/customer-banner.png\" width=\"720\"
+      height=\"181\" />\r\n                 </div>              \r\n           </div>
+      \r\n           <div class=\"customer_top\">\r\n                 <div class=\"customer_top_left\">\r\n
+      \                      <img src=\"/assets/img/customer-letter.png\" width=\"190\"
+      height=\"190\" />\r\n                 </div>\r\n                 <div>\r\n                       <div
+      class=\"customer_top_right01\">\r\n                            <div class=\"customer_top_txt01\">因为是直接在皮肤上使用的东西，所以怀着\"制作能让顾客持久爱用的产品\"的理念，用心制作，迎来上市销售后的第22个年头。对广大顾客表示衷心感谢。</div>\r\n
+      \                      </div>\r\n                       <div class=\"customer_top_right02\">\r\n
+      \                            <div class=\"customer_top_txt01\">许多顾客非常喜欢使用我们的产品,分享了很多快乐的声音给我们。虽然不多，下面就来分享一下这些客户发自内心的想法。</div>\r\n
+      \                            <div class=\"customer_top_txt01\">※ 以下为顾客实际撰写的内容。</div>\r\n
+      \                      </div>\r\n                       <div class=\"customer_top_right03\">\r\n
+      \                             <div class=\"customer_top_txt01\">(各位真的写得很认真呢。太感谢大家了！！)</div>\r\n
+      \                            <div class=\"customer_top_txt01\">今后也请大家多多关照，继续使用我们的产品。</div>\r\n
+      \                      </div>\r\n                       <div class=\"customer_top_right04\">\r\n
+      \                             <div class=\"customer_top_txt02\">等候各位发表您的声音！请大家多多投稿吧！！</div>\r\n
+      \                      </div>\r\n                 </div>\r\n           </div>
+      \r\n           <div class=\"tabbed_area\">\r\n                 <div class=\"tabs\">\r\n
+      \                      <ul>\r\n                               <li><a id=\"tab_1\"
+      class=\"active\">保湿润泽乳霜</a>\r\n</li>\r\n                               <li><a
+      id=\"tab_2\">清爽洁面啫喱</a>\r\n</li>\r\n                               <li><a id=\"tab_3\">去角质亮肤啫喱</a>\r\n</li>\r\n
+      \                      </ul>\r\n                 </div>\r\n                 <div
+      class=\"customer_middle\">\r\n                       <div id=\"content_1\">
+      \ \r\n                              <div class=\"content_1_1\">\r\n                                    <div
+      class=\"content_1_1_left\">\r\n                                          <img
+      src=\"/assets/img/common-face.png\" width=\"106\" height=\"175\" />\r\n                                    </div>
+      \r\n                                    <div class=\"content_1_1_right\">\r\n
+      \                                         <h3>東京都　T・A 女士</h3>\r\n                                          <h3>[
+      能遇见这么好的商品，真是太好了 ]</h3>\r\n                                          <p>到冬天的话脸特别是嘴巴周围特别干燥，像是涂了层粉一般，特别苦恼，我的义母给我推荐了Home
+      Cream。实际试着使用之后，之前的干燥一下子就神奇地消失了，之前那么干燥的肌肤，整年都能保持滋润。这么好的商品，就把它推荐给了母亲和祖母，他们也非常喜欢，放弃了使用了几十年的化妆水和乳液，而改为使用此款Home
+      Cream了。能遇见这么好的商品，真是太好了。 </p>\r\n                                     </div>
+      \  \r\n                                     <div style=\"clear:both\"></div>
+      \                                \r\n                              </div>\r\n
+      \                             <div class=\"content_1_2\">\r\n                                     <div
+      class=\"content_1_1_left\">\r\n                                          <img
+      class=\"content_1_pic01\" src=\"/assets/img/Mrs-KU.png\" width=\"80\" height=\"108\"
+      />\r\n                                     </div>\r\n                                     <div
+      class=\"content_1_1_right\">\r\n                                           <h3>山口县　K・Ｕ
+      女士  </h3>\r\n                                           <h3>[ 朋友夸我皮肤好呢！ ]</h3>\r\n
+      \                                          <p>朋友夸我「肌肤紧致，小皱纹很少」。</p>\r\n                                           <p>我每次都涂抹很多Home
+      Cream。</p>\r\n                                           <p>替换装的话性价比很高，很喜欢。</p>\r\n
+      \                                    </div>\r\n                                     <div
+      style=\"clear:both\"></div>\r\n                              </div> \r\n                                <div
+      class=\"content_1_1\">\r\n                                    <div class=\"content_1_1_left\">\r\n
+      \                                         <img class=\"content_1_pic01\" src=\"/assets/img/Mrs-NN.png\"
+      width=\"80\" height=\"108\" />\r\n                                    </div>
+      \r\n                                     <div class=\"content_1_1_right\">\r\n
+      \                                         <h3>埼玉县　Ｎ・Ｎ女士</h3>\r\n                                          <h3>[
+      最适合怕麻烦的我啦！ ]</h3>\r\n                                          <p>洗完澡、洗完脸后，只需这一瓶就够了，最适合怕麻烦的我啦（笑）。抱着小宝宝的时候，使用按压装的话只要用一只手轻轻一按就能涂抹了…我的肌肤很干燥，一到冬天或者季节更替的时候，总是要去皮肤科看医生，皮肤和脖子周围也会有干燥的时候，用了2年之后，再也不用去皮肤科了，冬天的肌肤也不干燥了。尽情使用的话价格也很令人满意！</p>\r\n
+      \                                    </div>  \r\n                                     <div
+      style=\"clear:both\"></div>                                  \r\n                              </div>
+      \r\n                                <div class=\"content_1_2\">\r\n                                     <div
+      class=\"content_1_1_left\">\r\n                                          <img
+      class=\"content_1_pic02\" src=\"/assets/img/common-face-yellow.png\" width=\"90\"
+      height=\"108\" />\r\n                                     </div>\r\n                                     <div
+      class=\"content_1_1_right\">\r\n                                           <h3>奈良县　Ｍ・Ｍ
+      女士  </h3>\r\n                                           <h3>[ 家里人都很喜欢用它来护理肌肤！
+      ]</h3>\r\n                                           <p>老公肌肤很干燥，为此很是烦恼，很多年来一直在寻找能温柔滋润肌肤的乳液，直到遇见了温和的简妮产品！有一次碰见老家的老妈正好在用，她强烈推荐我一定要试试看，所以就开始使用了。使用之后，老公和宝宝都会在洗完澡后涂抹，一家人用的不亦可乎。现在已经成了家人微笑护肤的必备品，我每天的化妆也更加令人期待呢。老公的肌肤比起之前虽然谈不上完美改善，但是干燥粗糙的情况已经大有改善呢。</p>\r\n
+      \                                          <p>今后也会继续使用的。</p>\r\n                                     </div>\r\n
+      \                                    <div style=\"clear:both\"></div>\r\n                              </div>\r\n
+      \                              <div class=\"content_1_1\">\r\n                                    <div
+      class=\"content_1_1_left\">\r\n                                          <img
+      class=\"content_1_pic03\" src=\"/assets/img/Mrs-face-KT.png\" width=\"90\" height=\"108\"
+      />\r\n                                    </div> \r\n                                    <div
+      class=\"content_1_1_right\">\r\n                                          <h3>北海道　Ｋ・Ｔ
+      女士</h3>\r\n                                          <h3>[ 今后又多了一个喜爱简妮的理由呢！
+      ]</h3>\r\n                                          <p>只需一个产品就能完成护肤，方便简单，我已经持续用了10年了。现在只要不涂抹的话，我和肌肤都会觉得有些缺少些什么呢。涂抹后的润泽感，直到第二天也能保持滋润，一点也不干燥紧绷。老公和小孩每天早晚也会使用，一家人整个冬天都没有肌肤干燥的感觉呢。</p>\r\n
+      \                                         <p>今后也会一直使用下去的！！</p>\r\n                                     </div>
+      \         \r\n                                     <div style=\"clear:both\"></div>
+      \                               \r\n                              </div> \r\n
+      \                            <div class=\"content_1_2\">\r\n                                     <div
+      class=\"content_1_1_left\">\r\n                                          <img
+      class=\"content_1_pic02\" src=\"/assets/img/common-face-yellow.png\" width=\"90\"
+      height=\"108\" />\r\n                                     </div>\r\n                                    <div
+      class=\"content_1_1_right\">\r\n                                           <h3>千叶县　Ｔ・Ｓ
+      小姐</h3>\r\n                                           <h3>[ 我最必不可少的必需品！ ]</h3>\r\n
+      \                                          <p>肌肤干燥让我很是苦恼，尝试了很多种产品都不能让我满意。一个朋友向我推荐了这款产品，第一次用的瞬间便感觉\"太神奇了！！\"。之前的肌肤问题一扫而空。这款Home
+      Cream已经是我生存下去的必需品了呢。</p>\r\n                                           <p>作为礼物送给73岁的母亲的时候,\"第一次有这种感觉！！真不错！！\"，她也很开心。化完妆的时候，在需要留意的地方稍微涂抹后，不容易掉妆，持续滋润。</p>\r\n
+      \                                    </div>\r\n                                     <div
+      style=\"clear:both\"></div>\r\n                             </div> \r\n                             <div
+      class=\"content_1_1\">\r\n                                    <div class=\"content_1_1_left\">\r\n
+      \                                         <img class=\"content_1_pic03\" src=\"/assets/img/Mrs-face-NO.png\"
+      width=\"90\" height=\"108\" />\r\n                                    </div>
+      \r\n                                     <div class=\"content_1_1_right\">\r\n
+      \                                         <h3>愛知县　Ｎ・Ｏ 女士</h3>\r\n                                          <h3>[
+      持续用了２０多年！ ]</h3>\r\n                                          <p>进入公司的20多年前开始就一直有在用。</p>\r\n
+      \                                         <p>使用简单，护肤效果也很好，向周围4个朋友都介绍了，都很喜欢。</p>\r\n
+      \                                         <p>今后也会继续使用的。</p>\r\n                                    </div>
+      \       \r\n                                    <div style=\"clear:both\"></div>
+      \                            \r\n                            </div>\r\n                             <div
+      class=\"content_1_2\">\r\n                                     <div class=\"content_1_1_left\">\r\n
+      \                                         <img class=\"content_1_pic03\" src=\"/assets/img/Mrs-face-RF.png\"
+      width=\"90\" height=\"108\" />\r\n                                     </div>\r\n
+      \                                     <div class=\"content_1_1_right\">\r\n
+      \                                          <h3>宮城县　Ｒ・Ｆ女士</h3>\r\n                                           <h3>[
+      家里人都很喜欢用 ]</h3>\r\n                                           <p>家里人都很喜欢用。</p>\r\n
+      \                                          <p>儿子出生的时候，朋友把这款产品作为礼物送给我，于是今后就一直用到现在。</p>\r\n
+      \                                          <p>听说宝宝也能用，于是马上就给宝宝试着涂抹了，现在到了中学，也会每天涂抹。</p>\r\n
+      \                                          <p>多亏了这个产品，连青春痘都没有发过，周围的妈妈们都来打听肌肤护理的诀窍呢。</p>\r\n
+      \                                          <p>我自己也在生完小孩后，身体变得非常干燥，涂抹在全身之后效果非常好，于是就再也放不下了。</p>\r\n
+      \                                          <p>最近也开始在干燥的头发上使用，比起润发素更加舒适，非常喜欢。</p>\r\n
+      \                                          <p>也给长期卧床需要照料的父亲洗完澡、洗完脸后使用，正式这个原因，护工和护士们都夸赞我父亲的皮肤好，也没有发生褥疮的症状。</p>\r\n
+      \                                          <p>母亲也在做淋巴按摩的时候使用，使用质地舒适，也没有令人厌烦的香味（母亲对香味过敏）</p>\r\n
+      \                                          <p>肌肤性质差的母亲有持续使用，一点问题也没有。</p>\r\n
+      \                                          <p>当然，老公在剃须的时候或是洗脸、洗澡后使用，连出差的时候都带着。</p>\r\n
+      \                                          <p>能遇到Home Cream这款产品是在太好了。</p>\r\n
+      \                                    </div>\r\n                                     <div
+      style=\"clear:both\"></div>\r\n                              </div>                      \r\n
+      \                      </div>\r\n                 </div>\r\n           \r\n
+      \         </div> "
+    - 1
+    - 2013-09-03 15:45:14.000000000 Z
+    - 2013-09-03 15:45:14.000000000 Z
+  - - 89
+    - 25
+    - classJu
+    - "<div class=\"classcontent_top\">\r\n                <img src=\"/assets/img/banner-Miss-course.png\"
+      width=\"720\" height=\"324\" />\r\n                <div class=\"classcontent_top01\">\r\n
+      \                     最新·护肤妙招\r\n                </div>\r\n                <div
+      class=\"rightclass_middle_left\">\r\n                      <img class=\"rightclass_middle_pic01\"
+      src=\"/assets/img/MissJu-days-dress.png\" width=\"170\" height=\"182\" />\r\n
+      \               </div>\r\n                <div class=\"rightclass_middle_right\">\r\n
+      \                     <div class=\"rightclass_middle_right01\">\r\n                             <div
+      class=\"rightclass_middle_right02\">\r\n                                   <span
+      class=\"rightclass_middle_txt01\">在这个季节，你的肌肤是否有问题？</span>\r\n                             </div>\r\n
+      \                            <div class=\"rightclass_middle_right03\">\r\n                                   <span
+      class=\"rightclass_middle_txt02\">new!</span>\r\n                             </div>\r\n
+      \                     </div>\r\n                      <div class=\"rightclass_middle_right04\">\r\n
+      \                            <div class=\"rightclass_middle_txt03\">在有空调的室内肌肤很干燥，会像在沙漠中想立刻给肌肤补充水份的感觉。</div>\r\n
+      \                            <div class=\"rightclass_middle_txt03\">室外非常闷热，肌肤上因为汗水，油脂变得油光发亮了。</div>\r\n
+      \                            <div class=\"rightclass_middle_txt03\">强烈的阳光和紫外线让肌肤感到干燥，防晒霜对肌肤的不适应的原因也有。</div>\r\n
+      \                            <div class=\"rightclass_middle_txt03\">室内室外的温差使肌肤疲惫不堪，恶劣的环境让肌肤变得很粗糙。</div>\r\n
+      \                     </div>\r\n                      <div class=\"rightclass_middle_right05\">\r\n
+      \                            <img src=\"/assets/img/MissJu-days-comic.png\"
+      width=\"468\" height=\"90\" />\r\n                      </div>\r\n                      <div
+      class=\"rightclass_middle_right06\">\r\n                             <div class=\"rightclass_middle_txt03\">使肌肤保持滋润水盈</div>\r\n
+      \                            <div class=\"rightclass_middle_txt03\">室外湿度高，黏糊糊的，所以在室内的空调环境下肌肤会变得干燥。</div>\r\n
+      \                            <div class=\"rightclass_middle_txt03\">这样的温差，湿度差的环境更会让肌肤疲惫不堪。</div>\r\n
+      \                            <div class=\"rightclass_middle_txt03\">使用nature
+      home creamEX每天护肤，能调整肌肤的平衡，是肌肤滋润水盈。</div>\r\n                      </div>\r\n
+      \                     <div class=\"classcontent_txt01\">\r\n                             <a
+      href=\"/home/%E5%B0%8F%E8%8F%8A%E8%80%81%E5%B8%88%E7%9A%84%E8%AF%A6%E6%83%85\">查看详情</a>\r\n
+      \                     </div>\r\n                      <div class=\"classcontent_pic01\">\r\n
+      \                            <img src=\"/assets/img/right-angle-green.jpg\"
+      width=\"5\" height=\"10\" />\r\n                      </div>\r\n                </div>\r\n
+      \          </div>\r\n           <div class=\"classcontent_middle\">\r\n                <div
+      class=\"classcontent_middle_left\">\r\n                      <img src=\"/assets/img/Miss-course-three-pic-3.png\"
+      width=\"176\" height=\"170\" />\r\n                </div>\r\n                <div
+      class=\"classcontent_middle_right\">\r\n                     <div class=\"classbox\">\r\n
+      \                         <span class=\"bot\"></span>\r\n                          <span
+      class=\"top\"></span>\r\n                          <div class=\"classcontent_middle_right01\">\r\n
+      \                                注重肌肤水分一样的矿物质平衡\r\n                          </div>\r\n
+      \                          <div class=\"classcontent_middle_right02\">\r\n                                 我们平时进行肌肤护理的角质层，是位于肌肤表面的0.02毫米的薄层，它有着很多的作用。角质层像派一样一个个重叠，经过时间流逝逐渐像表层运动形成角质层，最后变成污垢脱落。\r\n
+      \                         </div>\r\n                          <div class=\"classcontent_txt01\">\r\n
+      \                                <a>查看详情</a>\r\n                          </div>\r\n
+      \                         <div class=\"classcontent_pic01\">\r\n                                 <img
+      src=\"/assets/img/right-angle-green.jpg\" width=\"5\" height=\"10\" />\r\n                          </div>\r\n
+      \                     </div>\r\n                </div>\r\n           </div>\r\n
+      \          <div class=\"classcontent_middle\">\r\n                <div class=\"classcontent_middle_left\">\r\n
+      \                     <img src=\"/assets/img/Miss-course-three-pic-2.png\" width=\"176\"
+      height=\"170\" />\r\n                </div>\r\n                <div class=\"classcontent_middle_right\">\r\n
+      \                     <div class=\"classbox\">\r\n                          <span
+      class=\"bot\"></span>\r\n                          <span class=\"top\"></span>\r\n
+      \                         <div class=\"classcontent_middle_right01\">\r\n                                造成不够滋润及肌肤问题的原因\r\n
+      \                         </div>\r\n                          <div class=\"classcontent_middle_right02\">外界刺激等导致的滋润不足是种种肌肤问题的根源！</div>\r\n
+      \                         <div class=\"classcontent_middle_right02\">为了能让支援美肌的\"3种功能\"更加顺利地发挥作用，需要去除多余角质</div>\r\n
+      \                         <div class=\"classcontent_middle_right02\">将肌肤需要的成分输送进角质层的各个角落，并好好保存，才能打造美肌。</div>\r\n
+      \                         <div class=\"classcontent_txt01\">\r\n                                 <a>查看详情</a>\r\n
+      \                         </div>\r\n                          <div class=\"classcontent_pic01\">\r\n
+      \                                <img src=\"/assets/img/right-angle-green.jpg\"
+      width=\"5\" height=\"10\" />\r\n                          </div>\r\n                      </div>\r\n
+      \               </div>\r\n           </div>\r\n           <div class=\"classcontent_middle\">\r\n
+      \               <div class=\"classcontent_middle_left\">\r\n                      <img
+      src=\"/assets/img/Miss-course-three-pic-1.png\" width=\"176\" height=\"170\"
+      />\r\n                </div>\r\n                <div class=\"classcontent_middle_right\">\r\n
+      \                     <div class=\"classbox\">\r\n                          <span
+      class=\"bot\"></span>\r\n                          <span class=\"top\"></span>\r\n
+      \                         <div class=\"classcontent_middle_right01\">\r\n                                解决毛孔等问题，回复肌肤健康环境\r\n
+      \                         </div> \r\n                          <div class=\"classcontent_middle_right02\">每周1-2次清理角质，干净的清洁老角质和毛孔污垢。</div>\r\n
+      \                         <div class=\"classcontent_middle_right02\">洗脸也无法去除的毛孔污垢和老化角质、多余皮脂等，用此款啫喱轻柔按摩后清除。</div>\r\n
+      \                         <div class=\"classcontent_middle_right02\">在带来美肌成分的同时焕发肌肤活力，解决毛孔等问题，回复肌肤健康环境。</div>\r\n
+      \                         <div class=\"classcontent_txt01\">\r\n                                 <a>查看详情</a>\r\n
+      \                         </div>\r\n                          <div class=\"classcontent_pic01\">\r\n
+      \                                <img src=\"/assets/img/right-angle-green.jpg\"
+      width=\"5\" height=\"10\" />\r\n                          </div>\r\n                      </div>\r\n
+      \               </div>\r\n           </div>\r\n            <div class=\"classcontent_middle\">\r\n
+      \               <div class=\"classcontent_middle_left\">\r\n                      <img
+      src=\"/assets/img/Miss-course-three-pic-3.png\" width=\"176\" height=\"170\"
+      />\r\n                </div>\r\n                <div class=\"classcontent_middle_right\">\r\n
+      \                     <div class=\"classbox\">\r\n                          <span
+      class=\"bot\"></span>\r\n                          <span class=\"top\"></span>\r\n
+      \                         <div class=\"classcontent_middle_right01\">\r\n                                 注重肌肤水分一样的矿物质平衡\r\n
+      \                         </div>\r\n                           <div class=\"classcontent_middle_right02\">\r\n
+      \                                我们平时进行肌肤护理的角质层，是位于肌肤表面的0.02毫米的薄层，它有着很多的作用。角质层像派一样一个个重叠，经过时间流逝逐渐像表层运动形成角质层，最后变成污垢脱落。\r\n
+      \                         </div>\r\n                          <div class=\"classcontent_txt01\">\r\n
+      \                                <a>查看详情</a>\r\n                          </div>\r\n
+      \                         <div class=\"classcontent_pic01\">\r\n                                 <img
+      src=\"/assets/img/right-angle-green.jpg\" width=\"5\" height=\"10\" />\r\n                          </div>\r\n
+      \                     </div>\r\n                </div>\r\n           </div>\r\n
+      \          <div class=\"classcontent_middle\">\r\n                <div class=\"classcontent_middle_left\">\r\n
+      \                     <img src=\"/assets/img/Miss-course-three-pic-2.png\" width=\"176\"
+      height=\"170\" />\r\n                </div>\r\n                <div class=\"classcontent_middle_right\">\r\n
+      \                      <div class=\"classbox\">\r\n                          <span
+      class=\"bot\"></span>\r\n                          <span class=\"top\"></span>\r\n
+      \                         <div class=\"classcontent_middle_right01\">\r\n                                造成不够滋润及肌肤问题的原因\r\n
+      \                         </div>\r\n                          <div class=\"classcontent_middle_right02\">外界刺激等导致的滋润不足是种种肌肤问题的根源！</div>\r\n
+      \                         <div class=\"classcontent_middle_right02\">为了能让支援美肌的\"3种功能\"更加顺利地发挥作用，需要去除多余角质</div>\r\n
+      \                         <div class=\"classcontent_middle_right02\">将肌肤需要的成分输送进角质层的各个角落，并好好保存，才能打造美肌。</div>\r\n
+      \                         <div class=\"classcontent_txt01\">\r\n                                 <a>查看详情</a>\r\n
+      \                         </div>\r\n                          <div class=\"classcontent_pic01\">\r\n
+      \                                <img src=\"/assets/img/right-angle-green.jpg\"
+      width=\"5\" height=\"10\" />\r\n                          </div>\r\n                      </div>\r\n
+      \               </div>\r\n           </div>\r\n           <div class=\"classcontent_middle\">\r\n
+      \               <div class=\"classcontent_middle_left\">\r\n                      <img
+      src=\"/assets/img/Miss-course-three-pic-1.png\" width=\"176\" height=\"170\"
+      />\r\n                </div>\r\n                <div class=\"classcontent_middle_right\">\r\n
+      \                     <div class=\"classbox\">\r\n                          <span
+      class=\"bot\"></span>\r\n                          <span class=\"top\"></span>\r\n
+      \                         <div class=\"classcontent_middle_right01\">\r\n                                解决毛孔等问题，回复肌肤健康环境\r\n
+      \                         </div> \r\n                          <div class=\"classcontent_middle_right02\">每周1-2次清理角质，干净的清洁老角质和毛孔污垢。</div>\r\n
+      \                         <div class=\"classcontent_middle_right02\">洗脸也无法去除的毛孔污垢和老化角质、多余皮脂等，用此款啫喱轻柔按摩后清除。</div>\r\n
+      \                         <div class=\"classcontent_middle_right02\">在带来美肌成分的同时焕发肌肤活力，解决毛孔等问题，回复肌肤健康环境。</div>\r\n
+      \                         <div class=\"classcontent_txt01\">\r\n                                 <a>查看详情</a>\r\n
+      \                         </div>\r\n                          <div class=\"classcontent_pic01\">\r\n
+      \                                <img src=\"/assets/img/right-angle-green.jpg\"
+      width=\"5\" height=\"10\" />\r\n                          </div>\r\n                      </div>\r\n
+      \               </div>\r\n           </div>\r\n           <div class=\"classcontent_middle\">\r\n
+      \               <div class=\"classcontent_middle_left\">\r\n                      <img
+      src=\"/assets/img/Miss-course-three-pic-2.png\" width=\"176\" height=\"170\"
+      />\r\n                </div>\r\n                <div class=\"classcontent_middle_right\">\r\n
+      \                     <div class=\"classbox\">\r\n                          <span
+      class=\"bot\"></span>\r\n                          <span class=\"top\"></span>\r\n
+      \                         <div class=\"classcontent_middle_right01\">\r\n                                造成不够滋润及肌肤问题的原因\r\n
+      \                         </div>\r\n                          <div class=\"classcontent_middle_right02\">外界刺激等导致的滋润不足是种种肌肤问题的根源！</div>\r\n
+      \                         <div class=\"classcontent_middle_right02\">为了能让支援美肌的\"3种功能\"更加顺利地发挥作用，需要去除多余角质</div>\r\n
+      \                         <div class=\"classcontent_middle_right02\">将肌肤需要的成分输送进角质层的各个角落，并好好保存，才能打造美肌。</div>\r\n
+      \                         <div class=\"classcontent_txt01\">\r\n                                 <a>查看详情</a>\r\n
+      \                         </div>\r\n                          <div class=\"classcontent_pic01\">\r\n
+      \                                <img src=\"/assets/img/right-angle-green.jpg\"
+      width=\"5\" height=\"10\" />\r\n                          </div>\r\n                      </div>\r\n
+      \               </div>\r\n           </div>\r\n           <div class=\"classcontent_middle\">\r\n
+      \               <div class=\"classcontent_middle_left\">\r\n                      <img
+      src=\"/assets/img/Miss-course-three-pic-1.png\" width=\"176\" height=\"170\"
+      />\r\n                </div>\r\n                <div class=\"classcontent_middle_right\">\r\n
+      \                    <div class=\"classbox\">\r\n                          <span
+      class=\"bot\"></span>\r\n                          <span class=\"top\"></span>\r\n
+      \                         <div class=\"classcontent_middle_right01\">\r\n                                解决毛孔等问题，回复肌肤健康环境\r\n
+      \                         </div> \r\n                          <div class=\"classcontent_middle_right02\">每周1-2次清理角质，干净的清洁老角质和毛孔污垢。</div>\r\n
+      \                         <div class=\"classcontent_middle_right02\">洗脸也无法去除的毛孔污垢和老化角质、多余皮脂等，用此款啫喱轻柔按摩后清除。</div>\r\n
+      \                         <div class=\"classcontent_middle_right02\">在带来美肌成分的同时焕发肌肤活力，解决毛孔等问题，回复肌肤健康环境。</div>\r\n
+      \                         <div class=\"classcontent_txt01\">\r\n                                 <a>查看详情</a>\r\n
+      \                         </div>\r\n                          <div class=\"classcontent_pic01\">\r\n
+      \                                <img src=\"/assets/img/right-angle-green.jpg\"
+      width=\"5\" height=\"10\" />\r\n                          </div>\r\n                      </div>\r\n
+      \               </div>\r\n           </div>\r\n "
+    - 1
+    - 2013-09-03 15:53:04.000000000 Z
+    - 2013-09-03 15:53:04.000000000 Z
+  - - 90
+    - 36
+    - classJu
+    - "<div class=\"classcontent_top\">\r\n                <img src=\"/assets/img/banner-Miss-course.png\"
+      width=\"720\" height=\"324\" />\r\n                <div class=\"classcontent_top01\">\r\n
+      \                     最新·护肤妙招\r\n                </div>\r\n                <div
+      class=\"rightclass_middle_left\">\r\n                      <img class=\"rightclass_middle_pic01\"
+      src=\"/assets/img/MissJu-days-dress.png\" width=\"170\" height=\"182\" />\r\n
+      \               </div>\r\n                <div class=\"rightclass_middle_right\">\r\n
+      \                     <div class=\"rightclass_middle_right01\">\r\n                             <div
+      class=\"rightclass_middle_right02\">\r\n                                   <span
+      class=\"rightclass_middle_txt01\">在这个季节，你的肌肤是否有问题？</span>\r\n                             </div>\r\n
+      \                            <div class=\"rightclass_middle_right03\">\r\n                                   <span
+      class=\"rightclass_middle_txt02\">new!</span>\r\n                             </div>\r\n
+      \                     </div>\r\n                      <div class=\"rightclass_middle_right04\">\r\n
+      \                            <div class=\"rightclass_middle_txt03\">在有空调的室内肌肤很干燥，会像在沙漠中想立刻给肌肤补充水份的感觉。</div>\r\n
+      \                            <div class=\"rightclass_middle_txt03\">室外非常闷热，肌肤上因为汗水，油脂变得油光发亮了。</div>\r\n
+      \                            <div class=\"rightclass_middle_txt03\">强烈的阳光和紫外线让肌肤感到干燥，防晒霜对肌肤的不适应的原因也有。</div>\r\n
+      \                            <div class=\"rightclass_middle_txt03\">室内室外的温差使肌肤疲惫不堪，恶劣的环境让肌肤变得很粗糙。</div>\r\n
+      \                     </div>\r\n                      <div class=\"rightclass_middle_right05\">\r\n
+      \                            <img src=\"/assets/img/MissJu-days-comic.png\"
+      width=\"468\" height=\"90\" />\r\n                      </div>\r\n                      <div
+      class=\"rightclass_middle_right06\">\r\n                             <div class=\"rightclass_middle_txt03\">使肌肤保持滋润水盈</div>\r\n
+      \                            <div class=\"rightclass_middle_txt03\">室外湿度高，黏糊糊的，所以在室内的空调环境下肌肤会变得干燥。</div>\r\n
+      \                            <div class=\"rightclass_middle_txt03\">这样的温差，湿度差的环境更会让肌肤疲惫不堪。</div>\r\n
+      \                            <div class=\"rightclass_middle_txt03\">使用nature
+      home creamEX每天护肤，能调整肌肤的平衡，是肌肤滋润水盈。</div>\r\n                      </div>\r\n
+      \                     <div class=\"classcontent_txt01\">\r\n                             <a
+      href=\"/home/%E5%B0%8F%E8%8F%8A%E8%80%81%E5%B8%88%E7%9A%84%E8%AF%A6%E6%83%85\">查看详情</a>\r\n
+      \                     </div>\r\n                      <div class=\"classcontent_pic01\">\r\n
+      \                            <img src=\"/assets/img/right-angle-green.jpg\"
+      width=\"5\" height=\"10\" />\r\n                      </div>\r\n                </div>\r\n
+      \          </div>\r\n           <div class=\"classcontent_middle\">\r\n                <div
+      class=\"classcontent_middle_left\">\r\n                      <img src=\"/assets/img/Miss-course-three-pic-3.png\"
+      width=\"176\" height=\"170\" />\r\n                </div>\r\n                <div
+      class=\"classcontent_middle_right\">\r\n                     <div class=\"classbox\">\r\n
+      \                         <span class=\"bot\"></span>\r\n                          <span
+      class=\"top\"></span>\r\n                          <div class=\"classcontent_middle_right01\">\r\n
+      \                                注重肌肤水分一样的矿物质平衡\r\n                          </div>\r\n
+      \                          <div class=\"classcontent_middle_right02\">\r\n                                 我们平时进行肌肤护理的角质层，是位于肌肤表面的0.02毫米的薄层，它有着很多的作用。角质层像派一样一个个重叠，经过时间流逝逐渐像表层运动形成角质层，最后变成污垢脱落。\r\n
+      \                         </div>\r\n                          <div class=\"classcontent_txt01\">\r\n
+      \                                <a>查看详情</a>\r\n                          </div>\r\n
+      \                         <div class=\"classcontent_pic01\">\r\n                                 <img
+      src=\"/assets/img/right-angle-green.jpg\" width=\"5\" height=\"10\" />\r\n                          </div>\r\n
+      \                     </div>\r\n                </div>\r\n           </div>\r\n
+      \          <div class=\"classcontent_middle\">\r\n                <div class=\"classcontent_middle_left\">\r\n
+      \                     <img src=\"/assets/img/Miss-course-three-pic-2.png\" width=\"176\"
+      height=\"170\" />\r\n                </div>\r\n                <div class=\"classcontent_middle_right\">\r\n
+      \                     <div class=\"classbox\">\r\n                          <span
+      class=\"bot\"></span>\r\n                          <span class=\"top\"></span>\r\n
+      \                         <div class=\"classcontent_middle_right01\">\r\n                                造成不够滋润及肌肤问题的原因\r\n
+      \                         </div>\r\n                          <div class=\"classcontent_middle_right02\">外界刺激等导致的滋润不足是种种肌肤问题的根源！</div>\r\n
+      \                         <div class=\"classcontent_middle_right02\">为了能让支援美肌的\"3种功能\"更加顺利地发挥作用，需要去除多余角质</div>\r\n
+      \                         <div class=\"classcontent_middle_right02\">将肌肤需要的成分输送进角质层的各个角落，并好好保存，才能打造美肌。</div>\r\n
+      \                         <div class=\"classcontent_txt01\">\r\n                                 <a>查看详情</a>\r\n
+      \                         </div>\r\n                          <div class=\"classcontent_pic01\">\r\n
+      \                                <img src=\"/assets/img/right-angle-green.jpg\"
+      width=\"5\" height=\"10\" />\r\n                          </div>\r\n                      </div>\r\n
+      \               </div>\r\n           </div>\r\n           <div class=\"classcontent_middle\">\r\n
+      \               <div class=\"classcontent_middle_left\">\r\n                      <img
+      src=\"/assets/img/Miss-course-three-pic-1.png\" width=\"176\" height=\"170\"
+      />\r\n                </div>\r\n                <div class=\"classcontent_middle_right\">\r\n
+      \                     <div class=\"classbox\">\r\n                          <span
+      class=\"bot\"></span>\r\n                          <span class=\"top\"></span>\r\n
+      \                         <div class=\"classcontent_middle_right01\">\r\n                                解决毛孔等问题，回复肌肤健康环境\r\n
+      \                         </div> \r\n                          <div class=\"classcontent_middle_right02\">每周1-2次清理角质，干净的清洁老角质和毛孔污垢。</div>\r\n
+      \                         <div class=\"classcontent_middle_right02\">洗脸也无法去除的毛孔污垢和老化角质、多余皮脂等，用此款啫喱轻柔按摩后清除。</div>\r\n
+      \                         <div class=\"classcontent_middle_right02\">在带来美肌成分的同时焕发肌肤活力，解决毛孔等问题，回复肌肤健康环境。</div>\r\n
+      \                         <div class=\"classcontent_txt01\">\r\n                                 <a>查看详情</a>\r\n
+      \                         </div>\r\n                          <div class=\"classcontent_pic01\">\r\n
+      \                                <img src=\"/assets/img/right-angle-green.jpg\"
+      width=\"5\" height=\"10\" />\r\n                          </div>\r\n                      </div>\r\n
+      \               </div>\r\n           </div>\r\n            <div class=\"classcontent_middle\">\r\n
+      \               <div class=\"classcontent_middle_left\">\r\n                      <img
+      src=\"/assets/img/Miss-course-three-pic-3.png\" width=\"176\" height=\"170\"
+      />\r\n                </div>\r\n                <div class=\"classcontent_middle_right\">\r\n
+      \                     <div class=\"classbox\">\r\n                          <span
+      class=\"bot\"></span>\r\n                          <span class=\"top\"></span>\r\n
+      \                         <div class=\"classcontent_middle_right01\">\r\n                                 注重肌肤水分一样的矿物质平衡\r\n
+      \                         </div>\r\n                           <div class=\"classcontent_middle_right02\">\r\n
+      \                                我们平时进行肌肤护理的角质层，是位于肌肤表面的0.02毫米的薄层，它有着很多的作用。角质层像派一样一个个重叠，经过时间流逝逐渐像表层运动形成角质层，最后变成污垢脱落。\r\n
+      \                         </div>\r\n                          <div class=\"classcontent_txt01\">\r\n
+      \                                <a>查看详情</a>\r\n                          </div>\r\n
+      \                         <div class=\"classcontent_pic01\">\r\n                                 <img
+      src=\"/assets/img/right-angle-green.jpg\" width=\"5\" height=\"10\" />\r\n                          </div>\r\n
+      \                     </div>\r\n                </div>\r\n           </div>\r\n
+      \          <div class=\"classcontent_middle\">\r\n                <div class=\"classcontent_middle_left\">\r\n
+      \                     <img src=\"/assets/img/Miss-course-three-pic-2.png\" width=\"176\"
+      height=\"170\" />\r\n                </div>\r\n                <div class=\"classcontent_middle_right\">\r\n
+      \                      <div class=\"classbox\">\r\n                          <span
+      class=\"bot\"></span>\r\n                          <span class=\"top\"></span>\r\n
+      \                         <div class=\"classcontent_middle_right01\">\r\n                                造成不够滋润及肌肤问题的原因\r\n
+      \                         </div>\r\n                          <div class=\"classcontent_middle_right02\">外界刺激等导致的滋润不足是种种肌肤问题的根源！</div>\r\n
+      \                         <div class=\"classcontent_middle_right02\">为了能让支援美肌的\"3种功能\"更加顺利地发挥作用，需要去除多余角质</div>\r\n
+      \                         <div class=\"classcontent_middle_right02\">将肌肤需要的成分输送进角质层的各个角落，并好好保存，才能打造美肌。</div>\r\n
+      \                         <div class=\"classcontent_txt01\">\r\n                                 <a>查看详情</a>\r\n
+      \                         </div>\r\n                          <div class=\"classcontent_pic01\">\r\n
+      \                                <img src=\"/assets/img/right-angle-green.jpg\"
+      width=\"5\" height=\"10\" />\r\n                          </div>\r\n                      </div>\r\n
+      \               </div>\r\n           </div>\r\n           <div class=\"classcontent_middle\">\r\n
+      \               <div class=\"classcontent_middle_left\">\r\n                      <img
+      src=\"/assets/img/Miss-course-three-pic-1.png\" width=\"176\" height=\"170\"
+      />\r\n                </div>\r\n                <div class=\"classcontent_middle_right\">\r\n
+      \                     <div class=\"classbox\">\r\n                          <span
+      class=\"bot\"></span>\r\n                          <span class=\"top\"></span>\r\n
+      \                         <div class=\"classcontent_middle_right01\">\r\n                                解决毛孔等问题，回复肌肤健康环境\r\n
+      \                         </div> \r\n                          <div class=\"classcontent_middle_right02\">每周1-2次清理角质，干净的清洁老角质和毛孔污垢。</div>\r\n
+      \                         <div class=\"classcontent_middle_right02\">洗脸也无法去除的毛孔污垢和老化角质、多余皮脂等，用此款啫喱轻柔按摩后清除。</div>\r\n
+      \                         <div class=\"classcontent_middle_right02\">在带来美肌成分的同时焕发肌肤活力，解决毛孔等问题，回复肌肤健康环境。</div>\r\n
+      \                         <div class=\"classcontent_txt01\">\r\n                                 <a>查看详情</a>\r\n
+      \                         </div>\r\n                          <div class=\"classcontent_pic01\">\r\n
+      \                                <img src=\"/assets/img/right-angle-green.jpg\"
+      width=\"5\" height=\"10\" />\r\n                          </div>\r\n                      </div>\r\n
+      \               </div>\r\n           </div>\r\n           <div class=\"classcontent_middle\">\r\n
+      \               <div class=\"classcontent_middle_left\">\r\n                      <img
+      src=\"/assets/img/Miss-course-three-pic-2.png\" width=\"176\" height=\"170\"
+      />\r\n                </div>\r\n                <div class=\"classcontent_middle_right\">\r\n
+      \                     <div class=\"classbox\">\r\n                          <span
+      class=\"bot\"></span>\r\n                          <span class=\"top\"></span>\r\n
+      \                         <div class=\"classcontent_middle_right01\">\r\n                                造成不够滋润及肌肤问题的原因\r\n
+      \                         </div>\r\n                          <div class=\"classcontent_middle_right02\">外界刺激等导致的滋润不足是种种肌肤问题的根源！</div>\r\n
+      \                         <div class=\"classcontent_middle_right02\">为了能让支援美肌的\"3种功能\"更加顺利地发挥作用，需要去除多余角质</div>\r\n
+      \                         <div class=\"classcontent_middle_right02\">将肌肤需要的成分输送进角质层的各个角落，并好好保存，才能打造美肌。</div>\r\n
+      \                         <div class=\"classcontent_txt01\">\r\n                                 <a>查看详情</a>\r\n
+      \                         </div>\r\n                          <div class=\"classcontent_pic01\">\r\n
+      \                                <img src=\"/assets/img/right-angle-green.jpg\"
+      width=\"5\" height=\"10\" />\r\n                          </div>\r\n                      </div>\r\n
+      \               </div>\r\n           </div>\r\n           <div class=\"classcontent_middle\">\r\n
+      \               <div class=\"classcontent_middle_left\">\r\n                      <img
+      src=\"/assets/img/Miss-course-three-pic-1.png\" width=\"176\" height=\"170\"
+      />\r\n                </div>\r\n                <div class=\"classcontent_middle_right\">\r\n
+      \                    <div class=\"classbox\">\r\n                          <span
+      class=\"bot\"></span>\r\n                          <span class=\"top\"></span>\r\n
+      \                         <div class=\"classcontent_middle_right01\">\r\n                                解决毛孔等问题，回复肌肤健康环境\r\n
+      \                         </div> \r\n                          <div class=\"classcontent_middle_right02\">每周1-2次清理角质，干净的清洁老角质和毛孔污垢。</div>\r\n
+      \                         <div class=\"classcontent_middle_right02\">洗脸也无法去除的毛孔污垢和老化角质、多余皮脂等，用此款啫喱轻柔按摩后清除。</div>\r\n
+      \                         <div class=\"classcontent_middle_right02\">在带来美肌成分的同时焕发肌肤活力，解决毛孔等问题，回复肌肤健康环境。</div>\r\n
+      \                         <div class=\"classcontent_txt01\">\r\n                                 <a>查看详情</a>\r\n
+      \                         </div>\r\n                          <div class=\"classcontent_pic01\">\r\n
+      \                                <img src=\"/assets/img/right-angle-green.jpg\"
+      width=\"5\" height=\"10\" />\r\n                          </div>\r\n                      </div>\r\n
+      \               </div>\r\n           </div>\r\n        "
+    - 1
+    - 2013-09-03 15:55:07.000000000 Z
+    - 2013-09-03 15:55:07.000000000 Z
+  - - 91
+    - 37
+    - classdetail
+    - "<div class=\"rightclass_middle\">\r\n                <div class=\"rightclass_middle_left\">\r\n
+      \                     <img class=\"rightclass_middle_pic01\" src=\"/assets/img/MissJu-days-dress.png\"
+      width=\"170\" height=\"182\" />\r\n                </div>\r\n                <div
+      class=\"rightclass_middle_right\">\r\n                      <div class=\"rightclass_middle_right01\">\r\n
+      \                            <div class=\"rightclass_middle_right02\">\r\n                                   <span
+      class=\"rightclass_middle_txt01\">在这个季节，你的肌肤是否有问题？</span>\r\n                             </div>\r\n
+      \                            <div class=\"rightclass_middle_right03\">\r\n                                   <span
+      class=\"rightclass_middle_txt02\">new!</span>\r\n                             </div>\r\n
+      \                     </div>\r\n                      <div class=\"rightclass_middle_right04\">\r\n
+      \                            <div class=\"rightclass_middle_txt03\">在有空调的室内肌肤很干燥，会像在沙漠中想立刻给肌肤补充水份的感觉。</div>\r\n
+      \                            <div class=\"rightclass_middle_txt03\">室外非常闷热，肌肤上因为汗水，油脂变得油光发亮了。</div>\r\n
+      \                            <div class=\"rightclass_middle_txt03\">强烈的阳光和紫外线让肌肤感到干燥，防晒霜对肌肤的不适应的原因也有。</div>\r\n
+      \                            <div class=\"rightclass_middle_txt03\">室内室外的温差使肌肤疲惫不堪，恶劣的环境让肌肤变得很粗糙。</div>\r\n
+      \                     </div>\r\n                      <div class=\"rightclass_middle_right05\">\r\n
+      \                            <img src=\"/assets/img/MissJu-days-comic.png\"
+      width=\"468\" height=\"90\" />\r\n                      </div>\r\n                      <div
+      class=\"rightclass_middle_right06\">\r\n                             <div class=\"rightclass_middle_txt03\">使肌肤保持滋润水盈</div>\r\n
+      \                            <div class=\"rightclass_middle_txt03\">室外湿度高，黏糊糊的，所以在室内的空调环境下肌肤会变得干燥。</div>\r\n
+      \                            <div class=\"rightclass_middle_txt03\">这样的温差，湿度差的环境更会让肌肤疲惫不堪。</div>\r\n
+      \                            <div class=\"rightclass_middle_txt03\">使用nature
+      home creamEX每天护肤，能调整肌肤的平衡，是肌肤滋润水盈。</div>\r\n                      </div>\r\n
+      \                     <div class=\"rightclass_middle_right07\">\r\n                             <div
+      class=\"rightclass_middle_txt03\">nature home cream EX</div>\r\n                             <div
+      class=\"rightclass_middle_txt03\">注目成分--α-葡聚糖寡</div>\r\n                             <div
+      class=\"rightclass_middle_txt03\">健康肌肤中的常在菌和病菌的存在比例是很平衡的，维持着肌肤的健康。但是，一些外在的刺激引起病菌的增加造成各种肌肤问题。α-葡聚糖寡是促进常在菌活跃的成份，保持肌肤清洁。能将紊乱的肌肤环境调整成健康状态的一种令人注目的成份。</div>\r\n
+      \                     </div>\r\n                      <div>\r\n                             <img
+      src=\"/assets/img/MissJu-days-last-pic.png\" width=\"350\" height=\"505\" />\r\n
+      \                     </div>\r\n                </div>\r\n           </div>"
+    - 1
+    - 2013-09-03 15:59:24.000000000 Z
+    - 2013-09-03 15:59:24.000000000 Z
+  - - 92
+    - 28
+    - concept
+    - "<div class=\"concept_middle_1\">\r\n                <img class=\"concept_middle_1_pic\"
+      src=\"/assets/img/aboutconcept-background.png\" width=\"720\" height=\"362\"
+      />\r\n           </div>\r\n           <div class=\"concept_middle_2\">\r\n                 <div
+      class=\"concept_midle_2_left\">\r\n                         <div class=\"concept_middle_2_left_top\">\r\n
+      \                              Feel the nature,Feel the power of skin--感·本源之力\r\n
+      \                        </div>\r\n                         <div class=\"concept_middle_2_left_middle\">\r\n
+      \                              <p>【Feel the Nature】--源自天然，信赖自然，引导肌肤由内而外焕发活力</p>\r\n
+      \                              <p>【Feel the Power of Skin】--绝不添加肌肤不需要的成分，激发肌肤本源之力</p>\r\n
+      \                        </div>\r\n                         <div class=\"concept_middle_2_left_bottem\">\r\n
+      \                              没有任何多余成分，减轻肌肤负担，引导肌肤自我修复。从婴儿到老人，甚至肌肤敏感人群都可使用。简妮gelnic怀着“让任何人都能够安心使用”的美好愿望，将呵护肌肤的商品送到每一位顾客手中。\r\n
+      \                        </div>\r\n                 </div>\r\n                 <div
+      class=\"concept_midle_2_right\">\r\n                         <div class=\"concept_middle_2_right01\">\r\n
+      \                              <div class=\"concept_middle_2_right02\">\r\n\t\t\t\t\t\t\t
+      \       <div class=\"concept_middle_2_txt03\">\r\n                                          <p>造成肌肤问题的几大原因是？</p>
+      \r\n\t\t\t\t\t\t\t\t\t</div>   \r\n                               </div>\r\n
+      \                              <div class=\"concept_middle_2_txt04\">\r\n                                    <p>睡眠不足</p>\r\n
+      \                                   <p>生理周期</p>\r\n                                    <p>工作忙碌</p>\r\n
+      \                                   <p>卸妆不干净</p>\r\n                                    <p>恶劣环境、干燥环境</p>\r\n
+      \                                   <p>化妆品在脸上时间过长(加班的时候)</p>\r\n                               </div>\r\n
+      \                        </div>\r\n                         <div class=\"concept_middle_2_right03\">\r\n
+      \                              <img src=\"/assets/img/everysection-percent.png\"
+      height=\"137\" width=\"76\" />\r\n                         </div>\r\n                 </div>
+      \               \r\n           </div>\r\n           <div>\r\n                 <div
+      class=\"concept_middle_3_txt01\">简妮gelnic认为“不必要的东西”是？</div>\r\n                 <div
+      class=\"concept_middle_3_txt02\">\r\n\t\t\t\t      <p>以下这些成分在简妮gelnic的所有产品中绝对不会出现。</p>\r\n\t\t\t
+      \    </div>\r\n                 <img class=\"concept_middle_3_pic\" src=\"/assets/img/4circle-1st.png\"
+      width=\"80\" height=\"80\" />\r\n                 <img class=\"concept_middle_3_pic\"
+      src=\"/assets/img/4circle-2nd.png\" width=\"80\" height=\"80\" />\r\n                 <img
+      class=\"concept_middle_3_pic\" src=\"/assets/img/4circle-3rd.png\" width=\"80\"
+      height=\"80\" />\r\n                 <img class=\"concept_middle_3_pic\" src=\"/assets/img/4circle-4th.png\"
+      width=\"80\" height=\"80\" />\r\n                 <img class=\"concept_middle_3_pic\"
+      src=\"/assets/img/4circle-5th.png\" width=\"80\" height=\"80\" />                 \r\n
+      \                <div class=\"concept_middle_3_bottom\">\r\n\t\t\t\t       <div
+      class=\"concept_middle_3_txt03\">\r\n                           这种成分会分解皮肤的保护膜——皮脂膜，令肌肤变得敏感脆弱，无法进行自我保护和自行修复。\r\n\t\t\t\t\t
+      \  </div>\r\n                 </div>\r\n                 <div class=\"concept_middle_3_bottom\">\r\n\t\t\t\t
+      \      <div class=\"concept_middle_3_txt03\">\r\n                           由于黏着度过高，会堵塞我们的毛孔；另外，由于紫外线可以轻易穿透矿物油，肌肤也会受到紫外线辐射的影响。\r\n\t\t\t\t\t
+      \  </div>\r\n                 </div>\r\n                 <div class=\"concept_middle_3_bottom\">\r\n\t\t\t\t
+      \      <div class=\"concept_middle_3_txt03\">\r\n                           挥发性高，会带走肌肤的水分，导致肌肤干燥紧绷，另外，酒精成分也会造成敏感肌肤的不适。\r\n\t\t\t\t\t
+      \  </div>\r\n                 </div>\r\n                 <div class=\"concept_middle_3_bottom\">\r\n\t\t\t\t
+      \      <div class=\"concept_middle_3_txt03\">\r\n                           对肌肤没有任何好处的合成香料只会平添负担，长期积累会导致肌肤粗糙。\r\n\t\t\t\t\t
+      \  </div>\r\n                 </div>\r\n                 <div class=\"concept_middle_3_bottom\">\r\n\t\t\t\t
+      \     <div class=\"concept_middle_3_txt03\">\r\n                           如果焦油色素的含量过多，长期使用会造成色素沉淀，令脸色灰暗枯黄。\r\n\t\t\t\t\t
+      \ </div>\r\n                 </div>\r\n           </div>"
+    - 1
+    - 2013-09-03 16:28:29.000000000 Z
+    - 2013-09-03 16:28:29.000000000 Z
+  - - 93
+    - 30
+    - safety
+    - "<div class=\"safety_middle_1\">\r\n              <div class=\"history_middle_1_top\">\r\n
+      \                   <img class=\"history_middle_1_pic\" src=\"/assets/img/logo_05.jpg\"
+      width=\"221\" height=\"104\" />\r\n                    <div class=\"history_middle_1_txt01\">Feel
+      the Nature, Feel the Power of Skin——感·本源之力</div>\r\n              </div>\r\n
+      \             <div class=\"history_middle_1_txt02\">\r\n                    gelnic始终追求\"最完美的品质\"，从原料的甄选、生产到品质检测的整个环节都严格控制，并使用先进完善的设备，确保最高的品质。\r\n
+      \             </div>\r\n           </div>\r\n           <div>\r\n                    <img
+      class=\"safety_middle_2_pic\" src=\"/assets/img/about-JN-safety.png\" width=\"662\"
+      height=\"430\" />\r\n           </div>"
+    - 1
+    - 2013-09-03 16:31:21.000000000 Z
+    - 2013-09-03 16:31:21.000000000 Z
+  - - 94
+    - 31
+    - story
+    - "<div class=\"story_middle_1\">\r\n              <div class=\"history_middle_1_top\">\r\n
+      \                   <img class=\"history_middle_1_pic\" src=\"/assets/img/logo_05.jpg\"
+      width=\"221\" height=\"104\" />\r\n                    <div class=\"history_middle_1_txt01\">Feel
+      the Nature, Feel the Power of Skin——感·本源之力</div>\r\n              </div>\r\n
+      \             <div class=\"history_middle_1_txt02\">\r\n                    简妮（gelnic）是创立于1986年的日本高级美容护肤品牌，自面世以来一直深受日本女士的喜爱。简妮gelnic秉持着“纯天然•无添加”的品牌理念，严格选择对肌肤不产生负担的高品质原料，注重\"渗透力\"与\"保湿力\"的完美平衡，真正做到\"敏感肌肤也可以使用\"，温和有效地帮助肌肤达到理想状态，令肌肤由内而外焕然新生。\r\n
+      \             </div>\r\n           </div>\r\n           <div>\r\n                    <div
+      class=\"story_middle_2\">\r\n                           <div class=\"story_middle_2_left\">\r\n
+      \                                品牌创始人\r\n                           </div>\r\n
+      \                          <div class=\"story_middle_2_right\">\r\n                                 因爱而生的美好品牌，历经27年传承，只为让她轻松维持美丽容颜。\r\n
+      \                          </div>\r\n                    </div>\r\n                    <div
+      class=\"story_middle_3\">\r\n                           <div class=\"story_middle_3_left\">\r\n
+      \                                <img class=\"story_middle_3_pic01\" src=\"/assets/img/about-JN-who-creat-JN.png\"
+      width=\"192\" height=\"260\" />\r\n                           </div>\r\n                           <div
+      class=\"story_middle_3_right01\">\r\n                                简妮，浓缩了一位丈夫对妻子的爱。\r\n
+      \                          </div>\r\n                           <div class=\"story_middle_3_right02\">\r\n
+      \                               上世纪80年代，日本国内掀起了一阵护肤美容浪潮；当时涌现出了大量美肤品牌，令人目不暇接，选择起来也非常苦恼。山崎敬三先生发现，自己的妻子每天都要用大量时间来美容护肤，同时仍然要操持繁重家务，也因此疲惫不堪；有没有只需要一个步骤就能完成所有肌肤护理的产品呢？山崎敬三先生咨询了很多皮肤科医生和专家，对肌肤的构造、机能原理以及水分进行了透彻分析；最终成功研发出了一种啫喱状保湿乳霜；山崎夫人亲自试用后，感到非常惊喜，便推广给自己的朋友，得到了一致好评。\r\n
+      \                          </div>\r\n                    </div>\r\n                    <div
+      class=\"story_middle_4\">\r\n                           <div class=\"story_middle_4_left\">\r\n
+      \                               <div class=\"story_middle_5\">\r\n                                     品牌创始人山崎敬三先生及夫人\r\n
+      \                               </div>                           \r\n                                <div
+      class=\"story_middle_6\">\r\n                                     品牌诞生初期，简妮邀请了美发沙龙的洗发小姐们试用，她们常年被化学\r\n
+      \                               </div>\r\n                                <div
+      class=\"story_middle_7\">\r\n                                     品侵蚀的双手迅速感受到这款乳霜的强大保湿修复能力；这个消息不胫而走，在美容沙龙中引爆了一阵抢购热潮，时至今日，它仍然是美容院及美发沙龙中最受推崇的单品之一。\r\n
+      \                               </div>\r\n                                <div
+      class=\"story_middle_8\">\r\n                                     山崎敬三先生根据大量用户反馈，对产品成分进行了数次优化，在这种精益求精的认真态度下，极少投放广告的简妮gelnic品牌在日本护肤品界赢得了至高的口碑，至今27年，简妮由爱而生的初衷未改，品质依然。\r\n
+      \                               </div>\r\n                                <div
+      class=\"story_middle_9\">\r\n                                     倾注自然护肤二十余载，简妮荣获国民级卓越贡献\r\n
+      \                               </div>\r\n                                <div
+      class=\"story_middle_10\">\r\n                                     山崎敬三先生常年精心研究皮肤构造，探寻肌肤真正所需成分。因为对啫喱类产品的不断研究和对产业所做的贡献，山崎敬三先生荣获由日本文化振兴协会颁发的\"社会文化贡献奖\"。\r\n
+      \                               </div>\r\n                                <div
+      class=\"story_middle_11\">\r\n                                     <img class=\"story_middle_4_pic01\"
+      src=\"/assets/img/aword-present.png\" width=\"457\" height=\"149\" /></div>\r\n
+      \                               </div>\r\n                           </div>\r\n
+      \                          <div class=\"story_middle_4_right\">\r\n                                <img
+      class=\"story_middle_4_pic02\" src=\"/assets/img/manager-of-JN.png\" width=\"130\"
+      height=\"180\" />\r\n                                <div class=\"story_middle_12\">\r\n
+      \                                    <p>gelnic株式会社总经理</p>\r\n                                     <p>山崎美和子女士</p>\r\n
+      \                               </div>\r\n                                <div
+      class=\"story_middle_13\">\r\n                                     <img class=\"story_middle_4_pic02\"
+      src=\"/assets/img/the-present.png\" width=\"112\" height=\"230\" />\r\n                                </div>\r\n
+      \                          </div>\r\n                    </div>\r\n                    <div>\r\n
+      \                        <div class=\"story_middle_14_left\">\r\n                                <div
+      class=\"story_middle_14_txt01\">*</div>\r\n\t\t\t\t\t\t\t\t<div>社会文化贡献奖</div>\r\n
+      \                        </div>\r\n                         <div class=\"story_middle_14_right\">\r\n
+      \                               <p>由日本文化振兴协会发起的奖项，评选出各行业的优秀人才或对日本文化事业的振兴作出显著贡献的人士，经过评委会严格筛选，只在每年上半年和下半年各评选1位获奖者授予奖项，在日本民间被称为最具荣耀意义的奖项之一。</p>\r\n
+      \                        </div>\r\n                    </div>\r\n                     <div>\r\n
+      \                        <div class=\"story_middle_14_left\">\r\n                                <div
+      class=\"story_middle_14_txt01\">*</div>\r\n\t\t\t\t\t\t\t\t<div>日本文化振兴协会</div>\r\n
+      \                        </div>\r\n                         <div class=\"story_middle_14_right\">\r\n
+      \                               <p>由原日本皇族、43任内阁总理大臣東久邇稔彦先生在1971年创立的国际文化交流团体。现由原皇族伏見博明先生任总裁，致力于各种日本文化振兴及国际文化交流活动。</p>\r\n
+      \                        </div>\r\n\t\t\t\t\t \r\n\t\t </div>"
+    - 1
+    - 2013-09-03 16:47:06.000000000 Z
+    - 2013-09-03 16:47:06.000000000 Z
+  - - 95
+    - 29
+    - history
+    - "<div class=\"history_middle_1\">\r\n              <div class=\"history_middle_1_top\">\r\n
+      \                   <img class=\"history_middle_1_pic\" src=\"/assets/img/logo_05.jpg\"
+      width=\"221\" height=\"104\" />\r\n                    <div class=\"history_middle_1_txt01\">Feel
+      the Nature, Feel the Power of Skin——感·本源之力</div>\r\n              </div>\r\n
+      \             <div class=\"history_middle_1_txt02\">\r\n                    简妮（gelnic）是创立于1986年的日本高级美容护肤品牌，自面世以来一直深受日本女士的喜爱。简妮gelnic以\"重视客户体验，口碑至上\"的市场观念，通过美容沙龙、各种试用活动等方式，获取了一大批忠实客户。2013年，简妮gelnic已经进入中国内地，成为崇尚自然美肌的女性消费者的首选品牌。\r\n
+      \             </div>\r\n           </div>\r\n           <div>\r\n                    <div
+      class=\"history_middle_2_txt01\">大事记</div>\r\n                    <div class=\"history_middle_2_txt02\">\r\n\t\t\t\t\t
+      \   <p> 『1986年6月』･･･ 株式会社Nayuta成立（简妮gelnic品牌前身）</p>\r\n                        <p>『1988年7月』･･･
+      明星产品Nature Gel Home Cream上市 </p>\r\n                        <p>『1995年6月』･･･因业务扩大，新建自主工厂，为肌肤定制的美肌产品均由设备齐全的自主工厂生产，所有工序均经过严格管理检验，从根本上把控了产品品质
+      </p>\r\n                        <p>『1996年4月』･･･ 株式会社简妮gelnic成立 </p>\r\n                        <p>『2013年』･･･････
+      秉承对\"敏感肌肤的研究\"，走过27年历史 </p>\r\n\t\t\t\t\t </div>\r\n           </div>"
+    - 1
+    - 2013-09-03 16:50:00.000000000 Z
+    - 2013-09-03 16:50:00.000000000 Z

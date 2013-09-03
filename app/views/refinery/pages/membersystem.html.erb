@@ -1,26 +1,11 @@
 <!doctype html>
 <html>
 <head>
-<style type="text/css">
-a{ text-decoration:none;}
-a:hover{ text-decoration:underline;}
-</style>
-<link href="/assets/layout.css" rel="stylesheet" type="text/css" media="screen" />
-
 <title>会员制度</title>
-
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-
-<link href="/assets/Member-information-resetpassword.css" rel="stylesheet" type="text/css" media="screen" />
-<link href="/assets/Member-institution.css" rel="stylesheet" type="text/css" media="screen" />
-
 </head>
-
 <body>
 
 <div class="middle-xp">
-
-
 <div id="member-left" >
   
   <div class="basket1">
@@ -109,10 +94,9 @@ a:hover{ text-decoration:underline;}
     </div>
    
 </div>
-
 <div id="content_right">
-     <div class="resetpw">
-           <div class="resetpw_head">
+	<div class="resetpw">
+	<div class="resetpw_head">
                 <ul>
 			<li class="resetpw_head_txt1"><a href="/">首页</a></li>
                         <li class="resetpw_head_txt2">&nbsp;&nbsp;>&nbsp;&nbsp;</li>
@@ -120,122 +104,14 @@ a:hover{ text-decoration:underline;}
                         <li class="resetpw_head_txt2">&nbsp;&nbsp;>&nbsp;&nbsp;</li>
                         <li class="resetpw_head_txt1"><a href="/会员专区/会员制度">会员制度</a></li>
                 </ul>
-           </div>
-           <div class="resetpw_top">
+	</div>
+	<div class="resetpw_top">
                 <p class="resetpw_top_txt">&nbsp;会员制度</p>
-           </div>
-           <div class="institution_middle_1">
-                <div class="institution_middle_title">
-                 会员权益
-                </div>
-                <div class="middle_1_content">
-                     <ul>
-                              <li>
-                                    
-                                    注册送积分：注册即送100积分，并有机会获得Gelnic【洁面+去角质+多效滋润凝露】惊喜感受套装
-                                    
-                              </li>
-                              <li>
-                                    
-                                    积分换礼：每年2次换礼申请，臻选心动好礼
-                                    
-                              </li>
-                              <li>
-                                   
-                                   最新促销信息：提前得知最新促销活动等信息
-                                  
-                              </li>
-                              <li>
-                                   
-                                   会员专享优惠：享受会员专属促销优惠
-                                   
-                              </li>
-                              <li>
-                                
-                                   新品体验：优先获得新品或限定品体验机会
-                                   
-                              </li>
-                              <li>
-                               
-                                   美研沙龙：有机会受邀参加美研沙龙或讲座
-                                  
-                              </li>
-                              <li>
-                                   
-                                   健康贴士及资讯：定期获取温馨健康贴士及专业资讯
-                                 
-                              </li>
-                              <li>
-                                   
-                                   电子会刊：定期会员电子专刊
-                                 
-                              </li>
-                     </ul>
-                </div>
-           </div>
-           <div class="institution_middle_2">
-                <div class="institution_middle_title">
-                会员积分规则
-                </div>
-                <div class="middle_2_top">
-                     <ul>
-                              <li>
-                              1元消费=1个积分
-                              </li>
-                              <li>
-                            绑定天猫账号、京东账号后，在天猫商城及京东商城上购买gelnic商品，享受1元消费=1个积分的积分累计奖励。（绑定账号后系统自
-                              </li>
-                              <li>
-                              动累计积分）积分可在积分商城兑换相应礼品。
-                              </li>
-                     </ul>
-                </div>
-                <div class="middle_2_content">
-                     <ul>
-                              <li>
-                                   
-                                     积分累计暂时只针对大陆地区会员开放。
-                                  
-                              </li>
-                              <li>
-                                     
-                                     会员积分有效期为2年。
-                                    
-                              </li>
-                              <li>
-                                     
-                                     发生退货时会相应地影响积分。
-                                    
-                              </li>
-                              <li>
-                                     
-                                     会员身份失效积分亦相应失效。
-                                   
-                              </li>
-                              <li>
-                                     
-                                     会员推荐好友至gelnic官网并注册成功，即或200积分奖励
-                                    
-                              </li>
-                              
-                     </ul>
-                </div>
-                <div class="middle_2_bottom">
-                     <ul>
-                              <li>
-                              积分兑换及查询途径
-                              </li>
-                              <li>
-                              A.登陆官方网站查询：&nbsp;&nbsp;www.gelnic.com.cn
-                              </li>
-                              <li>
-                              B.拨打客户热线查询：&nbsp;&nbsp;800-000-0000
-                              </li>
-                     </ul>
-                </div>   
-          </div>
-     </div>
+    </div>
+	<%=raw @page.content_for(:memsys) %>
+	</div>
 </div>
+
 </body>
 </html>
 

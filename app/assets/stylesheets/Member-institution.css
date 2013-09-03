@@ -19,6 +19,7 @@
 	font-size:12px;
 	color:#666666;	
 	margin-top:7px;
+	list-style-image: url("/assets/img/green-point-member-institution.png");
 }
 
 
@@ -45,6 +46,7 @@
 	font-size:12px;
 	color:#666666;	
 	margin-top:7px;
+	list-style-image: url("/assets/img/green-point-member-institution.png");
 }
 .middle_2_bottom ul{
 	list-style:none;
@@ -55,6 +57,7 @@
 	padding-bottom:6px;
 	font-size:12px;
 	color:#666666;	
+	
 }
 .middle_href{
 	color:#9dd073;
