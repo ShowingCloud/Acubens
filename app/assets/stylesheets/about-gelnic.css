@@ -57,11 +57,13 @@
 	color:#6eb92b;
     font-size:12px;
 	text-align:center;
-	padding-top:34px;
+	padding-top:22px;
 }
 .concept_middle_2_txt04{
 	font-size:12px;   
-	color:#999999;
+	color:#999999;	
+}
+.concept_middle_2_txt04 p{
 	line-height:24px;
 }
 .concept_middle_2_right03{
@@ -118,10 +120,11 @@
 .history_middle_1_txt02{
 	font-size:12px;  
 	color:#666666;
-	text-indent:42px;
+	text-indent:24px;
 	line-height:24px;
 	letter-spacing:1px;
 	padding-left:18px;
+	width:684px;
 }
 .history_middle_2_txt01{
 	font-size:14px;
@@ -135,10 +138,7 @@
 	font-size:12px;  
 	color:#666666;
 	line-height:36px;
-	text-indent:3px;
-}
-.history_2_left{
-	float:left;
+	padding-left:3px;
 }
 .safety_middle_1{
 	height:264px;
@@ -172,8 +172,8 @@
 	letter-spacing:3.6px;
 }
 .story_middle_2_right{
-	width:450px;
-	float:right;
+	width:420px;
+	float:left;
 	margin-top:50px;
 	height:70px;
 	font-size:14px;
@@ -181,9 +181,7 @@
 	line-height:24px;
 	letter-spacing:2px;
 }
-.story_middle_2_txt02{
-			
-}
+
 .story_middle_3{
 	height:260px;	
 }
@@ -204,13 +202,13 @@
 	line-height:24px;
 }
 .story_middle_3_right02{
-	float:right;
-	width:450px;
+	float:left;
+	width:410px;
 	height:212px;
 	font-size:12px;  
 	color:#666666;
 	letter-spacing:1px;   
-	line-height:24px;
+	line-height:24px;	
 }
 .story_middle_4{
 	float:left;
@@ -318,21 +316,22 @@
 }
 .story_middle_14_left{
 	float:left;
-	width:34px;
+	font-size:12px;
+	color:#aaaaaa;
+	line-height:18px;
+	margin-left:16px;
 }
 .story_middle_14_txt01{
+	letter-spacing:10px;
 	float:left;
-	text-indent:18px;
-	font-size:14px;
-	color:#aaaaaa;
-	height:64px;
 }
 .story_middle_14_right{
-	float:right;
+	float:left;
 	width:686px;
 	height:64px;
 	font-size:12px;
 	color:#aaaaaa;
 	line-height:18px;
+	margin-left:30px;
 }
 
