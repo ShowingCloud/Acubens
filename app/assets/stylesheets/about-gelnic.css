@@ -140,7 +140,8 @@
 	font-size:12px;  
 	color:#666666;
 	line-height:36px;
-	padding-left:3px;
+	margin-left:100px;
+	text-indent:-100px;
 }
 .safety_middle_1{
 	height:264px;
