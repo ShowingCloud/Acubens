@@ -88,23 +88,6 @@ refinery_pages:
     - application
     - 2013-07-31 18:37:18.000000000 Z
     - 2013-08-15 12:22:13.000000000 Z
-  - - 5
-    - 20
-    - 
-    - 修改手机
-    - false
-    - ''
-    - 
-    - true
-    - false
-    - false
-    - 40
-    - 41
-    - 1
-    - resettel
-    - application
-    - 2013-07-31 18:37:39.000000000 Z
-    - 2013-08-15 12:27:14.000000000 Z
   - - 6
     - 20
     - 
@@ -115,8 +98,8 @@ refinery_pages:
     - true
     - false
     - false
-    - 44
-    - 45
+    - 42
+    - 43
     - 1
     - resetpwd
     - application
@@ -132,8 +115,8 @@ refinery_pages:
     - true
     - false
     - false
-    - 42
-    - 43
+    - 40
+    - 41
     - 1
     - changeinfo
     - application
@@ -149,8 +132,8 @@ refinery_pages:
     - true
     - false
     - false
-    - 48
-    - 49
+    - 46
+    - 47
     - 1
     - firstlogin
     - application
@@ -166,8 +149,8 @@ refinery_pages:
     - true
     - false
     - false
-    - 50
-    - 51
+    - 48
+    - 49
     - 1
     - mailverify
     - application
@@ -183,8 +166,8 @@ refinery_pages:
     - true
     - false
     - false
-    - 46
-    - 47
+    - 44
+    - 45
     - 1
     - pwdverify
     - application
@@ -200,8 +183,8 @@ refinery_pages:
     - true
     - false
     - false
-    - 55
-    - 56
+    - 53
+    - 54
     - 2
     - memberinfo
     - application
@@ -217,8 +200,8 @@ refinery_pages:
     - true
     - false
     - false
-    - 61
-    - 62
+    - 59
+    - 60
     - 2
     - showexchangehistory
     - application
@@ -234,8 +217,8 @@ refinery_pages:
     - true
     - false
     - false
-    - 59
-    - 60
+    - 57
+    - 58
     - 2
     - exchangepoints
     - application
@@ -251,8 +234,8 @@ refinery_pages:
     - true
     - false
     - false
-    - 63
-    - 64
+    - 61
+    - 62
     - 2
     - myorder
     - application
@@ -268,8 +251,8 @@ refinery_pages:
     - true
     - false
     - false
-    - 57
-    - 58
+    - 55
+    - 56
     - 2
     - mypoints
     - application
@@ -285,8 +268,8 @@ refinery_pages:
     - true
     - false
     - false
-    - 67
-    - 68
+    - 65
+    - 66
     - 0
     - show
     - application
@@ -337,7 +320,7 @@ refinery_pages:
     - false
     - false
     - 37
-    - 66
+    - 64
     - 0
     - show
     - application
@@ -353,8 +336,8 @@ refinery_pages:
     - true
     - false
     - false
-    - 69
-    - 70
+    - 67
+    - 68
     - 0
     - home
     - application
@@ -370,8 +353,8 @@ refinery_pages:
     - true
     - false
     - false
-    - 71
-    - 76
+    - 69
+    - 74
     - 0
     - tips-tech-last-pig
     - application
@@ -387,13 +370,13 @@ refinery_pages:
     - true
     - false
     - false
-    - 79
-    - 80
+    - 77
+    - 78
     - 0
     - contactus-last
     - application
     - 2013-07-31 18:49:52.000000000 Z
-    - 2013-08-20 07:34:21.000000000 Z
+    - 2013-09-04 16:56:21.000000000 Z
   - - 25
     - 
     - 
@@ -404,8 +387,8 @@ refinery_pages:
     - true
     - false
     - false
-    - 77
-    - 78
+    - 75
+    - 76
     - 0
     - home
     - application
@@ -421,8 +404,8 @@ refinery_pages:
     - true
     - false
     - false
-    - 54
-    - 65
+    - 52
+    - 63
     - 1
     - memberinfo
     - application
@@ -444,7 +427,7 @@ refinery_pages:
     - concept-last
     - application
     - 2013-08-20 07:11:49.000000000 Z
-    - 2013-09-03 16:28:29.000000000 Z
+    - 2013-09-04 07:03:06.000000000 Z
   - - 29
     - 19
     - 
@@ -540,8 +523,8 @@ refinery_pages:
     - true
     - false
     - false
-    - 72
-    - 73
+    - 70
+    - 71
     - 1
     - tips-tech-last-pig
     - application
@@ -557,8 +540,8 @@ refinery_pages:
     - true
     - false
     - false
-    - 74
-    - 75
+    - 72
+    - 73
     - 1
     - customers-voice-last-pig
     - application
@@ -693,10 +676,10 @@ refinery_pages:
     - true
     - false
     - false
-    - 52
-    - 53
+    - 50
+    - 51
     - 1
     - membersystem
     - application
     - 2013-09-03 15:08:32.000000000 Z
-    - 2013-09-03 15:30:43.000000000 Z
+    - 2013-09-04 15:36:10.000000000 Z
