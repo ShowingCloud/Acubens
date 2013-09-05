@@ -1,9 +1,13 @@
 <!doctype html>
 <html>
-<head>
-<link href="/assets/layout.css" rel="stylesheet" type="text/css" media="screen" />
-<link href="/assets/index-part.css" rel="stylesheet" type="text/css" media="screen" />
-<script type="text/javascript" src="/assets/js/jquery.js"></script>
+
+<% content_for :javascripts do %>
+<script>
+   $(window).load(function() {
+    $('.flexslider').flexslider();
+  });
+	
+</script>
 <script>
 $(document).ready(function(){
 	$("#news-text1").show();
@@ -34,16 +38,19 @@ $(document).ready(function(){
 
 });
 </script>
+<% end %>
 
 
-<meta charset="utf-8">
-<title>gelnic</title>
-</head>
 
 <body>
 <div id="page_container1">
   <div class="kv">
-  <img src="/assets/img/kv1.png" width="970px">
+ 	 	<div class="flexslider">
+ 	 		<ul class="slides">
+ 				 <li><img src="/assets/img/kv1.png" width="970px" /></li>
+ 				 <li><img src="/assets/img/kv1.png" width="970px" ></li>
+ 			</ul>
+  		</div>
   </div>
     <div class="media-movie" style="background-color:#0F0;">
        
@@ -73,9 +80,11 @@ $(document).ready(function(){
     
     
     <div class="news-text1" id="news-text1">
-		<img src="/assets/img/info.png" class="notice">
-		<% @items = Refinery::News::Item.latest(5) %>
-		<%= render :partial => '/refinery/news/items/recent_posts' %>
+      <img src="/assets/img/info.png" class="notice">
+      <ul>
+      <li class="mar1">2013/07/03</li>
+      <li class="mar2">新闻标题</li>
+      </ul>
     </div>
 	<div class="news-text2" id="news-text2">
       <img src="/assets/img/notice.png" class="notice">
