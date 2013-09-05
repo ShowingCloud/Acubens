@@ -68,20 +68,6 @@ refinery_page_parts:
     - 1
     - 2013-07-31 18:37:18.000000000 Z
     - 2013-08-15 12:22:13.000000000 Z
-  - - 8
-    - 5
-    - Body
-    - ''
-    - 0
-    - 2013-07-31 18:37:39.000000000 Z
-    - 2013-08-15 12:27:14.000000000 Z
-  - - 9
-    - 5
-    - Side Body
-    - ''
-    - 1
-    - 2013-07-31 18:37:39.000000000 Z
-    - 2013-08-15 12:27:14.000000000 Z
   - - 10
     - 6
     - Body
@@ -306,20 +292,13 @@ refinery_page_parts:
     - 1
     - 2013-07-31 18:49:23.000000000 Z
     - 2013-08-21 16:59:20.000000000 Z
-  - - 46
-    - 24
-    - Body
-    - ''
-    - 0
-    - 2013-07-31 18:49:52.000000000 Z
-    - 2013-08-20 07:34:21.000000000 Z
   - - 47
     - 24
     - Side Body
     - ''
-    - 1
+    - 0
     - 2013-07-31 18:49:52.000000000 Z
-    - 2013-08-20 07:34:21.000000000 Z
+    - 2013-09-04 16:56:21.000000000 Z
   - - 49
     - 25
     - Side Body
@@ -347,7 +326,7 @@ refinery_page_parts:
     - ''
     - 0
     - 2013-08-20 07:11:49.000000000 Z
-    - 2013-09-03 16:28:29.000000000 Z
+    - 2013-09-04 07:03:06.000000000 Z
   - - 57
     - 29
     - Side Body
@@ -494,17 +473,16 @@ refinery_page_parts:
     - "<div class=\"institution_middle_1\">\r\n                <div class=\"institution_middle_title\">\r\n
       \                会员权益\r\n                </div>\r\n                <div class=\"middle_1_content\">\r\n
       \                    <ul>\r\n                              <li>\r\n                                    \r\n
-      \                                   注册送积分：注册即送100积分，并有机会获得Gelnic【洁面+去角质+多效滋润凝露】惊喜感受套装\r\n
+      \                                   注册送积分：注册即送100积分，并有机会获得Gelnic惊喜体验套装\r\n                                    \r\n
+      \                             </li>\r\n                              <li>\r\n
+      \                                   \r\n                                    积分换礼：每年2次换礼申请，臻选心动好礼\r\n
       \                                   \r\n                              </li>\r\n
-      \                             <li>\r\n                                    \r\n
-      \                                   积分换礼：每年2次换礼申请，臻选心动好礼\r\n                                    \r\n
-      \                             </li>\r\n                              <li>\r\n
-      \                                  \r\n                                   最新促销信息：提前得知最新促销活动等信息\r\n
-      \                                 \r\n                              </li>\r\n
       \                             <li>\r\n                                   \r\n
-      \                                  会员专享优惠：享受会员专属促销优惠\r\n                                   \r\n
+      \                                  最新促销信息：提前得知最新促销活动等信息\r\n                                  \r\n
       \                             </li>\r\n                              <li>\r\n
-      \                               \r\n                                   新品体验：优先获得新品或限定品体验机会\r\n
+      \                                  \r\n                                   会员专享优惠：享受会员专属促销优惠\r\n
+      \                                  \r\n                              </li>\r\n
+      \                             <li>\r\n                                \r\n                                   新品体验：优先获得新品或限定品体验机会\r\n
       \                                  \r\n                              </li>\r\n
       \                             <li>\r\n                               \r\n                                   美研沙龙：有机会受邀参加美研沙龙或讲座\r\n
       \                                 \r\n                              </li>\r\n
@@ -516,11 +494,11 @@ refinery_page_parts:
       \                    </ul>\r\n                </div>\r\n           </div>\r\n<div
       class=\"institution_middle_2\">\r\n                <div class=\"institution_middle_title\">\r\n
       \               会员积分规则\r\n                </div>\r\n                <div class=\"middle_2_top\">\r\n
-      \                    <ul>\r\n                              <li>\r\n                              1元消费=1个积分\r\n
+      \                    <ul>\r\n                              <li>\r\n                              您在简妮官方网店上的每1元消费将累计1个积分\r\n
       \                             </li>\r\n                              <li>\r\n
-      \                           绑定天猫账号、京东账号后，在天猫商城及京东商城上购买gelnic商品，享受1元消费=1个积分的积分累计奖励。（绑定账号后系统自\r\n
+      \                          绑定网店账号后，您在相应网店上购买gelnic商品后即可享受1元消费=1个积分的积分累计奖励。\r\n
       \                             </li>\r\n                              <li>\r\n
-      \                             动累计积分）积分可在积分商城兑换相应礼品。\r\n                              </li>\r\n
+      \                             积分可在积分商城兑换相应礼品。\r\n                              </li>\r\n
       \                    </ul>\r\n                </div>\r\n                <div
       class=\"middle_2_content\">\r\n                     <ul>\r\n                              <li>\r\n
       \                                  \r\n                                     积分累计暂时只针对大陆地区会员开放。\r\n
@@ -538,14 +516,16 @@ refinery_page_parts:
       \                             \r\n                     </ul>\r\n                </div>\r\n
       \               <div class=\"middle_2_bottom\">\r\n                     <ul>\r\n
       \                             <li>\r\n                              积分兑换及查询途径\r\n
-      \                             </li>\r\n                              <li>\r\n
-      \                             A.登陆官方网站查询：&#160;&#160;www.gelnic.com.cn\r\n                              </li>\r\n
-      \                             <li>\r\n                              B.拨打客户热线查询：&#160;&#160;800-000-0000\r\n
-      \                             </li>\r\n                     </ul>\r\n                </div>
-      \  \r\n          </div>"
+      \                             </li>\r\n                              \r\n                     </ul>\r\n
+      \               </div> \r\n<div class=\"middle_2_content\">\r\n                     <ul>\r\n
+      \                             <li>具体积分兑换活动及商品请留意网站通知\r\n                                  \r\n
+      \                             </li>\r\n                              <li>请登陆“积分兑换”界面进行兑换</li>\r\n
+      \                             <li>本网站保留积分兑换的最终解释权</li>\r\n                              \r\n
+      \                    </ul>\r\n                </div>  \r\n                \r\n
+      \         </div>"
     - 0
     - 2013-09-03 15:27:00.000000000 Z
-    - 2013-09-03 15:30:43.000000000 Z
+    - 2013-09-04 15:36:10.000000000 Z
   - - 87
     - 34
     - tiptech
@@ -1134,7 +1114,7 @@ refinery_page_parts:
       \ </div>\r\n                 </div>\r\n           </div>"
     - 1
     - 2013-09-03 16:28:29.000000000 Z
-    - 2013-09-03 16:28:29.000000000 Z
+    - 2013-09-04 07:03:06.000000000 Z
   - - 93
     - 30
     - safety
@@ -1223,3 +1203,45 @@ refinery_page_parts:
     - 1
     - 2013-09-03 16:50:00.000000000 Z
     - 2013-09-03 16:50:00.000000000 Z
+  - - 98
+    - 24
+    - contactus
+    - "<ul>\r\n             <li class=\"text-all-color-green-contact\">\r\n                 若您需要对我们的产品了解更多，或有关于产品购买的问题，请随时同我们联络。\r\n
+      \            </li>\r\n             \r\n  </ul>\r\n      <div class=\"contact-us-customer-1\">\r\n
+      \           <div class=\"contact-us-height\">\r\n              <div class=\"ul-customer-tell\">\r\n
+      \                 客服电话\r\n                 </div>\r\n                  <img
+      src=\"/assets/img/phone.png\" class=\"tellphone-size\" />\r\n              </div>\r\n
+      \           <div>\r\n                  <img src=\"/assets/img/cesstte.png\"
+      class=\"cesstte-contact\" />\r\n            <div class=\"number-800\">\r\n               800-000-0000\r\n
+      \           </div>\r\n\r\n            <div class=\"notice-contact\">\r\n            客服工作时间：周一至周五，除国定节假日外\r\n
+      \           </div>\r\n\r\n            </div>\r\n       </div>   \r\n       \r\n
+      \      <div class=\"contact-us-customer-1\">\r\n            <div class=\"contact-us-height\">\r\n
+      \             <div class=\"ul-customer-tell\">\r\n                  在线客服\r\n
+      \             </div>\r\n              <img src=\"/assets/img/person.png\" class=\"person\"
+      />\r\n         </div>\r\n            <div>\r\n                  <img src=\"/assets/img/IAMCALLING.png\"
+      class=\"cesstte-contact-us-us\" />\r\n              <div class=\"notice-contact\">\r\n
+      \           客服工作时间：9:00-20:00 周一至周五，除国定节假日外\r\n            </div>\r\n\r\n         </div>\r\n
+      \      </div>   \r\n    <div class=\"contact-us-customer-1\">\r\n            <div
+      class=\"contact-us-height\">\r\n              <div class=\"ul-customer-tell\">\r\n
+      \                 客服电话\r\n              </div>\r\n              <img src=\"/assets/img/MicBlog-gray.png\"
+      class=\"tellphone-size\" />\r\n      </div>\r\n            <div>\r\n              \r\n
+      \              <a href=\"http:www.weibo.com\" class=\"number-800-http-weibo\">http://weibo.com/\r\n</a>
+      \           \r\n\r\n            <div class=\"notice-contact-weibo\">\r\n            关注简妮官方微博，和小菊老师一起开启美丽新纪元！\r\n
+      \           </div>\r\n\r\n      </div>\r\n    </div>    \r\n    \r\n    <div
+      class=\"contact-us-customer-wechat\">\r\n            <div class=\"contact-us-height\">\r\n
+      \             <div class=\"ul-customer-tell\">\r\n                  官方微信\r\n
+      \                </div>\r\n                  <img src=\"/assets/img/wechat-gray.png\"
+      class=\"tellphone-size-wechat\" />\r\n              </div>\r\n           \r\n\r\n
+      \           <div class=\"notice-contact-wechat\">\r\n            微信扫一扫，俘获更多私家美容秘笈！\r\n
+      \           </div>\r\n            \r\n            \r\n            <div class=\"Wechat-two-dimension-code-position\">\r\n
+      \           <img src=\"/assets/img/two-dimension-code.png\" />\r\n            </div>\r\n
+      \           \r\n            <div class=\"Whchat-secret\">\r\n            \r\n
+      \           <ul>\r\n            <li class=\"Whchat-secret-list\">\r\n            扫描二码即刻关注，二维码使用方法：\r\n</li>\r\n
+      \           <li class=\"Whchat-secret-list\">1. 在手机上登录微信后选择“找朋友”=》二维码扫描，将摄像头对准二维码图片约2~3秒，即可识别并加载对方微信\r\n
+      \             的基本资料，您可以向对方打招呼或加为好友。\r\n              </li>\r\n            <li
+      class=\"Whchat-secret-list\">2. 在手机上打开微信——&gt;点击右上角魔棒——&gt;扫一扫微信二维码就可以了，确认添加等待对方验证后就加为好友了。\r\n
+      \           </li>\r\n            \r\n            \r\n            </ul>\r\n            \r\n
+      \           \r\n            \r\n            \r\n            </div>\r\n\r\n       </div>"
+    - 1
+    - 2013-09-04 16:56:21.000000000 Z
+    - 2013-09-04 16:56:21.000000000 Z
