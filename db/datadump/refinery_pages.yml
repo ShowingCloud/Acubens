@@ -36,7 +36,7 @@ refinery_pages:
     - home
     - application
     - 2013-07-31 17:59:13.000000000 Z
-    - 2013-07-31 18:51:29.000000000 Z
+    - 2013-09-05 17:57:18.000000000 Z
   - - 2
     - 1
     - 
@@ -687,7 +687,7 @@ refinery_pages:
     - 38
     - 
     - product1
-    - true
+    - false
     - ''
     - 
     - true
@@ -696,15 +696,15 @@ refinery_pages:
     - 25
     - 26
     - 2
-    - products-cleansing
+    - products-cleansing0101
     - application
     - 2013-09-05 17:06:35.000000000 Z
-    - 2013-09-05 17:06:35.000000000 Z
+    - 2013-09-05 18:11:20.000000000 Z
   - - 46
     - 38
     - 
     - product2
-    - true
+    - false
     - ''
     - 
     - true
@@ -713,15 +713,15 @@ refinery_pages:
     - 27
     - 28
     - 2
-    - products-cleansing
+    - products-cleansing0101
     - application
     - 2013-09-05 17:06:47.000000000 Z
-    - 2013-09-05 17:06:47.000000000 Z
+    - 2013-09-05 18:11:39.000000000 Z
   - - 47
     - 38
     - 
     - product3
-    - true
+    - false
     - ''
     - 
     - true
@@ -730,15 +730,15 @@ refinery_pages:
     - 29
     - 30
     - 2
-    - products-cleansing
+    - products-cleansing0101
     - application
     - 2013-09-05 17:06:56.000000000 Z
-    - 2013-09-05 17:06:56.000000000 Z
+    - 2013-09-05 18:12:05.000000000 Z
   - - 48
     - 38
     - 
     - product4
-    - true
+    - false
     - ''
     - 
     - true
@@ -747,15 +747,15 @@ refinery_pages:
     - 31
     - 32
     - 2
-    - products-cleansing
+    - products-cleansing0101
     - application
     - 2013-09-05 17:08:37.000000000 Z
-    - 2013-09-05 17:08:37.000000000 Z
+    - 2013-09-05 18:12:20.000000000 Z
   - - 49
     - 41
     - 
     - product1
-    - true
+    - false
     - ''
     - 
     - true
@@ -764,15 +764,15 @@ refinery_pages:
     - 35
     - 36
     - 2
-    - products-peeling
+    - products-peeling0201
     - application
     - 2013-09-05 17:08:48.000000000 Z
-    - 2013-09-05 17:08:48.000000000 Z
+    - 2013-09-05 18:12:48.000000000 Z
   - - 50
     - 41
     - 
     - product2
-    - true
+    - false
     - ''
     - 
     - true
@@ -781,15 +781,15 @@ refinery_pages:
     - 37
     - 38
     - 2
-    - products-peeling
+    - products-peeling0201
     - application
     - 2013-09-05 17:08:58.000000000 Z
-    - 2013-09-05 17:08:58.000000000 Z
+    - 2013-09-05 18:13:03.000000000 Z
   - - 51
     - 41
     - 
     - product3
-    - true
+    - false
     - ''
     - 
     - true
@@ -798,15 +798,15 @@ refinery_pages:
     - 39
     - 40
     - 2
-    - products-peeling
+    - products-peeling0201
     - application
     - 2013-09-05 17:09:07.000000000 Z
-    - 2013-09-05 17:09:07.000000000 Z
+    - 2013-09-05 18:13:17.000000000 Z
   - - 52
     - 41
     - 
     - product4
-    - true
+    - false
     - ''
     - 
     - true
@@ -815,15 +815,15 @@ refinery_pages:
     - 41
     - 42
     - 2
-    - products-peeling
+    - products-peeling0201
     - application
     - 2013-09-05 17:09:52.000000000 Z
-    - 2013-09-05 17:09:52.000000000 Z
+    - 2013-09-05 18:13:33.000000000 Z
   - - 53
     - 40
     - 
     - product1
-    - true
+    - false
     - ''
     - 
     - true
@@ -832,15 +832,15 @@ refinery_pages:
     - 45
     - 46
     - 2
-    - products-homecream
+    - products-homecream0301
     - application
     - 2013-09-05 17:10:03.000000000 Z
-    - 2013-09-05 17:10:03.000000000 Z
+    - 2013-09-05 18:15:24.000000000 Z
   - - 54
     - 40
     - 
     - product2
-    - true
+    - false
     - ''
     - 
     - true
@@ -849,15 +849,15 @@ refinery_pages:
     - 47
     - 48
     - 2
-    - products-homecream
+    - products-homecream0301
     - application
     - 2013-09-05 17:10:15.000000000 Z
-    - 2013-09-05 17:10:15.000000000 Z
+    - 2013-09-05 18:15:15.000000000 Z
   - - 55
     - 40
     - 
     - product3
-    - true
+    - false
     - ''
     - 
     - true
@@ -866,15 +866,15 @@ refinery_pages:
     - 49
     - 50
     - 2
-    - products-homecream
+    - products-homecream0301
     - application
     - 2013-09-05 17:10:39.000000000 Z
-    - 2013-09-05 17:10:39.000000000 Z
+    - 2013-09-05 18:14:55.000000000 Z
   - - 56
     - 40
     - 
     - product4
-    - true
+    - false
     - ''
     - 
     - true
@@ -883,15 +883,15 @@ refinery_pages:
     - 51
     - 52
     - 2
-    - products-homecream
+    - products-homecream0301
     - application
     - 2013-09-05 17:10:52.000000000 Z
-    - 2013-09-05 17:11:00.000000000 Z
+    - 2013-09-05 18:14:42.000000000 Z
   - - 57
     - 40
     - 
     - product5
-    - true
+    - false
     - ''
     - 
     - true
@@ -900,15 +900,15 @@ refinery_pages:
     - 53
     - 54
     - 2
-    - products-homecream
+    - products-homecream0301
     - application
     - 2013-09-05 17:11:18.000000000 Z
-    - 2013-09-05 17:11:18.000000000 Z
+    - 2013-09-05 18:15:38.000000000 Z
   - - 58
     - 40
     - 
     - product6
-    - true
+    - false
     - ''
     - 
     - true
@@ -917,15 +917,15 @@ refinery_pages:
     - 55
     - 56
     - 2
-    - products-homecream
+    - products-homecream0301
     - application
     - 2013-09-05 17:11:40.000000000 Z
-    - 2013-09-05 17:11:40.000000000 Z
+    - 2013-09-05 18:18:24.000000000 Z
   - - 59
     - 40
     - 
     - product7
-    - true
+    - false
     - ''
     - 
     - true
@@ -934,15 +934,15 @@ refinery_pages:
     - 57
     - 58
     - 2
-    - products-homecream
+    - products-homecream0301
     - application
     - 2013-09-05 17:11:52.000000000 Z
-    - 2013-09-05 17:11:52.000000000 Z
+    - 2013-09-05 18:18:35.000000000 Z
   - - 60
     - 40
     - 
     - product8
-    - true
+    - false
     - ''
     - 
     - true
@@ -951,15 +951,15 @@ refinery_pages:
     - 59
     - 60
     - 2
-    - products-homecream
+    - products-homecream0301
     - application
     - 2013-09-05 17:12:02.000000000 Z
-    - 2013-09-05 17:12:02.000000000 Z
+    - 2013-09-05 18:18:46.000000000 Z
   - - 61
     - 39
     - 
     - product1
-    - true
+    - false
     - ''
     - 
     - true
@@ -968,15 +968,15 @@ refinery_pages:
     - 63
     - 64
     - 2
-    - products-group
+    - products-group0401
     - application
     - 2013-09-05 17:12:25.000000000 Z
-    - 2013-09-05 17:12:25.000000000 Z
+    - 2013-09-05 18:18:58.000000000 Z
   - - 62
     - 39
     - 
     - product2
-    - true
+    - false
     - ''
     - 
     - true
@@ -985,15 +985,15 @@ refinery_pages:
     - 65
     - 66
     - 2
-    - products-group
+    - products-group0401
     - application
     - 2013-09-05 17:12:35.000000000 Z
-    - 2013-09-05 17:12:35.000000000 Z
+    - 2013-09-05 18:19:14.000000000 Z
   - - 63
     - 39
     - 
     - product3
-    - true
+    - false
     - ''
     - 
     - true
@@ -1002,15 +1002,15 @@ refinery_pages:
     - 67
     - 68
     - 2
-    - products-group
+    - products-group0401
     - application
     - 2013-09-05 17:12:45.000000000 Z
-    - 2013-09-05 17:12:45.000000000 Z
+    - 2013-09-05 18:19:26.000000000 Z
   - - 64
     - 39
     - 
     - product4
-    - true
+    - false
     - ''
     - 
     - true
@@ -1019,15 +1019,15 @@ refinery_pages:
     - 69
     - 70
     - 2
-    - products-group
+    - products-group0401
     - application
     - 2013-09-05 17:12:55.000000000 Z
-    - 2013-09-05 17:12:55.000000000 Z
+    - 2013-09-05 18:21:31.000000000 Z
   - - 65
     - 39
     - 
     - product5
-    - true
+    - false
     - ''
     - 
     - true
@@ -1036,15 +1036,15 @@ refinery_pages:
     - 71
     - 72
     - 2
-    - products-group
+    - products-group0401
     - application
     - 2013-09-05 17:13:09.000000000 Z
-    - 2013-09-05 17:13:09.000000000 Z
+    - 2013-09-05 18:21:11.000000000 Z
   - - 66
     - 39
     - 
     - product6
-    - true
+    - false
     - ''
     - 
     - true
@@ -1053,7 +1053,7 @@ refinery_pages:
     - 73
     - 74
     - 2
-    - products-group
+    - products-group0401
     - application
     - 2013-09-05 17:13:22.000000000 Z
-    - 2013-09-05 17:13:22.000000000 Z
+    - 2013-09-05 18:21:22.000000000 Z

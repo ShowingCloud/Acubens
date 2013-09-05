@@ -1,20 +1,97 @@
-<% content_for :body_content_title, @item.title %>
-<% content_for :body_content_left do %>
-  <article class="news_item">
-    <p>
-      <small><%= t('.published') %> <%= l(@item.publish_date, :format => :long) %></small>
-    </p>
-    <% if @item.source.present? %>
-      <p>
-        <small><%= t('.source') %> <%= @item.source %></small>
-      </p>
-    <% end %>
-    <%= @item.body.html_safe %>
-    <p>
-      <%= link_to t('.back_to_index'), refinery.news_items_path %>
-    </p>
-  </article>
-<% end %>
-<% content_for :body_content_right, render(:partial => 'recent_posts') %>
+<!doctype html>
+<html>
+<body>
 
-<%= render :partial => "/refinery/content_page" %>
+<div id="member-left" style="float:left" >
+  
+  <div class="basket1">
+    <div class="zone">
+       <div class="member-text">
+       品牌动态
+      </div>
+    </div>
+  </div>
+  
+  <center>
+  </center>
+ 
+
+   
+   <div class="bor-4">
+      <img src="/assets/img/advt1.jpg" class="width-bar">
+   </div>
+   <center><div class="between-the-ads">
+   </div></center>
+   <div class="bor-5">
+       <img src="/assets/img/advt2.jpg" class="width-bar">
+   </div>
+  
+  
+  <div class="contactus-weibobor-1">      
+      <div class="zone3" >
+         <div class="member-text4" >
+         微博微信
+         </div>
+      </div>
+      
+  <ul>
+       <li class="member-text5" >
+       <div class="alter-the-weibopositon">官方微信</div> <div>
+       <img src="/assets/img/wechat-gray.png" class="wechatweibo1"  ></div>
+       </li>
+       <li class="member-text5">
+       <div class="alter-the-weibopositon">官方微博</div>
+       <div>
+       <img src="/assets/img/MicBlog-gray.png" height="40" class="wechatweibo" >
+       </div>
+       </li>
+        
+       <li class="http">
+           <a href="http://www.weibo.com"  class="http1">
+       http://weibo.com/
+           </a> 
+       </li>
+       
+  </ul>
+   </div>
+</div>
+
+
+<div id="content_right">
+     <div class="resetpw">
+           <div class="resetpw_head">
+                <ul>
+                        <li class="resetpw_head_txt1"><a href="/">首页</a></li>
+                        <li class="resetpw_head_txt2">&nbsp;&nbsp;>&nbsp;&nbsp;</li>
+                        <li class="resetpw_head_txt1"><a href="#">品牌动态</a></li>
+                </ul>
+           </div>
+           <div class="resetpw_top">
+                <p class="resetpw_top_txt">&nbsp;品牌动态</p>
+           </div>
+           <% content_for :body_content_title, @item.title %>
+				<% content_for :body_content_left do %>
+ 					 <article class="news_item">
+ 					   <p>
+ 					     <small><%= t('.published') %> <%= l(@item.publish_date, :format => :long) %></small>
+  					  </p>
+   						 <% if @item.source.present? %>
+    							  <p>
+    						         <small><%= t('.source') %> <%= @item.source %></small>
+     							 </p>
+                 <% end %>
+  						  <%= @item.body.html_safe %>
+  								  <p>
+ 							     <%= link_to t('.back_to_index'), refinery.news_items_path %>
+                         		  </p>
+ 					 </article>
+				<% end %>
+			
+
+			<%= render :partial => "/refinery/content_page" %> 
+           <div style="clear:both"></div>
+     </div>
+</div>
+
+</body>
+</html>
