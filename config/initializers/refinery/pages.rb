@@ -41,7 +41,7 @@ Refinery::Pages.configure do |config|
 
   config.layout_template_whitelist = ["application","testlayout"]
 
-  config.view_template_whitelist = ["home", "index-login","about-safety-last","concept-last","contactus-last","disclaimer-last","history-last","service-policy-last","story-at-last","exchangeverify","resettel","resetpwd","membersystem","changeinfo","firstlogin","mailverify","pwdverify","memberinfo","showexchangehistory","exchangepoints","exchangeverifyjx","myorder","mypoints","show","customers-voice-last-pig","missJu-class-last-pig","missJu-detail-last-pig","tips-tech-last-pig","products-peeling","products-ind-slogan","products-homecream","products-cleansing","products-group","howtobuy"]
+  config.view_template_whitelist = ["home", "index-login","about-safety-last","concept-last","contactus-last","disclaimer-last","history-last","service-policy-last","story-at-last","exchangeverify","resettel","resetpwd","membersystem","changeinfo","firstlogin","mailverify","pwdverify","memberinfo","showexchangehistory","exchangepoints","exchangeverifyjx","myorder","mypoints","show","customers-voice-last-pig","missJu-class-last-pig","missJu-detail-last-pig","tips-tech-last-pig","products-peeling","products-ind-slogan","products-homecream","products-cleansing","products-group","howtobuy","products-cleansing0101","products-group0401","products-homecream0301","products-peeling0201"]
 
   config.use_layout_templates = true
 
