@@ -12,6 +12,7 @@ refinery_news_items:
   - expiration_date
   - source
   - slug
+  - category
   records: 
   - - 1
     - 新闻标题
@@ -23,3 +24,4 @@ refinery_news_items:
     - 
     - ''
     - ''
+    - 0
