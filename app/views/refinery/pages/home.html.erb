@@ -1,12 +1,8 @@
 <!doctype html>
 <html>
 <head>
-<style type="text/css">
-a{ text-decoration:none;}
-a:hover{ text-decoration:underline;}
-</style>
 <link href="/assets/layout.css" rel="stylesheet" type="text/css" media="screen" />
-<link href="/assets/css/index-part.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="/assets/index-part.css" rel="stylesheet" type="text/css" media="screen" />
 <script type="text/javascript" src="/assets/js/jquery.js"></script>
 <script>
 $(document).ready(function(){
@@ -45,7 +41,7 @@ $(document).ready(function(){
 </head>
 
 <body>
-<div id="page_container1"  style="border-bottom:dashed; border-bottom-color:#e7f6d9; border-bottom-width:1px;">
+<div id="page_container1">
   <div class="kv">
   <img src="/assets/img/kv1.png" width="970px">
   </div>
@@ -77,11 +73,9 @@ $(document).ready(function(){
     
     
     <div class="news-text1" id="news-text1">
-      <img src="/assets/img/info.png" class="notice">
-      <ul>
-      <li class="mar1">2013/07/03</li>
-      <li class="mar2">新闻标题</li>
-      </ul>
+		<img src="/assets/img/info.png" class="notice">
+		<% @items = Refinery::News::Item.latest(5) %>
+		<%= render :partial => '/refinery/news/items/recent_posts' %>
     </div>
 	<div class="news-text2" id="news-text2">
       <img src="/assets/img/notice.png" class="notice">
@@ -102,20 +96,17 @@ $(document).ready(function(){
        从这里可以联系我们
        </div>
      </div>
-     
-  <div class="last-wechat">
-    <div class="last-text-tail">官方微信
-      </div>
-    <img src="/assets/img/wechat-gray.png" class="wechat">
-  </div>
-  
+     <div class="bottom-basket-border-gray">
   <div class="last-weibo">
       <div class="last-text-tail">官方微博
       </div>
-      <img src="/assets/img/MicBlog-gray.png" class="wobo">
+      <img src="/assets/img/MicBlog-gray.png" class="wobo-1">
+   <ul class="position-ul-next">
       <li class="http-li">
-      <a href="http://www.weibo.com" class="http-li">http://weibo.com/</a>
+      <a href="http://e.weibo.com/gelnicjapan" class="http-li">http://e.weibo.com/gelnicjapan</a>
       </li>
+      <li class="little-words-under-weibo">关注简妮官方微博，开启美丽新纪元！</li>
+  </ul>
   </div>
   
   <div class="last-tell">
@@ -123,15 +114,15 @@ $(document).ready(function(){
      客服电话
      </div>
      
-     <img src="/assets/img/phone.png" class="wobo">
+     <img src="/assets/img/phone.png" class="wobo-2">
      
      <div class="cesstte">
      <img src="/assets/img/cesstte.png" class="wobo">
-     800-000-0000
-     
-         <li class="last-text-tail-small">周一至周五，除国定节假日外
+     400-998-9870
+     <ul>
+         <li>10:00-18:00 周一至周五，除国定节假日外
          </li>  
-      
+      </ul>
       
       </div>
   </div>  
@@ -142,12 +133,15 @@ $(document).ready(function(){
     </div>
      <img src="/assets/img/person.png" class="person-1">
      <div class="cesstte">
-     <img src="/assets/img/IAMCALLING.png"  class="I-am-calling">
-     <li class="last-text-tail-small">
-     9:00-12:00周一至周五，除国定节假日外
-     </li>
+   	  <a  target="_blank" href="http://amos.alicdn.com/getcid.aw?v=2&uid=gelnic%E7%AE%80%E5%A6%AE&site=cntaobao&s=1&groupid=0&charset=utf-8"><img style="margin-top:5px;" border="0" src="http://amos.alicdn.com/online.aw?v=2&uid=gelnic%E7%AE%80%E5%A6%AE&site=cntaobao&s=1&charset=utf-8" alt="点击这里给我发消息" /></a>
+   		  <ul>
+   				 <li>
+   			  10:00-22:00周一至周日，除国定节假日外
+   		 		 </li>
+   		  </ul>
      </div>
   </div> 
+  </div>
 </div>
 </body>
 </html>

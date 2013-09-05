@@ -1,0 +1,25 @@
+
+---
+refinery_news_items:
+  columns:
+  - id
+  - title
+  - body
+  - publish_date
+  - created_at
+  - updated_at
+  - image_id
+  - expiration_date
+  - source
+  - slug
+  records: 
+  - - 1
+    - news test
+    - "<h1>hello</h1>\r\n<h2>hello</h2>\r\n<h3>hello</h3>"
+    - 2013-09-05 09:44:00.000000000 Z
+    - 2013-09-05 09:45:19.000000000 Z
+    - 2013-09-05 09:45:19.000000000 Z
+    - 
+    - 
+    - http://test.gelnic.com.cn
+    - news-test
