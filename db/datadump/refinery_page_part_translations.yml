@@ -228,6 +228,12 @@ refinery_page_part_translations:
     - ''
     - 2013-07-31 18:48:37.000000000 Z
     - 2013-07-31 18:48:37.000000000 Z
+  - - 40
+    - 40
+    - en
+    - ''
+    - 2013-07-31 18:49:06.000000000 Z
+    - 2013-07-31 18:49:06.000000000 Z
   - - 41
     - 41
     - en
@@ -427,7 +433,7 @@ refinery_page_part_translations:
       \                             </li>\r\n                              <li>\r\n
       \                          绑定网店账号后，您在相应网店上购买gelnic商品后即可享受1元消费=1个积分的积分累计奖励。\r\n
       \                             </li>\r\n                              <li>\r\n
-      \                             积分可在积分商城兑换相应礼品。\r\n                              </li>\r\n
+      \                             积分可在积分商城兑换相应礼品。</li>\r\n<li>当会员的淘宝和一号商城中的订单联系手机号码和官网注册手机号码一致时，账号积分系统会自动将官网账号和此淘宝或一号商城账号绑定。如您发现所绑定的账号和您的希望有出入，请联系客服。</li>\r\n
       \                    </ul>\r\n                </div>\r\n                <div
       class=\"middle_2_content\">\r\n                     <ul>\r\n                              <li>\r\n
       \                                  \r\n                                     积分累计暂时只针对大陆地区会员开放。\r\n
@@ -453,7 +459,7 @@ refinery_page_part_translations:
       \                    </ul>\r\n                </div>  \r\n                \r\n
       \         </div>"
     - 2013-09-03 15:27:00.000000000 Z
-    - 2013-09-04 15:36:10.000000000 Z
+    - 2013-09-05 04:26:39.000000000 Z
   - - 87
     - 87
     - en
@@ -988,7 +994,7 @@ refinery_page_part_translations:
       src=\"/assets/img/MissJu-days-last-pic.png\" width=\"350\" height=\"505\" />\r\n
       \                     </div>\r\n                </div>\r\n           </div>"
     - 2013-09-03 15:59:24.000000000 Z
-    - 2013-09-05 04:08:18.000000000 Z
+    - 2013-09-03 15:59:24.000000000 Z
   - - 92
     - 92
     - en
@@ -1089,7 +1095,7 @@ refinery_page_part_translations:
       \                          <div class=\"story_middle_4_right\">\r\n                                <img
       class=\"story_middle_4_pic02\" src=\"/assets/img/manager-of-JN.png\" width=\"130\"
       height=\"180\" />\r\n                                <div class=\"story_middle_12\">\r\n
-      \                                    <p>gelnic株式会社总经理</p>\r\n                                     <p>山崎美和子女士</p>\r\n
+      \                                    <p>gelnic株式会社董事长</p>\r\n                                     <p>山崎美和子女士</p>\r\n
       \                               </div>\r\n                                <div
       class=\"story_middle_13\">\r\n                                     <img class=\"story_middle_4_pic02\"
       src=\"/assets/img/the-present.png\" width=\"112\" height=\"230\" />\r\n                                </div>\r\n
@@ -1105,7 +1111,7 @@ refinery_page_part_translations:
       \                               <p>由原日本皇族、43任内阁总理大臣東久邇稔彦先生在1971年创立的国际文化交流团体。现由原皇族伏見博明先生任总裁，致力于各种日本文化振兴及国际文化交流活动。</p>\r\n
       \                        </div>\r\n\t\t\t\t\t \r\n\t\t </div>"
     - 2013-09-03 16:47:06.000000000 Z
-    - 2013-09-05 04:04:08.000000000 Z
+    - 2013-09-05 04:22:42.000000000 Z
   - - 95
     - 95
     - en
@@ -1115,13 +1121,17 @@ refinery_page_part_translations:
       the Nature, Feel the Power of Skin——感·本源之力</div>\r\n              </div>\r\n
       \             <div class=\"history_middle_1_txt02\">\r\n                    简妮（gelnic）是创立于1986年的日本高级美容护肤品牌，自面世以来一直深受日本女士的喜爱。简妮gelnic以\"重视客户体验，口碑至上\"的市场观念，通过美容沙龙、各种试用活动等方式，获取了一大批忠实客户。2013年，简妮gelnic已经进入中国内地，成为崇尚自然美肌的女性消费者的首选品牌。\r\n
       \             </div>\r\n           </div>\r\n           <div>\r\n                    <div
-      class=\"history_middle_2_txt01\">大事记</div>\r\n                    <div class=\"history_middle_2_txt02\">\r\n\t\t\t\t\t
-      \   <p> 『1986年6月』･･･ 株式会社Nayuta成立（简妮gelnic品牌前身）</p>\r\n                        <p>『1988年7月』･･･
-      明星产品Nature Gel Home Cream上市 </p>\r\n                        <p>『1995年6月』･･･因业务扩大，新建自主工厂，为肌肤定制的美肌产品均由设备齐全的自主工厂生产，所有工序均经过严格管理检验，从根本上把控了产品品质
-      </p>\r\n                        <p>『1996年4月』･･･ 株式会社简妮gelnic成立 </p>\r\n                        <p>『2013年』･･･････
-      秉承对\"敏感肌肤的研究\"，走过27年历史 </p>\r\n\t\t\t\t\t </div>\r\n           </div>"
+      class=\"history_middle_2_txt01\">大事记</div>\r\n                    <div class=\"history_middle_2_txt02\">\r\n
+      \                       <p> 『1986年6月』･･･ 株式会社Nayuta成立</p>\r\n                        <p>『1988年7月』･･･
+      明星产品Nature Gel Home Cream上市 </p>                    \r\n                        <p>『1995年6月』･･･因业务扩大，在日本崎玉县春日部设立自有工厂
+      </p>\r\n                        <p>『1996年』･･･因业务持续扩大，将工厂扩充搬迁至崎玉县三乡市</p>\r\n
+      \                       <p>『1996年4月』･･･ 株式会社简妮Gelnic成立，继续专注研究啫喱护肤产品</p>\r\n
+      \                       <p>『1999年』･･･ Cleansing gel 研发成功，在日本开始销售</p>\r\n                        <p>『1999年』･･･
+      Peeling gel 研发成功，在日本开始销售</p>\r\n                        <p>『2013年』･･･････ 品牌创始人
+      \ 山崎敬三先生去世。其女儿山崎美和子担任董事长，秉承父亲对Gelnic的理念，更积极研发更多高品质的Gelnic产品。</p>\r\n\t\t\t\t\t
+      </div>\r\n           </div>"
     - 2013-09-03 16:50:00.000000000 Z
-    - 2013-09-03 16:50:00.000000000 Z
+    - 2013-09-05 06:31:27.000000000 Z
   - - 98
     - 98
     - en
@@ -1129,28 +1139,28 @@ refinery_page_part_translations:
       \            </li>\r\n             \r\n  </ul>\r\n      <div class=\"contact-us-customer-1\">\r\n
       \           <div class=\"contact-us-height\">\r\n              <div class=\"ul-customer-tell\">\r\n
       \                 客服电话\r\n                 </div>\r\n                  <img
-      src=\"/assets/img/phone.png\" class=\"tellphone-size\" />\r\n              </div>\r\n
-      \           <div>\r\n                  <img src=\"/assets/img/cesstte.png\"
-      class=\"cesstte-contact\" />\r\n            <div class=\"number-800\">\r\n               800-000-0000\r\n
-      \           </div>\r\n\r\n            <div class=\"notice-contact\">\r\n            客服工作时间：周一至周五，除国定节假日外\r\n
-      \           </div>\r\n\r\n            </div>\r\n       </div>   \r\n       \r\n
-      \      <div class=\"contact-us-customer-1\">\r\n            <div class=\"contact-us-height\">\r\n
-      \             <div class=\"ul-customer-tell\">\r\n                  在线客服\r\n
-      \             </div>\r\n              <img src=\"/assets/img/person.png\" class=\"person\"
-      />\r\n         </div>\r\n            <div>\r\n                  <img src=\"/assets/img/IAMCALLING.png\"
-      class=\"cesstte-contact-us-us\" />\r\n              <div class=\"notice-contact\">\r\n
-      \           客服工作时间：9:00-20:00 周一至周五，除国定节假日外\r\n            </div>\r\n\r\n         </div>\r\n
-      \      </div>   \r\n    <div class=\"contact-us-customer-1\">\r\n            <div
-      class=\"contact-us-height\">\r\n              <div class=\"ul-customer-tell\">\r\n
-      \                 客服电话\r\n              </div>\r\n              <img src=\"/assets/img/MicBlog-gray.png\"
-      class=\"tellphone-size\" />\r\n      </div>\r\n            <div>\r\n              \r\n
-      \              <a href=\"http:www.weibo.com\" class=\"number-800-http-weibo\">http://weibo.com/\r\n</a>
+      class=\"tellphone-size\" src=\"/assets/img/phone.png\" />\r\n              </div>\r\n
+      \           <div>\r\n                  <img class=\"cesstte-contact\" src=\"/assets/img/cesstte.png\"
+      />\r\n            </div>\r\n<p class=\"number-800\">400-998-9870</p>\r\n<div
+      class=\"notice-contact\">   \r\n            客服工作时间：10:00-18:00 周一至周五，除国定节假日外</div>\r\n
+      \      </div>   \r\n       \r\n       <div class=\"contact-us-customer-1\">\r\n
+      \           <div class=\"contact-us-height\">\r\n              <div class=\"ul-customer-tell\">\r\n
+      \                 在线客服\r\n              </div>\r\n              <img class=\"person\"
+      src=\"/assets/img/person.png\" />\r\n         </div>\r\n            <div>\r\n
+      \                 <img class=\"cesstte-contact-us-us\" src=\"/assets/img/IAMCALLING.png\"
+      />\r\n              <div class=\"notice-contact\">\r\n            客服工作时间：9:00-20:00
+      周一至周五，除国定节假日外\r\n            </div>\r\n\r\n         </div>\r\n       </div>
+      \  \r\n    <div class=\"contact-us-customer-1\">\r\n            <div class=\"contact-us-height\">\r\n
+      \             <div class=\"ul-customer-tell\">\r\n                  客服电话\r\n
+      \             </div>\r\n              <img class=\"tellphone-size\" src=\"/assets/img/MicBlog-gray.png\"
+      />\r\n      </div>\r\n            <div>\r\n              \r\n               <a
+      class=\"number-800-http-weibo\" href=\"http:www.weibo.com\">http://weibo.com/\r\n</a>
       \           \r\n\r\n            <div class=\"notice-contact-weibo\">\r\n            关注简妮官方微博，和小菊老师一起开启美丽新纪元！\r\n
       \           </div>\r\n\r\n      </div>\r\n    </div>    \r\n    \r\n    <div
       class=\"contact-us-customer-wechat\">\r\n            <div class=\"contact-us-height\">\r\n
       \             <div class=\"ul-customer-tell\">\r\n                  官方微信\r\n
-      \                </div>\r\n                  <img src=\"/assets/img/wechat-gray.png\"
-      class=\"tellphone-size-wechat\" />\r\n              </div>\r\n           \r\n\r\n
+      \                </div>\r\n                  <img class=\"tellphone-size-wechat\"
+      src=\"/assets/img/wechat-gray.png\" />\r\n              </div>\r\n           \r\n\r\n
       \           <div class=\"notice-contact-wechat\">\r\n            微信扫一扫，俘获更多私家美容秘笈！\r\n
       \           </div>\r\n            \r\n            \r\n            <div class=\"Wechat-two-dimension-code-position\">\r\n
       \           <img src=\"/assets/img/two-dimension-code.png\" />\r\n            </div>\r\n
@@ -1162,16 +1172,4 @@ refinery_page_part_translations:
       \           </li>\r\n            \r\n            \r\n            </ul>\r\n            \r\n
       \           \r\n            \r\n            \r\n            </div>\r\n\r\n       </div>"
     - 2013-09-04 16:56:21.000000000 Z
-    - 2013-09-04 16:56:21.000000000 Z
-  - - 99
-    - 99
-    - en
-    - ''
-    - 2013-09-05 09:42:29.000000000 Z
-    - 2013-09-05 09:49:13.000000000 Z
-  - - 100
-    - 100
-    - en
-    - ''
-    - 2013-09-05 09:42:29.000000000 Z
-    - 2013-09-05 09:49:13.000000000 Z
+    - 2013-09-05 06:12:41.000000000 Z
