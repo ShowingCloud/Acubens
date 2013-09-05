@@ -655,14 +655,36 @@ margin-top:-12px;
 	font-size:18px;
 	font-family:Arial, Helvetica, sans-serif;
 }
-
+.wobo-1{
+	padding-top:8px;
+	width:25px;
+	font-size:18px;
+	margin-top:-5px;
+	font-family:Arial, Helvetica, sans-serif;
+}
+.wobo-2{
+	padding-top:8px;
+	width:25px;
+	font-size:18px;
+	margin-top:-3px;
+	margin-left:3px;
+	font-family:Arial, Helvetica, sans-serif;
+}
+.wobo-3{
+	padding-top:8px;
+	width:25px;
+	font-size:18px;
+	margin-top:-3px;
+	margin-left:5px;
+	font-family:Arial, Helvetica, sans-serif;
+}
 .http-li{
 	list-style-type:none;
 	color: #666666; 
 	font-family: Arial, Helvetica, sans-serif;
 	font-size:14px;
-	font-weight:bold;
 	margin-left:3px;
+	font-weight:bold;
 }
 
 .cancel-under-line{
@@ -672,9 +694,9 @@ margin-top:-12px;
 
 .cesstte{
 	height:60px;
-	width:240px;
-	margin-left:7px;
-	font-size:18px;
+	width:260px;
+	margin-top:-4px;
+	margin-left:8px;
 	color:#666666;
 	font-family:Arial,'YouYuan','SimSun';
 	font-weight:bold;
@@ -695,12 +717,15 @@ margin-top:-12px;
 
 .person-1{
 	width:23px;
+	margin-left:3px;
 }
 
 .I-am-calling{
 	margin-left:-3px;
-	padding-top:9px;
-	width:80px;
+	margin-top:-4px;
+	padding-top:4px;
+	width:26px;
+	float:left;
 }
 
 .notice{
@@ -842,4 +867,11 @@ margin-top:-12px;}
 	border-bottom-width:1px;
 	width:229px;
 }
-	
+/*on 09 05 to change the how to contect us*/
+.bottom-basket-border-gray{
+	border-bottom-style:dotted;
+	border-bottom-color:#cccccc;
+	border-bottom-width:2px;
+	width:970px;
+	height:90px;
+}
