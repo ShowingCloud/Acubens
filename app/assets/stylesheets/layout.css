@@ -696,11 +696,19 @@ margin-top:-12px;
 	height:60px;
 	width:260px;
 	margin-top:-4px;
-	margin-left:8px;
+	margin-left:4px;
 	color:#666666;
-	font-family:Arial,'YouYuan','SimSun';
+i	font-family:Arial,'YouYuan','SimSun';
 	font-weight:bold;
 	line-height:25px; 
+}
+.cesstte ul li{
+	list-style:none;
+	font-size:12px;
+	color:#666666;
+	margin-top:-24px;
+	margin-left:-40px;
+	color:#999999;
 }
 
 .cesstte1{
