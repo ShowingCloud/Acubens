@@ -1,17 +1,5 @@
 <!doctype html>
 <html>
-<head>
-<style type="text/css">
-a{ text-decoration:none;}
-a:hover{ text-decoration:underline;}
-</style>
-<link href="/assets/layout.css" rel="stylesheet" type="text/css" media="screen" />
-<link href="/assets/Member-information-resetpassword.css" rel="stylesheet" type="text/css" media="screen" />
-<link href="/assets/classroom.css" rel="stylesheet" type="text/css" media="screen" />
-<meta charset="utf-8">
-<title>小菊老师课堂</title>
-</head>
-
 <body>
 
 <div id="member-left" style="float:left" >
@@ -19,7 +7,7 @@ a:hover{ text-decoration:underline;}
   <div class="basket1">
     <div class="zone">
        <div class="member-text">
-       小菊老师课堂
+       如何购买
       </div>
     </div>
   </div>
@@ -81,8 +69,10 @@ a:hover{ text-decoration:underline;}
            <div class="resetpw_top">
                 <p class="resetpw_top_txt">&nbsp;小菊老师课堂</p>
            </div>
-           <%=raw @page.content_for(:classdetail) %>
+           <%=raw @page.content_for(:howtobuy) %>
+           <div style="clear:both"></div>
      </div>
 </div>
+
 </body>
 </html>
