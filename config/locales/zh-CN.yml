@@ -1,0 +1,11 @@
+# Sample localization file for English. Add more files in this directory for other locales.
+# See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
+
+zh-CN:
+    hello: "cn: Hello world"
+
+zh-CN:
+    simple_captcha:
+    message:
+        default: "cn: Secret Code did not match with the Image"
+        user: "cn: The secret Image and code were different"

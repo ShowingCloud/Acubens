@@ -2,8 +2,8 @@
   <ul>
     <% @items.each do |item| %>
       <li>
+		<p><%= link_to l(item.publish_date, :format => "%Y/%m/%d"), refinery.news_item_path(item) %></p>
         <p><%= link_to item.title, refinery.news_item_path(item) %></p>
-        <p><%= link_to l(item.publish_date), refinery.news_item_path(item) %></p>
       </li>
     <% end %>
   </ul>
