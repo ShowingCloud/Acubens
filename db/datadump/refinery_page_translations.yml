@@ -14,7 +14,7 @@ refinery_page_translations:
   records: 
   - - 1
     - 1
-    - en
+    - zh-CN
     - Home
     - 
     - ''
@@ -23,7 +23,7 @@ refinery_page_translations:
     - 2013-07-31 18:51:29.000000000 Z
   - - 2
     - 2
-    - en
+    - zh-CN
     - Page not found
     - 
     - 
@@ -32,7 +32,7 @@ refinery_page_translations:
     - 2013-07-31 17:59:13.000000000 Z
   - - 3
     - 3
-    - en
+    - zh-CN
     - About
     - 
     - 
@@ -41,7 +41,7 @@ refinery_page_translations:
     - 2013-07-31 17:59:13.000000000 Z
   - - 4
     - 4
-    - en
+    - zh-CN
     - 兑换积分确认
     - 
     - ''
@@ -50,7 +50,7 @@ refinery_page_translations:
     - 2013-08-15 12:22:13.000000000 Z
   - - 6
     - 6
-    - en
+    - zh-CN
     - 重置密码
     - 
     - ''
@@ -59,7 +59,7 @@ refinery_page_translations:
     - 2013-08-14 16:58:07.000000000 Z
   - - 8
     - 8
-    - en
+    - zh-CN
     - 改变信息
     - 
     - ''
@@ -68,7 +68,7 @@ refinery_page_translations:
     - 2013-08-14 16:57:47.000000000 Z
   - - 9
     - 9
-    - en
+    - zh-CN
     - 初次登录
     - 
     - ''
@@ -77,7 +77,7 @@ refinery_page_translations:
     - 2013-08-15 12:27:59.000000000 Z
   - - 10
     - 10
-    - en
+    - zh-CN
     - 找回密码（修改邮箱）
     - 
     - ''
@@ -86,7 +86,7 @@ refinery_page_translations:
     - 2013-08-15 12:30:38.000000000 Z
   - - 11
     - 11
-    - en
+    - zh-CN
     - 重置密码
     - 
     - ''
@@ -95,7 +95,7 @@ refinery_page_translations:
     - 2013-08-15 12:23:24.000000000 Z
   - - 12
     - 12
-    - en
+    - zh-CN
     - 个人信息
     - 
     - ''
@@ -104,7 +104,7 @@ refinery_page_translations:
     - 2013-08-15 12:33:52.000000000 Z
   - - 13
     - 13
-    - en
+    - zh-CN
     - 查看兑换历史
     - 
     - ''
@@ -113,7 +113,7 @@ refinery_page_translations:
     - 2013-08-15 12:27:37.000000000 Z
   - - 14
     - 14
-    - en
+    - zh-CN
     - 兑换积分
     - 
     - ''
@@ -122,7 +122,7 @@ refinery_page_translations:
     - 2013-08-15 12:26:44.000000000 Z
   - - 15
     - 15
-    - en
+    - zh-CN
     - 我的订单
     - 
     - ''
@@ -131,7 +131,7 @@ refinery_page_translations:
     - 2013-08-15 12:26:58.000000000 Z
   - - 16
     - 16
-    - en
+    - zh-CN
     - 我的积分
     - 
     - ''
@@ -140,7 +140,7 @@ refinery_page_translations:
     - 2013-08-15 12:24:07.000000000 Z
   - - 17
     - 17
-    - en
+    - zh-CN
     - show
     - 
     - ''
@@ -149,7 +149,7 @@ refinery_page_translations:
     - 2013-07-31 18:43:01.000000000 Z
   - - 18
     - 18
-    - en
+    - zh-CN
     - 产品资讯
     - 
     - ''
@@ -158,7 +158,7 @@ refinery_page_translations:
     - 2013-07-31 18:47:46.000000000 Z
   - - 19
     - 19
-    - en
+    - zh-CN
     - 关于简妮
     - 
     - ''
@@ -167,7 +167,7 @@ refinery_page_translations:
     - 2013-07-31 18:48:23.000000000 Z
   - - 20
     - 20
-    - en
+    - zh-CN
     - 会员专区
     - 
     - ''
@@ -176,7 +176,7 @@ refinery_page_translations:
     - 2013-07-31 18:48:37.000000000 Z
   - - 21
     - 21
-    - en
+    - zh-CN
     - 如何购买
     - 
     - ''
@@ -185,7 +185,7 @@ refinery_page_translations:
     - 2013-07-31 18:49:06.000000000 Z
   - - 22
     - 22
-    - en
+    - zh-CN
     - 美容小贴士
     - 
     - ''
@@ -194,7 +194,7 @@ refinery_page_translations:
     - 2013-07-31 18:49:23.000000000 Z
   - - 24
     - 24
-    - en
+    - zh-CN
     - 联系我们
     - 
     - ''
@@ -203,7 +203,7 @@ refinery_page_translations:
     - 2013-07-31 18:49:52.000000000 Z
   - - 25
     - 25
-    - en
+    - zh-CN
     - 小菊老师课堂
     - 
     - ''
@@ -212,7 +212,7 @@ refinery_page_translations:
     - 2013-08-21 05:12:33.000000000 Z
   - - 27
     - 27
-    - en
+    - zh-CN
     - 会员中心
     - 
     - ''
@@ -221,7 +221,7 @@ refinery_page_translations:
     - 2013-08-15 12:33:25.000000000 Z
   - - 28
     - 28
-    - en
+    - zh-CN
     - 简妮理念
     - 
     - ''
@@ -230,7 +230,7 @@ refinery_page_translations:
     - 2013-08-20 07:11:49.000000000 Z
   - - 29
     - 29
-    - en
+    - zh-CN
     - 简妮大事记
     - 
     - ''
@@ -239,7 +239,7 @@ refinery_page_translations:
     - 2013-09-05 06:06:12.000000000 Z
   - - 30
     - 30
-    - en
+    - zh-CN
     - 安心安全
     - 
     - ''
@@ -248,7 +248,7 @@ refinery_page_translations:
     - 2013-08-20 07:12:49.000000000 Z
   - - 31
     - 31
-    - en
+    - zh-CN
     - 品牌故事
     - 
     - ''
@@ -257,7 +257,7 @@ refinery_page_translations:
     - 2013-08-20 07:14:07.000000000 Z
   - - 32
     - 32
-    - en
+    - zh-CN
     - 服务政策
     - 
     - ''
@@ -266,7 +266,7 @@ refinery_page_translations:
     - 2013-08-20 08:34:06.000000000 Z
   - - 33
     - 33
-    - en
+    - zh-CN
     - 免责声明
     - 
     - ''
@@ -275,7 +275,7 @@ refinery_page_translations:
     - 2013-08-20 08:36:18.000000000 Z
   - - 34
     - 34
-    - en
+    - zh-CN
     - 美容技巧
     - 
     - ''
@@ -284,7 +284,7 @@ refinery_page_translations:
     - 2013-09-03 15:16:19.000000000 Z
   - - 35
     - 35
-    - en
+    - zh-CN
     - 客户心声
     - 
     - ''
@@ -293,7 +293,7 @@ refinery_page_translations:
     - 2013-09-03 15:16:58.000000000 Z
   - - 37
     - 37
-    - en
+    - zh-CN
     - 小菊老师的详情
     - 
     - ''
@@ -302,7 +302,7 @@ refinery_page_translations:
     - 2013-08-21 16:37:33.000000000 Z
   - - 38
     - 38
-    - en
+    - zh-CN
     - 洁面啫喱
     - 
     - ''
@@ -311,7 +311,7 @@ refinery_page_translations:
     - 2013-08-21 17:41:07.000000000 Z
   - - 39
     - 39
-    - en
+    - zh-CN
     - 推荐组合
     - 
     - ''
@@ -320,7 +320,7 @@ refinery_page_translations:
     - 2013-08-21 17:41:32.000000000 Z
   - - 40
     - 40
-    - en
+    - zh-CN
     - 润泽乳霜
     - 
     - ''
@@ -329,7 +329,7 @@ refinery_page_translations:
     - 2013-08-22 18:40:34.000000000 Z
   - - 41
     - 41
-    - en
+    - zh-CN
     - 亮肤啫喱
     - 
     - ''
@@ -338,7 +338,7 @@ refinery_page_translations:
     - 2013-08-22 18:44:41.000000000 Z
   - - 42
     - 42
-    - en
+    - zh-CN
     - login
     - 
     - ''
@@ -347,7 +347,7 @@ refinery_page_translations:
     - 2013-08-26 18:05:52.000000000 Z
   - - 43
     - 43
-    - en
+    - zh-CN
     - 会员制度
     - 
     - ''
@@ -356,7 +356,7 @@ refinery_page_translations:
     - 2013-09-03 15:08:32.000000000 Z
   - - 44
     - 44
-    - en
+    - zh-CN
     - News
     - 
     - ''
@@ -365,7 +365,7 @@ refinery_page_translations:
     - 2013-09-05 09:49:13.000000000 Z
   - - 45
     - 45
-    - en
+    - zh-CN
     - product1
     - 
     - ''
@@ -374,7 +374,7 @@ refinery_page_translations:
     - 2013-09-05 17:06:35.000000000 Z
   - - 46
     - 46
-    - en
+    - zh-CN
     - product2
     - 
     - ''
@@ -383,7 +383,7 @@ refinery_page_translations:
     - 2013-09-05 17:06:47.000000000 Z
   - - 47
     - 47
-    - en
+    - zh-CN
     - product3
     - 
     - ''
@@ -392,7 +392,7 @@ refinery_page_translations:
     - 2013-09-05 17:06:56.000000000 Z
   - - 48
     - 48
-    - en
+    - zh-CN
     - product4
     - 
     - ''
@@ -401,7 +401,7 @@ refinery_page_translations:
     - 2013-09-05 17:08:37.000000000 Z
   - - 49
     - 49
-    - en
+    - zh-CN
     - product1
     - 
     - ''
@@ -410,7 +410,7 @@ refinery_page_translations:
     - 2013-09-05 17:08:48.000000000 Z
   - - 50
     - 50
-    - en
+    - zh-CN
     - product2
     - 
     - ''
@@ -419,7 +419,7 @@ refinery_page_translations:
     - 2013-09-05 17:08:58.000000000 Z
   - - 51
     - 51
-    - en
+    - zh-CN
     - product3
     - 
     - ''
@@ -428,7 +428,7 @@ refinery_page_translations:
     - 2013-09-05 17:09:07.000000000 Z
   - - 52
     - 52
-    - en
+    - zh-CN
     - product4
     - 
     - ''
@@ -437,7 +437,7 @@ refinery_page_translations:
     - 2013-09-05 17:09:52.000000000 Z
   - - 53
     - 53
-    - en
+    - zh-CN
     - product1
     - 
     - ''
@@ -446,7 +446,7 @@ refinery_page_translations:
     - 2013-09-05 17:10:03.000000000 Z
   - - 54
     - 54
-    - en
+    - zh-CN
     - product2
     - 
     - ''
@@ -455,7 +455,7 @@ refinery_page_translations:
     - 2013-09-05 17:10:15.000000000 Z
   - - 55
     - 55
-    - en
+    - zh-CN
     - product3
     - 
     - ''
@@ -464,7 +464,7 @@ refinery_page_translations:
     - 2013-09-05 17:10:39.000000000 Z
   - - 56
     - 56
-    - en
+    - zh-CN
     - product4
     - 
     - ''
@@ -473,7 +473,7 @@ refinery_page_translations:
     - 2013-09-05 17:11:00.000000000 Z
   - - 57
     - 57
-    - en
+    - zh-CN
     - product5
     - 
     - ''
@@ -482,7 +482,7 @@ refinery_page_translations:
     - 2013-09-05 17:11:18.000000000 Z
   - - 58
     - 58
-    - en
+    - zh-CN
     - product6
     - 
     - ''
@@ -491,7 +491,7 @@ refinery_page_translations:
     - 2013-09-05 17:11:40.000000000 Z
   - - 59
     - 59
-    - en
+    - zh-CN
     - product7
     - 
     - ''
@@ -500,7 +500,7 @@ refinery_page_translations:
     - 2013-09-05 17:11:52.000000000 Z
   - - 60
     - 60
-    - en
+    - zh-CN
     - product8
     - 
     - ''
@@ -509,7 +509,7 @@ refinery_page_translations:
     - 2013-09-05 17:12:03.000000000 Z
   - - 61
     - 61
-    - en
+    - zh-CN
     - product1
     - 
     - ''
@@ -518,7 +518,7 @@ refinery_page_translations:
     - 2013-09-05 17:12:25.000000000 Z
   - - 62
     - 62
-    - en
+    - zh-CN
     - product2
     - 
     - ''
@@ -527,7 +527,7 @@ refinery_page_translations:
     - 2013-09-05 17:12:35.000000000 Z
   - - 63
     - 63
-    - en
+    - zh-CN
     - product3
     - 
     - ''
@@ -536,7 +536,7 @@ refinery_page_translations:
     - 2013-09-05 17:12:45.000000000 Z
   - - 64
     - 64
-    - en
+    - zh-CN
     - product4
     - 
     - ''
@@ -545,7 +545,7 @@ refinery_page_translations:
     - 2013-09-05 17:12:55.000000000 Z
   - - 65
     - 65
-    - en
+    - zh-CN
     - product5
     - 
     - ''
@@ -554,7 +554,7 @@ refinery_page_translations:
     - 2013-09-05 17:13:09.000000000 Z
   - - 66
     - 66
-    - en
+    - zh-CN
     - product6
     - 
     - ''
