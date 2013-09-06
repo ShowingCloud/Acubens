@@ -52,7 +52,5 @@ gem 'refinerycms-i18n', '~> 2.0.0'
 gem 'refinerycms-news', :git => 'git://github.com/ShowingCloud/refinerycms-news.git', :branch => '2-0-stable'
 
 gem 'yaml_db'
-
 gem 'savon'
-
 gem "galetahub-simple_captcha", :require => "simple_captcha"

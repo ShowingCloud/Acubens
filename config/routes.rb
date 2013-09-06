@@ -5,6 +5,7 @@ Acubens::Application.routes.draw do
 		  get :index
 		  post :verifymobile
 		  post :register
+		  post :login
 	  end
   end
 
