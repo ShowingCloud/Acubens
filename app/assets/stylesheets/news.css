@@ -1,0 +1,60 @@
+/* CSS Document */
+#body_content_title{
+	font-size:12px;
+	float:right;
+	margin-top:0px;
+	margin-right:550px;
+	color:#666666;
+	font-family: Arial,'YouYuan','SimSun';
+}
+
+.inner h1{
+	font-size:12px;
+	color:#666666;
+	padding-bottom:15px;
+	border-bottom-style: dashed;
+	border-bottom-width:1px;
+	font-family: Arial,'YouYuan','SimSun';
+}
+
+.news_item p{
+	font-size:12px;
+	font-family: Arial,'YouYuan','SimSun';
+}
+
+.news-back{
+	text-align:right;
+}
+
+.news_item_truncated{
+	margin-top:10px;
+	margin-bottom:10px;
+	border-bottom-width:1px;
+	border-bottom-style:dashed;
+	padding-bottom:10px;
+}
+
+.news_item_truncated table{
+	font-size:12px;
+	color:#666666;
+}
+
+.news_item_truncated table a{
+	color:#666666;
+	text-decoration: none;
+}
+
+.news_item_truncated table a:hover{
+	color:#666666;
+	text-decoration: none;
+}
+
+#recent_news_items ul{
+	list-style-image: url("/assets/img/info.png");
+	padding-left:50px;
+	margin-top:0px;
+}
+
+#recent_news_items ul li{
+	margin-top:5px;
+}

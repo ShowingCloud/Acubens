@@ -83,12 +83,10 @@ p{
     
     
     <div class="news-text1" id="news-text1">
-		<img src="/assets/img/info.png" class="notice">
 		<% @items = Refinery::News::Item.latest(5, 0) %>
 		<%= render :partial => '/refinery/news/items/recent_posts' %>
     </div>
 	<div class="news-text2" id="news-text2">
-		<img src="/assets/img/notice.png" class="notice">
 		<% @items = Refinery::News::Item.latest(5, 1) %>
 		<%= render :partial => '/refinery/news/items/recent_posts' %>
     </div>
