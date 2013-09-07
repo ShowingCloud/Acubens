@@ -1,0 +1,861 @@
+<!DOCTYPE html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>问卷调查-问卷页面</title>
+<link href="Member-information-resetpassword.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="survey.css" rel="stylesheet" type="text/css" media="screen" />
+</head>
+
+<body>
+<div id="content_right">
+     <div class="resetpw">
+           <div class="resetpw_head">
+                <ul>
+                        <li class="resetpw_head_txt1"><a>首页</a></li>
+                        <li class="resetpw_head_txt2">&nbsp;&nbsp;>&nbsp;&nbsp;</li>
+                        <li class="resetpw_head_txt1"><a>问卷调查</a></li>
+                
+                </ul>
+           </div>
+           <div class="resetpw_top">
+                <p class="resetpw_top_txt">&nbsp;肌肤状况小调查</p>
+           </div>
+           <div class="survey_top">
+           完成"肌肤状况小调查"，立刻获取100积分！
+           </div>
+           <div class="survey_middle">
+
+                   <table class="survey_tab1"  border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                                 <td   class="survey_txt1">1.</td>
+                                 <td   class="survey_txt2">您了解您属于哪种肌肤类型吗？（单选）</td>                                
+                       </tr>
+                  </table>
+                  <table class="survey_tab2"  border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                                 <td>
+                                 <input name="type"  type="radio" id="type_1" value="1" >
+                                 <label id="type_1" >中性肌肤</label>
+                                 </td>
+                                 <td>
+                                 <input name="type" id="type_2"  type="radio" value="2" >
+                                 <label id="type_2" >油性肌肤</label>
+                                 </td>
+                                 <td>
+                                 <input name="type" id="type_3"  type="radio" value="3" >
+                                 <label id="type_3" >干性肌肤</label>
+                                 </td>
+                                 <td>
+                                 <input name="type" id="type_4"  type="radio" value="4" >
+                                 <label id="type_4" >混合型肌肤</label>                                 
+                                 </td>
+                                 <td>
+                                 <input name="type" id="type_5"  type="radio" value="5" >
+                                 <label id="type_5" >不清楚</label>                                 
+                                 </td>
+                       </tr>                       
+                  </table>
+                  
+                   <table class="survey_tab1"  border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                                 <td   class="survey_txt1">2.</td>
+                                 <td   class="survey_txt2">您认为肌肤保养重要吗？（单选）</td>                                
+                       </tr>
+                  </table>                  
+                  <table class="survey_tab2"  border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                        
+                                 <td>
+                                 <input name="importance" id="importance_1"  type="radio" value="1" >
+                                 <label id="importance_1" >非常重要</label>
+                                 </td>
+                                 <td>
+                                 <input name="importance" id="importance_2"  type="radio" value="2" >
+                                 <label id="importance_2" >重要</label>
+                                 </td>
+                                 <td>
+                                 <input name="importance" id="importance_3"  type="radio" value="3" >
+                                 <label id="importance_3" >一般 </label>
+                                 </td>
+                                 <td>
+                                 <input name="importance" id="importance_4"  type="radio" value="4" >
+                                 <label id="importance_4" >不重要</label>                                 
+                                 </td>
+                              
+                        </tr>                       
+                  </table>
+                  
+                  <table class="survey_tab1"  border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                                 <td   class="survey_txt1">3.</td>
+                                 <td   class="survey_txt2">您现在最希望改善的肌肤问题有哪些？（多选）</td>                                
+                       </tr>
+                  </table>                  
+                  <table class="survey_tab2"  border="0" cellspacing="0" cellpadding="0">
+                  
+                        <tr>                       
+                                 <td>
+                                 <input name="problem" id="problem_1"  type="checkbox" value="1" >
+                                 <label id="problem_1" >干燥</label>
+                                 </td>
+                                 <td>
+                                 <input name="problem" id="problem_2"  type="checkbox" value="2" >
+                                 <label id="problem_2" >易过敏</label>
+                                 </td>
+                                 <td>
+                                 <input name="problem" id="problem_3"  type="checkbox" value="3" >
+                                 <label id="problem_3" >松弛 </label>
+                                 </td>
+                                 <td>
+                                 <input name="problem" id="problem_4"  type="checkbox" value="4" >
+                                 <label id="problem_4" >皱纹</label>                                 
+                                 </td>
+                                 <td>
+                                 <input name="problem" id="problem_5"  type="checkbox" value="5" >
+                                 <label id="problem_5" >粗糙</label>                                 
+                                 </td>
+                        </tr> 
+                        <tr>                        
+                                 <td>
+                                 <input name="problem" id="problem_6"  type="checkbox" value="6" >
+                                 <label id="problem_6" >出油</label>
+                                 </td>
+                                 <td>
+                                 <input name="problem" id="problem_7"  type="checkbox" value="7" >
+                                 <label id="problem_7" >毛孔粗大</label>
+                                 </td>
+                                 <td>
+                                 <input name="problem" id="problem_8"  type="checkbox" value="8" >
+                                 <label id="problem_8" >雀斑 </label>
+                                 </td>
+                                 <td>
+                                 <input name="problem" id="problem_9"  type="checkbox" value="9" >
+                                 <label id="problem_9" >暗沉</label>                                 
+                                 </td>
+                                 <td>
+                                 <input name="problem" id="problem_10"  type="checkbox" value="10" >
+                                 <label id="problem_10" >出痘</label>                                 
+                                 </td>
+                        </tr> 
+                        <tr>                        
+                                 <td>
+                                 <input name="problem" id="problem_11"  type="checkbox" value="11" >
+                                 <label id="problem_11" >痘痕</label>
+                                 </td>
+                                 <td>
+                                 <input name="problem" id="problem_12"  type="checkbox" value="12" >
+                                 <label id="problem_12" >黑眼圈</label>
+                                 </td>
+                                 <td>
+                                 <input name="problem" id="problem_13"  type="checkbox" value="13" >
+                                 <label id="problem_13" >浮肿 </label>
+                                 </td>
+                                 <td>
+                                 <input name="problem" id="problem_14"  type="checkbox" value="14" >
+                                 <label id="problem_14" >我对肌肤挺满意的</label>                                 
+                                 </td>                                 
+                       </tr>                   
+                  </table>
+                  
+                  <table class="survey_tab1"  border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                                 <td   class="survey_txt1">4.</td>
+                                 <td   class="survey_txt2">您每天花多少时间用于肌肤护理（不包括化妆时间）？（单选）</td>                                
+                       </tr>
+                  </table>  
+                  <table class="survey_tab2"  border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                        
+                                 <td>
+                                 <input name="time" id="time_1"  type="radio" value="1" >
+                                 <label id="time_1" >少于10分钟</label>
+                                 </td>
+                                 <td>
+                                 <input name="time" id="time_2"  type="radio" value="2" >
+                                 <label id="time_2" >10分钟-30分钟</label>
+                                 </td>
+                                 <td>
+                                 <input name="time" id="time_3"  type="radio" value="3" >
+                                 <label id="time_3" >30分钟以上 </label>
+                                 </td>
+                                 
+                        </tr>                       
+                  </table>
+                   <table class="survey_tab1"  border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                                 <td   class="survey_txt1">5.</td>
+                                 <td   class="survey_txt2">您通常会采取那些肌肤护理步骤？（多选）</td>                                
+                       </tr>
+                  </table>                  
+                  <table class="survey_tab2"  border="0" cellspacing="0" cellpadding="0">
+                  
+                        <tr>                       
+                                 <td>
+                                 <input name="step" id="step_1"  type="checkbox" value="1" >
+                                 <label id="step_1" >清洁</label>
+                                 </td>
+                                 <td>
+                                 <input name="step" id="step_2"  type="checkbox" value="2" >
+                                 <label id="step_2" >去角质（死皮）</label>
+                                 </td>
+                                 <td>
+                                 <input name="step" id="step_3"  type="checkbox" value="3" >
+                                 <label id="step_3" >爽肤 </label>
+                                 </td>
+                                 <td>
+                                 <input name="step" id="step_4"  type="checkbox" value="4" >
+                                 <label id="step_4" >滋润</label>                                 
+                                 </td>
+                                 <td>
+                                 <input name="step" id="step_5"  type="checkbox" value="5" >
+                                 <label id="step_5" >保护</label>                                 
+                                 </td>
+                        </tr> 
+                        <tr>                        
+                                 <td>
+                                 <input name="step" id="step_6"  type="checkbox" value="6" >
+                                 <label id="step_6" >防晒</label>
+                                 </td>
+                                 <td>
+                                 <input name="step" id="step_7"  type="checkbox" value="7" >
+                                 <label id="step_7" >精华</label>
+                                 </td>
+                                 <td>
+                                 <input name="step" id="step_8"  type="checkbox" value="8" >
+                                 <label id="step_8" >面膜 </label>
+                                 </td>
+                                 <td>
+                                 <input name="step" id="step_9"  type="checkbox" value="9" >
+                                 <label id="step_9" >眼霜</label>                                 
+                                 </td>                               
+                        </tr> 
+                                     
+                  </table>
+                  <table class="survey_tab1"  border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                                 <td   class="survey_txt1">6. </td>
+                                 <td   class="survey_txt2">为了达到最佳的肌肤护理效果，您认为最重要的是？（多选）</td>                                
+                       </tr>
+                  </table>                  
+                  <table class="survey_tab3"  border="0" cellspacing="0" cellpadding="0">
+                  
+                        <tr>                       
+                                 <td>
+                                 <input name="mostimp" id="mostimp_1"  type="checkbox" value="1" >
+                                 <label id="mostimp_1" >选择适合自己的、天然无刺激的护肤产品</label>
+                                 </td>
+                                 <td>
+                                 <input name="mostimp" id="mostimp_2"  type="checkbox" value="2" >
+                                 <label id="mostimp_2" >坚持护理，持之以恒</label>
+                                 </td>
+                                
+                        </tr> 
+                        <tr>                        
+                                 <td>
+                                 <input name="mostimp" id="mostimp_3"  type="checkbox" value="3" >
+                                 <label id="mostimp_3" >平衡压力，适当放松减压</label>
+                                 </td>
+                                 <td>
+                                 <input name="mostimp" id="mostimp_4"  type="checkbox" value="4" >
+                                 <label id="mostimp_4" >良好的饮食规律，不吃刺激性食物</label>
+                                 </td>
+                                
+                        </tr> 
+                        <tr>                        
+                                 <td>
+                                 <input name="mostimp" id="mostimp_5"  type="checkbox" value="5" >
+                                 <label id="mostimp_5" >充足的睡眠时间和良好的睡眠质量</label>
+                                 </td>
+                                                       
+                       </tr>                   
+                  </table>
+                  <table class="survey_tab1"  border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                                 <td   class="survey_txt1">7.</td>
+                                 <td   class="survey_txt2">哪些原因减少了您肌肤护理的机会？（多选）</td>                                
+                       </tr>
+                  </table>                  
+                  <table class="survey_tab3"  border="0" cellspacing="0" cellpadding="0">
+                  
+                        <tr>                       
+                                 <td>
+                                 <input name="reason" id="reason_1"  type="checkbox" value="1" >
+                                 <label id="reason_1" >没有找到真正适合自己的有效的护理产品</label>
+                                 </td>
+                                 <td>
+                                 <input name="reason" id="reason_2"  type="checkbox" value="2" >
+                                 <label id="reason_2" >担心不良的产品对肌肤造成伤害</label>
+                                 </td>
+                                
+                        </tr> 
+                        <tr>                        
+                                 <td>
+                                 <input name="reason" id="reason_3"  type="checkbox" value="3" >
+                                 <label id="reason_3" >感觉护理步骤太多，太麻烦</label>
+                                 </td>
+                                 <td>
+                                 <input name="reason" id="reason_4"  type="checkbox" value="4" >
+                                 <label id="reason_4" >觉得护肤不重要，缺乏主观重视</label>
+                                 </td>
+                                
+                        </tr> 
+                        <tr>                        
+                                 <td>
+                                 <input name="reason" id="reason_5"  type="checkbox" value="5" >
+                                 <label id="reason_5" >工作繁忙没有时间</label>
+                                 </td>
+                                 <td>
+                                 <input name="reason" id="reason_6"  type="checkbox" value="6" >
+                                 <label id="reason_6" >觉得自己肌肤挺好的所以无需护理</label>
+                                 </td>
+                                                       
+                       </tr>                   
+                  </table>
+                  <table class="survey_tab1"  border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                                 <td   class="survey_txt1">8.</td>
+                                 <td   class="survey_txt2">您每月花费在肌肤护理（不包括化妆类）产品上的费用大致为多少？</td>                                
+                       </tr>
+                  </table>  
+                  <table class="survey_tab2"  border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                        
+                                 <td>
+                                 <input name="cost" id="cost_1"  type="radio" value="1" >
+                                 <label id="cost_1" >200元以下</label>
+                                 </td>
+                                 <td>
+                                 <input name="cost" id="cost_2"  type="radio" value="2" >
+                                 <label id="cost_2" >200元-500元</label>
+                                 </td>
+                                 <td>
+                                 <input name="cost" id="cost_3"  type="radio" value="3" >
+                                 <label id="cost_3" >500元以上</label>
+                                 </td>
+                                 
+                        </tr>                       
+                  </table>
+                  <table class="survey_tab1"  border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                                 <td   class="survey_txt1">9.</td>
+                                 <td   class="survey_txt2">您通常在哪里购买护肤产品？（多选）</td>                                
+                       </tr>
+                  </table> 
+                  <table class="survey_tab3"  border="0" cellspacing="0" cellpadding="0">
+                  
+                        <tr>                       
+                                 <td>
+                                 <input name="channel" id="channel_1"  type="checkbox" value="1" >
+                                 <label id="channel_1" >商场品牌专柜</label>
+                                 </td>
+                                 <td>
+                                 <input name="channel" id="channel_2"  type="checkbox" value="2" >
+                                 <label id="channel_2" >各大药妆店（屈臣氏、万宁等）</label>
+                                 </td>
+                                
+                        </tr> 
+                        <tr>                        
+                                 <td>
+                                 <input name="channel" id="channel_3"  type="checkbox" value="3" >
+                                 <label id="channel_3" >品牌官方网上商城</label>
+                                 </td>
+                                 <td>
+                                 <input name="channel" id="channel_4"  type="checkbox" value="4" >
+                                 <label id="channel_4" >淘宝网、天猫商城</label>
+                                 </td>
+                                
+                        </tr> 
+                        <tr>                        
+                                 <td>
+                                 <input name="channel" id="channel_5"  type="checkbox" value="5" >
+                                 <label id="channel_5" >京东商城等其他电商平台</label>
+                                 </td>
+                                 <td>
+                                 <input name="channel" id="channel_6"  type="checkbox" value="6" >
+                                 <label id="channel_6" >通过朋友等代购</label>
+                                 </td>
+                                                       
+                       </tr>                   
+                  </table>
+                  <table class="survey_tab1"  border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                                 <td   class="survey_txt1">10.</td>
+                                 <td   class="survey_txt2">影响您选购护肤品的重要因素有哪些？（多选）</td>                                
+                       </tr>
+                  </table> 
+                  <table class="survey_tab6"  border="0" cellspacing="0" cellpadding="0">
+                  
+                        <tr>                       
+                                 <td class="survey_td3">
+                                 <input name="affect" id="affect_1"  type="checkbox" value="1" >
+                                 <label id="affect_1" >成分是否天然、无刺激</label>
+                                 </td>
+                                 <td class="survey_td3" >
+                                 <input name="affect" id="affect_2"  type="checkbox" value="2" >
+                                 <label id="affect_2" >是否有效改善肌肤状况</label>
+                                 </td>
+                                
+                        </tr> 
+                        <tr>                        
+                                 <td class="survey_td3">
+                                 <input name="affect" id="affect_3"  type="checkbox" value="3" >
+                                 <label id="affect_3" >是否是大品牌，有名人代言</label>
+                                 </td>
+                                 <td class="survey_td3">
+                                 <input name="affect" id="affect_4"  type="checkbox" value="4" >
+                                 <label id="affect_4" >是否在网上有良好的口碑</label>
+                                 </td>
+                                
+                        </tr> 
+                        <tr>                        
+                                 <td class="survey_td3">
+                                 <input name="affect" id="affect_5"  type="checkbox" value="5" >
+                                 <label id="affect_5" >是否有专业评测、专业人士推荐</label>
+                                 </td>
+                                 <td class="survey_td3">
+                                 <input name="affect" id="affect_6"  type="checkbox" value="6" >
+                                 <label id="affect_6" >是否周围有朋友正在使用，或友人推荐</label>
+                                 </td>
+                                                       
+                       </tr>
+                       <tr>                        
+                                 <td class="survey_td3">
+                                 <input name="affect" id="affect_7"  type="checkbox" value="7" >
+                                 <label id="affect_7" >是否有强大的广告宣传</label>
+                                 </td>
+                                 <td class="survey_td4">
+                                 <input name="affect" id="affect_8"  type="checkbox" value="8" class="survey_input">
+                                 <label id="affect_8" >其他（请填写，20字以内）：</label>
+                                 <input name="affect" id="affect_txt"  type="text" class="survey_td5">
+                                
+                                 </td>
+                                                       
+                      </tr>                    
+                  </table>
+                  <table class="survey_tab1"  border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                                 <td   class="survey_txt1">11.</td>
+                                 <td   class="survey_txt2">您正在使用的护肤品牌是？（多选)</td>                                
+                       </tr>
+                  </table>                  
+                  <table class="survey_tab4"  border="0" cellspacing="0" cellpadding="0">
+                  
+                        <tr>                       
+                                 <td class="survey_td1">
+                                 <input name="brand" id="brand_1"  type="checkbox" value="1" >
+                                 <label id="brand_1" >温碧泉</label>
+                                 </td>
+                                 <td class="survey_td2">
+                                 <img src="/assets/img/1.png" width="88" height="30">
+                                 </td>
+                                 <td class="survey_td1" >
+                                 <input name="brand" id="brand_2"  type="checkbox" value="2" >
+                                 <label id="brand_2" >Vichy/薇姿 </label>
+                                 </td>
+                                 <td class="survey_td2" >
+                                 <img src="/assets/img/11.png"  width="88" height="30">
+                                 </td>
+                        </tr> 
+                        <tr>                        
+                                 <td class="survey_td1">
+                                 <input name="brand" id="brand_3"  type="checkbox" value="3" >
+                                 <label id="brand_3" >百雀羚</label>
+                                 </td>
+                                 <td class="survey_td2">
+                                 <img src="/assets/img/2.png" width="88" height="30">
+                                 </td>
+                                 <td class="survey_td1">
+                                 <input name="brand" id="brand_4"  type="checkbox" value="4" >
+                                 <label id="brand_4" >NARUKO/牛尔 </label>
+                                 </td>
+                                 <td class="survey_td2">
+                                 <img src="/assets/img/12.png" width="88" height="30">
+                                 </td>                               
+                        </tr> 
+                       <tr>                        
+                                 <td class="survey_td1">
+                                 <input name="brand" id="brand_5"  type="checkbox" value="5" >
+                                 <label id="brand_5" >相宜本草</label>
+                                 </td>
+                                 <td class="survey_td2">
+                                 <img src="/assets/img/3.png" width="88" height="30">
+                                 </td>
+                                 <td class="survey_td1">
+                                 <input name="brand" id="brand_6"  type="checkbox" value="6" >
+                                 <label id="brand_6" >Neutrogena/露得清</label>
+                                 </td>
+                                 <td class="survey_td2">
+                                 <img src="/assets/img/13.png" width="88" height="30">
+                                 </td>                               
+                        </tr>
+                        <tr>                        
+                                 <td class="survey_td1">
+                                 <input name="brand" id="brand_7"  type="checkbox" value="7" >
+                                 <label id="brand_7" >The Face Shop/菲诗小铺</label>
+                                 </td>
+                                 <td class="survey_td2">
+                                 <img src="/assets/img/4.png" width="88" height="30">
+                                 </td>
+                                 <td class="survey_td1">
+                                 <input name="brand" id="brand_8"  type="checkbox" value="8" >
+                                 <label id="brand_8" >TJOY/丁家宜</label>
+                                 </td>
+                                 <td class="survey_td2">
+                                 <img src="/assets/img/14.png" width="88" height="30">
+                                 </td>                               
+                        </tr>
+                        <tr>                        
+                                 <td class="survey_td1">
+                                 <input name="brand" id="brand_9"  type="checkbox" value="9" >
+                                 <label id="brand_9" >资生堂</label>
+                                 </td>
+                                 <td class="survey_td2">
+                                 <img src="/assets/img/5.png" width="88" height="30">
+                                 </td>
+                                 <td class="survey_td1">
+                                 <input name="brand" id="brand_10"  type="checkbox" value="10" >
+                                 <label id="brand_10" >兰芝</label>
+                                 </td>
+                                 <td class="survey_td2">
+                                 <img src="/assets/img/15.png" width="88" height="30">
+                                 </td>                               
+                        </tr>
+                        <tr>                        
+                                 <td class="survey_td1">
+                                 <input name="brand" id="brand_11"  type="checkbox" value="11" >
+                                 <label id="brand_11" >Proya/珀莱雅</label>
+                                 </td>
+                                 <td class="survey_td2">
+                                 <img src="/assets/img/6.png" width="88" height="30">
+                                 </td>
+                                 <td class="survey_td1" >
+                                 <input name="brand" id="brand_12"  type="checkbox" value="12" >
+                                 <label id="brand_12" >倩碧</label>
+                                 </td>
+                                 <td class="survey_td2">
+                                 <img src="/assets/img/16.png" width="88" height="30">
+                                 </td>                               
+                        </tr>
+                        <tr>                        
+                                 <td class="survey_td1">
+                                 <input name="brand" id="brand_13"  type="checkbox" value="13" >
+                                 <label id="brand_13" >Charmzone/婵真</label>
+                                 </td>
+                                 <td class="survey_td2">
+                                 <img src="/assets/img/7.png" width="88" height="30">
+                                 </td>
+                                 <td class="survey_td1">
+                                 <input name="brand" id="brand_14"  type="checkbox" value="14" >
+                                 <label id="brand_14" >DHC/蝶翠诗</label>
+                                 </td>
+                                 <td class="survey_td2">
+                                 <img src="/assets/img/17.png" width="88" height="30">
+                                 </td>                               
+                        </tr> 
+                        <tr>                        
+                                 <td class="survey_td1">
+                                 <input name="brand" id="brand_15"  type="checkbox" value="15" >
+                                 <label id="brand_15" >Herborist/佰草集</label>
+                                 </td>
+                                 <td class="survey_td2">
+                                 <img src="/assets/img/8.png" width="88" height="30">
+                                 </td>
+                                 <td class="survey_td1">
+                                 <input name="brand" id="brand_16"  type="checkbox" value="16" >
+                                 <label id="brand_16" >雅诗兰黛</label>
+                                 </td>
+                                 <td class="survey_td2">
+                                 <img src="/assets/img/18.png" width="88" height="30">
+                                 </td>                               
+                        </tr>
+                        <tr>                        
+                                 <td class="survey_td1">
+                                 <input name="brand" id="brand_17"  type="checkbox" value="17" >
+                                 <label id="brand_17" >Kose/高丝</label>
+                                 </td>
+                                 <td class="survey_td2">
+                                 <img src="/assets/img/9.png" width="88" height="30">
+                                 </td>
+                                 <td class="survey_td1">
+                                 <input name="brand" id="brand_18"  type="checkbox" value="18" >
+                                 <label id="brand_18" >Dr.Ci:Labo/喜莱博</label>
+                                 </td>
+                                 <td class="survey_td2">
+                                 <img src="/assets/img/19.png" width="88" height="30">
+                                 </td>                               
+                        </tr>
+                        <tr>                        
+                                 <td class="survey_td1" >
+                                 <input name="brand" id="brand_19"  type="checkbox" value="19" >
+                                 <label id="brand_19" >Cetaphil/丝塔芙</label>
+                                 </td>
+                                 <td class="survey_td2">
+                                 <img src="/assets/img/10.png" width="88" height="30">
+                                 </td>
+                                 <td class="survey_td1">
+                                 <input name="brand" id="brand_20"  type="checkbox" value="20" >
+                                 <label id="brand_20" >其他（请填写，20字以内）：</label>                                 
+                                 </td>
+                                 <td >
+                                 <input name="brand" id="brand_txt"  type="text" class="survey_td6">
+                                 </td>
+                                                               
+                        </tr>
+                                    
+                  </table>
+                  <table class="survey_tab1"  border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                                 <td   class="survey_txt1">12.</td>
+                                 <td   class="survey_txt2">您认为对于一个护肤品牌，最重要的是？（单选）</td>                                
+                       </tr>
+                  </table>  
+                  <table class="survey_tab5"  border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                        
+                                 <td>
+                                 <input name="brandimp" id="brandimp_1"  type="radio" value="1" >
+                                 <label id="brandimp_1" >坚持选用天然成分，提供温和、有效、无刺激的产品</label>
+                                 </td>
+                                
+                        </tr>
+                        <tr>                        
+                                 <td>
+                                 <input name="brandimp" id="brandimp_2"  type="radio" value="2" >
+                                 <label id="brandimp_2" >降低研发之外的成本，带来最佳的性价比体验</label>
+                                 </td>
+                                
+                        </tr> 
+                        <tr>                       
+                                 <td>
+                                 <input name="brandimp" id="brandimp_3"  type="radio" value="3" >
+                                 <label id="brandimp_3" >添加各种功能性成分，产品是否有效是最重要的评分标准</label>
+                                 </td>
+                                
+                        </tr> 
+                        <tr>                       
+                                 <td>
+                                 <input name="brandimp" id="brandimp_4"  type="radio" value="4" >
+                                 <label id="brandimp_4" >加强广告宣传力度，占据更多市场份额</label>
+                                 </td>
+                                
+                        </tr>                     
+                  </table>
+                  <table class="survey_tab1"  border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                                 <td   class="survey_txt1">13.</td>
+                                 <td   class="survey_txt2">您最先从哪里得知简妮品牌？（单选）</td>                                
+                       </tr>
+                  </table>  
+                  <table class="survey_tab6"  border="0" cellspacing="0" cellpadding="0">
+                        <tr>                        
+                                 <td class="survey_td3">
+                                 <input name="know" id="know_1"  type="radio" value="1" >
+                                 <label id="know_1" >简妮淘宝官方网店</label>
+                                 </td>
+                                 <td class="survey_td3">
+                                 <input name="know" id="know_2"  type="radio" value="2" >
+                                 <label id="know_1" >简妮官方微博</label>
+                                 </td>                                 
+                                
+                        </tr>
+                        <tr>                        
+                                 <td class="survey_td3">
+                                 <input name="know" id="know_3"  type="radio" value="3" >
+                                 <label id="know_3" >简妮官方微信</label>
+                                 </td>
+                                 <td class="survey_td3">
+                                 <input name="know" id="know_4"  type="radio" value="4" >
+                                 <label id="know_4" >网上品牌新闻报道</label>
+                                 </td>    
+                                
+                        </tr> 
+                        <tr>                       
+                                 <td class="survey_td3">
+                                 <input name="know" id="know_5"  type="radio" value="5" >
+                                 <label id="know_5" >网上化妆品口碑网站</label>
+                                 </td>
+                                 <td class="survey_td3">
+                                 <input name="know" id="know_6"  type="radio" value="6" >
+                                 <label id="know_6" >杂志报刊</label>
+                                 </td>   
+                                
+                        </tr> 
+                        <tr>                       
+                                 <td class="survey_td3">
+                                 <input name="know" id="know_7"  type="radio" value="7" >
+                                 <label id="know_7" >朋友、同事、家人介绍</label>
+                                 </td>
+                                 <td class="survey_td4">
+                                 <input name="know" id="know_8"  type="radio" value="8" class="survey_input">
+                                 <label id="know_8" >其他（请填写，20字以内）：</label>
+                                 <input name="know" id="know_txt"  type="text" class="survey_td5">
+                                 </td>  
+                                
+                        </tr>                     
+                  </table>
+                  <table class="survey_tab1"  border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                                 <td   class="survey_txt1">14.</td>
+                                 <td   class="survey_txt2">您主要通过哪些途径获取护肤知识？（多选）</td>                                
+                       </tr>
+                  </table> 
+                  <table class="survey_tab6"  border="0" cellspacing="0" cellpadding="0">
+                  
+                        <tr>                       
+                                 <td class="survey_td3">
+                                 <input name="way" id="way_1"  type="checkbox" value="1" >
+                                 <label id="way_1" >各大女性杂志</label>
+                                 </td>
+                                 <td class="survey_td3">
+                                 <input name="way" id="way_2"  type="checkbox" value="2" >
+                                 <label id="way_2" >护肤品门户网站</label>
+                                 </td>
+                                
+                        </tr> 
+                        <tr>                        
+                                 <td class="survey_td3">
+                                 <input name="way" id="way_3"  type="checkbox" value="3" >
+                                 <label id="way_3" >品牌护肤品官方论坛、交流社区、官方微博微信等</label>
+                                 </td>
+                                 <td class="survey_td3">
+                                 <input name="way" id="way_4"  type="checkbox" value="4" >
+                                 <label id="way_4" >第三方护肤品交流论坛、热门护肤品微博、微信等</label>
+                                 </td>
+                                
+                        </tr> 
+                        <tr>                        
+                                 <td class="survey_td3">
+                                 <input name="way" id="way_5"  type="checkbox" value="5" >
+                                 <label id="way_5" >朋友同事介绍</label>
+                                 </td>
+                                 <td class="survey_td3">
+                                 <input name="way" id="way_6"  type="checkbox" value="6" >
+                                 <label id="way_6" >电视</label>
+                                 </td>
+                                                       
+                       </tr>
+                       <tr>                        
+                                 <td class="survey_td3" >
+                                 <input name="way" id="way_7"  type="checkbox" value="7" >
+                                 <label id="way_7" >广播</label>
+                                 </td>
+                                 <td class="survey_td4">
+                                 <input name="way" id="way_8"  type="checkbox" value="8" class="survey_input">
+                                 <label id="way_8" >其他（请填写，20字以内）：</label>
+                                 <input name="way" id="way_txt"  type="text" class="survey_td5">
+                                 </td>
+                                                       
+                      </tr>
+                                          
+                  </table>
+                  <table class="survey_tab1"  border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                                 <td   class="survey_txt1">15.</td>
+                                 <td   class="survey_txt2">您希望我们为您带来哪方面的资讯？（多选）</td>                                
+                       </tr>
+                  </table> 
+                  <table class="survey_tab2"  border="0" cellspacing="0" cellpadding="0">
+                  
+                        <tr>                       
+                                 <td>
+                                 <input name="info" id="info_1"  type="checkbox" value="1" >
+                                 <label id="info_1" >皮肤护理</label>
+                                 </td>
+                                 <td>
+                                 <input name="info" id="info_2"  type="checkbox" value="2" >
+                                 <label id="info_2" >化妆技巧</label>
+                                 </td>
+                                 <td>
+                                 <input name="info" id="info_3"  type="checkbox" value="3" >
+                                 <label id="info_3" >身体护理</label>
+                                 </td>
+                                 <td>
+                                 <input name="info" id="info_4"  type="checkbox" value="4" >
+                                 <label id="info_4" >流行趋势</label>
+                                 </td>
+                                 <td>
+                                 <input name="info" id="info_5"  type="checkbox" value="5" >
+                                 <label id="info_5" >健康饮食</label>
+                                 </td>
+                                
+                        </tr>                                                                   
+                  </table>
+                  <table class="survey_tab1"  border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                                 <td   class="survey_txt1">16.</td>
+                                 <td   class="survey_txt2">如有机会，您是否愿意参加我们的线下活动（美丽讲座、新品发布/试用会等）？（单选）</td>                                
+                       </tr>
+                  </table> 
+                  <table class="survey_tab2"  border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                        
+                                 <td>
+                                 <input name="activ" id="activ_1"  type="radio" value="1" >
+                                 <label id="activ_1" >愿意</label>
+                                 </td>
+                                 <td>
+                                 <input name="activ" id="activ_2"  type="radio" value="2" >
+                                 <label id="activ_2" >不愿意</label>
+                                 </td>
+                                
+                        </tr>
+                                         
+                  </table>
+                  <table class="survey_tab1"  border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                                 <td   class="survey_txt1">17.</td>
+                                 <td   class="survey_txt2">您的年龄层？ （单选）</td>                                
+                       </tr>
+                  </table> 
+                  <table class="survey_tab2"  border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                        
+                                 <td>
+                                 <input name="age" id="age_1"  type="radio" value="1" >
+                                 <label id="age_1" >15岁以下</label>
+                                 </td>
+                                 <td>
+                                 <input name="age" id="age_2"  type="radio" value="2" >
+                                 <label id="age_2" >15~20</label>
+                                 </td>
+                                 <td>
+                                 <input name="age" id="age_3"  type="radio" value="3" >
+                                 <label id="age_3" >21~25</label>
+                                 </td>
+                                 <td>
+                                 <input name="age" id="age_4"  type="radio" value="4" >
+                                 <label id="age_4" >26~30</label>
+                                 </td>
+                                 <td>
+                                 <input name="age" id="age_5"  type="radio" value="5" >
+                                 <label id="age_5" >31~40</label>
+                                 </td>
+                        </tr>
+                        <tr>                        
+                                 <td>
+                                 <input name="age" id="age_6"  type="radio" value="6" >
+                                 <label id="age_6" >41~50</label>
+                                 </td>
+                                 <td>
+                                 <input name="age" id="age_7"  type="radio" value="7" >
+                                 <label id="age_7" >51~60</label>
+                                 </td>
+                                 <td>
+                                 <input name="age" id="age_8"  type="radio" value="8" >
+                                 <label id="age_8" >60岁以上</label>
+                                 </td>                                 
+                        </tr>                 
+                  </table>
+           </div>
+           <div class="resetpw_bottom">               
+                <div class="resetpw_bottom_save">
+                      <input type="submit" value="完成填写" name="save" >
+                </div>
+                <div class="resetpw_bottom_cancel">
+                      <input type="reset" value="重新填写" name="cancel" >
+                </div>                               
+          </div>
+     </div>
+</div>
+</body>
+</html>

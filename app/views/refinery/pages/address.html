@@ -1,0 +1,133 @@
+<!DOCTYPE html ><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>收获地址管理</title>
+</head>
+
+<link href="Member-information-resetpassword.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="Member-information-firstlogin.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="address.css" rel="stylesheet" type="text/css" media="screen" />
+<body>
+<div id="content_right">
+     <div class="resetpw">
+           <div class="resetpw_head">
+                <ul>
+                        <li class="resetpw_head_txt1"><a>首页</a></li>
+                        <li class="resetpw_head_txt2">&nbsp;&nbsp;>&nbsp;&nbsp;</li>
+                        <li class="resetpw_head_txt1"><a>会员专区</a></li>
+                        <li class="resetpw_head_txt2">&nbsp;&nbsp;>&nbsp;&nbsp;</li>
+                        <li class="resetpw_head_txt1"><a>会员中心</a></li>
+                        <li class="resetpw_head_txt2">&nbsp;&nbsp;>&nbsp;&nbsp;</li>
+                        <li class="resetpw_head_txt1"><a>收货地址管理</a></li>
+                </ul>
+           </div>
+           <div class="resetpw_top">
+                <p class="resetpw_top_txt">&nbsp;收货地址管理</p>
+           </div>
+           
+           <div class="add_middle">
+               
+                <div class="add_txt1">
+                  新增收货地址
+                </div>
+                
+               <table class="firstlogin_middle_1"  border="0" cellspacing="0" cellpadding="0">
+                      <tr>
+                              <td   class="firstlogin_middle_2">*</td>
+                              <td   class="firstlogin_middle_3">姓&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;名：</td>
+                              <td   class="firstlogin_middle_4" ><input id="name" type="text" class="firstlogin_middle_5"></td>
+                     </tr>
+               </table>
+               <table class="firstlogin_middle_1"  border="0" cellspacing="0" cellpadding="0">
+                      <tr>
+                              <td    class="firstlogin_middle_2">*</td>
+                              <td    class="firstlogin_middle_3">手机号码：</td>
+                              <td    class="firstlogin_middle_4" ><input id="mobile" type="text" class="firstlogin_middle_5"></td>
+                     </tr>
+               </table>
+               <table   class="firstlogin_middle_1" border="0" cellpadding="0" cellspacing="0" >
+                      <tr>
+                              <td   class="firstlogin_middle_2">*</td>
+                              <td   class="firstlogin_middle_3">省&nbsp;市&nbsp;区：</td>
+                              <td   class="firstlogin_middle_10" >
+                              <select id="province" class="firstlogin_middle_dropdown3"><option>不限</option></select></td>
+                              <td   class="firstlogin_middle_8">省</td>
+                              <td   class="firstlogin_middle_10" >
+                              <select id="city" name="city" class="firstlogin_middle_dropdown3"><option>不限</option></select></td>
+                              <td   class="firstlogin_middle_8">市</td>
+                               <td  class="firstlogin_middle_10" >
+                              <select id="district" name="district" class="firstlogin_middle_dropdown3"><option >不限</option></select></td>
+                              <td   class="firstlogin_middle_8">区</td>
+                      </tr>
+               </table>
+                <table class="firstlogin_middle_1"  border="0" cellspacing="0" cellpadding="0">
+                      <tr>
+                              <td    class="firstlogin_middle_2">*</td>
+                              <td    class="firstlogin_middle_3">详细地址：</td>
+                              <td    class="firstlogin_middle_4" ><input id="address" type="text" class="firstlogin_middle_5"></td>
+                              <td    class="firstlogin_middle_6" >为保证您能尽快体验到简妮商品，请确保您填写的地址真实有效</td>
+                     </tr>
+               </table>
+               <table class="firstlogin_middle_1"  border="0" cellspacing="0" cellpadding="0">
+                      <tr>
+                              <td    class="firstlogin_middle_2">*</td>
+                              <td    class="firstlogin_middle_3">邮政编码：</td>
+                              <td    class="firstlogin_middle_4" ><input id="postalcode" type="text" class="firstlogin_middle_5"></td>
+                     </tr>
+               </table>
+               <table class="firstlogin_middle_1"  border="0" cellspacing="0" cellpadding="0">
+                      <tr>
+                              <td   class="firstlogin_middle_2"></td>
+                              <td   class="firstlogin_middle_3">固定电话：</td>
+                              <td   class="firstlogin_middle_11_1" ><input id="areacode" type="text" class="firstlogin_middle_11_2"></td>
+                              <td   class="firstlogin_middle_11_7" >区号</td>
+                              <td   class="firstlogin_middle_11_3" ><input id="telephone " type="text" class="firstlogin_middle_11_5"></td>
+                              <td   class="firstlogin_middle_11_4" >电话号码</td>
+                              <td   class="firstlogin_middle_11_1" ><input id="extensionnumber " type="text" class="firstlogin_middle_11_2"></td>
+                              <td   class="firstlogin_middle_11_6" >分机号</td>
+                     </tr>     
+               </table>
+               <div class="resetpw_bottom">               
+                     <div class="resetpw_bottom_save">
+                              <input id="saveadd"   type="submit" value="完成并保存"  >
+                     </div>                                                          
+               </div>
+               
+     </div>
+                <div class="add_txt1">
+                已保存的有效地址
+               </div>
+               <table class="add_tab1"  border="0" cellspacing="0" cellpadding="0">
+                      <tr>
+                              <td   class="add_td1">姓名</td>
+                              <td   class="add_td2">省市区 </td>
+                              <td   class="add_td3" >详细地址 </td>
+                              <td   class="add_td2">手机号码</td>
+                              <td   class="add_td2">邮政编码</td>
+                              <td   class="add_td2">固定电话</td>
+                              <td   class="add_td1">操作</td>
+                     </tr>
+               </table>
+               <table class="add_tab2"  border="0" cellspacing="0" cellpadding="0">
+                      <tr>
+                              <td   class="add_td1">X女士</td>
+                              <td   class="add_td2">上海市浦东新区</td>
+                              <td   class="add_td3">峨山路91弄浦东陆家嘴软件园120号4-5楼 </td>
+                              <td   class="add_td2">13700000000</td>
+                              <td   class="add_td2">200000</td>
+                              <td   class="add_td2"></td>
+                              <td   class="add_td1">
+                                     <div class="add_mod">
+                                           <input id="modify"   type="button" value="修改"  >
+                                     </div>
+                                     <div class="add_del">
+                                           <input id="delete"   type="button" value="删除"  >
+                                     </div>
+                              </td>
+                     </tr>
+               </table>
+     
+           
+     </div>
+</div>
+</body>
+</html>

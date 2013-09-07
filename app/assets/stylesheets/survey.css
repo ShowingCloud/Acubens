@@ -1,0 +1,120 @@
+@charset "utf-8";
+/* CSS Document */
+.survey_top{
+	width:720px;
+	height:112px;
+	border-bottom-style:dashed;
+	border-color:#cccccc;
+	border-width:1px;
+	font-size:24px;
+	line-height:112px;
+	text-align:center;
+	color:#6eb92b;
+}
+.survey_middle{
+	width:720px;
+	height:3208px;
+	border-bottom-style:dashed;
+	border-color:#cccccc;
+	border-width:1px;
+}
+.survey_tab1{
+	margin-top:60px;
+	font-size:12px;
+	letter-spacing:1px;
+}
+.survey_txt1{
+	color:#6eb92b;
+}
+.survey_txt2{
+	color:#666666;
+}
+.survey_tab2{
+	font-size:12px;
+	color:#6eb92b;
+	letter-spacing:1px;
+}
+.survey_tab2 tr{
+	height:34px;
+}
+.survey_tab2 tr td{
+	width:125px;	
+}
+.survey_tab2 tr td input{
+	width:10px;
+}
+.survey_tab3{
+	font-size:12px;
+	color:#6eb92b;
+	letter-spacing:1px;
+}
+.survey_tab3 tr{
+	height:34px;
+}
+.survey_tab3 tr td{
+	width:322px;
+}
+.survey_tab3 tr td input{
+	width:10px;
+}
+.survey_tab4{
+	font-size:12px;
+	color:#6eb92b;
+	letter-spacing:1px;
+}
+.survey_tab4 tr{
+	height:55px;
+}
+.survey_td1{
+	width:193px;
+}
+.survey_td2{
+	width:166px;
+}
+.survey_tab5{
+	font-size:12px;
+	color:#6eb92b;
+	letter-spacing:1px;
+}
+.survey_tab5 tr{
+	height:34px;
+}
+.survey_tab5 tr td input{
+	width:10px;
+}
+.survey_tab6{
+	font-size:12px;
+	color:#6eb92b;
+	letter-spacing:1px;
+}
+.survey_tab6 tr{
+	height:34px;
+}
+.survey_td3{
+	width:322px;
+}
+.survey_td3 input{
+	width:10px;
+}
+.survey_input{
+	width:10px;
+}
+.survey_td4{
+	width:390px;
+}
+.survey_td5{
+	width:180px;
+	border-style:none none dashed none;
+	border-width:1px;
+	border-color:#b6dc95;
+}
+.survey_td1 input{
+	width:10px;
+}
+.survey_td6{
+	width:150px; 
+	border-style:none none dashed none;
+	border-width:1px;
+	border-color:#b6dc95;
+}
+
