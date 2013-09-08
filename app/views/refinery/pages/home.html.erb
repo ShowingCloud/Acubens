@@ -45,7 +45,7 @@ p{
 </style>
 <% end %>
 
-
+<link href="scroll.css" rel="stylesheet" type="text/css" media="screen" />
 
 <body>
 <div id="page_container1">
@@ -81,7 +81,8 @@ p{
       </div>      
     </div>
     
-    
+    <div class="news-area" >
+	
     <div class="news-text1" id="news-text1">
 		<% @items = Refinery::News::Item.latest(5, 0) %>
 		<%= render :partial => '/refinery/news/items/recent_posts' %>
@@ -91,7 +92,7 @@ p{
 		<%= render :partial => '/refinery/news/items/recent_posts' %>
     </div>
     
-
+    </div>
   
    
   </div>

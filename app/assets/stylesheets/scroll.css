@@ -1,0 +1,24 @@
+@charset "utf-8";
+/* CSS Document */
+
+.news-area{
+	height:200px;
+	overflow-y:scroll;
+	overflow-x:hidden;
+	scrollbar-arrow-color:#ffffff;
+	scrollbar-darkshadow-color:#e2f6d0;	
+    SCROLLBAR-FACE-COLOR:#e2f6d0;
+    SCROLLBAR-SHADOW-COLOR:#f0ffe3;
+    SCROLLBAR-TRACK-COLOR:#f0ffe3;
+}
+ 
+::-webkit-scrollbar-track-piece{
+	background-color:#f0ffe3;
+ }
+::-webkit-scrollbar{width:22px;}
+::-webkit-scrollbar-thumb{background:#e2f6d0;} 
+::-webkit-scrollbar-button{
+ background:#e2f6d0;
+ width:20px;
+ height:20px;
+ }

@@ -117,4 +117,48 @@
 	border-width:1px;
 	border-color:#b6dc95;
 }
+/*norepeat*/
+.norep_middle{
+	width:720px;
+	height:210px;
+	border-bottom-style:dashed;
+	border-color:#cccccc;
+	border-width:1px;
+}
+.norep_txt{
+	font-size:14px;
+	color:#666666;
+	letter-spacing:1.4px;
+	text-align:center;
+	line-height:210px;
+}
+/*survey-finish*/
+.finish_middle{
+	width:720px;
+	height:200px;
+	padding-top:81px;
+	border-bottom-style:dashed;
+	border-color:#cccccc;
+	border-width:1px;
+}
+.finish_txt1{
+	font-size:14px;
+	color:#666666;
+	letter-spacing:1.4px;
+	text-align:center;
+}
+.finish_txt2{
+	font-size:12px;
+	color:#999999;
+	letter-spacing:1.4px;
+	text-align:center;
+}
+.finish_txt3{
+	font-size:14px;
+	color:#6eb92b;
+	letter-spacing:1.4px;
+	text-align:center;
+	text-decoration:underline;
+}
+
 
