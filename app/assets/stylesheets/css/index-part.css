@@ -49,7 +49,8 @@
 }
 .img2{
 	margin-top:10px;
-	width:248px;}
+	width:248px;
+}
 
 .news-blank{
 	width:270px;
@@ -66,7 +67,7 @@
 	border-bottom:solid;
 	border-bottom-color:#bbdf9d;
 	border-bottom-width:1px;
-	}
+}
 	
 .index-text1{
 	font-family:Arial,'YouYuan','SimSun';
@@ -81,7 +82,7 @@
 .index-text2{
 	font-family:Arial,'YouYuan','SimSun';
 	font-weight:bold;
-background-color:#bbdf9d;
+	background-color:#bbdf9d;
 	color:#FFF;
 	font-size:14px;
 	width:85px;
@@ -89,7 +90,7 @@ background-color:#bbdf9d;
 	text-align:center;
 	float:left;
 	padding-top:3px;
-	}
+}
 .back-color{	
 	background-color:#3C3;
 	width:85px;
@@ -111,7 +112,7 @@ background-color:#bbdf9d;
 	margin-left:4px;
 	font-size:14px;
 	letter-spacing: 3px;
-	}
+}
 .last-wechat{
 	width:250px;
 	height:78px;
@@ -126,7 +127,7 @@ background-color:#bbdf9d;
 	border-right-width:1px;
 	border-right-style:solid;
 	border-right-color:#e7ebf0;
-	}
+}
 .little-words-under-weibo{
 	font-family:Arial,'YouYuan','SimSun';
 	margin-left:8px;
@@ -182,7 +183,7 @@ background-color:#bbdf9d;
 .last-text-tail-small-ulul{
 	margin-top:-9px;
 	margin-left:-40px;
-	}
+}
 .last-text-tail-small{
 	font-size:11px;
 	color:#a7a7a7;
@@ -257,12 +258,11 @@ background-color:#bbdf9d;
 	list-style-type:none;
 }
 	
-	.bacground-green{
-		background-color:#bbdf9d;
-		width:85px;
+.bacground-green{
+	background-color:#bbdf9d;
+	width:85px;
 	height:26px;
-
-	}
+}
 
 .bacground-white-green{
 	background-color:#f0ffe3;
@@ -270,9 +270,9 @@ background-color:#bbdf9d;
 	height:19px;
 }
 	
-	.position{
-		height:20px;
-		}
+.position{
+	height:20px;
+}
 		
 .index-text2-color{
 	background-color:#3C3;
@@ -280,7 +280,7 @@ background-color:#bbdf9d;
 
 .text-color{
 	color:#6eb92b;
-	}
+}
 		
 .text-white{
 	color:#FFF;
