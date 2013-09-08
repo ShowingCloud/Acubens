@@ -6,6 +6,7 @@ Acubens::Application.routes.draw do
 		  post :verifymobile
 		  post :register
 		  post :login
+		  post :changepsw
 	  end
   end
 
