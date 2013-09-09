@@ -3,7 +3,7 @@
 /*classroom detail*/
 .rightclass_middle{
 	width:720px;
-	height:1110px;
+	min-height:1110px;
 //	border-bottom-style:dashed;
 	border-color:#7a7a7a;
 	border-width:1px;
@@ -116,7 +116,7 @@
 .classcontent_middle{
 	float:left;
 	width:720px;
-	height:210px;
+	min-height:210px;
 }
 .classcontent_middle_left{
 	float:left;
@@ -128,11 +128,12 @@
 	float:left;
 	margin-top:56px;
 	width:476px;
-	height:152px
+	min-height:152px;
+	padding-bottom:50px;
 }
 .classbox{
 	width:462px;
-	height:148px; 
+	min-height:148px; 
 	border:1px solid #bbdf9d; 
 	position:relative;
 	padding-left:5px;

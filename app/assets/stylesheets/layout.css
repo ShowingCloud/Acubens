@@ -532,10 +532,10 @@ nav ul .last {
 	font-weight:bold;
 	color:#6eb92b;
 	font-size:12px;
-	margin-right:100px;
+	//margin-right:100px;
 	width:212px;
-list-style-type:none; 
-margin-top:-12px;
+	list-style-type:none; 
+	margin-top:-12px;
 }
 
 .member-text3 a {
@@ -562,8 +562,8 @@ margin-top:-12px;
 	font-size:15px;
 	margin-right:74px;
 	width:212px;
-list-style-type:none; 
-margin-top:-12px;
+	list-style-type:none; 
+	margin-top:-12px;
 }
 
 .member-text4{

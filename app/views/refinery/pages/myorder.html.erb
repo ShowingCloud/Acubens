@@ -1,20 +1,5 @@
 <!doctype html>
 <html>
-<head>
-<style type="text/css">
-a{ text-decoration:none;}
-a:hover{ text-decoration:underline;}
-</style>
-<link href="layout.css" rel="stylesheet" type="text/css" media="screen" />
-
-<meta charset="utf-8">
-<title>我的订单</title>
-
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<link href="Member-information-resetpassword.css" rel="stylesheet" type="text/css" media="screen" />
-<link href="Member-information-findpassword-1.css" rel="stylesheet" type="text/css" media="screen" />
-</head>
-
 <body>
 
 <div class="middle-xp">
@@ -53,7 +38,7 @@ a:hover{ text-decoration:underline;}
   <a href="/%E4%BC%9A%E5%91%98%E4%B8%93%E5%8C%BA/%E4%BC%9A%E5%91%98%E4%B8%AD%E5%BF%83/%E4%B8%AA%E4%BA%BA%E4%BF%A1%E6%81%AF">个人信息</a></li>
    <li class="member-text3" >
   <img src="/assets/img/right-angle-empty.png" class="img-margin2" >
-  <a href="/%E4%BC%9A%E5%91%98%E4%B8%93%E5%8C%BA/%E4%BC%9A%E5%91%98%E4%B8%AD%E5%BF%83/%E6%88%91%E7%9A%84%E7%A7%AF%E5%88%86">我的积分</a></li>
+  <a href="/%E4%BC%9A%E5%91%98%E4%B8%93%E5%8C%BA/%E4%BC%9A%E5%91%98%E4%B8%AD%E5%BF%83/%E6%88%91%E7%9A%84%E7%A7%AF%E5%88%86">我的积分及订单历史</a></li>
   
   <li class="member-text3" >
   <img src="/assets/img/right-angle-empty.png" class="img-margin2" >
@@ -68,7 +53,7 @@ a:hover{ text-decoration:underline;}
   <center>
  
      <li class="zone2"><img src="/assets/img/right-angle-empty.png"  class="img-margin">
-    <span class="member-text3"> 我的订单</span>
+    <span class="member-text3"> 收货地址管理</span>
     </li>
   </center>
   
@@ -119,72 +104,118 @@ a:hover{ text-decoration:underline;}
                         <li class="resetpw_head_txt2">&nbsp;&nbsp;>&nbsp;&nbsp;</li>
                         <li class="resetpw_head_txt1"><a href="/会员专区/会员中心">会员中心</a></li>
                         <li class="resetpw_head_txt2">&nbsp;&nbsp;>&nbsp;&nbsp;</li>
-                        <li class="resetpw_head_txt1"><a href="/会员专区/会员中心/我的订单">我的订单</a></li>
+                        <li class="resetpw_head_txt1"><a href="/会员专区/会员中心/我的订单">收货地址管理</a></li>
                 </ul>
            </div>
            <div class="resetpw_top">
            
-                <p class="resetpw_top_txt">&nbsp;我&nbsp;的&nbsp;订&nbsp;单</p>
+                <p class="resetpw_top_txt">&nbsp;收货地址管理</p>
            </div>
+           <div class="add_middle">
+               
+                <div class="add_txt1">
+                  新增收货地址
+                </div>
+                
+               <table class="firstlogin_middle_1"  border="0" cellspacing="0" cellpadding="0">
+                      <tr>
+                              <td   class="firstlogin_middle_2">*</td>
+                              <td   class="firstlogin_middle_3">姓&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;名：</td>
+                              <td   class="firstlogin_middle_4" ><input id="name" type="text" class="firstlogin_middle_5"></td>
+                     </tr>
+               </table>
+               <table class="firstlogin_middle_1"  border="0" cellspacing="0" cellpadding="0">
+                      <tr>
+                              <td    class="firstlogin_middle_2">*</td>
+                              <td    class="firstlogin_middle_3">手机号码：</td>
+                              <td    class="firstlogin_middle_4" ><input id="mobile" type="text" class="firstlogin_middle_5"></td>
+                     </tr>
+               </table>
+               <table   class="firstlogin_middle_1" border="0" cellpadding="0" cellspacing="0" >
+                      <tr>
+                              <td   class="firstlogin_middle_2">*</td>
+                              <td   class="firstlogin_middle_3">省&nbsp;市&nbsp;区：</td>
+                              <td   class="firstlogin_middle_10" >
+                              <select id="province" class="firstlogin_middle_dropdown3"><option>不限</option></select></td>
+                              <td   class="firstlogin_middle_8">省</td>
+                              <td   class="firstlogin_middle_10" >
+                              <select id="city" name="city" class="firstlogin_middle_dropdown3"><option>不限</option></select></td>
+                              <td   class="firstlogin_middle_8">市</td>
+                               <td  class="firstlogin_middle_10" >
+                              <select id="district" name="district" class="firstlogin_middle_dropdown3"><option >不限</option></select></td>
+                              <td   class="firstlogin_middle_8">区</td>
+                      </tr>
+               </table>
+                <table class="firstlogin_middle_1"  border="0" cellspacing="0" cellpadding="0">
+                      <tr>
+                              <td    class="firstlogin_middle_2">*</td>
+                              <td    class="firstlogin_middle_3">详细地址：</td>
+                              <td    class="firstlogin_middle_4" ><input id="address" type="text" class="firstlogin_middle_5"></td>
+                              <td    class="firstlogin_middle_6" >为保证您能尽快体验到简妮商品，请确保您填写的地址真实有效</td>
+                     </tr>
+               </table>
+               <table class="firstlogin_middle_1"  border="0" cellspacing="0" cellpadding="0">
+                      <tr>
+                              <td    class="firstlogin_middle_2">*</td>
+                              <td    class="firstlogin_middle_3">邮政编码：</td>
+                              <td    class="firstlogin_middle_4" ><input id="postalcode" type="text" class="firstlogin_middle_5"></td>
+                     </tr>
+               </table>
+               <table class="firstlogin_middle_1"  border="0" cellspacing="0" cellpadding="0">
+                      <tr>
+                              <td   class="firstlogin_middle_2"></td>
+                              <td   class="firstlogin_middle_3">固定电话：</td>
+                              <td   class="firstlogin_middle_11_1" ><input id="areacode" type="text" class="firstlogin_middle_11_2"></td>
+                              <td   class="firstlogin_middle_11_7" >区号</td>
+                              <td   class="firstlogin_middle_11_3" ><input id="telephone " type="text" class="firstlogin_middle_11_5"></td>
+                              <td   class="firstlogin_middle_11_4" >电话号码</td>
+                              <td   class="firstlogin_middle_11_1" ><input id="extensionnumber " type="text" class="firstlogin_middle_11_2"></td>
+                              <td   class="firstlogin_middle_11_6" >分机号</td>
+                     </tr>     
+               </table>
+               <div class="resetpw_bottom">               
+                     <div class="resetpw_bottom_save">
+                              <input id="saveadd"   type="submit" value="完成并保存"  >
+                     </div>                                                          
+               </div>
+               
+     </div>
+      <div class="add_txt1">
+                已保存的有效地址
+               </div>
+               <table class="add_tab1"  border="0" cellspacing="0" cellpadding="0">
+                      <tr>
+                              <td   class="add_td1">姓名</td>
+                              <td   class="add_td2">省市区 </td>
+                              <td   class="add_td3" >详细地址 </td>
+                              <td   class="add_td2">手机号码</td>
+                              <td   class="add_td2">邮政编码</td>
+                              <td   class="add_td2">固定电话</td>
+                              <td   class="add_td1">操作</td>
+                     </tr>
+               </table>
+               <table class="add_tab2"  border="0" cellspacing="0" cellpadding="0">
+                      <tr>
+                              <td   class="add_td1">X女士</td>
+                              <td   class="add_td2">上海市浦东新区</td>
+                              <td   class="add_td3">峨山路91弄浦东陆家嘴软件园120号4-5楼 </td>
+                              <td   class="add_td2">13700000000</td>
+                              <td   class="add_td2">200000</td>
+                              <td   class="add_td2"></td>
+                              <td   class="add_td1">
+                                     <div class="add_mod">
+                                           <input id="modify"   type="button" value="修改"  >
+                                     </div>
+                                     <div class="add_del">
+                                           <input id="delete"   type="button" value="删除"  >
+                                     </div>
+                              </td>
+                     </tr>
+               </table>
            
           
            
-       <div class="findpw_1_middle">
-                <table   class="firstlogin_middle_1" border="0" cellpadding="0" cellspacing="0" >
-                      <tr>
-                              
-                              <td   class="firstlogin_middle_3">订单时间：</td>
-                              <td   class="firstlogin_middle_10" >
-                              <label id="province"></label>
-                              <select id="province" name="province" class="firstlogin_middle_dropdown3"><option>全部商品</option><option>一个月内</option><option>六个月内</option><option>一年以内</option><option>一个以前</option></select></td>
-                              
-                              
-                      </tr>
-               </table>
-               
-               <div class="resetpw_top1-intable"><table width="720" border="0">
-         <tr>
-           <td width="266" class="myorder-in-table-text">商品</td>
-           <td width="85" class="myorder-in-table-text-middle">单价</td>
-           <td width="75" class="myorder-in-table-text-middle">数量</td>
-           <td width="90" class="myorder-in-table-text-middle">实付款</td>
-           <td width="105" class="myorder-in-table-text-middle">所得积分</td>
-           <td width="101" class="myorder-in-table-text-middle">购买途径</td>
-         </tr>
-  </table></div>
-      
-      <div class="just-for-border">        
-        <div class="resetpw_top1-mystore-myorder">
-      	  <table width="375" border="0">
- 			 <tr>
-  				  <td width="75" class="for-order-number-word">订单编号:</td>
-   				  <td width="135" class="for-order-number-word">000000</td>
-  				  <td width="110" class="for-order-number-word">订单成交时间:</td>
- 			      <td width="80" class="for-order-number-word">2013/7/11</td>
- 			 </tr>
-		  </table>
-
-  		</div>
-
-  
- 		  <table width="722" >
-  			<tr>
-    			  <td width="132"   ><img src="/assets/img/product2.png" class="mystore-for-order"></td>
-    			  <td width="140" >
-    					<ul>
-    						<li class="mystore-text-for-order">简妮保湿润泽乳霜</li>
-   						    <li class="mystore-text-for-order-1">100G</li>
-  					    </ul>
-   				  </td>
-  				  <td width="79" class="for-order-middle-number">200</td>
-   			      <td width="67" class="for-order-middle-number">1</td>
-   				  <td width="83" class="for-order-middle-number">200</td>
-    			  <td width="98" class="for-order-middle-number">200</td>
-  				  <td width="91" class="for-order-middle-number">天猫商城</td>
- 			 </tr>
-		  </table>
-	 </div>
-	</div>
+       
 </div>
 </div>
 </body>
