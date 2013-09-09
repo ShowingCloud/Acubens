@@ -31,7 +31,7 @@ refinery_pages:
     - false
     - false
     - 1
-    - 12
+    - 14
     - 0
     - home
     - application
@@ -81,30 +81,13 @@ refinery_pages:
     - true
     - false
     - false
-    - 78
-    - 79
+    - 80
+    - 81
     - 1
     - exchangeverify
     - application
     - 2013-07-31 18:37:18.000000000 Z
     - 2013-08-15 12:22:13.000000000 Z
-  - - 6
-    - 20
-    - 
-    - 重置密码
-    - false
-    - ''
-    - 
-    - true
-    - false
-    - false
-    - 82
-    - 83
-    - 1
-    - resetpwd
-    - application
-    - 2013-07-31 18:37:57.000000000 Z
-    - 2013-08-15 12:22:45.000000000 Z
   - - 8
     - 20
     - 
@@ -115,8 +98,8 @@ refinery_pages:
     - true
     - false
     - false
-    - 80
-    - 81
+    - 82
+    - 83
     - 1
     - changeinfo
     - application
@@ -268,8 +251,8 @@ refinery_pages:
     - true
     - false
     - false
-    - 105
-    - 106
+    - 107
+    - 108
     - 0
     - show
     - application
@@ -285,8 +268,8 @@ refinery_pages:
     - true
     - false
     - false
-    - 23
-    - 76
+    - 25
+    - 78
     - 0
     - products-ind-slogan
     - application
@@ -302,8 +285,8 @@ refinery_pages:
     - true
     - false
     - true
-    - 13
-    - 22
+    - 15
+    - 24
     - 0
     - concept-last
     - application
@@ -319,8 +302,8 @@ refinery_pages:
     - true
     - false
     - false
-    - 77
-    - 104
+    - 79
+    - 106
     - 0
     - show
     - application
@@ -336,8 +319,8 @@ refinery_pages:
     - true
     - false
     - false
-    - 107
-    - 108
+    - 109
+    - 110
     - 0
     - howtobuy
     - application
@@ -353,8 +336,8 @@ refinery_pages:
     - true
     - false
     - false
-    - 109
-    - 114
+    - 111
+    - 116
     - 0
     - tips-tech-last-pig
     - application
@@ -370,8 +353,8 @@ refinery_pages:
     - true
     - false
     - false
-    - 119
-    - 120
+    - 121
+    - 122
     - 0
     - contactus-last
     - application
@@ -387,8 +370,8 @@ refinery_pages:
     - true
     - false
     - false
-    - 115
-    - 118
+    - 117
+    - 120
     - 0
     - missJu-class-last-pig
     - application
@@ -421,8 +404,8 @@ refinery_pages:
     - true
     - false
     - false
-    - 14
-    - 15
+    - 16
+    - 17
     - 1
     - concept-last
     - application
@@ -438,8 +421,8 @@ refinery_pages:
     - true
     - false
     - false
-    - 16
-    - 17
+    - 18
+    - 19
     - 1
     - history-last
     - application
@@ -455,8 +438,8 @@ refinery_pages:
     - true
     - false
     - false
-    - 18
-    - 19
+    - 20
+    - 21
     - 1
     - about-safety-last
     - application
@@ -472,8 +455,8 @@ refinery_pages:
     - true
     - false
     - false
-    - 20
-    - 21
+    - 22
+    - 23
     - 1
     - story-at-last
     - application
@@ -523,8 +506,8 @@ refinery_pages:
     - true
     - false
     - false
-    - 110
-    - 111
+    - 112
+    - 113
     - 1
     - tips-tech-last-pig
     - application
@@ -540,8 +523,8 @@ refinery_pages:
     - true
     - false
     - false
-    - 112
-    - 113
+    - 114
+    - 115
     - 1
     - customers-voice-last-pig
     - application
@@ -557,8 +540,8 @@ refinery_pages:
     - true
     - false
     - false
-    - 116
-    - 117
+    - 118
+    - 119
     - 1
     - missJu-detail-last-pig
     - application
@@ -574,8 +557,8 @@ refinery_pages:
     - true
     - false
     - false
-    - 24
-    - 33
+    - 26
+    - 35
     - 1
     - products-cleansing
     - application
@@ -591,8 +574,8 @@ refinery_pages:
     - true
     - false
     - false
-    - 62
-    - 75
+    - 64
+    - 77
     - 1
     - products-group
     - application
@@ -608,8 +591,8 @@ refinery_pages:
     - true
     - false
     - false
-    - 44
-    - 61
+    - 46
+    - 63
     - 1
     - products-homecream
     - application
@@ -625,8 +608,8 @@ refinery_pages:
     - true
     - false
     - false
-    - 34
-    - 43
+    - 36
+    - 45
     - 1
     - products-peeling
     - application
@@ -676,8 +659,8 @@ refinery_pages:
     - false
     - false
     - false
-    - 121
-    - 122
+    - 123
+    - 124
     - 0
     - home
     - application
@@ -693,8 +676,8 @@ refinery_pages:
     - true
     - false
     - false
-    - 25
-    - 26
+    - 27
+    - 28
     - 2
     - products-cleansing0101
     - application
@@ -710,8 +693,8 @@ refinery_pages:
     - true
     - false
     - false
-    - 27
-    - 28
+    - 29
+    - 30
     - 2
     - products-cleansing0101
     - application
@@ -727,8 +710,8 @@ refinery_pages:
     - true
     - false
     - false
-    - 29
-    - 30
+    - 31
+    - 32
     - 2
     - products-cleansing0101
     - application
@@ -744,8 +727,8 @@ refinery_pages:
     - true
     - false
     - false
-    - 31
-    - 32
+    - 33
+    - 34
     - 2
     - products-cleansing0101
     - application
@@ -761,8 +744,8 @@ refinery_pages:
     - true
     - false
     - false
-    - 35
-    - 36
+    - 37
+    - 38
     - 2
     - products-peeling0201
     - application
@@ -778,8 +761,8 @@ refinery_pages:
     - true
     - false
     - false
-    - 37
-    - 38
+    - 39
+    - 40
     - 2
     - products-peeling0201
     - application
@@ -795,8 +778,8 @@ refinery_pages:
     - true
     - false
     - false
-    - 39
-    - 40
+    - 41
+    - 42
     - 2
     - products-peeling0201
     - application
@@ -812,8 +795,8 @@ refinery_pages:
     - true
     - false
     - false
-    - 41
-    - 42
+    - 43
+    - 44
     - 2
     - products-peeling0201
     - application
@@ -829,8 +812,8 @@ refinery_pages:
     - true
     - false
     - false
-    - 45
-    - 46
+    - 47
+    - 48
     - 2
     - products-homecream0301
     - application
@@ -846,8 +829,8 @@ refinery_pages:
     - true
     - false
     - false
-    - 47
-    - 48
+    - 49
+    - 50
     - 2
     - products-homecream0301
     - application
@@ -863,8 +846,8 @@ refinery_pages:
     - true
     - false
     - false
-    - 49
-    - 50
+    - 51
+    - 52
     - 2
     - products-homecream0301
     - application
@@ -880,8 +863,8 @@ refinery_pages:
     - true
     - false
     - false
-    - 51
-    - 52
+    - 53
+    - 54
     - 2
     - products-homecream0301
     - application
@@ -897,8 +880,8 @@ refinery_pages:
     - true
     - false
     - false
-    - 53
-    - 54
+    - 55
+    - 56
     - 2
     - products-homecream0301
     - application
@@ -914,8 +897,8 @@ refinery_pages:
     - true
     - false
     - false
-    - 55
-    - 56
+    - 57
+    - 58
     - 2
     - products-homecream0301
     - application
@@ -931,8 +914,8 @@ refinery_pages:
     - true
     - false
     - false
-    - 57
-    - 58
+    - 59
+    - 60
     - 2
     - products-homecream0301
     - application
@@ -948,8 +931,8 @@ refinery_pages:
     - true
     - false
     - false
-    - 59
-    - 60
+    - 61
+    - 62
     - 2
     - products-homecream0301
     - application
@@ -965,8 +948,8 @@ refinery_pages:
     - true
     - false
     - false
-    - 63
-    - 64
+    - 65
+    - 66
     - 2
     - products-group0401
     - application
@@ -982,8 +965,8 @@ refinery_pages:
     - true
     - false
     - false
-    - 65
-    - 66
+    - 67
+    - 68
     - 2
     - products-group0401
     - application
@@ -999,8 +982,8 @@ refinery_pages:
     - true
     - false
     - false
-    - 67
-    - 68
+    - 69
+    - 70
     - 2
     - products-group0401
     - application
@@ -1016,8 +999,8 @@ refinery_pages:
     - true
     - false
     - false
-    - 69
-    - 70
+    - 71
+    - 72
     - 2
     - products-group0401
     - application
@@ -1033,8 +1016,8 @@ refinery_pages:
     - true
     - false
     - false
-    - 71
-    - 72
+    - 73
+    - 74
     - 2
     - products-group0401
     - application
@@ -1050,10 +1033,44 @@ refinery_pages:
     - true
     - false
     - false
-    - 73
-    - 74
+    - 75
+    - 76
     - 2
     - products-group0401
     - application
     - 2013-09-05 17:13:22.000000000 Z
     - 2013-09-05 18:21:22.000000000 Z
+  - - 67
+    - 20
+    - 
+    - 重置密码--2
+    - false
+    - ''
+    - 
+    - true
+    - false
+    - false
+    - 104
+    - 105
+    - 1
+    - resetpwd
+    - application
+    - 2013-09-09 18:12:42.000000000 Z
+    - 2013-09-09 18:13:20.000000000 Z
+  - - 68
+    - 1
+    - 
+    - 调查问卷
+    - false
+    - ''
+    - 
+    - true
+    - false
+    - false
+    - 12
+    - 13
+    - 1
+    - survey
+    - application
+    - 2013-09-09 20:00:47.000000000 Z
+    - 2013-09-09 20:00:47.000000000 Z

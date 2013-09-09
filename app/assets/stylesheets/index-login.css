@@ -41,7 +41,7 @@
 	background-color:#FFF;
 }
 .content{	
-	padding-top:35px;
+	padding-top:20px;
 	padding-left:27px;	
 }
 #content_2{ display:none; } 
@@ -78,7 +78,6 @@
 }
 .content_1_bottom input{
     background-color:#6eb92b;
-	margin-top:40px;
 	margin-left:97px;
 	width:83px;
 	height:26px;
@@ -181,3 +180,14 @@ input[type=checkbox] {
 	opacity: 1;
 }
 
+.simple_captcha{
+	width:270px
+}
+
+.simple_captcha_image{
+	float:left	
+}
+
+.simple_captcha_label{
+	color:white;
+}
