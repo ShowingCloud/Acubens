@@ -12,6 +12,12 @@ Acubens::Application.routes.draw do
 	  end
   end
 
+  resources :order do
+	  collection do
+		  post :setorder
+	  end
+  end
+
   get '/robots.txt' => 'application#robots'
 
   get 'admin', :to => redirect('/refinery')
