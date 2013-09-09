@@ -1,5 +1,9 @@
 @charset "utf-8";
 /* CSS Document */
+.survey_middle table tr td input[type=checkbox]{
+	visibility:visible;
+}
+
 .survey_top{
 	width:720px;
 	height:112px;
