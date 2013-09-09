@@ -10,32 +10,31 @@
 </script>
 <script>
 $(document).ready(function(){
-	$("#news-text1").show();
-	$("#news-text2").hide();	
   $("#index-text1").mouseover(function(){
-    ;
 	$("#news-text1").show();
 	$("#news-text2").hide();
-	$("#index-text2").addClass("text-color");
-	$("#index-text1").addClass("text-white");
+
+	$("#index-text1").removeClass("text-color");
 	$("#index-text1").addClass("bacground-green position");
- $("#index-text2").removeClass("bacground-green");
- $("#index-text2").addClass("bacground-white-green");
+	$("#index-text1").addClass("text-white");
+    $("#index-text2").removeClass("bacground-green");
+    $("#index-text2").addClass("bacground-white-green");
+	$("#index-text2").addClass("text-color");
+ });
 
-
-  });
-    $("#index-text2").mouseover(function(){
-    ;
-	$("#news-text2").show();
+  $("#index-text2").mouseover(function(){
 	$("#news-text1").hide();
-	$("#index-text2").addClass("bacground-green position");
- $("#index-text2").removeClass("bacground-white-green");
-	$("#index-text2").removeClass("text-color");
+	$("#news-text2").show();
+
 	$("#index-text1").addClass("text-color");
 	$("#index-text1").removeClass("bacground-green");
-		$("#index-text1").removeClass("text-white");
+	$("#index-text1").removeClass("text-white");
+	$("#index-text2").addClass("bacground-green position");
+    $("#index-text2").removeClass("bacground-white-green");
+	$("#index-text2").removeClass("text-color");
   });
 
+  $("#index-text1").trigger("mouseover");
 });
 </script>
 <style>

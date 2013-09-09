@@ -51,7 +51,7 @@ class MembershipController < ApplicationController
 		cipher.key = Acubens::Application.config.membership_secret_token
 
 		iv = Digest::SHA256.new
-		iv.update params[:username].to_s
+		iv.update params[:mobile].to_s
 		cipher.iv = iv.hexdigest
 
 		result = cipher.update params[:password].slice(0, 23)
@@ -61,17 +61,17 @@ class MembershipController < ApplicationController
 		resp = query_mokard(:regist, {
 			:merchant_no => Merchant,
 			:channel => Channel,
-			:user_name => params[:username].to_s,
+			:user_name => params[:mobile].to_s,
 			:pass_word => pswd,
 			:mobile => params[:mobile].to_s,
 			:verification_code => params[:verification].to_s,
 			:user_info => {
-				:email => params[:email].to_s
+				:email => params[:email].to_s,
 			}
 		})
 
 		if resp[:status] == "1"
-			session[:username] = params[:username]
+			session[:username] = params[:mobile]
 			session[:login] = true
 		end
 
@@ -84,7 +84,7 @@ class MembershipController < ApplicationController
 		session[:login] = nil
 
 		if not simple_captcha_valid?
-			respond_with { :status => "2" }, :location => nil
+			respond_with ret = { :status => "2" }, :location => nil and return
 		end
 
 		resp = query_mokard(:get_user_info, {
@@ -107,14 +107,85 @@ class MembershipController < ApplicationController
 		clearpswd = cipher.update pswd
 		clearpswd << cipher.final
 
-		if clearpswd == params[:password]
+		hash = Digest::SHA256.new
+		hash.update clearpswd
+		hash.update params[:captcha].to_s
+
+		if hash.hexdigest == params[:password]
 			session[:username] = params[:username]
 			session[:login] = true
-			respond_with { :status => "1" }, :location => nil
+			respond_with ret = { :status => "1" }, :location => nil
 		else
-			respond_with { :status => "0" }, :location => nil
+			respond_with ret = { :status => "0", :hash => hash.hexdigest, :pswd => params[:password], :clear => clearpswd, :resp => resp }, :location => nil
+		end
+	end
+
+
+	def changepsw
+		if not session[:login] or not session[:username]
+			respond_with ret = { :status => "0" }, :location => nil and return
 		end
 
+		cipher = OpenSSL::Cipher::Cipher.new 'DES3'
+		cipher.encrypt
+		cipher.key = Acubens::Application.config.membership_secret_token
+
+		iv = Digest::SHA256.new
+		iv.update session[:username].to_s
+		cipher.iv = iv.hexdigest
+
+		result = cipher.update params[:password].slice(0, 23)
+		result << cipher.final
+		pswd = Base64.strict_encode64 result
+
+		resp = query_mokard(:update_user_pwd, {
+			:merchant_no => Merchant,
+			:channel => Channel,
+			:user_name => session[:username].to_s,
+			:new_password => pswd,
+			:code => params[:verification].to_s,
+		})
+
+		respond_with resp, :location => nil
+	end
+
+
+	def fillinfo
+		if not session[:login] or not session[:username]
+			respond_with ret = { :status => "0" } and return
+		end
+
+		resp = query_mokard(:update_user_info, {
+			:merchant_no => Merchant,
+			:channel => Channel,
+			:user_name => session[:username].to_s,
+			:user_info => {
+				:nick_name => params[:fullname].to_s,
+				:gender_id => params[:gender].to_s,
+				:birthday_dt => params[:birthdate].to_s,
+				:column1 => params[:subscription].to_s,
+				:column2 => params[:phone].to_s,
+				:column3 => params[:weibo].to_s,
+				:column4 => params[:wechat].to_s
+			}
+		})
+
+		respond_with resp, :location => nil
+	end
+
+
+	def getinfo
+		if not session[:login] or not session[:username]
+			respond_with ret = { :status => "0" } and return
+		end
+
+		resp = query_mokard(:get_user_info, {
+			:merchant_no => Merchant,
+			:channel => Channel,
+			:user_name => session[:username].to_s
+		})
+
+		respond_with resp, :location => nil
 	end
 
 
