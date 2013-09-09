@@ -7,20 +7,20 @@
 	margin:100px auto;
 	background-color:#cbe6b4;
 }
-.tabs{
+.tabs-login{
 	float:left;
 	height:45px;
 	width:302px;
 	padding-top:0px;
 }
-.tabs ul{
+.tabs-login ul{
 	list-style:none;
 	padding-left:5px;
 }
-.tabs ul li{
+.tabs-login ul li{
 	display:inline;	
 }
-.tabs ul li a{	
+.tabs-login ul li a{	
 	color:#6eb92b;
 	font-size:14px;	
 	background-color:#f0ffe3;
@@ -30,7 +30,7 @@
 	padding-left:40px;	
 	padding-right:40px;	
 }
-.tabs ul li a.active{
+.tabs-login ul li a.active{
 	background-color:#FFF;	
 }
 .login_middle{

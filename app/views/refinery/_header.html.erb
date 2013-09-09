@@ -13,10 +13,19 @@
      <div class="header_top_right">
          <div class="login_info">
              <ul>
-                   <li class="login_info_txt1">X女士&nbsp;&nbsp;您好！</font></li>
+             		<li class="login_info_txt1">X女士&nbsp;&nbsp;您好！</li>
                    <li class="login_info_txt2"><img src="/assets/img/arrow_03.jpg" width="19" height="28" /></li>
-                   <li class="login_info_txt3">退出登录</font></li>
+                   <li class="login_info_txt3"><a href="">退出登录</a></li>
+  <!--          	<% if session[:login] %>   -->
+                   
+  <!--               <% else %>
+                   <li class="login_info_txt1">你好,请<label onclick=“”>登录</label></li>
+                   <li class="login_info_txt2"><img src="/assets/img/arrow_03.jpg" width="19" height="28" /></li>
+                   <li class="login_info_txt3">请<label onclick=“”>注册</label></li>
+                <% end %>   -->
              </ul>
+  <!--          <div id="popup_dialog" class="popup_dialog"></div>
+			 <div id="popup_shadow" class="popup_shadow"></div> -->
          </div>
      </div>
 </div>
@@ -36,4 +45,5 @@
           }) %>
      </div>
 </div>
+
 </html>
