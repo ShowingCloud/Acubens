@@ -7,6 +7,8 @@ Acubens::Application.routes.draw do
 		  post :register
 		  post :login
 		  post :changepsw
+		  post :fillinfo
+		  post :getinfo
 	  end
   end
 

@@ -118,7 +118,6 @@ class MembershipController < ApplicationController
 		else
 			respond_with ret = { :status => "0", :hash => hash.hexdigest, :pswd => params[:password], :clear => clearpswd, :resp => resp }, :location => nil
 		end
-
 	end
 
 
@@ -145,6 +144,45 @@ class MembershipController < ApplicationController
 			:user_name => session[:username].to_s,
 			:new_password => pswd,
 			:code => params[:verification].to_s,
+		})
+
+		respond_with resp, :location => nil
+	end
+
+
+	def fillinfo
+		if not session[:login] or not session[:username]
+			respond_with ret = { :status => "0" } and return
+		end
+
+		resp = query_mokard(:update_user_info, {
+			:merchant_no => Merchant,
+			:channel => Channel,
+			:user_name => session[:username].to_s,
+			:user_info => {
+				:nick_name => params[:fullname].to_s,
+				:gender_id => params[:gender].to_s,
+				:birthday_dt => params[:birthdate].to_s,
+				:column1 => params[:subscription].to_s,
+				:column2 => params[:phone].to_s,
+				:column3 => params[:weibo].to_s,
+				:column4 => params[:wechat].to_s
+			}
+		})
+
+		respond_with resp, :location => nil
+	end
+
+
+	def getinfo
+		if not session[:login] or not session[:username]
+			respond_with ret = { :status => "0" } and return
+		end
+
+		resp = query_mokard(:get_user_info, {
+			:merchant_no => Merchant,
+			:channel => Channel,
+			:user_name => session[:username].to_s
 		})
 
 		respond_with resp, :location => nil
