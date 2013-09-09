@@ -9,6 +9,9 @@ Acubens::Application.routes.draw do
 		  post :changepsw
 		  post :fillinfo
 		  post :getinfo
+		  post :getaddr
+		  post :addaddr
+		  post :getusers
 	  end
   end
 
