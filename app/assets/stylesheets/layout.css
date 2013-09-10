@@ -595,10 +595,11 @@ nav ul .last {
 .zone2{
 	background-color:#f0fee4;
 	height:31px;
-	width:220px;
+	width:193px;
 	list-style-type:none;
 	margin-left:-36px;
 	 margin-top:14px;
+	 padding-left:27px;
 }
 
 
