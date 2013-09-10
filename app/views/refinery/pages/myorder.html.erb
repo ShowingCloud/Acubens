@@ -195,7 +195,9 @@
                      </tr>
                </table>
                <table class="add_tab2"  border="0" cellspacing="0" cellpadding="0">
+               		<% session[:cart].each do |productid, amount| %>
                       <tr>
+                      		  <td><input type="hidden" id="addressid" value=<%= "#{productid}" %> /></td>	
                               <td   class="add_td1">X女士</td>
                               <td   class="add_td2">上海市浦东新区</td>
                               <td   class="add_td3">峨山路91弄浦东陆家嘴软件园120号4-5楼 </td>
@@ -211,6 +213,7 @@
                                      </div>
                               </td>
                      </tr>
+                    <% end %>
                </table>
            
           
@@ -219,4 +222,43 @@
 </div>
 </div>
 </body>
+<% content_for :javascripts do %>
+<script type="text/javascript">
+function getproductcart() {
+	$('.add_tab2 tr').each (function() {
+		var productid = $(this).find ('addressid').val();
+
+		$.ajax ({
+			url: "/products/" + productid + ".json",
+			type: "GET",
+			dataType: "json",
+			context: this
+		}).done (function (resp) {
+			if (resp != null) {
+				if (resp.product_name)
+					$(this).find ('#product_name').html (resp.product_name);
+
+				if (resp.product_pic)
+					$(this).find ('#pic').prop ('src', resp.product_pic);
+
+				if (resp.price)
+					$(this).find ('#price').html (parseFloat (resp.price).toFixed (2));
+
+				productCount();
+
+			} else {
+				if (resp.description != null)
+					alert (resp.description);
+				else
+					alert("请求失败，请再检查一遍您的输入并稍候再试");
+			}
+		}).fail (function() {
+			alert("请求发送失败，请稍候再试");
+		});
+	});
+}
+
+
+</script>
+<% end %>
 </html>

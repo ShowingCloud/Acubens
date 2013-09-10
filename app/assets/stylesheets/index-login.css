@@ -4,14 +4,13 @@
 .tabbed_area-login{
 	width:345px;
 	height:335px;
-	margin:100px auto;
 	background-color:#cbe6b4;
 }
 .tabs-login{
 	float:left;
 	height:45px;
 	width:302px;
-	padding-top:0px;
+	padding-top:6px;
 }
 .tabs-login ul{
 	list-style:none;
