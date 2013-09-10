@@ -1482,7 +1482,7 @@ refinery_page_parts:
       title="Kv1" alt="Kv1" width="970px" /></p>
     - 0
     - 2013-09-05 17:56:34.000000000 Z
-    - 2013-09-05 19:45:00.000000000 Z
+    - 2013-09-10 16:28:14.000000000 Z
   - - 169
     - 1
     - advt1
@@ -1490,22 +1490,23 @@ refinery_page_parts:
       title="Advt1" alt="Advt1" rel="225x255" width="250" height="104" /></p>
     - 1
     - 2013-09-05 17:56:34.000000000 Z
-    - 2013-09-05 19:45:00.000000000 Z
+    - 2013-09-10 16:28:14.000000000 Z
   - - 170
     - 1
     - advt2
-    - <p><img src="/system/images/W1siZiIsIjIwMTMvMDkvMDYvMDFfNDlfNTVfMjA0X2FkdnQyLnBuZyJdLFsicCIsInRodW1iIiwiMjI1eDI1NT4iXV0/advt2.png"
-      title="Advt2" alt="Advt2" rel="225x255" width="250" height="104" /></p>
+    - "<p><a href=\"/home/%E8%B0%83%E6%9F%A5%E9%97%AE%E5%8D%B7\"><img src=\"/system/images/W1siZiIsIjIwMTMvMDkvMDYvMDFfNDlfNTVfMjA0X2FkdnQyLnBuZyJdLFsicCIsInRodW1iIiwiMjI1eDI1NT4iXV0/advt2.png\"
+      alt=\"Advt2\" rel=\"225x255\" width=\"250\" height=\"104\" /></a>\r\n</p>"
     - 2
     - 2013-09-05 17:56:34.000000000 Z
-    - 2013-09-05 19:45:00.000000000 Z
+    - 2013-09-10 16:28:14.000000000 Z
   - - 171
     - 1
     - video
-    - ''
+    - <p><img src="/system/images/W1siZiIsIjIwMTMvMDkvMTEvMDBfMjdfMTNfMTczX3ZpZGVvLnBuZyJdXQ/video.png"
+      alt="Video" rel="225x255" width="400" height="226" /></p>
     - 3
     - 2013-09-05 17:56:34.000000000 Z
-    - 2013-09-05 19:45:00.000000000 Z
+    - 2013-09-10 16:28:14.000000000 Z
   - - 172
     - 67
     - Body
@@ -1540,11 +1541,11 @@ refinery_page_parts:
     - ''
     - 0
     - 2013-09-10 07:16:05.000000000 Z
-    - 2013-09-10 07:16:19.000000000 Z
+    - 2013-09-10 16:13:12.000000000 Z
   - - 177
     - 69
     - Side Body
     - ''
     - 1
     - 2013-09-10 07:16:05.000000000 Z
-    - 2013-09-10 07:16:19.000000000 Z
+    - 2013-09-10 16:13:12.000000000 Z

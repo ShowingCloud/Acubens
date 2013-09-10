@@ -7,6 +7,15 @@ body{
 	padding:0px 0px 0px 0px;
 	margin:0 auto;
 }
+
+a{
+	text-decoration: none;
+}
+
+a:hover{
+	text-decoration:none;
+}
+
 #page_container{
 	width:970px;
 	min-height:920px;

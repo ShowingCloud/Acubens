@@ -1368,16 +1368,17 @@ refinery_page_part_translations:
   - - 170
     - 170
     - zh-CN
-    - <p><img src="/system/images/W1siZiIsIjIwMTMvMDkvMDYvMDFfNDlfNTVfMjA0X2FkdnQyLnBuZyJdLFsicCIsInRodW1iIiwiMjI1eDI1NT4iXV0/advt2.png"
-      title="Advt2" alt="Advt2" rel="225x255" width="250" height="104" /></p>
+    - "<p><a href=\"/home/%E8%B0%83%E6%9F%A5%E9%97%AE%E5%8D%B7\"><img src=\"/system/images/W1siZiIsIjIwMTMvMDkvMDYvMDFfNDlfNTVfMjA0X2FkdnQyLnBuZyJdLFsicCIsInRodW1iIiwiMjI1eDI1NT4iXV0/advt2.png\"
+      alt=\"Advt2\" rel=\"225x255\" width=\"250\" height=\"104\" /></a>\r\n</p>"
     - 2013-09-05 17:56:34.000000000 Z
-    - 2013-09-05 17:57:18.000000000 Z
+    - 2013-09-10 16:09:27.000000000 Z
   - - 171
     - 171
     - zh-CN
-    - ''
+    - <p><img src="/system/images/W1siZiIsIjIwMTMvMDkvMTEvMDBfMjdfMTNfMTczX3ZpZGVvLnBuZyJdXQ/video.png"
+      alt="Video" rel="225x255" width="400" height="226" /></p>
     - 2013-09-05 17:56:34.000000000 Z
-    - 2013-09-05 17:56:34.000000000 Z
+    - 2013-09-10 16:28:14.000000000 Z
   - - 172
     - 172
     - zh-CN
