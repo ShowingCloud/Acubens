@@ -6,12 +6,16 @@ Acubens::Application.routes.draw do
 		  post :verifymobile
 		  post :register
 		  post :login
+		  post :logout
+		  get :logout
 		  post :changepsw
 		  post :fillinfo
 		  post :getinfo
+		  get :getinfo
 		  post :getaddr
 		  post :addaddr
 		  post :getusers
+		  get :getusers
 	  end
   end
 

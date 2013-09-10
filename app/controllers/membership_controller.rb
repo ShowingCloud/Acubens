@@ -123,6 +123,14 @@ class MembershipController < ApplicationController
 	end
 
 
+	def logout
+		session[:username] = nil
+		session[:login] = nil
+
+		redirect_to '/'
+	end
+
+
 	def changepsw
 		if not session[:login] or not session[:username]
 			respond_with ret = { :status => "0" }, :location => nil and return
@@ -220,7 +228,7 @@ class MembershipController < ApplicationController
 				:id => params[:id].to_s,
 				:buyer_name => params[:name].to_s,
 				:buyer_contact1 => params[:mobile].to_s,
-				:buyer_contact2 => params[:phone].to_s
+				:buyer_contact2 => params[:phone].to_s,
 				:full_address => params[:address].to_s,
 				:zip_code => params[:zipcode].to_s,
 				:province => params[:province].to_s,
