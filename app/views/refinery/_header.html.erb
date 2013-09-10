@@ -1,6 +1,64 @@
  <meta charset='utf-8' />
 <!DOCTYPE html>
-<link href="/assets/layout.css" rel="stylesheet" type="text/css" media="screen" />
+<% content_for :javascripts do %>
+<script type="text/javascript">
+function openpopup (login_reg_psw, canhide) {
+	location.href = "#";
+
+	var popup = $('#popup_dialog');
+	var newdiv = $('#popup_shadow');
+
+	newdiv.css ("display", "block");
+	$('body').css ("overflow", "hidden");
+
+	if (canhide)
+		newdiv.click (function() {
+			popup.css ("display", "none");
+			newdiv.css ("display", "none");
+			$('body').css ("overflow", "auto");
+		});
+
+	var request_url = {
+		0:	"/assets/index-login.inc.html",
+	//	1:	"/assets/register.inc.html",
+	//	2:	"/assets/changepsw.inc.html"
+	}
+
+	$.ajax ({
+		url:		request_url[login_reg_psw],
+		type:		"GET",
+		dateType:	"html"
+	}).done (function (resp) {
+		popup.html (resp);
+		popup.css ("display", "block");
+
+		if (canhide) {
+			$('#popup_close').click (function() {
+				popup.css ("display", "none");
+				newdiv.css ("display", "none");
+				$('body').css ("overflow", "auto");
+			});
+			$('body').keydown (function() {
+				if (event.keyCode == 27) {
+					popup.css ("display", "none");
+					newdiv.css ("display", "none");
+					$('body').css ("overflow", "auto");
+					$('body').unbind ('keydown');
+				}
+			});
+		} else
+			$('#popup_close').click (function() {
+				location.href = "/";
+			});
+
+		
+
+		
+	});
+}
+
+</script>
+<% end %>
 
 <div class="header_top">
      <div class="header_top_left">
@@ -13,19 +71,19 @@
      <div class="header_top_right">
          <div class="login_info">
              <ul>
-             		<li class="login_info_txt1">X女士&nbsp;&nbsp;您好！</li>
+    <!--          		
+           	<% if session[:login] %>   
+                   <li class="login_info_txt1">X女士&nbsp;&nbsp;您好！</li>
                    <li class="login_info_txt2"><img src="/assets/img/arrow_03.jpg" width="19" height="28" /></li>
                    <li class="login_info_txt3"><a href="">退出登录</a></li>
-  <!--          	<% if session[:login] %>   -->
-                   
-  <!--               <% else %>
-                   <li class="login_info_txt1">你好,请<label onclick=“”>登录</label></li>
+  <!--         <% end %>       <% else %>-->
+                   <li class="login_info_txt1">你好,请<a onclick="openpopup(0, true)">登录</a></li>
                    <li class="login_info_txt2"><img src="/assets/img/arrow_03.jpg" width="19" height="28" /></li>
-                   <li class="login_info_txt3">请<label onclick=“”>注册</label></li>
-                <% end %>   -->
+                   <li class="login_info_txt3">请<a onclick="login()">注册</a></li>
+                  
              </ul>
-  <!--          <div id="popup_dialog" class="popup_dialog"></div>
-			 <div id="popup_shadow" class="popup_shadow"></div> -->
+        <div id="popup_dialog" class="popup_dialog"></div>
+	    		 <div id="popup_shadow" class="popup_shadow"></div> 
          </div>
      </div>
 </div>

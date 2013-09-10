@@ -61,7 +61,7 @@
 	font-size:12px;
 	color:#666666;
 	line-height:20px;
-	width:470px;
+	width:440px;
 }
 .rightclass_middle_right05{
 	width:480px;
@@ -78,7 +78,7 @@
 /*classroom*/
 .classcontent_top{
 	width:720px;
-	height:797px;
+	min-height:810px;
 	background-color:#f6ffef;
 }
 .classcontent_top01{
