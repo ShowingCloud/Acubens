@@ -7,6 +7,8 @@ class SkinSurveysController < ApplicationController
     respond_to do |format|
       format.html # index.html.erb
       format.json { render json: @skin_surveys }
+	  format.csv { send_data SkinSurvey.to_csv }
+	  format.xls
     end
   end
 

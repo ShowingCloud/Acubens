@@ -2,7 +2,6 @@ Acubens::Application.routes.draw do
 
   resources :skin_surveys
 
-
   resources :membership do
 	  collection do
 		  get :index

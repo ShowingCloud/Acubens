@@ -55,3 +55,9 @@
 <br />
 
 <%= link_to 'New Skin survey', new_skin_survey_path %>
+
+<p>
+  Download:
+  <%= link_to 'CSV', skin_surveys_path(format: "csv") %> |
+  <%= link_to 'Excel', skin_surveys_path(format: "xls") %>
+</p>

@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet"
+  xmlns:o="urn:schemas-microsoft-com:office:office"
+  xmlns:x="urn:schemas-microsoft-com:office:excel"
+  xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet"
+  xmlns:html="http://www.w3.org/TR/REC-html40">
+  <Worksheet ss:Name="Sheet1">
+    <Table>
+      <Row>
+        <Cell><Data ss:Type="String">user</Data></Cell>
+        <Cell><Data ss:Type="String">style</Data></Cell>
+        <Cell><Data ss:Type="String">care</Data></Cell>
+        <Cell><Data ss:Type="String">problems</Data></Cell>
+        <Cell><Data ss:Type="String">time</Data></Cell>
+        <Cell><Data ss:Type="String">procedures</Data></Cell>
+        <Cell><Data ss:Type="String">effects</Data></Cell>
+        <Cell><Data ss:Type="String">shortcomings</Data></Cell>
+        <Cell><Data ss:Type="String">cost</Data></Cell>
+        <Cell><Data ss:Type="String">markets</Data></Cell>
+        <Cell><Data ss:Type="String">factors</Data></Cell>
+        <Cell><Data ss:Type="String">brands</Data></Cell>
+        <Cell><Data ss:Type="String">importance</Data></Cell>
+        <Cell><Data ss:Type="String">source</Data></Cell>
+        <Cell><Data ss:Type="String">ways</Data></Cell>
+        <Cell><Data ss:Type="String">infos</Data></Cell>
+        <Cell><Data ss:Type="String">offline</Data></Cell>
+        <Cell><Data ss:Type="String">age</Data></Cell>
+      </Row>
+    <% @skin_surveys.each do |skin_survey| %>
+      <Row>
+        <Cell><Data ss:Type="String"><%= skin_survey.user %></Data></Cell>
+        <Cell><Data ss:Type="String"><%= skin_survey.style %></Data></Cell>
+        <Cell><Data ss:Type="String"><%= skin_survey.care %></Data></Cell>
+        <Cell><Data ss:Type="String"><%= skin_survey.problems %></Data></Cell>
+        <Cell><Data ss:Type="String"><%= skin_survey.time %></Data></Cell>
+        <Cell><Data ss:Type="String"><%= skin_survey.procedures %></Data></Cell>
+        <Cell><Data ss:Type="String"><%= skin_survey.effects %></Data></Cell>
+        <Cell><Data ss:Type="String"><%= skin_survey.shortcomings %></Data></Cell>
+        <Cell><Data ss:Type="String"><%= skin_survey.cost %></Data></Cell>
+        <Cell><Data ss:Type="String"><%= skin_survey.markets %></Data></Cell>
+        <Cell><Data ss:Type="String"><%= skin_survey.factors %></Data></Cell>
+        <Cell><Data ss:Type="String"><%= skin_survey.brands %></Data></Cell>
+        <Cell><Data ss:Type="String"><%= skin_survey.importance %></Data></Cell>
+        <Cell><Data ss:Type="String"><%= skin_survey.source %></Data></Cell>
+        <Cell><Data ss:Type="String"><%= skin_survey.ways %></Data></Cell>
+        <Cell><Data ss:Type="String"><%= skin_survey.infos %></Data></Cell>
+        <Cell><Data ss:Type="String"><%= skin_survey.offline %></Data></Cell>
+        <Cell><Data ss:Type="String"><%= skin_survey.age %></Data></Cell>
+      </Row>
+    <% end %>
+    </Table>
+  </Worksheet>
+</Workbook>
