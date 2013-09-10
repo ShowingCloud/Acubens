@@ -198,12 +198,12 @@
                		<% session[:cart].each do |productid, amount| %>
                       <tr>
                       		  <td><input type="hidden" id="addressid" value=<%= "#{productid}" %> /></td>	
-                              <td   class="add_td1">X女士</td>
-                              <td   class="add_td2">上海市浦东新区</td>
-                              <td   class="add_td3">峨山路91弄浦东陆家嘴软件园120号4-5楼 </td>
-                              <td   class="add_td2">13700000000</td>
-                              <td   class="add_td2">200000</td>
-                              <td   class="add_td2"></td>
+                              <td   class="add_td1"><label id="name">X女士</label></td>
+                              <td   class="add_td2"><label id="province">上海市浦东新区</label></td>
+                              <td   class="add_td3"><label id="address">峨山路91弄浦东陆家嘴软件园120号4-5楼 </label></td>
+                              <td   class="add_td2"><label id="tel">13700000000</label></td>
+                              <td   class="add_td2"><label id="zipcode">200000</label></td>
+                              <td   class="add_td2"><label id="fixtel"></label></td>
                               <td   class="add_td1">
                                      <div class="add_mod">
                                            <input id="modify"   type="button" value="修改"  >
@@ -236,13 +236,22 @@ function getproductcart() {
 		}).done (function (resp) {
 			if (resp != null) {
 				if (resp.product_name)
-					$(this).find ('#product_name').html (resp.product_name);
+					$(this).find ('#name').html (resp.product_name);
 
 				if (resp.product_pic)
-					$(this).find ('#pic').prop ('src', resp.product_pic);
+					$(this).find ('#province').prop (resp.product_pic);
 
 				if (resp.price)
-					$(this).find ('#price').html (parseFloat (resp.price).toFixed (2));
+					$(this).find ('#address').html (resp.product_name);
+				
+				if (resp.price)
+					$(this).find ('#tel').html (resp.product_name);
+				
+				if (resp.price)
+					$(this).find ('#zipcode').html (resp.product_name);
+					
+				if (resp.price)
+					$(this).find ('#fixtel').html (resp.product_name);
 
 				productCount();
 
