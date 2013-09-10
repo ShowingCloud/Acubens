@@ -118,6 +118,7 @@ db/datadump/refinery_user_plugins.yml
 db/datadump/seo_meta.yml
 db/datadump/sessions.yml
 db/datadump/simple_captcha_data.yml
+db/datadump/skin_surveys.yml
 
 # rvm files
 .ruby-gemset
