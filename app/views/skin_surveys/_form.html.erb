@@ -1,0 +1,89 @@
+<%= form_for(@skin_survey) do |f| %>
+  <% if @skin_survey.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@skin_survey.errors.count, "error") %> prohibited this skin_survey from being saved:</h2>
+
+      <ul>
+      <% @skin_survey.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :user %><br />
+    <%= f.text_field :user %>
+  </div>
+  <div class="field">
+    <%= f.label :style %><br />
+    <%= f.text_field :style %>
+  </div>
+  <div class="field">
+    <%= f.label :care %><br />
+    <%= f.text_field :care %>
+  </div>
+  <div class="field">
+    <%= f.label :problems %><br />
+    <%= f.text_field :problems %>
+  </div>
+  <div class="field">
+    <%= f.label :time %><br />
+    <%= f.text_field :time %>
+  </div>
+  <div class="field">
+    <%= f.label :procedures %><br />
+    <%= f.text_field :procedures %>
+  </div>
+  <div class="field">
+    <%= f.label :effects %><br />
+    <%= f.text_field :effects %>
+  </div>
+  <div class="field">
+    <%= f.label :shortcomings %><br />
+    <%= f.text_field :shortcomings %>
+  </div>
+  <div class="field">
+    <%= f.label :cost %><br />
+    <%= f.text_field :cost %>
+  </div>
+  <div class="field">
+    <%= f.label :markets %><br />
+    <%= f.text_field :markets %>
+  </div>
+  <div class="field">
+    <%= f.label :factors %><br />
+    <%= f.text_field :factors %>
+  </div>
+  <div class="field">
+    <%= f.label :brands %><br />
+    <%= f.text_field :brands %>
+  </div>
+  <div class="field">
+    <%= f.label :importance %><br />
+    <%= f.text_field :importance %>
+  </div>
+  <div class="field">
+    <%= f.label :source %><br />
+    <%= f.text_field :source %>
+  </div>
+  <div class="field">
+    <%= f.label :ways %><br />
+    <%= f.text_field :ways %>
+  </div>
+  <div class="field">
+    <%= f.label :infos %><br />
+    <%= f.text_field :infos %>
+  </div>
+  <div class="field">
+    <%= f.label :offline %><br />
+    <%= f.text_field :offline %>
+  </div>
+  <div class="field">
+    <%= f.label :age %><br />
+    <%= f.text_field :age %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

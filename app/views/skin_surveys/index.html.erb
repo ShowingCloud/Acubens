@@ -1,0 +1,57 @@
+<h1>Listing skin_surveys</h1>
+
+<table>
+  <tr>
+    <th>User</th>
+    <th>Style</th>
+    <th>Care</th>
+    <th>Problems</th>
+    <th>Time</th>
+    <th>Procedures</th>
+    <th>Effects</th>
+    <th>Shortcomings</th>
+    <th>Cost</th>
+    <th>Markets</th>
+    <th>Factors</th>
+    <th>Brands</th>
+    <th>Importance</th>
+    <th>Source</th>
+    <th>Ways</th>
+    <th>Infos</th>
+    <th>Offline</th>
+    <th>Age</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @skin_surveys.each do |skin_survey| %>
+  <tr>
+    <td><%= skin_survey.user %></td>
+    <td><%= skin_survey.style %></td>
+    <td><%= skin_survey.care %></td>
+    <td><%= skin_survey.problems %></td>
+    <td><%= skin_survey.time %></td>
+    <td><%= skin_survey.procedures %></td>
+    <td><%= skin_survey.effects %></td>
+    <td><%= skin_survey.shortcomings %></td>
+    <td><%= skin_survey.cost %></td>
+    <td><%= skin_survey.markets %></td>
+    <td><%= skin_survey.factors %></td>
+    <td><%= skin_survey.brands %></td>
+    <td><%= skin_survey.importance %></td>
+    <td><%= skin_survey.source %></td>
+    <td><%= skin_survey.ways %></td>
+    <td><%= skin_survey.infos %></td>
+    <td><%= skin_survey.offline %></td>
+    <td><%= skin_survey.age %></td>
+    <td><%= link_to 'Show', skin_survey %></td>
+    <td><%= link_to 'Edit', edit_skin_survey_path(skin_survey) %></td>
+    <td><%= link_to 'Destroy', skin_survey, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Skin survey', new_skin_survey_path %>

@@ -1,0 +1,41 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  user: MyString
+  style: MyString
+  care: MyString
+  problems: MyString
+  time: MyString
+  procedures: MyString
+  effects: MyString
+  shortcomings: MyString
+  cost: MyString
+  markets: MyString
+  factors: MyString
+  brands: MyString
+  importance: MyString
+  source: MyString
+  ways: MyString
+  infos: MyString
+  offline: MyString
+  age: MyString
+
+two:
+  user: MyString
+  style: MyString
+  care: MyString
+  problems: MyString
+  time: MyString
+  procedures: MyString
+  effects: MyString
+  shortcomings: MyString
+  cost: MyString
+  markets: MyString
+  factors: MyString
+  brands: MyString
+  importance: MyString
+  source: MyString
+  ways: MyString
+  infos: MyString
+  offline: MyString
+  age: MyString
