@@ -241,6 +241,48 @@ class MembershipController < ApplicationController
 	end
 
 
+	def updateaddr
+		if not session[:login] or not session[:username]
+			respond_with ret = { :status => "0" }, :location => nil and return
+		end
+
+		resp = query_mokard(:update_user_address, {
+			:merchant_no => Merchant,
+			:channel => Channel,
+			:user_name => session[:username].to_s,
+			:my_user_address => {
+				:id => params[:id].to_s,
+				:buyer_name => params[:name].to_s,
+				:buyer_contact1 => params[:mobile].to_s,
+				:buyer_contact2 => params[:phone].to_s,
+				:full_address => params[:address].to_s,
+				:zip_code => params[:zipcode].to_s,
+				:province => params[:province].to_s,
+				:city => params[:city].to_s,
+				:district => params[:district].to_s
+			}
+		})
+
+		respond_with resp, :location => nil
+	end
+
+
+	def deladdr
+		if not session[:login] or not session[:username]
+			respond_with ret = { :status => "0" }, :location => nil and return
+		end
+
+		resp = query_mokard(:delete_user_address, {
+			:merchant_no => Merchant,
+			:channel => Channel,
+			:user_name => session[:username].to_s,
+			:address_id => params[:id].to_s
+		})
+
+		respond_with resp, :location => nil
+	end
+
+
 	def getusers
 		if not refinery_user?
 			respond_with ret = { :status => "0" }, :location => nil and return

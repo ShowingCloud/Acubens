@@ -14,6 +14,8 @@ Acubens::Application.routes.draw do
 		  get :getinfo
 		  post :getaddr
 		  post :addaddr
+		  post :updateaddr
+		  post :deladdr
 		  post :getusers
 		  get :getusers
 	  end
