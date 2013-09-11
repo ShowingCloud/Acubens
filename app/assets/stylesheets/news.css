@@ -49,11 +49,18 @@
 	text-decoration: none;
 }
 
-#recent_news_items ul{
+#news-text1 #recent_news_items ul{
 	list-style-image: url("/assets/img/info.png");
 	padding-left:50px;
 	margin-top:0px;
 }
+
+#news-text2 #recent_news_items ul{
+	list-style-image: url("/assets/img/notice.png");
+	padding-left:50px;
+	margin-top:0px;
+}
+
 
 #recent_news_items ul li{
 	margin-top:5px;
