@@ -22,3 +22,9 @@
  width:20px;
  height:20px;
  }
+ 
+::-webkit-input-placeholder { color:#efefef; }
+::-moz-placeholder { color:#efefef; } /* firefox 19+ */
+:-ms-input-placeholder { color:#efefef; } /* ie */
+input:-moz-placeholder { color:#efefef; }
+

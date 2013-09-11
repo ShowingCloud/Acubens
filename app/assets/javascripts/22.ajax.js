@@ -35,10 +35,12 @@ function sendregister() {
 	 } else if ($('#password2').val().length < 6) {
 		alert ("密码太短了，为了安全起见请选择长一些的密码");
 		return;
-	 } else if ($('#telidentification').val().length != 4) {
-		alert ("请输入您收到的验证码");
+	 } else if ($('#telidentification').val() != $('#password2').val()) {
+		alert ("两次输入的密码不同");
 		return;
 	}
+
+
 
 	$.ajax ({
 		url:		"/membership/register.json",
@@ -69,7 +71,7 @@ function sendlogin() {
 		alert ("请输入您的用户名");
 		return;
 	}else if ($('#password').val().length < 6) {
-		alert ("密码太短了，为了安全起见请选择长一些的密码");
+		alert ("密码太短了");
 		return;
 	}else if ($('#captcha').val().length < 6) {
 		alert ("请输入验证码");
