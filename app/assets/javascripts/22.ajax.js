@@ -1,4 +1,8 @@
 function sendmobile() {
+	if ($('#mobile').val().length != 11) {
+		alert ("请输入您的手机号码");
+		return;
+	}
 	$.ajax ({
 		url:		"/membership/verifymobile.json",
 		type:		"POST",
@@ -9,19 +13,32 @@ function sendmobile() {
 			if (resp.return_value != null)
 				$('#telidentification').val (resp.return_value);
 			else
-				alert ("Verification code sent");
+				alert ("验证码已发到您的手机，请注意查收");
 		} else {
 			if (resp.description != null)
 				alert (resp.description);
 			else
-				alert ("Unknown error");
+				alert ("请求失败，请再检查一遍您的输入并稍候再试");
 		}
 	}).fail (function() {
-		alert ("Error sending");
+		alert ("请求发送失败，请稍候再试");
 	});
 }
 
 function sendregister() {
+	 if ($('#email').val().length < 10) {
+		alert ("请输入您的邮箱");
+		return;
+	 }else if ($('#mobile').val().length != 11) {
+		alert ("请输入您的手机号码");
+		return;
+	 } else if ($('#password2').val().length < 6) {
+		alert ("密码太短了，为了安全起见请选择长一些的密码");
+		return;
+	 } else if ($('#telidentification').val().length != 4) {
+		alert ("请输入您收到的验证码");
+		return;
+	}
 	alert ($('#mobile').val());
 	alert ($('#password2').val());
 	$.ajax ({
@@ -41,14 +58,24 @@ function sendregister() {
 			if (resp.description != null)
 				alert (resp.description);
 			else
-				alert ("Unknown error");
+				alert ("请求失败，请再检查一遍您的输入并稍候再试");
 		}
 	}).fail (function() {
-		alert ("Error sending");
+		alert ("请求发送失败，请稍候再试");
 	});
 }
 
 function sendlogin() {
+	if ($('#name').val().length == 0) {
+		alert ("请输入您的用户名");
+		return;
+	}else if ($('#password').val().length < 6) {
+		alert ("密码太短了，为了安全起见请选择长一些的密码");
+		return;
+	}else if ($('#captcha').val().length < 6) {
+		alert ("请输入验证码");
+		return;
+	} 
 	$.ajax ({
 		url:		"/membership/login.json",
 		type:		"POST",
@@ -68,9 +95,9 @@ function sendlogin() {
 			if (resp.description != null)
 				alert (resp.description);
 			else
-				alert ("Unknown error");
+				alert ("请求失败，请再检查一遍您的输入并稍候再试");
 		}
 	}).fail (function() {
-		alert ("Error sending");
+		alert ("请求发送失败，请稍候再试");
 	});
 }
