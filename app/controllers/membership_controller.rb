@@ -11,7 +11,7 @@ class MembershipController < ApplicationController
 	before_filter :checklogin, :except => [:verifymobile, :register, :login, :logout, :getusers, :getdict]
 
 	Client = Savon.client do
-		wsdl "http://www.mokard.com/WSV26Test/PointRequest.asmx?WSDL"
+		wsdl "http://www.mokard.com/WSV26/PointRequest.asmx?WSDL"
 		namespace "http://tempuri.org/"
 		convert_request_keys_to :camelcase
 		soap_version 2
@@ -36,9 +36,9 @@ class MembershipController < ApplicationController
 			:mobile => params[:mobile].to_s
 		})
 
-#		if not refinery_user?
-#			resp.delete :return_value
-#		end
+		if not refinery_user?
+			resp.delete :return_value
+		end
 
 		respond_with resp, :location => nil
 	end

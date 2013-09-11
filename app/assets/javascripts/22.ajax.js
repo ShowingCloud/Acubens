@@ -35,7 +35,7 @@ function sendregister() {
 	 } else if ($('#password2').val().length < 6) {
 		alert ("密码太短了，为了安全起见请选择长一些的密码");
 		return;
-	 } else if ($('#telidentification').val() != $('#password2').val()) {
+	 } else if ($('#identification').val() != $('#password2').val()) {
 		alert ("两次输入的密码不同");
 		return;
 	}

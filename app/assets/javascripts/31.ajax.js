@@ -1,4 +1,4 @@
-function sendfistinfo(){
+function sendfirstinfo(){
 	if ($('#email').val().length < 10){
 		alert ("请输入您的邮箱");
 		return;
