@@ -1,48 +1,43 @@
-	<%= render :partial => "/refinery/news/items/notice.html.erb" %> 
+<%= render :partial => "/refinery/news/items/notice" if category == 0 %> 
+<%= render :partial => "/refinery/news/items/info" if category == 1 %>
 
-	<%= render :partial => "/refinery/news/items/info.html.erb" %> 
-	
-	
-	
-           <% content_for :body_content_left do %>
- 				 <%=raw @page.content_for(Refinery::Pages.default_parts.first.to_sym) unless params[:page] %>
+<% content_for :body_content_left do %>
+	<%=raw @page.content_for(Refinery::Pages.default_parts.first.to_sym) unless params[:page] %>
 
- 					 <% if @items.any? %>
-  							  <% @items.each do |item| %>
-    								 <article class="news_item_truncated">
-    	    
-      									  <table>
-        										<tr>
-        											<td width="110">
-       												   <%= l(item.publish_date, :format => "%Y / %m / %d") %>
-       												 </td>
-      											    <td width="500"><%= link_to item.title, refinery.news_item_path(item) %></td>
-     											    <td><%= truncate  item.body, :length => 0,
-                 															     :omission => "  #{link_to t('.read_more'), refinery.news_item_path(item)}",
-               											    				     :preserve_html_tags => true %>
-           										   </td>
-            									 </tr>
-     								     </table>
-    								  </article>
-   								<% end %>
+	<% if @items.any? %>
+		<% @items.each do |item| %>
+			<article class="news_item_truncated">
+				<table>
+					<tr>
+						<td width="110">
+							<%= l(item.publish_date, :format => "%Y / %m / %d") %>
+						</td>
+						<td width="500"><%= link_to item.title, refinery.news_item_path(item) %></td>
+						<td><%= truncate  item.body, :length => 0,
+							:omission => "  #{link_to t('.read_more'), refinery.news_item_path(item)}",
+							:preserve_html_tags => true %>
+						</td>
+					</tr>
+				</table>
+			</article>
+		<% end %>
 
-  							   <%= will_paginate @items %>
-  					<% else %>
-  								  <p><em><%= t('.no_items_yet') %></em></p>
-  			<% end %>
-			<% end -%>
+		<%= will_paginate @items %>
+	<% else %>
+		<p><em><%= t('.no_items_yet') %></em></p>
+	<% end %>
+<% end -%>
 
 <% content_for :body_content_right_prepend do -%>
-  <%= raw @page.content_for(::Refinery::Pages.default_parts.second.to_sym) %>
+	<%= raw @page.content_for(::Refinery::Pages.default_parts.second.to_sym) %>
 <% end if ::Refinery::Pages.default_parts.many? -%>
-<%= render :partial => '/refinery/news/shared/body_content_right' %>
 
+<%= render :partial => '/refinery/news/shared/body_content_right' %>
 <%= render :partial => "/refinery/content_page" %>
 
-           <div style="clear:both"></div>
-     </div>
+<div style="clear:both"></div>
+	 </div>
 </div>
-
 
 <% content_for :stylesheets do %>
 <style>
