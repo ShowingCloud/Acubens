@@ -1,11 +1,11 @@
-<%= render :partial => "/refinery/news/items/notice" if category == 0 %> 
-<%= render :partial => "/refinery/news/items/info" if category == 1 %>
+<%= render :partial => "/refinery/news/items/notice" if @category == 0 %> 
+<%= render :partial => "/refinery/news/items/info" if @category == 1 %>
 
 <% content_for :body_content_left do %>
 	<%=raw @page.content_for(Refinery::Pages.default_parts.first.to_sym) unless params[:page] %>
 
-	<% if @items.any? %>
-		<% @items.each do |item| %>
+	<% if @items.by_category(@category).any? %>
+		<% @items.by_category(@category).each do |item| %>
 			<article class="news_item_truncated">
 				<table>
 					<tr>
@@ -22,7 +22,7 @@
 			</article>
 		<% end %>
 
-		<%= will_paginate @items %>
+		<%= will_paginate @items.by_category(@category) %>
 	<% else %>
 		<p><em><%= t('.no_items_yet') %></em></p>
 	<% end %>

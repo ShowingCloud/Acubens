@@ -16,7 +16,7 @@
 		<% end %>
 		<%= @item.body.html_safe %>
 		<p class="news-back">
-			<%= link_to t('.back_to_index'), refinery.news_items_path(:category => 1) %>
+			<%= link_to t('.back_to_index'), refinery.news_items_path(:category => @item.category) %>
 		</p>
 	</article>
 <% end %>
