@@ -5,11 +5,9 @@ function sendfistinfo(){
 	}else if ($('#password').val().length < 6){
 		alert ("密码至少为6位，请重新输入");
 		return;
-	}else if ($('#password').val().length > 20){
-		alert("密码不能超过20位，请重新输入");
-		return;
 	}else if ($('#password').val() != $('#identification').val()){
 		alert("密码不匹配，请重新输入");
+		return;
 	}else if ($('#name').val().length < 2){
 		alert("请输入您的名字");
 		return;
@@ -79,6 +77,21 @@ function sendfistinfo(){
 		alert  ("请输入邮政编码");
 		return;
 	}
+	
+	var extensionnumber = 0;
+		if ($('#extensionnumber').val().length > 0)
+		extensionnumber = $('#extensionnumber').val()
+	
+	var weibo = 0;
+		if ($('#weibo').val().length > 0)
+		weibo = $('#weibo').val()
+	
+	var weixin = 0;
+		if ($('#weixin').val().length > 0)
+		weibo = $('#weixin').val()
+	
+	
+	
 	
 	$.ajax({
 		url:        "/memberships/firstlogin.json",
@@ -159,9 +172,9 @@ function getmeminfo() {
 				   id_day++;
 			}
 			
-			if (parseInt (ret.sex_id) == 0)
+			if (parseInt (ret.sex_id) == 69)
 				$('#gender').html ("男");
-			else if (parseInt (ret.sex_id) == 1)
+			else if (parseInt (ret.sex_id) == 70)
 				$('#gender').html ("女");
 			if (parseInt (ret.magazine_id) == 0)
 				$('#magazine').html ("订阅");
@@ -179,8 +192,8 @@ function getmeminfo() {
 			
 			$('#taobao').html (ret.taobao == null ? "" : ret.taobao);
 			$('#yihao').html (ret.yihao == null ? "" : ret.yihao);
-			$('#taobao').html (ret.weibo == null ? "" : ret.weibo);
-			$('#taobao').html (ret.weixin == null ? "" : ret.weixin);
+			$('#weibo').html (ret.weibo == null ? "" : ret.weibo);
+			$('#weixin').html (ret.weixin == null ? "" : ret.weixin);
 			
 							
 		} else {
