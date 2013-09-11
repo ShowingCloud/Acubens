@@ -18,8 +18,11 @@ Acubens::Application.routes.draw do
 		  post :addaddr
 		  post :updateaddr
 		  post :deladdr
+		  post :getpoint
 		  post :getusers
 		  get :getusers
+		  post :getdict
+		  get :getdict
 	  end
   end
 

@@ -39,8 +39,7 @@ function sendregister() {
 		alert ("请输入您收到的验证码");
 		return;
 	}
-	alert ($('#mobile').val());
-	alert ($('#password2').val());
+
 	$.ajax ({
 		url:		"/membership/register.json",
 		type:		"POST",

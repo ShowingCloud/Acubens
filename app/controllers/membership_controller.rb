@@ -8,6 +8,8 @@ class MembershipController < ApplicationController
 
 	respond_to :json, :xml
 
+	before_filter :checklogin, :except => [:verifymobile, :register, :login, :logout, :getusers, :getdict]
+
 	Client = Savon.client do
 		wsdl "http://www.mokard.com/WSV26Test/PointRequest.asmx?WSDL"
 		namespace "http://tempuri.org/"
@@ -132,10 +134,6 @@ class MembershipController < ApplicationController
 
 
 	def changepsw
-		if not session[:login] or not session[:username]
-			respond_with ret = { :status => "0" }, :location => nil and return
-		end
-
 		cipher = OpenSSL::Cipher::Cipher.new 'DES3'
 		cipher.encrypt
 		cipher.key = Acubens::Application.config.membership_secret_token
@@ -161,10 +159,6 @@ class MembershipController < ApplicationController
 
 
 	def fillinfo
-		if not session[:login] or not session[:username]
-			respond_with ret = { :status => "0" }, :location => nil and return
-		end
-
 		resp = query_mokard(:update_user_info, {
 			:merchant_no => Merchant,
 			:channel => Channel,
@@ -185,10 +179,6 @@ class MembershipController < ApplicationController
 
 
 	def getinfo
-		if not session[:login] or not session[:username]
-			respond_with ret = { :status => "0" }, :location => nil and return
-		end
-
 		resp = query_mokard(:get_user_info, {
 			:merchant_no => Merchant,
 			:channel => Channel,
@@ -200,10 +190,6 @@ class MembershipController < ApplicationController
 
 
 	def getaddr
-		if not session[:login] or not session[:username]
-			respond_with ret = { :status => "0" }, :location => nil and return
-		end
-
 		resp = query_mokard(:get_user_address, {
 			:merchant_no => Merchant,
 			:channel => Channel,
@@ -216,10 +202,6 @@ class MembershipController < ApplicationController
 
 
 	def addaddr
-		if not session[:login] or not session[:username]
-			respond_with ret = { :status => "0" }, :location => nil and return
-		end
-
 		resp = query_mokard(:insert_user_address, {
 			:merchant_no => Merchant,
 			:channel => Channel,
@@ -242,10 +224,6 @@ class MembershipController < ApplicationController
 
 
 	def updateaddr
-		if not session[:login] or not session[:username]
-			respond_with ret = { :status => "0" }, :location => nil and return
-		end
-
 		resp = query_mokard(:update_user_address, {
 			:merchant_no => Merchant,
 			:channel => Channel,
@@ -268,15 +246,23 @@ class MembershipController < ApplicationController
 
 
 	def deladdr
-		if not session[:login] or not session[:username]
-			respond_with ret = { :status => "0" }, :location => nil and return
-		end
-
 		resp = query_mokard(:delete_user_address, {
 			:merchant_no => Merchant,
 			:channel => Channel,
 			:user_name => session[:username].to_s,
 			:address_id => params[:id].to_s
+		})
+
+		respond_with resp, :location => nil
+	end
+
+
+	def getpoint
+		resp = query_mokard(:get_points, {
+			:merchant_no => Merchant,
+			:channel => Channel,
+			:username => "13916188390",#session[:username].to_s,
+			:type => params[:type].to_i
 		})
 
 		respond_with resp, :location => nil
@@ -296,6 +282,15 @@ class MembershipController < ApplicationController
 	end
 
 
+	def getdict
+		resp = query_mokard(:get_dictionary_all, {
+			:type => params[:type].to_s
+		})
+
+		respond_with resp, :location => nil
+	end
+
+
 	private
 
 	def query_mokard(method, data)
@@ -303,6 +298,15 @@ class MembershipController < ApplicationController
 		method_response = (method.to_s + "_response").to_sym
 		method_result = (method.to_s + "_result").to_sym
 		return response.body[method_response][method_result]
+	end
+
+
+	protected
+
+	def checklogin
+		if not session[:login] or not session[:username]
+			respond_with ret = { :status => "0" }, :location => nil and return
+		end
 	end
 
 end
