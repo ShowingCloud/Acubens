@@ -150,27 +150,7 @@ function getmeminfo() {
             $('#email').html (ret.email == null ? "" : ret.email);
 			$('#name').html (ret.name == null ? "" : ret.name);
 			/*生日*/
-			for(var i=1950;i<2014;i++)
-			{
-				if(id_year==ret.year_id)
-				   $('#year').html (i+"年");
-				else
-				   id_year++;
-			}
-			for(var i=1;i<13;i++)
-			{
-				if(id_month==ret.month_id)
-				   $('#month').html (i+"月");
-				else
-				   id_year++;
-			}
-			for(var i=1;i<32;i++)
-			{
-				if(id_day==ret.day_id)
-				   $('#day').html (i+"日");
-				else
-				   id_day++;
-			}
+			$('#birthday').html (ret.year+"年"+ret.month+"月"+ret.day+"日");			
 			
 			if (parseInt (ret.sex_id) == 69)
 				$('#gender').html ("男");
