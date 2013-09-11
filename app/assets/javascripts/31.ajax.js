@@ -277,4 +277,3 @@ function sendsurvey(){
 		alert ("请求发送失败，请稍候再试");
 	});
 }
-			
