@@ -70,7 +70,7 @@ function sendlogin() {
 		alert ("请输入您的用户名");
 		return;
 	}else if ($('#password').val().length < 6) {
-		alert ("密码太短了，为了安全起见请选择长一些的密码");
+		alert ("密码太短了");
 		return;
 	}else if ($('#captcha').val().length < 6) {
 		alert ("请输入验证码");
