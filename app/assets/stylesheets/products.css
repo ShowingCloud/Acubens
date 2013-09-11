@@ -385,6 +385,17 @@
 	color:#ffffff;
 	border-radius:8px;
 }
+.slogan_detail_book{
+	margin-top:18px;
+	float:left;
+    text-align:left;
+	background-color:#999999;
+	height:18px;
+	border-width:0px;
+	color:#ffffff;
+	border-radius:8px;
+}
+
 .slogan_pic{
 	margin-top:18px;
 	margin-left:-16px;
