@@ -261,8 +261,8 @@ class MembershipController < ApplicationController
 		resp = query_mokard(:get_points, {
 			:merchant_no => Merchant,
 			:channel => Channel,
-			:username => "13916188390",#session[:username].to_s,
-			:type => params[:type].to_i
+			:username => session[:username].to_s,
+			:type => params[:type].to_s
 		})
 
 		respond_with resp, :location => nil
