@@ -89,35 +89,19 @@ function sendfistinfo(){
 	var weixin = 0;
 		if ($('#weixin').val().length > 0)
 		weibo = $('#weixin').val()
-	
-	
-	
-	
+
 	$.ajax({
-		url:        "/memberships/firstlogin.json",
+		url:        "/membership/fillinfo.json",
 		type:       "POST",
 		dataType:   "json",
 		data:       {
-			email:             $('email').val(),
-			password:          $.sha256 ($('#session_username').html() + $('#password').val()),    
-			identification:    $('identification').val(),
-			name:              $('name').val(),
-			year:              year,
-			month:             month,
-			day:               day,
-			sex:               sex,
-			mobile:            $('mobile').val(),
-			magazine:          magazine,
-			province:          province,
-			city:              city,
-			district:          district,
-			address:           $('address').val(),
-			postalcode:        $('postalcode').val(),
-			areacode:          $('areacode').val(),
-			telephone:         $('telephone').val(),
-			extensionnumber:   $('extensionnumber').val(),
-			weibo:             $('weibo').val(),
-			weixin:            $('weixin').val(),
+			fullname:			$('name').val(),
+			birthdate:			year + '-' + month + '-' + day,
+			gender:				sex,
+			subscription:		magazine,
+			phone:				$('areacode').val() + '-' + $('telephone').val() + '-' + $('extensionnumber').val(),
+			weibo:				$('weibo').val(),
+			wechat:				$('weixin').val(),
 		}
 	}).done (function (resp) {
 		if(parseInt (resp.status) == 1) {
@@ -137,7 +121,7 @@ function sendfistinfo(){
 function getmeminfo() {
 
 	$.ajax ({
-		url:		"/memberships/memberinfo.json",
+		url:		"/membership/getinfo.json",
 		type:		"GET",
 		dataType:	"json"
 	}).done (function (resp) {
@@ -240,7 +224,7 @@ function sendsurvey(){
     $("input[@name='info[]']:checked").each(function() {infoselect.push($(this).val());});
 		
 	$.ajax({
-		url:        "/memberships/survey.json",
+		url:        "/skin_survey.json",
 		type:       "POST",
 		dataType:   "json",
 		data:       {
