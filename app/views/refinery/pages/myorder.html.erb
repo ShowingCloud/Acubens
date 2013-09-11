@@ -173,9 +173,9 @@
                      </tr>
                </table>
                <table class="add_tab2"  border="0" cellspacing="0" cellpadding="0">
-               		<% session[:cart].each do |productid, amount| %>
+               		<% session[:cart].each do |addressid| %>
                       <tr>
-                      		  <td><input type="hidden" id="addressid" value=<%= "#{productid}" %> /></td>	
+                      		  <td><input type="hidden" id="addressid" value=<%= "#{addressid}" %> /></td>	
                               <td   class="add_td1"><label id="name">X女士</label></td>
                               <td   class="add_td2"><label id="province">上海市浦东新区</label></td>
                               <td   class="add_td3"><label id="address">峨山路91弄浦东陆家嘴软件园120号4-5楼 </label></td>
