@@ -73,14 +73,14 @@ a:hover{
 .login_info_txt1{
 	padding-top:5px;
 	padding-left:14px;
-	width:88px;
+	width:128px;
 	height:23px;
 	background-color:#bbe09d;
 	border-right:dashed;
 	border-color:#FFF;
 	border-width:1px;
 	margin-top:-12px;
-	margin-left:60px;
+	margin-left:21px;
 	font-size:12px;
 }
 .login_info_txt2{
@@ -94,6 +94,10 @@ a:hover{
 	background-color:#bbe09d;
 	font-size:12px;
 }
+.login_info_txt3 a{
+	color:#fff;
+}
+
 .header_bottom{
 	height:94px;
 	border-bottom:solid;
