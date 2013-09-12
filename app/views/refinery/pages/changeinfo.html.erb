@@ -3,12 +3,14 @@
 
 <% content_for :javascripts do %>
 	<script>
+		$(document).ready (getmeminfo);
 		<% if session[:login] %>
-			$(document).ready ();
+			v
 		<% else %>
 			$(document).ready (login);
 		<% end %>
 	</script>
+	
 <% end %>  
 <body>
 <form>
