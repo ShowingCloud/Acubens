@@ -543,7 +543,7 @@ refinery_page_part_translations:
       \                      </ul>\r\n                 </div>\r\n                 <div
       class=\"customer_middle\">\r\n                       <div id=\"content_1\">
       \ \r\n                              <div class=\"content_1_1\">\r\n                                    <div
-      class=\"content_1_1_left\">\r\n                                          <img
+      class=\"content_1_1_left\" style=\"margin-top:19px;\">\r\n                                          <img
       src=\"/assets/customer-voice-19.jpg\" />\r\n                                    </div>
       \r\n                                    <div class=\"content_1_1_right\">\r\n
       \                                         <h3>東京都　T・A 女士</h3>\r\n                                          <h3>[
@@ -623,7 +623,7 @@ refinery_page_part_translations:
       \                      </div>\r\n                 </div>\r\n           \r\n
       \         </div> "
     - 2013-09-03 15:45:14.000000000 Z
-    - 2013-09-10 06:35:15.000000000 Z
+    - 2013-09-12 05:30:46.000000000 Z
   - - 89
     - 89
     - zh-CN
@@ -639,21 +639,22 @@ refinery_page_part_translations:
       \                            <div class=\"rightclass_middle_right03\">\r\n                                   <span
       class=\"rightclass_middle_txt02\">new!</span>\r\n                             </div>\r\n
       \                     </div>\r\n                      <div class=\"rightclass_middle_right04\">
-      \                          \r\n                             <div class=\"rightclass_middle_txt03\">季節が変わる時期、お肌は乾燥しがちになるもの。またお肌が乾燥しすぎると、むず痒さすら感じる程、敏感になる場合があります。お肌にとって「保湿潤いケア」とは、何より一番先に解決しなければならない問題です。まずは「保湿潤いケア」から、その後にやっと「美白・吹出物ケア」が可能になります。季節が変わる時期、お肌は乾燥しがちになるもの。またお肌が乾燥しすぎると、むず痒さすら感じる程、敏感になる場合があります。お肌にとって「保湿潤いケア」とは、何より一番先に解決しなければならない問題です。まずは「保湿潤いケア」から、その後にやっと「美白・吹出物ケア」が可能になります。<br
-      />\r\n <span class=\"rightclass_middle_txt01\">【译文】保湿补水的重要性</span>\r\n<br />换季的时候，肌肤变得异常干燥，甚至会感到涩痒难忍继而出现敏感征兆，保湿补水是一切问题肌肤首要解决的问题。只有做好保湿补水工作，才能进一步为美白和祛痘打下基础。\r\n保湿要抹添加保湿成分、防护性强的面霜，将水份与油份恰如其分地释放至肌肤所需部位，快速渗透至肌肤底层，帮助皮肤达成最佳的水油平衡。\r\n补水可以缓解干燥带来的不适，增强细胞活力，有效锁住水分，避免皮肤保护层内弹性及水分的流失，使皮肤湿润光滑，时刻柔软舒适，减少细纹及皱纹的出现，缔造润泽美肌。</div>\r\n
-      \                     </div>\r\n<div class=\"classcontent_pic01\">\r\n                             <img
-      src=\"/assets/img/right-angle-green.jpg\" height=\"10\" width=\"5\" />\r\n                      </div>\r\n
-      \               </div>\r\n           </div>\r\n           <div class=\"classcontent_middle\">\r\n
-      \               <div class=\"classcontent_middle_left\">\r\n                      <img
-      src=\"/assets/img/Miss-course-three-pic-3.png\" height=\"170\" width=\"176\"
-      />\r\n                </div>\r\n                <div class=\"classcontent_middle_right\">\r\n
+      \                          \r\n                             <div class=\"rightclass_middle_txt03\">季節が変わる時期、お肌は乾燥しがちになるもの。またお肌が乾燥しすぎると、むず痒さすら感じる程、敏感になる場合があります。お肌にとって「保湿潤いケア」とは、何より一番先に解決しなければならない問題です。まずは「保湿潤いケア」から、その後にやっと「美白・吹出物ケア」が可能になります。<br
+      />&#160;「保湿ケア」では、保湿成分を含んだブロック力の強いクリームにて、水分や油分が不足している部分へすばやく浸透させ、バランスのとれた肌にします。「潤いケア」では、肌の乾燥がもたらす不調を和らげ、肌の新陳代謝と水分キープ力をアップさせることで、たるみや水分流出を防ぎ、小ジワやシワの発生を減少させ、しっとり滑らかでハリと潤いのある美肌にします。<br
+      />\r\n <span class=\"rightclass_middle_txt01\">【译文】保湿补水的重要性</span>\r\n<br />换季的时候，肌肤变得异常干燥，甚至会感到涩痒难忍继而出现敏感征兆，保湿补水是一切问题肌肤首要解决的问题。只有做好保湿补水工作，才能进一步为美白和祛痘打下基础。<br
+      />\r\n保湿要抹添加保湿成分、防护性强的面霜，将水份与油份恰如其分地释放至肌肤所需部位，快速渗透至肌肤底层，帮助皮肤达成最佳的水油平衡。\r\n补水可以缓解干燥带来的不适，增强细胞活力，有效锁住水分，避免皮肤保护层内弹性及水分的流失，使皮肤湿润光滑，时刻柔软舒适，减少细纹及皱纹的出现，缔造润泽美肌。</div>\r\n
+      \                     </div>\r\n\r\n                </div>\r\n           </div>\r\n
+      \          <div class=\"classcontent_middle\">\r\n                <div class=\"classcontent_middle_left\">\r\n
+      \                     <img src=\"/assets/img/Miss-course-three-pic-3.png\" height=\"170\"
+      width=\"176\" />\r\n                </div>\r\n                <div class=\"classcontent_middle_right\">\r\n
       \                    <div class=\"classbox\">\r\n                          <span
       class=\"bot\"></span>\r\n                          <span class=\"top\"></span>\r\n
       \                         <div class=\"classcontent_middle_right01\">\r\n                                 秋季スキンケアの注意点\r\n
       \                         </div>\r\n                           <div class=\"classcontent_middle_right02\">\r\n
       \                                \r\n                          </div>\r\n                          <div
-      class=\"rightclass_middle_txt03\">\r\n                                查看详情「美白＆日焼け対策」とは、四季一年を通した課題です。決して「三日坊主」で片付けてはいけません。夏季は過ぎましたが、引き続き秋季も対策が必要です。特に「秋冬の美白対策」は重要なポイントに！この時期に、夏のメラニン色素を排除（抑制・還元・排出）することが出来れば、シミやソバカスの予防になります。また同時に、秋季は「スペシャルケア」に恰好の時期、日常ケアの後、美容液をプラスして、角質層まで十分にケアをしてあげましょう。秋季の乾燥した空気の冷たさは、肌の油分分泌を促し、反対に汗の分泌を減らしてしまいます。ですから、特に保湿と水分補給に注意し、潤いのある美肌をキープしましょう。\r\n<br
-      /><p style=\"color: rgb(110, 185, 43); font-size: 14px;\">【译文】秋季护理注意事项</p>\r\n美白防晒是一年四季的功课，千万不能“三天打渔，两天晒网”，夏季虽然已经过去，但秋季还要继续坚持，秋冬季是重要的美白时机，如能及时的将夏季遗留下的黑色素分解，就能预防和缓解色斑的出现。美白防晒是一年四季的功课，千万不能“三天打渔，两天晒网”，夏季虽然已经过去，但秋季还要继续坚持，秋冬季是重要的美白时机，如能及时的将夏季遗留下的黑色素分解，就能预防和缓解色斑的出现。\r\n
+      class=\"rightclass_middle_txt03\">\r\n                                「美白＆日焼け対策」とは、四季一年を通した課題です。決して「三日坊主」で片付けてはいけません。夏季は過ぎましたが、引き続き秋季も対策が必要です。特に「秋冬の美白対策」は重要なポイントに！この時期に、夏のメラニン色素を排除（抑制・還元・排出）することが出来れば、シミやソバカスの予防になります。また同時に、秋季は「スペシャルケア」に恰好の時期、日常ケアの後、美容液をプラスして、角質層まで十分にケアをしてあげましょう。秋季の乾燥した空気の冷たさは、肌の油分分泌を促し、反対に汗の分泌を減らしてしまいます。ですから、特に保湿と水分補給に注意し、潤いのある美肌をキープしましょう。\r\n<br
+      /><p style=\"color: rgb(110, 185, 43); font-size: 14px;\">【译文】秋季护理注意事项</p>\r\n美白防晒是一年四季的功课，千万不能“三天打渔，两天晒网”，夏季虽然已经过去，但秋季还要继续坚持，秋冬季是重要的美白时机，如能及时的将夏季遗留下的黑色素分解，就能预防和缓解色斑的出现。<br
+      /><br />\r\n秋季也是特别适合“进补”的时节，在日常护理后，可以特别加入精华的护理，保护好肌底。由于秋季的气候干燥阴冷，使得肌肤的油脂，汗液分泌也相对减少，所以需注意加强对肌肤保湿，让皮肤喝饱水份，时刻保持水润美肌。\r\n
       \                         </div>\r\n                          \r\n                      </div>\r\n
       \               </div>\r\n           </div>\r\n           <div class=\"classcontent_middle\">\r\n
       \               <div class=\"classcontent_middle_left\">\r\n                      <img
@@ -664,10 +665,10 @@ refinery_page_part_translations:
       \                         <div class=\"classcontent_middle_right01\">\r\n                                 洗顔時の注意点\r\n
       \                         </div>\r\n                          <div class=\"rightclass_middle_txt03\">\r\n
       \                               「洗顔」は、誰もが毎日行うことですが、美肌ケアの前の、最も重要なステップでもあります。では、どのような洗顔方法が正しいのか？　まずはじめに、手を洗い清潔にしましょう。そうでなければ、洗顔フォームで手を洗うことになってしまいます。「泡立てるタイプの洗顔料」は、手のひらで十分に泡立ててから顔に乗せ、30秒ほど螺旋状にやさしく手を滑らせて毛穴の汚れを落とします。テカリや吹き出物が出やすいTゾーンについても、力を入れてこすらないで下さい。「泡立てないタイプの洗顔料」は、そのまま直接顔に塗り、下から上へ内から外へ向けて顔全体に広げ、それから30秒ほど指の腹を使って軽く叩くようにマッサージをします。油分の出やすい部分は、少し念入りにマッサージしても良いでしょう。　その後はどちらの場合も、十分な水量（流水）で完全に洗顔料を洗い流しをしましょう。　尚、多くの人がやりがちな「タオルを使った洗顔後の水分ふき取り」ですが、そもそもタオルの繊維は毛穴よりも大きいので毛穴の汚れはふき取れませんし、肌を傷つけてしまう可能性がありますので、擦らず、軽く顔に押し付けて水分を取り除いてあげて下さい。<br
-      />\r\n<p style=\"color: rgb(110, 185, 43); font-size: 14px;\">【译文】清洁注意事项</p>\r\n\r\n洗脸，是每个人每天必须做的事情。脸部清洁绝对是保养之前最重要的步骤，那么，如何清洁面部才是正确的呢？首先必须把手洗净，否则洗面乳都用来洗手了，有泡沫的洗面乳可以先把洁面乳在手心充分打起泡沫，T字区非常容易出油、长痘痘，但是不能因此就用力揉搓，以螺旋状在面部轻轻按摩30秒左右，除去毛孔中的污垢；无泡沫的洗面乳可以直接涂在脸上，然后轻用手指指腹轻拍面部30秒左右，由下到上，由内到外，让洗面乳遍及整个面部，油脂多的部位可重点按摩，然后以流水冲洗干净；大多数人在洁面后选择用毛巾将面部拭干，由于毛巾圈绒比毛孔还大，很难清除皮肤深处的污垢、油脂，反而会让皮肤有受伤的可能性。所以不建议用毛巾用力擦脸，而是要用轻按方式将水拭干。
+      />\r\n<p style=\"color: rgb(110, 185, 43); font-size: 14px;\">【译文】清洁注意事项</p>\r\n洗脸，是每个人每天必须做的事情。脸部清洁绝对是保养之前最重要的步骤，那么，如何清洁面部才是正确的呢？首先必须把手洗净，否则洗面乳都用来洗手了，有泡沫的洗面乳可以先把洁面乳在手心充分打起泡沫，T字区非常容易出油、长痘痘，但是不能因此就用力揉搓，以螺旋状在面部轻轻按摩30秒左右，除去毛孔中的污垢；无泡沫的洗面乳可以直接涂在脸上，然后轻用手指指腹轻拍面部30秒左右，由下到上，由内到外，让洗面乳遍及整个面部，油脂多的部位可重点按摩，然后以流水冲洗干净；大多数人在洁面后选择用毛巾将面部拭干，由于毛巾圈绒比毛孔还大，很难清除皮肤深处的污垢、油脂，反而会让皮肤有受伤的可能性。所以不建议用毛巾用力擦脸，而是要用轻按方式将水拭干。&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;
       </div>\r\n</div>\r\n</div>\r\n           </div>"
     - 2013-09-03 15:53:04.000000000 Z
-    - 2013-09-11 02:07:53.000000000 Z
+    - 2013-09-12 05:40:13.000000000 Z
   - - 91
     - 91
     - zh-CN
@@ -852,14 +853,15 @@ refinery_page_part_translations:
       \           <div class=\"contact-us-height\">\r\n              <div class=\"ul-customer-tell\">\r\n
       \                 在线客服\r\n              </div>\r\n              <img class=\"person\"
       src=\"/assets/img/person.png\" />\r\n         </div>\r\n            <div>\r\n
-      \                 <img class=\"cesstte-contact-us-us\" src=\"/assets/img/IAMCALLING.png\"
-      />\r\n              <div class=\"notice-contact\">\r\n            客服工作时间：9:00-20:00
-      周一至周五，除国定节假日外\r\n            </div>\r\n\r\n         </div>\r\n       </div>
-      \  \r\n    <div class=\"contact-us-customer-1\">\r\n            <div class=\"contact-us-height\">\r\n
-      \             <div class=\"ul-customer-tell\">\r\n                  客服电话\r\n
-      \             </div>\r\n              <img class=\"tellphone-size\" src=\"/assets/img/MicBlog-gray.png\"
-      />\r\n      </div>\r\n            <div>\r\n              \r\n               <a
-      class=\"number-800-http-weibo\" href=\"http:www.weibo.com\">http://weibo.com/gelnicjapan\r\n</a>
+      \               \r\n              <div class=\"notice-contact\"> <a target=\"_blank\"
+      href=\"http://amos.alicdn.com/getcid.aw?v=2&amp;uid=gelnic%E7%AE%80%E5%A6%AE&amp;site=cntaobao&amp;s=1&amp;groupid=0&amp;charset=utf-8\"><img
+      src=\"http://amos.alicdn.com/online.aw?v=2&amp;uid=gelnic%E7%AE%80%E5%A6%AE&amp;site=cntaobao&amp;s=1&amp;charset=utf-8\"
+      alt=\"点击这里给我发消息\" /></a>\r\n            客服工作时间：9:00-20:00 周一至周五，除国定节假日外\r\n
+      \           </div>\r\n\r\n         </div>\r\n       </div>   \r\n    <div class=\"contact-us-customer-1\">\r\n
+      \           <div class=\"contact-us-height\">\r\n              <div class=\"ul-customer-tell\">\r\n
+      \                 官方微博\r\n              </div>\r\n              <img class=\"tellphone-size\"
+      src=\"/assets/img/MicBlog-gray.png\" />\r\n      </div>\r\n            <div>\r\n
+      \             \r\n               <a class=\"number-800-http-weibo\" href=\"http:www.weibo.com\">http://weibo.com/gelnicjapan\r\n</a>
       \           \r\n\r\n            <div class=\"notice-contact-weibo\">\r\n            关注简妮官方微博，和小菊老师一起开启美丽新纪元！\r\n
       \           </div>\r\n\r\n      </div>\r\n    </div>    \r\n    \r\n    <div
       class=\"contact-us-customer-wechat\">\r\n            <div class=\"contact-us-height\">\r\n
@@ -877,7 +879,7 @@ refinery_page_part_translations:
       \           </li>\r\n            \r\n            \r\n            </ul>\r\n            \r\n
       \           \r\n            \r\n            \r\n            </div>\r\n\r\n       </div>"
     - 2013-09-04 16:56:21.000000000 Z
-    - 2013-09-10 02:49:50.000000000 Z
+    - 2013-09-12 09:58:09.000000000 Z
   - - 99
     - 99
     - zh-CN
@@ -919,15 +921,9 @@ refinery_page_part_translations:
       src=\"/assets/Products-c-10g_27.gif\" />\r\n</div>\r\n<div>\r\n<img src=\"/assets/Products-c-10g_28.gif\"
       />\r\n</div>\r\n<div>\r\n<img src=\"/assets/Products-c-10g_29.gif\" />\r\n</div>\r\n<div>\r\n<img
       src=\"/assets/Products-c-10g_31.gif\" />\r\n</div>\r\n<div>\r\n<img src=\"/assets/Products-c-10g_33.gif\"
-      />\r\n</div>\r\n<div style=\"width: 720px; float: left;\">\r\n<div style=\"float:
-      left;\"><a href=\"#\"><img style=\"border: 0px currentColor;\" src=\"/assets/Products-c-10g_35.gif\"
-      /></a>\r\n</div>\r\n<div style=\"border: 0px currentColor; float: left;\"><a
-      href=\"#\"><img style=\"border: 0px currentColor;\" src=\"/assets/Products-c-10g_36.gif\"
-      /></a>\r\n</div>\r\n<div style=\"border: 0px currentColor; float: right;\">
-      <a href=\"#\"><img style=\"border: 0px currentColor;\" src=\"/assets/Products-c-10g_37.jpg\"
-      /></a>\r\n</div>\r\n</div>\r\n\r\n\r\n\r\n\r\n</div>"
+      />\r\n</div>\r\n\r\n\r\n\r\n\r\n\r\n</div>"
     - 2013-09-05 17:06:35.000000000 Z
-    - 2013-09-10 03:13:38.000000000 Z
+    - 2013-09-12 05:14:13.000000000 Z
   - - 106
     - 106
     - zh-CN
@@ -946,15 +942,9 @@ refinery_page_part_translations:
       src=\"/assets/Products-c-20g_25.gif\" />\r\n</div>\r\n<div>\r\n<img src=\"/assets/Products-c-20g_26.gif\"
       />\r\n</div>\r\n<div>\r\n<img src=\"/assets/Products-c-20g_27.gif\" />\r\n</div>\r\n<div>\r\n<img
       src=\"/assets/Products-c-20g_29.gif\" />\r\n</div>\r\n<div>\r\n<img src=\"/assets/Products-c-20g_30.gif\"
-      />\r\n</div>\r\n<div>\r\n<img src=\"/assets/Products-c-20g_32.gif\" />\r\n</div>\r\n\r\n<div
-      style=\"width:720px; float:left;\">\r\n<div style=\"float:left;\"><a href=\"#\"><img
-      src=\"/assets/Products-c-20g_34.gif\" style=\"border:0px;\" /></a>\r\n</div>\r\n<div
-      style=\"float:left; border:0px;\"><a href=\"#\"><img src=\"/assets/Products-c-20g_35.gif\"
-      style=\"border:0px;\" /></a>\r\n</div>\r\n<div style=\"float:right; border:0px;\">
-      <a href=\"#\"><img src=\"/assets/Products-c-20g_36.gif\" style=\"border:0px;\"
-      /></a>\r\n</div>\r\n</div>\r\n\r\n</div>"
+      />\r\n</div>\r\n<div>\r\n<img src=\"/assets/Products-c-20g_32.gif\" />\r\n</div>\r\n\r\n\r\n</div>"
     - 2013-09-05 17:06:47.000000000 Z
-    - 2013-09-10 03:16:28.000000000 Z
+    - 2013-09-12 05:14:47.000000000 Z
   - - 109
     - 109
     - zh-CN
@@ -973,14 +963,9 @@ refinery_page_part_translations:
       src=\"/assets/Products-c-75g_26.gif\" />\r\n</div>\r\n<div>\r\n<img src=\"/assets/Products-c-75g_27.gif\"
       />\r\n</div>\r\n<div>\r\n<img src=\"/assets/Products-c-75g_28.gif\" />\r\n</div>\r\n<div>\r\n<img
       src=\"/assets/Products-c-75g_29.gif\" />\r\n</div>\r\n<div>\r\n<img src=\"/assets/Products-c-75g_31.gif\"
-      />\r\n</div>\r\n<div style=\"width:720px; float:left;\">\r\n<div style=\"float:left;\"><a
-      href=\"#\"><img src=\"/assets/Products-c-75g_33.gif\" style=\"border:0px;\"
-      /></a>\r\n</div>\r\n<div style=\"float:left; border:0px;\"><a href=\"#\"><img
-      src=\"/assets/Products-c-75g_34.gif\" style=\"border:0px;\" /></a>\r\n</div>\r\n<div
-      style=\"float:right; border:0px;\"> <a href=\"#\"><img src=\"/assets/Products-c-75g_35.gif\"
-      style=\"border:0px;\" /></a>\r\n</div>\r\n</div>\r\n\r\n</div>"
+      />\r\n</div>\r\n\r\n\r\n</div>"
     - 2013-09-05 17:06:56.000000000 Z
-    - 2013-09-10 03:18:18.000000000 Z
+    - 2013-09-12 05:15:17.000000000 Z
   - - 112
     - 112
     - zh-CN
@@ -999,13 +984,11 @@ refinery_page_part_translations:
       src=\"/assets/Products-c-200g_25.gif\" />\r\n</div>\r\n<div>\r\n<img src=\"/assets/Products-c-200g_26.gif\"
       />\r\n</div>\r\n<div>\r\n<img src=\"/assets/Products-c-200g_27.gif\" />\r\n</div>\r\n<div>\r\n<img
       src=\"/assets/Products-c-200g_28.gif\" />\r\n</div>\r\n<div style=\"width:720px;
-      float:left;\">\r\n<div style=\"float:left;\"><a href=\"#\"><img src=\"/assets/Products-c-200g_32.gif\"
-      style=\"border:0px;\" /></a>\r\n</div>\r\n<div style=\"float:left; border:0px;\"><a
-      href=\"#\"><img src=\"/assets/Products-c-200g_33.gif\" style=\"border:0px;\"
-      /></a>\r\n</div>\r\n<div style=\"float:right; border:0px;\"> <a href=\"#\"><img
-      src=\"/assets/Products-c-200g_34.gif\" style=\"border:0px;\" /></a>\r\n</div>\r\n</div>\r\n\r\n</div>"
+      float:left;\">\r\n<div style=\"float:left;\"><br />\r\n</div>\r\n<div style=\"float:left;
+      border:0px;\"><br />\r\n</div>\r\n<div style=\"float:right; border:0px;\"> <br
+      />\r\n</div>\r\n</div>\r\n\r\n</div>"
     - 2013-09-05 17:08:37.000000000 Z
-    - 2013-09-10 03:20:40.000000000 Z
+    - 2013-09-12 05:15:37.000000000 Z
   - - 115
     - 115
     - zh-CN
@@ -1023,14 +1006,11 @@ refinery_page_part_translations:
       />\r\n</div>\r\n<div>\r\n<img src=\"/assets/Products-p-10g_23.gif\" />\r\n</div>\r\n<div>\r\n<img
       src=\"/assets/Products-p-10g_25.gif\" />\r\n</div>\r\n<div>\r\n<img src=\"/assets/Products-p-10g_26.gif\"
       />\r\n</div>\r\n<div>\r\n<img src=\"/assets/Products-p-10g_28.gif\" />\r\n</div>\r\n\r\n<div
-      style=\"width:720px; float:left;\">\r\n<div style=\"float:left;\"><a href=\"#\"><img
-      src=\"/assets/Products-p-10g_32.gif\" style=\"border:0px;\" /></a>\r\n</div>\r\n<div
-      style=\"float:left; border:0px;\"><a href=\"#\"><img src=\"/assets/Products-p-10g_33.gif\"
-      style=\"border:0px;\" /></a>\r\n</div>\r\n<div style=\"float:right; border:0px;\">
-      <a href=\"#\"><img src=\"/assets/Products-p-10g_34.gif\" style=\"border:0px;\"
-      /></a>\r\n</div>\r\n</div>\r\n\r\n</div>"
+      style=\"width:720px; float:left;\">\r\n<div style=\"float:left;\"><br />\r\n</div>\r\n<div
+      style=\"float:left; border:0px;\"><br />\r\n</div>\r\n<div style=\"float:right;
+      border:0px;\"> <br />\r\n</div>\r\n</div>\r\n\r\n</div>"
     - 2013-09-05 17:08:48.000000000 Z
-    - 2013-09-10 03:22:18.000000000 Z
+    - 2013-09-12 05:16:03.000000000 Z
   - - 118
     - 118
     - zh-CN
@@ -1049,13 +1029,11 @@ refinery_page_part_translations:
       src=\"/assets/Products-p-10gi_25.gif\" />\r\n</div>\r\n<div>\r\n<img src=\"/assets/Products-p-10gi_26.gif\"
       />\r\n</div>\r\n<div>\r\n<img src=\"/assets/Products-p-10gi_27.gif\" />\r\n</div>\r\n<div>\r\n<img
       src=\"/assets/Products-p-10gi_29.gif\" />\r\n</div>\r\n<div style=\"width:720px;
-      float:left;\">\r\n<div style=\"float:left;\"><a href=\"#\"><img src=\"/assets/Products-p-10gi_31.gif\"
-      style=\"border:0px;\" /></a>\r\n</div>\r\n<div style=\"float:left; border:0px;\"><a
-      href=\"#\"><img src=\"/assets/Products-p-10gi_32.gif\" style=\"border:0px;\"
-      /></a>\r\n</div>\r\n<div style=\"float:right; border:0px;\"> <a href=\"#\"><img
-      src=\"/assets/Products-p-10gi_33.gif\" style=\"border:0px;\" /></a>\r\n</div>\r\n</div>\r\n\r\n</div>"
+      float:left;\">\r\n<div style=\"float:left;\"><br />\r\n</div>\r\n<div style=\"float:left;
+      border:0px;\"><br />\r\n</div>\r\n<div style=\"float:right; border:0px;\"> <br
+      />\r\n</div>\r\n</div>\r\n\r\n</div>"
     - 2013-09-05 17:08:58.000000000 Z
-    - 2013-09-10 03:24:39.000000000 Z
+    - 2013-09-12 05:16:20.000000000 Z
   - - 121
     - 121
     - zh-CN
@@ -1074,14 +1052,11 @@ refinery_page_part_translations:
       src=\"/assets/Products-p-75g_26.gif\" />\r\n</div>\r\n<div>\r\n<img src=\"/assets/Products-p-75g_27.gif\"
       />\r\n</div>\r\n<div>\r\n<img src=\"/assets/Products-p-75g_28.gif\" />\r\n</div>\r\n<div>\r\n<img
       src=\"/assets/Products-p-75g_29.gif\" />\r\n</div>\r\n<div>\r\n<img src=\"/assets/Products-p-75g_31.gif\"
-      />\r\n</div>\r\n<div style=\"width:720px; float:left;\">\r\n<div style=\"float:left;\"><a
-      href=\"#\"><img src=\"/assets/Products-p-75g_33.gif\" style=\"border:0px;\"
-      /></a>\r\n</div>\r\n<div style=\"float:left; border:0px;\"><a href=\"#\"><img
-      src=\"/assets/Products-p-75g_34.gif\" style=\"border:0px;\" /></a>\r\n</div>\r\n<div
-      style=\"float:right; border:0px;\"> <a href=\"#\"><img src=\"/assets/Products-p-75g_35.gif\"
-      style=\"border:0px;\" /></a>\r\n</div>\r\n</div>\r\n\r\n</div>"
+      /></div>\r\n<div style=\"width:720px; float:left;\">\r\n<div style=\"float:left;\"><br
+      />\r\n</div>\r\n<div style=\"float:left; border:0px;\"><br />\r\n</div>\r\n<div
+      style=\"float:right; border:0px;\"> <br />\r\n</div>\r\n</div>\r\n\r\n</div>"
     - 2013-09-05 17:09:07.000000000 Z
-    - 2013-09-10 03:26:29.000000000 Z
+    - 2013-09-12 05:16:38.000000000 Z
   - - 124
     - 124
     - zh-CN
@@ -1100,14 +1075,11 @@ refinery_page_part_translations:
       src=\"/assets/Products-p-300g_28.gif\" />\r\n</div>\r\n<div>\r\n<img src=\"/assets/Products-p-300g_29.gif\"
       />\r\n</div>\r\n<div>\r\n<img src=\"/assets/Products-p-300g_31.gif\" />\r\n</div>\r\n<div>\r\n<img
       src=\"/assets/Products-p-300g_33.gif\" />\r\n</div>\r\n<div style=\"width: 720px;
-      float: left;\">\r\n<div style=\"float: left;\"><a href=\"#\"><img style=\"border:
-      0px currentColor;\" src=\"/assets/Products-p-300g_35.gif\" /></a>\r\n</div>\r\n<div
-      style=\"border: 0px currentColor; float: left;\"><a href=\"#\"><img style=\"border:
-      0px currentColor;\" src=\"/assets/Products-p-300g_36.gif\" /></a>\r\n</div>\r\n<div
-      style=\"border: 0px currentColor; float: right;\"> <a href=\"#\"><img style=\"border:
-      0px currentColor;\" src=\"/assets/Products-p-300g_37.gif\" /></a>\r\n</div>\r\n</div>\r\n\r\n</div>"
+      float: left;\">\r\n<div style=\"float: left;\"><br />\r\n</div>\r\n<div style=\"border:
+      0px currentColor; float: left;\"><br />\r\n</div>\r\n<div style=\"border: 0px
+      currentColor; float: right;\"> <br />\r\n</div>\r\n</div>\r\n\r\n</div>"
     - 2013-09-05 17:09:52.000000000 Z
-    - 2013-09-10 03:31:04.000000000 Z
+    - 2013-09-12 05:16:53.000000000 Z
   - - 127
     - 127
     - zh-CN
@@ -1117,9 +1089,17 @@ refinery_page_part_translations:
   - - 128
     - 128
     - zh-CN
-    - ''
+    - "<div style=\"width:750px; margin:0 auto;\">\r\n<div>\r\n<img src=\"/assets/Products-hc-gh-10g_11.jpg\"
+      />\r\n</div>  \r\n<div>\r\n<img src=\"/assets/Products-hc-gh-10g_18.jpg\" />\r\n</div>
+      \ \r\n<div>\r\n<img src=\"/assets/Products-hc-gh-10g_21.jpg\" />\r\n</div>\r\n<div>\r\n<img
+      src=\"/assets/Products-hc-gh-10g_23.jpg\" />\r\n</div>\r\n<div>\r\n<img src=\"/assets/Products-hc-gh-10g_24.jpg\"
+      />\r\n</div>\r\n<div>\r\n<img src=\"/assets/Products-hc-gh-10g_25.jpg\" />\r\n</div>\r\n<div>\r\n<img
+      src=\"/assets/Products-hc-gh-10g_26.jpg\" />\r\n</div>\r\n<div>\r\n<img src=\"/assets/Products-hc-gh-10g_27.jpg\"
+      />\r\n</div>\r\n<div>\r\n<img src=\"/assets/Products-hc-gh-10g_29.jpg\" />\r\n</div>\r\n<div>\r\n<img
+      src=\"/assets/Products-hc-gh-10g_30.jpg\" />\r\n</div>\r\n<div>\r\n<img src=\"/assets/Products-hc-gh-10g_31.jpg\"
+      />\r\n</div>\r\n\r\n</div>"
     - 2013-09-05 17:10:03.000000000 Z
-    - 2013-09-05 17:10:03.000000000 Z
+    - 2013-09-12 04:01:23.000000000 Z
   - - 130
     - 130
     - zh-CN
@@ -1129,15 +1109,34 @@ refinery_page_part_translations:
   - - 131
     - 131
     - zh-CN
-    - ''
+    - "<div style=\"width:750px; margin:0 auto;\">\r\n<div>\r\n<img src=\"/assets/Products-hc-gh-30g_10.jpg\"
+      />\r\n</div>  \r\n<div>\r\n<img src=\"/assets/Products-hc-gh-30g_17.jpg\" />\r\n</div>
+      \ \r\n<div>\r\n<img src=\"/assets/Products-hc-gh-30g_20.jpg\" />\r\n</div>\r\n<div>\r\n<img
+      src=\"/assets/Products-hc-gh-30g_23.jpg\" />\r\n</div>\r\n<div>\r\n<img src=\"/assets/Products-hc-gh-30g_24.jpg\"
+      />\r\n</div>\r\n<div>\r\n<img src=\"/assets/Products-hc-gh-30g_25.jpg\" />\r\n</div>\r\n<div>\r\n<img
+      src=\"/assets/Products-hc-gh-30g_27.jpg\" />\r\n</div>\r\n<div>\r\n<img src=\"/assets/Products-hc-gh-30g_28.jpg\"
+      />\r\n</div>\r\n<div>\r\n<img src=\"/assets/Products-hc-gh-30g_29.jpg\" />\r\n</div>\r\n<div>\r\n<img
+      src=\"/assets/Products-hc-gh-30g_31.jpg\" />\r\n</div>\r\n<div>\r\n<img src=\"/assets/Products-hc-gh-30g_32.jpg\"
+      />\r\n</div>\r\n<div>\r\n<img src=\"/assets/Products-hc-gh-30g_33.jpg\" />\r\n</div>\r\n<div>\r\n<img
+      src=\"/assets/Products-hc-gh-30g_34.jpg\" />\r\n</div>\r\n</div>"
     - 2013-09-05 17:10:15.000000000 Z
-    - 2013-09-05 17:10:15.000000000 Z
+    - 2013-09-12 04:58:58.000000000 Z
   - - 134
     - 134
     - zh-CN
-    - ''
+    - "<div style=\"width:750px; margin:0 auto;\">\r\n<div>\r\n<img src=\"/assets/Products-hc-gh-50g_10.jpg\"
+      />\r\n</div>  \r\n<div>\r\n<img src=\"/assets/Products-hc-gh-50g_17.jpg\" />\r\n</div>
+      \ \r\n<div>\r\n<img src=\"/assets/Products-hc-gh-50g_20.jpg\" />\r\n</div>\r\n<div>\r\n<img
+      src=\"/assets/Products-hc-gh-50g_22.jpg\" />\r\n</div>\r\n<div>\r\n<img src=\"/assets/Products-hc-gh-50g_23.jpg\"
+      />\r\n</div>\r\n<div>\r\n<img src=\"/assets/Products-hc-gh-50g_24.jpg\" />\r\n</div>\r\n<div>\r\n<img
+      src=\"/assets/Products-hc-gh-50g_25.jpg\" />\r\n</div>\r\n<div>\r\n<img src=\"/assets/Products-hc-gh-50g_27.jpg\"
+      />\r\n</div>\r\n<div>\r\n<img src=\"/assets/Products-hc-gh-50g_28.jpg\" />\r\n</div>\r\n<div>\r\n<img
+      src=\"/assets/Products-hc-gh-50g_29.jpg\" />\r\n</div>\r\n<div>\r\n<img src=\"/assets/Products-hc-gh-50g_31.jpg\"
+      />\r\n</div>\r\n<div>\r\n<img src=\"/assets/Products-hc-gh-50g_32.jpg\" />\r\n</div>\r\n<div>\r\n<img
+      src=\"/assets/Products-hc-gh-50g_33.jpg\" />\r\n</div>\r\n<div>\r\n<img src=\"/assets/Products-hc-gh-50g_34.jpg\"
+      />\r\n</div>\r\n</div>"
     - 2013-09-05 17:10:39.000000000 Z
-    - 2013-09-05 17:10:39.000000000 Z
+    - 2013-09-12 05:07:38.000000000 Z
   - - 136
     - 136
     - zh-CN
@@ -1147,9 +1146,19 @@ refinery_page_part_translations:
   - - 137
     - 137
     - zh-CN
-    - ''
+    - "<div style=\"width:750px; margin:0 auto;\">\r\n<div>\r\n<img src=\"/assets/Products-hc-gh-100g_10.jpg\"
+      />\r\n</div>  \r\n<div>\r\n<img src=\"/assets/Products-hc-gh-100g_17.jpg\" />\r\n</div>
+      \ \r\n<div>\r\n<img src=\"/assets/Products-hc-gh-100g_20.jpg\" />\r\n</div>\r\n<div>\r\n<img
+      src=\"/assets/Products-hc-gh-100g_22.jpg\" />\r\n</div>\r\n<div>\r\n<img src=\"/assets/Products-hc-gh-100g_23.jpg\"
+      />\r\n</div>\r\n<div>\r\n<img src=\"/assets/Products-hc-gh-100g_24.jpg\" />\r\n</div>\r\n<div>\r\n<img
+      src=\"/assets/Products-hc-gh-100g_25.jpg\" />\r\n</div>\r\n<div>\r\n<img src=\"/assets/Products-hc-gh-100g_26.jpg\"
+      />\r\n</div>\r\n<div>\r\n<img src=\"/assets/Products-hc-gh-100g_27.jpg\" />\r\n</div>\r\n<div>\r\n<img
+      src=\"/assets/Products-hc-gh-100g_29.jpg\" />\r\n</div>\r\n<div>\r\n<img src=\"/assets/Products-hc-gh-100g_30.jpg\"
+      />\r\n</div>\r\n<div>\r\n<img src=\"/assets/Products-hc-gh-100g_31.jpg\" />\r\n</div>\r\n<div>\r\n<img
+      src=\"/assets/Products-hc-gh-100g_32.jpg\" />\r\n</div>\r\n<div>\r\n<img src=\"/assets/Products-hc-gh-100g_33.jpg\"
+      />\r\n</div>\r\n</div>"
     - 2013-09-05 17:10:52.000000000 Z
-    - 2013-09-05 17:10:52.000000000 Z
+    - 2013-09-12 05:13:27.000000000 Z
   - - 138
     - 138
     - zh-CN
@@ -1165,9 +1174,17 @@ refinery_page_part_translations:
   - - 140
     - 140
     - zh-CN
-    - ''
+    - "<div style=\"width:750px; margin:0 auto;\">\r\n<div>\r\n<img src=\"/assets/Products-hc-ex-10g_09.jpg\"
+      />\r\n</div>  \r\n<div>\r\n<img src=\"/assets/Products-hc-ex-10g_18.jpg\" />\r\n</div>
+      \ \r\n<div>\r\n<img src=\"/assets/Products-hc-ex-10g_23.jpg\" />\r\n</div>\r\n<div>\r\n<img
+      src=\"/assets/Products-hc-ex-10g_26.jpg\" />\r\n</div>\r\n<div>\r\n<img src=\"/assets/Products-hc-ex-10g_27.jpg\"
+      />\r\n</div>\r\n<div>\r\n<img src=\"/assets/Products-hc-ex-10g_28.jpg\" />\r\n</div>\r\n<div>\r\n<img
+      src=\"/assets/Products-hc-ex-10g_29.jpg\" />\r\n</div>\r\n<div>\r\n<img src=\"/assets/Products-hc-ex-10g_30.jpg\"
+      />\r\n</div>\r\n<div>\r\n<img src=\"/assets/Products-hc-ex-10g_31.jpg\" />\r\n</div>\r\n<div>\r\n<img
+      src=\"/assets/Products-hc-ex-10g_32.jpg\" />\r\n</div>\r\n<div>\r\n<img src=\"/assets/Products-hc-ex-10g_33.jpg\"
+      />\r\n</div>\r\n<div>\r\n<img src=\"/assets/Products-hc-ex-10g_35.jpg\" />\r\n</div>\r\n</div>"
     - 2013-09-05 17:11:19.000000000 Z
-    - 2013-09-05 17:11:19.000000000 Z
+    - 2013-09-12 03:22:02.000000000 Z
   - - 141
     - 141
     - zh-CN
@@ -1183,9 +1200,19 @@ refinery_page_part_translations:
   - - 143
     - 143
     - zh-CN
-    - ''
+    - "<div style=\"width:750px; margin:0 auto;\">\r\n<div>\r\n<img src=\"/assets/Products-hc-ex-30g_09.jpg\"
+      />\r\n</div>  \r\n<div>\r\n<img src=\"/assets/Products-hc-ex-30g_18.jpg\" />\r\n</div>
+      \ \r\n<div>\r\n<img src=\"/assets/Products-hc-ex-30g_21.jpg\" />\r\n</div>\r\n<div>\r\n<img
+      src=\"/assets/Products-hc-ex-30g_23.jpg\" />\r\n</div>\r\n<div>\r\n<img src=\"/assets/Products-hc-ex-30g_24.jpg\"
+      />\r\n</div>\r\n<div>\r\n<img src=\"/assets/Products-hc-ex-30g_25.jpg\" />\r\n</div>\r\n<div>\r\n<img
+      src=\"/assets/Products-hc-ex-30g_26.jpg\" />\r\n</div>\r\n<div>\r\n<img src=\"/assets/Products-hc-ex-30g_27.jpg\"
+      />\r\n</div>\r\n<div>\r\n<img src=\"/assets/Products-hc-ex-30g_28.jpg\" />\r\n</div>\r\n<div>\r\n<img
+      src=\"/assets/Products-hc-ex-30g_29.jpg\" />\r\n</div>\r\n<div>\r\n<img src=\"/assets/Products-hc-ex-30g_31.jpg\"
+      />\r\n</div>\r\n<div>\r\n<img src=\"/assets/Products-hc-ex-30g_32.jpg\" />\r\n</div>\r\n<div>\r\n<img
+      src=\"/assets/Products-hc-ex-30g_38.jpg\" />\r\n</div>\r\n<div>\r\n<img src=\"/assets/Products-hc-ex-30g_39.jpg\"
+      />\r\n</div>\r\n</div>"
     - 2013-09-05 17:11:40.000000000 Z
-    - 2013-09-05 17:11:40.000000000 Z
+    - 2013-09-12 03:32:48.000000000 Z
   - - 144
     - 144
     - zh-CN
@@ -1201,9 +1228,19 @@ refinery_page_part_translations:
   - - 146
     - 146
     - zh-CN
-    - ''
+    - "<div style=\"width:750px; margin:0 auto;\">\r\n<div>\r\n<img src=\"/assets/Products-hc-ex-50g_11.jpg\"
+      />\r\n</div>  \r\n<div>\r\n<img src=\"/assets/Products-hc-ex-50g_19.jpg\" />\r\n</div>
+      \ \r\n<div>\r\n<img src=\"/assets/Products-hc-ex-50g_22.jpg\" />\r\n</div>\r\n<div>\r\n<img
+      src=\"/assets/Products-hc-ex-50g_24.jpg\" />\r\n</div>\r\n<div>\r\n<img src=\"/assets/Products-hc-ex-50g_26.jpg\"
+      />\r\n</div>\r\n<div>\r\n<img src=\"/assets/Products-hc-ex-50g_27.jpg\" />\r\n</div>\r\n<div>\r\n<img
+      src=\"/assets/Products-hc-ex-50g_28.jpg\" />\r\n</div>\r\n<div>\r\n<img src=\"/assets/Products-hc-ex-50g_29.jpg\"
+      />\r\n</div>\r\n<div>\r\n<img src=\"/assets/Products-hc-ex-50g_30.jpg\" />\r\n</div>\r\n<div>\r\n<img
+      src=\"/assets/Products-hc-ex-50g_32.jpg\" />\r\n</div>\r\n<div>\r\n<img src=\"/assets/Products-hc-ex-50g_33.jpg\"
+      />\r\n</div>\r\n<div>\r\n<img src=\"/assets/Products-hc-ex-50g_35.jpg\" />\r\n</div>\r\n<div>\r\n<img
+      src=\"/assets/Products-hc-ex-50g_36.jpg\" />\r\n</div>\r\n<div>\r\n<img src=\"/assets/Products-hc-ex-50g_37.jpg\"
+      />\r\n</div>\r\n</div>"
     - 2013-09-05 17:11:52.000000000 Z
-    - 2013-09-05 17:11:52.000000000 Z
+    - 2013-09-12 03:42:43.000000000 Z
   - - 147
     - 147
     - zh-CN
@@ -1219,9 +1256,19 @@ refinery_page_part_translations:
   - - 149
     - 149
     - zh-CN
-    - ''
+    - "<div style=\"width:750px; margin:0 auto;\">\r\n<div>\r\n<img src=\"/assets/Products-hc-ex-100g_09.jpg\"
+      />\r\n</div>  \r\n<div>\r\n<img src=\"/assets/Products-hc-ex-100g_18.jpg\" />\r\n</div>
+      \ \r\n<div>\r\n<img src=\"/assets/Products-hc-ex-100g_21.jpg\" />\r\n</div>\r\n<div>\r\n<img
+      src=\"/assets/Products-hc-ex-100g_23.jpg\" />\r\n</div>\r\n<div>\r\n<img src=\"/assets/Products-hc-ex-100g_24.jpg\"
+      />\r\n</div>\r\n<div>\r\n<img src=\"/assets/Products-hc-ex-100g_25.jpg\" />\r\n</div>\r\n<div>\r\n<img
+      src=\"/assets/Products-hc-ex-100g_26.jpg\" />\r\n</div>\r\n<div>\r\n<img src=\"/assets/Products-hc-ex-100g_27.jpg\"
+      />\r\n</div>\r\n<div>\r\n<img src=\"/assets/Products-hc-ex-100g_29.jpg\" />\r\n</div>\r\n<div>\r\n<img
+      src=\"/assets/Products-hc-ex-100g_30.jpg\" />\r\n</div>\r\n<div>\r\n<img src=\"/assets/Products-hc-ex-100g_31.jpg\"
+      />\r\n</div>\r\n<div>\r\n<img src=\"/assets/Products-hc-ex-100g_32.jpg\" />\r\n</div>\r\n<div>\r\n<img
+      src=\"/assets/Products-hc-ex-100g_33.jpg\" />\r\n</div>\r\n<div>\r\n<img src=\"/assets/Products-hc-ex-100g_34.jpg\"
+      />\r\n</div>\r\n</div>"
     - 2013-09-05 17:12:03.000000000 Z
-    - 2013-09-05 17:12:03.000000000 Z
+    - 2013-09-12 03:51:35.000000000 Z
   - - 150
     - 150
     - zh-CN
@@ -1252,15 +1299,11 @@ refinery_page_part_translations:
       />\r\n</div>\r\n<div>\r\n<img src=\"/assets/Products-g-c75g+p75g_39.gif\" />\r\n</div>\r\n<div>\r\n<img
       src=\"/assets/Products-g-c75g+p75g_40.gif\" />\r\n</div>\r\n<div>\r\n<img src=\"/assets/Products-g-c75g+p75g_41.gif\"
       />\r\n</div>\r\n<div>\r\n<img src=\"/assets/Products-g-c75g+p75g_43.gif\" />\r\n</div>\r\n<div
-      style=\"width: 720px; float: left;\">\r\n<div style=\"float: left;\"><a href=\"#\"><img
-      style=\"border: 0px currentColor;\" src=\"/assets/Products-g-c75g+p75g_45.gif\"
-      /></a>\r\n</div>\r\n<div style=\"border: 0px currentColor; float: left;\"><a
-      href=\"#\"><img style=\"border: 0px currentColor;\" src=\"/assets/Products-g-c75g+p75g_46.gif\"
-      /></a>\r\n</div>\r\n<div style=\"border: 0px currentColor; float: right;\">
-      <a href=\"#\"><img style=\"border: 0px currentColor;\" src=\"/assets/Products-g-c75g+p75g_47.gif\"
-      /></a>\r\n</div>\r\n</div>\r\n\r\n</div>"
+      style=\"width: 720px; float: left;\">\r\n<div style=\"float: left;\"><br />\r\n</div>\r\n<div
+      style=\"border: 0px currentColor; float: left;\"><br />\r\n</div>\r\n<div style=\"border:
+      0px currentColor; float: right;\"> <br />\r\n</div>\r\n</div>\r\n\r\n</div>"
     - 2013-09-05 17:12:25.000000000 Z
-    - 2013-09-10 03:34:01.000000000 Z
+    - 2013-09-12 05:17:14.000000000 Z
   - - 153
     - 153
     - zh-CN
