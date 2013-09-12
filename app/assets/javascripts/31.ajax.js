@@ -313,3 +313,78 @@ function sendsurvey(){
 		alert ("请求发送失败，请稍候再试");
 	});
 }
+
+
+function addaddress(){
+	
+
+	if ($('#name').val().length < 2){
+		alert("请输入您的名字");
+		return;
+	}
+	
+	if ($('#mobile').val().length < 2){
+		alert("请输入您的名字");
+		return;
+	}
+	
+	if ($('#province').val().length > 0)
+	   var province = $('#province').val();
+	else {
+		alert ("请选择您所在的省");
+		return;
+	}
+	if ($('#city').val().length > 0)
+	   var city = $('#city').val();
+	else {
+		alert ("请选择您所在的市");
+		return;
+	}
+	if ($('#district').val().length > 0)
+	   var district = $('#district').val();
+	else {
+		alert ("请选择您所在的区");
+		return;
+	}	
+	
+	if($('#address').val().length < 0){
+		alert ("请输入您的详细地址");
+		return;
+	}else if($('#postalcode').val().length <6){
+		alert  ("请输入邮政编码");
+		return;
+	}
+	
+	var extensionnumber = 0;
+		if ($('#extensionnumber').val().length > 0)
+		extensionnumber = $('#extensionnumber').val()
+
+	$.ajax({
+		url:        "/membership/fillinfo.json",
+		type:       "POST",
+		dataType:   "json",
+		data:       {
+			id:			1,
+			mobile:		$('#mobile').val(),
+			phone:		$('areacode').val() + '-' + $('telephone').val() + '-' + $('extensionnumber').val(),
+			name:		$('#name').val(),
+			province:	province,
+			city:		city,
+			district:	district,
+			address: 	$('#address').val(),
+		}
+	}).done (function (resp) {
+		if(parseInt (resp.status) == 1) {
+			alert ("感谢您提交地址");       
+		}else {
+			    if (resp.description != null)
+				     alert (resp.description);
+			    else
+				     alert ("请求失败，请再检查一遍您的输入并稍候再试");
+		}
+	}).fail (function() {
+		alert ("请求发送失败，请稍候再试");
+	});
+}
+
+
