@@ -102,6 +102,6 @@ function sendlogin() {
 				$('#loginerr').html ("登录信息错误");
 		}
 	}).fail (function() {
-		alert ("请求发送失败，请稍候再试");
+		$('#loginerr').html ("请求发送失败，请稍候再试");
 	});
 }
