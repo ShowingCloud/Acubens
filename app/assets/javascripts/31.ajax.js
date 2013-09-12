@@ -360,7 +360,7 @@ function addaddress(){
 		extensionnumber = $('#extensionnumber').val()
 
 	$.ajax({
-		url:        "/membership/fillinfo.json",
+		url:        "/membership/addaddr.json",
 		type:       "POST",
 		dataType:   "json",
 		data:       {
