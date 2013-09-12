@@ -329,8 +329,6 @@ class MembershipController < ApplicationController
 	end
 
 
-	protected
-
 	def checklogin
 #		if not session[:login] or not session[:username]
 #			respond_with ret = { :status => "0" }, :location => nil and return
