@@ -1,5 +1,5 @@
-<%= render :partial => "/refinery/news/items/notice" if @category == 0 %> 
-<%= render :partial => "/refinery/news/items/info" if @category == 1 %>
+<%= render :partial => "/refinery/news/items/info" if @category == 0 %>
+<%= render :partial => "/refinery/news/items/notice" if @category == 1 %> 
 
 <% content_for :body_content_left do %>
 	<%=raw @page.content_for(Refinery::Pages.default_parts.first.to_sym) unless params[:page] %>

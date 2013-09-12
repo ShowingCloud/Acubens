@@ -1,5 +1,5 @@
-<%= render :partial => "/refinery/news/items/notice" if @item.category == 0 %> 
-<%= render :partial => "/refinery/news/items/info" if @item.category == 1 %> 
+<%= render :partial => "/refinery/news/items/info" if @item.category == 0 %> 
+<%= render :partial => "/refinery/news/items/notice" if @item.category == 1 %> 
 
 <% content_for :body_content_title, @item.title %>
 
