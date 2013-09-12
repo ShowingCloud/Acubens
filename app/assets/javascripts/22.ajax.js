@@ -70,10 +70,10 @@ function sendlogin() {
 	if ($('#name').val().length == 0) {
 		alert ("请输入您的用户名");
 		return;
-	}else if ($('#password').val().length < 6) {
+	}else if ($('#password').val().length == 0) {
 		alert ("密码太短了");
 		return;
-	}else if ($('#captcha').val().length < 6) {
+	}else if ($('#captcha').val().length == 0) {
 		alert ("请输入验证码");
 		return;
 	} 
@@ -92,13 +92,16 @@ function sendlogin() {
 	}).done (function (resp) {
 		if (parseInt (resp.status) == 1) {
 			location.reload();
-		} else {
+		} else if (parseInt (resp.status) == 2){
+			$('#loginerr').html ("验证码错误");
+		}
+			else {
 			if (resp.description != null)
 				alert (resp.description);
 			else
-				alert ("请求失败，请再检查一遍您的输入并稍候再试");
+				$('#loginerr').html ("登录信息错误");
 		}
 	}).fail (function() {
-		alert ("请求发送失败，请稍候再试");
+		$('#loginerr').html ("请求发送失败，请稍候再试");
 	});
 }
