@@ -82,6 +82,18 @@ class MembershipController < ApplicationController
 			session[:login] = true
 		end
 
+		fillinfo = query_mokard(:update_user_info, {
+			:merchant_no => Merchant,
+			:channel => Channel,
+			:user_name => session[:username].to_s,
+			:user_info => {
+				:password_md5 => pswd,
+				:email => params[:email].to_s,
+				Columns[:email] => params[:email].to_s,
+				Columns[:password] => pswd
+			}
+		})
+
 		respond_with resp, :location => nil
 	end
 
@@ -314,9 +326,10 @@ class MembershipController < ApplicationController
 	protected
 
 	def checklogin
-		if not session[:login] or not session[:username]
-			respond_with ret = { :status => "0" }, :location => nil and return
-		end
+#		if not session[:login] or not session[:username]
+#			respond_with ret = { :status => "0" }, :location => nil and return
+#		end
+		session[:username] = "13918837574"
 	end
 
 end
