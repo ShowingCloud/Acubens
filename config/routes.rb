@@ -1,5 +1,8 @@
 Acubens::Application.routes.draw do
 
+  resources :localities
+
+
   resources :skin_surveys
 
   resources :membership do

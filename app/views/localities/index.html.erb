@@ -1,0 +1,39 @@
+<h1>Listing localities</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Level</th>
+    <th>Parent</th>
+    <th>Sort</th>
+    <th>Areacode</th>
+    <th>Zipcode</th>
+    <th>Telcode</th>
+    <th>Freight paid</th>
+    <th>Freight cod</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @localities.each do |locality| %>
+  <tr>
+    <td><%= locality.name %></td>
+    <td><%= locality.level %></td>
+    <td><%= locality.parent %></td>
+    <td><%= locality.sort %></td>
+    <td><%= locality.areacode %></td>
+    <td><%= locality.zipcode %></td>
+    <td><%= locality.telcode %></td>
+    <td><%= locality.freight_paid %></td>
+    <td><%= locality.freight_cod %></td>
+    <td><%= link_to 'Show', locality %></td>
+    <td><%= link_to 'Edit', edit_locality_path(locality) %></td>
+    <td><%= link_to 'Destroy', locality, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Locality', new_locality_path %>

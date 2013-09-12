@@ -11,6 +11,9 @@ class CreateLocalities < ActiveRecord::Migration
 			t.integer :zipcode
 			t.integer :telcode
 
+			t.decimal :freight_paid, :precision => 5, :scale => 2, :default => 0
+			t.decimal :freight_cod, :precision => 5, :scale => 2, :default => 0
+
 			t.timestamps
 		end
 	end

@@ -1,0 +1,53 @@
+<%= form_for(@locality) do |f| %>
+  <% if @locality.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@locality.errors.count, "error") %> prohibited this locality from being saved:</h2>
+
+      <ul>
+      <% @locality.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :level %><br />
+    <%= f.number_field :level %>
+  </div>
+  <div class="field">
+    <%= f.label :parent %><br />
+    <%= f.number_field :parent %>
+  </div>
+  <div class="field">
+    <%= f.label :sort %><br />
+    <%= f.number_field :sort %>
+  </div>
+  <div class="field">
+    <%= f.label :areacode %><br />
+    <%= f.number_field :areacode %>
+  </div>
+  <div class="field">
+    <%= f.label :zipcode %><br />
+    <%= f.number_field :zipcode %>
+  </div>
+  <div class="field">
+    <%= f.label :telcode %><br />
+    <%= f.number_field :telcode %>
+  </div>
+  <div class="field">
+    <%= f.label :freight_paid %><br />
+    <%= f.text_field :freight_paid %>
+  </div>
+  <div class="field">
+    <%= f.label :freight_cod %><br />
+    <%= f.text_field :freight_cod %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  name: MyString
+  level: 1
+  parent: 1
+  sort: 1
+  areacode: 1
+  zipcode: 1
+  telcode: 1
+  freight_paid: 9.99
+  freight_cod: 9.99
+
+two:
+  name: MyString
+  level: 1
+  parent: 1
+  sort: 1
+  areacode: 1
+  zipcode: 1
+  telcode: 1
+  freight_paid: 9.99
+  freight_cod: 9.99

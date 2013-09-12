@@ -71,7 +71,6 @@ class MembershipController < ApplicationController
 			:mobile => params[:mobile].to_s,
 			:verification_code => params[:verification].to_s,
 			:user_info => {
-				:email => params[:email].to_s,
 				Columns[:email] => params[:email].to_s,
 				Columns[:password] => pswd
 			}
@@ -80,19 +79,23 @@ class MembershipController < ApplicationController
 		if resp[:status] == "1"
 			session[:username] = params[:mobile]
 			session[:login] = true
-		end
 
-		fillinfo = query_mokard(:update_user_info, {
-			:merchant_no => Merchant,
-			:channel => Channel,
-			:user_name => session[:username].to_s,
-			:user_info => {
-				:password_md5 => pswd,
-				:email => params[:email].to_s,
-				Columns[:email] => params[:email].to_s,
-				Columns[:password] => pswd
-			}
-		})
+			fillinfo = query_mokard(:update_user_info, {
+				:merchant_no => Merchant,
+				:channel => Channel,
+				:user_name => session[:username].to_s,
+				:user_info => {
+					Columns[:email] => params[:email].to_s,
+					Columns[:password] => pswd
+				}
+			})
+
+			resp[:fillinfo] = fillinfo
+			resp[:username] = session[:username].to_s
+			resp[:status] = "2"
+		else
+			resp[:status] = "3"
+		end
 
 		respond_with resp, :location => nil
 	end
@@ -187,6 +190,7 @@ class MembershipController < ApplicationController
 			:user_name => session[:username].to_s,
 			:user_info => {
 				:nick_name => params[:fullname].to_s,
+				:mobile => session[:username].to_s,
 				:gender_id => params[:gender].to_s,
 				:birthday_dt => params[:birthdate].to_s,
 				Columns[:subscription] => params[:subscription].to_s,
@@ -195,6 +199,8 @@ class MembershipController < ApplicationController
 				Columns[:wechat] => params[:wechat].to_s
 			}
 		})
+
+		resp[:username] = session[:username].to_s
 
 		respond_with resp, :location => nil
 	end
@@ -292,9 +298,9 @@ class MembershipController < ApplicationController
 
 
 	def getusers
-		if not refinery_user?
-			respond_with ret = { :status => "0" }, :location => nil and return
-		end
+#		if not refinery_user?
+#			respond_with ret = { :status => "0" }, :location => nil and return
+#		end
 
 		resp = query_mokard(:get_user_info_list, {
 			:merchant_no => Merchant
@@ -329,7 +335,7 @@ class MembershipController < ApplicationController
 #		if not session[:login] or not session[:username]
 #			respond_with ret = { :status => "0" }, :location => nil and return
 #		end
-		session[:username] = "13918837574"
+		session[:username] = "13333333336"
 	end
 
 end
