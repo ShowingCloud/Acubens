@@ -1,6 +1,6 @@
 <!doctype html>
 <html>
-<!--<% content_for :javascripts do %>
+<% content_for :javascripts do %>
 	<script>
 		<% if session[:login] %>
 			$(document).ready ();
@@ -8,9 +8,9 @@
 			$(document).ready (login);
 		<% end %>
 	</script>
-<% end %>  -->
+<% end %>  
 <body>
-
+<form>
 <div class="middle-xp">
 
 
@@ -105,7 +105,7 @@
                       <tr>
                               <td   class="firstlogin_middle_2">*</td>
                               <td   class="firstlogin_middle_3">邮&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;箱：</td>
-                              <td   class="firstlogin_middle_4" ><input id="email" type="text" class="firstlogin_middle_5"></td>
+                              <td   class="firstlogin_middle_4" ><input id="email" type="text" class="firstlogin_middle_5" disabled></td>
                               <td   class="firstlogin_middle_6" >邮箱可作为登陆账号，并别收重要通知及最新优惠信息等。</td>
                      </tr>
                </table>
@@ -113,7 +113,7 @@
                       <tr>
                               <td   class="firstlogin_middle_2">*</td>
                               <td   class="firstlogin_middle_3">密&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;码：</td>
-                              <td   class="firstlogin_middle_4" ><input id="password" type="password" class="firstlogin_middle_5"></td>
+                              <td   class="firstlogin_middle_4" ><input id="password" type="password" class="firstlogin_middle_5" disabled></td>
                               <td   class="firstlogin_middle_6" >6-20位字符，可由大小写字母，数字或符号组成。</td>
                      </tr>
                </table>
@@ -121,7 +121,7 @@
                       <tr>
                               <td   class="firstlogin_middle_2">*</td>
                               <td   class="firstlogin_middle_3">密码确认:</td>
-                              <td   class="firstlogin_middle_4" ><input id="identification" type="password" class="firstlogin_middle_5"></td>
+                              <td   class="firstlogin_middle_4" ><input id="identification" type="password" class="firstlogin_middle_5" disabled ></td>
                      </tr>
                </table>
                <table class="firstlogin_middle_1"  border="0" cellspacing="0" cellpadding="0">
@@ -230,7 +230,7 @@
                       <tr>
                               <td    class="firstlogin_middle_2">*</td>
                               <td    class="firstlogin_middle_3">手机号码:</td>
-                              <td    class="firstlogin_middle_4" ><input id="mobile" type="text" class="firstlogin_middle_5"></td>
+                              <td    class="firstlogin_middle_4" ><input id="mobile" type="text" class="firstlogin_middle_5" disabled></td>
                      </tr>
                </table>
                <table   class="firstlogin_middle_1" border="0" cellpadding="0" cellspacing="0" >
@@ -319,5 +319,7 @@
           </div>
      </div>
 </div>
+</form>
 </body>
+
 </html>

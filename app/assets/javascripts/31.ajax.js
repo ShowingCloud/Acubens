@@ -1,37 +1,17 @@
 function sendfirstinfo(){
-	if ($('#email').val().length < 10){
-		alert ("请输入您的邮箱");
-		return;
-	}else if ($('#password').val().length < 6){
-		alert ("密码至少为6位，请重新输入");
-		return;
-	}else if ($('#password').val() != $('#identification').val()){
-		alert("密码不匹配，请重新输入");
-		return;
-	}else if ($('#name').val().length < 2){
+	if ($('#name').val().length < 2){
 		alert("请输入您的名字");
 		return;
 	}
 	
-	if ($('input[name="year"]:checked').length > 0)
-	    var year = $('input[name="year"]:checked').val();
-	else {
-		alert("请选择您的生日年份");
-		return;
-	}
-	if ($('input[name="month"]:checked').length > 0)
-	    var month = $('input[name="month"]:checked').val();
-	else {
-		alert("请选择您的生日月份");
-		return;
-	}
-	if ($('input[name="day"]:checked').length > 0)
-	    var day = $('input[name="day"]:checked').val();
-	else {
-		alert("请选择您的生日日期");
-		return;
-	}
 	
+	var year = $('#year').val();
+		
+	var month = $('#month').val();
+		
+	var day = $('#day').val();
+
+
 	if ($('input[name="sex"]:checked').length > 0)
 		var gender = $('input[name="sex"]:checked').val();
 	else {
@@ -39,10 +19,6 @@ function sendfirstinfo(){
 		return;
 	}
 	
-	if ($('#mobile').val().length < 11){
-		alert("请输入您的手机号码");
-		return;
-	}
 	
 	if ($('input[name="magazine"]:checked').length > 0)
 	   var magazine = $('input[name="magazine"]:checked').val();
@@ -51,20 +27,20 @@ function sendfirstinfo(){
 		return;
 	}
 	
-	if ($('input[name="province"]:checked').length > 0)
-	   var province = $('input[name="province"]:checked').val();
+	if ($('#province').val().length > 0)
+	   var province = $('#province').val();
 	else {
 		alert ("请选择您所在的省");
 		return;
 	}
-	if ($('input[name="city"]:checked').length > 0)
-	   var city = $('input[name="city"]:checked').val();
+	if ($('#city').val().length > 0)
+	   var city = $('#city').val();
 	else {
 		alert ("请选择您所在的市");
 		return;
 	}
-	if ($('input[name="district"]:checked').length > 0)
-	   var district = $('input[name="district"]:checked').val();
+	if ($('#district').val().length > 0)
+	   var district = $('#district').val();
 	else {
 		alert ("请选择您所在的区");
 		return;
@@ -106,7 +82,7 @@ function sendfirstinfo(){
 	}).done (function (resp) {
 		if(parseInt (resp.status) == 1) {
 			alert ("感谢您填写完成您的个人信息");
-			location.href = "/";               
+			location.href = "/home/%E8%B0%83%E6%9F%A5%E9%97%AE%E5%8D%B7";               
 		}else {
 			    if (resp.description != null)
 				     alert (resp.description);
@@ -117,6 +93,82 @@ function sendfirstinfo(){
 		alert ("请求发送失败，请稍候再试");
 	});
 }
+
+function sendchangeinfo(){
+	
+
+	if ($('input[name="magazine"]:checked').length > 0)
+	   var magazine = $('input[name="magazine"]:checked').val();
+	else {
+		alert ("请选择是否订阅电子杂志");
+		return;
+	}
+	
+	if ($('#province').val().length > 0)
+	   var province = $('#province').val();
+	else {
+		alert ("请选择您所在的省");
+		return;
+	}
+	if ($('#city').val().length > 0)
+	   var city = $('#city').val();
+	else {
+		alert ("请选择您所在的市");
+		return;
+	}
+	if ($('#district').val().length > 0)
+	   var district = $('#district').val();
+	else {
+		alert ("请选择您所在的区");
+		return;
+	}	
+	
+	if($('#address').val().length < 0){
+		alert ("请输入您的详细地址");
+		return;
+	}else if($('#postalcode').val().length <6){
+		alert  ("请输入邮政编码");
+		return;
+	}
+	
+	var extensionnumber = 0;
+		if ($('#extensionnumber').val().length > 0)
+		extensionnumber = $('#extensionnumber').val()
+	
+	var weibo = 0;
+		if ($('#weibo').val().length > 0)
+		weibo = $('#weibo').val()
+	
+	var weixin = 0;
+		if ($('#weixin').val().length > 0)
+		weibo = $('#weixin').val()
+
+	$.ajax({
+		url:        "/membership/fillinfo.json",
+		type:       "POST",
+		dataType:   "json",
+		data:       {
+			subscription:		magazine,
+			phone:				$('areacode').val() + '-' + $('telephone').val() + '-' + $('extensionnumber').val(),
+			weibo:				$('weibo').val(),
+			wechat:				$('weixin').val(),
+		}
+	}).done (function (resp) {
+		if(parseInt (resp.status) == 1) {
+			alert ("感谢您填写完成您的个人信息");
+			location.href = "/%E4%BC%9A%E5%91%98%E4%B8%93%E5%8C%BA/%E4%BC%9A%E5%91%98%E4%B8%AD%E5%BF%83/%E4%B8%AA%E4%BA%BA%E4%BF%A1%E6%81%AF";               
+		}else {
+			    if (resp.description != null)
+				     alert (resp.description);
+			    else
+				     alert ("请求失败，请再检查一遍您的输入并稍候再试");
+		}
+	}).fail (function() {
+		alert ("请求发送失败，请稍候再试");
+	});
+}
+
+
 
 function getmeminfo() {
 
@@ -250,7 +302,7 @@ function sendsurvey(){
 	}).done (function (resp) {
 		if(parseInt (resp.status) == 1) {
 			alert ("感谢您填写完成您的个人信息");
-			location.href = "/";               
+			location.href = "/home/%E9%97%AE%E5%8D%B7%E5%AE%8C%E6%88%90";               
 		}else {
 			    if (resp.description != null)
 				     alert (resp.description);
@@ -261,3 +313,78 @@ function sendsurvey(){
 		alert ("请求发送失败，请稍候再试");
 	});
 }
+
+
+function addaddress(){
+	
+
+	if ($('#name').val().length < 2){
+		alert("请输入您的名字");
+		return;
+	}
+	
+	if ($('#mobile').val().length < 2){
+		alert("请输入您的名字");
+		return;
+	}
+	
+	if ($('#province').val().length > 0)
+	   var province = $('#province').val();
+	else {
+		alert ("请选择您所在的省");
+		return;
+	}
+	if ($('#city').val().length > 0)
+	   var city = $('#city').val();
+	else {
+		alert ("请选择您所在的市");
+		return;
+	}
+	if ($('#district').val().length > 0)
+	   var district = $('#district').val();
+	else {
+		alert ("请选择您所在的区");
+		return;
+	}	
+	
+	if($('#address').val().length < 0){
+		alert ("请输入您的详细地址");
+		return;
+	}else if($('#postalcode').val().length <6){
+		alert  ("请输入邮政编码");
+		return;
+	}
+	
+	var extensionnumber = 0;
+		if ($('#extensionnumber').val().length > 0)
+		extensionnumber = $('#extensionnumber').val()
+
+	$.ajax({
+		url:        "/membership/addaddr.json",
+		type:       "POST",
+		dataType:   "json",
+		data:       {
+			id:			1,
+			mobile:		$('#mobile').val(),
+			phone:		$('areacode').val() + '-' + $('telephone').val() + '-' + $('extensionnumber').val(),
+			name:		$('#name').val(),
+			province:	province,
+			city:		city,
+			district:	district,
+			address: 	$('#address').val(),
+		}
+	}).done (function (resp) {
+		if(parseInt (resp.status) == 1) {
+			alert ("感谢您提交地址");       
+		}else {
+			    if (resp.description != null)
+				     alert (resp.description);
+			    else
+				     alert ("请求失败，请再检查一遍您的输入并稍候再试");
+		}
+	}).fail (function() {
+		alert ("请求发送失败，请稍候再试");
+	});
+}
+
+

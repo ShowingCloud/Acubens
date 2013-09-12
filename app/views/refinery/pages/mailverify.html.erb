@@ -45,7 +45,7 @@
   
   <li class="member-text3" >
   <img src="/assets/img/right-angle-empty.png" class="img-margin2" >
- <a href="/%E4%BC%9A%E5%91%98%E4%B8%93%E5%8C%BA/%E4%BC%9A%E5%91%98%E4%B8%AD%E5%BF%83/%E6%88%91%E7%9A%84%E7%A7%AF%E5%88%86">我的积分</a></li>
+ <a href="/%E4%BC%9A%E5%91%98%E4%B8%93%E5%8C%BA/%E4%BC%9A%E5%91%98%E4%B8%AD%E5%BF%83/%E6%88%91%E7%9A%84%E7%A7%AF%E5%88%86">我的积分及订单历史</a></li>
   
   <li class="member-text3" >
   <img src="/assets/img/right-angle-empty.png" class="img-margin2" >
@@ -57,7 +57,7 @@
   
   <li class="member-text3" >
   <img src="/assets/img/right-angle-empty.png" class="img-margin2">
-  <a href="/%E4%BC%9A%E5%91%98%E4%B8%93%E5%8C%BA/%E4%BC%9A%E5%91%98%E4%B8%AD%E5%BF%83/%E6%88%91%E7%9A%84%E8%AE%A2%E5%8D%95">我的订单</a></li>
+  <a href="/%E4%BC%9A%E5%91%98%E4%B8%93%E5%8C%BA/%E4%BC%9A%E5%91%98%E4%B8%AD%E5%BF%83/%E6%94%B6%E8%B4%A7%E5%9C%B0%E5%9D%80%E7%AE%A1%E7%90%86">收货地址管理</a></li>
  
   
   </ul>
@@ -103,9 +103,9 @@
                        
                                <ul>
                                      <li class="resetpw_middle_txt3">注册手机：&nbsp;&nbsp;</li>
-                                     <li class="resetpw_middle_txt2"> <input type="text" name="oldpassword"></li>
+                                     <li class="resetpw_middle_txt2"> <input type="text" id="mobile"></li>
                                      <li class="resetpw_middle_txt3">手机验证码：&nbsp;&nbsp;</li>
-                                     <li class="resetpw_middle_txt3" style="margin: 0px 0px 0px -13px;"><input type="text" name="newpassword" style="width: 120px"></li> 
+                                     <li class="resetpw_middle_txt3" style="margin: 0px 0px 0px -13px;"><input type="text" id="telidentification" name="newpassword" style="width: 120px"></li> 
                                      <li class="resetpw_middle_txt2"><input class="content_2_table3" style="width: 90px;margin-left:20px;margin-top:7px" type="button" onclick="sendmobile()" value="发送验证码" id="send" >               
            									</li>    
                                </ul>
@@ -118,10 +118,10 @@
                                                               
                                
                                      <li class="resetpw_middle_txt1">新密码:</li>
-                                     <li class="resetpw_middle_txt2" style="margin: 0px 0px 0px 88px;"> <input type="password" id="oldpassword"></li>
+                                     <li class="resetpw_middle_txt2" style="margin: 0px 0px 0px 88px;"> <input type="password" id="password2"></li>
                                      <li class="resetpw_middle_txt3">确认密码:&nbsp;</li>
-                                     <li class="resetpw_middle_txt2" style="margin: 0px 0px 0px 88px;"> <input type="password" id="newpassword">
-                                     &nbsp;&nbsp;密码两次填写不相同，请重新确认！</li>    
+                                     <li class="resetpw_middle_txt2" style="margin: 0px 0px 0px 88px;"> <input type="password" id="identification">
+                                     </li>    
                                </ul>
                        
                 </div>
@@ -129,7 +129,7 @@
            </div>
            <div class="resetpw_bottom">               
                 <div class="findpw_bottom_next">
-                      <input type="submit" value="下一步" name="savepassword" >
+                      <input type="submit" value="下一步" name="savepassword" onclick="sendchangepass()">
                 </div>                              
           </div>
      </div>

@@ -145,15 +145,15 @@
                               <td   class="firstlogin_middle_3">固定电话：</td>
                               <td   class="firstlogin_middle_11_1" ><input id="areacode" type="text" class="firstlogin_middle_11_2"></td>
                               <td   class="firstlogin_middle_11_7" >区号</td>
-                              <td   class="firstlogin_middle_11_3" ><input id="telephone " type="text" class="firstlogin_middle_11_5"></td>
+                              <td   class="firstlogin_middle_11_3" ><input id="telephone" type="text" class="firstlogin_middle_11_5"></td>
                               <td   class="firstlogin_middle_11_4" >电话号码</td>
-                              <td   class="firstlogin_middle_11_1" ><input id="extensionnumber " type="text" class="firstlogin_middle_11_2"></td>
+                              <td   class="firstlogin_middle_11_1" ><input id="extensionnumber" type="text" class="firstlogin_middle_11_2"></td>
                               <td   class="firstlogin_middle_11_6" >分机号</td>
                      </tr>     
                </table>
                <div class="resetpw_bottom">               
                      <div class="resetpw_bottom_save">
-                              <input id="saveadd"   type="submit" value="完成并保存"  >
+                              <input id="saveadd"   type="submit" value="完成并保存"  onclick="addaddress()">
                      </div>                                                          
                </div>
                
@@ -173,15 +173,15 @@
                      </tr>
                </table>
                <table class="add_tab2"  border="0" cellspacing="0" cellpadding="0">
-               		<% session[:cart].each do |addressid| %>
+               		
                       <tr>
-                      		  <td><input type="hidden" id="addressid" value=<%= "#{addressid}" %> /></td>	
-                              <td   class="add_td1"><label id="name">X女士</label></td>
-                              <td   class="add_td2"><label id="province">上海市浦东新区</label></td>
-                              <td   class="add_td3"><label id="address">峨山路91弄浦东陆家嘴软件园120号4-5楼 </label></td>
-                              <td   class="add_td2"><label id="tel">13700000000</label></td>
-                              <td   class="add_td2"><label id="zipcode">200000</label></td>
-                              <td   class="add_td2"><label id="fixtel"></label></td>
+                      		  
+                              <td   class="add_td1"><label id="name2">X女士</label></td>
+                              <td   class="add_td2"><label id="province2">上海市浦东新区</label></td>
+                              <td   class="add_td3"><label id="address2">峨山路91弄浦东陆家嘴软件园120号4-5楼 </label></td>
+                              <td   class="add_td2"><label id="tel2">13700000000</label></td>
+                              <td   class="add_td2"><label id="zipcode2">200000</label></td>
+                              <td   class="add_td2"><label id="fixtel2"></label></td>
                               <td   class="add_td1">
                                      <div class="add_mod">
                                            <input id="modify"   type="button" value="修改"  >
@@ -191,7 +191,7 @@
                                      </div>
                               </td>
                      </tr>
-                    <% end %>
+                   
                </table>
            
           
@@ -199,53 +199,5 @@
        
 </div>
 </div>
-</body>
-<% content_for :javascripts do %>
-<script type="text/javascript">
-function getproductcart() {
-	$('.add_tab2 tr').each (function() {
-		var productid = $(this).find ('addressid').val();
 
-		$.ajax ({
-			url: "/products/" + productid + ".json",
-			type: "GET",
-			dataType: "json",
-			context: this
-		}).done (function (resp) {
-			if (resp != null) {
-				if (resp.product_name)
-					$(this).find ('#name').html (resp.product_name);
-
-				if (resp.product_pic)
-					$(this).find ('#province').prop (resp.product_pic);
-
-				if (resp.price)
-					$(this).find ('#address').html (resp.product_name);
-				
-				if (resp.price)
-					$(this).find ('#tel').html (resp.product_name);
-				
-				if (resp.price)
-					$(this).find ('#zipcode').html (resp.product_name);
-					
-				if (resp.price)
-					$(this).find ('#fixtel').html (resp.product_name);
-
-				productCount();
-
-			} else {
-				if (resp.description != null)
-					alert (resp.description);
-				else
-					alert("请求失败，请再检查一遍您的输入并稍候再试");
-			}
-		}).fail (function() {
-			alert("请求发送失败，请稍候再试");
-		});
-	});
-}
-
-
-</script>
-<% end %>
 </html>
