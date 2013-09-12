@@ -20,6 +20,9 @@ class MembershipController < ApplicationController
 	Channel = "Gelnic"
 	Merchant = "1591"
 
+	Columns = { :subscription => :column1, :postal => :column2, :phone => :column3, :weibo => :column4,
+			:wechat => :column5, :taobao => :column6, :yihao => :column7, :email => :column8, :password => :column9}
+
 
 	def index
 		redirect_to "/"
@@ -69,6 +72,8 @@ class MembershipController < ApplicationController
 			:verification_code => params[:verification].to_s,
 			:user_info => {
 				:email => params[:email].to_s,
+				Columns[:email] => params[:email].to_s,
+				Columns[:password] => pswd
 			}
 		})
 
@@ -95,7 +100,11 @@ class MembershipController < ApplicationController
 			:user_name => params[:username].to_s
 		})
 
-		pswd = resp[:return_value][:password_md5]
+		if not resp
+			respond_with ret = { :status => "0", :description => "No such user" }, :location => nil and return
+		end
+
+		pswd = resp[:return_value][Columns[:password]]
 		pswd = Base64.strict_decode64 pswd
 
 		cipher = OpenSSL::Cipher::Cipher.new 'DES3'
@@ -106,8 +115,8 @@ class MembershipController < ApplicationController
 		iv.update params[:username].to_s
 		cipher.iv = iv.hexdigest
 
-		clearpswd = cipher.update pswd
-		clearpswd << cipher.final
+		clearpswd = cipher.update pswd rescue nil
+		clearpswd << cipher.final rescue nil
 
 		hash = Digest::SHA256.new
 		hash.update clearpswd
@@ -120,7 +129,8 @@ class MembershipController < ApplicationController
 			session[:login] = true
 			respond_with ret = { :status => "1" }, :location => nil
 		else
-			respond_with ret = { :status => "0", :hash => hash.hexdigest, :pswd => params[:password], :clear => clearpswd, :resp => resp }, :location => nil
+			respond_with ret = { :status => "0", :hash => hash.hexdigest, :pswd => params[:password],
+					   :clear => clearpswd, :resp => resp, :description => "Wrong password" }, :location => nil
 		end
 	end
 
@@ -167,10 +177,10 @@ class MembershipController < ApplicationController
 				:nick_name => params[:fullname].to_s,
 				:gender_id => params[:gender].to_s,
 				:birthday_dt => params[:birthdate].to_s,
-				:column1 => params[:subscription].to_s,
-				:column2 => params[:phone].to_s,
-				:column3 => params[:weibo].to_s,
-				:column4 => params[:wechat].to_s
+				Columns[:subscription] => params[:subscription].to_s,
+				Columns[:phone] => params[:phone].to_s,
+				Columns[:weibo] => params[:weibo].to_s,
+				Columns[:wechat] => params[:wechat].to_s
 			}
 		})
 
