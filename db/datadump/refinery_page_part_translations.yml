@@ -543,8 +543,9 @@ refinery_page_part_translations:
       \                      </ul>\r\n                 </div>\r\n                 <div
       class=\"customer_middle\">\r\n                       <div id=\"content_1\">
       \ \r\n                              <div class=\"content_1_1\">\r\n                                    <div
-      class=\"content_1_1_left\" style=\"margin-top:19px;\">\r\n                                          <img
-      src=\"/assets/customer-voice-19.jpg\" />\r\n                                    </div>
+      class=\"content_1_1_left\" style=\"margin-top:19px;\">\r\n                                         <div
+      class=\"content_1_pic01\">\r\n                                          <img
+      src=\"/assets/customer-voice-19.jpg\" /></div>\r\n                                    </div>
       \r\n                                    <div class=\"content_1_1_right\">\r\n
       \                                         <h3>東京都　T・A 女士</h3>\r\n                                          <h3>[
       能遇见这么好的商品，真是太好了 ]</h3>\r\n                                          <p>到冬天的话脸特别是嘴巴周围特别干燥，像是涂了层粉一般，特别苦恼，我的义母给我推荐了Home
@@ -553,8 +554,9 @@ refinery_page_part_translations:
       \  \r\n                                     <div style=\"clear:both\"></div>
       \                                \r\n                              </div>\r\n
       \                             <div class=\"content_1_2\">\r\n                                     <div
-      class=\"content_1_1_left\">\r\n                                          <img
-      class=\"content_1_pic01\" src=\"/assets/customer-voice_23.jpg\" />\r\n                                     </div>\r\n
+      class=\"content_1_1_left\">\r\n                                         <div
+      class=\"content_1_pic01\">\r\n                                          <img
+      src=\"/assets/customer-voice_23.jpg\" /></div>\r\n                                     </div>\r\n
       \                                    <div class=\"content_1_1_right\">\r\n                                           <h3>山口县　K・Ｕ
       女士  </h3>\r\n                                           <h3>[ 朋友夸我皮肤好呢！ ]</h3>\r\n
       \                                          <p>朋友夸我「肌肤紧致，小皱纹很少」。</p>\r\n                                           <p>我每次都涂抹很多Home
@@ -562,23 +564,26 @@ refinery_page_part_translations:
       \                                    </div>\r\n                                     <div
       style=\"clear:both\"></div>\r\n                              </div> \r\n                                <div
       class=\"content_1_1\">\r\n                                    <div class=\"content_1_1_left\">\r\n
-      \                                         <img class=\"content_1_pic01\" src=\"/assets/customer-voice_25.jpg\"
-      />\r\n                                    </div> \r\n                                     <div
+      \                                         <div class=\"content_1_pic01\">\r\n
+      \                                         <img src=\"/assets/customer-voice_25.jpg\"
+      /></div>\r\n                                    </div> \r\n                                     <div
       class=\"content_1_1_right\">\r\n                                          <h3>埼玉县　Ｎ・Ｎ女士</h3>\r\n
       \                                         <h3>[ 最适合怕麻烦的我啦！ ]</h3>\r\n                                          <p>洗完澡、洗完脸后，只需这一瓶就够了，最适合怕麻烦的我啦（笑）。抱着小宝宝的时候，使用按压装的话只要用一只手轻轻一按就能涂抹了…我的肌肤很干燥，一到冬天或者季节更替的时候，总是要去皮肤科看医生，皮肤和脖子周围也会有干燥的时候，用了2年之后，再也不用去皮肤科了，冬天的肌肤也不干燥了。尽情使用的话价格也很令人满意！</p>\r\n
       \                                    </div>  \r\n                                     <div
       style=\"clear:both\"></div>                                  \r\n                              </div>
       \r\n                                <div class=\"content_1_2\">\r\n                                     <div
-      class=\"content_1_1_left\">\r\n                                          <img
-      class=\"content_1_pic02\" src=\"/assets/customer-voice_27.jpg\" />\r\n                                     </div>\r\n
+      class=\"content_1_1_left\">\r\n                                          <div
+      class=\"content_1_pic01\">\r\n                                          <img
+      src=\"/assets/customer-voice_27.jpg\" /></div>\r\n                                     </div>\r\n
       \                                    <div class=\"content_1_1_right\">\r\n                                           <h3>奈良县　Ｍ・Ｍ
       女士  </h3>\r\n                                           <h3>[ 家里人都很喜欢用它来护理肌肤！
       ]</h3>\r\n                                           <p>老公肌肤很干燥，为此很是烦恼，很多年来一直在寻找能温柔滋润肌肤的乳液，直到遇见了温和的简妮产品！有一次碰见老家的老妈正好在用，她强烈推荐我一定要试试看，所以就开始使用了。使用之后，老公和宝宝都会在洗完澡后涂抹，一家人用的不亦可乎。现在已经成了家人微笑护肤的必备品，我每天的化妆也更加令人期待呢。老公的肌肤比起之前虽然谈不上完美改善，但是干燥粗糙的情况已经大有改善呢。</p>\r\n
       \                                          <p>今后也会继续使用的。</p>\r\n                                     </div>\r\n
       \                                    <div style=\"clear:both\"></div>\r\n                              </div>\r\n
       \                              <div class=\"content_1_1\">\r\n                                    <div
-      class=\"content_1_1_left\">\r\n                                          <img
-      class=\"content_1_pic03\" src=\"/assets/customer-voice_29.jpg\" />\r\n                                    </div>
+      class=\"content_1_1_left\">\r\n                                          <div
+      class=\"content_1_pic01\">\r\n                                          <img
+      src=\"/assets/customer-voice_29.jpg\" /></div>\r\n                                    </div>
       \r\n                                    <div class=\"content_1_1_right\">\r\n
       \                                         <h3>北海道　Ｋ・Ｔ 女士</h3>\r\n                                          <h3>[
       今后又多了一个喜爱简妮的理由呢！ ]</h3>\r\n                                          <p>只需一个产品就能完成护肤，方便简单，我已经持续用了10年了。现在只要不涂抹的话，我和肌肤都会觉得有些缺少些什么呢。涂抹后的润泽感，直到第二天也能保持滋润，一点也不干燥紧绷。老公和小孩每天早晚也会使用，一家人整个冬天都没有肌肤干燥的感觉呢。</p>\r\n
@@ -586,8 +591,9 @@ refinery_page_part_translations:
       \         \r\n                                     <div style=\"clear:both\"></div>
       \                               \r\n                              </div> \r\n
       \                            <div class=\"content_1_2\">\r\n                                     <div
-      class=\"content_1_1_left\">\r\n                                          <img
-      class=\"content_1_pic02\" src=\"/assets/customer-voice-31.jpg\" />\r\n                                     </div>\r\n
+      class=\"content_1_1_left\">\r\n                                          <div
+      class=\"content_1_pic01\">\r\n                                          <img
+      src=\"/assets/customer-voice-31.jpg\" /></div>\r\n                                     </div>\r\n
       \                                   <div class=\"content_1_1_right\">\r\n                                           <h3>千叶县　Ｔ・Ｓ
       小姐</h3>\r\n                                           <h3>[ 我最必不可少的必需品！ ]</h3>\r\n
       \                                          <p>肌肤干燥让我很是苦恼，尝试了很多种产品都不能让我满意。一个朋友向我推荐了这款产品，第一次用的瞬间便感觉\"太神奇了！！\"。之前的肌肤问题一扫而空。这款Home
@@ -595,8 +601,9 @@ refinery_page_part_translations:
       \                                    </div>\r\n                                     <div
       style=\"clear:both\"></div>\r\n                             </div> \r\n                             <div
       class=\"content_1_1\">\r\n                                    <div class=\"content_1_1_left\">\r\n
-      \                                         <img class=\"content_1_pic03\" src=\"/assets/customer-voice_33.jpg\"
-      /> \r\n                                                                        </div>\r\n
+      \                                         <div class=\"content_1_pic01\">\r\n
+      \                                         <img src=\"/assets/customer-voice_33.jpg\"
+      /> </div>\r\n                                                                        </div>\r\n
       \                                   <div class=\"content_1_1_right\">\r\n                                          <h3>愛知县　Ｎ・Ｏ
       女士</h3>\r\n                                          <h3>[ 持续用了２０多年！ ]</h3>\r\n
       \                                         <p>进入公司的20多年前开始就一直有在用。</p>\r\n                                          <p>使用简单，护肤效果也很好，向周围4个朋友都介绍了，都很喜欢。</p>\r\n
@@ -604,8 +611,9 @@ refinery_page_part_translations:
       \       \r\n                                    <div style=\"clear:both\"></div>
       \                            \r\n                            </div>\r\n                             <div
       class=\"content_1_2\">\r\n                                     <div class=\"content_1_1_left\">\r\n
-      \                                         <img class=\"content_1_pic03\" src=\"/assets/customer-voice_35.jpg\"
-      />\r\n                                                                         </div>\r\n
+      \                                         <div class=\"content_1_pic01\">\r\n
+      \                                         <img src=\"/assets/customer-voice_35.jpg\"
+      /></div>\r\n                                                                         </div>\r\n
       \                                   <div class=\"content_1_1_right\">\r\n                                           <h3>宮城县　Ｒ・Ｆ女士</h3>\r\n
       \                                          <h3>[ 家里人都很喜欢用 ]</h3>\r\n                                           <p>家里人都很喜欢用。</p>\r\n
       \                                          <p>儿子出生的时候，朋友把这款产品作为礼物送给我，于是今后就一直用到现在。</p>\r\n
@@ -623,7 +631,7 @@ refinery_page_part_translations:
       \                      </div>\r\n                 </div>\r\n           \r\n
       \         </div> "
     - 2013-09-03 15:45:14.000000000 Z
-    - 2013-09-12 05:30:46.000000000 Z
+    - 2013-09-12 16:09:18.000000000 Z
   - - 89
     - 89
     - zh-CN
@@ -641,7 +649,7 @@ refinery_page_part_translations:
       \                     </div>\r\n                      <div class=\"rightclass_middle_right04\">
       \                          \r\n                             <div class=\"rightclass_middle_txt03\">季節が変わる時期、お肌は乾燥しがちになるもの。またお肌が乾燥しすぎると、むず痒さすら感じる程、敏感になる場合があります。お肌にとって「保湿潤いケア」とは、何より一番先に解決しなければならない問題です。まずは「保湿潤いケア」から、その後にやっと「美白・吹出物ケア」が可能になります。<br
       />&#160;「保湿ケア」では、保湿成分を含んだブロック力の強いクリームにて、水分や油分が不足している部分へすばやく浸透させ、バランスのとれた肌にします。「潤いケア」では、肌の乾燥がもたらす不調を和らげ、肌の新陳代謝と水分キープ力をアップさせることで、たるみや水分流出を防ぎ、小ジワやシワの発生を減少させ、しっとり滑らかでハリと潤いのある美肌にします。<br
-      />\r\n <span class=\"rightclass_middle_txt01\">【译文】保湿补水的重要性</span>\r\n<br />换季的时候，肌肤变得异常干燥，甚至会感到涩痒难忍继而出现敏感征兆，保湿补水是一切问题肌肤首要解决的问题。只有做好保湿补水工作，才能进一步为美白和祛痘打下基础。<br
+      />\r\n <p class=\"rightclass_middle_txt01\">【译文】保湿补水的重要性</p>\r\n<br />换季的时候，肌肤变得异常干燥，甚至会感到涩痒难忍继而出现敏感征兆，保湿补水是一切问题肌肤首要解决的问题。只有做好保湿补水工作，才能进一步为美白和祛痘打下基础。<br
       />\r\n保湿要抹添加保湿成分、防护性强的面霜，将水份与油份恰如其分地释放至肌肤所需部位，快速渗透至肌肤底层，帮助皮肤达成最佳的水油平衡。\r\n补水可以缓解干燥带来的不适，增强细胞活力，有效锁住水分，避免皮肤保护层内弹性及水分的流失，使皮肤湿润光滑，时刻柔软舒适，减少细纹及皱纹的出现，缔造润泽美肌。</div>\r\n
       \                     </div>\r\n\r\n                </div>\r\n           </div>\r\n
       \          <div class=\"classcontent_middle\">\r\n                <div class=\"classcontent_middle_left\">\r\n
@@ -668,7 +676,7 @@ refinery_page_part_translations:
       />\r\n<p style=\"color: rgb(110, 185, 43); font-size: 14px;\">【译文】清洁注意事项</p>\r\n洗脸，是每个人每天必须做的事情。脸部清洁绝对是保养之前最重要的步骤，那么，如何清洁面部才是正确的呢？首先必须把手洗净，否则洗面乳都用来洗手了，有泡沫的洗面乳可以先把洁面乳在手心充分打起泡沫，T字区非常容易出油、长痘痘，但是不能因此就用力揉搓，以螺旋状在面部轻轻按摩30秒左右，除去毛孔中的污垢；无泡沫的洗面乳可以直接涂在脸上，然后轻用手指指腹轻拍面部30秒左右，由下到上，由内到外，让洗面乳遍及整个面部，油脂多的部位可重点按摩，然后以流水冲洗干净；大多数人在洁面后选择用毛巾将面部拭干，由于毛巾圈绒比毛孔还大，很难清除皮肤深处的污垢、油脂，反而会让皮肤有受伤的可能性。所以不建议用毛巾用力擦脸，而是要用轻按方式将水拭干。&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;
       </div>\r\n</div>\r\n</div>\r\n           </div>"
     - 2013-09-03 15:53:04.000000000 Z
-    - 2013-09-12 05:40:13.000000000 Z
+    - 2013-09-12 16:10:59.000000000 Z
   - - 91
     - 91
     - zh-CN
