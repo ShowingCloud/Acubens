@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
 
-<!--<% content_for :javascripts do %>
+<% content_for :javascripts do %>
 	<script>
 		<% if session[:login] %>
 			$(document).ready ();
@@ -9,9 +9,9 @@
 			$(document).ready (login);
 		<% end %>
 	</script>
-<% end %>  -->
+<% end %>  
 <body>
-
+<form>
 <div class="middle-xp">
 
 
@@ -106,14 +106,14 @@
                       <tr>
                               <td   class="firstlogin_middle_2">*</td>
                               <td   class="firstlogin_middle_3">姓&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;名：</td>
-                              <td   class="firstlogin_middle_4" ><label id="name"></label> </td>
+                              <td   class="firstlogin_middle_4" ></td>
                      </tr>
                </table>
                <table class="firstlogin_middle_1"  border="0" cellpadding="0" cellspacing="0" >
                       <tr>
                               <td   class="firstlogin_middle_2">*</td>
                               <td   class="firstlogin_middle_3">生&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;日：</td>  
-                              <td   class="firstlogin_middle_7_1" > <label id="birthday"></label></td>
+                              <td   class="firstlogin_middle_7_1" > </td>
                       </tr>
                </table>
                <table class="firstlogin_middle_1"  border="0" cellspacing="0" cellpadding="0">
@@ -121,14 +121,14 @@
                               <td   class="firstlogin_middle_2">*</td>
                               <td   class="firstlogin_middle_3">性&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;别：</td>
                               <td   class="firstlogin_middle_9" >
-                              <label id="sex"></label> </td>
+                              </td>
                      </tr>
               </table>
               <table class="firstlogin_middle_1"  border="0" cellspacing="0" cellpadding="0">
                       <tr>
                               <td    class="firstlogin_middle_2">*</td>
                               <td    class="firstlogin_middle_3">手机号码:</td>
-                              <td    class="firstlogin_middle_4" ><label id="mobile"></label></td>
+                              <td    class="firstlogin_middle_4" ></td>
                      </tr>
                </table>
                <table   class="firstlogin_middle_1" border="0" cellpadding="0" cellspacing="0" >
@@ -137,10 +137,10 @@
                               <td   class="firstlogin_middle_3">电子杂志:</td>
                               <td   class="firstlogin_middle_9" >
                               <input  id="subscribe" name="magazine" type="radio" value="0" checked>
-                              <label id="subscribe" class="firstlogin_middle_8">订阅</label></td>
+                              <label  class="firstlogin_middle_8">订阅</label></td>
                               <td   class="firstlogin_middle_9" >
                               <input  id="notsubscribe" type="radio" value="1" name="magazine" >
-                              <label id="notsubscribe" name="magazine" class="firstlogin_middle_8">不订阅</label></td>
+                              <label name="magazine" class="firstlogin_middle_8">不订阅</label></td>
                      </tr>
                </table>
                 <table   class="firstlogin_middle_1" border="0" cellpadding="0" cellspacing="0" >
@@ -148,15 +148,15 @@
                               <td   class="firstlogin_middle_2">*</td>
                               <td   class="firstlogin_middle_3">省&nbsp;市&nbsp;区：</td>
                               <td   class="firstlogin_middle_10" >
-                              <label id="province"></label>
+                              
                               <select id="province" name="province" class="firstlogin_middle_dropdown3"><option>不限</option></select></td>
                               <td   class="firstlogin_middle_8">省</td>
                               <td   class="firstlogin_middle_10" >
-                              <label id="city"></label>
+                              
                               <select id="city"name="city" class="firstlogin_middle_dropdown3"><option>不限</option></select></td>
                               <td   class="firstlogin_middle_8">市</td>
                               <td  class="firstlogin_middle_10" >
-                              <label id="district"></label>
+                              
                               <select id="district" name="district" class="firstlogin_middle_dropdown3"><option >不限</option></select></td>
                               <td   class="firstlogin_middle_8">区</td>
                       </tr>
@@ -166,7 +166,7 @@
                               <td    class="firstlogin_middle_2">*</td>
                               <td    class="firstlogin_middle_3">详细地址:</td>
                               <td    class="firstlogin_middle_4" >
-                              <label id="address"> </label>
+                              
                               <input id="address" type="text" class="firstlogin_middle_5"></td>
                               <td    class="firstlogin_middle_6" >为保证您能尽快体验到简尼商品，请确保您填写的地址真实有效</td>
                      </tr>
@@ -176,7 +176,7 @@
                               <td    class="firstlogin_middle_2">*</td>
                               <td    class="firstlogin_middle_3">邮政编码:</td>
                               <td    class="firstlogin_middle_4" >
-                              <label id="postalcode"> </label>
+                             
                               <input id="postalcode" type="text" class="firstlogin_middle_5"></td>
                      </tr>
                </table>
@@ -185,15 +185,15 @@
                               <td   class="firstlogin_middle_2"></td>
                               <td   class="firstlogin_middle_3">固定电话:</td>
                               <td   class="firstlogin_middle_11_1" >
-                              <label id="areacode"> </label>
+                              
                               <input id="areacode" type="text" class="firstlogin_middle_11_2"></td>
                               <td   class="firstlogin_middle_11_7" >区号</td>
                               <td   class="firstlogin_middle_11_3" >
-                              <label id="telephone"> </label>
+                              
                               <input id="telephone " type="text" class="firstlogin_middle_11_5"></td>
                               <td   class="firstlogin_middle_11_4" >电话号码</td>
                               <td   class="firstlogin_middle_11_1" >
-                              <label id="extensionnumber"> </label>
+                              
                               <input id="extensionnumber " type="text" class="firstlogin_middle_11_2"></td>
                               <td   class="firstlogin_middle_11_6" >分机号</td>
                      </tr>     
@@ -203,7 +203,7 @@
                               <td   class="firstlogin_middle_2"></td>
                               <td   class="firstlogin_middle_3">Weibo账号:</td>
                               <td   class="firstlogin_middle_4" >
-                              <label id="weibo"> </label>
+                              
                               <input id="weibo" type="text" class="firstlogin_middle_5"></td>
                               <td   class="firstlogin_middle_6" >关注gelnic官方微博，获取最新商品及优惠信息，还能参加商品免费活动哦</td>
                      </tr>
@@ -213,7 +213,7 @@
                               <td   class="firstlogin_middle_2"></td>
                               <td   class="firstlogin_middle_3">微信账号:</td>
                               <td   class="firstlogin_middle_4" >
-                              <label id="weixin"> </label>
+                             
                               <input id="weixin" type="text" class="firstlogin_middle_5"> </td>
                               <td    class="firstlogin_middle_6" >关注gelnic公众账号，获取最新商品及优惠信息，还能参加商品免费活动哦</td>
                      </tr>
@@ -223,7 +223,7 @@
            
            <div class="resetpw_bottom">               
                 <div class="resetpw_bottom_save">
-                     <input id="saveinformation"   type="submit" value="完成并保存"  >
+                     <input id="saveinformation"  onclick="sendchangeinfo()" type="submit" value="完成并保存"  >
                 </div>
                 <div class="resetpw_bottom_cancel">
                      <input id="resetinformation" type="reset" value="重新填写"  >
@@ -234,5 +234,6 @@
           </div>
      </div>
 </div>
+</form>
 </body>
 </html>

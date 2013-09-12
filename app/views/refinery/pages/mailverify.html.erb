@@ -103,9 +103,9 @@
                        
                                <ul>
                                      <li class="resetpw_middle_txt3">注册手机：&nbsp;&nbsp;</li>
-                                     <li class="resetpw_middle_txt2"> <input type="text" name="oldpassword"></li>
+                                     <li class="resetpw_middle_txt2"> <input type="text" id="mobile"></li>
                                      <li class="resetpw_middle_txt3">手机验证码：&nbsp;&nbsp;</li>
-                                     <li class="resetpw_middle_txt3" style="margin: 0px 0px 0px -13px;"><input type="text" name="newpassword" style="width: 120px"></li> 
+                                     <li class="resetpw_middle_txt3" style="margin: 0px 0px 0px -13px;"><input type="text" id="telidentification" name="newpassword" style="width: 120px"></li> 
                                      <li class="resetpw_middle_txt2"><input class="content_2_table3" style="width: 90px;margin-left:20px;margin-top:7px" type="button" onclick="sendmobile()" value="发送验证码" id="send" >               
            									</li>    
                                </ul>
@@ -118,10 +118,10 @@
                                                               
                                
                                      <li class="resetpw_middle_txt1">新密码:</li>
-                                     <li class="resetpw_middle_txt2" style="margin: 0px 0px 0px 88px;"> <input type="password" id="oldpassword"></li>
+                                     <li class="resetpw_middle_txt2" style="margin: 0px 0px 0px 88px;"> <input type="password" id="password2"></li>
                                      <li class="resetpw_middle_txt3">确认密码:&nbsp;</li>
-                                     <li class="resetpw_middle_txt2" style="margin: 0px 0px 0px 88px;"> <input type="password" id="newpassword">
-                                     &nbsp;&nbsp;密码两次填写不相同，请重新确认！</li>    
+                                     <li class="resetpw_middle_txt2" style="margin: 0px 0px 0px 88px;"> <input type="password" id="identification">
+                                     </li>    
                                </ul>
                        
                 </div>
@@ -129,7 +129,7 @@
            </div>
            <div class="resetpw_bottom">               
                 <div class="findpw_bottom_next">
-                      <input type="submit" value="下一步" name="savepassword" >
+                      <input type="submit" value="下一步" name="savepassword" onclick="sendchangepass()">
                 </div>                              
           </div>
      </div>
