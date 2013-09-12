@@ -1,12 +1,15 @@
 <!doctype html>
-<html>
-<head>
-<meta charset="utf-8">
-<title>member-left</title>
-</head>
-
+<% content_for :javascripts do %>
+	<script>
+		<% if session[:login] %>
+			$(document).ready ();
+		<% else %>
+			$(document).ready (login);
+		<% end %>
+	</script>
+<% end %>
 <body>
-
+<form action="#" method="get">
 <div id="member-left" style="float:left" >
   
   <div class="basket1">
@@ -885,6 +888,6 @@
           </div>
      </div>
 </div>
-
+</form>
 </body>
 </html>

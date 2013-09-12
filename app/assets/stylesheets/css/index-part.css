@@ -264,6 +264,10 @@
 	height:26px;
 }
 
+.bacground-green a{
+	background-color:#bbdf9d;
+}
+
 .bacground-white-green{
 	background-color:#f0ffe3;
 	width:85px;
@@ -285,3 +289,12 @@
 .text-white{
 	color:#FFF;
 }
+
+.text-white a{
+	color:#FFF;	
+}
+
+.text-color a{
+	color:#6eb92b;
+}
+	

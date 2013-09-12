@@ -65,3 +65,7 @@
 #recent_news_items ul li{
 	margin-top:5px;
 }
+
+#recent_news_items ul li a{
+	color: #666666;
+}
