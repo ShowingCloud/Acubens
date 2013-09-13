@@ -121,8 +121,8 @@ class MembershipController < ApplicationController
 			respond_with ret = { :status => "0", :description => "No such user" }, :location => nil and return
 		end
 
-		pswd = resp[:return_value][Columns[:password]]
-		pswd = Base64.strict_decode64 pswd
+		pswd = resp[:return_value][Columns[:password].to_sym]
+		pswd = Base64.strict_decode64 pswd rescue nil
 
 		cipher = OpenSSL::Cipher::Cipher.new 'DES3'
 		cipher.decrypt
