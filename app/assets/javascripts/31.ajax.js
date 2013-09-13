@@ -186,7 +186,8 @@ function getmeminfo() {
             $('#email').html (ret.email == null ? "" : ret.email);
 			$('#name').html (ret.nick_name == null ? "" : ret.nick_name);
 			/*生日*/
-			$('#birthday').html (ret.year+"年"+ret.month+"月"+ret.day+"日");			
+			if(ret.year != null && ret.month != null && ret.day != null)
+				$('#birthday').html (ret.year+"年"+ret.month+"月"+ret.day+"日");			
 			
 			if (parseInt (ret.sex_id) == 69)
 			{
@@ -218,7 +219,8 @@ function getmeminfo() {
 			
 			var n = phone.split("-");
 			//alert(n[0]);
-			$('#tel').html(n[0]+"-"+n[1]+"-"+n[2]);
+			if(n[1] != null)
+				$('#tel').html(n[0]+"-"+n[1]+"-"+n[2]);
 			
 			$('#taobao').html (ret.column6 == null ? "" : ret.column6);
 			$('#yihao').html (ret.column7 == null ? "" : ret.column7);
@@ -236,7 +238,7 @@ function getmeminfo() {
 			if (resp.description != null)
 				alert (resp.description);
 			else
-				alert ("请求失败，请再检查一遍您的输入并稍候再试");
+				alert ("请求失败，请稍候再试");
 		}
 	}).fail (function() {
 		alert ("请求发送失败，请稍候再试");
