@@ -184,7 +184,7 @@ function getmeminfo() {
 			var id_day=0;
 			
             $('#email').html (ret.email == null ? "" : ret.email);
-			$('#name').html (ret.name == null ? "" : ret.name);
+			$('#name').html (ret.nick_name == null ? "" : ret.nick_name);
 			/*生日*/
 			$('#birthday').html (ret.year+"年"+ret.month+"月"+ret.day+"日");			
 			
@@ -192,32 +192,27 @@ function getmeminfo() {
 				$('#gender').html ("男");
 			else if (parseInt (ret.sex_id) == 70)
 				$('#gender').html ("女");
-			if (parseInt (ret.magazine_id) == 0)
+			if (ret.column1 == "是")
 				$('#magazine').html ("订阅");
-			else if (parseInt (ret.magazine_id) == 1)
+			else if (ret.column1 == "否")
 				$('#magazine').html ("不订阅");	
-			$('#postalcode').html (ret.postalcode == null ? "" : ret.postalcode);
+			
 			/*省市区待添加*/	
 			
 			$('#address').html (ret.address == null ? "" : ret.address);
 			$('#mobile').html (ret.mobile == null ? "" : ret.mobile);
 			/*固定电话*/
-			var phone = ret.phone == null ? "" : ret.phone;
+			var phone = ret.column3 == null ? "" : ret.column3;
 			
 			var n = phone.split("-");
-			alert(n);
-			$('#areacode').html(n[0]);
-			$('#telephone').html(n[1]);
-			$('#extensionnumber').html(n[2]);
-		
-			$('#areacode').html (ret.areacode == null ? "" : ret.areacode);
-			$('#telephone').html (ret.telephone == null ? "" : ret.telephone);
-			$('#extensionnumber').html (ret.extensionnumber == null ? "" : ret.extensionnumber);
+			//alert(n[0]);
+			$('#tel').html(n[0]+"-"+n[1]+"-"+n[2]);
 			
-			$('#taobao').html (ret.taobao == null ? "" : ret.taobao);
-			$('#yihao').html (ret.yihao == null ? "" : ret.yihao);
-			$('#weibo').html (ret.weibo == null ? "" : ret.weibo);
-			$('#weixin').html (ret.weixin == null ? "" : ret.weixin);
+			
+			$('#taobao').html (ret.column6 == null ? "" : ret.column6);
+			$('#yihao').html (ret.column7 == null ? "" : ret.column7);
+			$('#weibo').html (ret.column4 == null ? "" : ret.column4);
+			$('#weixin').html (ret.column5 == null ? "" : ret.column5);
 			
 							
 		} else {
