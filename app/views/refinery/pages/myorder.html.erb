@@ -114,13 +114,13 @@
                               <td   class="firstlogin_middle_2">*</td>
                               <td   class="firstlogin_middle_3">省&nbsp;市&nbsp;区：</td>
                               <td   class="firstlogin_middle_10" >
-                              <select id="province" class="firstlogin_middle_dropdown3"><option>不限</option></select></td>
+                              <select id="province" class="firstlogin_middle_dropdown3" onchange="changeProvince ($('option:selected', this).attr ('id').slice (5))"></select></td>
                               <td   class="firstlogin_middle_8">省</td>
                               <td   class="firstlogin_middle_10" >
-                              <select id="city" name="city" class="firstlogin_middle_dropdown3"><option>不限</option></select></td>
+                              <select id="city" name="city" class="firstlogin_middle_dropdown3" onchange="changeCity ($('option:selected', this).attr ('id').slice (5))"></select></td>
                               <td   class="firstlogin_middle_8">市</td>
                                <td  class="firstlogin_middle_10" >
-                              <select id="district" name="district" class="firstlogin_middle_dropdown3"><option >不限</option></select></td>
+                              <select id="district" name="district" class="firstlogin_middle_dropdown3"></select></td>
                               <td   class="firstlogin_middle_8">区</td>
                       </tr>
                </table>
