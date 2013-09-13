@@ -179,9 +179,7 @@ function getmeminfo() {
 	}).done (function (resp) {
 		if (parseInt (resp.status) == 1) {
 			var ret = resp.return_value;
-			var id_year=0;
-			var id_month_id=0;
-			var id_day=0;
+			
 			
             $('#email').html (ret.email == null ? "" : ret.email);
 			$('#name').html (ret.nick_name == null ? "" : ret.nick_name);
@@ -189,25 +187,25 @@ function getmeminfo() {
 			if(ret.year != null && ret.month != null && ret.day != null)
 				$('#birthday').html (ret.year+"年"+ret.month+"月"+ret.day+"日");			
 			
-			if (parseInt (ret.sex_id) == 69)
+			if (ret.gender_id == 69)
 			{
 				$('#gender').html ("男");
-				$('input[id="male"]:checked');
+				$('input[id="male"]').attr("checked","checked") == true;
 			}
-			else if (parseInt (ret.sex_id) == 70)
+			else if (ret.gender_id == 70)
 			{
 				$('#gender').html ("女");
-				$('input[id="female"]:checked');
+				$('input[id="female"]').attr("checked","checked") == true;
 			}
 			if (ret.column1 == "是")
 			{
 				$('#magazine').html ("订阅");
-				$('input[id="subscribe"]:checked');
+				$('input[id="subscribe"]').attr("checked","checked") == true;
 			}
 			else if (ret.column1 == "否")
 			{
 				$('#magazine').html ("不订阅");
-				$('input[id="notsubscribe"]:checked');
+				$('input[id="notsubscribe"]').attr("checked","checked") == true;
 			}
 			
 			/*省市区待添加*/	
@@ -246,79 +244,51 @@ function getmeminfo() {
 }
 
 function sendsurvey(){
-	if ($('input[name="type"]:checked').length > 0)
-		type = $('input[name="type"]:checked').val();
+	
+	var skin_survey = {
+		"user" : "15901940875",
+	
+		"style": $('input[name="type"]:checked').val(),
 		
-	if ($('input[name="importance"]:checked').length > 0)
-		importance = $('input[name="importance"]:checked').val();
+		"care": $('input[name="importance"]:checked').val(),
 		
-	if ($('input[name="time"]:checked').length > 0)
-		time = $('input[name="time"]:checked').val();
+		"problems" : $("input[name='problem']:checked").val(),
+    	
+	"time" : $('input[name="time"]:checked').val(),
+	
+	"procedures" : $("input[name='step']:checked").val(),
+       
+    "effects" : $("input[name='mostimp']:checked").val(),
+    
+    "shortcomings" : $("input[name='reason']:checked").val(),
+   	
+	"cost" : $('input[name="cost"]:checked').val(),
 		
-	if ($('input[name="cost"]:checked').length > 0)
-		cost = $('input[name="cost"]:checked').val();
+	"markets" : $("input[name='channel']:checked").val(),
+    
+    "factors" : $("input[name='affect']:checked").val(),
+    
+    "brands" : $("input[name='brand']:checked").val(),
 		
-	if ($('input[name="brandimp"]:checked').length > 0)
-		brandimp = $('input[name="brandimp"]:checked').val();
+	"importance" : $('input[name="brandimp"]:checked').val(),
 	
-	if ($('input[name="know"]:checked').length > 0)
-		know = $('input[name="know"]:checked').val();
+	"source" : $('input[name="know"]:checked').val(),
 		
-	if ($('input[name="activ"]:checked').length > 0)
-		activ = $('input[name="activ"]:checked').val();	
+	"ways" : $("input[name='way']:checked").val(),
 		
-	if ($('input[name="age"]:checked').length > 0)
-		age = $('input[name="age"]:checked').val();	
+	"infos" : $("input[name='info']:checked").val(),
 		
-    var problemselect = new Array();
-    $("input[@name='problem[]']:checked").each(function() {problemselect.push($(this).val());});
-	
-	var stepselect = new Array();
-    $("input[@name='step[]']:checked").each(function() {stepselect.push($(this).val());});
-	
-	var mostimpselect = new Array();
-    $("input[@name='mostimp[]']:checked").each(function() {mostimpselect.push($(this).val());});	
-	
-	var reasonselect = new Array();
-    $("input[@name='reason[]']:checked").each(function() {reasonselect.push($(this).val());});
-	
-	var channelselect = new Array();
-    $("input[@name='channel[]']:checked").each(function() {channelselect.push($(this).val());});
-	
-	var affectselect = new Array();
-    $("input[@name='affect[]']:checked").each(function() {affectselect.push($(this).val());});
-	
-	var brandselect = new Array();
-    $("input[@name='brand[]']:checked").each(function() {brandselect.push($(this).val());});
-	
-	var wayselect = new Array();
-    $("input[@name='way[]']:checked").each(function() {wayselect.push($(this).val());});
-	
-	var infoselect = new Array();
-    $("input[@name='info[]']:checked").each(function() {infoselect.push($(this).val());});
+	"offline" : $('input[name="activ"]:checked').val(),
 		
+	"age" : $('input[name="age"]:checked').val()	}
+				
+	alert (skin_survey);
 	$.ajax({
-		url:        "/skin_survey.json",
+		url:        "/skin_surveys.json",
 		type:       "POST",
 		dataType:   "json",
 		data:       {
-			type:              type,
-			importance:        importance,
-			time:              time,
-			cost:              cost,
-			brandimp:          brandimp,
-			know:              know,
-			activ:             activ,
-			age:               age,
-			problem:           problem,
-			step:              step,
-			mostimp:           mostimp,
-			reason:            reason,
-			channel:           channel,
-			affect:            affect,
-			brand:             brand,
-			way:               way,
-			info:              info,
+			skin_survey: skin_survey,
 			
 		}
 	}).done (function (resp) {
