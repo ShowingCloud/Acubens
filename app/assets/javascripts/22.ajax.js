@@ -54,7 +54,7 @@ function sendregister() {
 		}
 	}).done (function (resp) {
 		if (parseInt (resp.status) == 1)
-			location.href = "/";
+			location.href = "/%E4%BC%9A%E5%91%98%E4%B8%93%E5%8C%BA/%E5%88%9D%E6%AC%A1%E7%99%BB%E5%BD%95";
 		else {
 			if (resp.description != null)
 				alert (resp.description);

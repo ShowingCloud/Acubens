@@ -189,13 +189,25 @@ function getmeminfo() {
 			$('#birthday').html (ret.year+"年"+ret.month+"月"+ret.day+"日");			
 			
 			if (parseInt (ret.sex_id) == 69)
+			{
 				$('#gender').html ("男");
+				$('input[id="male"]:checked');
+			}
 			else if (parseInt (ret.sex_id) == 70)
+			{
 				$('#gender').html ("女");
+				$('input[id="female"]:checked');
+			}
 			if (ret.column1 == "是")
+			{
 				$('#magazine').html ("订阅");
+				$('input[id="subscribe"]:checked');
+			}
 			else if (ret.column1 == "否")
-				$('#magazine').html ("不订阅");	
+			{
+				$('#magazine').html ("不订阅");
+				$('input[id="notsubscribe"]:checked');
+			}
 			
 			/*省市区待添加*/	
 			
@@ -208,12 +220,17 @@ function getmeminfo() {
 			//alert(n[0]);
 			$('#tel').html(n[0]+"-"+n[1]+"-"+n[2]);
 			
-			
 			$('#taobao').html (ret.column6 == null ? "" : ret.column6);
 			$('#yihao').html (ret.column7 == null ? "" : ret.column7);
 			$('#weibo').html (ret.column4 == null ? "" : ret.column4);
 			$('#weixin').html (ret.column5 == null ? "" : ret.column5);
 			
+			$('input[id="email"]').val(ret.email == null ? "" : ret.email);
+			$('input[id="password"]').val("00000000000000000000");
+			$('input[id="identification"]').val("00000000000000000000");
+			$('input[id="name"]').val(ret.nick_name == null ? "" : ret.nick_name);
+			$('input[id="mobile"]').val(ret.mobile == null ? "" : ret.mobile);
+			$('input[id="address"]').val(ret.address == null ? "" : ret.address);
 							
 		} else {
 			if (resp.description != null)
