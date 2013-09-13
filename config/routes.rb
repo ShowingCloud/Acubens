@@ -5,6 +5,7 @@ Acubens::Application.routes.draw do
 
   resources :skin_surveys
 
+
   resources :membership do
 	  collection do
 		  get :index
@@ -29,11 +30,13 @@ Acubens::Application.routes.draw do
 	  end
   end
 
+
   resources :order do
 	  collection do
 		  post :setorder
 	  end
   end
+
 
   get '/robots.txt' => 'application#robots'
 
