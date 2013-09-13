@@ -82,8 +82,7 @@ function changeCity (id) {
 			if (resp.children[i].sort == -1)
 				continue;
 
-			$("#district").append ("<option id=\"area_" + resp.children[i].id + "\" value=\""
-				+ "\">" + resp.children[i].name + "</option>");
+			$("#district").append ("<option id=\"area_" + resp.children[i].id + "\">" + resp.children[i].name + "</option>");
 		}		
 	}).fail (function() {
 		alert ("请求发送失败，请稍候再试");

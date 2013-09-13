@@ -4,7 +4,6 @@ function sendfirstinfo(){
 		return;
 	}
 	
-	
 	var year = $('#year').val();
 		
 	var month = $('#month').val();
@@ -53,31 +52,32 @@ function sendfirstinfo(){
 		alert  ("请输入邮政编码");
 		return;
 	}
-	
+		
 	var extensionnumber = 0;
 		if ($('#extensionnumber').val().length > 0)
-		extensionnumber = $('#extensionnumber').val()
-	
+		extensionnumber = $('#extensionnumber').val();
+		
 	var weibo = 0;
 		if ($('#weibo').val().length > 0)
-		weibo = $('#weibo').val()
-	
+		weibo = $('#weibo').val();
+			
 	var weixin = 0;
 		if ($('#weixin').val().length > 0)
-		weibo = $('#weixin').val()
-
+		weibo = $('#weixin').val();
+		
+   
 	$.ajax({
 		url:        "/membership/fillinfo.json",
 		type:       "POST",
 		dataType:   "json",
 		data:       {
-			fullname:			$('name').val(),
-			birthdate:			year + '-' + month + '-' + day,
-			gender:				sex,
+			fullname:			$('#name').val(),
+			birthdate:			year + '-' + month + '-' + day + 'T00:00:00',
+			gender:				gender,
 			subscription:		magazine,
-			phone:				$('areacode').val() + '-' + $('telephone').val() + '-' + $('extensionnumber').val(),
-			weibo:				$('weibo').val(),
-			wechat:				$('weixin').val(),
+			phone:				$('#areacode').val() + '-' + $('#telephone').val() + '-' + $('#extensionnumber').val(),
+			weibo:				$('#weibo').val(),
+			wechat:				$('#weixin').val(),
 		}
 	}).done (function (resp) {
 		if(parseInt (resp.status) == 1) {
@@ -149,9 +149,9 @@ function sendchangeinfo(){
 		dataType:   "json",
 		data:       {
 			subscription:		magazine,
-			phone:				$('areacode').val() + '-' + $('telephone').val() + '-' + $('extensionnumber').val(),
-			weibo:				$('weibo').val(),
-			wechat:				$('weixin').val(),
+			phone:				$('#areacode').val() + '-' + $('#telephone').val() + '-' + $('#extensionnumber').val(),
+			weibo:				$('#weibo').val(),
+			wechat:				$('#weixin').val(),
 		}
 	}).done (function (resp) {
 		if(parseInt (resp.status) == 1) {
@@ -184,7 +184,7 @@ function getmeminfo() {
 			var id_day=0;
 			
             $('#email').html (ret.email == null ? "" : ret.email);
-			$('#name').html (ret.name == null ? "" : ret.name);
+			$('#name').html (ret.nick_name == null ? "" : ret.nick_name);
 			/*生日*/
 			$('#birthday').html (ret.year+"年"+ret.month+"月"+ret.day+"日");			
 			
@@ -192,24 +192,27 @@ function getmeminfo() {
 				$('#gender').html ("男");
 			else if (parseInt (ret.sex_id) == 70)
 				$('#gender').html ("女");
-			if (parseInt (ret.magazine_id) == 0)
+			if (ret.column1 == "是")
 				$('#magazine').html ("订阅");
-			else if (parseInt (ret.magazine_id) == 1)
+			else if (ret.column1 == "否")
 				$('#magazine').html ("不订阅");	
-			$('#postalcode').html (ret.postalcode == null ? "" : ret.postalcode);
+			
 			/*省市区待添加*/	
 			
 			$('#address').html (ret.address == null ? "" : ret.address);
 			$('#mobile').html (ret.mobile == null ? "" : ret.mobile);
 			/*固定电话*/
-			$('#areacode').html (ret.areacode == null ? "" : ret.areacode);
-			$('#telephone').html (ret.telephone == null ? "" : ret.telephone);
-			$('#extensionnumber').html (ret.extensionnumber == null ? "" : ret.extensionnumber);
+			var phone = ret.column3 == null ? "" : ret.column3;
 			
-			$('#taobao').html (ret.taobao == null ? "" : ret.taobao);
-			$('#yihao').html (ret.yihao == null ? "" : ret.yihao);
-			$('#weibo').html (ret.weibo == null ? "" : ret.weibo);
-			$('#weixin').html (ret.weixin == null ? "" : ret.weixin);
+			var n = phone.split("-");
+			//alert(n[0]);
+			$('#tel').html(n[0]+"-"+n[1]+"-"+n[2]);
+			
+			
+			$('#taobao').html (ret.column6 == null ? "" : ret.column6);
+			$('#yihao').html (ret.column7 == null ? "" : ret.column7);
+			$('#weibo').html (ret.column4 == null ? "" : ret.column4);
+			$('#weixin').html (ret.column5 == null ? "" : ret.column5);
 			
 							
 		} else {
@@ -364,12 +367,12 @@ function addaddress(){
 		type:       "POST",
 		dataType:   "json",
 		data:       {
-			id:			10,
+			id:			1,
 			mobile:		$('#mobile').val(),
-			phone:		$('areacode').val() + '-' + $('telephone').val() + '-' + $('extensionnumber').val(),
+			phone:		$('#areacode').val() + '-' + $('#telephone').val() + '-' + $('#extensionnumber').val(),
 			name:		$('#name').val(),
 			province:	province,
-			city:		city,
+			city:		city, 
 			district:	district,
 			address: 	$('#address').val(),
 		}
