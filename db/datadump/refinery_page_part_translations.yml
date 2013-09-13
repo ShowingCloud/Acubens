@@ -1412,10 +1412,10 @@ refinery_page_part_translations:
   - - 169
     - 169
     - zh-CN
-    - <p><img src="/system/images/W1siZiIsIjIwMTMvMDkvMDYvMDFfNDlfNTRfOTg3X2FkdnQxLnBuZyJdXQ/advt1.png"
-      width="250" height="104" /></p>
+    - <p><img src="/system/images/W1siZiIsIjIwMTMvMDkvMTMvMDlfNTZfMDlfMzE1X2FkdnQxLnBuZyJdXQ/advt1.png"
+      title="Advt1" alt="Advt1" rel="225x255" width="250" height="104" /></p>
     - 2013-09-05 17:56:34.000000000 Z
-    - 2013-09-11 06:54:11.000000000 Z
+    - 2013-09-13 01:58:19.000000000 Z
   - - 170
     - 170
     - zh-CN
@@ -1426,10 +1426,11 @@ refinery_page_part_translations:
   - - 171
     - 171
     - zh-CN
-    - <p><img src="/system/images/W1siZiIsIjIwMTMvMDkvMTEvMTRfNTFfMTVfMjUxX3ZpZGVvLnBuZyJdXQ/video.png"
-      width="400" height="226" /></p>
+    - <p><img src="/system/images/W1siZiIsIjIwMTMvMDkvMTMvMDFfMjBfMjZfMTY5X2luZGV4XzA3LjAzXzA2LmdpZiJdXQ/index-07.03_06.gif"
+      title="Index 07.03 06" alt="Index 07.03 06" rel="225x255" width="400" height="225"
+      /></p>
     - 2013-09-05 17:56:34.000000000 Z
-    - 2013-09-11 06:55:29.000000000 Z
+    - 2013-09-13 01:57:33.000000000 Z
   - - 174
     - 174
     - zh-CN
