@@ -47,6 +47,8 @@ class SkinSurveysController < ApplicationController
 			else
 				@skin_survey[:user] = session[:username]
 			end
+		elsif not @skin_survey[:user]
+			@skin_survey[:user] = session[:username]
 		end
 
 		@skin_survey.save
