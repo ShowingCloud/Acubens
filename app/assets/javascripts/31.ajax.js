@@ -4,7 +4,6 @@ function sendfirstinfo(){
 		return;
 	}
 	
-	
 	var year = $('#year').val();
 		
 	var month = $('#month').val();
@@ -53,31 +52,32 @@ function sendfirstinfo(){
 		alert  ("请输入邮政编码");
 		return;
 	}
-	
+		
 	var extensionnumber = 0;
 		if ($('#extensionnumber').val().length > 0)
-		extensionnumber = $('#extensionnumber').val()
-	
+		extensionnumber = $('#extensionnumber').val();
+		
 	var weibo = 0;
 		if ($('#weibo').val().length > 0)
-		weibo = $('#weibo').val()
-	
+		weibo = $('#weibo').val();
+			
 	var weixin = 0;
 		if ($('#weixin').val().length > 0)
-		weibo = $('#weixin').val()
-
+		weibo = $('#weixin').val();
+		
+   
 	$.ajax({
 		url:        "/membership/fillinfo.json",
 		type:       "POST",
 		dataType:   "json",
 		data:       {
-			fullname:			$('name').val(),
-			birthdate:			year + '-' + month + '-' + day,
-			gender:				sex,
+			fullname:			$('#name').val(),
+			birthdate:			year + '-' + month + '-' + day + 'T00:00:00',
+			gender:				gender,
 			subscription:		magazine,
-			phone:				$('areacode').val() + '-' + $('telephone').val() + '-' + $('extensionnumber').val(),
-			weibo:				$('weibo').val(),
-			wechat:				$('weixin').val(),
+			phone:				$('#areacode').val() + '-' + $('#telephone').val() + '-' + $('#extensionnumber').val(),
+			weibo:				$('#weibo').val(),
+			wechat:				$('#weixin').val(),
 		}
 	}).done (function (resp) {
 		if(parseInt (resp.status) == 1) {
@@ -149,9 +149,9 @@ function sendchangeinfo(){
 		dataType:   "json",
 		data:       {
 			subscription:		magazine,
-			phone:				$('areacode').val() + '-' + $('telephone').val() + '-' + $('extensionnumber').val(),
-			weibo:				$('weibo').val(),
-			wechat:				$('weixin').val(),
+			phone:				$('#areacode').val() + '-' + $('#telephone').val() + '-' + $('#extensionnumber').val(),
+			weibo:				$('#weibo').val(),
+			wechat:				$('#weixin').val(),
 		}
 	}).done (function (resp) {
 		if(parseInt (resp.status) == 1) {
@@ -202,6 +202,14 @@ function getmeminfo() {
 			$('#address').html (ret.address == null ? "" : ret.address);
 			$('#mobile').html (ret.mobile == null ? "" : ret.mobile);
 			/*固定电话*/
+			var phone = ret.phone == null ? "" : ret.phone;
+			
+			var n = phone.split("-");
+			alert(n);
+			$('#areacode').html(n[0]);
+			$('#telephone').html(n[1]);
+			$('#extensionnumber').html(n[2]);
+		
 			$('#areacode').html (ret.areacode == null ? "" : ret.areacode);
 			$('#telephone').html (ret.telephone == null ? "" : ret.telephone);
 			$('#extensionnumber').html (ret.extensionnumber == null ? "" : ret.extensionnumber);
@@ -364,12 +372,12 @@ function addaddress(){
 		type:       "POST",
 		dataType:   "json",
 		data:       {
-			id:			10,
+			id:			1,
 			mobile:		$('#mobile').val(),
-			phone:		$('areacode').val() + '-' + $('telephone').val() + '-' + $('extensionnumber').val(),
+			phone:		$('#areacode').val() + '-' + $('#telephone').val() + '-' + $('#extensionnumber').val(),
 			name:		$('#name').val(),
 			province:	province,
-			city:		city,
+			city:		city, 
 			district:	district,
 			address: 	$('#address').val(),
 		}

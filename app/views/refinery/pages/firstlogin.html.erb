@@ -155,15 +155,15 @@
                               <td  class="firstlogin_middle_8">年</td>                             
                               <td  class="firstlogin_middle_7_2" >
                               <select id="month" name="month" class="firstlogin_middle_dropdown2" >
-                              <option value="1">1</option>
-                              <option value="2">2</option>
-                              <option value="3">3</option>
-                              <option value="4">4</option>
-                              <option value="5">5</option>
-                              <option value="6">6</option>
-                              <option value="7">7</option>
-                              <option value="8">8</option>
-                              <option value="9">9</option>
+                              <option value="01">1</option>
+                              <option value="02">2</option>
+                              <option value="03">3</option>
+                              <option value="04">4</option>
+                              <option value="05">5</option>
+                              <option value="06">6</option>
+                              <option value="07">7</option>
+                              <option value="08">8</option>
+                              <option value="09">9</option>
                               <option value="10">10</option>
                               <option value="11">11</option>
                               <option value="12">12</option></select>
@@ -171,15 +171,15 @@
                               <td  class="firstlogin_middle_8">月</td> 
                               <td   class="firstlogin_middle_7_2" >
                               <select id="day" name="day" class="firstlogin_middle_dropdown2" >
-                              <option value="1">1</option>
-                              <option value="2">2</option>
-                              <option value="3">3</option>
-                              <option value="4">4</option>
-                              <option value="5">5</option>
-                              <option value="6">6</option>
-                              <option value="7">7</option>
-                              <option value="8">8</option>
-                              <option value="9">9</option>
+                              <option value="01">1</option>
+                              <option value="02">2</option>
+                              <option value="03">3</option>
+                              <option value="04">4</option>
+                              <option value="05">5</option>
+                              <option value="06">6</option>
+                              <option value="07">7</option>
+                              <option value="08">8</option>
+                              <option value="09">9</option>
                               <option value="10">10</option>
                               <option value="11">11</option>
                               <option value="12">12</option>
@@ -211,10 +211,10 @@
                               <td   class="firstlogin_middle_2">*</td>
                               <td   class="firstlogin_middle_3">性&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;别：</td>
                               <td   class="firstlogin_middle_9" >
-                              <input name="sex" id="female"  type="radio" value="0" checked  class="firstlogin_middle_radio">
+                              <input name="sex" id="female"  type="radio" value="70" checked  class="firstlogin_middle_radio">
                               <label for="female" class="firstlogin_middle_8">女</label></td>
                               <td   class="firstlogin_middle_9" >
-                              <input name="sex" id="male"  type="radio" value="1" >
+                              <input name="sex" id="male"  type="radio" value="69" >
                               <label for="male" class="firstlogin_middle_8">男</label></td>
                      </tr>
               </table>
@@ -230,10 +230,10 @@
                               <td   class="firstlogin_middle_2">*</td>
                               <td   class="firstlogin_middle_3">电子杂志:</td>
                               <td   class="firstlogin_middle_9" >
-                              <input  id="subscribe" name="magazine" type="radio" value="0" checked>
+                              <input  id="subscribe" name="magazine" type="radio" value="是" checked>
                               <label for="subscribe" class="firstlogin_middle_8">订阅</label></td>
                               <td   class="firstlogin_middle_9" >
-                              <input  id="notsubscribe" type="radio" value="1"  name="magazine"  >
+                              <input  id="notsubscribe" type="radio" value="否"  name="magazine"  >
                               <label for="notsubscribe" name="magazine" class="firstlogin_middle_8">不订阅</label></td>
                      </tr>
                </table>
@@ -273,9 +273,9 @@
                               <td   class="firstlogin_middle_3">固定电话:</td>
                               <td   class="firstlogin_middle_11_1" ><input id="areacode" type="text" class="firstlogin_middle_11_2"></td>
                               <td   class="firstlogin_middle_11_7" >区号</td>
-                              <td   class="firstlogin_middle_11_3" ><input id="telephone " type="text" class="firstlogin_middle_11_5"></td>
+                              <td   class="firstlogin_middle_11_3" ><input id="telephone" type="text" class="firstlogin_middle_11_5"></td>
                               <td   class="firstlogin_middle_11_4" >电话号码</td>
-                              <td   class="firstlogin_middle_11_1" ><input id="extensionnumber " type="text" class="firstlogin_middle_11_2"></td>
+                              <td   class="firstlogin_middle_11_1" ><input id="extensionnumber" type="text" class="firstlogin_middle_11_2"></td>
                               <td   class="firstlogin_middle_11_6" >分机号</td>
                      </tr>     
                </table>
@@ -300,7 +300,7 @@
            
            <div class="resetpw_bottom">               
                 <div class="resetpw_bottom_save">
-                     <input id="saveinformation" onclick="sendfirstinfo()" type="submit" value="完成并保存"  >
+                     <input id="saveinformation" onclick="sendfirstinfo()" type="button" value="完成并保存"  >
                 </div>
                 <div class="resetpw_bottom_cancel">
                      <input id="resetinformation" type="reset" value="重新填写"  >
@@ -322,75 +322,11 @@
 			$(document).ready (login);
 		<% end %>
 	</script>
+	
 	<script>
-		$(document).ready (function() {
-	$("#province").html ("<option id=\"prov_0\" value=\"0\">--请选择--</option>");
-	$("#city").html ("<option id=\"city_0\" value=\"0\">--请选择--</option>");
-	$("#district").html ("<option id=\"area_0\" value=\"0\">--请选择--</option>");
-
-	$.ajax ({
-		url:		"/localities/1.json",
-		type:		"GET",
-		dataType:	"json"
-	}).done (function (resp) {
-		for (var i = 0; i < resp.children.length; i++) {
-			if (resp.children[i].sort == -1)
-				continue;
-			$("#province").append ("<option id=\"prov_" + resp.children[i].id + "\">"
-				+ resp.children[i].name + "</option>");
-	   }
-	}).fail (function() {
-		alert ("请求发送失败，请稍候再试");
-	});
-});
-
-function changeProvince (id) {
-	$("#city").html ("<option id=\"city_0\" value=\"0\">--请选择--</option>");
-	$("#district").html ("<option id=\"area_0\" value=\"0\">--请选择--</option>");
-	
-	
-	if (id == 0)
-		return;
-	$.ajax ({
-		url:		"/localities/" + id + ".json",
-		type:		"GET",
-		dataType:	"json"
-	}).done (function (resp) {
-		for (var i = 0; i < resp.children.length; i++) {
-			if (resp.children[i].sort == -1)
-				continue;
-			$("#city").append ("<option id=\"city_" + resp.children[i].id + "\">"
-			   	+ resp.children[i].name + "</option>");
-	   }
-	}).fail (function() {
-		alert ("请求发送失败，请稍候再试");
-	});
-}
-
-function changeCity (id) {
-	$("#district").html ("<option id=\"area_0\" value=\"0\">--请选择--</option>");
-	
-
-	if (id == 0)
-		return;
-	$.ajax ({
-		url:		"/localities/" + id + ".json",
-		type:		"GET",
-		dataType:	"json"
-	}).done (function (resp) {
-		for (var i = 0; i < resp.children.length ; i++) {
-			if (resp.children[i].sort == -1)
-				continue;
-
-			$("#district").append ("<option id=\"area_" + resp.children[i].id + "\" value=\""
-				+ "\">" + resp.children[i].name + "</option>");
-		}		
-	}).fail (function() {
-		alert ("请求发送失败，请稍候再试");
-	});
-}
-
+	$(document).ready(getmeminfo)
 	</script>
+
 <% end %>  
 
 
