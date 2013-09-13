@@ -6,7 +6,7 @@ require 'json'
 
 class MembershipController < ApplicationController
 
-	respond_to :json, :xml
+	respond_to :json, :xml, :html
 
 	before_filter :checklogin, :except => [:verifymobile, :register, :login, :logout, :getusers, :getdict]
 
@@ -15,13 +15,14 @@ class MembershipController < ApplicationController
 		namespace "http://tempuri.org/"
 		convert_request_keys_to :camelcase
 		soap_version 2
+		logger Rails.logger
 	end
 
 	Channel = "Gelnic"
 	Merchant = "1591"
 
-	Columns = { :subscription => :column1, :postal => :column2, :phone => :column3, :weibo => :column4,
-			:wechat => :column5, :taobao => :column6, :yihao => :column7, :email => :column8, :password => :column9}
+	Columns = { :subscription => "column1", :postal => "column2", :phone => "column3", :weibo => "column4",
+			:wechat => "column5", :taobao => "column6", :yihao => "column7", :email => "column8", :password => "column9"}
 
 
 	def index
@@ -71,6 +72,8 @@ class MembershipController < ApplicationController
 			:mobile => params[:mobile].to_s,
 			:verification_code => params[:verification].to_s,
 			:user_info => {
+				"email" => params[:email].to_s,
+				"passwordMD5" => pswd,
 				Columns[:email] => params[:email].to_s,
 				Columns[:password] => pswd
 			}
@@ -80,17 +83,17 @@ class MembershipController < ApplicationController
 			session[:username] = params[:mobile]
 			session[:login] = true
 
-			fillinfo = query_mokard(:update_user_info, {
-				:merchant_no => Merchant,
-				:channel => Channel,
-				:user_name => session[:username].to_s,
-				:user_info => {
-					Columns[:email] => params[:email].to_s,
-					Columns[:password] => pswd
-				}
-			})
+#			fillinfo = query_mokard(:update_user_info, {
+#				:merchant_no => Merchant,
+#				:channel => Channel,
+#				:user_name => session[:username].to_s,
+#				:user_info => {
+#					Columns[:email] => params[:email].to_s,
+#					Columns[:password] => pswd
+#				}
+#			})
 
-			resp[:fillinfo] = fillinfo
+#			resp[:fillinfo] = fillinfo
 			resp[:username] = session[:username].to_s
 			resp[:status] = "2"
 		else
@@ -189,10 +192,10 @@ class MembershipController < ApplicationController
 			:channel => Channel,
 			:user_name => session[:username].to_s,
 			:user_info => {
-				:nick_name => params[:fullname].to_s,
-				:mobile => session[:username].to_s,
-				:gender_id => params[:gender].to_s,
-				:birthday_dt => params[:birthdate].to_s,
+				"nickName" => params[:fullname].to_s,
+				"mobile" => session[:username].to_s,
+				"genderID" => params[:gender].to_s,
+				"birthdayDT" => params[:birthdate].to_s,
 				Columns[:subscription] => params[:subscription].to_s,
 				Columns[:phone] => params[:phone].to_s,
 				Columns[:weibo] => params[:weibo].to_s,
@@ -235,15 +238,15 @@ class MembershipController < ApplicationController
 			:channel => Channel,
 			:user_name => session[:username].to_s,
 			:my_user_address => {
-				:id => params[:id].to_s,
-				:buyer_name => params[:name].to_s,
-				:buyer_contact1 => params[:mobile].to_s,
-				:buyer_contact2 => params[:phone].to_s,
-				:full_address => params[:address].to_s,
-				:zip_code => params[:zipcode].to_s,
-				:province => params[:province].to_s,
-				:city => params[:city].to_s,
-				:district => params[:district].to_s
+				"id" => params[:id].to_s,
+				"buyerName" => params[:name].to_s,
+				"buyerContact1" => params[:mobile].to_s,
+				"buyerContact2" => params[:phone].to_s,
+				"fullAddress" => params[:address].to_s,
+				"zipCode" => params[:zipcode].to_s,
+				"province" => params[:province].to_s,
+				"city" => params[:city].to_s,
+				"district" => params[:district].to_s
 			}
 		})
 
@@ -257,15 +260,15 @@ class MembershipController < ApplicationController
 			:channel => Channel,
 			:user_name => session[:username].to_s,
 			:my_user_address => {
-				:id => params[:id].to_s,
-				:buyer_name => params[:name].to_s,
-				:buyer_contact1 => params[:mobile].to_s,
-				:buyer_contact2 => params[:phone].to_s,
-				:full_address => params[:address].to_s,
-				:zip_code => params[:zipcode].to_s,
-				:province => params[:province].to_s,
-				:city => params[:city].to_s,
-				:district => params[:district].to_s
+				"id" => params[:id].to_s,
+				"buyerName" => params[:name].to_s,
+				"buyerContact1" => params[:mobile].to_s,
+				"buyerContact2" => params[:phone].to_s,
+				"fullAddress" => params[:address].to_s,
+				"zipCode" => params[:zipcode].to_s,
+				"province" => params[:province].to_s,
+				"city" => params[:city].to_s,
+				"district" => params[:district].to_s
 			}
 		})
 
@@ -333,7 +336,7 @@ class MembershipController < ApplicationController
 #		if not session[:login] or not session[:username]
 #			respond_with ret = { :status => "0" }, :location => nil and return
 #		end
-		session[:username] = "13333333336"
+		session[:username] = "13333367890"
 	end
 
 end
