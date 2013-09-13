@@ -5,6 +5,7 @@ function sendmobile() {
 	}
 	$.ajax ({
 		url:		"/membership/verifymobile.json",
+		xhrFields: { withCredentials: true },
 		type:		"POST",
 		dataType:	"json",
 		data:		{ mobile: $('#mobile').val() }
@@ -125,7 +126,7 @@ function sendlogin() {
 			username:		$('#name').val(),
 			password:		$.sha256 (
 								$.sha256 ($('#name').val() + $('#password').val()).slice (0, 23)
-								+ $('#captcha').val()),
+								+ $('#captcha').val().toLowerCase()),
 			captcha:		$('#captcha').val(),
 			captcha_key:	$('#captcha_key').val()
 		}

@@ -44,7 +44,7 @@ class MembershipController < ApplicationController
 			resp.delete :return_value
 		end
 
-		respond_with :membership, resp
+		respond_with resp, :location => nil
 	end
 
 
@@ -117,7 +117,7 @@ class MembershipController < ApplicationController
 			:user_name => params[:username].to_s
 		})
 
-		if not resp
+		if not resp or not resp[:return_value]
 			respond_with ret = { :status => "0", :description => "No such user" }, :location => nil and return
 		end
 

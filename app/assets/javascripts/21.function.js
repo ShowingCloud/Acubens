@@ -10,4 +10,9 @@ function tabSwitch(new_tab, new_content) {
     document.getElementById('tab_2').className = '';            
     document.getElementById(new_tab).className = 'active';        
   
-}  
+}
+
+$(document).ajaxSend(function(e, xhr, options) {
+	var sid = $("meta[name='csrf-token']").attr("content");
+	xhr.setRequestHeader("X-CSRF-Token", sid);
+});
