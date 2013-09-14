@@ -12,6 +12,41 @@
 	<script>
 		$(document).ready(getadd);
 	</script>
+	<script>
+	
+	
+$(".add_tab2 .add_td1 .add_del #delete").click (function () {
+//	var productid = $(this).parent().parent().find ('#productid').val();		
+	$(this).parent().parent().parent().remove();
+//	headerdel (productid);
+	alert($(this).parent().parent().parent().find ('#addressid').val())
+	
+	$.ajax({
+		url:        "/membership/deladdr.json",
+		type:       "POST",
+		dataType:   "json",
+		data:       {
+			id:					$(this).parent().parent().parent().find ('#addressid').val()
+			
+		}
+	}).done (function (resp){
+		if(parseInt (resp.status) == 1) {
+			alert ("删除地址成功");    
+			   
+		}else {
+			    if (resp.description != null)
+				     alert (resp.description);
+			    else
+				     alert ("请求失败，请再检查一遍您的输入并稍候再试");
+		}
+		
+		
+	}).fail (function() {
+		alert ("请求发送失败，请稍候再试");
+	});	
+});
+
+	</script>	
 <% end %>
 
 
@@ -188,12 +223,12 @@
                <table class="add_tab2"  border="0" cellspacing="0" cellpadding="0">
                		
                       <tr>
-                      		  
-                              <td   class="add_td1"><label id="name2">X女士</label></td>
-                              <td   class="add_td2"><label id="province2">上海市浦东新区</label></td>
-                              <td   class="add_td3"><label id="address2">峨山路91弄浦东陆家嘴软件园120号4-5楼 </label></td>
-                              <td   class="add_td2"><label id="tel2">13700000000</label></td>
-                              <td   class="add_td2"><label id="zipcode2">200000</label></td>
+                      		  <td><input type="hidden" id="addressid" /></td>
+                              <td   class="add_td1"><label id="name2"></label></td>
+                              <td   class="add_td2"><label id="province2"></label></td>
+                              <td   class="add_td3"><label id="address2"> </label></td>
+                              <td   class="add_td2"><label id="mobile2"></label></td>
+                              <td   class="add_td2"><label id="zipcode2"></label></td>
                               <td   class="add_td2"><label id="fixtel2"></label></td>
                               <td   class="add_td1">
                                      <div class="add_mod">
