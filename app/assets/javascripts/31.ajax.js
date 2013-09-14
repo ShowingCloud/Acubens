@@ -207,32 +207,34 @@ function getmeminfo() {
 				var subscription_str = "";
 			}
 
-			if (ret.column3 == null)
+			if (ret.column3 == null) {
+				var phone = [];
 				var phone_str = "";
-			else {
+			} else {
 				var phone = ret.column3.split('-');
 
 				if (phone[1] == "")
-					phone_str = "";
+					var phone_str = "";
 				else if (phone[0] == "" && phone[2] == "")
-					phone_str = phone[1];
+					var phone_str = phone[1];
 				else if (phone[0] == "")
-					phone_str = phone[1] + '-' + phone[2];
+					var phone_str = phone[1] + '-' + phone[2];
 				else if (phone[2] == "")
-					phone_str = phone[0] + '-' + phone[1];
+					var phone_str = phone[0] + '-' + phone[1];
 				else
-					phone_str = phone[0] + '-' + phone[1] + '-' + phone[2];
+					var phone_str = phone[0] + '-' + phone[1] + '-' + phone[2];
 			}
 
-			if (ret.birthday_dt == null)
-				var birthdate = "";
-			else {
+			if (ret.birthday_dt == null) {
+				var birthdate = [];
+				var birthdate_str = "";
+			} else {
 				var birthdate = ret.birthday_dt.split('T')[0].split('-');
 
 				if (birthdate[0] == null || birthdate[1] == null || birthdate[2] == null)
-					birthdate = "";
+					var birthdate_str = "";
 				else
-					birthdate = birthdate[0]+"年"+birthdate[1]+"月"+birthdate[2]+"日";			
+					var birthdate_str = birthdate[0]+"年"+birthdate[1]+"月"+birthdate[2]+"日";			
 			}
 
 			if ($('#email').length)
@@ -246,14 +248,24 @@ function getmeminfo() {
 
 			if (gender_str != "")
 				if ($('input[id="' + gender_str + '"]').length)
-					$('input[id="' + gender_str + '"]').attr("checked","checked") == true;
+					$('input[id="' + gender_str + '"]').attr("checked","checked");
 
 			if ($('#magazine').length)
 				$('#magazine').html (subscription);
 
 			if (subscription_str != "")
 				if ($('input[id="' + subscription_str + '"]').length)
-					$('input[id="' + subscription_str + '"]').attr("checked","checked") == true;
+					$('input[id="' + subscription_str + '"]').attr("checked","checked");
+
+			if ($('select[id="year"]').length)
+				if (birthdate[0] != "")
+					$('select[id="year"]').val (birthdate[0]);
+			if ($('select[id="month"]').length)
+				if (birthdate[1] != "")
+					$('select[id="month"]').val (birthdate[1]);
+			if ($('select[id="day"]').length)
+				if (birthdate[2] != "")
+					$('select[id="day"]').val (birthdate[2]);
 
 			if ($('#address').length)
 				$('#address').html (address);
