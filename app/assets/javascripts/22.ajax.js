@@ -68,10 +68,7 @@ function sendregister() {
 }
 
 function sendchangepass() {
-	 if ($('#mobile').val().length != 11) {
-		alert ("请输入您的手机号码");
-		return;
-	 } else if ($('#password2').val().length < 6) {
+	 if ($('#password2').val().length < 6) {
 		alert ("密码太短了，为了安全起见请选择长一些的密码");
 		return;
 	 } else if ($('#identification').val() != $('#password2').val()) {
@@ -79,15 +76,11 @@ function sendchangepass() {
 		return;
 	}
 
-
-
 	$.ajax ({
 		url:		"/membership/register.json",
 		type:		"POST",
 		dataType:	"json",
 		data:		{
-			email:			$('#email').val(),
-			mobile:			$('#mobile').val(),
 			password:		$.sha256 ($('#mobile').val() + $('#password2').val()).slice (0, 23),
 			verification:	$('#telidentification').val()
 		}
