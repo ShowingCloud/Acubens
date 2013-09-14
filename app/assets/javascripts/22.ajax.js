@@ -80,7 +80,10 @@ function sendchangepass() {
 	} else if ($('#telidentification').val().length < 4){
 	 	alert ("请输入验证码");
 		return;
-	}
+	} else if ($('#mobile').val().length != 11) {
+		alert ("请输入您的手机号码");
+		return;
+	 } 
 
 	$.ajax ({
 		url:		"/membership/changepsw.json",
@@ -88,7 +91,8 @@ function sendchangepass() {
 		dataType:	"json",
 		data:		{
 			password:		$.sha256 ($('#mobile').val() + $('#password2').val()).slice (0, 23),
-			verification:	$('#telidentification').val()
+			verification:	$('#telidentification').val(),
+			mobile:			$('#mobile').val()
 		}
 	}).done (function (resp) {
 		if (parseInt (resp.status) == 1)
