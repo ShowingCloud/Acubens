@@ -8,7 +8,7 @@ class MembershipController < ApplicationController
 
 	respond_to :json, :xml, :html
 
-	before_filter :checklogin, :except => [:verifymobile, :register, :login, :logout, :getusers, :getdict]
+	before_filter :checklogin, :except => [:verifymobile, :register, :login, :logout, :getusers, :getdict, :changepsw]
 
 	Client = Savon.client do
 		wsdl "http://www.mokard.com/WSV26/PointRequest.asmx?WSDL"
@@ -166,7 +166,7 @@ class MembershipController < ApplicationController
 		cipher.key = Acubens::Application.config.membership_secret_token
 
 		iv = Digest::SHA256.new
-		iv.update session[:username].to_s
+		iv.update params[:mobile].to_s
 		cipher.iv = iv.hexdigest
 
 		result = cipher.update params[:password].slice(0, 23)
@@ -176,9 +176,23 @@ class MembershipController < ApplicationController
 		resp = query_mokard(:update_user_pwd, {
 			:merchant_no => Merchant,
 			:channel => Channel,
-			:user_name => session[:username].to_s,
+			:user_name => params[:mobile].to_s,
 			:new_password => pswd,
 			:code => params[:verification].to_s,
+		})
+
+		if resp[:status] != "1"
+			respond_with resp.merge({ :progress => :password }), :location => nil and return
+		end
+
+		resp = query_mokard(:update_user_info, {
+			:merchant_no => Merchant,
+			:channel => Channel,
+			:user_name => params[:mobile].to_s,
+			:user_info => {
+				"passwordMD5" => pswd,
+				Columns[:password] => pswd
+			}
 		})
 
 		respond_with resp, :location => nil
@@ -200,8 +214,6 @@ class MembershipController < ApplicationController
 				Columns[:wechat] => params[:wechat].to_s
 			}.reject { |k, v| v.nil? or v == "" }
 		})
-
-		resp[:username] = session[:username].to_s
 
 		respond_with resp, :location => nil
 	end
