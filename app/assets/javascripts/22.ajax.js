@@ -39,7 +39,10 @@ function sendregister() {
 	 } else if ($('#identification').val() != $('#password2').val()) {
 		alert ("两次输入的密码不同");
 		return;
-	}
+	 } else if ($('#telidentification').val().length < 4){
+	 	alert ("请输入验证码");
+		return;
+	 }
 
 
 
@@ -74,10 +77,13 @@ function sendchangepass() {
 	 } else if ($('#identification').val() != $('#password2').val()) {
 		alert ("两次输入的密码不同");
 		return;
+	} else if ($('#telidentification').val().length < 4){
+	 	alert ("请输入验证码");
+		return;
 	}
 
 	$.ajax ({
-		url:		"/membership/register.json",
+		url:		"/membership/changepsw.json",
 		type:		"POST",
 		dataType:	"json",
 		data:		{
