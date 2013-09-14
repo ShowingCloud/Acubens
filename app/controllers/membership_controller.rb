@@ -235,7 +235,7 @@ class MembershipController < ApplicationController
 			:merchant_no => Merchant,
 			:channel => Channel,
 			:user_name => session[:username].to_s,
-			:address_id => params[:id].to_s
+			:address_id => params[:id] == nil ? "-1" : params[:id].to_s
 		})
 
 		respond_with resp, :location => nil
