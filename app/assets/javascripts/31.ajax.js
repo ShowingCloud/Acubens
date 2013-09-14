@@ -201,27 +201,27 @@ function getmeminfo() {
 				var subscriptoin_str = "subscribe";
 			} else if (ret.column1 == "否") {
 				var subscription = "不订阅";
-				var subscription_str = "nosubscribe";
+				var subscription_str = "notsubscribe";
 			} else {
 				var subscription = "";
 				var subscription_str = "";
 			}
 
 			if (ret.column3 == null)
-				var phone = "";
+				var phone_str = "";
 			else {
 				var phone = ret.column3.split('-');
 
 				if (phone[1] == "")
-					phone = "";
+					phone_str = "";
 				else if (phone[0] == "" && phone[2] == "")
-					phone = phone[1];
+					phone_str = phone[1];
 				else if (phone[0] == "")
-					phone = phone[1] + '-' + phone[2];
+					phone_str = phone[1] + '-' + phone[2];
 				else if (phone[2] == "")
-					phone = phone[0] + '-' + phone[1];
+					phone_str = phone[0] + '-' + phone[1];
 				else
-					phone = phone[0] + '-' + phone[1] + '-' + phone[2];
+					phone_str = phone[0] + '-' + phone[1] + '-' + phone[2];
 			}
 
 			if (ret.birthday_dt == null)
@@ -260,7 +260,7 @@ function getmeminfo() {
 			if ($('#mobile').length)
 				$('#mobile').html (mobile);
 			if ($('#tel').length)
-				$('#tel').html (phone);
+				$('#tel').html (phone_str);
 			if ($('#taobao').length)
 				$('#taobao').html (taobao);
 			if ($('#yihao').length)
@@ -269,6 +269,13 @@ function getmeminfo() {
 				$('#weibo').html (weibo);
 			if ($('#weixin').length)
 				$('#weixin').html (weixin);
+
+			if ($('input[id="areacode"]').length && phone[0] != "")
+				$('input[id="areacode"]').val (phone[0]);
+			if ($('input[id="telephone"]').length && phone[1] != "")
+				$('input[id="telephone"]').val (phone[1]);
+			if ($('input[id="extensionnumber"]').length && phone[2] != "")
+				$('input[id="extensionnumber"]').val (phone[2]);
 
 			if ($('input[id="email"]').length)
 				$('input[id="email"]').val (email);
@@ -282,6 +289,14 @@ function getmeminfo() {
 				$('input[id="mobile"]').val (mobile);
 			if ($('input[id="address"]').length);
 				$('input[id="address"]').val (address);
+			if ($('input[id="taobao"]').length);
+				$('input[id="taobao"]').val (taobao);
+			if ($('input[id="yihao"]').length);
+				$('input[id="yihao"]').val (yihao);
+			if ($('input[id="weibo"]').length);
+				$('input[id="weibo"]').val (weibo);
+			if ($('input[id="weixin"]').length);
+				$('input[id="weixin"]').val (weixin);
 
 		} else {
 			if (resp.description != null)

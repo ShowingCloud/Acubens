@@ -198,7 +198,7 @@ class MembershipController < ApplicationController
 				Columns[:phone] => params[:phone].to_s,
 				Columns[:weibo] => params[:weibo].to_s,
 				Columns[:wechat] => params[:wechat].to_s
-			}
+			}.reject { |k, v| v.nil? or v == "" }
 		})
 
 		resp[:username] = session[:username].to_s
