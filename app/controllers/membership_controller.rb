@@ -121,33 +121,38 @@ class MembershipController < ApplicationController
 			respond_with ret = { :status => "0", :description => "No such user" }, :location => nil and return
 		end
 
-		pswd = resp[:return_value][Columns[:password].to_sym]
-		pswd = Base64.strict_decode64 pswd rescue nil
+		begin
+			pswd = resp[:return_value][Columns[:password].to_sym]
+			pswd = Base64.strict_decode64 pswd
 
-		cipher = OpenSSL::Cipher::Cipher.new 'DES3'
-		cipher.decrypt
-		cipher.key = Acubens::Application.config.membership_secret_token
+			cipher = OpenSSL::Cipher::Cipher.new 'DES3'
+			cipher.decrypt
+			cipher.key = Acubens::Application.config.membership_secret_token
 
-		iv = Digest::SHA256.new
-		iv.update params[:username].to_s
-		cipher.iv = iv.hexdigest
+			iv = Digest::SHA256.new
+			iv.update params[:username].to_s
+			cipher.iv = iv.hexdigest
 
-		clearpswd = cipher.update pswd rescue nil
-		clearpswd << cipher.final rescue nil
+			clearpswd = cipher.update pswd
+			clearpswd << cipher.final
 
-		hash = Digest::SHA256.new
-		hash.update clearpswd
-		hash.update params[:captcha].to_s
+			hash = Digest::SHA256.new
+			hash.update clearpswd
+			hash.update params[:captcha].to_s
+
+		rescue
+			logger.error $!.backtrace
+			hash = Digest::SHA256.new
+		end
 
 		if hash.hexdigest == params[:password]
 			session[:username] = params[:username]
 			session[:nickname] = resp[:return_value][:nick_name]
-			session[:gender] = resp[:return_value][:gender_id]
+			session[:gender] = resp[:return_value][:gender_id].to_i
 			session[:login] = true
 			respond_with ret = { :status => "1" }, :location => nil
 		else
-			respond_with ret = { :status => "0", :hash => hash.hexdigest, :pswd => params[:password],
-					   :clear => clearpswd, :resp => resp, :description => "Wrong password" }, :location => nil
+			respond_with ret = { :status => "0", :description => "Wrong password" }, :location => nil
 		end
 	end
 
