@@ -170,7 +170,7 @@ function getmeminfo() {
 	$.ajax ({
 		url:		"/membership/getinfo.json",
 		type:		"GET",
-		dataType:	"json"
+		dataType:	"json" ,
 	}).done (function (resp) {
 		if (parseInt (resp.status) == 1) {
 			var ret = resp.return_value;
@@ -242,7 +242,7 @@ function getmeminfo() {
 			if ($('#name').length)
 				$('#name').html (nickname);
 			if ($('#birthday').length)
-				$('#birthday').html (birthdate);
+				$('#birthday').html (birthdate_str);
 			if ($('#gender').length)
 				$('#gender').html (gender);
 
@@ -388,8 +388,6 @@ function sendsurvey(){
 
 
 function addaddress(){
-
-
 	if ($('#name').val().length < 2){
 		alert("请输入您的名字");
 		return;
@@ -444,10 +442,13 @@ function addaddress(){
 			city:		city, 
 			district:	district,
 			address: 	$('#address').val(),
+			zipcode:	$('#postalcode').val()
 		}
 	}).done (function (resp) {
 		if(parseInt (resp.status) == 1) {
-			alert ("感谢您提交地址");       
+			alert ("感谢您提交地址");    
+			location.href = "/%E4%BC%9A%E5%91%98%E4%B8%93%E5%8C%BA/%E4%BC%9A%E5%91%98%E4%B8%AD%E5%BF%83/%E6%94%B6%E8%B4%A7%E5%9C%B0%E5%9D%80%E7%AE%A1%E7%90%86";
+			   
 		}else {
 			    if (resp.description != null)
 				     alert (resp.description);
@@ -458,3 +459,37 @@ function addaddress(){
 		alert ("请求发送失败，请稍候再试");
 	});
 }
+
+function getadd() {
+
+	$.ajax ({
+		url:		"/membership/getaddr.json",
+		type:		"GET",
+		dataType:	"json" ,
+		data:	{
+			id: 		-1
+		}
+	}).done (function (resp) {
+		if (parseInt (resp.status) == 1) {
+			
+			
+			var ret = resp.return_value;	
+					
+			var mobile = ret.mobile == null ? "" : ret.mobile;
+			
+			
+			
+			var address = ret.address == null ? "" : ret.address;
+			var nickname = ret.nick_name == null ? "" : ret.nick_name;			
+			var province = ret.province == null ? "" : ret.province; 
+			var city = ret.city == null ? "" : ret.city;
+			alert(city);
+			var district = ret.district == null ? "" : ret.district;
+			var phone = ret.phone == null ? "" : ret.phone;		
+		}
+	}).fail (function() {
+		alert ("请求发送失败，请稍候再试");
+	});
+}
+
+

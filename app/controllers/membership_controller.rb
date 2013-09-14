@@ -144,7 +144,7 @@ class MembershipController < ApplicationController
 			session[:nickname] = resp[:return_value][:nick_name]
 			session[:gender] = resp[:return_value][:gender_id]
 			session[:login] = true
-			respond_with ret = { :status => "1" }, :location => nil
+			respond_with ret = { :status => "1", :resp => resp }, :location => nil
 		else
 			respond_with ret = { :status => "0", :hash => hash.hexdigest, :pswd => params[:password],
 					   :clear => clearpswd, :resp => resp, :description => "Wrong password" }, :location => nil

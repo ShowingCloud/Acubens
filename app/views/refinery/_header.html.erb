@@ -20,7 +20,7 @@
              <ul>
             		
            <% if session[:login] %> 
-                   <li class="login_info_txt1"><label><%= session[:nickname] ? session[:nickname] : session[:username] %></label><label><%= "先生" if session[:gender] == 69 %><%= "小姐" if session[:gender] == 70 %></label>&nbsp;&nbsp;您好！ </li>
+                   <li class="login_info_txt1"><label><%= session[:nickname] %></label><label><%= "先生" if session[:gender] == 69 %><%= "小姐" if session[:gender] == 70 %></label>&nbsp;&nbsp;您好！ </li>
                    <li class="login_info_txt2"><img src="/assets/img/arrow_03.jpg" width="19" height="28" /></li>
                    <li class="login_info_txt3"><a href="/membership/logout">退出登录</a></li>
   	                 <% else %>

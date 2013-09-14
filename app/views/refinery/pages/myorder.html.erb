@@ -1,6 +1,19 @@
 <!doctype html>
 <html>
 <body>
+<% content_for :javascripts do %>
+	<script>
+		<% if session[:login] %>
+			$(document).ready ();
+		<% else %>
+			$(document).ready (login);
+		<% end %>
+	</script>
+	<script>
+		$(document).ready(getadd);
+	</script>
+<% end %>
+
 
 <div class="middle-xp">
 <div id="member-left" >
