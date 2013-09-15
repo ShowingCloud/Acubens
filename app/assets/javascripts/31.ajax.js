@@ -323,7 +323,63 @@ function getmeminfo() {
 
 
 function sendsurvey(){
-
+	
+	 var problems="";
+	 $("input[name='problem']:checked").each(function(){
+	         problems = problems+$(this).val()+",";
+	 });
+	 problems = problems.slice(0,problems.length-1);
+	 //alert(string.toString());
+	 
+	 var procedures="";
+	 $("input[name='problem']:checked").each(function(){
+	         procedures = procedures+$(this).val()+",";
+	 });
+	 procedures = procedures.slice(0,procedures.length-1);
+	 
+	 var effects="";
+	 $("input[name='problem']:checked").each(function(){
+	         effects = effects+$(this).val()+",";
+	 });
+	 effects = effects.slice(0,effects.length-1);
+	 
+	 var shortcomings="";
+	 $("input[name='problem']:checked").each(function(){
+	         shortcomings = shortcomings+$(this).val()+",";
+	 });
+	 shortcomings = shortcomings.slice(0,shortcomings.length-1);
+	 
+	 var markets="";
+	 $("input[name='problem']:checked").each(function(){
+	         markets = markets+$(this).val()+",";
+	 });
+	 markets = markets.slice(0,markets.length-1);
+	 
+	  var factors="";
+	 $("input[name='problem']:checked").each(function(){
+	         factors = factors+$(this).val()+",";
+	 });
+	 factors = factors.slice(0,factors.length-1);
+	 
+	  var brands="";
+	 $("input[name='problem']:checked").each(function(){
+	         brands = brands+$(this).val()+",";
+	 });
+	 brands = brands.slice(0,brands.length-1);
+	 
+	  var ways="";
+	 $("input[name='problem']:checked").each(function(){
+	         ways = ways+$(this).val()+",";
+	 });
+	 ways = ways.slice(0,ways.length-1);
+	 
+	 var infos="";
+	 $("input[name='problem']:checked").each(function(){
+	         infos = infos+$(this).val()+",";
+	 });
+	 infos = infos.slice(0,infos.length-1);
+	 
+	 
 	var skin_survey = {
 		"user" : "15901940875",
 
@@ -331,31 +387,31 @@ function sendsurvey(){
 
 		"care": $('input[name="importance"]:checked').val(),
 
-		"problems" : $("input[name='problem']:checked").val(),
-    	
+		"problems" : problems,
+    	//"problems" : $("input[name='problem']:checked").val(),
 		"time" : $('input[name="time"]:checked').val(),
 
-		"procedures" : $("input[name='step']:checked").val(),
+		"procedures" : procedures,
        
-	    "effects" : $("input[name='mostimp']:checked").val(),
+	    "effects" : effects,
     
-	    "shortcomings" : $("input[name='reason']:checked").val(),
+	    "shortcomings" : shortcomings,
    	
 		"cost" : $('input[name="cost"]:checked').val(),
 
-		"markets" : $("input[name='channel']:checked").val(),
+		"markets" : markets,
     
-	    "factors" : $("input[name='affect']:checked").val(),
+	    "factors" : factors,
     
-	    "brands" : $("input[name='brand']:checked").val(),
+	    "brands" : brands,
 
 		"importance" : $('input[name="brandimp"]:checked').val(),
 
 		"source" : $('input[name="know"]:checked').val(),
 
-		"ways" : $("input[name='way']:checked").val(),
+		"ways" : ways,
 
-		"infos" : $("input[name='info']:checked").val(),
+		"infos" : infos,
 
 		"offline" : $('input[name="activ"]:checked').val(),
 
@@ -512,5 +568,82 @@ function getadd() {
 		alert ("请求发送失败，请稍候再试");
 	});
 }
+
+function updateaddr(){
+	if ($('#name').val().length < 2){
+		alert("请输入您的名字");
+		return;
+	}
+
+	if ($('#mobile').val().length < 2){
+		alert("请输入您的名字");
+		return;
+	}
+
+	if ($('#province').val().length > 0)
+	   var province = $('#province').val();
+	else {
+		alert ("请选择您所在的省");
+		return;
+	}
+	if ($('#city').val().length > 0)
+	   var city = $('#city').val();
+	else {
+		alert ("请选择您所在的市");
+		return;
+	}
+	if ($('#district').val().length > 0)
+	   var district = $('#district').val();
+	else {
+		alert ("请选择您所在的区");
+		return;
+	}	
+
+	if($('#address').val().length < 0){
+		alert ("请输入您的详细地址");
+		return;
+	}else if($('#postalcode').val().length <6){
+		alert  ("请输入邮政编码");
+		return;
+	}
+
+	var extensionnumber = 0;
+		if ($('#extensionnumber').val().length > 0)
+		extensionnumber = $('#extensionnumber').val()
+	
+	//alert(('input[id="addressid2"]'));
+	
+	$.ajax({
+		url:        "/membership/updateaddr.json",
+		type:       "POST",
+		dataType:   "json",
+		data:       {
+			id:			$('input[id="addressid2"]').val(),
+			mobile:		$('#mobile').val(),
+			phone:		$('#areacode').val() + '-' + $('#telephone').val() + '-' + $('#extensionnumber').val(),
+			name:		$('#name').val(),
+			province:	province,
+			city:		city, 
+			district:	district,
+			address: 	$('#address').val(),
+			zipcode:	$('#postalcode').val()
+		}
+	}).done (function (resp) {
+		if(parseInt (resp.status) == 1) {
+			alert ("感谢您提交地址");    
+			location.href = "/%E4%BC%9A%E5%91%98%E4%B8%93%E5%8C%BA/%E4%BC%9A%E5%91%98%E4%B8%AD%E5%BF%83/%E6%94%B6%E8%B4%A7%E5%9C%B0%E5%9D%80%E7%AE%A1%E7%90%86";
+			   
+		}else {
+			    if (resp.description != null)
+				     alert (resp.description);
+			    else
+				     alert ("请求失败，请再检查一遍您的输入并稍候再试");
+		}
+	}).fail (function() {
+		alert ("请求发送失败，请稍候再试");
+	});
+}
+
+
 
 

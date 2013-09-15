@@ -16,11 +16,9 @@
 	
 	
 $(".add_tab2 .add_td1 .add_del #delete").click (function () {
-//	var productid = $(this).parent().parent().find ('#productid').val();		
-	$(this).parent().parent().parent().remove();
-//	headerdel (productid);
-	alert($(this).parent().parent().parent().find ('#addressid').val())
 	
+	$(this).parent().parent().parent().remove();
+		
 	$.ajax({
 		url:        "/membership/deladdr.json",
 		type:       "POST",
@@ -46,7 +44,26 @@ $(".add_tab2 .add_td1 .add_del #delete").click (function () {
 	});	
 });
 
+$("#modify").click (function () {
+		
+	var par = $(this).parent().parent().parent();	
+	
+	$('input[id="name"]').val ($(this).parent().parent().parent().find ('#name2').html());		
+	$('input[id="mobile"]').val ($(this).parent().parent().parent().find ('#mobile2').html());		
+	$('input[id="postalcode"]').val ($(this).parent().parent().parent().find ('#zipcode2').html());		
+	$('input[id="address"]').val ($(this).parent().parent().parent().find ('#address2').html());		
+	$('input[id="addressid2"]').val ($(this).parent().parent().parent().find ('#addressid').val());		
+	$('input[id="saveadd"]').attr('type', 'hidden');
+	$('input[id="modadd"]').attr('type', 'submit');
+	
+	
+
+});
+
 	</script>	
+
+
+
 <% end %>
 
 
@@ -144,6 +161,7 @@ $(".add_tab2 .add_td1 .add_del #delete").click (function () {
                 </div>
                 
                <table class="firstlogin_middle_1"  border="0" cellspacing="0" cellpadding="0">
+               		  <tr><td><input type="hidden" id="addressid2" /></td></tr>
                       <tr>
                               <td   class="firstlogin_middle_2">*</td>
                               <td   class="firstlogin_middle_3">姓&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;名：</td>
@@ -202,6 +220,7 @@ $(".add_tab2 .add_td1 .add_del #delete").click (function () {
                <div class="resetpw_bottom">               
                      <div class="resetpw_bottom_save">
                               <input id="saveadd"   type="submit" value="完成并保存"  onclick="addaddress()">
+                              <input id="modadd"   type="hidden" value="修改地址"  onclick="updateaddr()">
                      </div>                                                          
                </div>
                
