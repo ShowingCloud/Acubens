@@ -53,6 +53,10 @@
 .complete_middle_1{
 	padding-top:20px;
 }
+.complete_middle_1 tr td label{
+	color:#000;
+}
+
 .complete_middle_2{
 	color:#6eb92b;
     	width:7px;
