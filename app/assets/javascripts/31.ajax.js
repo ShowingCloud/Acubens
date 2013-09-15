@@ -533,7 +533,7 @@ function getadd() {
 			for(var i=0;i<n;i++){
 				
 				if(i != 0)
-					$( ".add_tab2 tr:first-child").clone().prependTo( ".add_tab2" );
+					$( ".add_tab2 tr:first-child").clone(true).prependTo( ".add_tab2" );
 		
 				var ret = resp.return_value.user_address[i];		
 				var id = ret.id;	
