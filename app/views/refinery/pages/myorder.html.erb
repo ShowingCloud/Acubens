@@ -45,20 +45,33 @@ $(".add_tab2 .add_td1 .add_del #delete").click (function () {
 });
 
 $("#modify").click (function () {
-		
+	
 	var par = $(this).parent().parent().parent();	
 	
-	$('input[id="name"]').val ($(this).parent().parent().parent().find ('#name2').html());		
-	$('input[id="mobile"]').val ($(this).parent().parent().parent().find ('#mobile2').html());		
-	$('input[id="postalcode"]').val ($(this).parent().parent().parent().find ('#zipcode2').html());		
-	$('input[id="address"]').val ($(this).parent().parent().parent().find ('#address2').html());		
-	$('input[id="addressid2"]').val ($(this).parent().parent().parent().find ('#addressid').val());		
+	var tel = par.find ('#fixtel2').html()
+		
+	var phone = tel.split('-');
+	
+	$('input[id="areacode"]').val(phone[0]);
+	$('input[id="telephone"]').val(phone[1]);
+	$('input[id="extensionnumber"]').val(phone[2]);
+	$('input[id="name"]').val (par.find ('#name2').html());		
+	$('input[id="mobile"]').val (par.find ('#mobile2').html());		
+	$('input[id="postalcode"]').val (par.find ('#zipcode2').html());		
+	$('input[id="address"]').val (par.find ('#address2').html());		
+	$('input[id="addressid2"]').val (par.find ('#addressid').val());			
 	$('input[id="saveadd"]').attr('type', 'hidden');
 	$('input[id="modadd"]').attr('type', 'submit');
 	
 	
+	
+	
 
 });
+
+// function mod(){
+	// alert($(this).parent().parent().parent().find('#name2').html());
+// }
 
 	</script>	
 
@@ -251,7 +264,7 @@ $("#modify").click (function () {
                               <td   class="add_td2"><label id="fixtel2"></label></td>
                               <td   class="add_td1">
                                      <div class="add_mod">
-                                           <input id="modify"   type="button" value="修改"  >
+                                           <input id="modify"   type="button" value="修改"  ><!-- onclick="mod()"> -->
                                      </div>
                                      <div class="add_del">
                                            <input id="delete"   type="button" value="删除"  >
