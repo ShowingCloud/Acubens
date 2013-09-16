@@ -220,6 +220,9 @@ class MembershipController < ApplicationController
 			}.reject { |k, v| v.nil? or v == "" }
 		})
 
+		session[:nickname] = params[:fullname].to_s
+		session[:gender] = params[:gender].to_i
+
 		respond_with resp, :location => nil
 	end
 
