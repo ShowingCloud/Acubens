@@ -18,6 +18,7 @@
 }
 
 .firstlogin_middle_1{
+	font-size:12px;
 	padding-top:11px;	
 }
 .firstlogin_middle_2{
@@ -44,7 +45,7 @@
 	font-size:11px;
 }
 .firstlogin_middle_7_1{
-	width:65px;	
+	//width:65px;	
 }
 .firstlogin_middle_dropdown1{
 	color:#6eb92b;

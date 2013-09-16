@@ -420,7 +420,7 @@ function sendsurvey(){
 
 	
 	$.ajax({
-		url:        "/skin_surveys.json",
+		url:      	"/skin_surveys.json",		
 		type:       "POST",
 		dataType:   "json",
 		data:       {
@@ -437,6 +437,22 @@ function sendsurvey(){
 		//	    else
 		//		     alert ("请求失败，请再检查一遍您的输入并稍候再试");
 		//}
+	}).fail (function() {
+		alert ("请求发送失败，请稍候再试");
+	});
+}
+
+function surveydone(){
+	
+	 
+	
+	$.ajax({
+		url:      	"/skin_surveys.json",		
+		type:       "POST",
+		dataType:   "json",
+		
+	}).done (function (resp) {
+		
 	}).fail (function() {
 		alert ("请求发送失败，请稍候再试");
 	});
@@ -678,6 +694,33 @@ function updateaddr(){
 	});
 }
 
+function getdefaddr() {
 
-
+	$.ajax ({
+		url:		"/membership/getdefaddr.json",
+		type:		"GET",
+		dataType:	"json" ,
+	}).done (function (resp) {
+		if (parseInt (resp.status) == 1) {
+			var ret = resp;
+			alert(ret.defaddr);
+			var defaddr = ret.defaddr == null ? "" : ret.defaddr;
+			
+			$('.add_tab2 tr').each (function() {
+					if( defaddr == $(this).find('#addressid').val())
+						$(this).css("font-weight","bold");
+						
+			});	
+			
+			
+		} else {
+			if (resp.description != null)
+				alert (resp.description);
+			else
+				alert ("请求失败，请稍候再试");
+		}
+	}).fail (function() {
+		alert ("请求发送失败，请稍候再试");
+	});
+}
 
