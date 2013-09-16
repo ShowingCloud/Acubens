@@ -436,7 +436,7 @@ function sendsurvey(){
 		//		     alert (resp.description);
 		//	    else
 		//		     alert ("请求失败，请再检查一遍您的输入并稍候再试");
-		}
+		//}
 	}).fail (function() {
 		alert ("请求发送失败，请稍候再试");
 	});
