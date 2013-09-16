@@ -155,6 +155,7 @@ class MembershipController < ApplicationController
 
 			login = getfromdict :login
 			if login == nil
+				settodict :login, 1
 				login = 1
 			end
 			session[:login] = login
