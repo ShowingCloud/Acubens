@@ -82,7 +82,9 @@ class MembershipController < ApplicationController
 
 		if resp[:status] == "1"
 			session[:username] = params[:mobile]
-			session[:login] = true
+
+			settodict :login, 1
+			session[:login] = 1
 
 			fillinfo = query_mokard(:update_user_info, {
 				:merchant_no => Merchant,
@@ -150,7 +152,13 @@ class MembershipController < ApplicationController
 			session[:username] = params[:username]
 			session[:nickname] = resp[:return_value][:nick_name]
 			session[:gender] = resp[:return_value][:gender_id].to_i
-			session[:login] = true
+
+			login = getfromdict :login
+			if login == nil
+				login = 1
+			end
+			session[:login] = login
+
 			respond_with ret = { :status => "1", :resp => resp }, :location => nil
 		else
 			respond_with ret = { :status => "0", :description => "Wrong password" }, :location => nil
@@ -223,6 +231,11 @@ class MembershipController < ApplicationController
 
 		session[:nickname] = params[:fullname].to_s
 		session[:gender] = params[:gender].to_i
+
+		if getfromdict :login == 1
+			settodict :login, 2
+			session[:login] = 2
+		end
 
 		respond_with resp, :location => nil
 	end
@@ -320,6 +333,14 @@ class MembershipController < ApplicationController
 	def setdefaddr
 		settodict :defaddr, params[:id].to_s
 		respond_with ret = { :status => 1 }, :location => nil
+	end
+
+
+	def surveydone
+		if getfromdict :login == 2
+			settodict :login, 3
+			session[:login] = 3
+		end
 	end
 
 	def getpoint
