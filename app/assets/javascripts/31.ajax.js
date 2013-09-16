@@ -418,7 +418,7 @@ function sendsurvey(){
 		"age" : $('input[name="age"]:checked').val()
 	}
 
-	alert (skin_survey);
+	
 	$.ajax({
 		url:        "/skin_surveys.json",
 		type:       "POST",
@@ -428,14 +428,14 @@ function sendsurvey(){
 
 		}
 	}).done (function (resp) {
-		if(parseInt (resp.status) == 1) {
-			alert ("感谢您填写完成您的个人信息");
+		//if(parseInt (resp.status) == 1) {
+		//	alert ("感谢您填写完成您的个人信息");
 			location.href = "/home/%E9%97%AE%E5%8D%B7%E5%AE%8C%E6%88%90";               
-		}else {
-			    if (resp.description != null)
-				     alert (resp.description);
-			    else
-				     alert ("请求失败，请再检查一遍您的输入并稍候再试");
+		//}else {
+		//	    if (resp.description != null)
+		//		     alert (resp.description);
+		//	    else
+		//		     alert ("请求失败，请再检查一遍您的输入并稍候再试");
 		}
 	}).fail (function() {
 		alert ("请求发送失败，请稍候再试");
