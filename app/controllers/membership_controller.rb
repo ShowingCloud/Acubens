@@ -22,7 +22,8 @@ class MembershipController < ApplicationController
 	Merchant = "1591"
 
 	Columns = { :subscription => "column1", :postal => "column2", :phone => "column3", :weibo => "column4",
-			:wechat => "column5", :taobao => "column6", :yihao => "column7", :email => "column8", :password => "column9"}
+			:wechat => "column5", :taobao => "column6", :yihao => "column7", :email => "column8",
+			:password => "column9", :defaddr => "column10" }
 
 
 	def index
@@ -234,6 +235,12 @@ class MembershipController < ApplicationController
 			:user_name => session[:username].to_s
 		})
 
+		if not refinery_user?
+			resp[:return_value].delete :password
+			resp[:return_value].delete :password_md5
+			resp[:return_value].delete Columns[:password].to_sym
+		end
+
 		respond_with resp, :location => nil
 	end
 
@@ -305,6 +312,29 @@ class MembershipController < ApplicationController
 		respond_with resp, :location => nil
 	end
 
+
+	def getdefaddr
+		resp = query_mokard(:get_user_info, {
+			:merchant_no => Merchant,
+			:channel => Channel,
+			:user_name => session[:username].to_s
+		})
+
+		respond_with ret = { :status => 1, :defaddr => resp[:return_value][Columns[:defaddr].to_sym] }, :location => nil
+	end
+
+	def setdefaddr
+		resp = query_mokard(:update_user_info, {
+			:merchant_no => Merchant,
+			:channel => Channel,
+			:user_name => session[:username].to_s,
+			:user_info => {
+				Columns[:defaddr] => params[:defaddr].to_s
+			}
+		})
+
+		respond_with resp, :location => nil
+	end
 
 	def getpoint
 		resp = query_mokard(:get_points, {

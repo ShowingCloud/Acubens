@@ -23,6 +23,9 @@ Acubens::Application.routes.draw do
 		  post :addaddr
 		  post :updateaddr
 		  post :deladdr
+		  post :getdefaddr
+		  get :getdefaddr
+		  post :setdefaddr
 		  post :getpoint
 		  post :getusers
 		  get :getusers
