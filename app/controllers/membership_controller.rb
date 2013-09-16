@@ -233,7 +233,7 @@ class MembershipController < ApplicationController
 		session[:nickname] = params[:fullname].to_s
 		session[:gender] = params[:gender].to_i
 
-		if getfromdict :login == 1
+		if session[:login] = 1
 			settodict :login, 2
 			session[:login] = 2
 		end
@@ -338,10 +338,10 @@ class MembershipController < ApplicationController
 
 
 	def surveydone
-		if getfromdict :login == 2
+		if session[:login] = 2
 			resp = query_mokard(:calculate_points, {
-				:is_out_register => false,
-				:order => {
+				"isOutRegister" => "false",
+				"order" => {
 					:merchant_no => Merchant,
 					:channel => Channel,
 					:user_name => session[:username].to_s,
