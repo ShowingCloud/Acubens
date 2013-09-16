@@ -4,6 +4,9 @@
 <% content_for :javascripts do %>
 	<script>
 		<% if session[:login] %>
+			<% if session[:login] == 1%>
+					location.href = "/%E4%BC%9A%E5%91%98%E4%B8%93%E5%8C%BA/%E5%88%9D%E6%AC%A1%E7%99%BB%E5%BD%95";
+			<% end %>
 			$(document).ready ();
 		<% else %>
 			$(document).ready (login);
@@ -11,6 +14,7 @@
 	</script>
 	<script>
 		$(document).ready(getadd);
+		$(document).ready(getdefaddr);
 	</script>
 	<script>
 	
@@ -35,12 +39,12 @@ $(".add_tab2 .add_td1 .add_del #delete").click (function () {
 			    if (resp.description != null)
 				     alert (resp.description);
 			    else
-				     alert ("请求失败，请再检查一遍您的输入并稍候再试");
+	//			     alert ("请求失败，请再检查一遍您的输入并稍候再试");
 		}
 		
 		
 	}).fail (function() {
-		alert ("请求发送失败，请稍候再试");
+//		alert ("请求发送失败，请稍候再试");
 	});	
 });
 
@@ -73,9 +77,38 @@ $("#modify").click (function () {
 	// alert($(this).parent().parent().parent().find('#name2').html());
 // }
 
-$(".add_tab2 tr").click (function (){
-	$(".add_tab2 tr").css("font-weight","none");
-	$(this).css("font-weight","bold");
+$(".add_tab2 tr #click").click (function (){
+	
+	$('.add_tab2 tr').each (function() {
+		$(this).css("font-weight","normal");
+	});	
+	$(this).parent().css("font-weight","bold");
+
+	
+		$.ajax({
+		url:        "/membership/setdefaddr.json",
+		type:       "POST",
+		dataType:   "json",
+		data:       {
+			id:			$(this).parent().find('#addressid').val(),
+			
+		}
+	}).done (function (resp) {
+		if(parseInt (resp.status) == 1) {
+			alert ("设置默认地址成功");    
+			
+			   
+		}else {
+			    if (resp.description != null)
+				     alert (resp.description);
+			    else
+				     alert ("请求失败，请再检查一遍您的输入并稍候再试");
+		}
+	}).fail (function() {
+		alert ("请求发送失败，请稍候再试");
+	});
+
+
 })
 
 	</script>	
@@ -253,13 +286,13 @@ $(".add_tab2 tr").click (function (){
                		
                       <tr>
                       		  <td><input type="hidden" id="addressid" /></td>
-                              <td   class="add_td1"><label id="name2"></label></td>
-                              <td   class="add_td2"><label id="province2"></label></td>
-                              <td   class="add_td3"><label id="address2"> </label></td>
-                              <td   class="add_td2"><label id="mobile2"></label></td>
-                              <td   class="add_td2"><label id="zipcode2"></label></td>
-                              <td   class="add_td2"><label id="fixtel2"></label></td>
-                              <td   class="add_td1">
+                              <td   class="add_td1" id="click"><label id="name2"></label></td>
+                              <td   class="add_td2" id="click"><label id="province2"></label></td>
+                              <td   class="add_td3" id="click"><label id="address2"> </label></td>
+                              <td   class="add_td2" id="click"><label id="mobile2"></label></td>
+                              <td   class="add_td2" id="click"><label id="zipcode2"></label></td>
+                              <td   class="add_td2" id="click"><label id="fixtel2"></label></td>
+                              <td   class="add_td1" >
                                      <div class="add_mod">
                                            <input id="modify"   type="hidden" value="修改"  > 
                                      </div>
