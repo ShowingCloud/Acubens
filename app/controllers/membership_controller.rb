@@ -332,7 +332,7 @@ class MembershipController < ApplicationController
 	end
 
 	def setdefaddr
-		settodict :defaddr, params[:id].to_s
+		settodict :defaddr, params[:id].to_i
 		respond_with ret = { :status => 1 }, :location => nil
 	end
 

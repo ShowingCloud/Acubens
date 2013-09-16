@@ -26,6 +26,7 @@ Acubens::Application.routes.draw do
 		  post :getdefaddr
 		  get :getdefaddr
 		  post :setdefaddr
+		  get :setdefaddr
 		  get :surveydone
 		  post :surveydone
 		  post :getpoint
