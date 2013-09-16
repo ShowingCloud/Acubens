@@ -111,7 +111,7 @@ class MembershipController < ApplicationController
 		session[:login] = nil
 
 		if not simple_captcha_valid?
-			respond_with ret = { :status => "2" }, :location => nil and return
+			respond_with ret = { :status => 2 }, :location => nil and return
 		end
 
 		resp = query_mokard(:get_user_info, {
@@ -121,7 +121,7 @@ class MembershipController < ApplicationController
 		})
 
 		if not resp or not resp[:return_value]
-			respond_with ret = { :status => "0", :description => "No such user" }, :location => nil and return
+			respond_with ret = { :status => 0, :description => "No such user" }, :location => nil and return
 		end
 
 		begin
@@ -160,9 +160,9 @@ class MembershipController < ApplicationController
 			end
 			session[:login] = login
 
-			respond_with ret = { :status => "1", :resp => resp }, :location => nil
+			respond_with ret = { :status => 1, :resp => resp }, :location => nil
 		else
-			respond_with ret = { :status => "0", :description => "Wrong password" }, :location => nil
+			respond_with ret = { :status => 0, :description => "Wrong password" }, :location => nil
 		end
 	end
 
@@ -339,8 +339,29 @@ class MembershipController < ApplicationController
 
 	def surveydone
 		if getfromdict :login == 2
+			resp = query_mokard(:calculate_points, {
+				:is_out_register => false,
+				:order => {
+					:merchant_no => Merchant,
+					:channel => Channel,
+					:user_name => session[:username].to_s,
+					:name => "Registration",
+					:fit_object_type => "100",
+					:point_type => "4",
+					:order_no => "0",
+					:total_fee => "0.0",
+					:carriage_fee => "0.0",
+					:discount_fee => "0.0",
+					:create_date => DateTime.now()
+				}
+			})
+
 			settodict :login, 3
 			session[:login] = 3
+
+			respond_with resp, :location => nil and return
+		else
+			respond_with ret = { :status => -1 }, :location => nil and return
 		end
 	end
 
@@ -358,7 +379,7 @@ class MembershipController < ApplicationController
 
 	def getusers
 		if not refinery_user?
-			respond_with ret = { :status => "0" }, :location => nil and return
+			respond_with ret = { :status => 0 }, :location => nil and return
 		end
 
 		resp = query_mokard(:get_user_info_list, {
@@ -390,7 +411,7 @@ class MembershipController < ApplicationController
 
 	def checklogin
 		if not session[:login] or not session[:username]
-			respond_with ret = { :status => "0" }, :location => nil and return
+			respond_with ret = { :status => 0 }, :location => nil and return
 		end
 	end
 
