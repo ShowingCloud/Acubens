@@ -703,7 +703,6 @@ function getdefaddr() {
 	}).done (function (resp) {
 		if (parseInt (resp.status) == 1) {
 			var ret = resp;
-			alert(ret.defaddr);
 			var defaddr = ret.defaddr == null ? "" : ret.defaddr;
 			
 			$('.add_tab2 tr').each (function() {
