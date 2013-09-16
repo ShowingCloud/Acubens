@@ -23,7 +23,7 @@ class MembershipController < ApplicationController
 
 	Columns = { :subscription => "column1", :postal => "column2", :phone => "column3", :weibo => "column4",
 			:wechat => "column5", :taobao => "column6", :yihao => "column7", :email => "column8",
-			:password => "column9", :defaddr => "column10" }
+			:password => "column9", :dictionary => "column10" }
 
 
 	def index
@@ -314,26 +314,12 @@ class MembershipController < ApplicationController
 
 
 	def getdefaddr
-		resp = query_mokard(:get_user_info, {
-			:merchant_no => Merchant,
-			:channel => Channel,
-			:user_name => session[:username].to_s
-		})
-
-		respond_with ret = { :status => 1, :defaddr => resp[:return_value][Columns[:defaddr].to_sym] }, :location => nil
+		respond_with ret = { :status => 1, :defaddr => getfromdict(:defaddr) }, :location => nil
 	end
 
 	def setdefaddr
-		resp = query_mokard(:update_user_info, {
-			:merchant_no => Merchant,
-			:channel => Channel,
-			:user_name => session[:username].to_s,
-			:user_info => {
-				Columns[:defaddr] => params[:defaddr].to_s
-			}
-		})
-
-		respond_with resp, :location => nil
+		settodict :defaddr, params[:id].to_s
+		respond_with ret = { :status => 1 }, :location => nil
 	end
 
 	def getpoint
@@ -384,6 +370,50 @@ class MembershipController < ApplicationController
 		if not session[:login] or not session[:username]
 			respond_with ret = { :status => "0" }, :location => nil and return
 		end
+	end
+
+
+	def getfromdict(method)
+		resp = query_mokard(:get_user_info, {
+			:merchant_no => Merchant,
+			:channel => Channel,
+			:user_name => session[:username].to_s
+		})
+
+		if method == :all
+			begin
+				return eval resp[:return_value][Columns[:dictionary].to_sym]
+			rescue
+				return {}
+			end
+		else
+			begin
+				resp = eval resp[:return_value][Columns[:dictionary].to_sym]
+				return resp[method]
+			rescue
+				return nil
+			end
+		end
+	end
+
+
+	def settodict(method, value)
+		dictionary = getfromdict :all
+
+		if dictionary == nil
+			dictionary = {}
+		end
+
+		dictionary[method] = value
+
+		resp = query_mokard(:update_user_info, {
+			:merchant_no => Merchant,
+			:channel => Channel,
+			:user_name => session[:username].to_s,
+			:user_info => {
+				Columns[:dictionary] => dictionary.to_s
+			}
+		})
 	end
 
 end
