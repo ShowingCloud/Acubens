@@ -529,10 +529,42 @@ function getadd() {
 		if (parseInt (resp.status) == 1) {
 			
 		var n = resp.return_value.user_address.length;
+			
+			if ( typeof resp.return_value.user_address.length == "undefined"){
+				
+				var ret = resp.return_value.user_address;		
+				var id = ret.id;	
+				var mobile = ret.buyer_contact1 == null ? "" : ret.buyer_contact1;			
+				var address = ret.full_address == null ? "" : ret.full_address;
+				var nickname = ret.buyer_name == null ? "" : ret.buyer_name;			
+				var province = ret.province == null ? "" : ret.province; 
+				var city = ret.city == null ? "" : ret.city;		
+				var district = ret.district == null ? "" : ret.district;
+				var phone = ret.buyer_contact2 == null ? "" : ret.buyer_contact2;
+				var zip_code = ret.zip_code == null ? "" : ret.zip_code
+				
+				if ($('.add_tab2 tr:first-child input[id="addressid"]').length);
+					$('.add_tab2 tr:first-child input[id="addressid"]').val (id);
+				if ($('.add_tab2 tr:first-child #name2').length)
+					$('.add_tab2 tr:first-child #name2').html (nickname);
+				if ($('.add_tab2 tr:first-child #address2').length)
+					$('.add_tab2 tr:first-child #address2').html (address);
+				if ($('.add_tab2 tr:first-child #mobile2').length)
+					$('.add_tab2 tr:first-child #mobile2').html (mobile);
+				if ($('.add_tab2 tr:first-child #province2').length)
+					$('.add_tab2 tr:first-child #province2').html (province+city+district);
+				if ($('.add_tab2 tr:first-child #zipcode2').length)
+					$('.add_tab2 tr:first-child #zipcode2').html (zip_code);
+				if ($('.add_tab2 tr:first-child #fixtel2').length)
+					$('.add_tab2 tr:first-child #fixtel2').html (phone);
+				$('input[id="modify"]').attr('type', 'button');
+				$('input[id="delete"]').attr('type', 'button');
+				
+			}
 		
 			for(var i=0;i<n;i++){
 				
-				if(i != 0)
+				if(i != 0 )
 					$( ".add_tab2 tr:first-child").clone(true).prependTo( ".add_tab2" );
 		
 				var ret = resp.return_value.user_address[i];		
@@ -560,6 +592,8 @@ function getadd() {
 					$('.add_tab2 tr:first-child #zipcode2').html (zip_code);
 				if ($('.add_tab2 tr:first-child #fixtel2').length)
 					$('.add_tab2 tr:first-child #fixtel2').html (phone);
+				$('input[id="modify"]').attr('type', 'button');
+				$('input[id="delete"]').attr('type', 'button');
 			}		
 			
 			

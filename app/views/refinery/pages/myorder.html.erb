@@ -73,6 +73,11 @@ $("#modify").click (function () {
 	// alert($(this).parent().parent().parent().find('#name2').html());
 // }
 
+$(".add_tab2 tr").click (function (){
+	$(".add_tab2 tr").css("font-weight","none");
+	$(this).css("font-weight","bold");
+})
+
 	</script>	
 
 
@@ -256,10 +261,10 @@ $("#modify").click (function () {
                               <td   class="add_td2"><label id="fixtel2"></label></td>
                               <td   class="add_td1">
                                      <div class="add_mod">
-                                           <input id="modify"   type="button" value="修改"  ><!-- onclick="mod()"> -->
+                                           <input id="modify"   type="hidden" value="修改"  > 
                                      </div>
                                      <div class="add_del">
-                                           <input id="delete"   type="button" value="删除"  >
+                                           <input id="delete"   type="hidden" value="删除"  > 
                                      </div>
                               </td>
                      </tr>
