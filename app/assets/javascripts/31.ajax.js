@@ -558,7 +558,13 @@ function getadd() {
 				var district = ret.district == null ? "" : ret.district;
 				var phone = ret.buyer_contact2 == null ? "" : ret.buyer_contact2;
 				var zip_code = ret.zip_code == null ? "" : ret.zip_code
-				
+							
+				if ($('.add_tab2 tr:first-child input[id="province3"]').length);
+					$('.add_tab2 tr:first-child input[id="province3"]').val (province);
+				if ($('.add_tab2 tr:first-child input[id="city3"]').length);
+					$('.add_tab2 tr:first-child input[id="city3"]').val (city);
+				if ($('.add_tab2 tr:first-child input[id="district3"]').length);
+					$('.add_tab2 tr:first-child input[id="district3"]').val (district);
 				if ($('.add_tab2 tr:first-child input[id="addressid"]').length);
 					$('.add_tab2 tr:first-child input[id="addressid"]').val (id);
 				if ($('.add_tab2 tr:first-child #name2').length)
@@ -594,6 +600,12 @@ function getadd() {
 				var phone = ret.buyer_contact2 == null ? "" : ret.buyer_contact2;
 				var zip_code = ret.zip_code == null ? "" : ret.zip_code
 				
+				if ($('.add_tab2 tr:first-child input[id="province3"]').length);
+					$('.add_tab2 tr:first-child input[id="province3"]').val (province);
+				if ($('.add_tab2 tr:first-child input[id="city3"]').length);
+					$('.add_tab2 tr:first-child input[id="city3"]').val (city);
+				if ($('.add_tab2 tr:first-child input[id="district3"]').length);
+					$('.add_tab2 tr:first-child input[id="district3"]').val (district);
 				if ($('.add_tab2 tr:first-child input[id="addressid"]').length);
 					$('.add_tab2 tr:first-child input[id="addressid"]').val (id);
 				if ($('.add_tab2 tr:first-child #name2').length)
