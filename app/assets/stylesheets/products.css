@@ -87,8 +87,10 @@
 	float:left;
 	margin-left:45px;
     text-align:left;
+    	padding-left:15px;
+	font-size:12px;
 	background-color:#6eb92b;
-	width:75px;
+	width:70px;
 	height:18px;
 	border-width:0px;
 	color:#ffffff;
@@ -384,6 +386,8 @@
 	border-width:0px;
 	color:#ffffff;
 	border-radius:8px;
+	font-size:12px;
+	padding-left:10px;
 }
 .slogan_detail_book{
 	margin-top:18px;
