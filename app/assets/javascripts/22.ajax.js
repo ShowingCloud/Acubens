@@ -136,10 +136,13 @@ function sendlogin() {
 	}).done (function (resp) {
 		if (parseInt (resp.status) == 1)
 			location.reload();
-		else if (parseInt (resp.status) == 2)
-			$("#popup_dialog div").load ('/home/login-page .tabbed_area-login', function() {$('#loginerr').html ("验证码错误");});
-		else
-			$("#popup_dialog div").load ('/home/login-page .tabbed_area-login', function() {$('#loginerr').html ("登录信息错误");});
+		else if (parseInt (resp.status) == 2) {
+			$(".authenticationtd").load ('/home/login-page .simple_captcha');
+			$('#loginerr').html ("验证码错误");
+		} else {
+			$(".authenticationtd").load ('/home/login-page .simple_captcha');
+			$('#loginerr').html ("登录信息错误");
+		}
 	}).fail (function() {
 		$('#loginerr').html ("请求发送失败，请稍候再试");
 	});

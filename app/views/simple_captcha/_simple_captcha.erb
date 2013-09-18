@@ -1,3 +1,17 @@
+
+
+<div class='simple_captcha'>
+  <div class='simple_captcha_image' onclick="javascript:$('.authenticationtd').load ('/home/login-page .simple_captcha');">
+    <%= simple_captcha_options[:image] %>
+  </div>
+  
+  <div class='simple_captcha_field'>
+    <%= simple_captcha_options[:field] %>
+  </div>
+  
+  <div class='simple_captcha_label'>
+    <%= simple_captcha_options[:label] %>
+  </div>
 <style type="text/CSS">
   .simple_captcha{border: 1px solid #ccc; padding: 5px !important;}
   .simple_captcha,
@@ -21,17 +35,4 @@
     background-color: #efefef;
   }
 </style>
-
-<div class='simple_captcha'>
-  <div class='simple_captcha_image' onclick="javascript:login()">
-    <%= simple_captcha_options[:image] %>
-  </div>
-  
-  <div class='simple_captcha_field'>
-    <%= simple_captcha_options[:field] %>
-  </div>
-  
-  <div class='simple_captcha_label'>
-    <%= simple_captcha_options[:label] %>
-  </div>
 </div>
