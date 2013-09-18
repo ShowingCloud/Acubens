@@ -52,10 +52,15 @@ $("#modify").click (function () {
 	
 	var par = $(this).parent().parent().parent();	
 	
-	var tel = par.find ('#fixtel2').html()
+	var tel = par.find ('#fixtel2').html();
+	var prov = par.find ('#province3').val();
+	var cit = par.find ('#city3').val();
+	var dist = par.find ('#district3').val();
 		
 	var phone = tel.split('-');
 	
+	
+	$('#province').val(prov);
 	$('input[id="areacode"]').val(phone[0]);
 	$('input[id="telephone"]').val(phone[1]);
 	$('input[id="extensionnumber"]').val(phone[2]);
@@ -66,8 +71,15 @@ $("#modify").click (function () {
 	$('input[id="addressid2"]').val (par.find ('#addressid').val());			
 	$('input[id="saveadd"]').attr('type', 'hidden');
 	$('input[id="modadd"]').attr('type', 'submit');
+	$("#city option[value='0']").remove();
+	$("#city").prepend("<option>"+cit+"</option>");
+	$("#district option[value='0']").remove();
+	$("#district").prepend("<option>"+dist+"</option>");
+//	$('option:selected', '#province').attr ('id').slice (5);
+//	$('#city').val(cit);
+//	$('#district').val(dist);
 	
-	
+
 	
 	
 
@@ -285,7 +297,8 @@ $(".add_tab2 tr #click").click (function (){
                <table class="add_tab2"  border="0" cellspacing="0" cellpadding="0">
                		
                       <tr>
-                      		  <td><input type="hidden" id="addressid" /></td>
+                      		  <td><input type="hidden" id="addressid" /><input type="hidden" id="province3" /><input type="hidden" id="city3" /><input type="hidden" id="district3" /></td>
+                      		  <td><input type="hidden" id="proaddr" /></td>
                               <td   class="add_td1" id="click"><label id="name2"></label></td>
                               <td   class="add_td2" id="click"><label id="province2"></label></td>
                               <td   class="add_td3" id="click"><label id="address2"> </label></td>
