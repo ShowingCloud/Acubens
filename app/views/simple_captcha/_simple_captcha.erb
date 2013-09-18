@@ -15,7 +15,7 @@
   }
   .simple_captcha .simple_captcha_label{font-size: 12px;}
   .simple_captcha .simple_captcha_field input{
-    width: 150px !important;
+    width: 140px !important;
     font-size: 16px;
     border: none;
     background-color: #efefef;
@@ -23,7 +23,7 @@
 </style>
 
 <div class='simple_captcha'>
-  <div class='simple_captcha_image'>
+  <div class='simple_captcha_image' onclick="javascript:login()">
     <%= simple_captcha_options[:image] %>
   </div>
   
