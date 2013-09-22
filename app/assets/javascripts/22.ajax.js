@@ -473,6 +473,9 @@ function getmeminfo() {
 
 function sendsurvey(){
 	
+	
+	
+	
 	 var problems="";
 	 $("input[name='problem']:checked").each(function(){
 	         problems = problems+$(this).val()+",";
@@ -528,7 +531,86 @@ function sendsurvey(){
 	 });
 	 infos = infos.slice(0,infos.length-1);
 	 
+	 if ($('input[name="type"]:checked').length == 0){
+		alert ("请检查您的选项");
+		return;
+	}
+	
+	 if ($('input[name="importance"]:checked').length == 0){
+		alert ("请检查您的选项");
+		return;
+	}
+	
+	if ($('input[name="problem"]:checked').length == 0){
+		alert ("请检查您的选项");
+		return;
+	}
+	
+	if ($('input[name="time"]:checked').length == 0){
+		alert ("请检查您的选项");
+		return;
+	}
+	
+	if ($('input[name="step"]:checked').length == 0){
+		alert ("请检查您的选项");
+		return;
+	}
+	
+	if ($('input[name="mostimp"]:checked').length == 0){
+		alert ("请检查您的选项");
+		return;
+	}
+	
+	if ($('input[name="reason"]:checked').length == 0){
+		alert ("请检查您的选项");
+		return;
+	}
+	
+	if ($('input[name="cost"]:checked').length == 0){
+		alert ("请检查您的选项");
+		return;
+	}
+	
+	if ($('input[name="channel"]:checked').length == 0){
+		alert ("请检查您的选项");
+		return;
+	}
+	
+	if ($('input[name="affect"]:checked').length == 0){
+		alert ("请检查您的选项");
+		return;
+	}
+	
+	if ($('input[name="brand"]:checked').length == 0){
+		alert ("请检查您的选项");
+		return;
+	}
+	
+	if ($('input[name="brandimp"]:checked').length == 0){
+		alert ("请检查您的选项");
+		return;
+	}
 	 
+	if ($('input[name="way"]:checked').length == 0){
+		alert ("请检查您的选项");
+		return;
+	}
+	
+	if ($('input[name="info"]:checked').length == 0){
+		alert ("请检查您的选项");
+		return;
+	}
+	
+	if ($('input[name="activ"]:checked').length == 0){
+		alert ("请检查您的选项");
+		return;
+	}
+	
+	if ($('input[name="age"]:checked').length == 0){
+		alert ("请检查您的选项");
+		return;
+	}
+	
 	var skin_survey = {
 		"user" : "15901940875",
 
@@ -566,7 +648,6 @@ function sendsurvey(){
 
 		"age" : $('input[name="age"]:checked').val()
 	}
-
 	
 	$.ajax({
 		url:      	"/skin_surveys.json",		
