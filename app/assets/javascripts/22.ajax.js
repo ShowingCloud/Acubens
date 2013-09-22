@@ -484,49 +484,49 @@ function sendsurvey(){
 	 //alert(string.toString());
 	 
 	 var procedures="";
-	 $("input[name='problem']:checked").each(function(){
+	 $("input[name='step']:checked").each(function(){
 	         procedures = procedures+$(this).val()+",";
 	 });
 	 procedures = procedures.slice(0,procedures.length-1);
 	 
 	 var effects="";
-	 $("input[name='problem']:checked").each(function(){
+	 $("input[name='mostimp']:checked").each(function(){
 	         effects = effects+$(this).val()+",";
 	 });
 	 effects = effects.slice(0,effects.length-1);
 	 
 	 var shortcomings="";
-	 $("input[name='problem']:checked").each(function(){
+	 $("input[name='reason']:checked").each(function(){
 	         shortcomings = shortcomings+$(this).val()+",";
 	 });
 	 shortcomings = shortcomings.slice(0,shortcomings.length-1);
 	 
 	 var markets="";
-	 $("input[name='problem']:checked").each(function(){
+	 $("input[name='channel']:checked").each(function(){
 	         markets = markets+$(this).val()+",";
 	 });
 	 markets = markets.slice(0,markets.length-1);
 	 
 	  var factors="";
-	 $("input[name='problem']:checked").each(function(){
+	 $("input[name='affect']:checked").each(function(){
 	         factors = factors+$(this).val()+",";
 	 });
 	 factors = factors.slice(0,factors.length-1);
 	 
 	  var brands="";
-	 $("input[name='problem']:checked").each(function(){
+	 $("input[name='brand']:checked").each(function(){
 	         brands = brands+$(this).val()+",";
 	 });
 	 brands = brands.slice(0,brands.length-1);
 	 
 	  var ways="";
-	 $("input[name='problem']:checked").each(function(){
+	 $("input[name='way']:checked").each(function(){
 	         ways = ways+$(this).val()+",";
 	 });
 	 ways = ways.slice(0,ways.length-1);
 	 
 	 var infos="";
-	 $("input[name='problem']:checked").each(function(){
+	 $("input[name='info']:checked").each(function(){
 	         infos = infos+$(this).val()+",";
 	 });
 	 infos = infos.slice(0,infos.length-1);
@@ -989,7 +989,7 @@ $(document).ready (function() {
 				+ resp.children[i].name + "</option>");
 	   }
 	}).fail (function() {
-		alert ("请求发送失败，请稍候再试");
+	//	alert ("请求发送失败，请稍候再试");
 	});
 });
 
