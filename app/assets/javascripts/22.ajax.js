@@ -650,7 +650,7 @@ function sendsurvey(){
 	}
 	
 	$.ajax({
-		url:      	"/skin_surveys.json",		
+		url:      	"/membership/surveydone.json",
 		type:       "POST",
 		dataType:   "json",
 		data:       {
@@ -658,31 +658,15 @@ function sendsurvey(){
 
 		}
 	}).done (function (resp) {
-		//if(parseInt (resp.status) == 1) {
+		if(parseInt (resp.status) == 1) {
 		//	alert ("感谢您填写完成您的个人信息");
 			location.href = "/home/%E9%97%AE%E5%8D%B7%E5%AE%8C%E6%88%90";               
-		//}else {
-		//	    if (resp.description != null)
-		//		     alert (resp.description);
-		//	    else
-		//		     alert ("请求失败，请再检查一遍您的输入并稍候再试");
-		//}
-	}).fail (function() {
-		alert ("请求发送失败，请稍候再试");
-	});
-}
-
-function surveydone(){
-	
-	 
-	
-	$.ajax({
-		url:      	"/skin_surveys.json",		
-		type:       "POST",
-		dataType:   "json",
-		
-	}).done (function (resp) {
-		
+		}else {
+			    if (resp.description != null)
+				     alert (resp.description);
+			    else
+				     alert ("请求失败，请再检查一遍您的输入并稍候再试");
+		}
 	}).fail (function() {
 		alert ("请求发送失败，请稍候再试");
 	});

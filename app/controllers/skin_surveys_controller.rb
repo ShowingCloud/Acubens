@@ -45,10 +45,10 @@ class SkinSurveysController < ApplicationController
 					format.html { redirect_to "/" }
 				end and return
 			else
-				@skin_survey[:user] = session[:username]
+				@skin_survey[:user] = session[:username].to_s
 			end
 		elsif not @skin_survey[:user]
-			@skin_survey[:user] = session[:username]
+			@skin_survey[:user] = session[:username].to_s
 		end
 
 		@skin_survey.save

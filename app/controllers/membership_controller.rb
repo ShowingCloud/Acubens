@@ -233,7 +233,7 @@ class MembershipController < ApplicationController
 		session[:nickname] = params[:fullname].to_s
 		session[:gender] = params[:gender].to_i
 
-		if session[:login] = 1
+		if session[:login] == 1
 			settodict :login, 2
 			session[:login] = 2
 		end
@@ -338,7 +338,12 @@ class MembershipController < ApplicationController
 
 
 	def surveydone
-		if session[:login] = 2
+		if session[:login] == 2
+			@skin_survey = SkinSurvey.find_or_initialize_by_user session[:username].to_s
+			@skin_survey.update_attributes params[:skin_survey]
+			@skin_survey[:user] = session[:username].to_s
+			@skin_survey.save
+
 			resp = query_mokard(:calculate_points, {
 				"isOutRegister" => "false",
 				"order" => {
