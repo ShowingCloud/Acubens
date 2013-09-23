@@ -260,6 +260,8 @@ class MembershipController < ApplicationController
 			resp[:return_value].delete Columns[:password].to_sym
 		end
 
+		settodict :login, 2
+		session[:login] = 2
 		respond_with resp, :location => nil
 	end
 
@@ -349,25 +351,16 @@ class MembershipController < ApplicationController
 			@skin_survey[:user] = session[:username].to_s
 			@skin_survey.save
 
-			resp = query_mokard(:calculate_points, {
-				"isOutRegister" => "false",
-				"order" => {
-					:merchant_no => Merchant,
-					:channel => Channel,
-					:user_name => session[:username].to_s,
-					:name => "Registration",
-					:fit_object_type => "100",
-					:point_type => "4",
-					:order_no => "0",
-					:total_fee => "0.0",
-					:carriage_fee => "0.0",
-					:discount_fee => "0.0",
-					:create_date => DateTime.now()
-				}
+			resp = query_mokard(:gelnic_questionnaire_add_point, {
+				"merchantNo" => Merchant,
+				"channel" => Channel,
+				"userName" => session[:username].to_s
 			})
 
-			settodict :login, 3
-			session[:login] = 3
+			if resp[:status] == "1"
+				settodict :login, 3
+				session[:login] = 3
+			end
 
 			respond_with resp, :location => nil and return
 		else
@@ -377,10 +370,10 @@ class MembershipController < ApplicationController
 
 	def getpoint
 		resp = query_mokard(:get_points, {
-			:merchant_no => Merchant,
-			:channel => Channel,
-			:username => session[:username].to_s,
-			:type => params[:type].to_s
+			"merchantNo" => Merchant,
+			"channel" => Channel,
+			"username" => session[:username].to_s,
+			"type" => params[:type].to_s
 		})
 
 		respond_with resp, :location => nil
