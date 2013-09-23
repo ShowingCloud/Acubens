@@ -260,8 +260,23 @@ class MembershipController < ApplicationController
 			resp[:return_value].delete Columns[:password].to_sym
 		end
 
-		settodict :login, 2
-		session[:login] = 2
+		addr = query_mokard(:get_user_address, {
+			:merchant_no => Merchant,
+			:channel => Channel,
+			:user_name => session[:username].to_s,
+			:address_id => getfromdict(:defaddr).to_s
+		})
+
+		if addr[:status] != "1"
+			addr = query_mokard(:get_user_address, {
+				:merchant_no => Merchant,
+				:channel => Channel,
+				:user_name => session[:username].to_s,
+				:address_id => "-1"
+			})
+		end
+
+		resp[:addr] = addr[:return_value][:user_address]
 		respond_with resp, :location => nil
 	end
 
