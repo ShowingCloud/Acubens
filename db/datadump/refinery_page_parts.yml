@@ -353,14 +353,14 @@ refinery_page_parts:
     - ''
     - 0
     - 2013-08-21 17:41:07.000000000 Z
-    - 2013-08-21 17:41:07.000000000 Z
+    - 2013-09-23 02:37:54.000000000 Z
   - - 75
     - 38
     - Side Body
     - ''
     - 1
     - 2013-08-21 17:41:07.000000000 Z
-    - 2013-08-21 17:41:07.000000000 Z
+    - 2013-09-23 02:37:54.000000000 Z
   - - 76
     - 39
     - Body
@@ -395,14 +395,14 @@ refinery_page_parts:
     - ''
     - 0
     - 2013-08-22 18:44:41.000000000 Z
-    - 2013-08-22 18:44:41.000000000 Z
+    - 2013-09-23 02:43:02.000000000 Z
   - - 81
     - 41
     - Side Body
     - ''
     - 1
     - 2013-08-22 18:44:41.000000000 Z
-    - 2013-08-22 18:44:41.000000000 Z
+    - 2013-09-23 02:43:02.000000000 Z
   - - 82
     - 42
     - Body
@@ -977,7 +977,7 @@ refinery_page_parts:
     - ''
     - 0
     - 2013-09-05 17:06:35.000000000 Z
-    - 2013-09-12 05:14:13.000000000 Z
+    - 2013-09-23 02:38:54.000000000 Z
   - - 104
     - 45
     - product
@@ -992,18 +992,18 @@ refinery_page_parts:
       />\r\n</div>\r\n\r\n\r\n\r\n\r\n\r\n</div>"
     - 1
     - 2013-09-05 17:06:35.000000000 Z
-    - 2013-09-12 05:14:13.000000000 Z
+    - 2013-09-23 02:38:54.000000000 Z
   - - 106
     - 46
     - Side Body
     - ''
     - 0
     - 2013-09-05 17:06:47.000000000 Z
-    - 2013-09-12 05:14:47.000000000 Z
+    - 2013-09-23 02:39:59.000000000 Z
   - - 107
     - 46
     - product
-    - "<div style=\"width:750px; margin:0 auto;\">\r\n  \r\n<div>\r\n<img src=\"/assets/Products-c-20g_09.gif\"
+    - "<div style=\"margin: 0px auto; width: 750px;\">\r\n  \r\n<div>\r\n<img src=\"/assets/Products-c-20g_09.gif\"
       />\r\n</div>  \r\n<div>\r\n<img src=\"/assets/Products-c-20g_17.gif\" />\r\n</div>\r\n<div>\r\n<img
       src=\"/assets/Products-c-20g_18.gif\" />\r\n</div>\r\n<div>\r\n<img src=\"/assets/Products-c-20g_20.gif\"
       />\r\n</div>\r\n<div>\r\n<img src=\"/assets/Products-c-20g_21.gif\" />\r\n</div>\r\n<div>\r\n<img
@@ -1015,18 +1015,18 @@ refinery_page_parts:
       />\r\n</div>\r\n<div>\r\n<img src=\"/assets/Products-c-20g_32.gif\" />\r\n</div>\r\n\r\n\r\n</div>"
     - 1
     - 2013-09-05 17:06:47.000000000 Z
-    - 2013-09-12 05:14:47.000000000 Z
+    - 2013-09-23 02:39:59.000000000 Z
   - - 109
     - 47
     - Side Body
     - ''
     - 0
     - 2013-09-05 17:06:56.000000000 Z
-    - 2013-09-12 05:15:17.000000000 Z
+    - 2013-09-23 02:40:58.000000000 Z
   - - 110
     - 47
     - product
-    - "<div style=\"width:750px; margin:0 auto;\">\r\n \r\n<div>\r\n<img src=\"/assets/Products-c-75g_09.gif\"
+    - "<div style=\"margin: 0px auto; width: 750px;\">\r\n \r\n<div>\r\n<img src=\"/assets/Products-c-75g_09.gif\"
       />\r\n</div>  \r\n<div>\r\n<img src=\"/assets/Products-c-75g_15.gif\" />\r\n</div>\r\n<div>\r\n<img
       src=\"/assets/Products-c-75g_18.gif\" />\r\n</div>\r\n<div>\r\n<img src=\"/assets/Products-c-75g_20.gif\"
       />\r\n</div>\r\n<div>\r\n<img src=\"/assets/Products-c-75g_22.gif\" />\r\n</div>\r\n<div>\r\n<img
@@ -1038,18 +1038,18 @@ refinery_page_parts:
       />\r\n</div>\r\n\r\n\r\n</div>"
     - 1
     - 2013-09-05 17:06:56.000000000 Z
-    - 2013-09-12 05:15:17.000000000 Z
+    - 2013-09-23 02:40:58.000000000 Z
   - - 112
     - 48
     - Side Body
     - ''
     - 0
     - 2013-09-05 17:08:37.000000000 Z
-    - 2013-09-12 05:15:37.000000000 Z
+    - 2013-09-23 02:41:38.000000000 Z
   - - 113
     - 48
     - product
-    - "<div style=\"width:750px; margin:0 auto;\">\r\n  \r\n<div>\r\n<img src=\"/assets/Products-c-200g_08.gif\"
+    - "<div style=\"margin: 0px auto; width: 750px;\">\r\n  \r\n<div>\r\n<img src=\"/assets/Products-c-200g_08.gif\"
       />\r\n</div>  \r\n<div>\r\n<img src=\"/assets/Products-c-200g_15.gif\" />\r\n</div>\r\n<div>\r\n<img
       src=\"/assets/Products-c-200g_18.gif\" />\r\n</div>\r\n<div>\r\n<img src=\"/assets/Products-c-200g_20.gif\"
       />\r\n</div>\r\n<div>\r\n<img src=\"/assets/Products-c-200g_21.gif\" />\r\n</div>\r\n<div>\r\n<img
@@ -1057,24 +1057,24 @@ refinery_page_parts:
       />\r\n</div>\r\n<div>\r\n<img src=\"/assets/Products-c-200g_24.gif\" />\r\n</div>\r\n<div>\r\n<img
       src=\"/assets/Products-c-200g_25.gif\" />\r\n</div>\r\n<div>\r\n<img src=\"/assets/Products-c-200g_26.gif\"
       />\r\n</div>\r\n<div>\r\n<img src=\"/assets/Products-c-200g_27.gif\" />\r\n</div>\r\n<div>\r\n<img
-      src=\"/assets/Products-c-200g_28.gif\" />\r\n</div>\r\n<div style=\"width:720px;
-      float:left;\">\r\n<div style=\"float:left;\"><br />\r\n</div>\r\n<div style=\"float:left;
-      border:0px;\"><br />\r\n</div>\r\n<div style=\"float:right; border:0px;\"> <br
-      />\r\n</div>\r\n</div>\r\n\r\n</div>"
+      src=\"/assets/Products-c-200g_28.gif\" />\r\n</div>\r\n<div style=\"width: 720px;
+      float: left;\">\r\n<div style=\"float: left;\"><br />\r\n</div>\r\n<div style=\"border:
+      0px currentColor; float: left;\"><br />\r\n</div>\r\n<div style=\"border: 0px
+      currentColor; float: right;\"> <br />\r\n</div>\r\n</div>\r\n\r\n</div>"
     - 1
     - 2013-09-05 17:08:37.000000000 Z
-    - 2013-09-12 05:15:37.000000000 Z
+    - 2013-09-23 02:41:38.000000000 Z
   - - 115
     - 49
     - Side Body
     - ''
     - 0
     - 2013-09-05 17:08:48.000000000 Z
-    - 2013-09-12 05:16:03.000000000 Z
+    - 2013-09-23 02:43:49.000000000 Z
   - - 116
     - 49
     - product
-    - "<div style=\"width:750px; margin:0 auto;\">\r\n\r\n<div>\r\n<img src=\"/assets/Products-p-10g_09.gif\"
+    - "<div style=\"margin: 0px auto; width: 750px;\">\r\n\r\n<div>\r\n<img src=\"/assets/Products-p-10g_09.gif\"
       />\r\n</div>  \r\n<div>\r\n<img src=\"/assets/Products-p-10g_09.gif\" />\r\n</div>\r\n<div>\r\n<img
       src=\"/assets/Products-p-10g_15.gif\" />\r\n</div>\r\n<div>\r\n<img src=\"/assets/Products-p-10g_18.gif\"
       />\r\n</div>\r\n<div>\r\n<img src=\"/assets/Products-p-10g_20.gif\" />\r\n</div>\r\n<div>\r\n<img
@@ -1082,23 +1082,23 @@ refinery_page_parts:
       />\r\n</div>\r\n<div>\r\n<img src=\"/assets/Products-p-10g_23.gif\" />\r\n</div>\r\n<div>\r\n<img
       src=\"/assets/Products-p-10g_25.gif\" />\r\n</div>\r\n<div>\r\n<img src=\"/assets/Products-p-10g_26.gif\"
       />\r\n</div>\r\n<div>\r\n<img src=\"/assets/Products-p-10g_28.gif\" />\r\n</div>\r\n\r\n<div
-      style=\"width:720px; float:left;\">\r\n<div style=\"float:left;\"><br />\r\n</div>\r\n<div
-      style=\"float:left; border:0px;\"><br />\r\n</div>\r\n<div style=\"float:right;
-      border:0px;\"> <br />\r\n</div>\r\n</div>\r\n\r\n</div>"
+      style=\"width: 720px; float: left;\">\r\n<div style=\"float: left;\"><br />\r\n</div>\r\n<div
+      style=\"border: 0px currentColor; float: left;\"><br />\r\n</div>\r\n<div style=\"border:
+      0px currentColor; float: right;\"> <br />\r\n</div>\r\n</div>\r\n\r\n</div>"
     - 1
     - 2013-09-05 17:08:48.000000000 Z
-    - 2013-09-12 05:16:03.000000000 Z
+    - 2013-09-23 02:43:49.000000000 Z
   - - 118
     - 50
     - Side Body
     - ''
     - 0
     - 2013-09-05 17:08:58.000000000 Z
-    - 2013-09-12 05:16:20.000000000 Z
+    - 2013-09-23 02:44:41.000000000 Z
   - - 119
     - 50
     - product
-    - "<div style=\"width:750px; margin:0 auto;\">\r\n \r\n<div>\r\n<img src=\"/assets/Products-p-10gi_09.gif\"
+    - "<div style=\"margin: 0px auto; width: 750px;\">\r\n \r\n<div>\r\n<img src=\"/assets/Products-p-10gi_09.gif\"
       />\r\n</div>  \r\n<div>\r\n<img src=\"/assets/Products-p-10gi_15.gif\" />\r\n</div>\r\n<div>\r\n<img
       src=\"/assets/Products-p-10gi_18.gif\" />\r\n</div>\r\n<div>\r\n<img src=\"/assets/Products-p-10gi_20.gif\"
       />\r\n</div>\r\n<div>\r\n<img src=\"/assets/Products-p-10gi_21.gif\" />\r\n</div>\r\n<div>\r\n<img
@@ -1106,24 +1106,24 @@ refinery_page_parts:
       />\r\n</div>\r\n<div>\r\n<img src=\"/assets/Products-p-10gi_24.gif\" />\r\n</div>\r\n<div>\r\n<img
       src=\"/assets/Products-p-10gi_25.gif\" />\r\n</div>\r\n<div>\r\n<img src=\"/assets/Products-p-10gi_26.gif\"
       />\r\n</div>\r\n<div>\r\n<img src=\"/assets/Products-p-10gi_27.gif\" />\r\n</div>\r\n<div>\r\n<img
-      src=\"/assets/Products-p-10gi_29.gif\" />\r\n</div>\r\n<div style=\"width:720px;
-      float:left;\">\r\n<div style=\"float:left;\"><br />\r\n</div>\r\n<div style=\"float:left;
-      border:0px;\"><br />\r\n</div>\r\n<div style=\"float:right; border:0px;\"> <br
-      />\r\n</div>\r\n</div>\r\n\r\n</div>"
+      src=\"/assets/Products-p-10gi_29.gif\" />\r\n</div>\r\n<div style=\"width: 720px;
+      float: left;\">\r\n<div style=\"float: left;\"><br />\r\n</div>\r\n<div style=\"border:
+      0px currentColor; float: left;\"><br />\r\n</div>\r\n<div style=\"border: 0px
+      currentColor; float: right;\"> <br />\r\n</div>\r\n</div>\r\n\r\n</div>"
     - 1
     - 2013-09-05 17:08:58.000000000 Z
-    - 2013-09-12 05:16:20.000000000 Z
+    - 2013-09-23 02:44:41.000000000 Z
   - - 121
     - 51
     - Side Body
     - ''
     - 0
     - 2013-09-05 17:09:07.000000000 Z
-    - 2013-09-12 05:16:38.000000000 Z
+    - 2013-09-23 02:45:18.000000000 Z
   - - 122
     - 51
     - product
-    - "<div style=\"width:750px; margin:0 auto;\">\r\n\r\n<div>\r\n<img src=\"/assets/Products-p-75g_10.gif\"
+    - "<div style=\"margin: 0px auto; width: 750px;\">\r\n\r\n<div>\r\n<img src=\"/assets/Products-p-75g_10.gif\"
       />\r\n</div>  \r\n<div>\r\n<img src=\"/assets/Products-p-75g_16.gif\" />\r\n</div>\r\n<div>\r\n<img
       src=\"/assets/Products-p-75g_19.gif\" />\r\n</div>\r\n<div>\r\n<img src=\"/assets/Products-p-75g_21.gif\"
       />\r\n</div>\r\n<div>\r\n<img src=\"/assets/Products-p-75g_22.gif\" />\r\n</div>\r\n<div>\r\n<img
@@ -1132,19 +1132,20 @@ refinery_page_parts:
       src=\"/assets/Products-p-75g_26.gif\" />\r\n</div>\r\n<div>\r\n<img src=\"/assets/Products-p-75g_27.gif\"
       />\r\n</div>\r\n<div>\r\n<img src=\"/assets/Products-p-75g_28.gif\" />\r\n</div>\r\n<div>\r\n<img
       src=\"/assets/Products-p-75g_29.gif\" />\r\n</div>\r\n<div>\r\n<img src=\"/assets/Products-p-75g_31.gif\"
-      /></div>\r\n<div style=\"width:720px; float:left;\">\r\n<div style=\"float:left;\"><br
-      />\r\n</div>\r\n<div style=\"float:left; border:0px;\"><br />\r\n</div>\r\n<div
-      style=\"float:right; border:0px;\"> <br />\r\n</div>\r\n</div>\r\n\r\n</div>"
+      /></div>\r\n<div style=\"width: 720px; float: left;\">\r\n<div style=\"float:
+      left;\"><br />\r\n</div>\r\n<div style=\"border: 0px currentColor; float: left;\"><br
+      />\r\n</div>\r\n<div style=\"border: 0px currentColor; float: right;\"> <br
+      />\r\n</div>\r\n</div>\r\n\r\n</div>"
     - 1
     - 2013-09-05 17:09:07.000000000 Z
-    - 2013-09-12 05:16:38.000000000 Z
+    - 2013-09-23 02:45:18.000000000 Z
   - - 124
     - 52
     - Side Body
     - ''
     - 0
     - 2013-09-05 17:09:52.000000000 Z
-    - 2013-09-12 05:16:53.000000000 Z
+    - 2013-09-23 02:45:59.000000000 Z
   - - 125
     - 52
     - product
@@ -1162,7 +1163,7 @@ refinery_page_parts:
       currentColor; float: right;\"> <br />\r\n</div>\r\n</div>\r\n\r\n</div>"
     - 1
     - 2013-09-05 17:09:52.000000000 Z
-    - 2013-09-12 05:16:53.000000000 Z
+    - 2013-09-23 02:45:59.000000000 Z
   - - 127
     - 53
     - Side Body
@@ -1517,19 +1518,19 @@ refinery_page_parts:
   - - 168
     - 1
     - kv
-    - <p><img src="/system/images/W1siZiIsIjIwMTMvMDkvMDYvMDNfMTRfMTRfODZfa3YxLnBuZyJdXQ/kv1.png"
-      title="Kv1" alt="Kv1" width="970px" /></p>
+    - <p><img title="Kv1" alt="Kv1" src="/system/images/W1siZiIsIjIwMTMvMDkvMDYvMDNfMTRfMTRfODZfa3YxLnBuZyJdXQ/kv1.png"
+      width="970" /></p>
     - 0
     - 2013-09-05 17:56:34.000000000 Z
-    - 2013-09-13 01:58:19.000000000 Z
+    - 2013-09-23 02:27:32.000000000 Z
   - - 169
     - 1
     - advt1
-    - <p><img src="/system/images/W1siZiIsIjIwMTMvMDkvMTMvMDlfNTZfMDlfMzE1X2FkdnQxLnBuZyJdXQ/advt1.png"
-      title="Advt1" alt="Advt1" rel="225x255" width="250" height="104" /></p>
+    - <p><img title="Advt1" alt="Advt1" src="/system/images/W1siZiIsIjIwMTMvMDkvMTMvMDlfNTZfMDlfMzE1X2FkdnQxLnBuZyJdXQ/advt1.png"
+      width="250" height="104" rel="225x255" /></p>
     - 1
     - 2013-09-05 17:56:34.000000000 Z
-    - 2013-09-13 01:58:19.000000000 Z
+    - 2013-09-23 02:27:32.000000000 Z
   - - 170
     - 1
     - advt2
@@ -1537,16 +1538,15 @@ refinery_page_parts:
       width=\"250\" height=\"104\" /></a>\r\n</p>"
     - 2
     - 2013-09-05 17:56:34.000000000 Z
-    - 2013-09-13 01:58:19.000000000 Z
+    - 2013-09-23 02:27:32.000000000 Z
   - - 171
     - 1
     - video
-    - <p><img src="/system/images/W1siZiIsIjIwMTMvMDkvMTMvMDFfMjBfMjZfMTY5X2luZGV4XzA3LjAzXzA2LmdpZiJdXQ/index-07.03_06.gif"
-      title="Index 07.03 06" alt="Index 07.03 06" rel="225x255" width="400" height="225"
-      /></p>
+    - <p><img title="Index 07.03 06" alt="Index 07.03 06" src="/system/images/W1siZiIsIjIwMTMvMDkvMTMvMDFfMjBfMjZfMTY5X2luZGV4XzA3LjAzXzA2LmdpZiJdXQ/index-07.03_06.gif"
+      width="400" height="225" rel="225x255" /></p>
     - 3
     - 2013-09-05 17:56:34.000000000 Z
-    - 2013-09-13 01:58:19.000000000 Z
+    - 2013-09-23 02:27:32.000000000 Z
   - - 174
     - 68
     - Body
