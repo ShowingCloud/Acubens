@@ -277,6 +277,10 @@ class MembershipController < ApplicationController
 		end
 
 		resp[:addr] = addr[:return_value][:user_address]
+		if resp[:addr].class == Array
+			resp[:addr] = resp[:addr][0]
+		end
+
 		respond_with resp, :location => nil
 	end
 
