@@ -30,6 +30,7 @@ Acubens::Application.routes.draw do
 		  get :surveydone
 		  post :surveydone
 		  post :getpoint
+		  get :getpoint
 		  post :getusers
 		  get :getusers
 		  post :getdict
