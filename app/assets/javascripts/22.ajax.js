@@ -312,9 +312,7 @@ function sendchangeinfo(){
 	});
 }
 
-
-
-function getmeminfo() {
+function getmeminfoie8() {
 
 	$.ajax ({
 		url:		"/membership/getinfo.json",
@@ -333,7 +331,7 @@ function getmeminfo() {
 			var weibo = ret.column4 == null ? "" : ret.column4;
 			var weixin = ret.column5 == null ? "" : ret.column5;
 			var password = "00000000000000000000";
-
+			
 			if (ret.gender_id == 69) {
 				var gender = "男";
 				var gender_str = "male";
@@ -385,7 +383,129 @@ function getmeminfo() {
 				else
 					var birthdate_str = birthdate[0]+"年"+birthdate[1]+"月"+birthdate[2]+"日";			
 			}
+			
 
+			
+			if ($('input[id="areacode"]').length && phone[0] != "")
+				$('input[id="areacode"]').val (phone[0]);
+			if ($('input[id="telephone"]').length && phone[1] != "")
+				$('input[id="telephone"]').val (phone[1]);
+			if ($('input[id="extensionnumber"]').length && phone[2] != "")
+				$('input[id="extensionnumber"]').val (phone[2]);
+			
+			if ($('input[id="email"]').length)
+				$('input[id="email"]').val (email);
+			if ($('input[id="password"]').length)
+				$('input[id="password"]').val (password);
+			if ($('input[id="identification"]').length)
+				$('input[id="identification"]').val (password);
+			if ($('input[id="name"]').length)
+				$('input[id="name"]').val (nickname);
+			
+			if ($('input[id="mobile"]').length)
+				$('input[id="mobile"]').val (mobile);
+			if ($('input[id="address"]').length);
+				$('input[id="address"]').val (address);
+			if ($('input[id="taobao"]').length);
+				$('input[id="taobao"]').val (taobao);
+			if ($('input[id="yihao"]').length);
+				$('input[id="yihao"]').val (yihao);
+			if ($('input[id="weibo"]').length);
+				$('input[id="weibo"]').val (weibo);
+			if ($('input[id="weixin"]').length);
+				$('input[id="weixin"]').val (weixin);
+
+		} else {
+			if (resp.description != null)
+				alert (resp.description);
+			else
+				alert ("请求失败，请稍候再试");
+		}
+	}).fail (function() {
+		alert ("请求发送失败，请稍候再试");
+	});
+}
+
+
+
+
+
+
+
+
+
+function getmeminfo() {
+
+	$.ajax ({
+		url:		"/membership/getinfo.json",
+		type:		"GET",
+		dataType:	"json" ,
+	}).done (function (resp) {
+		if (parseInt (resp.status) == 1) {
+			var ret = resp.return_value;
+	
+			var email = ret.email == null ? "" : ret.email;
+			var nickname = ret.nick_name == null ? "" : ret.nick_name;
+			var address = ret.address == null ? "" : ret.address;
+			var mobile = ret.mobile == null ? "" : ret.mobile;
+			var taobao = ret.column6 == null ? "" : ret.column6;
+			var yihao = ret.column7 == null ? "" : ret.column7;
+			var weibo = ret.column4 == null ? "" : ret.column4;
+			var weixin = ret.column5 == null ? "" : ret.column5;
+			var password = "00000000000000000000";
+			
+			if (ret.gender_id == 69) {
+				var gender = "男";
+				var gender_str = "male";
+			} else if (ret.gender_id == 70) {
+				var gender = "女";
+				var gender_str = "female";
+			} else {
+				var gender = "";
+				var gender_str = "";
+			}
+
+			if (ret.column1 == "是") {
+				var subscription = "订阅";
+				var subscriptoin_str = "subscribe";
+			} else if (ret.column1 == "否") {
+				var subscription = "不订阅";
+				var subscription_str = "notsubscribe";
+			} else {
+				var subscription = "";
+				var subscription_str = "";
+			}
+
+			if (ret.column3 == null) {
+				var phone = [];
+				var phone_str = "";
+			} else {
+				var phone = ret.column3.split('-');
+
+				if (phone[1] == "")
+					var phone_str = "";
+				else if (phone[0] == "" && phone[2] == "")
+					var phone_str = phone[1];
+				else if (phone[0] == "")
+					var phone_str = phone[1] + '-' + phone[2];
+				else if (phone[2] == "")
+					var phone_str = phone[0] + '-' + phone[1];
+				else
+					var phone_str = phone[0] + '-' + phone[1] + '-' + phone[2];
+			}
+
+			if (ret.birthday_dt == null) {
+				var birthdate = [];
+				var birthdate_str = "";
+			} else {
+				var birthdate = ret.birthday_dt.split('T')[0].split('-');
+
+				if (birthdate[0] == null || birthdate[1] == null || birthdate[2] == null)
+					var birthdate_str = "";
+				else
+					var birthdate_str = birthdate[0]+"年"+birthdate[1]+"月"+birthdate[2]+"日";			
+			}
+			
 			if ($('#email').length)
 				$('#email').html (email);
 			if ($('#name').length)
@@ -394,7 +514,6 @@ function getmeminfo() {
 				$('#birthday').html (birthdate_str);
 			if ($('#gender').length)
 				$('#gender').html (gender);
-
 			if (gender_str != "")
 				if ($('input[id="' + gender_str + '"]').length)
 					$('input[id="' + gender_str + '"]').attr("checked","checked");
@@ -430,14 +549,14 @@ function getmeminfo() {
 				$('#weibo').html (weibo);
 			if ($('#weixin').length)
 				$('#weixin').html (weixin);
-
+			
 			if ($('input[id="areacode"]').length && phone[0] != "")
 				$('input[id="areacode"]').val (phone[0]);
 			if ($('input[id="telephone"]').length && phone[1] != "")
 				$('input[id="telephone"]').val (phone[1]);
 			if ($('input[id="extensionnumber"]').length && phone[2] != "")
 				$('input[id="extensionnumber"]').val (phone[2]);
-
+			
 			if ($('input[id="email"]').length)
 				$('input[id="email"]').val (email);
 			if ($('input[id="password"]').length)
@@ -446,6 +565,7 @@ function getmeminfo() {
 				$('input[id="identification"]').val (password);
 			if ($('input[id="name"]').length)
 				$('input[id="name"]').val (nickname);
+			
 			if ($('input[id="mobile"]').length)
 				$('input[id="mobile"]').val (mobile);
 			if ($('input[id="address"]').length);
