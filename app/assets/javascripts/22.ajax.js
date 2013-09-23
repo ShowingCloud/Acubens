@@ -331,6 +331,8 @@ function getmeminfoie8() {
 			var weibo = ret.column4 == null ? "" : ret.column4;
 			var weixin = ret.column5 == null ? "" : ret.column5;
 			var password = "00000000000000000000";
+
+
 			
 			if (ret.gender_id == 69) {
 				var gender = "男";
@@ -443,17 +445,26 @@ function getmeminfo() {
 	}).done (function (resp) {
 		if (parseInt (resp.status) == 1) {
 			var ret = resp.return_value;
-	
 			var email = ret.email == null ? "" : ret.email;
 			var nickname = ret.nick_name == null ? "" : ret.nick_name;
-			var address = ret.address == null ? "" : ret.address;
 			var mobile = ret.mobile == null ? "" : ret.mobile;
 			var taobao = ret.column6 == null ? "" : ret.column6;
 			var yihao = ret.column7 == null ? "" : ret.column7;
 			var weibo = ret.column4 == null ? "" : ret.column4;
 			var weixin = ret.column5 == null ? "" : ret.column5;
 			var password = "00000000000000000000";
+
+			var red = resp.addr
+			var address = red.full_address == null ? "" : red.full_address;
+			var zip_code = red.zip_code == null ? "" : red.zip_code;
+			var province = red.province == null ? "" : red.province;
+			var city = red.city == null ? "" : red.city;
+			var district = red.district == null ? "" : red.district;
 			
+			
+
+
+
 			if (ret.gender_id == 69) {
 				var gender = "男";
 				var gender_str = "male";
@@ -537,6 +548,10 @@ function getmeminfo() {
 
 			if ($('#address').length)
 				$('#address').html (address);
+			if ($('#area').length)
+				$('#area').html (province+city+district);
+			if ($('#postalcode').length)
+				$('#postalcode').html (zip_code);
 			if ($('#mobile').length)
 				$('#mobile').html (mobile);
 			if ($('#tel').length)
@@ -570,6 +585,8 @@ function getmeminfo() {
 				$('input[id="mobile"]').val (mobile);
 			if ($('input[id="address"]').length);
 				$('input[id="address"]').val (address);
+			if ($('input[id="postalcode"]').length);
+				$('input[id="postalcode"]').val (zip_code);
 			if ($('input[id="taobao"]').length);
 				$('input[id="taobao"]').val (taobao);
 			if ($('input[id="yihao"]').length);
@@ -578,6 +595,11 @@ function getmeminfo() {
 				$('input[id="weibo"]').val (weibo);
 			if ($('input[id="weixin"]').length);
 				$('input[id="weixin"]').val (weixin);
+			$('#province').val(province);
+			$("#city option[value='0']").remove();
+			$("#city").prepend("<option>"+city+"</option>");
+			$("#district option[value='0']").remove();
+			$("#district").prepend("<option>"+district+"</option>");
 
 		} else {
 			if (resp.description != null)
