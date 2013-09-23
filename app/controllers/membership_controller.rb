@@ -9,6 +9,7 @@ class MembershipController < ApplicationController
 	respond_to :json, :xml, :html
 
 	before_filter :checklogin, :except => [:verifymobile, :register, :login, :logout, :getusers, :getdict, :changepsw]
+	before_filter :checksurveyitems, :only => [:surveydone]
 
 	Client = Savon.client do
 		wsdl "http://www.mokard.com/WSV26/PointRequest.asmx?WSDL"
@@ -24,6 +25,10 @@ class MembershipController < ApplicationController
 	Columns = { :subscription => "column1", :postal => "column2", :phone => "column3", :weibo => "column4",
 			:wechat => "column5", :taobao => "column6", :yihao => "column7", :email => "column8",
 			:password => "column9", :dictionary => "column10" }
+
+	SurveyKeys = [ :style, :care, :problems, :time, :procedures, :effects, :shortcomings,
+				:cost, :markets, :factors, :brands, :importance, :source, :ways,
+				:infos, :offline, :age ]
 
 
 	def index
@@ -227,7 +232,7 @@ class MembershipController < ApplicationController
 				Columns[:phone] => params[:phone].to_s,
 				Columns[:weibo] => params[:weibo].to_s,
 				Columns[:wechat] => params[:wechat].to_s
-			}.reject { |k, v| v.nil? or v == "" }
+			}.reject { |k, v| v.blank? }
 		})
 
 		session[:nickname] = params[:fullname].to_s
@@ -462,6 +467,14 @@ class MembershipController < ApplicationController
 				Columns[:dictionary] => dictionary.to_s
 			}
 		})
+	end
+
+
+	def checksurveyitems
+		params[:skin_survey].blank? and respond_with ret = { :status => 0 }, :location => nil and return
+		SurveyKeys.each do |v|
+			params[:skin_survey][v].blank? and respond_with ret = { :status => 0 }, :location => nil and return
+		end
 	end
 
 end
