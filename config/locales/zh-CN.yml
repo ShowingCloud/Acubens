@@ -2,44 +2,90 @@
 # See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
 
 zh-CN:
-  hello: "cn: Hello world"
+  hello: "中文的Hello world"
   simple_captcha:
   message:
-    default: "cn: Secret Code did not match with the Image"
-    user: "cn: The secret Image and code were different"
+    default: "验证码序列号和图片不匹配"
+    user: "验证码和图片不匹配"
   refinery:
+    admin:
+      dashboard:
+        additional_dashboard_menu_items:
+          create_new: 添加新的视频
     plugins:
-      refinerycms_news:
-        title: 新闻
-        description: 提供一个简单的新闻分类
+      videos:
+        title: 视频
+    videos:
+      admin:
+        videos:
+          actions:
+            create_new: 添加新的视频
+            reorder: 重新排列视频
+            reorder_done: 重新排列完毕
+          records:
+            title: 视频
+            sorry_no_results: 对不起！没有找到结果。
+            no_items_yet: 还没有视频。点击"添加新的视频"来添加你的第一个视频。
+          video:
+            view_live_html: 在线观看这个视频<br/><em>（在新的窗口中）</em>
+            edit: 编辑这个视频
+            file: 文件
+            link: 链接
+            shared_source: 内嵌的
+          new:
+            use_files: 使用文件
+            use_embedded_video: 使用内嵌视频
+          form:
+            title: 标题
+            poster: 海报
+            width: 宽度
+            height: 高度
+          file_fields:
+            files: 文件
+            file_tip: 添加mp4、webm、flv、ogg格式的文件（或者文件链接）以支持所有浏览器
+            use_file: 使用文件
+            use_external_source: 使用外部来源
+            add_file: 添加文件
+            add_source: 添加来源
+            delete_source: 删除来源
+            link_to_source: 链接到来源
+            download_current: 使用已有视频
+            or: 或者
+            replace: 使用这一个替换
+            maximum_file_size: "文件最大尺寸：%{bytes}"
+          new_file_field:
+            use_file: 使用文件
+            use_external_source: 使用外部来源
+            add_file: 添加文件
+            add_source: 添加来源
+            delete_source: 删除来源
+          embed_video_fields:
+            copy_embed_tag_here: 将HTML复制到此
+          form_option_fields:
+            options: 选项
+            autoplay: 自动播放
+            show_ontrols: 显示控制面板
+            preload_video: 预加载视频
+            loop_video: 重复播放视频
+          insert:
+            insert: 插入
+          preview_form:
+            width: 宽度
+            height: 高度
+      videos:
+        show:
+          other: 其它视频
     news:
       admin:
         items:
           item:
-            view_live_html: "查看这条新闻 <br/><em>(在新窗口打开)</em>"
-            edit: "编辑这条新闻"
-            delete: "永远删除这条新闻"
-            published: 已发布
-          index:
-            create: "添加一条新闻"
-            item: 新闻
-            no_items_yet: '目前没有新闻. 点击 "添加新闻" 来添加你的第一条新闻.'
-      items:
-        show:
-          back_to_index: "返回所有新闻"
-          published: 已发布
-        recent_posts:
-          recent_posts: 最近新闻
-        index:
-          published: 已发布
-          read_more: 更多
-          no_items_yet: 目前没有新闻。
+            category: 分类
   activerecord:
     attributes:
       'refinery/news/item':
-        title: 标题
-        body: 正文
-        publish_date: 发布时间
-        expiration_date: 过期时间
-    models:
-      'refinery/news/item': 新闻条目
+        category: 新闻分类
+        source: 新闻来源
+      'refinery/videos/video':
+        file_name: 文件名
+        file_size: 文件大小
+        file_ext: 文件后缀名
