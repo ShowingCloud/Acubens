@@ -85,62 +85,131 @@
                         <li class="resetpw_head_txt2">&nbsp;&nbsp;>&nbsp;&nbsp;</li>
                         <li class="resetpw_head_txt1"><a href="/会员专区/会员中心">会员中心</a></li>
                         <li class="resetpw_head_txt2">&nbsp;&nbsp;>&nbsp;&nbsp;</li>
-                        <li class="resetpw_head_txt1"><a href="/会员专区/会员中心/个人信息">个人信息</a></li>
+                        <li class="resetpw_head_txt1"><a href="/会员专区/会员中心/个人信息">我的积分及订单历史</a></li>
                 </ul>
            </div>
            <div class="resetpw_top">
-                <p class="resetpw_top_txt">&nbsp;会员基本信息&nbsp;&nbsp;*为必填内容</p>
+                <p class="resetpw_top_txt">我的积分及订单历史</p>
            </div>
            
            <div class="firsrlogin_middle-no-line">
-           <ul>
-             <li class="text-all-color-green">
-                 本次兑换所需积分：
-             </li>
-             <li class="text-all-color-yellow">
-	     <label id="mypoint"> 300</label>
-             </li> 
-          </ul>
-             <table   class="firstlogin_middle_1" border="0" cellpadding="0" cellspacing="0" >
-                   <tr>
-                             
-                              <td   class="firstlogin_middle_3-1-wodejifen">积分状态：</td>
-                              <td   class="firstlogin_middle_10" >
-                              <select id="pointstatus" class="firstlogin_middle_dropdown3-1"><option>全部积分</option><option>可兑换</option><option>已过期</option></select></td>
-                              <td   class="firstlogin_middle_8-1">积分类型：&nbsp;&nbsp;</td>
-                              <td   class="firstlogin_middle_10" >
-                              <select id="pointtype" name="city" class="firstlogin_middle_dropdown3-1"><option>全部类型</option><option>购买</option><option>奖励</option></select></td>
-                             
+		           <ul>
+		             <li class="text-all-color-green">
+		                 可用积分总数：
+		             </li>
+		             <li class="text-all-color-yellow">
+			     <label id="mypoint">&nbsp;&nbsp;&nbsp;&nbsp;</label>
+		             </li> 
+		          </ul>
+		             <table   class="firstlogin_middle_1" border="0" cellpadding="0" cellspacing="0" >
+		                   <tr>
+		                             
+		                              <td   class="firstlogin_middle_3-1-wodejifen">积分状态：</td>
+		                              <td   class="firstlogin_middle_10" >
+		                              <select id="pointstatus" class="firstlogin_middle_dropdown3-1"><option>全部积分</option><option>可兑换</option><option>已过期</option></select></td>
+		                              <td   class="firstlogin_middle_8-1">积分类型：&nbsp;&nbsp;</td>
+		                              <td   class="firstlogin_middle_10" >
+		                              <select id="pointtype" name="city" class="firstlogin_middle_dropdown3-1"><option>全部类型</option><option>购买</option><option>奖励</option></select></td>
+		                             
+		                              
+		               </tr>
+		             </table> 
+		             <ul class="background-color-white-green-wode">
+		                     <li class="list-text1-wode">
+		                	     积分获取时间
+		               		 </li>
+		                     <li class="list-text2-wode">
+		                     积分过期时间
+		                     </li>
+		                     <li class="list-text3-wode">
+		                     所得积分
+		                     </li>
+		                     <li class="list-text4-wode">
+		                     积分状态
+		                     </li>
+		                     <li class="list-text5-wode">
+		                     购买类型
+		                     </li>
+		             </ul>
+		             <table class="table4-wode">
+		             <tr>
+		            			   <td class="table4-line1-wode"></td>
+		                           <td class="table4-line2-wode"></td>
+		                           <td class="table4-line3-wode"></td>
+		                           <td class="table4-line4-wode"></td>
+		                           <td class="table4-line5-wode"></td>
+		                         </tr>
+		                      
+		             </table>
+		             
+		             <div class="findpw_1_middle">
+                <table   class="firstlogin_middle_1" border="0" cellpadding="0" cellspacing="0" >
+                      <tr>
                               
-               </tr>
-             </table> 
-             <ul class="background-color-white-green-wode">
-                     <li class="list-text1-wode">
-                     积分获取时间
-               </li>
-                     <li class="list-text2-wode">
-                     积分过期时间
-                     </li>
-                     <li class="list-text3-wode">
-                     所得积分
-                     </li>
-                     <li class="list-text4-wode">
-                     积分状态
-                     </li>
-                     <li class="list-text5-wode">
-                     购买类型
-                     </li>
-             </ul>
-             <table class="table4-wode">
-             <tr>
-             <td class="table4-line1-wode"></td>
-                           <td class="table4-line2-wode"></td>
-                           <td class="table4-line3-wode"></td>
-                           <td class="table4-line4-wode"></td>
-                           <td class="table4-line5-wode"></td>
-                         </tr>
-                      
-             </table>
+                              <td   class="firstlogin_middle_3">订单时间：</td>
+                              <td   class="firstlogin_middle_10" >
+                              <label id="province"></label>
+                              <select id="province" name="province" class="firstlogin_middle_dropdown3"><option>全部商品</option><option>一个月内</option><option>六个月内</option><option>一年以内</option><option>一个以前</option></select></td>
+                              
+                              
+                      </tr>
+               </table>
+               <ul>
+               <div class="resetpw_top1">
+                   <li class="resetpw_top_txt1">
+                      商品
+                 </li>
+                <li class="resetpw_top_txt2-mystore">
+                      单价
+                    </li>
+                 <li class="resetpw_top_txt2-1-mystore">
+                      数量
+                    </li>
+               
+                <li class="resetpw_top_txt2-2-mystore">
+                      实付款
+                    </li>
+                 <li class="resetpw_top_txt2-2-mystore-1">
+                      所得积分
+                    </li>
+                 <li class="resetpw_top_txt3-mystore">
+                    购买途径
+                 </li>
+                 </div>
+         </ul>
+              
+        <div class="resetpw_top1-mystore">
+        <ul>
+        <li class="resetpw_top_txt-mystore">订单编号： 0000005
+        </li>
+         <li class="resetpw_top_txt-mystore-1">订单成交时间：2013/7/11
+        </li>
+        </ul>
+        
+        
+        </div>        
+          
+		</div>
+		<table class="table3-mystore">
+			  <tr>
+				    <td  class="table-text-green3-store" ><img src="/assets/img/product2.png" class="mystore"></td>
+				    <td  class="table-text-black3-2">
+					    <ul>
+						    <li class="mystore-text">
+						    简妮保湿润泽乳霜
+						    </li>
+						    <li class="mystore-text">
+						    100G
+						    </li>
+					    </ul>
+				    </td>
+				    <td class="table-text-black3-2-store">200</td>
+				    <td class="table-text-green3-store">1</td>
+				    <td class="table-text-green3-store">200</td>
+				    <td class="table-text-green3-store">200</td>
+				    <td class="table-text-black3-1-store">天猫商城</td>
+			  </tr>
+		</table>
 		</div>     
 	</div>
 </div>
