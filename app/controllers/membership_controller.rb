@@ -399,6 +399,43 @@ class MembershipController < ApplicationController
 	end
 
 
+	def getpointproducts
+		resp = query_mokard(:getpointsproduct_list, {
+			:merchant_no => Merchant,
+			:currentpage => 1,
+			:eachpagecount => 100
+		})
+
+		respond_with resp, :location => nil
+	end
+
+
+	def getpointredeemproducts
+		resp = query_mokard(:get_points_redeem_product_list, {
+			:merchant_no => Merchant,
+			:currentpage => 1,
+			:eachpagecount => 100
+		})
+
+		respond_with resp, :location => nil
+	end
+
+
+	def getpointlist
+		resp = query_mokard(:get_point_list_data_and_order, {
+			"merchantno" => Merchant,
+			"channel" => Channel,
+			"username" => session[:username].to_s,
+			:point_status => params[:type].to_s,
+			:point_type => 5,
+			:currentpage => 1,
+			:eachpagecount => 100
+		})
+
+		respond_with resp, :location => nil
+	end
+
+
 	def getusers
 		if not refinery_user?
 			respond_with ret = { :status => 0 }, :location => nil and return
