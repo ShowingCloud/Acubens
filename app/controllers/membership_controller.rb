@@ -264,7 +264,7 @@ class MembershipController < ApplicationController
 			:merchant_no => Merchant,
 			:channel => Channel,
 			:user_name => session[:username].to_s,
-			:address_id => getfromdict(:defaddr).to_s
+			:address_id => getfromdict(:defaddr) == nil ? "-1" : getfromdict(:defaddr).to_s
 		})
 
 		if addr[:status] != "1"
@@ -276,9 +276,13 @@ class MembershipController < ApplicationController
 			})
 		end
 
-		resp[:addr] = addr[:return_value][:user_address]
-		if resp[:addr].class == Array
-			resp[:addr] = resp[:addr][0]
+		if addr[:status] == "1"
+			resp[:addr] = addr[:return_value][:user_address]
+			if resp[:addr].class == Array
+				resp[:addr] = resp[:addr][0]
+			end
+		else
+			resp[:addr] = addr
 		end
 
 		respond_with resp, :location => nil
