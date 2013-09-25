@@ -1,0 +1,30 @@
+
+---
+refinery_videos:
+  columns:
+  - id
+  - position
+  - created_at
+  - updated_at
+  - config
+  - title
+  - poster_id
+  - use_shared
+  - embed_tag
+  records: 
+  - - 1
+    - 0
+    - 2013-09-25 14:57:55.000000000 Z
+    - 2013-09-25 14:57:55.000000000 Z
+    - |
+      ---
+      :width: '400'
+      :height: '300'
+      :autoplay: 'true'
+      :controls: 'true'
+      :preload: 'true'
+      :loop: 'true'
+    - 测试视频
+    - 34
+    - false
+    - 

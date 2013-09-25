@@ -1,0 +1,27 @@
+
+---
+refinery_video_files:
+  columns:
+  - id
+  - file_name
+  - file_size
+  - file_ext
+  - file_uid
+  - file_mime_type
+  - video_id
+  - created_at
+  - updated_at
+  - external_url
+  - use_external
+  records: 
+  - - 1
+    - AP11_FINAL_APPROACH.ogv
+    - 22673915
+    - 
+    - 2013/09/25/22_57_55_865_AP11_FINAL_APPROACH.ogv
+    - video/ogg
+    - 1
+    - 2013-09-25 14:57:55.000000000 Z
+    - 2013-09-25 14:57:55.000000000 Z
+    - ''
+    - false
