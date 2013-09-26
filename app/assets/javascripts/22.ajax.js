@@ -429,13 +429,6 @@ function getmeminfoie8() {
 }
 
 
-
-
-
-
-
-
-
 function getmeminfo() {
 
 	$.ajax ({
@@ -1179,4 +1172,112 @@ function changeCity (id) {
 		alert ("请求发送失败，请稍候再试");
 	});
 }
+
+function getpointlist() {
+
+	$.ajax ({
+		url:		"/membership/getpointlist.json",
+		type:		"GET",
+		dataType:	"json" ,
+		data:	{
+			type: 		126
+		}
+	}).done (function (resp) {
+		if (parseInt (resp.status) == 1) {
+			
+			var n = resp.return_value.points_source.length;
+			
+			if ( typeof resp.return_value.points_source.length == "undefined"){
+				
+				var ret = resp.return_value.points_source;
+							
+					var point_count = ret.point_count == null ? "" : ret.point_count;
+					var point_status = ret.point_status_name == null ? "" : ret.point_status_name;
+					var point_rule = ret.point_rule_name == null ? "" : ret.point_rule_name;			
+					var expire = ret.expire_date.split(' ');
+					var gain = ret.gain_date.split(' ');
+					
+					if ($('.table4-wode tr:first-child #gain').length)
+						$('.table4-wode tr:first-child #gain').html (gain[0]);
+					if ($('.table4-wode tr:first-child #expire').length)
+						$('.table4-wode tr:first-child #expire').html (expire[0]);
+					if ($('.table4-wode tr:first-child #count').length)
+						$('.table4-wode tr:first-child #count').html (point_count);
+					if ($('.table4-wode tr:first-child #status').length)
+						$('.table4-wode tr:first-child #status').html (point_status);
+					if ($('.table4-wode tr:first-child #rule').length)
+						$('.table4-wode tr:first-child #rule').html (point_rule);
+				
+			}
+			
+			for(var i=0;i<n;i++){
+				
+				if(i != 0 )
+					$( ".table4-wode tr:first-child").clone(true).prependTo( ".table4-wode" );
+				
+					var ret = resp.return_value.points_source[i];
+							
+					var point_count = ret.point_count == null ? "" : ret.point_count;
+					var point_status = ret.point_status_name == null ? "" : ret.point_status_name;
+					var point_rule = ret.point_rule_name == null ? "" : ret.point_rule_name;			
+					var expire = ret.expire_date.split(' ');
+					var gain = ret.gain_date.split(' ');
+					
+					if ($('.table4-wode tr:first-child #gain').length)
+						$('.table4-wode tr:first-child #gain').html (gain[0]);
+					if ($('.table4-wode tr:first-child #expire').length)
+						$('.table4-wode tr:first-child #expire').html (expire[0]);
+					if ($('.table4-wode tr:first-child #count').length)
+						$('.table4-wode tr:first-child #count').html (point_count);
+					if ($('.table4-wode tr:first-child #status').length)
+						$('.table4-wode tr:first-child #status').html (point_status);
+					if ($('.table4-wode tr:first-child #rule').length)
+						$('.table4-wode tr:first-child #rule').html (point_rule);
+		
+			}
+		}
+	}).fail (function() {
+		alert ("请求发送失败，请稍候再试");
+	});
+}
+
+function getpoint() {
+
+	$.ajax ({
+		url:		"/membership/getpoint.json",
+		type:		"GET",
+		dataType:	"json" ,
+		data:	{
+			type: 		1
+		}
+	}).done (function (resp) {
+		if (parseInt (resp.status) == 1) {
+				
+				value = resp.value
+				
+				if ($('#mypoint').length)
+				$('#mypoint').html (value);
+			
+		}
+	}).fail (function() {
+		alert ("请求发送失败，请稍候再试");
+	});
+}
+
+function getpointredeemproducts() {
+
+	$.ajax ({
+		url:		"/membership/getpointredeemproducts.json",
+		type:		"GET",
+		dataType:	"json" ,
+		
+	}).done (function (resp) {
+		
+			
+		
+	}).fail (function() {
+		alert ("请求发送失败，请稍候再试");
+	});
+}
+
 
