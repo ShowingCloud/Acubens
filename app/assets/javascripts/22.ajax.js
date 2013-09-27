@@ -1272,6 +1272,59 @@ function getpointredeemproducts() {
 		dataType:	"json" ,
 		
 	}).done (function (resp) {
+		var n = resp.return_value.points_redeem_product.length;
+			
+			if ( typeof resp.return_value.points_redeem_product.length == "undefined"){
+				
+				var ret = resp.return_value.points_redeem_product;
+							
+					var points = ret.points == null ? "" : ret.points;
+					var product_name = ret.product_name == null ? "" : ret.product_name;
+					var image = ret.image_url == null ? "" : ret.image_url;	
+					var sku = ret.sku == null ? "" : ret.sku;	
+					var id = ret.id == null ? "" : ret.id;				
+					
+					
+					if ($('.exchangepoints tr:first-child input[id="productid"]').length);
+						$('.exchangepoints tr:first-child input[id="productid"]').val (id);
+					if ($('.exchangepoints tr:first-child input[id="sku"]').length);
+						$('.exchangepoints tr:first-child input[id="sku"]').val (id);					
+					if ($('.exchangepoints tr:first-child #productname').length)
+						$('.exchangepoints tr:first-child #productname').html (product_name);
+					if ($('.exchangepoints tr:first-child #needpoint').length)
+						$('.exchangepoints tr:first-child #needpoint').html (points);
+					if ($('.exchangepoints tr:first-child #productpic').length)
+						$('.exchangepoints tr:first-child #productpic').prop ('src','http://www.mokard.com/ProductPic/'+image);
+				
+				
+			}
+			
+			for(var i=0;i<n;i++){
+				
+				if(i != 0 )
+					$( ".exchangepoints tr:first-child").clone(true).prependTo( ".exchangepoints" );
+				
+					var ret = resp.return_value.points_redeem_product[i];
+							
+					var points = ret.points == null ? "" : ret.points;
+					var product_name = ret.product_name == null ? "" : ret.product_name;
+					var image = ret.image_url == null ? "" : ret.image_url;	
+					var sku = ret.sku == null ? "" : ret.sku;	
+					var id = ret.id == null ? "" : ret.id;				
+					
+					
+					if ($('.exchangepoints tr:first-child input[id="productid"]').length);
+						$('.exchangepoints tr:first-child input[id="productid"]').val (id);
+					if ($('.exchangepoints tr:first-child input[id="SKU"]').length);
+						$('.exchangepoints tr:first-child input[id="SKU"]').val (sku);					
+					if ($('.exchangepoints tr:first-child #productname').length)
+						$('.exchangepoints tr:first-child #productname').html (product_name);
+					if ($('.exchangepoints tr:first-child #needpoint').length)
+						$('.exchangepoints tr:first-child #needpoint').html (points);
+					if ($('.exchangepoints tr:first-child #productpic').length)
+						$('.exchangepoints tr:first-child #productpic').prop ('src','http://www.mokard.com/ProductPic/'+image);
+		
+			}
 		
 			
 		

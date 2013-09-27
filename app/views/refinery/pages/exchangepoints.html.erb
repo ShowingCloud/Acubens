@@ -11,7 +11,39 @@
 		<% else %>
 			$(document).ready (login);
 		<% end %>
-		$(document).ready (getpointredeemproducts);
+$(document).ready (getpointredeemproducts);
+$(document).ready (getpoint);
+
+/*$("#saveinformation").click (function () {
+		
+	
+			
+	$.ajax({
+		url:        "/membership/.json",
+		type:       "POST",
+		dataType:   "json",
+		data:       {
+			id:					$(this).parent().parent().parent().find ('#productid').val(),
+			sku:				$(this).parent().parent().parent().find ('#SKU').val()
+			
+		}
+	}).done (function (resp){
+		if(parseInt (resp.status) == 1) {
+			
+			
+			   
+		}else {
+			    if (resp.description != null)
+				     alert (resp.description);
+			    else
+ 			     alert ("请求失败，请再检查一遍您的输入并稍候再试");
+		}
+		
+		
+	}).fail (function() {
+		alert ("请求发送失败，请稍候再试");
+	});	
+}); */
 	</script>
 <% end %>
 
@@ -91,13 +123,13 @@
                 <p class="resetpw_top_txt">&nbsp;兑换积分</p>
            </div>
            
- <!--           <div class="firsrlogin_middle-none-line">
+  <!--          <div class="firsrlogin_middle-none-line">
            <ul>
              <li class="text-all-color-green">
-                 本次兑换所需积分：
+                 可用积分总数：
              </li>
              <li class="text-all-color-yellow-1">
-                 300
+                 <label id="mypoint">0</label>
              </li> 
           </ul>
              <table   class="firstlogin_middle_1" border="0" cellpadding="0" cellspacing="0" >
@@ -105,13 +137,13 @@
                              
                               <td   class="firstlogin_middle_3-1">兑换商品类型：</td>
                               <td   class="firstlogin_middle_10" >
-                              <select id="province" class="firstlogin_middle_dropdown3-1"><option>全部商品</option></select></td>
+                              <select id="" class="firstlogin_middle_dropdown3-1"><option>全部商品</option></select></td>
                               <td   class="firstlogin_middle_8-1">所需积分：&nbsp;&nbsp;</td>
                               <td   class="firstlogin_middle_10" >
-                              <select id="city" name="city" class="firstlogin_middle_dropdown3-1"><option>无限制</option></select></td>
+                              <select id=""  class="firstlogin_middle_dropdown3-1"><option>无限制</option></select></td>
                               <td   class="firstlogin_middle_8-1">排序方式：&nbsp;</td>
                                <td  class="firstlogin_middle_10" >
-                              <select id="district" name="district" class="firstlogin_middle_dropdown3"><option >升序</option></select></td>
+                              <select id=""  class="firstlogin_middle_dropdown3"><option >升序</option><option >降序</option></select></td>
                               
                </tr>
              </table> 
@@ -128,34 +160,36 @@
   
              </div> 
            
-     <table >
+     <table class="exchangepoints">
   <tr>
-    <td width="114" class="point-exchange-about-I-do-not-want-to-say"><img src="/assets/img/product1.png" class="table4-line1-img"></td>
-       <td width="114">
-       <ul>
-       <li class="text-all-color-black-table4">
-       简妮清爽洁面啫喱
-       </li>
-      <li class="text-all-color-black-table4">
-       10G
-       </li>
-       </ul>
-       </td>
-    <td width="132" class="point-exchange-about-I-do-not-want-to-say-green-word">50</td>
-    <td width="203" class="point-exchange-about-I-do-not-want-to-say-green-word">100</td>
-    <td width="133">
-                 
-                <div class="resetpw_bottom_table4-1">
-                     <input id="saveinformation"   type="submit" value="点击兑换"  >
-                </div>
-              
-
-    
-    </td>
+  			<td><input type="hidden" id="SKU" /></td>
+  			<td><input type="hidden" id="productid" /></td>
+		    <td width="114" class="point-exchange-about-I-do-not-want-to-say"><img id="productpic" class="table4-line1-img"></td>
+		    <td width="114">
+			       <ul>
+				       <li class="text-all-color-black-table4">
+				     		<label id="productname">简妮清爽洁面啫喱</label>
+				       </li>
+				      <li class="text-all-color-black-table4">
+				       		 <label id="productsize">10G</label>
+				       </li>
+			       </ul>
+		    </td>
+		    <td width="132" class="point-exchange-about-I-do-not-want-to-say-green-word"><label id="needpoint"></label></td>
+		    <td width="203" class="point-exchange-about-I-do-not-want-to-say-green-word"><label id="stockno"></label></td>
+		    <td width="133">
+		                 
+		                <div class="resetpw_bottom_table4-1">
+		                     <input id="saveinformation"   type="submit" value="点击兑换"  >
+		                </div>
+		              
+		
+		    
+		    </td>
   </tr>
 </table>
-         </div> -->
-       <div><img src="/assets/img/coming_soon.gif"></div>
+         </div>  -->
+       <div><img src="/assets/img/coming_soon.gif"></div>  
            
      </div>
 </div>
