@@ -50,7 +50,7 @@ gem 'refinerycms-i18n', '~> 2.0.0'
 #  gem 'refinerycms-search', '~> 2.0.0'
 #  gem 'refinerycms-page-images', '~> 2.0.0'
 gem 'refinerycms-news', :git => 'git://github.com/ShowingCloud/refinerycms-news.git', :branch => '2-0-stable'
-gem 'refinerycms-videojs'
+gem 'refinerycms-videojs', :git => 'git@github.com:adexin-team/refinerycms-videojs.git'
 
 gem 'yaml_db'
 gem 'savon'
