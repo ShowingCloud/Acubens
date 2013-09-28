@@ -882,7 +882,10 @@ function addaddress(){
 }
 
 function getadd() {
-
+	
+	$('input[id="modify"]').attr('type', 'hidden');
+	$('input[id="delete"]').attr('type', 'hidden');
+	
 	$.ajax ({
 		url:		"/membership/getaddr.json",
 		type:		"GET",
@@ -969,8 +972,12 @@ function getadd() {
 					$('.add_tab2 tr:first-child #zipcode2').html (zip_code);
 				if ($('.add_tab2 tr:first-child #fixtel2').length)
 					$('.add_tab2 tr:first-child #fixtel2').html (phone);
+			//	$(".add_mod").load ('/home/login-page #modify');
+			//	$(".add_del").load ('/home/login-page #delete');
 				$('input[id="modify"]').attr('type', 'button');
 				$('input[id="delete"]').attr('type', 'button');
+			
+		
 			}		
 			
 			
