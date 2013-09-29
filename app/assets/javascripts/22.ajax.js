@@ -883,8 +883,10 @@ function addaddress(){
 
 function getadd() {
 	
-	$('input[id="modify"]').attr('type', 'hidden');
-	$('input[id="delete"]').attr('type', 'hidden');
+	
+//	$('input[id="modify"]').attr('type', 'hidden');
+//	$('input[id="delete"]').attr('type', 'hidden');
+
 	
 	$.ajax ({
 		url:		"/membership/getaddr.json",
@@ -896,8 +898,7 @@ function getadd() {
 	}).done (function (resp) {
 		if (parseInt (resp.status) == 1) {
 			
-		var n = resp.return_value.user_address.length;
-			
+		var n = resp.return_value.user_address.length;			
 			if ( typeof resp.return_value.user_address.length == "undefined"){
 				
 				var ret = resp.return_value.user_address;		
@@ -911,6 +912,8 @@ function getadd() {
 				var phone = ret.buyer_contact2 == null ? "" : ret.buyer_contact2;
 				var zip_code = ret.zip_code == null ? "" : ret.zip_code
 							
+					
+				
 				if ($('.add_tab2 tr:first-child input[id="province3"]').length);
 					$('.add_tab2 tr:first-child input[id="province3"]').val (province);
 				if ($('.add_tab2 tr:first-child input[id="city3"]').length);
@@ -931,12 +934,14 @@ function getadd() {
 					$('.add_tab2 tr:first-child #zipcode2').html (zip_code);
 				if ($('.add_tab2 tr:first-child #fixtel2').length)
 					$('.add_tab2 tr:first-child #fixtel2').html (phone);
-				$('input[id="modify"]').attr('type', 'button');
-				$('input[id="delete"]').attr('type', 'button');
+//				$('input[id="modify"]').attr('type', 'button');
+//				$('input[id="delete"]').attr('type', 'button');
 				
 			}
 		
 			for(var i=0;i<n;i++){
+				
+				
 				
 				if(i != 0 )
 					$( ".add_tab2 tr:first-child").clone(true).prependTo( ".add_tab2" );
@@ -974,8 +979,8 @@ function getadd() {
 					$('.add_tab2 tr:first-child #fixtel2').html (phone);
 			//	$(".add_mod").load ('/home/login-page #modify');
 			//	$(".add_del").load ('/home/login-page #delete');
-				$('input[id="modify"]').attr('type', 'button');
-				$('input[id="delete"]').attr('type', 'button');
+//				$('input[id="modify"]').attr('type', 'button');
+//				$('input[id="delete"]').attr('type', 'button');
 			
 		
 			}		
