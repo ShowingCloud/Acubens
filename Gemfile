@@ -41,15 +41,15 @@ gem 'jquery-rails'
 # gem 'debugger'
 
 # Refinery CMS
-gem 'refinerycms', '~> 2.1.0', :git => 'git://github.com/refinery/refinerycms.git', :branch => '2-1-stable'
+gem 'refinerycms', '~> 2.1.0', :github => 'refinery/refinerycms', :branch => '2-1-stable'
 
 # Specify additional Refinery CMS Extensions here (all optional):
 gem 'refinerycms-i18n', '~> 2.1.0'
 #  gem 'refinerycms-blog', '~> 2.0.0'
 #  gem 'refinerycms-inquiries', '~> 2.0.0'
 #  gem 'refinerycms-search', '~> 2.0.0'
-#  gem 'refinerycms-page-images', '~> 2.0.0'
-gem 'refinerycms-news', :git => 'git://github.com/ShowingCloud/refinerycms-news.git', :branch => 'master'
+gem 'refinerycms-page-images', :github => 'refinery/refinerycms-page-images', :branch => '2-1-stable'
+gem 'refinerycms-news', :github => 'ShowingCloud/refinerycms-news', :branch => 'master'
 
 gem 'yaml_db'
 gem 'savon'
