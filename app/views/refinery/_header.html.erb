@@ -41,11 +41,8 @@
 		  		  <a href="/%E5%B0%8F%E8%8F%8A%E8%80%81%E5%B8%88%E8%AF%BE%E5%A0%82"><img src="/assets/img/MissJuclass.png" width="142" height="85" /></a>
 		  </div>
      </div>
-     <div class="header_bottom_right">
-          <%= render(:partial => "/refinery/menu", :locals => {
-               :dom_id => 'menu',
-               :css => 'menu'
-          }) %>
+	 <div class="header_bottom_right">
+		 <%= Refinery::Pages::MenuPresenter.new(refinery_menu_pages, self).to_html %>
      </div>
 </div>
 

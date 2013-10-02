@@ -49,7 +49,9 @@ Acubens::Application.configure do
   # config.assets.precompile += %w( search.js )
 
   # Disable delivery errors, bad email addresses will be ignored
-  # config.action_mailer.raise_delivery_errors = false
+  if config.respond_to?(:action_mailer)
+    # config.action_mailer.raise_delivery_errors = false
+  end
 
   # Enable threaded mode
   # config.threadsafe!
