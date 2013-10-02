@@ -54,3 +54,5 @@ gem 'refinerycms-news', :git => 'git://github.com/ShowingCloud/refinerycms-news.
 gem 'yaml_db'
 gem 'savon'
 gem "galetahub-simple_captcha", :require => "simple_captcha"
+
+gem 'spree'
