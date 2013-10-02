@@ -49,7 +49,7 @@ gem 'refinerycms-i18n', '~> 2.1.0'
 #  gem 'refinerycms-inquiries', '~> 2.0.0'
 #  gem 'refinerycms-search', '~> 2.0.0'
 #  gem 'refinerycms-page-images', '~> 2.0.0'
-gem 'refinerycms-news', :git => 'git://github.com/ShowingCloud/refinerycms-news.git', :branch => '2-0-stable'
+gem 'refinerycms-news', :git => 'git://github.com/ShowingCloud/refinerycms-news.git', :branch => 'master'
 
 gem 'yaml_db'
 gem 'savon'
