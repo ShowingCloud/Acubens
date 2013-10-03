@@ -5,3 +5,5 @@ require File.expand_path('../application', __FILE__)
 Acubens::Application.initialize!
 
 ENV['RAILS_ASSET_ID'] = `git log -1 --pretty=format:"%h"`
+
+ActiveRecord::Base.include_root_in_json = true

@@ -3,3 +3,12 @@
 # To ban all spiders from the entire site uncomment the next two lines:
 # User-Agent: *
 # Disallow: /
+User-agent: *
+Disallow: /spree/checkouts
+Disallow: /spree/orders
+Disallow: /spree/countries
+Disallow: /spree/line_items
+Disallow: /spree/password_resets
+Disallow: /spree/states
+Disallow: /spree/user_sessions
+Disallow: /spree/users
