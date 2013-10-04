@@ -56,3 +56,4 @@ gem 'savon'
 gem "galetahub-simple_captcha", :require => "simple_captcha"
 
 gem 'spree'
+gem 'spree-refinerycms-authentication', :github => 'adrianmacneil/spree-refinery-authentication'
