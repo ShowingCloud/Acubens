@@ -1,7 +1,7 @@
 <%= render :partial => "/refinery/news/items/info" if @category == 0 %>
 <%= render :partial => "/refinery/news/items/notice" if @category == 1 %> 
 
-<% content_for :body_content_left do %>
+<% content_for :body do %>
 	<%=raw @page.content_for(Refinery::Pages.default_parts.first.to_sym) unless params[:page] %>
 
 	<% if @items.by_category(@category).any? %>
@@ -13,10 +13,7 @@
 							<%= l(item.publish_date, :format => "%Y / %m / %d") %>
 						</td>
 						<td width="500"><%= link_to item.title, refinery.news_item_path(item) %></td>
-						<td><%= truncate  item.body, :length => 0,
-							:omission => "  #{link_to t('.read_more'), refinery.news_item_path(item)}",
-							:preserve_html_tags => true %>
-						</td>
+						<td><%= link_to t('.read_more'), refinery.news_item_path(item) %></td>
 					</tr>
 				</table>
 			</article>

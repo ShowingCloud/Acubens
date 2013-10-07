@@ -2,8 +2,7 @@
 <%= render :partial => "/refinery/news/items/notice" if @item.category == 1 %> 
 
 <% content_for :body_content_title, @item.title %>
-
-<% content_for :body_content_left do %>
+<% content_for :body do %>
 	<h1>
 		<small><%= l(@item.publish_date, :format => "%Y / %m / %d") %></small>
 	</h1>
