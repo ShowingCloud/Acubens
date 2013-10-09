@@ -13,6 +13,5 @@ git pull
 git fetch upstream
 git merge upstream/master
 rake db:migrate
-rake db:seed
 rake db:data:load_dir dir="datadump"
 git push
