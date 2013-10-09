@@ -1521,15 +1521,15 @@ refinery_page_parts:
       title="Kv1" alt="Kv1" width="970px" /></p>
     - 0
     - 2013-09-05 17:56:34.000000000 Z
-    - 2013-10-07 09:08:51.000000000 Z
+    - 2013-10-07 16:55:01.000000000 Z
   - - 169
     - 1
     - advt1
-    - <p><img src="/system/images/W1siZiIsIjIwMTMvMDkvMTMvMDlfNTZfMDlfMzE1X2FkdnQxLnBuZyJdXQ/advt1.png"
-      title="Advt1" alt="Advt1" rel="225x255" height="104" width="250" /></p>
+    - "<p><a href=\"http://shop106256388.taobao.com/\"><img src=\"/system/images/W1siZiIsIjIwMTMvMTAvMDgvMDBfNTNfNTBfOTU3X2FkdnQxLmpwZyJdXQ/advt1.jpg\"
+      title=\"Advt1\" alt=\"Advt1\" width=\"260\" height=\"102\" /></a>\r\n</p>"
     - 1
     - 2013-09-05 17:56:34.000000000 Z
-    - 2013-10-07 09:08:51.000000000 Z
+    - 2013-10-07 16:55:01.000000000 Z
   - - 170
     - 1
     - advt2
@@ -1537,7 +1537,7 @@ refinery_page_parts:
       height=\"104\" width=\"250\" /></a>\r\n</p>"
     - 2
     - 2013-09-05 17:56:34.000000000 Z
-    - 2013-10-07 09:08:51.000000000 Z
+    - 2013-10-07 16:55:01.000000000 Z
   - - 171
     - 1
     - video
@@ -1546,7 +1546,7 @@ refinery_page_parts:
       /></p>
     - 3
     - 2013-09-05 17:56:34.000000000 Z
-    - 2013-10-07 09:08:51.000000000 Z
+    - 2013-10-07 16:55:01.000000000 Z
   - - 174
     - 68
     - Body
