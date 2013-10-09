@@ -1,7 +1,9 @@
 #!/bin/bash
 
 set -x
+
 RAILS_ENV=production
+export RAILS_ENV
 
 git pull
 rake db:migrate
