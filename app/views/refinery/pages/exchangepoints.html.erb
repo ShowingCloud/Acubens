@@ -28,18 +28,14 @@ $(document).ready (getpoint);
 			
 		}
 	}).done (function (resp){
-		if(parseInt (resp.status) == 1) {
-			
-			
-			   
+		if(parseInt (resp.status) == 1) {		   
 		}else {
 			    if (resp.description != null)
 				     alert (resp.description);
 			    else
  			     alert ("请求失败，请再检查一遍您的输入并稍候再试");
 		}
-		
-		
+				
 	}).fail (function() {
 		alert ("请求发送失败，请稍候再试");
 	});	
@@ -123,7 +119,7 @@ $(document).ready (getpoint);
                 <p class="resetpw_top_txt">&nbsp;兑换积分</p>
            </div>
            
-  <!--          <div class="firsrlogin_middle-none-line">
+            <div class="firsrlogin_middle-none-line">
            <ul>
              <li class="text-all-color-green">
                  可用积分总数：
@@ -188,8 +184,8 @@ $(document).ready (getpoint);
 		    </td>
   </tr>
 </table>
-         </div>  -->
-       <div><img src="/assets/img/coming_soon.gif"></div>  
+         </div>  
+<!--       <div><img src="/assets/img/coming_soon.gif"></div>  -->
            
      </div>
 </div>
