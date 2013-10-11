@@ -1,14 +1,18 @@
 <!doctype html>
 <html>
-<!--<% content_for :javascripts do %>
+<% content_for :javascripts do %>
 	<script>
 		<% if session[:login] %>
+			<% if session[:login] == 1%>
+					location.href = "/%E4%BC%9A%E5%91%98%E4%B8%93%E5%8C%BA/%E5%88%9D%E6%AC%A1%E7%99%BB%E5%BD%95";
+			<% end %>
 			$(document).ready ();
 		<% else %>
 			$(document).ready (login);
 		<% end %>
+$(document).ready (getmeminfo);
 	</script>
-<% end %>  -->
+<% end %>
 
 <body>
 
@@ -50,12 +54,9 @@
    <li class="member-text3" >
   <img src="/assets/img/right-angle-empty.png" class="img-margin2" >
   <a href="/%E4%BC%9A%E5%91%98%E4%B8%93%E5%8C%BA/%E4%BC%9A%E5%91%98%E4%B8%AD%E5%BF%83/%E6%88%91%E7%9A%84%E7%A7%AF%E5%88%86">我的积分</a></li>
- <center>
- 
-     <li class="zone2"><img src="/assets/img/right-angle-empty.png"  class="img-margin">
+ <li class="zone2"><img src="/assets/img/right-angle-empty.png"  class="img-margin">
     <span class="member-text3">兑换积分 </span>
     </li>
-  </center>
   <li class="member-text3" >
   <img src="/assets/img/right-angle-empty.png"  class="img-margin2">
   <a href="/%E4%BC%9A%E5%91%98%E4%B8%93%E5%8C%BA/%E4%BC%9A%E5%91%98%E4%B8%AD%E5%BF%83/%E6%9F%A5%E7%9C%8B%E5%85%91%E6%8D%A2%E5%8E%86%E5%8F%B2">查看兑换历史</a></li>
