@@ -1355,11 +1355,14 @@ function getproductcart() {
 					var sku = ret.sku == null ? "" : ret.sku;	
 					var id = ret.id == null ? "" : ret.id;		
 					
-					if(sku = $('input[id="SKU"]').val ()){
+					
+					if(sku == $('input[id="SKU"]').val ()){
 						var points = ret.points == null ? "" : ret.points;
 						var product_name = ret.product_name == null ? "" : ret.product_name;
 						var image = ret.image_url == null ? "" : ret.image_url;			
 																				
+						if ($('input[id="productid"]').length);
+							$('input[id="productid"]').val (id);
 						if ($('#productname').length)
 							$('#productname').html (product_name);
 						if ($('#needpoint').length)
