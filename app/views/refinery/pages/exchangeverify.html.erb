@@ -10,11 +10,30 @@
 		<% else %>
 			$(document).ready (login);
 		<% end %>
+		
 $(document).ready (getmeminfo);
+$(document).ready (geturl);
+$(document).ready (getproductcart);
+
+
+function geturl(){		
+		var sku = window.location.search.split('=');
+		
+		if ($('input[id="SKU"]').length);
+		$('input[id="SKU"]').val (sku[1]);
+		
+	//	alert($('input[id="SKU"]').val ());
+		
+}
+
 $("#cancelintegraltochange").click (function () {
 	location.href = "/%E4%BC%9A%E5%91%98%E4%B8%93%E5%8C%BA/%E4%BC%9A%E5%91%98%E4%B8%AD%E5%BF%83/%E5%85%91%E6%8D%A2%E7%A7%AF%E5%88%86";
 })
-	</script>
+
+$("#integraltochange").click (function () {
+	location.href = "/%E4%BC%9A%E5%91%98%E4%B8%93%E5%8C%BA/%E4%BC%9A%E5%91%98%E4%B8%AD%E5%BF%83/%E5%85%91%E6%8D%A2%E7%A7%AF%E5%88%86";
+})
+</script>
 <% end %>
 
 <body>
@@ -96,19 +115,19 @@ $("#cancelintegraltochange").click (function () {
                  <div class="confirmation_middle_point">
                         <ul>
                               <li class="middle_point_txt1">本次兑换所需积分：</li>
-                              <li class="middle_point_txt2"><label id="needpoint">50</label></li>
+                              <li class="middle_point_txt2"><label id="needpoint"></label></li>
                         </ul>
                 </div>
                 <div class="middle_product_top">兑换产品：</div>
                 <div class="confirmation_middle_product">
                         <div class="middle_product_pic">
-                              <label id="product_pic" ><img id="productpic" src="/assets/img/product-01.jpg" width="60" height="95"></label>
+                              <label id="product_pic" ><img id="productpic"  width="60" height="95"></label>
                         </div>
                         <div class="middle_product_info">
                               <ul>
                               		  <input type="hidden" id="SKU" />
                               		  <input type="hidden" id="productid" />
-                                      <li class="product_info_txt"><label id="productname">简妮清爽洁面啫喱</label></li>
+                                      <li class="product_info_txt"><label id="productname"></label></li>
                                       <li class="product_info_txt"><label id="productsize">10G</label></li>
                                       <li class="middle_product_top">数量：<label id="product_num">1</label></li>
                               </ul>
@@ -143,7 +162,7 @@ $("#cancelintegraltochange").click (function () {
      </div>
      <div class="confirmation_bottom">               
            <div class="resetpw_bottom_save">
-                 <input type="button" value="确认兑换信息" id="integraltochange" onclick="">
+                 <input type="button" value="确认兑换信息" id="integraltochange" >
            </div>
            <div class="resetpw_bottom_cancel">
                  <input type="button" value="取消兑换" id="cancelintegraltochange" >

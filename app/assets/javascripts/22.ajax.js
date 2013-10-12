@@ -1355,10 +1355,11 @@ function getproductcart() {
 					var sku = ret.sku == null ? "" : ret.sku;	
 					var id = ret.id == null ? "" : ret.id;		
 					
-					if(id = productid){
+					if(sku = $('input[id="SKU"]').val ()){
 						var points = ret.points == null ? "" : ret.points;
 						var product_name = ret.product_name == null ? "" : ret.product_name;
-						var image = ret.image_url == null ? "" : ret.image_url;																	
+						var image = ret.image_url == null ? "" : ret.image_url;			
+																				
 						if ($('#productname').length)
 							$('#productname').html (product_name);
 						if ($('#needpoint').length)
@@ -1368,12 +1369,7 @@ function getproductcart() {
 					}															
 			}
 
-			} else {
-				if (resp.description != null)
-					alert (resp.description);
-				else
-					alert("请求失败，请再检查一遍您的输入并稍候再试");
-			}
+			
 		}).fail (function() {
 			alert("请求发送失败，请稍候再试");
 		});

@@ -14,32 +14,14 @@
 $(document).ready (getpointredeemproducts);
 $(document).ready (getpoint);
 
-/*$("#saveinformation").click (function () {
-		
+$("#saveinformation").click (function () {			
 	
+						var id = $(this).parent().parent().parent().find ('#productid').val();
+						var sku = $(this).parent().parent().parent().find ('#SKU').val();
+						
+						location.href = "/%E4%BC%9A%E5%91%98%E4%B8%93%E5%8C%BA/%E5%85%91%E6%8D%A2%E7%A7%AF%E5%88%86%E7%A1%AE%E8%AE%A4?sku="+sku;
 			
-	$.ajax({
-		url:        "/membership/.json",
-		type:       "POST",
-		dataType:   "json",
-		data:       {
-			id:					$(this).parent().parent().parent().find ('#productid').val(),
-			sku:				$(this).parent().parent().parent().find ('#SKU').val()
-			
-		}
-	}).done (function (resp){
-		if(parseInt (resp.status) == 1) {		   
-		}else {
-			    if (resp.description != null)
-				     alert (resp.description);
-			    else
- 			     alert ("请求失败，请再检查一遍您的输入并稍候再试");
-		}
-				
-	}).fail (function() {
-		alert ("请求发送失败，请稍候再试");
-	});	
-}); */
+}); 
 	</script>
 <% end %>
 
@@ -164,7 +146,7 @@ $(document).ready (getpoint);
 		    <td width="114">
 			       <ul>
 				       <li class="text-all-color-black-table4">
-				     		<label id="productname">简妮清爽洁面啫喱</label>
+				     		<label id="productname"></label>
 				       </li>
 				      <li class="text-all-color-black-table4">
 				       		 <label id="productsize">10G</label>
