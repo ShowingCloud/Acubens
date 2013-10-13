@@ -2,18 +2,19 @@
 /* CSS Document */
 
 .pro-topleft{
-	height:416px;
+	height:316px;
 	width:300px;
 	float:left;
 }
 .pro-topright{
-	height:416px;
+	height:316px;
 	width:420px;
 	float:left;
 }
 .pro-pic01{
-	height:323px;
-	width:370px;
+//	height:323px;
+//	width:370px;
+	text-align:center;
 }
 .pro-txt01{
 	text-align:center;
