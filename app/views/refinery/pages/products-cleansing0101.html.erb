@@ -2,7 +2,8 @@
 <% content_for :javascripts do %>
 <script>
 function spreeproduct(data) {
-			var ret = JSON.parse(data)
+		//	alert(data);
+			var ret = JSON.parse(data);
 		//	alert (ret.products[2].variants[1].images);
 
 			
@@ -24,7 +25,9 @@ function spreeproduct(data) {
 							var skin_detail = ret.products[i].product_properties[1].value == null ? "" : ret.products[i].product_properties[1].value;
 							var days_detail = ret.products[i].variants[1].option_values[1].name == null ? "" : ret.products[i].variants[1].option_values[1].name;
 							var description = ret.products[i].description == null ? "" : ret.products[i].description;	
-							var alt = ret.products[i].variants[1].images[0].alt == null ? "" : ret.products[i].variants[1].images[0].alt;
+							var alt = ret.products[i].variants[1].images[0] == null ? "" : ret.products[i].variants[1].images[0].alt;
+							var product_url = ret.products[i].variants[1].images[0] == null? "" :ret.products[i].variants[1].images[0].product_url
+							var small_url = ret.products[i].variants[1].images[0] == null ? "" :ret.products[i].variants[1].images[0].small_url
 							var meta_keywords = ret.products[i].meta_keywords == null ? "" : ret.products[i].meta_keywords;
 							
 							
@@ -61,9 +64,9 @@ function spreeproduct(data) {
 							if ($('.pro-buy').length)
 								$('.pro-buy').prop ('href',meta_keywords);	
 							if ($('#product_pic').length)
-								$('#product_pic').prop ('src','https://jay.libra.gelnic.wgq.me/'+ret.products[i].variants[1].images[0].product_url); 
+								$('#product_pic').prop ('src','https://jay.libra.gelnic.wgq.me/'+product_url); 
 							if ($('.pro-lbot').length)
-								$('.pro-lbot').prop ('src','https://jay.libra.gelnic.wgq.me/'+ret.products[i].variants[1].images[0].small_url); 
+								$('.pro-lbot').prop ('src','https://jay.libra.gelnic.wgq.me/'+small_url); 
 							
 					}
 				
@@ -77,7 +80,7 @@ function spreeproduct(data) {
 </script>
 	
 
-	<script type="text/javascript" src="https://jay.libra.gelnic.wgq.me/api/products.json?token=b6c47100c5a6d32f012a3a5cc057c1710def774550dfe4fd&callback=spreeproduct"></script>
+	<script type="text/javascript" src="https://store.gelnic.com.cn/api/products.json?token=758b47f9da845c3c236c7f1745d365bdd672868068ff4cfa&callback=spreeproduct"></script>
 <% end %>
 <body>
 <div id="member-left" style="float:left">
@@ -136,7 +139,7 @@ function spreeproduct(data) {
            <div class="resetpw_top">
                 <p class="resetpw_top_txt">&nbsp;<label id="pro_name_1">简妮清爽洁面啫喱</label></p>
            </div>
-		   <input type="hidden" id="productid" value="9"/>
+		   <input type="hidden" id="productid" value="1"/>
            <div class="pro-topleft" style="padding-top:30px">
                 <div class="pro-pic01"> 
                     <img  src="img/20131012081356.png" width="100" height="224" id="product_pic">                      
@@ -170,7 +173,7 @@ function spreeproduct(data) {
                                      <tr>
                                                 
                                                 <td >
-                                                        <label id="ing_detail">葡萄寡糖/母菊提取物/滨海当归提取物/黄瓜提取物/桑根皮提取物</label>
+                                                        <label id="ing_detail">葡萄寡糖/母菊提取物</label>
                                                 </td>
                                      </tr>
                                      
@@ -307,6 +310,7 @@ function spreeproduct(data) {
            </div>
            
            <div style="clear:both"></div>
+</div>
 </div>
 </body>
 </html>

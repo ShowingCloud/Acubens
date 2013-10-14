@@ -1,6 +1,88 @@
 <!doctype html>
 <html>
+<% content_for :javascripts do %>
+<script>
+function spreeproduct(data) {
+	//		alert(data);
+			var ret = JSON.parse(data);
+		//	alert (ret.products[2].variants[1].images);
 
+			
+		//	if ($('input[id="productid"]').length);
+		//		$('input[id="productid"]').val (id);
+			var n = ret.products.length;
+			for(var i=0;i<n;i++){
+					if($('input[id="productid"]').val () == ret.products[i].id){
+							
+							var name = ret.products[i].name == null ? "" : ret.products[i].name;
+							var price = ret.products[i].display_price == null ? "" : ret.products[i].display_price;
+							var ing_detail = ret.products[i].product_properties[0].value == null ? "" : ret.products[i].product_properties[0].value;	
+							var spe = ret.products[i].variants[1].option_values[0].option_type_name == null ? "" : ret.products[i].variants[1].option_values[0].option_type_name;
+							var cap = ret.products[i].variants[1].option_values[2].option_type_name == null ? "" : ret.products[i].variants[1].option_values[2].option_type_name;
+							var skin = ret.products[i].product_properties[1].property_name == null ? "" : ret.products[i].product_properties[1].property_name;	
+							var days = ret.products[i].variants[1].option_values[1].option_type_name == null ? "" : ret.products[i].variants[1].option_values[1].option_type_name;
+							var spe_detail = ret.products[i].variants[1].option_values[0].name == null ? "" : ret.products[i].variants[1].option_values[0].name;
+							var cap_detail = ret.products[i].variants[1].option_values[2].name == null ? "" : ret.products[i].variants[1].option_values[2].name;	
+							var skin_detail = ret.products[i].product_properties[1].value == null ? "" : ret.products[i].product_properties[1].value;
+							var days_detail = ret.products[i].variants[1].option_values[1].name == null ? "" : ret.products[i].variants[1].option_values[1].name;
+							var description = ret.products[i].description == null ? "" : ret.products[i].description;	
+							var alt = ret.products[i].variants[1].images[0] == null ? "" : ret.products[i].variants[1].images[0].alt;
+							var product_url = ret.products[i].variants[1].images[0] == null? "" :ret.products[i].variants[1].images[0].product_url
+							var small_url = ret.products[i].variants[1].images[0] == null ? "" :ret.products[i].variants[1].images[0].small_url
+							var meta_keywords = ret.products[i].meta_keywords == null ? "" : ret.products[i].meta_keywords;
+							
+							
+							if ($('#pro_name').length)
+								$('#pro_name').html (name);
+							if ($('#pro_name_1').length)
+								$('#pro_name_1').html (name);
+							if ($('#pro_name_2').length)
+								$('#pro_name_2').html (name);							
+							if ($('#price_detail').length)
+								$('#price_detail').html (price);					
+							if ($('#ing_detail').length)
+								$('#ing_detail').html (ing_detail);		
+							if ($('#spe').length)
+								$('#spe').html (spe);					
+							if ($('#cap').length)
+								$('#cap').html (cap);
+							if ($('#skin').length)
+								$('#skin').html (skin);
+							if ($('#days').length)
+								$('#days').html (days);	
+							if ($('#spe_detail').length)
+								$('#spe_detail').html (spe_detail);
+							if ($('#cap_detail').length)
+								$('#cap_detail').html (cap_detail);
+							if ($('#skin_detail').length)
+								$('#skin_detail').html (skin_detail);
+							if ($('#days_detail').length)
+								$('#days_detail').html (days_detail);	
+							if ($('#description').length)
+								$('#description').html (description);		
+							if ($('#alt').length)
+								$('#alt').html (alt);	
+							if ($('.pro-buy').length)
+								$('.pro-buy').prop ('href',meta_keywords);	
+							if ($('#product_pic').length)
+								$('#product_pic').prop ('src','https://jay.libra.gelnic.wgq.me/'+product_url); 
+							if ($('.pro-lbot').length)
+								$('.pro-lbot').prop ('src','https://jay.libra.gelnic.wgq.me/'+small_url); 
+							
+					}
+				
+					
+			}
+		
+		
+			
+				
+}
+</script>
+	
+
+	<script type="text/javascript" src="https://store.gelnic.com.cn/api/products.json?token=758b47f9da845c3c236c7f1745d365bdd672868068ff4cfa&callback=spreeproduct"></script>
+<% end %>
 
 <body>
 
@@ -55,15 +137,184 @@
                         <li class="resetpw_head_txt2">&nbsp;&nbsp;>&nbsp;&nbsp;</li>
                         <li class="resetpw_head_txt1"><a>产品资讯</a></li>
                         <li class="resetpw_head_txt2">&nbsp;&nbsp;>&nbsp;&nbsp;</li>
-                        <li class="resetpw_head_txt1"><a>简妮去角质亮肤</a></li>
+                        <li class="resetpw_head_txt1"><label id="pro_name">简妮清爽洁面啫喱</label></li>
                 </ul>
            </div>
            <div class="resetpw_top">
-                <p class="resetpw_top_txt">&nbsp;简妮去角质亮肤</p>
+                <p class="resetpw_top_txt">&nbsp;<label id="pro_name_1">简妮清爽洁面啫喱</label></p>
            </div>
-           <%=raw @page.content_for(:product) %>
+		   <input type="hidden" id="productid" value="1"/>
+           <div class="pro-topleft" style="padding-top:30px">
+                <div class="pro-pic01"> 
+                    <img  src="img/20131012081356.png" width="100" height="224" id="product_pic">                      
+                </div>
+                <div class="pro-txt01">
+                    <label id="pro_name_2">简妮清爽洁面啫喱</label>
+                </div>
+                <div>
+                    <a class="pro-buy">点击购买</a>
+                    <img class="pro_pic02" src="/assets/img/triangle-1.jpg" width="12" height="18">
+                </div>
+                
+           </div>
+           <div class="pro-topright" style="padding-top:30px">
+                <label id="alt"></label>
+           </div>
+           
+           <div class="pro-ingredient">
+                <div class="pro-tab">
+                        <div class="pro-ltab">
+                               <table  class="pro-tab01" border="0" cellspacing="0" cellpadding="0">
+                                     <tr>
+                                                <td >
+                                                        <label id="ing">成&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;分：</label>
+                                                </td>
+                                              
+                                     </tr>
+                                     
+                              </table>
+                               <table  class="pro-tab02" border="0" cellspacing="0" cellpadding="0">
+                                     <tr>
+                                                
+                                                <td >
+                                                        <label id="ing_detail">葡萄寡糖/母菊提取物</label>
+                                                </td>
+                                     </tr>
+                                     
+                              </table> 
+
+                        </div>
+                        
+                        <div class="pro-rtab">
+                              <table   border="0" cellspacing="0" cellpadding="0">
+                                     <tr>
+                                                <td class="pro-tab03">
+                                                        <label id="price">价格：</label>
+                                                </td>
+                                                 <td class="pro-tab04">
+                                                        <label id="price_detail"></label>
+                                                </td>
+                                              
+                                     </tr>
+                                     
+                              </table>
+                               <table   border="0" cellspacing="0" cellpadding="0">
+                                     <tr>
+                                                <td class="pro-tab03">
+                                                        <label id="spe">规&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;格</label>:
+                                                </td>
+                                                 <td class="pro-tab04">
+                                                        <label id="spe_detail"></label>
+                                                </td>
+                                              
+                                     </tr>                                     
+                              </table>
+                              <table   border="0" cellspacing="0" cellpadding="0">
+                                     <tr>
+                                                <td class="pro-tab03">
+                                                        <label id="cap">容&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;量</label>:
+                                                </td>
+                                                 <td class="pro-tab04">
+                                                        <label id="cap_detail"></label>
+                                                </td>
+                                              
+                                     </tr>                                     
+                              </table>
+                               <table   border="0" cellspacing="0" cellpadding="0">
+                                     <tr>
+                                                <td class="pro-tab03">
+                                                        <label id="skin">适合肤质</label>:
+                                                </td>
+                                                 <td class="pro-tab04">
+                                                        <label id="skin_detail"></label>
+                                                </td>
+                                              
+                                     </tr>                                     
+                              </table>
+                               <table   border="0" cellspacing="0" cellpadding="0">
+                                     <tr>
+                                                <td class="pro-tab03">
+                                                        <label id="days">使用天数</label>:
+                                                </td>
+                                                 <td class="pro-tab04">
+                                                        <label id="days_detail"></label>
+                                                </td>
+                                              
+                                     </tr>                                     
+                              </table>
+                              
+                       </div>                          
+                </div>                
+           </div>
+           
+           
+           
+           <label id="description"></label>
+          
+          
+          
+ <!--          <%=raw @page.content_for(:product) %> -->
+
+
+            <div class="pro-bottom">
+                  <div class="pro-txt02">
+                         与其他商品搭配使用
+                  </div>
+                  <div>
+                         <div class="pro-bot01">
+                               <div class="pro-lbot"><img class="pro-lbot" />
+                               </div>  
+                               <div class="pro-rbot">
+                                       <div class="pro-txt03">
+                                            <label id="pro_name01">简妮gelnic</label>
+                                       </div> 
+                                       <div class="pro-txt04">
+                                            <label id="pro_name02">清爽洁面啫喱 </label>
+                                       </div> 
+                                       <div>
+                                            <a class="pro-detail">更多详情</a>
+                                            <img class="pro_pic02" src="/assets/img/triangle-1.jpg" width="12" height="18">
+                                       </div>
+                               </div>
+                         </div>
+                         <div class="pro-bot01">
+                               <div class="pro-lbot"><img class="pro-lbot" />
+                               </div>  
+                               <div class="pro-rbot">
+                                       <div class="pro-txt03">
+                                            <label id="pro_name03">简妮gelnic</label>
+                                       </div> 
+                                       <div class="pro-txt04">
+                                            <label id="pro_name04">清爽洁面啫喱 </label>
+                                       </div> 
+                                       <div>
+                                            <a class="pro-detail">更多详情</a>
+                                            <img class="pro_pic02" src="/assets/img/triangle-1.jpg" width="12" height="18">
+                                       </div>
+                               </div>
+                         </div>
+                         <div class="pro-bot02">
+                               <div class="pro-lbot"><img class="pro-lbot" />
+                               </div>  
+                               <div class="pro-rbot">
+                                       <div class="pro-txt03">
+                                            <label id="pro_name05">简妮gelnic</label>
+                                       </div> 
+                                       <div class="pro-txt04">
+                                            <label id="pro_name06">清爽洁面啫喱 </label>
+                                       </div> 
+                                       <div>
+                                            <a class="pro-detail">更多详情</a>
+                                            <img class="pro_pic02" src="/assets/img/triangle-1.jpg" width="12" height="18">
+                                       </div>
+                               </div>
+                         </div>
+                  </div>
+           
+           </div>
+           
            <div style="clear:both"></div>
-     </div>
+</div>
 </div>
 
 </body>
