@@ -33,6 +33,36 @@ $("#cancelintegraltochange").click (function () {
 $("#integraltochange").click (function () {
 	location.href = "/%E4%BC%9A%E5%91%98%E4%B8%93%E5%8C%BA/%E4%BC%9A%E5%91%98%E4%B8%AD%E5%BF%83/%E5%85%91%E6%8D%A2%E7%A7%AF%E5%88%86";
 })
+
+function pointexchange() {
+	if ($('#captcha').val().length == 0) {
+		alert ("请输入验证码");
+		return;
+	} 
+	$.ajax ({
+		url:		"/membership/.json",
+		type:		"POST",
+		dataType:	"json",
+		data:		{
+			captcha:		$('#captcha').val(),
+			captcha_key:	$('#captcha_key').val()
+		}
+	}).done (function (resp) {
+		if (parseInt (resp.status) == 1)
+			location.reload();
+		else if (parseInt (resp.status) == 2) {
+			$(".authenticationtd").load (.simple_captcha');
+			alert("验证码错误")
+	//		$('#loginerr').html ("验证码错误");
+		} else {
+			$(".authenticationtd").load (.simple_captcha');
+	//		$('#loginerr').html ("登录信息错误");
+		}
+	}).fail (function() {
+	//	$('#loginerr').html ("请求发送失败，请稍候再试");
+	});
+}
+
 </script>
 <% end %>
 
@@ -160,6 +190,11 @@ $("#integraltochange").click (function () {
                 </div>
            </div>
      </div>
+     <table class="content_1_table"  border="0" cellspacing="0" cellpadding="0">
+                	  <tr>
+                	  		<td class="authenticationtd"><%= show_simple_captcha(:label => "human authentication", :placeholder => "input the characters") %></td>
+                	  </tr>
+     </table>
      <div class="confirmation_bottom">               
            <div class="resetpw_bottom_save">
                  <input type="button" value="确认兑换信息" id="integraltochange" >
