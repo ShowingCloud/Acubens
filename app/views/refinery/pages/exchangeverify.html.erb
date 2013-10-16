@@ -44,6 +44,7 @@ function pointexchange() {
 		type:		"POST",
 		dataType:	"json",
 		data:		{
+			sku:			$('#sku').val(),
 			captcha:		$('#captcha').val(),
 			captcha_key:	$('#captcha_key').val()
 		}
@@ -197,7 +198,7 @@ function pointexchange() {
      </table>
      <div class="confirmation_bottom">               
            <div class="resetpw_bottom_save">
-                 <input type="button" value="确认兑换信息" id="integraltochange" >
+                 <input type="button" value="确认兑换信息" id="integraltochange" onclick="pointexchange()">
            </div>
            <div class="resetpw_bottom_cancel">
                  <input type="button" value="取消兑换" id="cancelintegraltochange" >
