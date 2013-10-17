@@ -16,7 +16,7 @@ class Membership
 		:update_user_info, :get_user_address, :insert_user_address, :update_user_address, 
 		:delete_user_address, :gelnic_questionnaire_add_point, :get_points,
 	   	:getpointsproduct_list, :get_points_redeem_product_list, :get_user_info_list,
-	   	:get_dictionary_all
+		:get_dictionary_all, :get_point_list_data_and_order
 
 	Channel = "Gelnic"
 	Merchant = "1591"
@@ -94,7 +94,7 @@ class Membership
 			hash.update captcha
 
 		rescue
-			logger.error $!.backtrace
+			Rails.logger.error $!.backtrace
 			hash = Digest::SHA256.new
 		end
 

@@ -23,7 +23,7 @@ Refinery::Core.configure do |config|
   config.google_analytics_page_code = "UA-43691779-2"
 
   # Enable/disable authenticity token on frontend
-  # config.authenticity_token_on_frontend = true
+  config.authenticity_token_on_frontend = true
 
   # Hide/show child pages in menu
   # config.menu_hide_children = false
