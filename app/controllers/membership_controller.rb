@@ -6,6 +6,7 @@ class MembershipController < ApplicationController
 
 	before_filter :checklogin, :except => [:verifymobile, :register, :login, :logout, :getusers, :getdict, :changepsw]
 	before_filter :checksurveyitems, :only => [:surveydone]
+	before_filter :checkcaptcha, :only => [:login]
 
 	SurveyKeys = [ :style, :care, :problems, :time, :procedures, :effects, :shortcomings,
 				:cost, :markets, :factors, :brands, :importance, :source, :ways,
@@ -59,10 +60,6 @@ class MembershipController < ApplicationController
 	def login
 		session[:username] = nil
 		session[:login] = nil
-
-		if not simple_captcha_valid?
-			respond_with ret = { :status => 2 }, :location => nil and return
-		end
 
 		resp = Membership.login params[:username], params[:password], params[:captcha]
 
@@ -263,6 +260,13 @@ class MembershipController < ApplicationController
 		params[:skin_survey].blank? and respond_with ret = { :status => 0 }, :location => nil and return
 		SurveyKeys.each do |v|
 			params[:skin_survey][v].blank? and respond_with ret = { :status => 0 }, :location => nil and return
+		end
+	end
+
+
+	def checkcaptcha
+		if not simple_captcha_valid?
+			respond_with ret = { :status => 2 }, :location => nil and return
 		end
 	end
 

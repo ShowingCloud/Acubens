@@ -5,7 +5,7 @@ class OrderController < ApplicationController
 
 	respond_to :json, :xml
 
-	before_filter :checklogin
+	before_filter :checklogin, :checkcaptcha
 
 	Client = Savon.client do
 		wsdl "http://210.13.83.245/GelnicWebServiceTest/OfficialService.asmx?WSDL"
@@ -26,29 +26,7 @@ class OrderController < ApplicationController
 
 
 	def setorder
-		if not simple_captcha_valid?
-			respond_with ret = { :status => 2 }, :location => nil and return
-		end
-
-		order = {
-			"orderid" =>,
-			"customerid" => session[:username].to_s,
-			"score" =>,
-			"ordertime" =>,
-			"Receiver" =>,
-			"ReceiverProvince" =>,
-			"ReceiverCity" =>,
-			"ReceiverDistrict" =>,
-			"ReceiverAddress" =>,
-			"ReceiverMobile" =>,
-			"ReceiverTel" =>,
-			"ReceiverPostCode" =>,
-			"item" =>
-		}
-
-		resp = query_800ts(:set_order, {
-			"orderJson" => order,
-		})
+		resp = Order.setorder session[:username]
 
 		respond_with ret = { :status => resp }, :location => nil and return
 	end
@@ -56,17 +34,16 @@ class OrderController < ApplicationController
 
 	private
 
-	def query_800ts(method, data)
-		response = Client.call(method, message: data)
-		method_response = (method.to_s + "_response").to_sym
-		method_result = (method.to_s + "_result").to_sym
-		return response.body[method_response][method_result]
-	end
-
-
 	def checklogin
 		if not session[:login] or not session[:username]
 			respond_with ret = { :status => 0 }, :location => nil and return
+		end
+	end
+
+
+	def checkcaptcha
+		if not simple_captcha_valid?
+			respond_with ret = { :status => 2 }, :location => nil and return
 		end
 	end
 
