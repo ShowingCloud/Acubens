@@ -1,11 +1,12 @@
 #encoding: utf-8
 require 'json'
+require 'digest/md5'
 
 class OrderController < ApplicationController
 
 	respond_to :json, :xml
 
-	before_filter :checklogin
+	before_filter :checklogin, :checkcaptcha, :only => :setorder
 
 	Client = Savon.client do
 		wsdl "http://210.13.83.245/GelnicWebServiceTest/OfficialService.asmx?WSDL"
@@ -26,47 +27,51 @@ class OrderController < ApplicationController
 
 
 	def setorder
-		if not simple_captcha_valid?
-			respond_with ret = { :status => 2 }, :location => nil and return
+		resp = Order.setorder session[:username]
+
+		if resp
+			@pending_order = PendingOrder.new
+			@pending_order.orderid = resp
+			@pending_order.username = session[:username].to_s
+			@pending_order.points = 100
+			@pending_order.save
 		end
-
-		order = {
-			"orderid" =>,
-			"customerid" => session[:username].to_s,
-			"score" =>,
-			"ordertime" =>,
-			"Receiver" =>,
-			"ReceiverProvince" =>,
-			"ReceiverCity" =>,
-			"ReceiverDistrict" =>,
-			"ReceiverAddress" =>,
-			"ReceiverMobile" =>,
-			"ReceiverTel" =>,
-			"ReceiverPostCode" =>,
-			"item" =>
-		}
-
-		resp = query_800ts(:set_order, {
-			"orderJson" => order,
-		})
 
 		respond_with ret = { :status => resp }, :location => nil and return
 	end
 
 
-	private
+	def updateorder
+		md5 = Digest::MD5.new
+		md5.update params[:orderid] if params[:orderid]
 
-	def query_800ts(method, data)
-		response = Client.call(method, message: data)
-		method_response = (method.to_s + "_response").to_sym
-		method_result = (method.to_s + "_result").to_sym
-		return response.body[method_response][method_result]
+		if not md5.hexdigest == params[:orderid_md5]
+			respond_with ret = { :status => 2 }, :location => nil and return
+		else
+			@pending_order = PendingOrder.find :first, :conditions => { :orderid => params[:orderid_md5] }
+
+			if not @pending_order
+				respond_with ret = { :status => 0 }, :location => nil and return
+			end
+
+			@pending_order.destroy
+			respond_with ret = { :status => 1, :info => @pending_order }, :location => nil
+		end
 	end
 
+
+	private
 
 	def checklogin
 		if not session[:login] or not session[:username]
 			respond_with ret = { :status => 0 }, :location => nil and return
+		end
+	end
+
+
+	def checkcaptcha
+		if not simple_captcha_valid?
+			respond_with ret = { :status => 2 }, :location => nil and return
 		end
 	end
 
