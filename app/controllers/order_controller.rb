@@ -1,11 +1,12 @@
 #encoding: utf-8
 require 'json'
+require 'digest/md5'
 
 class OrderController < ApplicationController
 
 	respond_to :json, :xml
 
-	before_filter :checklogin, :checkcaptcha
+	before_filter :checklogin, :checkcaptcha, :only => :setorder
 
 	Client = Savon.client do
 		wsdl "http://210.13.83.245/GelnicWebServiceTest/OfficialService.asmx?WSDL"
@@ -28,7 +29,34 @@ class OrderController < ApplicationController
 	def setorder
 		resp = Order.setorder session[:username]
 
+		if resp
+			@pending_order = PendingOrder.new
+			@pending_order.orderid = resp
+			@pending_order.username = session[:username].to_s
+			@pending_order.points = 100
+			@pending_order.save
+		end
+
 		respond_with ret = { :status => resp }, :location => nil and return
+	end
+
+
+	def updateorder
+		md5 = Digest::MD5.new
+		md5.update params[:orderid] if params[:orderid]
+
+		if not md5.hexdigest == params[:orderid_md5]
+			respond_with ret = { :status => 2 }, :location => nil and return
+		else
+			@pending_order = PendingOrder.find :first, :conditions => { :orderid => params[:orderid_md5] }
+
+			if not @pending_order
+				respond_with ret = { :status => 0 }, :location => nil and return
+			end
+
+			@pending_order.destroy
+			respond_with ret = { :status => 1, :info => @pending_order }, :location => nil
+		end
 	end
 
 

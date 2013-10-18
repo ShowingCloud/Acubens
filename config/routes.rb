@@ -48,6 +48,7 @@ Acubens::Application.routes.draw do
   resources :order do
 	  collection do
 		  post :setorder
+		  post :updateorder
 	  end
   end
 

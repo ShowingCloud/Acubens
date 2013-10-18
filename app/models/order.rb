@@ -1,7 +1,7 @@
 #encoding: utf-8
 
 class Order
-	Extend Savon::Model
+	extend Savon::Model
 
 	client wsdl: "http://210.13.83.245/GelnicWebServiceTest/OfficialService.asmx?WSDL",
 		namespace: "http://tempuri.org/",
@@ -15,19 +15,19 @@ class Order
 	def self.setorder(username)
 		self.query_800ts(:set_order, {
 			"orderJson" => {
-				"orderid" =>,
+				"orderid" => 1,
 				"customerid" => username.to_s,
-				"score" =>,
-				"ordertime" =>,
-				"Receiver" =>,
-				"ReceiverProvince" =>,
-				"ReceiverCity" =>,
-				"ReceiverDistrict" =>,
-				"ReceiverAddress" =>,
-				"ReceiverMobile" =>,
-				"ReceiverTel" =>,
-				"ReceiverPostCode" =>,
-				"item" =>
+				"score" => 1,
+				"ordertime" => 1,
+				"Receiver" => 1,
+				"ReceiverProvince" => 1,
+				"ReceiverCity" => 1,
+				"ReceiverDistrict" => 1,
+				"ReceiverAddress" => 1,
+				"ReceiverMobile" => 1,
+				"ReceiverTel" => 1,
+				"ReceiverPostCode" => 1,
+				"item" => 1
 			}
 		})
 	end
