@@ -52,11 +52,11 @@ function pointexchange() {
 		if (parseInt (resp.status) == 1)
 			location.reload();
 		else if (parseInt (resp.status) == 2) {
-			$(".authenticationtd").load (.simple_captcha');
+			$(".authenticationtd").load ('.simple_captcha');
 			alert("验证码错误")
 	//		$('#loginerr').html ("验证码错误");
 		} else {
-			$(".authenticationtd").load (.simple_captcha');
+			$(".authenticationtd").load ('.simple_captcha');
 	//		$('#loginerr').html ("登录信息错误");
 		}
 	}).fail (function() {
