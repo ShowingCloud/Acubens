@@ -41,17 +41,19 @@
 .pro-ingredient{
 	float:left;
 	width:720px;
-	height:168px;
+//	height:168px;
 }
 .pro-tab{
 	margin-top:28px;
 	margin-left:22px;
 	width:680px;
-	height:125px;
+	height:175px;
 	border-style:solid;
 	border-width:1px;
 	border-color:#e1efbc;
+	margin-bottom:10px;
 }
+
 .pro-ltab{
 	width:447px;
 	height:125px;
@@ -118,7 +120,14 @@
 	width:115px;
 	height:150px;
 	float:left;
+	text-align:center;
+	display: table-cell;
+	vertical-align: middle;
 }
+.pro-pic{
+	padding-top:20px;
+}
+
 .pro-rbot{
 	float:left;
 	width:110px;

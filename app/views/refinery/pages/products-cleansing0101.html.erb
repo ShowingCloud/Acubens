@@ -2,7 +2,7 @@
 <% content_for :javascripts do %>
 <script>
 function spreeproduct(data) {
-		//	alert(data);
+	//		alert(data);
 			var ret = JSON.parse(data);
 		//	alert (ret.products[2].variants[1].images);
 
@@ -10,25 +10,26 @@ function spreeproduct(data) {
 		//	if ($('input[id="productid"]').length);
 		//		$('input[id="productid"]').val (id);
 			var n = ret.products.length;
+			var j = 0;
 			for(var i=0;i<n;i++){
 					if($('input[id="productid"]').val () == ret.products[i].id){
 							
 							var name = ret.products[i].name == null ? "" : ret.products[i].name;
 							var price = ret.products[i].display_price == null ? "" : ret.products[i].display_price;
 							var ing_detail = ret.products[i].product_properties[0].value == null ? "" : ret.products[i].product_properties[0].value;	
-							var spe = ret.products[i].variants[1].option_values[0].option_type_name == null ? "" : ret.products[i].variants[1].option_values[0].option_type_name;
-							var cap = ret.products[i].variants[1].option_values[2].option_type_name == null ? "" : ret.products[i].variants[1].option_values[2].option_type_name;
-							var skin = ret.products[i].product_properties[1].property_name == null ? "" : ret.products[i].product_properties[1].property_name;	
-							var days = ret.products[i].variants[1].option_values[1].option_type_name == null ? "" : ret.products[i].variants[1].option_values[1].option_type_name;
-							var spe_detail = ret.products[i].variants[1].option_values[0].name == null ? "" : ret.products[i].variants[1].option_values[0].name;
-							var cap_detail = ret.products[i].variants[1].option_values[2].name == null ? "" : ret.products[i].variants[1].option_values[2].name;	
-							var skin_detail = ret.products[i].product_properties[1].value == null ? "" : ret.products[i].product_properties[1].value;
-							var days_detail = ret.products[i].variants[1].option_values[1].name == null ? "" : ret.products[i].variants[1].option_values[1].name;
+							var spe = ret.products[i].product_properties[1].property_name == null ? "" : ret.products[i].product_properties[1].property_name;
+							var cap = ret.products[i].product_properties[2].property_name == null ? "" : ret.products[i].product_properties[2].property_name;
+							var skin = ret.products[i].product_properties[3].property_name == null ? "" : ret.products[i].product_properties[3].property_name;	
+							var days = ret.products[i].product_properties[4].property_name == null ? "" : ret.products[i].product_properties[4].property_name;
+							var spe_detail = ret.products[i].product_properties[1].value == null ? "" : ret.products[i].product_properties[1].value;
+							var cap_detail = ret.products[i].product_properties[2].value == null ? "" : ret.products[i].product_properties[2].value;	
+							var skin_detail = ret.products[i].product_properties[3].value == null ? "" : ret.products[i].product_properties[3].value;
+							var days_detail = ret.products[i].product_properties[4].value == null ? "" : ret.products[i].product_properties[4].value;
 							var description = ret.products[i].description == null ? "" : ret.products[i].description;	
-							var alt = ret.products[i].variants[1].images[0] == null ? "" : ret.products[i].variants[1].images[0].alt;
-							var product_url = ret.products[i].variants[1].images[0] == null? "" :ret.products[i].variants[1].images[0].product_url
-							var small_url = ret.products[i].variants[1].images[0] == null ? "" :ret.products[i].variants[1].images[0].small_url
-							var meta_keywords = ret.products[i].meta_keywords == null ? "" : ret.products[i].meta_keywords;
+						//	var alt = ret.products[i].variants[1].images[0] == null ? "" : ret.products[i].variants[1].images[0].alt;
+							var product_url = ret.products[i].variants[0].images[0] == null? "" :ret.products[i].variants[0].images[0].product_url
+							
+						//	var meta_keywords = ret.products[i].meta_keywords == null ? "" : ret.products[i].meta_keywords;
 							
 							
 							if ($('#pro_name').length)
@@ -59,28 +60,33 @@ function spreeproduct(data) {
 								$('#days_detail').html (days_detail);	
 							if ($('#description').length)
 								$('#description').html (description);		
-							if ($('#alt').length)
-								$('#alt').html (alt);	
-							if ($('.pro-buy').length)
-								$('.pro-buy').prop ('href',meta_keywords);	
+						//	if ($('#alt').length)
+						//		$('#alt').html (alt);	
+						//	if ($('.pro-buy').length)
+						//		$('.pro-buy').prop ('href',meta_keywords);	
 							if ($('#product_pic').length)
-								$('#product_pic').prop ('src','https://jay.libra.gelnic.wgq.me/'+product_url); 
-							if ($('.pro-lbot').length)
-								$('.pro-lbot').prop ('src','https://jay.libra.gelnic.wgq.me/'+small_url); 
+								$('#product_pic').prop ('src','https://store.gelnic.com.cn/'+product_url); 
+							
 							
 					}
-				
 					
+					if( ret.products[i].taxon_ids[0] == 1 && $('input[id="productid"]').val () != ret.products[i].id){
+						
+									var small_url = ret.products[i].variants[0].images[0] == null ? "" :ret.products[i].variants[0].images[0].small_url;
+									$('.pro-bot01-'+j+' input').val(ret.products[i].id);
+							//		alert('.pro-bot02-'+j+' .pro-lbot .pro-pic');
+									$('.pro-bot01-'+j+' .pro-lbot .pro-pic').prop ('src','https://store.gelnic.com.cn/'+small_url); 
+									j++;
+						}
+							
+							//alert("1");					
 			}
-		
-		
-			
-				
+							
 }
 </script>
 	
 
-	<script type="text/javascript" src="https://store.gelnic.com.cn/api/products.json?token=758b47f9da845c3c236c7f1745d365bdd672868068ff4cfa&callback=spreeproduct"></script>
+	<script type="text/javascript" src="https://store.gelnic.com.cn/api/products.json?token=cdecae15c1017b691f109d6890d7a212ba4d8df1243df7e8&callback=spreeproduct"></script>
 <% end %>
 <body>
 <div id="member-left" style="float:left">
@@ -142,7 +148,7 @@ function spreeproduct(data) {
 		   <input type="hidden" id="productid" value="1"/>
            <div class="pro-topleft" style="padding-top:30px">
                 <div class="pro-pic01"> 
-                    <img  src="img/20131012081356.png" width="100" height="224" id="product_pic">                      
+                    <img id="product_pic">                      
                 </div>
                 <div class="pro-txt01">
                     <label id="pro_name_2">简妮清爽洁面啫喱</label>
@@ -163,7 +169,7 @@ function spreeproduct(data) {
                                <table  class="pro-tab01" border="0" cellspacing="0" cellpadding="0">
                                      <tr>
                                                 <td >
-                                                        <label id="ing">成&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;分：</label>
+                                                        <label id="ing">成&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;分</label>:
                                                 </td>
                                               
                                      </tr>
@@ -173,7 +179,7 @@ function spreeproduct(data) {
                                      <tr>
                                                 
                                                 <td >
-                                                        <label id="ing_detail">葡萄寡糖/母菊提取物</label>
+                                                        <label id="ing_detail"></label>
                                                 </td>
                                      </tr>
                                      
@@ -185,7 +191,7 @@ function spreeproduct(data) {
                               <table   border="0" cellspacing="0" cellpadding="0">
                                      <tr>
                                                 <td class="pro-tab03">
-                                                        <label id="price">价格：</label>
+                                                        <label id="price">价格</label>:
                                                 </td>
                                                  <td class="pro-tab04">
                                                         <label id="price_detail"></label>
@@ -257,8 +263,9 @@ function spreeproduct(data) {
                          与其他商品搭配使用
                   </div>
                   <div>
-                         <div class="pro-bot01">
-                               <div class="pro-lbot"><img class="pro-lbot" />
+                         <div class="pro-bot01-0">
+                         	   <input type="hidden"/>
+                               <div class="pro-lbot"><img class="pro-pic" />
                                </div>  
                                <div class="pro-rbot">
                                        <div class="pro-txt03">
@@ -273,8 +280,9 @@ function spreeproduct(data) {
                                        </div>
                                </div>
                          </div>
-                         <div class="pro-bot01">
-                               <div class="pro-lbot"><img class="pro-lbot" />
+                         <div class="pro-bot01-1">
+                               <input type="hidden"/>
+                               <div class="pro-lbot"><img class="pro-pic" />
                                </div>  
                                <div class="pro-rbot">
                                        <div class="pro-txt03">
@@ -289,8 +297,9 @@ function spreeproduct(data) {
                                        </div>
                                </div>
                          </div>
-                         <div class="pro-bot02">
-                               <div class="pro-lbot"><img class="pro-lbot" />
+                         <div class="pro-bot01-2">
+                         	   <input type="hidden"/>
+                               <div class="pro-lbot"><img class="pro-pic" />
                                </div>  
                                <div class="pro-rbot">
                                        <div class="pro-txt03">

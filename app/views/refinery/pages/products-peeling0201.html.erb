@@ -11,25 +11,26 @@ function spreeproduct(data) {
 		//	if ($('input[id="productid"]').length);
 		//		$('input[id="productid"]').val (id);
 			var n = ret.products.length;
+			var j = 0;
 			for(var i=0;i<n;i++){
 					if($('input[id="productid"]').val () == ret.products[i].id){
 							
 							var name = ret.products[i].name == null ? "" : ret.products[i].name;
 							var price = ret.products[i].display_price == null ? "" : ret.products[i].display_price;
 							var ing_detail = ret.products[i].product_properties[0].value == null ? "" : ret.products[i].product_properties[0].value;	
-							var spe = ret.products[i].variants[1].option_values[0].option_type_name == null ? "" : ret.products[i].variants[1].option_values[0].option_type_name;
-							var cap = ret.products[i].variants[1].option_values[2].option_type_name == null ? "" : ret.products[i].variants[1].option_values[2].option_type_name;
-							var skin = ret.products[i].product_properties[1].property_name == null ? "" : ret.products[i].product_properties[1].property_name;	
-							var days = ret.products[i].variants[1].option_values[1].option_type_name == null ? "" : ret.products[i].variants[1].option_values[1].option_type_name;
-							var spe_detail = ret.products[i].variants[1].option_values[0].name == null ? "" : ret.products[i].variants[1].option_values[0].name;
-							var cap_detail = ret.products[i].variants[1].option_values[2].name == null ? "" : ret.products[i].variants[1].option_values[2].name;	
-							var skin_detail = ret.products[i].product_properties[1].value == null ? "" : ret.products[i].product_properties[1].value;
-							var days_detail = ret.products[i].variants[1].option_values[1].name == null ? "" : ret.products[i].variants[1].option_values[1].name;
+							var spe = ret.products[i].product_properties[1].property_name == null ? "" : ret.products[i].product_properties[1].property_name;
+							var cap = ret.products[i].product_properties[2].property_name == null ? "" : ret.products[i].product_properties[2].property_name;
+							var skin = ret.products[i].product_properties[3].property_name == null ? "" : ret.products[i].product_properties[3].property_name;	
+							var days = ret.products[i].product_properties[4].property_name == null ? "" : ret.products[i].product_properties[4].property_name;
+							var spe_detail = ret.products[i].product_properties[1].value == null ? "" : ret.products[i].product_properties[1].value;
+							var cap_detail = ret.products[i].product_properties[2].value == null ? "" : ret.products[i].product_properties[2].value;	
+							var skin_detail = ret.products[i].product_properties[3].value == null ? "" : ret.products[i].product_properties[3].value;
+							var days_detail = ret.products[i].product_properties[4].value == null ? "" : ret.products[i].product_properties[4].value;
 							var description = ret.products[i].description == null ? "" : ret.products[i].description;	
-							var alt = ret.products[i].variants[1].images[0] == null ? "" : ret.products[i].variants[1].images[0].alt;
-							var product_url = ret.products[i].variants[1].images[0] == null? "" :ret.products[i].variants[1].images[0].product_url
-							var small_url = ret.products[i].variants[1].images[0] == null ? "" :ret.products[i].variants[1].images[0].small_url
-							var meta_keywords = ret.products[i].meta_keywords == null ? "" : ret.products[i].meta_keywords;
+						//	var alt = ret.products[i].variants[1].images[0] == null ? "" : ret.products[i].variants[1].images[0].alt;
+							var product_url = ret.products[i].variants[0].images[0] == null? "" :ret.products[i].variants[0].images[0].product_url
+							
+						//	var meta_keywords = ret.products[i].meta_keywords == null ? "" : ret.products[i].meta_keywords;
 							
 							
 							if ($('#pro_name').length)
@@ -60,28 +61,33 @@ function spreeproduct(data) {
 								$('#days_detail').html (days_detail);	
 							if ($('#description').length)
 								$('#description').html (description);		
-							if ($('#alt').length)
-								$('#alt').html (alt);	
-							if ($('.pro-buy').length)
-								$('.pro-buy').prop ('href',meta_keywords);	
+						//	if ($('#alt').length)
+						//		$('#alt').html (alt);	
+						//	if ($('.pro-buy').length)
+						//		$('.pro-buy').prop ('href',meta_keywords);	
 							if ($('#product_pic').length)
-								$('#product_pic').prop ('src','https://jay.libra.gelnic.wgq.me/'+product_url); 
-							if ($('.pro-lbot').length)
-								$('.pro-lbot').prop ('src','https://jay.libra.gelnic.wgq.me/'+small_url); 
+								$('#product_pic').prop ('src','https://store.gelnic.com.cn/'+product_url); 
+							
 							
 					}
-				
 					
+					if( ret.products[i].taxon_ids[0] == 2 && $('input[id="productid"]').val () != ret.products[i].id){
+						
+									var small_url = ret.products[i].variants[0].images[0] == null ? "" :ret.products[i].variants[0].images[0].small_url;
+									$('.pro-bot01-'+j+' input').val(ret.products[i].id);
+							//		alert('.pro-bot02-'+j+' .pro-lbot .pro-pic');
+									$('.pro-bot01-'+j+' .pro-lbot .pro-pic').prop ('src','https://store.gelnic.com.cn/'+small_url); 
+									j++;
+						}
+							
+							//alert("1");					
 			}
-		
-		
-			
-				
+							
 }
 </script>
 	
 
-	<script type="text/javascript" src="https://store.gelnic.com.cn/api/products.json?token=758b47f9da845c3c236c7f1745d365bdd672868068ff4cfa&callback=spreeproduct"></script>
+	<script type="text/javascript" src="https://store.gelnic.com.cn/api/products.json?token=cdecae15c1017b691f109d6890d7a212ba4d8df1243df7e8&callback=spreeproduct"></script>
 <% end %>
 
 <body>
@@ -137,19 +143,19 @@ function spreeproduct(data) {
                         <li class="resetpw_head_txt2">&nbsp;&nbsp;>&nbsp;&nbsp;</li>
                         <li class="resetpw_head_txt1"><a>产品资讯</a></li>
                         <li class="resetpw_head_txt2">&nbsp;&nbsp;>&nbsp;&nbsp;</li>
-                        <li class="resetpw_head_txt1"><label id="pro_name">简妮清爽洁面啫喱</label></li>
+                        <li class="resetpw_head_txt1"><label id="pro_name"></label></li>
                 </ul>
            </div>
            <div class="resetpw_top">
-                <p class="resetpw_top_txt">&nbsp;<label id="pro_name_1">简妮清爽洁面啫喱</label></p>
+                <p class="resetpw_top_txt">&nbsp;<label id="pro_name_1"></label></p>
            </div>
-		   <input type="hidden" id="productid" value="1"/>
+		   <input type="hidden" id="productid" value="4"/>
            <div class="pro-topleft" style="padding-top:30px">
                 <div class="pro-pic01"> 
-                    <img  src="img/20131012081356.png" width="100" height="224" id="product_pic">                      
+                    <img  id="product_pic">                      
                 </div>
                 <div class="pro-txt01">
-                    <label id="pro_name_2">简妮清爽洁面啫喱</label>
+                    <label id="pro_name_2"></label>
                 </div>
                 <div>
                     <a class="pro-buy">点击购买</a>
@@ -177,7 +183,7 @@ function spreeproduct(data) {
                                      <tr>
                                                 
                                                 <td >
-                                                        <label id="ing_detail">葡萄寡糖/母菊提取物</label>
+                                                        <label id="ing_detail"></label>
                                                 </td>
                                      </tr>
                                      
@@ -261,15 +267,16 @@ function spreeproduct(data) {
                          与其他商品搭配使用
                   </div>
                   <div>
-                         <div class="pro-bot01">
-                               <div class="pro-lbot"><img class="pro-lbot" />
+                         <div class="pro-bot01-0">
+                         	   <input type="hidden"/>
+                               <div class="pro-lbot"><img class="pro-pic" />
                                </div>  
                                <div class="pro-rbot">
                                        <div class="pro-txt03">
                                             <label id="pro_name01">简妮gelnic</label>
                                        </div> 
                                        <div class="pro-txt04">
-                                            <label id="pro_name02">清爽洁面啫喱 </label>
+                                            <label id="pro_name02">清爽亮肤啫喱 </label>
                                        </div> 
                                        <div>
                                             <a class="pro-detail">更多详情</a>
@@ -277,15 +284,16 @@ function spreeproduct(data) {
                                        </div>
                                </div>
                          </div>
-                         <div class="pro-bot01">
-                               <div class="pro-lbot"><img class="pro-lbot" />
+                         <div class="pro-bot01-1">
+                               <input type="hidden"/>
+                               <div class="pro-lbot"><img class="pro-pic" />
                                </div>  
                                <div class="pro-rbot">
                                        <div class="pro-txt03">
                                             <label id="pro_name03">简妮gelnic</label>
                                        </div> 
                                        <div class="pro-txt04">
-                                            <label id="pro_name04">清爽洁面啫喱 </label>
+                                            <label id="pro_name04">清爽亮肤啫喱 </label>
                                        </div> 
                                        <div>
                                             <a class="pro-detail">更多详情</a>
@@ -293,15 +301,16 @@ function spreeproduct(data) {
                                        </div>
                                </div>
                          </div>
-                         <div class="pro-bot02">
-                               <div class="pro-lbot"><img class="pro-lbot" />
+                         <div class="pro-bot01-2">
+                         	   <input type="hidden"/>
+                               <div class="pro-lbot"><img class="pro-pic" />
                                </div>  
                                <div class="pro-rbot">
                                        <div class="pro-txt03">
                                             <label id="pro_name05">简妮gelnic</label>
                                        </div> 
                                        <div class="pro-txt04">
-                                            <label id="pro_name06">清爽洁面啫喱 </label>
+                                            <label id="pro_name06">清爽亮肤啫喱 </label>
                                        </div> 
                                        <div>
                                             <a class="pro-detail">更多详情</a>
