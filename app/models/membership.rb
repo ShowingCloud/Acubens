@@ -233,7 +233,7 @@ class Membership
 	end
 
 
-	def self.questionnaire(uesrname)
+	def self.questionnaire(username)
 		self.query_mokard(:gelnic_questionnaire_add_point, {
 				"merchantNo" => Merchant,
 				"channel" => Channel,
