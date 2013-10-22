@@ -35,7 +35,7 @@ function spreeproduct(data) {
 							var skin_detail = ret.products[i].product_properties[3].value == null ? "" : ret.products[i].product_properties[3].value;
 							var days_detail = ret.products[i].product_properties[4].value == null ? "" : ret.products[i].product_properties[4].value;
 							var description = ret.products[i].description == null ? "" : ret.products[i].description;	
-						//	var alt = ret.products[i].variants[1].images[0] == null ? "" : ret.products[i].variants[1].images[0].alt;
+							var alt = ret.products[i].variants[0].images[0] == null ? "" : ret.products[i].variants[0].images[0].alt;
 							var product_url = ret.products[i].variants[0].images[0] == null? "" :ret.products[i].variants[0].images[0].product_url
 							
 						//	var meta_keywords = ret.products[i].meta_keywords == null ? "" : ret.products[i].meta_keywords;
@@ -69,8 +69,8 @@ function spreeproduct(data) {
 								$('#days_detail').html (days_detail);	
 							if ($('#description').length)
 								$('#description').html (description);		
-						//	if ($('#alt').length)
-						//		$('#alt').html (alt);	
+							if ($('#alt').length)
+								$('#alt').html (alt);	
 						//	if ($('.pro-buy').length)
 						//		$('.pro-buy').prop ('href',meta_keywords);	
 							if ($('#product_pic').length)
