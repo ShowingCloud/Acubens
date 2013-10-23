@@ -6,8 +6,8 @@ $(".pro-detail").click (function () {
 	
 	var id = $(this).parent().parent().parent().find ('#productid').val();
 	
-	location.href = "/%E4%BA%A7%E5%93%81%E8%B5%84%E8%AE%AF/%E4%BA%AE%E8%82%A4%E5%95%AB%E5%96%B1/%E7%AE%80%E5%A6%AE%E5%8E%BB%E8%A7%92%E8%B4%A8%E4%BA%AE%E8%82%A410g?id="+id;
-//	location.href = "/%E4%BA%A7%E5%93%81%E8%B5%84%E8%AE%AF/%E6%B4%81%E9%9D%A2%E5%95%AB%E5%96%B1/%E7%AE%80%E5%A6%AE%E6%B8%85%E7%88%BD%E6%B4%81%E9%9D%A2%E5%95%AB%E5%96%B110g?id="+id;
+	location.href = "/%E4%BA%A7%E5%93%81%E8%B5%84%E8%AE%AF/%E4%BA%AE%E8%82%A4%E5%95%AB%E5%96%B1/%E7%AE%80%E5%A6%AE%E5%8E%BB%E8%A7%92%E8%B4%A8%E4%BA%AE%E8%82%A410g?productid="+id;
+
 	
 });
 
@@ -15,14 +15,15 @@ function spreeproduct(data) {
 	//		alert(data);
 			var ret = JSON.parse(data);
 		//	alert (ret.products[2].variants[1].images);
-
+			
+			var productid = window.location.search.split('=');
 			
 		//	if ($('input[id="productid"]').length);
 		//		$('input[id="productid"]').val (id);
 			var n = ret.products.length;
 			var j = 0;
 			for(var i=0;i<n;i++){
-					if($('input[id="productid"]').val () == ret.products[i].id){
+					if( productid[1] == ret.products[i].id){
 							
 							var name = ret.products[i].name == null ? "" : ret.products[i].name;
 							var price = ret.products[i].display_price == null ? "" : ret.products[i].display_price;
@@ -39,7 +40,7 @@ function spreeproduct(data) {
 							var alt = ret.products[i].variants[0].images[0] == null ? "" : ret.products[i].variants[0].images[0].alt;
 							var product_url = ret.products[i].variants[0].images[0] == null? "" :ret.products[i].variants[0].images[0].product_url
 							
-						//	var meta_keywords = ret.products[i].meta_keywords == null ? "" : ret.products[i].meta_keywords;
+							var meta_keywords = ret.products[i].meta_keywords == null ? "" : ret.products[i].meta_keywords;
 							
 							
 							if ($('#pro_name').length)
@@ -72,8 +73,8 @@ function spreeproduct(data) {
 								$('#description').html (description);		
 							if ($('#alt').length)
 								$('#alt').html (alt);	
-						//	if ($('.pro-buy').length)
-						//		$('.pro-buy').prop ('href',meta_keywords);	
+							if ($('.pro-buy').length)
+								$('.pro-buy').prop ('href',meta_keywords);	
 							if ($('#product_pic').length)
 								$('#product_pic').prop ('src','https://store.gelnic.com.cn/'+product_url); 
 							

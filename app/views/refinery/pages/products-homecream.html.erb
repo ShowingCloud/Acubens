@@ -1,12 +1,14 @@
 <!doctype html>
 <% content_for :javascripts do %>
 <script>
-$(".pro-detail").click (function () {
+$(".cream_detail").click (function () {
 	
-	var id = $(this).parent().parent().parent().find ('#productid').val();
+	var id = $(this).parent().parent().find ('#productid').val();	
+
+//	alert(id);
 	
-	location.href = "/产品资讯/洁面啫喱/简妮清爽洁面啫喱10g?id="+id;
-//	location.href = "/%E4%BA%A7%E5%93%81%E8%B5%84%E8%AE%AF/%E6%B4%81%E9%9D%A2%E5%95%AB%E5%96%B1/%E7%AE%80%E5%A6%AE%E6%B8%85%E7%88%BD%E6%B4%81%E9%9D%A2%E5%95%AB%E5%96%B110g?id="+id;
+	location.href = "/%E4%BA%A7%E5%93%81%E8%B5%84%E8%AE%AF/%E6%B6%A6%E6%B3%BD%E4%B9%B3%E9%9C%9C/%E7%AE%80%E5%A6%AE%E4%BF%9D%E6%B9%BF%E6%B6%A6%E6%B3%BD%E4%B9%B3%E9%9C%9C-gh-10g?productid="+id;
+
 	
 });
 
@@ -19,10 +21,18 @@ function spreeproduct(data) {
 		//	if ($('input[id="productid"]').length);
 		//		$('input[id="productid"]').val (id);
 			var n = ret.products.length;
-		//	var j = 0;
-			for(var i=0;i<n;i++){
-					if( 1 == ret.products[i].taxon_ids[0]){
+			var j = 0;
 							
+			for(var i=0;i<n;i++){
+					if( 3 == ret.products[i].taxon_ids[0]){
+							
+							if(j != 0){
+								$( ".cream_right ul li:first-child" ).clone(true).prependTo( ".cream_right ul" );
+							}	
+							
+							j++;
+							
+							var id = ret.products[i].id == null ? "" : ret.products[i].id;
 							var name = ret.products[i].name == null ? "" : ret.products[i].name;
 							var price = ret.products[i].display_price == null ? "" : ret.products[i].display_price;
 							var ing_detail = ret.products[i].product_properties[0].value == null ? "" : ret.products[i].product_properties[0].value;	
@@ -37,55 +47,23 @@ function spreeproduct(data) {
 							var description = ret.products[i].description == null ? "" : ret.products[i].description;	
 						//	var alt = ret.products[i].variants[1].images[0] == null ? "" : ret.products[i].variants[1].images[0].alt;
 							var product_url = ret.products[i].variants[0].images[0] == null? "" :ret.products[i].variants[0].images[0].product_url
+							var small_url = ret.products[i].variants[0].images[0] == null ? "" :ret.products[i].variants[0].images[0].small_url;
 							
 						//	var meta_keywords = ret.products[i].meta_keywords == null ? "" : ret.products[i].meta_keywords;
 							
-							
-							if ($('#pro_name').length)
-								$('#pro_name').html (name);
-							if ($('#pro_name_1').length)
-								$('#pro_name_1').html (name);
-							if ($('#pro_name_2').length)
-								$('#pro_name_2').html (name);							
-							if ($('#price_detail').length)
-								$('#price_detail').html (price);					
-							if ($('#ing_detail').length)
-								$('#ing_detail').html (ing_detail);		
-							if ($('#spe').length)
-								$('#spe').html (spe);					
-							if ($('#cap').length)
-								$('#cap').html (cap);
-							if ($('#skin').length)
-								$('#skin').html (skin);
-							if ($('#days').length)
-								$('#days').html (days);	
-							if ($('#spe_detail').length)
-								$('#spe_detail').html (spe_detail);
-							if ($('#cap_detail').length)
-								$('#cap_detail').html (cap_detail);
-							if ($('#skin_detail').length)
-								$('#skin_detail').html (skin_detail);
-							if ($('#days_detail').length)
-								$('#days_detail').html (days_detail);	
-							if ($('#description').length)
-								$('#description').html (description);		
-						//	if ($('#alt').length)
-						//		$('#alt').html (alt);	
-						//	if ($('.pro-buy').length)
-						//		$('.pro-buy').prop ('href',meta_keywords);	
-							if ($('#product_pic').length)
-								$('#product_pic').prop ('src','https://store.gelnic.com.cn/'+product_url); 
-							
-							
-					}
-					
-								
+							if ($('.cream_right ul li:first-child #productid').length)
+								$('.cream_right ul li:first-child #productid').val(id);	
+							if ($('.cream_right ul li:first-child #pro_name').length)
+								$('.cream_right ul li:first-child #pro_name').html (name);							
+							if ($('.cream_right ul li:first-child #cap_detail').length)
+								$('.cream_right ul li:first-child #cap_detail').html (cap_detail);							
+							if ($('.cream_right ul li:first-child #small_pic').length)
+								$('.cream_right ul li:first-child #small_pic').prop ('src','https://store.gelnic.com.cn/'+small_url);							
+					}								
 			}
 							
 }
 </script>
-	
-
 <script type="text/javascript" src="https://store.gelnic.com.cn/api/products.json?token=cdecae15c1017b691f109d6890d7a212ba4d8df1243df7e8&callback=spreeproduct"></script>
 <% end %>
 
@@ -164,7 +142,7 @@ function spreeproduct(data) {
                             </div>
                             <div class="cream_left03">由内而外自然调养令肌肤达到理想的润泽状态</div>
                    </div>
-                   <div class="cream_right">
+        <!--           <div class="cream_right">
                    		<ul>
 	                   		<li>
 			                   		<input type="hidden" id="productid" />
@@ -181,6 +159,24 @@ function spreeproduct(data) {
 			                        </div>
 		                     </li>		 
 		                     	                                     
+		                 </ul>
+              </div>  -->
+                   <div class="cream_right">
+                   		<ul>
+	                   		<li>
+	                   				<input type="hidden" id="productid" />
+			                   		<div class="cream_right01">	                   		  
+			                   			    <img  id="small_pic">			                   			
+									</div>
+									<div class="clean_txt01">
+			                              <div><label id="pro_name"></label></div>
+			                              <div><label id="cap_detail"></label></div>
+			                       	</div>
+									<div class="clean_right05">
+							  			  <a class="cream_detail" href="#">更多详情</a>
+			                                     <img class="clean_pic" src="/assets/img/triangle-1.jpg" width="12" height="18" />
+			                        </div>
+		                     </li>		                                      
 		                 </ul>
                    </div>
                    

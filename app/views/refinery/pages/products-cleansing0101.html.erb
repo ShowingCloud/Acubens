@@ -5,8 +5,8 @@ $(".pro-detail").click (function () {
 	
 	var id = $(this).parent().parent().parent().find ('#productid').val();
 	
-	location.href = "/产品资讯/洁面啫喱/简妮清爽洁面啫喱10g?id="+id;
-//	location.href = "/%E4%BA%A7%E5%93%81%E8%B5%84%E8%AE%AF/%E6%B4%81%E9%9D%A2%E5%95%AB%E5%96%B1/%E7%AE%80%E5%A6%AE%E6%B8%85%E7%88%BD%E6%B4%81%E9%9D%A2%E5%95%AB%E5%96%B110g?id="+id;
+	location.href = "/产品资讯/洁面啫喱/简妮清爽洁面啫喱10g?productid="+id;
+
 	
 });
 
@@ -18,10 +18,15 @@ function spreeproduct(data) {
 			
 		//	if ($('input[id="productid"]').length);
 		//		$('input[id="productid"]').val (id);
+			var productid = window.location.search.split('=');
+					
+		//		if ($('input[id="productdetailid"]').length);
+		//		$('input[id="productdetailid"]').val (id[1]);
+			
 			var n = ret.products.length;
 			var j = 0;
 			for(var i=0;i<n;i++){
-					if($('input[id="productid"]').val () == ret.products[i].id){
+					if( productid[1] == ret.products[i].id){
 							
 							var name = ret.products[i].name == null ? "" : ret.products[i].name;
 							var price = ret.products[i].display_price == null ? "" : ret.products[i].display_price;
@@ -38,7 +43,7 @@ function spreeproduct(data) {
 							var alt = ret.products[i].variants[0].images[0] == null ? "" : ret.products[i].variants[0].images[0].alt;
 							var product_url = ret.products[i].variants[0].images[0] == null? "" :ret.products[i].variants[0].images[0].product_url
 							
-						//	var meta_keywords = ret.products[i].meta_keywords == null ? "" : ret.products[i].meta_keywords;
+							var meta_keywords = ret.products[i].meta_keywords == null ? "" : ret.products[i].meta_keywords;
 							
 							
 							if ($('#pro_name').length)
@@ -71,8 +76,8 @@ function spreeproduct(data) {
 								$('#description').html (description);		
 							if ($('#alt').length)
 								$('#alt').html (alt);	
-						//	if ($('.pro-buy').length)
-						//		$('.pro-buy').prop ('href',meta_keywords);	
+							if ($('.pro-buy').length)
+								$('.pro-buy').prop ('href',meta_keywords);	
 							if ($('#product_pic').length)
 								$('#product_pic').prop ('src','https://store.gelnic.com.cn/'+product_url); 
 							
@@ -154,7 +159,7 @@ function spreeproduct(data) {
            <div class="resetpw_top">
                 <p class="resetpw_top_txt">&nbsp;<label id="pro_name_1">简妮清爽洁面啫喱</label></p>
            </div>
-		   <input type="hidden" id="productid" value="1"/>
+		   <input type="hidden" id="productdetailid" value=""/>
            <div class="pro-topleft" style="padding-top:30px">
                 <div class="pro-pic01"> 
                     <img id="product_pic">                      
