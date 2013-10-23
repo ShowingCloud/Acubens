@@ -31,6 +31,10 @@ Acubens::Application.routes.draw do
 		  post :surveydone
 		  post :getpoint
 		  get :getpoint
+		  post :getpendingpoint
+		  get :getpendingpoint
+		  post :getavailpoint
+		  get :getavailpoint
 		  post :getpointproducts
 		  get :getpointproducts
 		  post :getpointredeemproducts
@@ -47,6 +51,7 @@ Acubens::Application.routes.draw do
 
   resources :order do
 	  collection do
+		  get :setorder
 		  post :setorder
 		  post :updateorder
 	  end

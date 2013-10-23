@@ -12,23 +12,27 @@ class Order
 	operations :set_order
 
 
-	def self.setorder(username)
+	def self.setorder(username, addr, product)
 		self.query_800ts(:set_order, {
-			"orderJson" => {
-				"orderid" => 1,
+			"orderJson" => ActiveSupport::JSON.encode({
 				"customerid" => username.to_s,
-				"score" => 1,
-				"ordertime" => 1,
-				"Receiver" => 1,
-				"ReceiverProvince" => 1,
-				"ReceiverCity" => 1,
-				"ReceiverDistrict" => 1,
-				"ReceiverAddress" => 1,
-				"ReceiverMobile" => 1,
-				"ReceiverTel" => 1,
-				"ReceiverPostCode" => 1,
-				"item" => 1
-			}
+				"score" => product[:points],
+				"ordertime" => DateTime.now(),
+				"Receiver" => addr[:buyer_name].to_s,
+				"ReceiverProvince" => addr[:province].to_s,
+				"ReceiverCity" => addr[:city].to_s,
+				"ReceiverDistrict" => addr[:district].to_s,
+				"ReceiverAddress" => addr[:full_address].to_s,
+				"ReceiverMobile" => addr[:buyer_contact1].to_s,
+				"ReceiverTel" => addr[:buyer_contact2].to_s,
+				"ReceiverPostCode" => addr[:zip_code].to_s,
+				"item" => [{
+					"SKU" => product[:sku],
+					"quantity" => 1,
+					"productName" => product[:product_name],
+					"Score" => product[:points]
+				}]
+			})
 		})
 	end
 

@@ -130,21 +130,7 @@ class MembershipController < ApplicationController
 			resp[:return_value].delete Membership::Columns[:password].to_sym
 		end
 
-		addr = Membership.getaddr session[:username],
-			Membership.getfromdict(session[:username], :defaddr)
-
-		if addr[:status] != "1"
-			addr = Membership.getaddr session[:username], "-1"
-		end
-
-		if addr[:status] == "1"
-			resp[:addr] = addr[:return_value][:user_address]
-			if resp[:addr].class == Array
-				resp[:addr] = resp[:addr][0]
-			end
-		else
-			resp[:addr] = addr
-		end
+		resp[:addr] = Membership.getanaddr session[:username]
 
 		respond_with resp, :location => nil
 	end
@@ -208,11 +194,36 @@ class MembershipController < ApplicationController
 		end
 	end
 
+
 	def getpoint
 		resp = Membership.getpoint session[:username], params[:type]
 		respond_with resp, :location => nil
 	end
 
+
+	def getpendingpoint
+		points = PendingOrder.where(username: session[:username]).sum('points')
+		respond_with ret = { :status => 1, :points => points }, :location => nil and return
+	end
+
+
+	def getavailpoint
+		begin
+			points = Membership.getpoint(session[:username], 1)[:value].to_i
+			points -= PendingOrder.where(username: session[:username]).sum('points').to_i
+			status = 1
+		rescue
+			points = 0
+			status = -1
+		end
+
+		if points < 0
+			points = 0
+			status = 0
+		end
+
+		respond_with ret = { :status => status, :points => points }, :location => nil and return
+	end
 
 	def getpointproducts
 		resp = Membership.getpointproducts

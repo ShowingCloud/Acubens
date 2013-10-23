@@ -233,6 +233,24 @@ class Membership
 	end
 
 
+	def self.getanaddr(username)
+		addr = self.getaddr username, self.getdefaddr(username)[:defaddr]
+
+		if addr[:status] != "1"
+			addr = self.getaddr username, "-1"
+		end
+
+		if addr[:status] == "1"
+			addr = addr[:return_value][:user_address]
+			if addr.class == Array
+				addr = addr[0]
+			end
+		end
+
+		addr
+	end
+
+
 	def self.questionnaire(username)
 		self.query_mokard(:gelnic_questionnaire_add_point, {
 				"merchantNo" => Merchant,
