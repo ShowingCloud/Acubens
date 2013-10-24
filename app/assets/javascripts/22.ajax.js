@@ -1120,6 +1120,9 @@ function register(){
 
 
 $(document).ready (function() {
+	if ($("#province").length == 0)
+		return;
+
 	$("#province").html ("<option id=\"prov_0\" value=\"0\">--请选择--</option>");
 	$("#city").html ("<option id=\"city_0\" value=\"0\">--请选择--</option>");
 	$("#district").html ("<option id=\"area_0\" value=\"0\">--请选择--</option>");
