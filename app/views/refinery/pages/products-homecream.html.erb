@@ -1,4 +1,72 @@
 <!doctype html>
+<% content_for :javascripts do %>
+<script>
+$(".cream_detail").click (function () {
+	
+	var id = $(this).parent().parent().find ('#productid').val();	
+
+//	alert(id);
+	
+	location.href = "/%E4%BA%A7%E5%93%81%E8%B5%84%E8%AE%AF/%E6%B6%A6%E6%B3%BD%E4%B9%B3%E9%9C%9C/%E7%AE%80%E5%A6%AE%E4%BF%9D%E6%B9%BF%E6%B6%A6%E6%B3%BD%E4%B9%B3%E9%9C%9C-gh-10g?productid="+id;
+
+	
+});
+
+function spreeproduct(data) {
+	//		alert(data);
+			var ret = JSON.parse(data);
+		//	alert (ret.products[2].variants[1].images);
+
+			
+		//	if ($('input[id="productid"]').length);
+		//		$('input[id="productid"]').val (id);
+			var n = ret.products.length;
+			var j = 0;
+							
+			for(var i=0;i<n;i++){
+					if( 3 == ret.products[i].taxon_ids[0]){
+							
+							if(j != 0){
+								$( ".cream_right ul li:first-child" ).clone(true).prependTo( ".cream_right ul" );
+							}	
+							
+							j++;
+							
+							var id = ret.products[i].id == null ? "" : ret.products[i].id;
+							var name = ret.products[i].name == null ? "" : ret.products[i].name;
+							var price = ret.products[i].display_price == null ? "" : ret.products[i].display_price;
+							var ing_detail = ret.products[i].product_properties[0].value == null ? "" : ret.products[i].product_properties[0].value;	
+							var spe = ret.products[i].product_properties[1].property_name == null ? "" : ret.products[i].product_properties[1].property_name;
+							var cap = ret.products[i].product_properties[2].property_name == null ? "" : ret.products[i].product_properties[2].property_name;
+							var skin = ret.products[i].product_properties[3].property_name == null ? "" : ret.products[i].product_properties[3].property_name;	
+							var days = ret.products[i].product_properties[4].property_name == null ? "" : ret.products[i].product_properties[4].property_name;
+							var spe_detail = ret.products[i].product_properties[1].value == null ? "" : ret.products[i].product_properties[1].value;
+							var cap_detail = ret.products[i].product_properties[2].value == null ? "" : ret.products[i].product_properties[2].value;	
+							var skin_detail = ret.products[i].product_properties[3].value == null ? "" : ret.products[i].product_properties[3].value;
+							var days_detail = ret.products[i].product_properties[4].value == null ? "" : ret.products[i].product_properties[4].value;
+							var description = ret.products[i].description == null ? "" : ret.products[i].description;	
+						//	var alt = ret.products[i].variants[1].images[0] == null ? "" : ret.products[i].variants[1].images[0].alt;
+							var product_url = ret.products[i].variants[0].images[0] == null? "" :ret.products[i].variants[0].images[0].product_url
+							var small_url = ret.products[i].variants[0].images[0] == null ? "" :ret.products[i].variants[0].images[0].small_url;
+							
+						//	var meta_keywords = ret.products[i].meta_keywords == null ? "" : ret.products[i].meta_keywords;
+							
+							if ($('.cream_right ul li:first-child #productid').length)
+								$('.cream_right ul li:first-child #productid').val(id);	
+							if ($('.cream_right ul li:first-child #pro_name').length)
+								$('.cream_right ul li:first-child #pro_name').html (name);							
+							if ($('.cream_right ul li:first-child #cap_detail').length)
+								$('.cream_right ul li:first-child #cap_detail').html (cap_detail);							
+							if ($('.cream_right ul li:first-child #small_pic').length)
+								$('.cream_right ul li:first-child #small_pic').prop ('src','https://store.gelnic.com.cn/'+small_url);							
+					}								
+			}
+							
+}
+</script>
+<script type="text/javascript" src="https://libra.gelnic.com.cn/api/products.json?token=cdecae15c1017b691f109d6890d7a212ba4d8df1243df7e8&callback=spreeproduct"></script>
+<% end %>
+
 <html>
 <body>
 
@@ -74,8 +142,45 @@
                             </div>
                             <div class="cream_left03">由内而外自然调养令肌肤达到理想的润泽状态</div>
                    </div>
+        <!--           <div class="cream_right">
+                   		<ul>
+	                   		<li>
+			                   		<input type="hidden" id="productid" />
+			                   		<div class="cream_right01">
+			                   			<img src="/assets/img/circle-10g.png" >
+									</div>
+									<div class="clean_txt01">
+			                              <div>简妮保湿润泽乳霜</div>
+			                              <div>10g</div>
+			                       	</div>
+									<div class="clean_right05">
+							  			  <a class="cream_detail" href="/%E4%BA%A7%E5%93%81%E8%B5%84%E8%AE%AF/%E6%B6%A6%E6%B3%BD%E4%B9%B3%E9%9C%9C/%E7%AE%80%E5%A6%AE%E4%BF%9D%E6%B9%BF%E6%B6%A6%E6%B3%BD%E4%B9%B3%E9%9C%9C-gh-10g">更多详情</a>
+			                                     <img class="clean_pic" src="/assets/img/triangle-1.jpg" width="12" height="18" />
+			                        </div>
+		                     </li>		 
+		                     	                                     
+		                 </ul>
+              </div>  -->
+                   <div class="cream_right">
+                   		<ul>
+	                   		<li>
+	                   				<input type="hidden" id="productid" />
+			                   		<div class="cream_right01">	                   		  
+			                   			    <img  id="small_pic">			                   			
+									</div>
+									<div class="clean_txt01">
+			                              <div><label id="pro_name"></label></div>
+			                              <div><label id="cap_detail"></label></div>
+			                       	</div>
+									<div class="clean_right05">
+							  			  <a class="cream_detail" href="#">更多详情</a>
+			                                     <img class="clean_pic" src="/assets/img/triangle-1.jpg" width="12" height="18" />
+			                        </div>
+		                     </li>		                                      
+		                 </ul>
+                   </div>
                    
-                   <table width="650"  >
+      <!--             <table width="650"  >
   							<tr>
  								   <td><div style="padding:123px 0px 10px 45px;"><img src="/assets/img/circle-10g.png" >
 </div>
@@ -176,7 +281,7 @@
                          			   </div>
                          			   </td>
  							</tr>
-				   </table>                 
+				   </table>        -->         
            </div>
            <div style="clear:both"></div>
      </div>

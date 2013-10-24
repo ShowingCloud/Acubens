@@ -1,4 +1,75 @@
 <!DOCTYPE html>
+<% content_for :javascripts do %>
+<script>
+$(".clean_detail").click (function () {
+	
+	var sku = $(this).parent().parent().find ('#productid').val();
+	
+	location.href = "/产品资讯/洁面啫喱/简妮清爽洁面啫喱10g?productid="+sku;
+//	location.href = "/%E4%BA%A7%E5%93%81%E8%B5%84%E8%AE%AF/%E6%B4%81%E9%9D%A2%E5%95%AB%E5%96%B1/%E7%AE%80%E5%A6%AE%E6%B8%85%E7%88%BD%E6%B4%81%E9%9D%A2%E5%95%AB%E5%96%B110g?id="+id;
+	
+});
+
+function spreeproduct(data) {
+	//		alert(data);
+			var ret = JSON.parse(data);
+		//	alert (ret.products[2].variants[1].images);
+
+			
+		//	if ($('input[id="productid"]').length);
+		//		$('input[id="productid"]').val (id);
+			var n = ret.products.length;
+			var j = 0;
+							
+			for(var i=0;i<n;i++){
+					if( 1 == ret.products[i].taxon_ids[0]){
+							
+							if(j != 0){
+								$( ".clean_right ul li:first-child" ).clone(true).prependTo( ".clean_right ul" );
+							}	
+							
+							j++;
+							
+							var id = ret.products[i].id == null ? "" : ret.products[i].id;
+							var name = ret.products[i].name == null ? "" : ret.products[i].name;
+							var price = ret.products[i].display_price == null ? "" : ret.products[i].display_price;
+							var ing_detail = ret.products[i].product_properties[0].value == null ? "" : ret.products[i].product_properties[0].value;	
+							var spe = ret.products[i].product_properties[1].property_name == null ? "" : ret.products[i].product_properties[1].property_name;
+							var cap = ret.products[i].product_properties[2].property_name == null ? "" : ret.products[i].product_properties[2].property_name;
+							var skin = ret.products[i].product_properties[3].property_name == null ? "" : ret.products[i].product_properties[3].property_name;	
+							var days = ret.products[i].product_properties[4].property_name == null ? "" : ret.products[i].product_properties[4].property_name;
+							var spe_detail = ret.products[i].product_properties[1].value == null ? "" : ret.products[i].product_properties[1].value;
+							var cap_detail = ret.products[i].product_properties[2].value == null ? "" : ret.products[i].product_properties[2].value;	
+							var skin_detail = ret.products[i].product_properties[3].value == null ? "" : ret.products[i].product_properties[3].value;
+							var days_detail = ret.products[i].product_properties[4].value == null ? "" : ret.products[i].product_properties[4].value;
+							var description = ret.products[i].description == null ? "" : ret.products[i].description;	
+						//	var alt = ret.products[i].variants[1].images[0] == null ? "" : ret.products[i].variants[1].images[0].alt;
+							var product_url = ret.products[i].variants[0].images[0] == null? "" :ret.products[i].variants[0].images[0].product_url
+							var small_url = ret.products[i].variants[0].images[0] == null ? "" :ret.products[i].variants[0].images[0].small_url;
+							
+						//	var meta_keywords = ret.products[i].meta_keywords == null ? "" : ret.products[i].meta_keywords;
+							
+							if ($('.clean_right ul li:first-child #productid').length)
+								$('.clean_right ul li:first-child #productid').val (id);	
+							if ($('.clean_right ul li:first-child #pro_name').length)
+								$('.clean_right ul li:first-child #pro_name').html (name);							
+							if ($('.clean_right ul li:first-child #cap_detail').length)
+								$('.clean_right ul li:first-child #cap_detail').html (cap_detail);							
+							if ($('.clean_right ul li:first-child #small_pic').length)
+								$('.clean_right ul li:first-child #small_pic').prop ('src','https://store.gelnic.com.cn/'+small_url);
+							
+					}
+					
+								
+			}
+		
+							
+}
+</script>
+	
+
+<script type="text/javascript" src="https://libra.gelnic.com.cn/api/products.json?token=cdecae15c1017b691f109d6890d7a212ba4d8df1243df7e8&callback=spreeproduct"></script>
+<% end %>
 <body>
 <div id="member-left" style="float:left">
   
@@ -64,9 +135,30 @@
                    <div class="clean_left">
                             <div class="clean_left01">Step.1</div>
                             <div class="clean_left02">清爽洁面啫喱</div>
-                            <div class="clean_left03">集卸妆与洁面双效合一，洗后不紧绷不干燥</div>
+                            <div class="clean_left03">集卸妆与洁面双效合一洗后不紧绷不干燥</div>
                    </div>
-                   <table width="650"  >
+                   <div class="clean_right">
+                   		<ul>
+	                   		<li>
+	                   				
+		                   				<input type="hidden" id="productid" />
+				                   		<div class="clean_right01">	                   		  
+				                   			    <img  id="small_pic">			                   			
+										</div>
+										<div class="clean_txt01">
+				                              <div><label id="pro_name"></label></div>
+				                              <div><label id="cap_detail"></label></div>
+				                       	</div>
+										<div class="clean_right05">
+								  			  <a class="clean_detail" href="#">更多详情</a>
+				                                     <img class="clean_pic" src="/assets/img/triangle-1.jpg" width="12" height="18" />
+				                        </div>
+			                        
+		                     </li>		                                      
+		                 </ul>
+                   </div>
+                   
+  <!--                 <table width="650"  >
   							<tr>
  								   <td><div class="clean_right01"><img src="/assets/img/product-1-10g.png" width="41" height="116">
 </div>
@@ -102,7 +194,7 @@
                          			   </div>
                          			   </td>
  							</tr>
-				   </table>
+			</table> -->
                    <div style="clear:both"></div>
                    
                   

@@ -1120,6 +1120,9 @@ function register(){
 
 
 $(document).ready (function() {
+	if ($("#province").length == 0)
+		return;
+
 	$("#province").html ("<option id=\"prov_0\" value=\"0\">--请选择--</option>");
 	$("#city").html ("<option id=\"city_0\" value=\"0\">--请选择--</option>");
 	$("#district").html ("<option id=\"area_0\" value=\"0\">--请选择--</option>");
@@ -1295,8 +1298,7 @@ function getpointredeemproducts() {
 					var image = ret.image_url == null ? "" : ret.image_url;	
 					var sku = ret.sku == null ? "" : ret.sku;	
 					var id = ret.id == null ? "" : ret.id;				
-					
-					
+										
 					if ($('.exchangepoints tr:first-child input[id="productid"]').length);
 						$('.exchangepoints tr:first-child input[id="productid"]').val (id);
 					if ($('.exchangepoints tr:first-child input[id="sku"]').length);
@@ -1306,9 +1308,7 @@ function getpointredeemproducts() {
 					if ($('.exchangepoints tr:first-child #needpoint').length)
 						$('.exchangepoints tr:first-child #needpoint').html (points);
 					if ($('.exchangepoints tr:first-child #productpic').length)
-						$('.exchangepoints tr:first-child #productpic').prop ('src','http://www.mokard.com/ProductPic/'+image);
-				
-				
+						$('.exchangepoints tr:first-child #productpic').prop ('src','http://www.mokard.com/ProductPic/'+image);				
 			}
 			
 			for(var i=0;i<n;i++){
@@ -1323,8 +1323,7 @@ function getpointredeemproducts() {
 					var image = ret.image_url == null ? "" : ret.image_url;	
 					var sku = ret.sku == null ? "" : ret.sku;	
 					var id = ret.id == null ? "" : ret.id;				
-					
-					
+										
 					if ($('.exchangepoints tr:first-child input[id="productid"]').length);
 						$('.exchangepoints tr:first-child input[id="productid"]').val (id);
 					if ($('.exchangepoints tr:first-child input[id="SKU"]').length);
@@ -1334,15 +1333,54 @@ function getpointredeemproducts() {
 					if ($('.exchangepoints tr:first-child #needpoint').length)
 						$('.exchangepoints tr:first-child #needpoint').html (points);
 					if ($('.exchangepoints tr:first-child #productpic').length)
-						$('.exchangepoints tr:first-child #productpic').prop ('src','http://www.mokard.com/ProductPic/'+image);
-		
+						$('.exchangepoints tr:first-child #productpic').prop ('src','http://www.mokard.com/ProductPic/'+image);		
 			}
-		
-			
 		
 	}).fail (function() {
 		alert ("请求发送失败，请稍候再试");
 	});
 }
+
+function getproductcart() {
+		
+		$.ajax ({
+			url: "/membership/getpointredeemproducts.json",
+			type: "GET",
+			dataType: "json",
+		}).done (function (resp) {
+			
+			var n = resp.return_value.points_redeem_product.length;
+			var productid = $('.middle_product_info #productid').val();
+			
+			for(var i=0;i<n;i++){
+				
+					var ret = resp.return_value.points_redeem_product[i];												
+					var sku = ret.sku == null ? "" : ret.sku;	
+					var id = ret.id == null ? "" : ret.id;		
+					
+					
+					if(sku == $('input[id="SKU"]').val ()){
+						var points = ret.points == null ? "" : ret.points;
+						var product_name = ret.product_name == null ? "" : ret.product_name;
+						var image = ret.image_url == null ? "" : ret.image_url;			
+																				
+						if ($('input[id="productid"]').length);
+							$('input[id="productid"]').val (id);
+						if ($('#productname').length)
+							$('#productname').html (product_name);
+						if ($('#needpoint').length)
+							$('#needpoint').html (points);
+						if ($('#productpic').length)
+							$('#productpic').prop ('src','http://www.mokard.com/ProductPic/'+image);	
+					}															
+			}
+
+			
+		}).fail (function() {
+			alert("请求发送失败，请稍候再试");
+		});
+
+}
+
 
 

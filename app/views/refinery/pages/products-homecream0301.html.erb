@@ -1,4 +1,105 @@
 <!doctype html>
+<% content_for :javascripts do %>
+<script>
+$(".pro-detail").click (function () {
+	
+	var id = $(this).parent().parent().parent().find ('#productid').val();
+	
+	location.href = "/%E4%BA%A7%E5%93%81%E8%B5%84%E8%AE%AF/%E6%B6%A6%E6%B3%BD%E4%B9%B3%E9%9C%9C/%E7%AE%80%E5%A6%AE%E4%BF%9D%E6%B9%BF%E6%B6%A6%E6%B3%BD%E4%B9%B3%E9%9C%9C-gh-10g?productid="+id;
+
+	
+});
+
+function spreeproduct(data) {
+	//		alert(data);
+			var ret = JSON.parse(data);
+		//	alert (ret.products[2].variants[1].images);
+
+			var productid = window.location.search.split('=');
+			
+		//	if ($('input[id="productid"]').length);
+		//		$('input[id="productid"]').val (id);
+			var n = ret.products.length;
+			var j = 0;
+			
+			for(var i=0;i<n;i++){
+					if( productid[1] == ret.products[i].id){
+							
+							var name = ret.products[i].name == null ? "" : ret.products[i].name;
+							var price = ret.products[i].display_price == null ? "" : ret.products[i].display_price;
+							var ing_detail = ret.products[i].product_properties[0].value == null ? "" : ret.products[i].product_properties[0].value;	
+							var spe = ret.products[i].product_properties[1].property_name == null ? "" : ret.products[i].product_properties[1].property_name;
+							var cap = ret.products[i].product_properties[2].property_name == null ? "" : ret.products[i].product_properties[2].property_name;
+							var skin = ret.products[i].product_properties[3].property_name == null ? "" : ret.products[i].product_properties[3].property_name;	
+							var days = ret.products[i].product_properties[4].property_name == null ? "" : ret.products[i].product_properties[4].property_name;
+							var spe_detail = ret.products[i].product_properties[1].value == null ? "" : ret.products[i].product_properties[1].value;
+							var cap_detail = ret.products[i].product_properties[2].value == null ? "" : ret.products[i].product_properties[2].value;	
+							var skin_detail = ret.products[i].product_properties[3].value == null ? "" : ret.products[i].product_properties[3].value;
+							var days_detail = ret.products[i].product_properties[4].value == null ? "" : ret.products[i].product_properties[4].value;
+							var description = ret.products[i].description == null ? "" : ret.products[i].description;	
+							var alt = ret.products[i].variants[0].images[0] == null ? "" : ret.products[i].variants[0].images[0].alt;
+							var product_url = ret.products[i].variants[0].images[0] == null? "" :ret.products[i].variants[0].images[0].product_url
+							
+							var meta_keywords = ret.products[i].meta_keywords == null ? "" : ret.products[i].meta_keywords;
+							
+							
+							if ($('#pro_name').length)
+								$('#pro_name').html (name);
+							if ($('#pro_name_1').length)
+								$('#pro_name_1').html (name);
+							if ($('#pro_name_2').length)
+								$('#pro_name_2').html (name);							
+							if ($('#price_detail').length)
+								$('#price_detail').html (price);					
+							if ($('#ing_detail').length)
+								$('#ing_detail').html (ing_detail);		
+							if ($('#spe').length)
+								$('#spe').html (spe);					
+							if ($('#cap').length)
+								$('#cap').html (cap);
+							if ($('#skin').length)
+								$('#skin').html (skin);
+							if ($('#days').length)
+								$('#days').html (days);	
+							if ($('#spe_detail').length)
+								$('#spe_detail').html (spe_detail);
+							if ($('#cap_detail').length)
+								$('#cap_detail').html (cap_detail);
+							if ($('#skin_detail').length)
+								$('#skin_detail').html (skin_detail);
+							if ($('#days_detail').length)
+								$('#days_detail').html (days_detail);	
+							if ($('#description').length)
+								$('#description').html (description);		
+							if ($('#alt').length)
+								$('#alt').html (alt);	
+							if ($('.pro-buy').length)
+								$('.pro-buy').prop ('href',meta_keywords);	
+							if ($('#product_pic').length)
+								$('#product_pic').prop ('src','https://store.gelnic.com.cn/'+product_url); 
+							
+							
+					}
+					
+					if( ret.products[i].taxon_ids[0] == 3 && $('input[id="productid"]').val () != ret.products[i].id){
+						
+									var small_url = ret.products[i].variants[0].images[0] == null ? "" :ret.products[i].variants[0].images[0].small_url;
+									$('.pro-bot01-'+j+' input').val(ret.products[i].id);
+							//		alert('.pro-bot02-'+j+' .pro-lbot .pro-pic');
+									$('.pro-bot01-'+j+' .pro-lbot .pro-pic').prop ('src','https://store.gelnic.com.cn/'+small_url); 
+									j++;
+						}
+							
+							//alert("1");					
+			}
+							
+}
+</script>
+	
+
+	<script type="text/javascript" src="https://libra.gelnic.com.cn/api/products.json?token=cdecae15c1017b691f109d6890d7a212ba4d8df1243df7e8&callback=spreeproduct"></script>
+<% end %>
+
 <html>
 <body>
 
@@ -53,16 +154,187 @@
                         <li class="resetpw_head_txt2">&nbsp;&nbsp;>&nbsp;&nbsp;</li>
                         <li class="resetpw_head_txt1"><a>产品资讯</a></li>
                         <li class="resetpw_head_txt2">&nbsp;&nbsp;>&nbsp;&nbsp;</li>
-                        <li class="resetpw_head_txt1"><a>简妮保湿润泽乳霜</a></li>
+                        <li class="resetpw_head_txt1"><label id="pro_name"></label></li>
                 </ul>
            </div>
            <div class="resetpw_top">
-                <p class="resetpw_top_txt">&nbsp;简妮保湿润泽乳霜</p>
+                <p class="resetpw_top_txt">&nbsp;<label id="pro_name_1"></label></p>
            </div>
-           <%=raw @page.content_for(:product) %>
-           <div style="clear:both"></div>
+		   <input type="hidden" id="productid" value="7"/>
+           <div class="pro-topleft" style="padding-top:30px">
+                <div class="pro-pic01"> 
+                    <img id="product_pic">                      
+                </div>
+                <div class="pro-txt01">
+                    <label id="pro_name_2"></label>
+                </div>
+                <div>
+                    <a class="pro-buy">点击购买</a>
+                    <img class="pro_pic02" src="/assets/img/triangle-1.jpg" width="12" height="18">
+                </div>
+                
+           </div>
+           <div class="pro-topright" style="padding-top:30px">
+                <label id="alt"></label>
+           </div>
+           
+           <div class="pro-ingredient">
+                <div class="pro-tab">
+                        <div class="pro-ltab">
+                               <table  class="pro-tab01" border="0" cellspacing="0" cellpadding="0">
+                                     <tr>
+                                                <td >
+                                                        <label id="ing">成&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;分：</label>
+                                                </td>
+                                              
+                                     </tr>
+                                     
+                              </table>
+                               <table  class="pro-tab02" border="0" cellspacing="0" cellpadding="0">
+                                     <tr>
+                                                
+                                                <td >
+                                                        <label id="ing_detail"></label>
+                                                </td>
+                                     </tr>
+                                     
+                              </table> 
+
+                        </div>
+                        
+                        <div class="pro-rtab">
+                              <table   border="0" cellspacing="0" cellpadding="0">
+                                     <tr>
+                                                <td class="pro-tab03">
+                                                        <label id="price">价格：</label>
+                                                </td>
+                                                 <td class="pro-tab04">
+                                                        <label id="price_detail"></label>
+                                                </td>
+                                              
+                                     </tr>
+                                     
+                              </table>
+                               <table   border="0" cellspacing="0" cellpadding="0">
+                                     <tr>
+                                                <td class="pro-tab03">
+                                                        <label id="spe">规&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;格</label>:
+                                                </td>
+                                                 <td class="pro-tab04">
+                                                        <label id="spe_detail"></label>
+                                                </td>
+                                              
+                                     </tr>                                     
+                              </table>
+                              <table   border="0" cellspacing="0" cellpadding="0">
+                                     <tr>
+                                                <td class="pro-tab03">
+                                                        <label id="cap">容&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;量</label>:
+                                                </td>
+                                                 <td class="pro-tab04">
+                                                        <label id="cap_detail"></label>
+                                                </td>
+                                              
+                                     </tr>                                     
+                              </table>
+                               <table   border="0" cellspacing="0" cellpadding="0">
+                                     <tr>
+                                                <td class="pro-tab03">
+                                                        <label id="skin">适合肤质</label>:
+                                                </td>
+                                                 <td class="pro-tab04">
+                                                        <label id="skin_detail"></label>
+                                                </td>
+                                              
+                                     </tr>                                     
+                              </table>
+                               <table   border="0" cellspacing="0" cellpadding="0">
+                                     <tr>
+                                                <td class="pro-tab03">
+                                                        <label id="days">使用天数</label>:
+                                                </td>
+                                                 <td class="pro-tab04">
+                                                        <label id="days_detail"></label>
+                                                </td>
+                                              
+                                     </tr>                                     
+                              </table>
+                              
+                       </div>                          
+                </div>                
+           </div>
+           
+           
+           
+           <label id="description"></label>
           
-     </div>
+          
+          
+ <!--          <%=raw @page.content_for(:product) %> -->
+
+
+            <div class="pro-bottom">
+                  <div class="pro-txt02">
+                         与其他商品搭配使用
+                  </div>
+                  <div>
+                         <div class="pro-bot01-0">
+                         	   <input type="hidden" id="productid"/>
+                               <div class="pro-lbot"><img class="pro-pic" />
+                               </div>  
+                               <div class="pro-rbot">
+                                       <div class="pro-txt03">
+                                            <label id="pro_name01">简妮gelnic</label>
+                                       </div> 
+                                       <div class="pro-txt04">
+                                            <label id="pro_name02">保湿润泽乳霜 </label>
+                                       </div> 
+                                       <div>
+                                            <a class="pro-detail" href="#">更多详情</a>
+                                            <img class="pro_pic02" src="/assets/img/triangle-1.jpg" width="12" height="18">
+                                       </div>
+                               </div>
+                         </div>
+                         <div class="pro-bot01-1">
+                               <input type="hidden" id="productid"/>
+                               <div class="pro-lbot"><img class="pro-pic" />
+                               </div>  
+                               <div class="pro-rbot">
+                                       <div class="pro-txt03">
+                                            <label id="pro_name03">简妮gelnic</label>
+                                       </div> 
+                                       <div class="pro-txt04">
+                                            <label id="pro_name04">保湿润泽乳霜 </label>
+                                       </div> 
+                                       <div>
+                                            <a class="pro-detail" href="#">更多详情</a>
+                                            <img class="pro_pic02" src="/assets/img/triangle-1.jpg" width="12" height="18">
+                                       </div>
+                               </div>
+                         </div>
+                         <div class="pro-bot01-2">
+                         	   <input type="hidden" id="productid"/>
+                               <div class="pro-lbot"><img class="pro-pic" />
+                               </div>  
+                               <div class="pro-rbot">
+                                       <div class="pro-txt03">
+                                            <label id="pro_name05">简妮gelnic</label>
+                                       </div> 
+                                       <div class="pro-txt04">
+                                            <label id="pro_name06">保湿润泽乳霜 </label>
+                                       </div> 
+                                       <div>
+                                            <a class="pro-detail" href="#">更多详情</a>
+                                            <img class="pro_pic02" src="/assets/img/triangle-1.jpg" width="12" height="18">
+                                       </div>
+                               </div>
+                         </div>
+                  </div>
+           
+           </div>
+           
+           <div style="clear:both"></div>
+</div>
 </div>
 </body>
 </html>
