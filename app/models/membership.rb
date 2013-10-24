@@ -137,9 +137,9 @@ class Membership
 			:user_info => {
 				"email" => info[:email].to_s,
 				"passwordMD5" => info[:password].to_s,
-				"nichName" => info[:fullname].to_s,
+				"nickName" => info[:fullname].to_s,
 				"genderID" => info[:gender].to_s,
-				"birthdateDT" => info[:birthdate].to_s,
+				"birthdayDT" => info[:birthdate].to_s,
 				Columns[:email] => info[:email].to_s,
 				Columns[:password] => info[:password].to_s,
 				Columns[:subscription] => info[:subscription].to_s,
