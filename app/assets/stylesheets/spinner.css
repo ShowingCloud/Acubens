@@ -1,0 +1,7 @@
+#spinner {
+	background: url("img/spinner.gif") no-repeat scroll center center rgba(255,255,255,.5);
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	display: none;
+}
