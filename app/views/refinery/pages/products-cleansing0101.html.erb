@@ -84,7 +84,7 @@ function spreeproduct(data) {
 							
 					}
 					
-					if( ret.products[i].taxon_ids[0] == 1 && $('input[id="productid"]').val () != ret.products[i].id){
+					if( ret.products[i].taxon_ids[0] == 1 && productid[1] != ret.products[i].id){
 						
 									var small_url = ret.products[i].variants[0].images[0] == null ? "" :ret.products[i].variants[0].images[0].small_url;
 									$('.pro-bot01-'+j+' input').val(ret.products[i].id);
