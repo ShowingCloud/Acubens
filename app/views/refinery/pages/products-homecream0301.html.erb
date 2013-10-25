@@ -76,7 +76,7 @@ function spreeproduct(data) {
 							if ($('.pro-buy').length)
 								$('.pro-buy').prop ('href',meta_keywords);	
 							if ($('#product_pic').length)
-								$('#product_pic').prop ('src','https://store.gelnic.com.cn/'+product_url); 
+								$('#product_pic').prop ('src','https://libra.gelnic.com.cn/'+product_url); 
 							
 							
 					}
@@ -86,7 +86,7 @@ function spreeproduct(data) {
 									var small_url = ret.products[i].variants[0].images[0] == null ? "" :ret.products[i].variants[0].images[0].small_url;
 									$('.pro-bot01-'+j+' input').val(ret.products[i].id);
 							//		alert('.pro-bot02-'+j+' .pro-lbot .pro-pic');
-									$('.pro-bot01-'+j+' .pro-lbot .pro-pic').prop ('src','https://store.gelnic.com.cn/'+small_url); 
+									$('.pro-bot01-'+j+' .pro-lbot .pro-pic').prop ('src','https://libra.gelnic.com.cn/'+small_url); 
 									j++;
 						}
 							
