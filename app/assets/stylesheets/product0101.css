@@ -19,6 +19,7 @@
 .pro-txt01{
 	text-align:center;
 	font-size:12px;
+	text-indent:-30px;
 }
 .pro-buy{
 	margin-top: 8px;
@@ -196,4 +197,10 @@
 	border-color:#dfdfdf;
 	border-width:1px;
 	float:left;
-}
+} 
+.pro-txt01 ul{
+	list-style:none;
+} 
+.gro-tab ul{
+	list-style:none;
+} 
