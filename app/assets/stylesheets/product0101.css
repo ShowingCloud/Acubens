@@ -197,6 +197,7 @@
 	border-color:#dfdfdf;
 	border-width:1px;
 	float:left;
+        margin-left:-40px;
 } 
 .pro-txt01 ul{
 	list-style:none;
