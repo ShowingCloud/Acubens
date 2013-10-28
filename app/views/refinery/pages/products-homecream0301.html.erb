@@ -83,10 +83,10 @@ function spreeproduct(data) {
 					
 					if( ret.products[i].taxon_ids[0] == 3 && productid[1] != ret.products[i].id){
 						
-									var small_url = ret.products[i].variants[0].images[0] == null ? "" :ret.products[i].variants[0].images[0].small_url;
+									var mini_url = ret.products[i].variants[0].images[0] == null ? "" :ret.products[i].variants[0].images[0].mini_url;
 									$('.pro-bot01-'+j+' input').val(ret.products[i].id);
 							//		alert('.pro-bot02-'+j+' .pro-lbot .pro-pic');
-									$('.pro-bot01-'+j+' .pro-lbot .pro-pic').prop ('src','https://libra.gelnic.com.cn/'+small_url); 
+									$('.pro-bot01-'+j+' .pro-lbot .pro-pic').prop ('src','https://libra.gelnic.com.cn/'+mini_url); 
 									j++;
 						}
 							
