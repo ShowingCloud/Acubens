@@ -1,4 +1,164 @@
 <!DOCTYPE html>
+<% content_for :javascripts do %>
+<script>
+$(".pro-detail").click (function () {
+	
+	var id = $(this).parent().parent().parent().find ('#productid').val();
+	
+	location.href = "/产品资讯/洁面啫喱/简妮清爽洁面啫喱10g?productid="+id;
+
+	
+});
+
+function spreeproduct(data) {
+	//		alert(data);
+			var ret = JSON.parse(data);
+		//	alert (ret.products[2].variants[1].images);
+
+			
+		//	if ($('input[id="productid"]').length);
+		//		$('input[id="productid"]').val (id);
+			var productid = window.location.search.split('=');
+					
+		//		if ($('input[id="productdetailid"]').length);
+		//		$('input[id="productdetailid"]').val (id[1]);
+			
+			var n = ret.products.length;			
+			for(var i=0;i<n;i++){
+					if( productid[1] == ret.products[i].id){
+							
+							var name = ret.products[i].name == null ? "" : ret.products[i].name;
+					//		var price = ret.products[i].display_price == null ? "" : ret.products[i].display_price;
+					//		var ing_detail = ret.products[i].product_properties[0].value == null ? "" : ret.products[i].product_properties[0].value;	
+					//		var spe = ret.products[i].product_properties[1].property_name == null ? "" : ret.products[i].product_properties[1].property_name;
+					//		var cap = ret.products[i].product_properties[2].property_name == null ? "" : ret.products[i].product_properties[2].property_name;
+					//		var skin = ret.products[i].product_properties[3].property_name == null ? "" : ret.products[i].product_properties[3].property_name;	
+					//		var days = ret.products[i].product_properties[4].property_name == null ? "" : ret.products[i].product_properties[4].property_name;
+					//		var spe_detail = ret.products[i].product_properties[1].value == null ? "" : ret.products[i].product_properties[1].value;
+					//		var cap_detail = ret.products[i].product_properties[2].value == null ? "" : ret.products[i].product_properties[2].value;	
+					//		var skin_detail = ret.products[i].product_properties[3].value == null ? "" : ret.products[i].product_properties[3].value;
+					//		var days_detail = ret.products[i].product_properties[4].value == null ? "" : ret.products[i].product_properties[4].value;
+							var description = ret.products[i].description == null ? "" : ret.products[i].description;	
+							var alt = ret.products[i].variants[0].images[0] == null ? "" : ret.products[i].variants[0].images[0].alt;
+							var product_url = ret.products[i].variants[0].images[0] == null? "" :ret.products[i].variants[0].images[0].product_url							
+							var meta_keywords = ret.products[i].meta_keywords == null ? "" : ret.products[i].meta_keywords;
+							
+							
+							
+							if ($('#pro_name').length)
+								$('#pro_name').html (name);
+					//		if ($('#pro_name_1').length)
+					//			$('#pro_name_1').html (name);						
+					//		if ($('#price_detail').length)
+					//			$('#price_detail').html (price);					
+					//		if ($('#ing_detail').length)
+					//			$('#ing_detail').html (ing_detail);		
+					//		if ($('#spe').length)
+					//			$('#spe').html (spe);					
+					//		if ($('#cap').length)
+					//			$('#cap').html (cap);
+					//		if ($('#skin').length)
+					//			$('#skin').html (skin);
+					//		if ($('#days').length)
+					//			$('#days').html (days);	
+					//		if ($('#spe_detail').length)
+					//			$('#spe_detail').html (spe_detail);
+					//		if ($('#cap_detail').length)
+					//			$('#cap_detail').html (cap_detail);
+					//		if ($('#skin_detail').length)
+					//			$('#skin_detail').html (skin_detail);
+					//		if ($('#days_detail').length)
+					//			$('#days_detail').html (days_detail);	
+							if ($('#description').length)
+								$('#description').html (description);		
+							if ($('#alt').length)
+								$('#alt').html (alt);	
+							if ($('.pro-buy').length)
+								$('.pro-buy').prop ('href',meta_keywords);	
+							if ($('#product_pic').length)
+								$('#product_pic').prop ('src','https://libra.gelnic.com.cn/'+product_url); 
+								
+							var meta_description = ret.products[i].meta_description == null ? "" : ret.products[i].meta_description;									
+							var groupid = meta_description.split('&');
+							var m = groupid.length;
+														
+							var g = 0;
+					
+								for(var k=0;i<n;k++){
+									
+										for(var j=0;j<m;j++){
+											
+												if( groupid[j] == ret.products[k].id){
+															
+															if( g != 0){
+																$( ".gro-tab ul li:first-child" ).clone(true).prependTo( ".gro-tab ul" );
+															}
+															
+															g++;
+															
+															var name = ret.products[k].name == null ? "" : ret.products[k].name;
+															var ing_detail = ret.products[k].product_properties[0].value == null ? "" : ret.products[k].product_properties[0].value;	
+															var spe = ret.products[k].product_properties[1].property_name == null ? "" : ret.products[k].product_properties[1].property_name;
+															var cap = ret.products[k].product_properties[2].property_name == null ? "" : ret.products[k].product_properties[2].property_name;
+															var skin = ret.products[k].product_properties[3].property_name == null ? "" : ret.products[k].product_properties[3].property_name;	
+															var days = ret.products[k].product_properties[4].property_name == null ? "" : ret.products[k].product_properties[4].property_name;
+															var spe_detail = ret.products[k].product_properties[1].value == null ? "" : ret.products[k].product_properties[1].value;
+															var cap_detail = ret.products[k].product_properties[2].value == null ? "" : ret.products[k].product_properties[2].value;	
+															var skin_detail = ret.products[k].product_properties[3].value == null ? "" : ret.products[k].product_properties[3].value;
+															var days_detail = ret.products[k].product_properties[4].value == null ? "" : ret.products[k].product_properties[4].value;
+														
+															if ($('.gro-tab ul li:first-child #gro-name1').length)
+																$('.gro-tab ul li:first-child #gro-name1').html (name);									
+															if ($('.gro-tab ul li:first-child #ing01_detail').length)
+																$('.gro-tab ul li:first-child #ing01_detail').html (ing_detail);		
+															if ($('.gro-tab ul li:first-child #spe01').length)
+																$('.gro-tab ul li:first-child #spe01').html (spe);					
+															if ($('.gro-tab ul li:first-child #cap01').length)
+																$('.gro-tab ul li:first-child #cap01').html (cap);
+															if ($('.gro-tab ul li:first-child #skin01').length)
+																$('.gro-tab ul li:first-child #skin01').html (skin);
+															if ($('.gro-tab ul li:first-child #days01').length)
+																$('.gro-tab ul li:first-child #days01').html (days);	
+															if ($('.gro-tab ul li:first-child #spe01_detail').length)
+																$('.gro-tab ul li:first-child #spe01_detail').html (spe_detail);
+															if ($('.gro-tab ul li:first-child #cap01_detail').length)
+																$('.gro-tab ul li:first-child #cap01_detail').html (cap_detail);
+															if ($('.gro-tab ul li:first-child #skin01_detail').length)
+																$('.gro-tab ul li:first-child #skin01_detail').html (skin_detail);
+															if ($('.gro-tab ul li:first-child #days01_detail').length)
+																$('.gro-tab ul li:first-child #days01_detail').html (days_detail);	
+													
+												}
+												
+													
+											
+										}
+									
+								}
+							
+							
+					}
+					
+				/*	if( ret.products[i].taxon_ids[0] == 1 && productid[1] != ret.products[i].id){
+						
+									var small_url = ret.products[i].variants[0].images[0] == null ? "" :ret.products[i].variants[0].images[0].small_url;
+									$('.pro-bot01-'+j+' input').val(ret.products[i].id);
+							//		alert('.pro-bot02-'+j+' .pro-lbot .pro-pic');
+									$('.pro-bot01-'+j+' .pro-lbot .pro-pic').prop ('src','https://libra.gelnic.com.cn/'+small_url); 
+									j++;
+				}   */
+							
+							//alert("1");					
+			}
+							
+}
+</script>
+	
+
+	<script type="text/javascript" src="https://libra.gelnic.com.cn/api/products.json?token=cdecae15c1017b691f109d6890d7a212ba4d8df1243df7e8&callback=spreeproduct"></script>
+<% end %>
+
+
 <body>
 <div id="member-left" style="float:left;">
   
@@ -56,16 +216,18 @@
                 <p class="resetpw_top_txt">&nbsp;推荐组合</p>
            </div>
           
-           <div class="pro-topleft">
+           <div class="pro-topleft" style="padding-top:30px">
                  <div class="pro-pic01"> 
-                     <img  src="img/20131012081356.png" width="300px" height="226" >                  
+                     <img id="product_pic" >                  
                  </div>
                  <div class="pro-txt01">
-                 	<!--      以下需调整       --> 
+              		   	<label id="pro_name"></label>
+                 	
+                 	<!--    
         			<ul>
         				<li><label id="pro_name">简妮清爽洁面啫喱</label></li>
         				<li><label id="pro_name">简妮清爽洁面啫喱</label></li>       				
-        			</ul>       
+        			</ul>     
         			<!--      以上需调整               -->              
                  </div>
                  <div>
@@ -74,8 +236,8 @@
                  </div>
                  
             </div>
-            <div class="pro-topright">
-                    <img src="img/20131012080846.png" width="420" height="316" >
+            <div class="pro-topright" style="padding-top:30px">
+            		 <label id="alt"></label>                   
             </div>
  
             <div class="gro-ingredient">
@@ -85,6 +247,91 @@
      <!--      以下需调整       --> 
      				 <ul>
 			               <li>		                     
+			                     <div class="tab-top" style="margin-top:0px;">
+			                         <table  class="gro-tab01" border="0" cellspacing="0" cellpadding="0">
+			                                      <tr>
+			                                                 <td >
+			                                                         <label id="gro-name1"></label>
+			                                                 </td>
+			                                               
+			                                      </tr>
+			                                      
+			                         </table>
+			                      <div class="pro-ltab" style="margin-top:0px;">
+			                                
+			                                <table  class="pro-tab01" border="0" cellspacing="0" cellpadding="0">
+			                                      <tr>
+			                                                 <td >
+			                                                         <label id="ing01">成&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;分：</label>
+			                                                 </td>
+			                                               
+			                                      </tr>
+			                                      
+			                               </table>
+			                                <table  class="pro-tab02" border="0" cellspacing="0" cellpadding="0">
+			                                      <tr>
+			                                                 
+			                                                 <td >
+			                                                         <label id="ing01_detail">葡萄寡糖/母菊提取物/滨海当归提取物/黄瓜提取物/桑根皮提取物</label>
+			                                                 </td>
+			                                      </tr>
+			                                      
+			                               </table> 
+			 
+			                         </div>
+			                         
+			                         <div class="pro-rtab">
+			                               
+			                                <table   border="0" cellspacing="0" cellpadding="0">
+			                                      <tr>
+			                                                 <td class="pro-tab03">
+			                                                         <label id="spe01">规&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;格：</label>
+			                                                 </td>
+			                                                  <td class="pro-tab04">
+			                                                         <label id="spe01_detail"></label>
+			                                                 </td>
+			                                               
+			                                      </tr>                                     
+			                               </table>
+			                               <table   border="0" cellspacing="0" cellpadding="0">
+			                                      <tr>
+			                                                 <td class="pro-tab03">
+			                                                         <label id="cap01">容&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;量：</label>
+			                                                 </td>
+			                                                  <td class="pro-tab04">
+			                                                         <label id="cap01_detail"></label>
+			                                                 </td>
+			                                               
+			                                      </tr>                                     
+			                               </table>
+			                                <table   border="0" cellspacing="0" cellpadding="0">
+			                                      <tr>
+			                                                 <td class="pro-tab03">
+			                                                         <label id="skin01">适合肤质：</label>
+			                                                 </td>
+			                                                  <td class="pro-tab04">
+			                                                         <label id="skin01_detail"></label>
+			                                                 </td>
+			                                               
+			                                      </tr>                                     
+			                               </table>
+			                                <table   border="0" cellspacing="0" cellpadding="0">
+			                                      <tr>
+			                                                 <td class="pro-tab03">
+			                                                         <label id="days01">使用天数：</label>
+			                                                 </td>
+			                                                  <td class="pro-tab04">
+			                                                         <label id="days01_detail"></label>
+			                                                 </td>
+			                                               
+			                                      </tr>                                     
+			                               </table>
+			                               <div style="clear:both"></div> 
+			                        </div>                          
+			                   </div>
+			                    <div style="clear:both"></div>    
+                   		</li>	
+	<!--		               <li>		                     
 			                     <div class="tab-top">
 			                         <table  class="gro-tab01" border="0" cellspacing="0" cellpadding="0">
 			                                      <tr>
@@ -178,105 +425,10 @@
 			                               
 			                        </div>                          
 			                   </div>
-                   		</li>	
-			               <li>		                     
-			                     <div class="tab-top">
-			                         <table  class="gro-tab01" border="0" cellspacing="0" cellpadding="0">
-			                                      <tr>
-			                                                 <td >
-			                                                         <label id="gro-name1">简妮清爽洁面啫喱</label>
-			                                                 </td>
-			                                               
-			                                      </tr>
-			                                      
-			                         </table>
-			                         <div class="pro-ltab">
-			                                
-			                                <table  class="pro-tab01" border="0" cellspacing="0" cellpadding="0">
-			                                      <tr>
-			                                                 <td >
-			                                                         <label id="ing01">成&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;分：</label>
-			                                                 </td>
-			                                               
-			                                      </tr>
-			                                      
-			                               </table>
-			                                <table  class="pro-tab02" border="0" cellspacing="0" cellpadding="0">
-			                                      <tr>
-			                                                 
-			                                                 <td >
-			                                                         <label id="ing01_detail">葡萄寡糖/母菊提取物/滨海当归提取物/黄瓜提取物/桑根皮提取物</label>
-			                                                 </td>
-			                                      </tr>
-			                                      
-			                               </table> 
-			 
-			                         </div>
-			                         
-			                         <div class="pro-rtab">
-			                               <table   border="0" cellspacing="0" cellpadding="0">
-			                                      <tr>
-			                                                 <td class="pro-tab03">
-			                                                         <label id="price01">价&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;格：</label>
-			                                                 </td>
-			                                                  <td class="pro-tab04">
-			                                                         <label id="price01_detail"></label>
-			                                                 </td>
-			                                               
-			                                      </tr>
-			                                      
-			                               </table>
-			                                <table   border="0" cellspacing="0" cellpadding="0">
-			                                      <tr>
-			                                                 <td class="pro-tab03">
-			                                                         <label id="spe01">规&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;格：</label>
-			                                                 </td>
-			                                                  <td class="pro-tab04">
-			                                                         <label id="spe01_detail"></label>
-			                                                 </td>
-			                                               
-			                                      </tr>                                     
-			                               </table>
-			                               <table   border="0" cellspacing="0" cellpadding="0">
-			                                      <tr>
-			                                                 <td class="pro-tab03">
-			                                                         <label id="cap01">容&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;量：</label>
-			                                                 </td>
-			                                                  <td class="pro-tab04">
-			                                                         <label id="cap01_detail"></label>
-			                                                 </td>
-			                                               
-			                                      </tr>                                     
-			                               </table>
-			                                <table   border="0" cellspacing="0" cellpadding="0">
-			                                      <tr>
-			                                                 <td class="pro-tab03">
-			                                                         <label id="skin01">适合肤质：</label>
-			                                                 </td>
-			                                                  <td class="pro-tab04">
-			                                                         <label id="skin01_detail"></label>
-			                                                 </td>
-			                                               
-			                                      </tr>                                     
-			                               </table>
-			                                <table   border="0" cellspacing="0" cellpadding="0">
-			                                      <tr>
-			                                                 <td class="pro-tab03">
-			                                                         <label id="days01">使用天数：</label>
-			                                                 </td>
-			                                                  <td class="pro-tab04">
-			                                                         <label id="days01_detail"></label>
-			                                                 </td>
-			                                               
-			                                      </tr>                                     
-			                               </table>
-			                               
-			                        </div>                          
-			                   </div>
-                   		</li>	
+                  </li>	-->
                   </ul>  
   <!--      以上需调整               -->                     
-                   <div>
+      <!--             <div>
                           <table  class="gro-tab01" border="0" cellspacing="0" cellpadding="0">
                                       <tr>
                                                  <td >
@@ -368,11 +520,12 @@
                                
                         </div> 
                         
-                     </div>                         
+                     </div>   -->    
+                     <div style="clear:both"></div>                   
                  </div>                              
             </div>
-          
-          <%=raw @page.content_for(:product) %>
+          <label id="description"></label>
+      <!--    <%=raw @page.content_for(:product) %> -->
           <div style="clear:both"></div>
      </div>
 </div>
