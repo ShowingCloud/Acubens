@@ -16,7 +16,7 @@ class Membership
 		:update_user_info, :get_user_address, :insert_user_address, :update_user_address, 
 		:delete_user_address, :gelnic_questionnaire_add_point, :get_points,
 	   	:getpointsproduct_list, :get_points_redeem_product_list, :get_user_info_list,
-		:get_dictionary_all, :get_point_list_data_and_order
+		:get_dictionary_all, :get_point_list_data_and_order, :get_point_redeem_history
 
 	Channel = "Gelnic"
 	Merchant = "1591"
@@ -284,6 +284,18 @@ class Membership
 			:merchant_no => Merchant,
 			:currentpage => 1,
 			:eachpagecount => 100
+		})
+	end
+
+
+	def self.getpointredeemhistory(username, type)
+		self.query_mokard(:get_point_redeem_history, {
+			:merchant_no => Merchant,
+			:channel => Channel,
+			:user_name => username.to_s,
+			:current_page => 1,
+			:each_page_count => 100,
+			:redeem_type => type.to_s
 		})
 	end
 

@@ -237,6 +237,12 @@ class MembershipController < ApplicationController
 	end
 
 
+	def getpointredeemhistory
+		resp = Membership.getpointredeemhistory session[:username], params[:type]
+		respond_with resp, :location => nil
+	end
+
+
 	def getpointlist
 		resp = Membership.getpointlist session[:username], params[:type]
 		respond_with resp, :location => nil

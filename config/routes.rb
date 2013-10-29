@@ -39,6 +39,8 @@ Acubens::Application.routes.draw do
 		  get :getpointproducts
 		  post :getpointredeemproducts
 		  get :getpointredeemproducts
+		  post :getpointredeemhistory
+		  get :getpointredeemhistory
 		  post :getpointlist
 		  get :getpointlist
 		  post :getusers
