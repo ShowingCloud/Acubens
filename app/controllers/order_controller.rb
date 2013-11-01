@@ -52,9 +52,11 @@ class OrderController < ApplicationController
 			@pending_order.username = session[:username].to_s
 			@pending_order.points = product_points
 			@pending_order.save
-		end
 
-		respond_with ret = { :status => resp }, :location => nil and return
+			respond_with ret = { :status => resp }, :location => nil and return
+		else
+			respond_with ret = { :status => -2 }, :location => nil and return
+		end
 	end
 
 
