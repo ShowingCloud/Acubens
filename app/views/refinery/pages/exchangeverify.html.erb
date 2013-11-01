@@ -16,6 +16,7 @@ $(document).ready (geturl);
 $(document).ready (getproductcart);
 
 
+
 function geturl(){		
 		var sku = window.location.search.split('=');
 		
@@ -34,17 +35,18 @@ $("#integraltochange").click (function () {
 	location.href = "/%E4%BC%9A%E5%91%98%E4%B8%93%E5%8C%BA/%E4%BC%9A%E5%91%98%E4%B8%AD%E5%BF%83/%E5%85%91%E6%8D%A2%E7%A7%AF%E5%88%86";
 })
 
-function pointexchange() {
+function setorder() {
 	if ($('#captcha').val().length == 0) {
 		alert ("请输入验证码");
 		return;
 	} 
+	alert($('#productid').val());
 	$.ajax ({
-		url:		"/membership/.json",
+		url:		"/order/setorder.json",
 		type:		"POST",
 		dataType:	"json",
 		data:		{
-			sku:			$('#sku').val(),
+			id:				$('#productid').val(),
 			captcha:		$('#captcha').val(),
 			captcha_key:	$('#captcha_key').val()
 		}
@@ -53,7 +55,7 @@ function pointexchange() {
 			location.reload();
 		else if (parseInt (resp.status) == 2) {
 			$(".authenticationtd").load ('.simple_captcha');
-			alert("验证码错误")
+			alert("验证码错误");
 	//		$('#loginerr').html ("验证码错误");
 		} else {
 			$(".authenticationtd").load ('.simple_captcha');
@@ -198,7 +200,7 @@ function pointexchange() {
      </table>
      <div class="confirmation_bottom">               
            <div class="resetpw_bottom_save">
-                 <input type="button" value="确认兑换信息" id="integraltochange" onclick="pointexchange()">
+                 <input type="button" value="确认兑换信息"  onclick="setorder()">
            </div>
            <div class="resetpw_bottom_cancel">
                  <input type="button" value="取消兑换" id="cancelintegraltochange" >

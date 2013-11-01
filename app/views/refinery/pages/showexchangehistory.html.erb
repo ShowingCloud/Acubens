@@ -1,4 +1,19 @@
 <!doctype html>
+<% content_for :javascripts do %>
+	<script>
+		<% if session[:login] %>
+			<% if session[:login] == 1%>
+					location.href = "/%E4%BC%9A%E5%91%98%E4%B8%93%E5%8C%BA/%E5%88%9D%E6%AC%A1%E7%99%BB%E5%BD%95";
+			<% end %>
+			$(document).ready ();
+		<% else %>
+			$(document).ready (login);
+		<% end %>
+		$(document).ready (getpointredeemhistory);
+		$(document).ready (getpoint);
+	</script>
+<% end %>
+
 <html>
 <body>
 
@@ -78,12 +93,12 @@
                 <p class="resetpw_top_txt">查看兑换历史</p>
            </div>
            
-   <!--        <ul>
+           <ul>
              <li class="text-all-color-green">
-                 本次兑换所需积分：
+                 可用积分总数：
              </li>
              <li class="text-all-color-yellow">
-                 800
+                 <label id="mypoint">0</label>
              </li> 
           </ul>
            
@@ -119,7 +134,7 @@
 
                   
                 </div>
-    
+    <!--
          <table width="720" >
                  <tr>
     <td width="127" class="table-text-history-black-color">2012/7/11</td>
@@ -136,8 +151,8 @@
                      
                </table>
           
-     </div>  -->
-     	<div><img src="/assets/img/coming_soon.gif"></div>
+     </div>  
+     	<div><img src="/assets/img/coming_soon.gif"></div> -->
 </div>
 
 

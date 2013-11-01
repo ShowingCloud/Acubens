@@ -1382,5 +1382,20 @@ function getproductcart() {
 
 }
 
+function getpointredeemhistory() {
+		
+		$.ajax ({
+			url: "/membership/getpointredeemhistory.json",
+			type: "GET",
+			dataType: "json",
+		}).done (function (resp) {
+			
+		
+		}).fail (function() {
+			alert("请求发送失败，请稍候再试");
+		});
+
+}
+
 
 
