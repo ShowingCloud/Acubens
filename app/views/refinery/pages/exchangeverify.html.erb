@@ -40,7 +40,6 @@ function setorder() {
 		alert ("请输入验证码");
 		return;
 	} 
-	alert($('#productid').val());
 	$.ajax ({
 		url:		"/order/setorder.json",
 		type:		"POST",
@@ -200,7 +199,7 @@ function setorder() {
      </table>
      <div class="confirmation_bottom">               
            <div class="resetpw_bottom_save">
-                 <input type="button" value="确认兑换信息"  onclick="setorder()">
+                 <input type="button" value="确认兑换信息" id="integraltochange" onclick="setorder()">
            </div>
            <div class="resetpw_bottom_cancel">
                  <input type="button" value="取消兑换" id="cancelintegraltochange" >
