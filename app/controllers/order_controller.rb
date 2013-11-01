@@ -45,13 +45,13 @@ class OrderController < ApplicationController
 
 		resp = Order.setorder session[:username], addr, product
 
-#		if resp
-#			@pending_order = PendingOrder.new
-#			@pending_order.orderid = resp
-#			@pending_order.username = session[:username].to_s
-#			@pending_order.points = 100
-#			@pending_order.save
-#		end
+		if resp
+			@pending_order = PendingOrder.new
+			@pending_order.orderid = resp
+			@pending_order.username = session[:username].to_s
+			@pending_order.points = product[:points].to_i
+			@pending_order.save
+		end
 
 		respond_with ret = { :status => resp }, :location => nil and return
 	end
