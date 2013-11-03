@@ -24,3 +24,10 @@ $(document).ajaxStart(function() {
 }).ajaxError(function() {
 	$("#spinner").hide();
 });
+
+(function () {
+	if ($('#pro_name').length) {
+		$("#spinner").show();
+		window.onload = function() { $("#spinner").hide(); }
+	}
+})();
