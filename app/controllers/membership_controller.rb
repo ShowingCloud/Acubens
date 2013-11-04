@@ -91,7 +91,7 @@ class MembershipController < ApplicationController
 
 
 	def changepsw
-		resp = Membership.changepswd params[:mobile], params[:password], params[:verification]
+		resp = Membership.changepsw params[:mobile], params[:password], params[:verification]
 
 		if resp[:status] != "1"
 			respond_with resp.merge({ :progress => :password }), :location => nil and return
