@@ -9,7 +9,7 @@ class OrderController < ApplicationController
 	before_filter :checklogin, :checkcaptcha, :only => :setorder
 
 	Client = Savon.client do
-		wsdl "http://210.13.83.245/GelnicWebServiceTest/OfficialService.asmx?WSDL"
+		wsdl "http://210.13.83.247/ECLGelnicWSTest/OfficialService.asmx?WSDL"
 		namespace "http://tempuri.org/"
 		convert_request_keys_to :camelcase
 		soap_version 2
