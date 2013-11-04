@@ -1279,6 +1279,28 @@ function getpoint() {
 	});
 }
 
+function getpendingpoint() {
+
+	$.ajax ({
+		url:		"/membership/getpendingpoint.json",
+		type:		"GET",
+		dataType:	"json" ,
+		data:	{
+			type: 		1
+		}
+	}).done (function (resp) {
+		if (parseInt (resp.status) == 1) {
+				
+				points = resp.points				
+				if ($('#mypendingpoint').length)
+				$('#mypendingpoint').html (points);
+			
+		}
+	}).fail (function() {
+		alert ("请求发送失败，请稍候再试");
+	});
+}
+
 function getpointredeemproducts() {
 
 	$.ajax ({
