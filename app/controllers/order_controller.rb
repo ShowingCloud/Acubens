@@ -8,13 +8,6 @@ class OrderController < ApplicationController
 
 	before_filter :checklogin, :checkcaptcha, :only => :setorder
 
-	Client = Savon.client do
-		wsdl "http://210.13.83.247/ECLGelnicWSTest/OfficialService.asmx?WSDL"
-		namespace "http://tempuri.org/"
-		convert_request_keys_to :camelcase
-		soap_version 2
-	end
-
 
 	def index
 		redirect_to "/"
