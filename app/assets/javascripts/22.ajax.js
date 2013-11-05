@@ -147,6 +147,7 @@ function sendlogin() {
 		$('#loginerr').html ("请求发送失败，请稍候再试");
 	});
 }
+
 function sendfirstinfo(){
 	if ($('#name').val().length < 2){
 		alert("请输入您的名字");
@@ -270,7 +271,7 @@ function sendfirstinfo(){
 }
 
 function sendchangeinfo(){
-
+	
 	if ($('input[name="magazine"]:checked').length > 0)
 	   var magazine = $('input[name="magazine"]:checked').val();
 	else {
@@ -323,9 +324,9 @@ function sendchangeinfo(){
 		dataType:   "json",
 		data:       {
 			id:			$('input[id="addressid"]').val(),
-			mobile:		$('#mobile').val(),
+			mobile:		$('#mobile').html(),
 			phone:		$('#areacode').val() + '-' + $('#telephone').val() + '-' + $('#extensionnumber').val(),
-			name:		$('#name').val(),
+			name:		$('#name').html(),
 			province:	province,
 			city:		city, 
 			district:	district,
@@ -351,8 +352,8 @@ function sendchangeinfo(){
 		type:       "POST",
 		dataType:   "json",
 		data:       {
-			fullname:			$('#name').val(),
-			gender:				$('#gender').val(),
+			fullname:			$('#name').html(),
+			gender:				$('#gender').html(),
 			subscription:		magazine,
 			phone:				$('#areacode').val() + '-' + $('#telephone').val() + '-' + $('#extensionnumber').val(),
 			weibo:				$('#weibo').val(),
