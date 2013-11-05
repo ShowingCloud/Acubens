@@ -210,7 +210,35 @@ function sendfirstinfo(){
 		if ($('#weixin').val().length > 0)
 		weibo = $('#weixin').val();
 
-   
+   $.ajax({
+		url:        "/membership/addaddr.json",
+		type:       "POST",
+		dataType:   "json",
+		data:       {
+			id:			1,
+			mobile:		$('#mobile').val(),
+			phone:		$('#areacode').val() + '-' + $('#telephone').val() + '-' + $('#extensionnumber').val(),
+			name:		$('#name').val(),
+			province:	province,
+			city:		city, 
+			district:	district,
+			address: 	$('#address').val(),
+			zipcode:	$('#postalcode').val()
+		}
+	}).done (function (resp) {
+		if(parseInt (resp.status) == 1) {
+		
+		}else {
+			    if (resp.description != null)
+				     alert (resp.description);
+			    else
+				     alert ("请求失败，请再检查一遍您的输入并稍候再试");
+		}
+	}).fail (function() {
+		alert ("请求发送失败，请稍候再试");
+	});
+
+
 	$.ajax({
 		url:        "/membership/fillinfo.json",
 		type:       "POST",
@@ -237,6 +265,8 @@ function sendfirstinfo(){
 	}).fail (function() {
 		alert ("请求发送失败，请稍候再试");
 	});
+
+	
 }
 
 function sendchangeinfo(){
@@ -286,12 +316,43 @@ function sendchangeinfo(){
 	var weixin = 0;
 		if ($('#weixin').val().length > 0)
 		weibo = $('#weixin').val()
+	
+	$.ajax({
+		url:        "/membership/updateaddr.json",
+		type:       "POST",
+		dataType:   "json",
+		data:       {
+			id:			$('input[id="addressid"]').val(),
+			mobile:		$('#mobile').val(),
+			phone:		$('#areacode').val() + '-' + $('#telephone').val() + '-' + $('#extensionnumber').val(),
+			name:		$('#name').val(),
+			province:	province,
+			city:		city, 
+			district:	district,
+			address: 	$('#address').val(),
+			zipcode:	$('#postalcode').val()
+		}
+	}).done (function (resp) {
+		if(parseInt (resp.status) == 1) {
+		   
+		}else {
+			    if (resp.description != null)
+				     alert (resp.description);
+			    else
+				     alert ("请求失败，请再检查一遍您的输入并稍候再试");
+		}
+	}).fail (function() {
+		alert ("请求发送失败，请稍候再试");
+	});
+
 
 	$.ajax({
 		url:        "/membership/fillinfo.json",
 		type:       "POST",
 		dataType:   "json",
 		data:       {
+			fullname:			$('#name').val(),
+			gender:				$('#gender').val(),
 			subscription:		magazine,
 			phone:				$('#areacode').val() + '-' + $('#telephone').val() + '-' + $('#extensionnumber').val(),
 			weibo:				$('#weibo').val(),
@@ -448,6 +509,7 @@ function getmeminfo() {
 			var password = "00000000000000000000";
 
 			var red = resp.addr
+			var addressid = red.id
 			var address = red.full_address == null ? "" : red.full_address;
 			var zip_code = red.zip_code == null ? "" : red.zip_code;
 			var province = red.province == null ? "" : red.province;
@@ -558,6 +620,9 @@ function getmeminfo() {
 			if ($('#weixin').length)
 				$('#weixin').html (weixin);
 			
+			
+			if ($('input[id="addressid"]').length)
+				$('input[id="addressid"]').val (addressid);
 			if ($('input[id="areacode"]').length && phone[0] != "")
 				$('input[id="areacode"]').val (phone[0]);
 			if ($('input[id="telephone"]').length && phone[1] != "")
