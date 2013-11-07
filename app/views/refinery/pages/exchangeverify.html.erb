@@ -51,19 +51,19 @@ function setorder() {
 		}
 	}).done (function (resp) {
 		if (parseInt (resp.status) == -2) {
-			$(".authenticationtd").load ('/home/login-page .simple_captcha');
+			$(".authenticationtd").load ('/会员专区/兑换积分确认  .simple_captcha');
 			alert("提交失败");
 		}			
 		else if (parseInt (resp.status) == 2) {
-			$(".authenticationtd").load ('/home/login-page .simple_captcha');
+			$(".authenticationtd").load ('/会员专区/兑换积分确认  .simple_captcha');
 			alert("验证码错误");
 
 		} else if (parseInt (resp.status) == -1) {
-			$(".authenticationtd").load ('/home/login-page .simple_captcha');
+			$(".authenticationtd").load ('/会员专区/兑换积分确认  .simple_captcha');
 			alert("提交失败");
 	//		$('#loginerr').html ("验证码错误");
 		}else if (parseInt (resp.status) == 0) {
-			$(".authenticationtd").load ('/home/login-page .simple_captcha');
+			$(".authenticationtd").load ('/会员专区/兑换积分确认  .simple_captcha');
 			alert("积分不够");
 	//		$('#loginerr').html ("验证码错误");
 		}else{
