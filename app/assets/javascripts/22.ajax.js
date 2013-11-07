@@ -352,8 +352,8 @@ function sendchangeinfo(){
 		type:       "POST",
 		dataType:   "json",
 		data:       {
-			fullname:			$('#name').html(),
-			gender:				$('#gender').html(),
+	//		fullname:			$('#name').html(),
+	//		gender:				$('#gender').html(),
 			subscription:		magazine,
 			phone:				$('#areacode').val() + '-' + $('#telephone').val() + '-' + $('#extensionnumber').val(),
 			weibo:				$('#weibo').val(),
