@@ -109,8 +109,8 @@ class MembershipController < ApplicationController
 			:subscription => params[:subscription], :phone => params[:phone],
 			:weibo => params[:weibo], :wechat => params[:wechat]
 
-		session[:nickname] = params[:fullname].to_s
-		session[:gender] = params[:gender].to_i
+		session[:nickname] = params[:fullname].to_s if params[:fullname]
+		session[:gender] = params[:gender].to_i if params[:gender]
 
 		if session[:login] == 1
 			Membership.settodict session[:username], :login, 2
