@@ -27,6 +27,7 @@ class Order
 				"ReceiverTel" => addr[:buyer_contact2].to_s,
 				"ReceiverPostCode" => addr[:zip_code].to_s,
 				"item" => [{
+					"ID" => product[:id],
 					"SKU" => product[:sku],
 					"quantity" => 1,
 					"productName" => product[:product_name],
