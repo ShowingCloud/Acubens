@@ -1436,6 +1436,8 @@ function getproductcart() {
 			type: "GET",
 			dataType: "json",
 		}).done (function (resp) {
+			if (resp.return_value.points_redeem_product == null)
+				return;
 			
 			var n = resp.return_value.points_redeem_product.length;
 			var productid = $('.middle_product_info #productid').val();
@@ -1477,6 +1479,9 @@ function getpointredeemhistory() {
 			type: "GET",
 			dataType: "json",
 		}).done (function (resp) {
+			if (resp.return_value.points_redeem_history == null)
+				return;
+
 			var n = resp.return_value.points_redeem_history.length;			
 		
 			for(var i=0;i<n;i++){
