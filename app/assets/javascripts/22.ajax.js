@@ -1473,11 +1473,34 @@ function getproductcart() {
 function getpointredeemhistory() {
 		
 		$.ajax ({
-			url: "/membership/getpointredeemhistory.json",
+			url: "/membership/getpointredeemhistory.json?type=1",
 			type: "GET",
 			dataType: "json",
 		}).done (function (resp) {
-			
+			var n = resp.return_value.points_redeem_history.length;			
+		
+			for(var i=0;i<n;i++){
+				
+				
+				if(i != 0 )
+					$( "#pointstable tr:first-child").clone(true).prependTo( "#pointstable" );
+				
+				ret = resp.return_value.points_redeem_history[i]
+				
+				var points = ret.points== null ? "" : ret.points;
+				var production = ret.product_name == null ? "" : ret.product_name;
+				var created_date = ret.created_date == null ? "" : ret.created_date;			
+				var expire = ret.created_date.split('T');				
+				
+				if ($('#points').length);
+					$('#points').html (points);
+				if ($('#production').length)
+					$('#production').html (production);
+				if ($('#date').length)
+					$('#date').html (expire[0]);	
+				
+			}
+				
 		
 		}).fail (function() {
 			alert("请求发送失败，请稍候再试");
