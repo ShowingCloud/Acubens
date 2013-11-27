@@ -1266,6 +1266,9 @@ function getpointlist() {
 	}).done (function (resp) {
 		if (parseInt (resp.status) == 1) {
 			
+			if ( resp.return_value.points_source == null )
+				return;
+			
 			var n = resp.return_value.points_source.length;
 			
 			if ( typeof resp.return_value.points_source.length == "undefined"){
@@ -1387,9 +1390,9 @@ function getpointredeemproducts() {
 					var sku = ret.sku == null ? "" : ret.sku;	
 					var id = ret.id == null ? "" : ret.id;				
 										
-					if ($('.exchangepoints tr:first-child input[id="productid"]').length);
+					if ($('.exchangepoints tr:first-child input[id="productid"]').length)
 						$('.exchangepoints tr:first-child input[id="productid"]').val (id);
-					if ($('.exchangepoints tr:first-child input[id="sku"]').length);
+					if ($('.exchangepoints tr:first-child input[id="sku"]').length)
 						$('.exchangepoints tr:first-child input[id="sku"]').val (id);					
 					if ($('.exchangepoints tr:first-child #productname').length)
 						$('.exchangepoints tr:first-child #productname').html (product_name);
@@ -1412,9 +1415,9 @@ function getpointredeemproducts() {
 					var sku = ret.sku == null ? "" : ret.sku;	
 					var id = ret.id == null ? "" : ret.id;				
 										
-					if ($('.exchangepoints tr:first-child input[id="productid"]').length);
+					if ($('.exchangepoints tr:first-child input[id="productid"]').length)
 						$('.exchangepoints tr:first-child input[id="productid"]').val (id);
-					if ($('.exchangepoints tr:first-child input[id="SKU"]').length);
+					if ($('.exchangepoints tr:first-child input[id="SKU"]').length)
 						$('.exchangepoints tr:first-child input[id="SKU"]').val (sku);					
 					if ($('.exchangepoints tr:first-child #productname').length)
 						$('.exchangepoints tr:first-child #productname').html (product_name);
@@ -1437,8 +1440,12 @@ function getproductcart() {
 			dataType: "json",
 		}).done (function (resp) {
 			
+			if (resp.return_value.points_redeem_product == null)
+ 		        return;
+			
 			var n = resp.return_value.points_redeem_product.length;
 			var productid = $('.middle_product_info #productid').val();
+			
 			
 			for(var i=0;i<n;i++){
 				
@@ -1452,7 +1459,7 @@ function getproductcart() {
 						var product_name = ret.product_name == null ? "" : ret.product_name;
 						var image = ret.image_url == null ? "" : ret.image_url;			
 																				
-						if ($('input[id="productid"]').length);
+						if ($('input[id="productid"]').length)
 							$('input[id="productid"]').val (id);
 						if ($('#productname').length)
 							$('#productname').html (product_name);
@@ -1477,7 +1484,29 @@ function getpointredeemhistory() {
 			type: "GET",
 			dataType: "json",
 		}).done (function (resp) {
-			var n = resp.return_value.points_redeem_history.length;			
+			if (resp.return_value.points_redeem_history == null)
+			       return;
+			
+			var n = resp.return_value.points_redeem_history.length;	
+			
+			if ( typeof resp.return_value.points_redeem_history.length == "undefined"){
+				
+				ret = resp.return_value.points_redeem_history;
+				
+				var points = ret.points == null ? "" : ret.points;
+				var production = ret.product_name == null ? "" : ret.product_name;
+				var created_date = ret.created_date == null ? "" : ret.created_date;			
+				var expire = ret.created_date.split('T');				
+				
+				if ($('#points').length)
+					$('#points').html (points);
+				if ($('#production').length)
+					$('#production').html (production);
+				if ($('#date').length)
+					$('#date').html (expire[0]);
+				if ($('#buy').length)
+					$('#buy').html ("购买");
+			}		
 		
 			for(var i=0;i<n;i++){
 				
@@ -1485,20 +1514,21 @@ function getpointredeemhistory() {
 				if(i != 0 )
 					$( "#pointstable tr:first-child").clone(true).prependTo( "#pointstable" );
 				
-				ret = resp.return_value.points_redeem_history[i]
+				ret = resp.return_value.points_redeem_history[i];
 				
 				var points = ret.points== null ? "" : ret.points;
 				var production = ret.product_name == null ? "" : ret.product_name;
 				var created_date = ret.created_date == null ? "" : ret.created_date;			
 				var expire = ret.created_date.split('T');				
 				
-				if ($('#points').length);
+				if ($('#points').length)
 					$('#points').html (points);
 				if ($('#production').length)
 					$('#production').html (production);
 				if ($('#date').length)
 					$('#date').html (expire[0]);	
-				
+				if ($('#buy').length)
+					$('#buy').html ("购买");
 			}
 				
 		
