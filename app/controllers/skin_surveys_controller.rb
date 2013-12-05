@@ -23,16 +23,19 @@ class SkinSurveysController < ApplicationController
 	# GET /skin_surveys/1
 	def show
 		@skin_survey = SkinSurvey.find params[:id]
+		respond_with @skin_survey
 	end
 
 	# GET /skin_surveys/new
 	def new
 		@skin_survey = SkinSurvey.new
+		respond_with @skin_survey
 	end
 
 	# GET /skin_surveys/1/edit
 	def edit
 		@skin_survey = SkinSurvey.find params[:id]
+		respond_with @skin_survey
 	end
 
 	# POST /skin_surveys

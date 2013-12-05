@@ -29,6 +29,7 @@ class LocalitiesController < ApplicationController
 	# GET /localities/1/edit
 	def edit
 		@locality = Locality.find params[:id]
+		respond_with @locality
 	end
 
 	# POST /localities
