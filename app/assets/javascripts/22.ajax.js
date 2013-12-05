@@ -1261,7 +1261,7 @@ function getpointlist() {
 		type:		"GET",
 		dataType:	"json" ,
 		data:	{
-			type: 		125
+			type: 		126
 		}
 	}).done (function (resp) {
 		if (parseInt (resp.status) == 1) {
