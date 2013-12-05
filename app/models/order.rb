@@ -3,7 +3,7 @@
 class Order
 	extend Savon::Model
 
-	client wsdl: "http://210.13.83.245/GelnicWebServiceTest/OfficialService.asmx?WSDL",
+	client wsdl: "http://210.13.83.247/ECLGelnicWSTest/OfficialService.asmx?WSDL",
 		namespace: "http://tempuri.org/",
 		convert_request_keys_to: :camelcase,
 		soap_version: 2,
@@ -27,6 +27,7 @@ class Order
 				"ReceiverTel" => addr[:buyer_contact2].to_s,
 				"ReceiverPostCode" => addr[:zip_code].to_s,
 				"item" => [{
+					"ID" => product[:id],
 					"SKU" => product[:sku],
 					"quantity" => 1,
 					"productName" => product[:product_name],

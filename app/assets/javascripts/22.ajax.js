@@ -147,6 +147,7 @@ function sendlogin() {
 		$('#loginerr').html ("请求发送失败，请稍候再试");
 	});
 }
+
 function sendfirstinfo(){
 	if ($('#name').val().length < 2){
 		alert("请输入您的名字");
@@ -210,7 +211,35 @@ function sendfirstinfo(){
 		if ($('#weixin').val().length > 0)
 		weibo = $('#weixin').val();
 
-   
+   $.ajax({
+		url:        "/membership/addaddr.json",
+		type:       "POST",
+		dataType:   "json",
+		data:       {
+			id:			1,
+			mobile:		$('#mobile').val(),
+			phone:		$('#areacode').val() + '-' + $('#telephone').val() + '-' + $('#extensionnumber').val(),
+			name:		$('#name').val(),
+			province:	province,
+			city:		city, 
+			district:	district,
+			address: 	$('#address').val(),
+			zipcode:	$('#postalcode').val()
+		}
+	}).done (function (resp) {
+		if(parseInt (resp.status) == 1) {
+		
+		}else {
+			    if (resp.description != null)
+				     alert (resp.description);
+			    else
+				     alert ("请求失败，请再检查一遍您的输入并稍候再试");
+		}
+	}).fail (function() {
+		alert ("请求发送失败，请稍候再试");
+	});
+
+
 	$.ajax({
 		url:        "/membership/fillinfo.json",
 		type:       "POST",
@@ -237,10 +266,12 @@ function sendfirstinfo(){
 	}).fail (function() {
 		alert ("请求发送失败，请稍候再试");
 	});
+
+	
 }
 
 function sendchangeinfo(){
-
+	
 	if ($('input[name="magazine"]:checked').length > 0)
 	   var magazine = $('input[name="magazine"]:checked').val();
 	else {
@@ -286,12 +317,43 @@ function sendchangeinfo(){
 	var weixin = 0;
 		if ($('#weixin').val().length > 0)
 		weibo = $('#weixin').val()
+	
+	$.ajax({
+		url:        "/membership/updateaddr.json",
+		type:       "POST",
+		dataType:   "json",
+		data:       {
+			id:			$('input[id="addressid"]').val(),
+			mobile:		$('#mobile').html(),
+			phone:		$('#areacode').val() + '-' + $('#telephone').val() + '-' + $('#extensionnumber').val(),
+			name:		$('#name').html(),
+			province:	province,
+			city:		city, 
+			district:	district,
+			address: 	$('#address').val(),
+			zipcode:	$('#postalcode').val()
+		}
+	}).done (function (resp) {
+		if(parseInt (resp.status) == 1) {
+		   
+		}else {
+			    if (resp.description != null)
+				     alert (resp.description);
+			    else
+				     alert ("请求失败，请再检查一遍您的输入并稍候再试");
+		}
+	}).fail (function() {
+		alert ("请求发送失败，请稍候再试");
+	});
+
 
 	$.ajax({
 		url:        "/membership/fillinfo.json",
 		type:       "POST",
 		dataType:   "json",
 		data:       {
+	//		fullname:			$('#name').html(),
+	//		gender:				$('#gender').html(),
 			subscription:		magazine,
 			phone:				$('#areacode').val() + '-' + $('#telephone').val() + '-' + $('#extensionnumber').val(),
 			weibo:				$('#weibo').val(),
@@ -448,6 +510,7 @@ function getmeminfo() {
 			var password = "00000000000000000000";
 
 			var red = resp.addr
+			var addressid = red.id
 			var address = red.full_address == null ? "" : red.full_address;
 			var zip_code = red.zip_code == null ? "" : red.zip_code;
 			var province = red.province == null ? "" : red.province;
@@ -558,6 +621,9 @@ function getmeminfo() {
 			if ($('#weixin').length)
 				$('#weixin').html (weixin);
 			
+			
+			if ($('input[id="addressid"]').length)
+				$('input[id="addressid"]').val (addressid);
 			if ($('input[id="areacode"]').length && phone[0] != "")
 				$('input[id="areacode"]').val (phone[0]);
 			if ($('input[id="telephone"]').length && phone[1] != "")
@@ -1200,6 +1266,9 @@ function getpointlist() {
 	}).done (function (resp) {
 		if (parseInt (resp.status) == 1) {
 			
+			if ( resp.return_value.points_source == null )
+				return;
+			
 			var n = resp.return_value.points_source.length;
 			
 			if ( typeof resp.return_value.points_source.length == "undefined"){
@@ -1279,6 +1348,28 @@ function getpoint() {
 	});
 }
 
+function getpendingpoint() {
+
+	$.ajax ({
+		url:		"/membership/getpendingpoint.json",
+		type:		"GET",
+		dataType:	"json" ,
+		data:	{
+			type: 		1
+		}
+	}).done (function (resp) {
+		if (parseInt (resp.status) == 1) {
+				
+				points = resp.points				
+				if ($('#mypendingpoint').length)
+				$('#mypendingpoint').html (points);
+			
+		}
+	}).fail (function() {
+		alert ("请求发送失败，请稍候再试");
+	});
+}
+
 function getpointredeemproducts() {
 
 	$.ajax ({
@@ -1287,6 +1378,9 @@ function getpointredeemproducts() {
 		dataType:	"json" ,
 		
 	}).done (function (resp) {
+		if (resp.return_value.points_redeem_product == null)
+			return;
+
 		var n = resp.return_value.points_redeem_product.length;
 			
 			if ( typeof resp.return_value.points_redeem_product.length == "undefined"){
@@ -1299,9 +1393,9 @@ function getpointredeemproducts() {
 					var sku = ret.sku == null ? "" : ret.sku;	
 					var id = ret.id == null ? "" : ret.id;				
 										
-					if ($('.exchangepoints tr:first-child input[id="productid"]').length);
+					if ($('.exchangepoints tr:first-child input[id="productid"]').length)
 						$('.exchangepoints tr:first-child input[id="productid"]').val (id);
-					if ($('.exchangepoints tr:first-child input[id="sku"]').length);
+					if ($('.exchangepoints tr:first-child input[id="sku"]').length)
 						$('.exchangepoints tr:first-child input[id="sku"]').val (id);					
 					if ($('.exchangepoints tr:first-child #productname').length)
 						$('.exchangepoints tr:first-child #productname').html (product_name);
@@ -1324,9 +1418,9 @@ function getpointredeemproducts() {
 					var sku = ret.sku == null ? "" : ret.sku;	
 					var id = ret.id == null ? "" : ret.id;				
 										
-					if ($('.exchangepoints tr:first-child input[id="productid"]').length);
+					if ($('.exchangepoints tr:first-child input[id="productid"]').length)
 						$('.exchangepoints tr:first-child input[id="productid"]').val (id);
-					if ($('.exchangepoints tr:first-child input[id="SKU"]').length);
+					if ($('.exchangepoints tr:first-child input[id="SKU"]').length)
 						$('.exchangepoints tr:first-child input[id="SKU"]').val (sku);					
 					if ($('.exchangepoints tr:first-child #productname').length)
 						$('.exchangepoints tr:first-child #productname').html (product_name);
@@ -1348,9 +1442,9 @@ function getproductcart() {
 			type: "GET",
 			dataType: "json",
 		}).done (function (resp) {
-			
 			var n = resp.return_value.points_redeem_product.length;
 			var productid = $('.middle_product_info #productid').val();
+			
 			
 			for(var i=0;i<n;i++){
 				
@@ -1364,7 +1458,7 @@ function getproductcart() {
 						var product_name = ret.product_name == null ? "" : ret.product_name;
 						var image = ret.image_url == null ? "" : ret.image_url;			
 																				
-						if ($('input[id="productid"]').length);
+						if ($('input[id="productid"]').length)
 							$('input[id="productid"]').val (id);
 						if ($('#productname').length)
 							$('#productname').html (product_name);
@@ -1376,6 +1470,67 @@ function getproductcart() {
 			}
 
 			
+		}).fail (function() {
+			alert("请求发送失败，请稍候再试");
+		});
+
+}
+
+function getpointredeemhistory() {
+		
+		$.ajax ({
+			url: "/membership/getpointredeemhistory.json?type=1",
+			type: "GET",
+			dataType: "json",
+		}).done (function (resp) {
+			if (resp.return_value.points_redeem_history == null)
+			       return;
+			
+			var n = resp.return_value.points_redeem_history.length;	
+			
+			if ( typeof resp.return_value.points_redeem_history.length == "undefined"){
+				
+				ret = resp.return_value.points_redeem_history;
+				
+				var points = ret.points == null ? "" : ret.points;
+				var production = ret.product_name == null ? "" : ret.product_name;
+				var created_date = ret.created_date == null ? "" : ret.created_date;			
+				var expire = ret.created_date.split('T');				
+				
+				if ($('#points').length)
+					$('#points').html (points);
+				if ($('#production').length)
+					$('#production').html (production);
+				if ($('#date').length)
+					$('#date').html (expire[0]);
+				if ($('#buy').length)
+					$('#buy').html ("购买");
+			}		
+		
+			for(var i=0;i<n;i++){
+				
+				
+				if(i != 0 )
+					$( "#pointstable tr:first-child").clone(true).prependTo( "#pointstable" );
+				
+				ret = resp.return_value.points_redeem_history[i];
+				
+				var points = ret.points== null ? "" : ret.points;
+				var production = ret.product_name == null ? "" : ret.product_name;
+				var created_date = ret.created_date == null ? "" : ret.created_date;			
+				var expire = ret.created_date.split('T');				
+				
+				if ($('#points').length)
+					$('#points').html (points);
+				if ($('#production').length)
+					$('#production').html (production);
+				if ($('#date').length)
+					$('#date').html (expire[0]);	
+				if ($('#buy').length)
+					$('#buy').html ("购买");
+			}
+				
+		
 		}).fail (function() {
 			alert("请求发送失败，请稍候再试");
 		});

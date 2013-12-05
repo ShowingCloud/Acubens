@@ -13,6 +13,7 @@
 		<% end %>
 		$(document).ready (getpoint);
 		$(document).ready (getpointlist);
+		$(document).ready (getpendingpoint);
 	</script>
 <% end %>
 <div class="middle-xp">
@@ -101,7 +102,13 @@
 		             </li>
 		             <li class="text-all-color-yellow">
 			     <label id="mypoint">0</label>
-		             </li> 
+		             </li>
+		             <li class="text-all-color-green" style="margin-left:50px">
+		                 冻结积分总数：
+		             </li>
+		             <li class="text-all-color-gray">
+			     <label id="mypendingpoint">0</label>
+		             </li>  
 		          </ul>
 		             <table   class="firstlogin_middle_1" border="0" cellpadding="0" cellspacing="0" >
 		                   <tr>
