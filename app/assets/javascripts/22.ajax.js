@@ -1261,7 +1261,7 @@ function getpointlist() {
 		type:		"GET",
 		dataType:	"json" ,
 		data:	{
-			type: 		126
+			type: 		125
 		}
 	}).done (function (resp) {
 		if (parseInt (resp.status) == 1) {
@@ -1291,16 +1291,48 @@ function getpointlist() {
 						$('.table4-wode tr:first-child #status').html (point_status);
 					if ($('.table4-wode tr:first-child #rule').length)
 						$('.table4-wode tr:first-child #rule').html (point_rule);
+								    
+				
+				if (point_rule == "完成问卷调查赠送100积分")
+					return;
+					
+					orders = JSON.parse(ret.orders);
+					
+					var OrderNo = orders.OrderNo == null ? "" : orders.OrderNo; //订单号
+					var DiscountFee = orders.DiscountFee == null ? "" : orders.DiscountFee; //总帐
+					var price = orders.Products[0].price == null ? "" : orders.Products[0].price; //单价
+					var quantity = orders.Products[0].quantity == null ? "" : orders.Products[0].quantity; //数量
+					var productName = orders.Products[0].productName == null ? "" : orders.Products[0].productName;	//产品名
+					var point_count = ret.point_count == null ? "" : ret.point_count; //所得积分
+					var gain = ret.gain_date.split(' '); //订单创建时间
+										
+					if ($('.table3-mystore tr:first-child #ordertime').length)
+						$('.table3-mystore tr:first-child #ordertime').html (gain[0]);
+					if ($('.table3-mystore tr:first-child #gainpoint').length)
+						$('.table3-mystore tr:first-child #gainpoint').html (point_count);
+					if ($('.table3-mystore tr:first-child #productname').length)
+						$('.table3-mystore tr:first-child #productname').html (productName);
+					if ($('.table3-mystore tr:first-child #amount').length)
+						$('.table3-mystore tr:first-child #amount').html (quantity);
+					if ($('.table3-mystore tr:first-child #price').length)
+						$('.table3-mystore tr:first-child #price').html (price);
+					if ($('.table3-mystore tr:first-child #payment').length)
+						$('.table3-mystore tr:first-child #payment').html (DiscountFee);
+					if ($('.table3-mystore tr:first-child #orderno').length)
+						$('.table3-mystore tr:first-child #orderno').html (OrderNo);		
+					
+						
+				return;
 				
 			}
 			
 			for(var i=0;i<n;i++){
 				
+				var ret = resp.return_value.points_source[i];
+					
 				if(i != 0 )
 					$( ".table4-wode tr:first-child").clone(true).prependTo( ".table4-wode" );
-				
-					var ret = resp.return_value.points_source[i];
-							
+											
 					var point_count = ret.point_count == null ? "" : ret.point_count;
 					var point_status = ret.point_status_name == null ? "" : ret.point_status_name;
 					var point_rule = ret.point_rule_name == null ? "" : ret.point_rule_name;			
@@ -1319,6 +1351,50 @@ function getpointlist() {
 						$('.table4-wode tr:first-child #rule').html (point_rule);
 		
 			}
+			
+			var k=0;
+			for(var i=0;i<n;i++){
+				
+				var ret = resp.return_value.points_source[i];
+				
+				if (ret.point_rule == "完成问卷调查赠送100积分")
+					continue;
+			
+		//		if(k != 0 )
+		//			$( ".table3-mystore tr:first-child").clone(true).prependTo( ".table3-mystore" );
+					 						
+					orders = JSON.parse(ret.orders);
+					
+					k++;
+					
+					var OrderNo = orders.OrderNo == null ? "" : orders.OrderNo; //订单号
+					var DiscountFee = orders.DiscountFee == null ? "" : orders.DiscountFee; //总帐
+					var price = orders.Products[0].price == null ? "" : orders.Products[0].price; //单价
+					var quantity = orders.Products[0].quantity == null ? "" : orders.Products[0].quantity; //数量
+					var productName = orders.Products[0].productName == null ? "" : orders.Products[0].productName;	//产品名
+					var point_count = ret.point_count == null ? "" : ret.point_count; //所得积分
+					var gain = ret.gain_date.split(' '); //订单创建时间					
+												
+									
+					if ($('.table3-mystore tr:first-child #ordertime').length)
+						$('.table3-mystore tr:first-child #ordertime').html (gain[0]);
+					if ($('.table3-mystore tr:first-child #gainpoint').length)
+						$('.table3-mystore tr:first-child #gainpoint').html (point_count);
+					if ($('.table3-mystore tr:first-child #productname').length)
+						$('.table3-mystore tr:first-child #productname').html (productName);
+					if ($('.table3-mystore tr:first-child #amount').length)
+						$('.table3-mystore tr:first-child #amount').html (quantity);
+					if ($('.table3-mystore tr:first-child #price').length)
+						$('.table3-mystore tr:first-child #price').html (price);
+					if ($('.table3-mystore tr:first-child #payment').length)
+						$('.table3-mystore tr:first-child #payment').html (DiscountFee);
+					if ($('.table3-mystore tr:first-child #orderno').length)
+						$('.table3-mystore tr:first-child #orderno').html (OrderNo);					
+				
+				
+				
+			}
+			
 		}
 	}).fail (function() {
 		alert ("请求发送失败，请稍候再试");
@@ -1402,7 +1478,9 @@ function getpointredeemproducts() {
 					if ($('.exchangepoints tr:first-child #needpoint').length)
 						$('.exchangepoints tr:first-child #needpoint').html (points);
 					if ($('.exchangepoints tr:first-child #productpic').length)
-						$('.exchangepoints tr:first-child #productpic').prop ('src','http://www.mokard.com/ProductPic/'+image);				
+						$('.exchangepoints tr:first-child #productpic').prop ('src','http://www.mokard.com/ProductPic/'+image);	
+					
+					return;			
 			}
 			
 			for(var i=0;i<n;i++){
@@ -1505,6 +1583,8 @@ function getpointredeemhistory() {
 					$('#date').html (expire[0]);
 				if ($('#buy').length)
 					$('#buy').html ("购买");
+					
+				return;
 			}		
 		
 			for(var i=0;i<n;i++){
