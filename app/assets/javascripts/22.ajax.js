@@ -1305,6 +1305,7 @@ function getpointlist() {
 					var productName = orders.Products[0].productName == null ? "" : orders.Products[0].productName;	//产品名
 					var point_count = ret.point_count == null ? "" : ret.point_count; //所得积分
 					var gain = ret.gain_date.split(' '); //订单创建时间
+					var productpic = orders.Products[0].imageURL == null ? "" : orders.Products[0].imageURL;
 										
 					if ($('.table3-mystore tr:first-child #ordertime').length)
 						$('.table3-mystore tr:first-child #ordertime').html (gain[0]);
@@ -1319,7 +1320,9 @@ function getpointlist() {
 					if ($('.table3-mystore tr:first-child #payment').length)
 						$('.table3-mystore tr:first-child #payment').html (DiscountFee);
 					if ($('.table3-mystore tr:first-child #orderno').length)
-						$('.table3-mystore tr:first-child #orderno').html (OrderNo);		
+						$('.table3-mystore tr:first-child #orderno').html (OrderNo);	
+					if ($('.table3-mystore tr:first-child #productpic').length)
+						$('.table3-mystore tr:first-child #productpic').prop ('src','http://www.mokard.com/ProductPic/'+productpic);		
 					
 						
 				return;
@@ -1373,6 +1376,7 @@ function getpointlist() {
 					var quantity = orders.Products[0].quantity == null ? "" : orders.Products[0].quantity; //数量
 					var productName = orders.Products[0].productName == null ? "" : orders.Products[0].productName;	//产品名
 					var point_count = ret.point_count == null ? "" : ret.point_count; //所得积分
+					var productpic = orders.Products[0].imageURL == null ? "" : orders.Products[0].imageURL;
 					var gain = ret.gain_date.split(' '); //订单创建时间					
 												
 									
@@ -1389,8 +1393,10 @@ function getpointlist() {
 					if ($('.table3-mystore tr:first-child #payment').length)
 						$('.table3-mystore tr:first-child #payment').html (DiscountFee);
 					if ($('.table3-mystore tr:first-child #orderno').length)
-						$('.table3-mystore tr:first-child #orderno').html (OrderNo);					
-				
+						$('.table3-mystore tr:first-child #orderno').html (OrderNo);		
+					if ($('.table3-mystore tr:first-child #productpic').length)
+						$('.table3-mystore tr:first-child #productpic').prop ('src','http://www.mokard.com/ProductPic/'+productpic);				
+
 				
 				
 			}
