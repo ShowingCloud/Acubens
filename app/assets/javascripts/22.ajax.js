@@ -1360,7 +1360,11 @@ function getpointlist() {
 				
 				var ret = resp.return_value.points_source[i];
 				
-				if (ret.point_rule == "完成问卷调查赠送100积分")
+				var point_rule = ret.point_rule_name == null ? "" : ret.point_rule_name;	
+				
+				
+				
+				if (point_rule == "完成问卷调查赠送100积分")
 					continue;
 			
 		//		if(k != 0 )
