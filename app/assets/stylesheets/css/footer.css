@@ -41,9 +41,14 @@
 	margin-left:70px;
 	padding-top:18px;
 	font-weight:bold;
+}
 
+.footer-text2 a{
+	color:#8bc954;
+}
 
-
+.footer-text2 a:hover{
+	color:#8bc954;
 }
 
 .img-logo{

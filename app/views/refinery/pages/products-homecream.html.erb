@@ -47,7 +47,7 @@ function spreeproduct(data) {
 							var description = ret.products[i].description == null ? "" : ret.products[i].description;	
 						//	var alt = ret.products[i].variants[1].images[0] == null ? "" : ret.products[i].variants[1].images[0].alt;
 							var product_url = ret.products[i].variants[0].images[0] == null? "" :ret.products[i].variants[0].images[0].product_url
-							var small_url = ret.products[i].variants[0].images[0] == null ? "" :ret.products[i].variants[0].images[0].small_url;
+							var mini_url = ret.products[i].variants[0].images[0] == null ? "" :ret.products[i].variants[0].images[0].mini_url;
 							
 						//	var meta_keywords = ret.products[i].meta_keywords == null ? "" : ret.products[i].meta_keywords;
 							
@@ -58,7 +58,7 @@ function spreeproduct(data) {
 							if ($('.cream_right ul li:first-child #cap_detail').length)
 								$('.cream_right ul li:first-child #cap_detail').html (cap_detail);							
 							if ($('.cream_right ul li:first-child #small_pic').length)
-								$('.cream_right ul li:first-child #small_pic').prop ('src','https://store.gelnic.com.cn/'+small_url);							
+								$('.cream_right ul li:first-child #small_pic').prop ('src','https://libra.gelnic.com.cn/'+mini_url);							
 					}								
 			}
 							
@@ -75,7 +75,7 @@ function spreeproduct(data) {
   <div class="basket1">
     <div class="zone">
        <div class="member-text">
-       产品咨讯
+       产品资讯
        </div>
     </div>
   </div>
@@ -118,11 +118,9 @@ function spreeproduct(data) {
      <div class="resetpw">
            <div class="resetpw_head">
                 <ul>
-                        <li class="resetpw_head_txt1"><a>首页</a></li>
+                        <li class="resetpw_head_txt1"><a href="/">首页</a></li>
                         <li class="resetpw_head_txt2">&nbsp;&nbsp;>&nbsp;&nbsp;</li>
                         <li class="resetpw_head_txt1"><a>产品资讯</a></li>
-                        <li class="resetpw_head_txt2">&nbsp;&nbsp;>&nbsp;&nbsp;</li>
-                        <li class="resetpw_head_txt1"><a>简妮保湿润泽乳霜</a></li>
                 </ul>
            </div>
            <div class="resetpw_top">

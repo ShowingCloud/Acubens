@@ -13,6 +13,7 @@
 		<% end %>
 $(document).ready (getpointredeemproducts);
 $(document).ready (getpoint);
+$(document).ready (getpendingpoint);
 
 $("#saveinformation").click (function () {			
 	
@@ -106,11 +107,17 @@ $("#saveinformation").click (function () {
              <li class="text-all-color-green">
                  可用积分总数：
              </li>
-             <li class="text-all-color-yellow-1">
+             <li class="text-all-color-yellow">
                  <label id="mypoint">0</label>
              </li> 
+             <li class="text-all-color-green" style="margin-left:50px">
+		                 冻结积分总数：
+		             </li>
+		     <li class="text-all-color-gray">
+			     <label id="mypendingpoint">0</label>
+		     </li>  
           </ul>
-             <table   class="firstlogin_middle_1" border="0" cellpadding="0" cellspacing="0" >
+      <!--       <table   class="firstlogin_middle_1" border="0" cellpadding="0" cellspacing="0" >
                    <tr>
                              
                               <td   class="firstlogin_middle_3-1">兑换商品类型：</td>
@@ -124,7 +131,7 @@ $("#saveinformation").click (function () {
                               <select id=""  class="firstlogin_middle_dropdown3"><option >升序</option><option >降序</option></select></td>
                               
                </tr>
-             </table> 
+             </table>  -->
              <div class="background-color-white-green-1-1">
                <table >
   <tr>
@@ -158,7 +165,7 @@ $("#saveinformation").click (function () {
 		    <td width="133">
 		                 
 		                <div class="resetpw_bottom_table4-1">
-		                     <input id="saveinformation"   type="button" value="点击兑换"  >
+		                     <input id="saveinformation"   type="button" value="点击兑换"  style="cursor: pointer">
 		                </div>
 		              
 		

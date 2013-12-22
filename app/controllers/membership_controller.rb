@@ -91,7 +91,7 @@ class MembershipController < ApplicationController
 
 
 	def changepsw
-		resp = Membership.changepswd params[:mobile], params[:password], params[:verification]
+		resp = Membership.changepsw params[:mobile], params[:password], params[:verification]
 
 		if resp[:status] != "1"
 			respond_with resp.merge({ :progress => :password }), :location => nil and return
@@ -109,8 +109,8 @@ class MembershipController < ApplicationController
 			:subscription => params[:subscription], :phone => params[:phone],
 			:weibo => params[:weibo], :wechat => params[:wechat]
 
-		session[:nickname] = params[:fullname].to_s
-		session[:gender] = params[:gender].to_i
+		session[:nickname] = params[:fullname].to_s if params[:fullname]
+		session[:gender] = params[:gender].to_i if params[:gender]
 
 		if session[:login] == 1
 			Membership.settodict session[:username], :login, 2
@@ -233,6 +233,12 @@ class MembershipController < ApplicationController
 
 	def getpointredeemproducts
 		resp = Membership.getpointredeemproducts
+		respond_with resp, :location => nil
+	end
+
+
+	def getpointredeemhistory
+		resp = Membership.getpointredeemhistory session[:username], params[:type]
 		respond_with resp, :location => nil
 	end
 

@@ -147,6 +147,7 @@ function sendlogin() {
 		$('#loginerr').html ("请求发送失败，请稍候再试");
 	});
 }
+
 function sendfirstinfo(){
 	if ($('#name').val().length < 2){
 		alert("请输入您的名字");
@@ -210,7 +211,35 @@ function sendfirstinfo(){
 		if ($('#weixin').val().length > 0)
 		weibo = $('#weixin').val();
 
-   
+   $.ajax({
+		url:        "/membership/addaddr.json",
+		type:       "POST",
+		dataType:   "json",
+		data:       {
+			id:			1,
+			mobile:		$('#mobile').val(),
+			phone:		$('#areacode').val() + '-' + $('#telephone').val() + '-' + $('#extensionnumber').val(),
+			name:		$('#name').val(),
+			province:	province,
+			city:		city, 
+			district:	district,
+			address: 	$('#address').val(),
+			zipcode:	$('#postalcode').val()
+		}
+	}).done (function (resp) {
+		if(parseInt (resp.status) == 1) {
+		
+		}else {
+			    if (resp.description != null)
+				     alert (resp.description);
+			    else
+				     alert ("请求失败，请再检查一遍您的输入并稍候再试");
+		}
+	}).fail (function() {
+		alert ("请求发送失败，请稍候再试");
+	});
+
+
 	$.ajax({
 		url:        "/membership/fillinfo.json",
 		type:       "POST",
@@ -237,10 +266,12 @@ function sendfirstinfo(){
 	}).fail (function() {
 		alert ("请求发送失败，请稍候再试");
 	});
+
+	
 }
 
 function sendchangeinfo(){
-
+	
 	if ($('input[name="magazine"]:checked').length > 0)
 	   var magazine = $('input[name="magazine"]:checked').val();
 	else {
@@ -286,12 +317,43 @@ function sendchangeinfo(){
 	var weixin = 0;
 		if ($('#weixin').val().length > 0)
 		weibo = $('#weixin').val()
+	
+	$.ajax({
+		url:        "/membership/updateaddr.json",
+		type:       "POST",
+		dataType:   "json",
+		data:       {
+			id:			$('input[id="addressid"]').val(),
+			mobile:		$('#mobile').html(),
+			phone:		$('#areacode').val() + '-' + $('#telephone').val() + '-' + $('#extensionnumber').val(),
+			name:		$('#name').html(),
+			province:	province,
+			city:		city, 
+			district:	district,
+			address: 	$('#address').val(),
+			zipcode:	$('#postalcode').val()
+		}
+	}).done (function (resp) {
+		if(parseInt (resp.status) == 1) {
+		   
+		}else {
+			    if (resp.description != null)
+				     alert (resp.description);
+			    else
+				     alert ("请求失败，请再检查一遍您的输入并稍候再试");
+		}
+	}).fail (function() {
+		alert ("请求发送失败，请稍候再试");
+	});
+
 
 	$.ajax({
 		url:        "/membership/fillinfo.json",
 		type:       "POST",
 		dataType:   "json",
 		data:       {
+	//		fullname:			$('#name').html(),
+	//		gender:				$('#gender').html(),
 			subscription:		magazine,
 			phone:				$('#areacode').val() + '-' + $('#telephone').val() + '-' + $('#extensionnumber').val(),
 			weibo:				$('#weibo').val(),
@@ -448,6 +510,7 @@ function getmeminfo() {
 			var password = "00000000000000000000";
 
 			var red = resp.addr
+			var addressid = red.id
 			var address = red.full_address == null ? "" : red.full_address;
 			var zip_code = red.zip_code == null ? "" : red.zip_code;
 			var province = red.province == null ? "" : red.province;
@@ -558,6 +621,9 @@ function getmeminfo() {
 			if ($('#weixin').length)
 				$('#weixin').html (weixin);
 			
+			
+			if ($('input[id="addressid"]').length)
+				$('input[id="addressid"]').val (addressid);
 			if ($('input[id="areacode"]').length && phone[0] != "")
 				$('input[id="areacode"]').val (phone[0]);
 			if ($('input[id="telephone"]').length && phone[1] != "")
@@ -1200,6 +1266,9 @@ function getpointlist() {
 	}).done (function (resp) {
 		if (parseInt (resp.status) == 1) {
 			
+			if ( resp.return_value.points_source == null )
+				return;
+			
 			var n = resp.return_value.points_source.length;
 			
 			if ( typeof resp.return_value.points_source.length == "undefined"){
@@ -1222,16 +1291,51 @@ function getpointlist() {
 						$('.table4-wode tr:first-child #status').html (point_status);
 					if ($('.table4-wode tr:first-child #rule').length)
 						$('.table4-wode tr:first-child #rule').html (point_rule);
+								    
+				
+				if (point_rule == "完成问卷调查赠送100积分")
+					return;
+					
+					orders = JSON.parse(ret.orders);
+					
+					var OrderNo = orders.OrderNo == null ? "" : orders.OrderNo; //订单号
+					var DiscountFee = orders.DiscountFee == null ? "" : orders.DiscountFee; //总帐
+					var price = orders.Products[0].price == null ? "" : orders.Products[0].price; //单价
+					var quantity = orders.Products[0].quantity == null ? "" : orders.Products[0].quantity; //数量
+					var productName = orders.Products[0].productName == null ? "" : orders.Products[0].productName;	//产品名
+					var point_count = ret.point_count == null ? "" : ret.point_count; //所得积分
+					var gain = ret.gain_date.split(' '); //订单创建时间
+					var productpic = orders.Products[0].imageURL == null ? "" : orders.Products[0].imageURL;
+										
+					if ($('.table3-mystore tr:first-child #ordertime').length)
+						$('.table3-mystore tr:first-child #ordertime').html (gain[0]);
+					if ($('.table3-mystore tr:first-child #gainpoint').length)
+						$('.table3-mystore tr:first-child #gainpoint').html (point_count);
+					if ($('.table3-mystore tr:first-child #productname').length)
+						$('.table3-mystore tr:first-child #productname').html (productName);
+					if ($('.table3-mystore tr:first-child #amount').length)
+						$('.table3-mystore tr:first-child #amount').html (quantity);
+					if ($('.table3-mystore tr:first-child #price').length)
+						$('.table3-mystore tr:first-child #price').html (price);
+					if ($('.table3-mystore tr:first-child #payment').length)
+						$('.table3-mystore tr:first-child #payment').html (DiscountFee);
+					if ($('.table3-mystore tr:first-child #orderno').length)
+						$('.table3-mystore tr:first-child #orderno').html (OrderNo);	
+					if ($('.table3-mystore tr:first-child #productpic').length)
+						$('.table3-mystore tr:first-child #productpic').prop ('src','http://www.mokard.com/ProductPic/'+productpic);		
+					
+						
+				return;
 				
 			}
 			
 			for(var i=0;i<n;i++){
 				
+				var ret = resp.return_value.points_source[i];
+					
 				if(i != 0 )
 					$( ".table4-wode tr:first-child").clone(true).prependTo( ".table4-wode" );
-				
-					var ret = resp.return_value.points_source[i];
-							
+											
 					var point_count = ret.point_count == null ? "" : ret.point_count;
 					var point_status = ret.point_status_name == null ? "" : ret.point_status_name;
 					var point_rule = ret.point_rule_name == null ? "" : ret.point_rule_name;			
@@ -1250,6 +1354,57 @@ function getpointlist() {
 						$('.table4-wode tr:first-child #rule').html (point_rule);
 		
 			}
+			
+			var k=0;
+			for(var i=0;i<n;i++){
+				
+				var ret = resp.return_value.points_source[i];
+				
+				var point_rule = ret.point_rule_name == null ? "" : ret.point_rule_name;	
+				
+				
+				
+				if (point_rule == "完成问卷调查赠送100积分")
+					continue;
+			
+		//		if(k != 0 )
+		//			$( ".table3-mystore tr:first-child").clone(true).prependTo( ".table3-mystore" );
+					 						
+					orders = JSON.parse(ret.orders);
+					
+					k++;
+					
+					var OrderNo = orders.OrderNo == null ? "" : orders.OrderNo; //订单号
+					var DiscountFee = orders.DiscountFee == null ? "" : orders.DiscountFee; //总帐
+					var price = orders.Products[0].price == null ? "" : orders.Products[0].price; //单价
+					var quantity = orders.Products[0].quantity == null ? "" : orders.Products[0].quantity; //数量
+					var productName = orders.Products[0].productName == null ? "" : orders.Products[0].productName;	//产品名
+					var point_count = ret.point_count == null ? "" : ret.point_count; //所得积分
+					var productpic = orders.Products[0].imageURL == null ? "" : orders.Products[0].imageURL;
+					var gain = ret.gain_date.split(' '); //订单创建时间					
+												
+									
+					if ($('.table3-mystore tr:first-child #ordertime').length)
+						$('.table3-mystore tr:first-child #ordertime').html (gain[0]);
+					if ($('.table3-mystore tr:first-child #gainpoint').length)
+						$('.table3-mystore tr:first-child #gainpoint').html (point_count);
+					if ($('.table3-mystore tr:first-child #productname').length)
+						$('.table3-mystore tr:first-child #productname').html (productName);
+					if ($('.table3-mystore tr:first-child #amount').length)
+						$('.table3-mystore tr:first-child #amount').html (quantity);
+					if ($('.table3-mystore tr:first-child #price').length)
+						$('.table3-mystore tr:first-child #price').html (price);
+					if ($('.table3-mystore tr:first-child #payment').length)
+						$('.table3-mystore tr:first-child #payment').html (DiscountFee);
+					if ($('.table3-mystore tr:first-child #orderno').length)
+						$('.table3-mystore tr:first-child #orderno').html (OrderNo);		
+					if ($('.table3-mystore tr:first-child #productpic').length)
+						$('.table3-mystore tr:first-child #productpic').prop ('src','http://www.mokard.com/ProductPic/'+productpic);				
+
+				
+				
+			}
+			
 		}
 	}).fail (function() {
 		alert ("请求发送失败，请稍候再试");
@@ -1279,6 +1434,28 @@ function getpoint() {
 	});
 }
 
+function getpendingpoint() {
+
+	$.ajax ({
+		url:		"/membership/getpendingpoint.json",
+		type:		"GET",
+		dataType:	"json" ,
+		data:	{
+			type: 		1
+		}
+	}).done (function (resp) {
+		if (parseInt (resp.status) == 1) {
+				
+				points = resp.points				
+				if ($('#mypendingpoint').length)
+				$('#mypendingpoint').html (points);
+			
+		}
+	}).fail (function() {
+		alert ("请求发送失败，请稍候再试");
+	});
+}
+
 function getpointredeemproducts() {
 
 	$.ajax ({
@@ -1287,6 +1464,9 @@ function getpointredeemproducts() {
 		dataType:	"json" ,
 		
 	}).done (function (resp) {
+		if (resp.return_value.points_redeem_product == null)
+			return;
+
 		var n = resp.return_value.points_redeem_product.length;
 			
 			if ( typeof resp.return_value.points_redeem_product.length == "undefined"){
@@ -1295,20 +1475,25 @@ function getpointredeemproducts() {
 							
 					var points = ret.points == null ? "" : ret.points;
 					var product_name = ret.product_name == null ? "" : ret.product_name;
+					var inventory = ret.inventory == null ? "" : ret.inventory;
 					var image = ret.image_url == null ? "" : ret.image_url;	
 					var sku = ret.sku == null ? "" : ret.sku;	
 					var id = ret.id == null ? "" : ret.id;				
 										
-					if ($('.exchangepoints tr:first-child input[id="productid"]').length);
+					if ($('.exchangepoints tr:first-child input[id="productid"]').length)
 						$('.exchangepoints tr:first-child input[id="productid"]').val (id);
-					if ($('.exchangepoints tr:first-child input[id="sku"]').length);
+					if ($('.exchangepoints tr:first-child input[id="sku"]').length)
 						$('.exchangepoints tr:first-child input[id="sku"]').val (id);					
 					if ($('.exchangepoints tr:first-child #productname').length)
 						$('.exchangepoints tr:first-child #productname').html (product_name);
 					if ($('.exchangepoints tr:first-child #needpoint').length)
 						$('.exchangepoints tr:first-child #needpoint').html (points);
+					if ($('.exchangepoints tr:first-child #stockno').length)
+						$('.exchangepoints tr:first-child #stockno').html (inventory);
 					if ($('.exchangepoints tr:first-child #productpic').length)
-						$('.exchangepoints tr:first-child #productpic').prop ('src','http://www.mokard.com/ProductPic/'+image);				
+						$('.exchangepoints tr:first-child #productpic').prop ('src','http://www.mokard.com/ProductPic/'+image);	
+					
+					return;			
 			}
 			
 			for(var i=0;i<n;i++){
@@ -1321,17 +1506,20 @@ function getpointredeemproducts() {
 					var points = ret.points == null ? "" : ret.points;
 					var product_name = ret.product_name == null ? "" : ret.product_name;
 					var image = ret.image_url == null ? "" : ret.image_url;	
+					var inventory = ret.inventory == null ? "" : ret.inventory;
 					var sku = ret.sku == null ? "" : ret.sku;	
 					var id = ret.id == null ? "" : ret.id;				
 										
-					if ($('.exchangepoints tr:first-child input[id="productid"]').length);
+					if ($('.exchangepoints tr:first-child input[id="productid"]').length)
 						$('.exchangepoints tr:first-child input[id="productid"]').val (id);
-					if ($('.exchangepoints tr:first-child input[id="SKU"]').length);
+					if ($('.exchangepoints tr:first-child input[id="SKU"]').length)
 						$('.exchangepoints tr:first-child input[id="SKU"]').val (sku);					
 					if ($('.exchangepoints tr:first-child #productname').length)
 						$('.exchangepoints tr:first-child #productname').html (product_name);
 					if ($('.exchangepoints tr:first-child #needpoint').length)
 						$('.exchangepoints tr:first-child #needpoint').html (points);
+					if ($('.exchangepoints tr:first-child #stockno').length)
+						$('.exchangepoints tr:first-child #stockno').html (inventory);
 					if ($('.exchangepoints tr:first-child #productpic').length)
 						$('.exchangepoints tr:first-child #productpic').prop ('src','http://www.mokard.com/ProductPic/'+image);		
 			}
@@ -1348,9 +1536,9 @@ function getproductcart() {
 			type: "GET",
 			dataType: "json",
 		}).done (function (resp) {
-			
 			var n = resp.return_value.points_redeem_product.length;
 			var productid = $('.middle_product_info #productid').val();
+			
 			
 			for(var i=0;i<n;i++){
 				
@@ -1364,7 +1552,7 @@ function getproductcart() {
 						var product_name = ret.product_name == null ? "" : ret.product_name;
 						var image = ret.image_url == null ? "" : ret.image_url;			
 																				
-						if ($('input[id="productid"]').length);
+						if ($('input[id="productid"]').length)
 							$('input[id="productid"]').val (id);
 						if ($('#productname').length)
 							$('#productname').html (product_name);
@@ -1376,6 +1564,69 @@ function getproductcart() {
 			}
 
 			
+		}).fail (function() {
+			alert("请求发送失败，请稍候再试");
+		});
+
+}
+
+function getpointredeemhistory() {
+		
+		$.ajax ({
+			url: "/membership/getpointredeemhistory.json?type=1",
+			type: "GET",
+			dataType: "json",
+		}).done (function (resp) {
+			if (resp.return_value.points_redeem_history == null)
+			       return;
+			
+			var n = resp.return_value.points_redeem_history.length;	
+			
+			if ( typeof resp.return_value.points_redeem_history.length == "undefined"){
+				
+				ret = resp.return_value.points_redeem_history;
+				
+				var points = ret.points == null ? "" : ret.points;
+				var production = ret.product_name == null ? "" : ret.product_name;
+				var created_date = ret.created_date == null ? "" : ret.created_date;			
+				var expire = ret.created_date.split('T');				
+				
+				if ($('#points').length)
+					$('#points').html (points);
+				if ($('#production').length)
+					$('#production').html (production);
+				if ($('#date').length)
+					$('#date').html (expire[0]);
+				if ($('#buy').length)
+					$('#buy').html ("购买");
+					
+				return;
+			}		
+		
+			for(var i=0;i<n;i++){
+				
+				
+				if(i != 0 )
+					$( "#pointstable tr:first-child").clone(true).prependTo( "#pointstable" );
+				
+				ret = resp.return_value.points_redeem_history[i];
+				
+				var points = ret.points== null ? "" : ret.points;
+				var production = ret.product_name == null ? "" : ret.product_name;
+				var created_date = ret.created_date == null ? "" : ret.created_date;			
+				var expire = ret.created_date.split('T');				
+				
+				if ($('#points').length)
+					$('#points').html (points);
+				if ($('#production').length)
+					$('#production').html (production);
+				if ($('#date').length)
+					$('#date').html (expire[0]);	
+				if ($('#buy').length)
+					$('#buy').html ("购买");
+			}
+				
+		
 		}).fail (function() {
 			alert("请求发送失败，请稍候再试");
 		});

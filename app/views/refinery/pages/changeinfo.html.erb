@@ -5,7 +5,7 @@
 	<script>
 		$(document).ready (getmeminfo);
 		<% if session[:login] %>
-			v
+			
 		<% else %>
 			$(document).ready (login);
 		<% end %>
@@ -97,7 +97,8 @@
            <div class="firsrlogin_middle">
                
                <table class="firstlogin_middle_1"  border="0" cellspacing="0" cellpadding="0">
-                      <tr>
+                      <tr>	
+			      <td><input type="hidden" id="addressid"></td>
                               <td   class="firstlogin_middle_2">*</td>
                               <td   class="firstlogin_middle_3">姓&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;名：</td>
                               <td   class="firstlogin_middle_4" ><label id="name"></label></td>

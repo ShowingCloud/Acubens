@@ -27,7 +27,7 @@
 .basket-ad1{
 	width:253px;
 	height:226px;
-	margin-left:25px;
+	margin-left:20px;
 	margin-top:20px;
 	float:left;
 }
@@ -53,7 +53,7 @@
 }
 
 .news-blank{
-	width:270px;
+	width:272px;
 	height:225px;
 	margin-left:20px;
 	float:left;
@@ -216,13 +216,13 @@
 	font-size:11px;
 	color:#666666;
 	list-style-type:none;
-    padding-top:13px;
+        padding-top:13px;
 	float:left;
 
 	line-height:13px;
-	border-bottom:dashed;
-	border-bottom-color:#F0F0F0;
-	border-bottom-width:1px;
+//	border-bottom:dashed;
+//	border-bottom-color:#F0F0F0;
+//	border-bottom-width:1px;
 }
 
 .news-text2{
@@ -237,9 +237,9 @@
 	float:left;
 
 	line-height:13px;
-	border-bottom:dashed;
-	border-bottom-color:#F0F0F0;
-	border-bottom-width:1px;
+//	border-bottom:dashed;
+//	border-bottom-color:#F0F0F0;
+//	border-bottom-width:1px;
 }
 .new-banner{
 	float:left;
