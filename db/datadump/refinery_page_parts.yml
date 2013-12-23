@@ -241,7 +241,7 @@ refinery_page_parts:
     - ''
     - 0
     - 2013-07-31 18:49:06.000000000 Z
-    - 2013-09-09 02:23:17.000000000 Z
+    - 2013-12-20 05:00:10.000000000 Z
   - - 42
     - 22
     - Body
@@ -949,14 +949,15 @@ refinery_page_parts:
     - howtobuy
     - "<table style=\" background-color:#ffffff;\" border=\"0\" cellpadding=\"0\"
       cellspacing=\"0\" width=\"485\">\r\n  <tbody><tr>\r\n    <td><img src=\"/system/images/W1siZiIsIjIwMTMvMDkvMDkvMDlfNDdfMDdfOTc0X2J1eV8xMy5naWYiXSxbInAiLCJ0aHVtYiIsIjIyNXgyNTU%2BIl1d/buy_13.gif\"
-      /></td>\r\n    <td><img src=\"/system/images/W1siZiIsIjIwMTMvMDkvMDkvMDlfNDdfMDhfMTEwX2J1eV8xNC5naWYiXSxbInAiLCJ0aHVtYiIsIjIyNXgyNTU%2BIl1d/buy_14.gif\"
-      /></td>\r\n    <td><img src=\"/system/images/W1siZiIsIjIwMTMvMDkvMDkvMDlfNDdfMDhfMTYyX2J1eV8xNS5naWYiXSxbInAiLCJ0aHVtYiIsIjIyNXgyNTU%2BIl1d/buy_15.gif\"
-      /></td>\r\n  </tr>\r\n  <tr>\r\n    <td style=\"text-align:center;\"><a href=\"#\">敬请期待</a>\r\n</td>\r\n
-      \   <td style=\"text-align:center;\"><a href=\"#\">敬请期待</a>\r\n</td>\r\n    <td
-      style=\"text-align:center;\"><a href=\"#\">敬请期待</a>\r\n</td>\r\n  </tr>\r\n</tbody>\r\n</table>\r\n\r\n"
+      /></td>\r\n    <td><img src=\"/system/images/W1siZiIsIjIwMTMvMDkvMDkvMDlfNDdfMDhfMTEwX2J1eV8xNC5naWYiXSxbInAiLCJ0aHVtYiIsIjIyNXgyNTU%2BIl1d/buy_15.gif\"
+      class=\"selected_by_wym\" /></td>\r\n    <td><img src=\"/system/images/W1siZiIsIjIwMTMvMDkvMDkvMDlfNDdfMDhfMTYyX2J1eV8xNS5naWYiXSxbInAiLCJ0aHVtYiIsIjIyNXgyNTU%2BIl1d/buy_14.gif\"
+      /></td>\r\n  </tr>\r\n  <tr>\r\n    <td style=\"text-align:center;\"><a href=\"http://gelnic.taobao.com\"
+      title=\"http://gelnic.taobao.com\" target=\"_blank\">立即购买</a>\r\n</td>\r\n    <td
+      style=\"text-align:center;\"><a href=\"#\">敬请期待</a>\r\n</td>\r\n    <td style=\"text-align:center;\"><a
+      href=\"#\">敬请期待</a>\r\n</td>\r\n  </tr>\r\n</tbody>\r\n</table>\r\n\r\n"
     - 1
     - 2013-09-05 11:27:21.000000000 Z
-    - 2013-09-09 02:23:17.000000000 Z
+    - 2013-12-20 05:00:10.000000000 Z
   - - 100
     - 44
     - Body
@@ -1517,36 +1518,40 @@ refinery_page_parts:
   - - 168
     - 1
     - kv
-    - <p><img src="/system/images/W1siZiIsIjIwMTMvMDkvMDYvMDNfMTRfMTRfODZfa3YxLnBuZyJdXQ/kv1.png"
-      title="Kv1" alt="Kv1" width="970px" /></p>
+    - "<li><img src=\"/system/images/W1siZiIsIjIwMTMvMDkvMDYvMDNfMTRfMTRfODZfa3YxLnBuZyJdXQ/kv1.png\"
+      title=\"Kv1\" alt=\"Kv1\" data-rel=\"225x255\" width=\"950\" /></li>\r\n<li><img
+      src=\"/system/images/W1siZiIsIjIwMTMvMDkvMDYvMDNfMTRfMTRfODZfa3YxLnBuZyJdXQ/kv1.png\"
+      title=\"Kv1\" alt=\"Kv1\" data-rel=\"225x255\" width=\"950\" /></li>\r\n"
     - 0
     - 2013-09-05 17:56:34.000000000 Z
-    - 2013-10-07 16:55:01.000000000 Z
+    - 2013-12-20 12:59:46.000000000 Z
   - - 169
     - 1
     - advt1
-    - "<p><a href=\"http://shop106256388.taobao.com/\"><img src=\"/system/images/W1siZiIsIjIwMTMvMTAvMDgvMDBfNTNfNTBfOTU3X2FkdnQxLmpwZyJdXQ/advt1.jpg\"
-      title=\"Advt1\" alt=\"Advt1\" width=\"260\" height=\"102\" /></a>\r\n</p>"
+    - "<p><a href=\"http://shop106256388.taobao.com/\" title=\"http://shop106256388.taobao.com/\"
+      target=\"_blank\"><img src=\"/system/images/W1siZiIsIjIwMTMvMTAvMDgvMDBfNTNfNTBfOTU3X2FkdnQxLmpwZyJdXQ/advt1.jpg\"
+      title=\"Advt1\" alt=\"Advt1\" width=\"260\" height=\"102\" class=\"selected_by_wym\"
+      /></a>\r\n</p>"
     - 1
     - 2013-09-05 17:56:34.000000000 Z
-    - 2013-10-07 16:55:01.000000000 Z
+    - 2013-12-20 12:59:46.000000000 Z
   - - 170
     - 1
     - advt2
     - "<p><a href=\"/home/%E8%B0%83%E6%9F%A5%E9%97%AE%E5%8D%B7\"><img src=\"/system/images/W1siZiIsIjIwMTMvMDkvMDYvMDFfNDlfNTVfMjA0X2FkdnQyLnBuZyJdXQ/advt2.png\"
-      height=\"104\" width=\"250\" /></a>\r\n</p>"
+      width=\"260\" /></a>\r\n</p>"
     - 2
     - 2013-09-05 17:56:34.000000000 Z
-    - 2013-10-07 16:55:01.000000000 Z
+    - 2013-12-20 12:59:46.000000000 Z
   - - 171
     - 1
     - video
-    - <p><img src="/system/images/W1siZiIsIjIwMTMvMDkvMTMvMDFfMjBfMjZfMTY5X2luZGV4XzA3LjAzXzA2LmdpZiJdXQ/index-07.03_06.gif"
-      title="Index 07.03 06" alt="Index 07.03 06" rel="225x255" height="225" width="400"
-      /></p>
+    - <embed src="http://player.youku.com/player.php/sid/XNjI5MTIyMDcy/v.swf" allowfullscreen="true"
+      height="225" width="400" allowscriptaccess="always" type="application/x-shockwave-flash"
+      />
     - 3
     - 2013-09-05 17:56:34.000000000 Z
-    - 2013-10-07 16:55:01.000000000 Z
+    - 2013-12-20 12:59:46.000000000 Z
   - - 174
     - 68
     - Body

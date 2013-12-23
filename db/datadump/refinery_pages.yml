@@ -36,7 +36,7 @@ refinery_pages:
     - home
     - application
     - 2013-07-31 17:59:13.000000000 Z
-    - 2013-10-07 16:55:01.000000000 Z
+    - 2013-12-20 12:59:46.000000000 Z
   - - 2
     - 1
     - 
@@ -325,7 +325,7 @@ refinery_pages:
     - howtobuy
     - application
     - 2013-07-31 18:49:06.000000000 Z
-    - 2013-09-09 02:23:17.000000000 Z
+    - 2013-12-20 05:00:10.000000000 Z
   - - 22
     - 
     - 
@@ -557,8 +557,8 @@ refinery_pages:
     - true
     - false
     - false
-    - 30
-    - 39
+    - 48
+    - 57
     - 1
     - products-cleansing
     - application
@@ -591,8 +591,8 @@ refinery_pages:
     - true
     - false
     - false
-    - 50
-    - 67
+    - 30
+    - 47
     - 1
     - products-homecream
     - application
@@ -608,8 +608,8 @@ refinery_pages:
     - true
     - false
     - false
-    - 40
-    - 49
+    - 58
+    - 67
     - 1
     - products-peeling
     - application
@@ -676,8 +676,8 @@ refinery_pages:
     - true
     - false
     - false
-    - 31
-    - 32
+    - 49
+    - 50
     - 2
     - products-cleansing0101
     - application
@@ -693,8 +693,8 @@ refinery_pages:
     - true
     - false
     - false
-    - 33
-    - 34
+    - 51
+    - 52
     - 2
     - products-cleansing0101
     - application
@@ -710,8 +710,8 @@ refinery_pages:
     - true
     - false
     - false
-    - 35
-    - 36
+    - 53
+    - 54
     - 2
     - products-cleansing0101
     - application
@@ -727,8 +727,8 @@ refinery_pages:
     - true
     - false
     - false
-    - 37
-    - 38
+    - 55
+    - 56
     - 2
     - products-cleansing0101
     - application
@@ -744,8 +744,8 @@ refinery_pages:
     - true
     - false
     - false
-    - 41
-    - 42
+    - 59
+    - 60
     - 2
     - products-peeling0201
     - application
@@ -761,8 +761,8 @@ refinery_pages:
     - true
     - false
     - false
-    - 43
-    - 44
+    - 61
+    - 62
     - 2
     - products-peeling0201
     - application
@@ -778,8 +778,8 @@ refinery_pages:
     - true
     - false
     - false
-    - 45
-    - 46
+    - 63
+    - 64
     - 2
     - products-peeling0201
     - application
@@ -795,8 +795,8 @@ refinery_pages:
     - true
     - false
     - false
-    - 47
-    - 48
+    - 65
+    - 66
     - 2
     - products-peeling0201
     - application
@@ -812,8 +812,8 @@ refinery_pages:
     - true
     - false
     - false
-    - 51
-    - 52
+    - 31
+    - 32
     - 2
     - products-homecream0301
     - application
@@ -829,8 +829,8 @@ refinery_pages:
     - true
     - false
     - false
-    - 53
-    - 54
+    - 33
+    - 34
     - 2
     - products-homecream0301
     - application
@@ -846,8 +846,8 @@ refinery_pages:
     - true
     - false
     - false
-    - 55
-    - 56
+    - 35
+    - 36
     - 2
     - products-homecream0301
     - application
@@ -863,8 +863,8 @@ refinery_pages:
     - true
     - false
     - false
-    - 57
-    - 58
+    - 37
+    - 38
     - 2
     - products-homecream0301
     - application
@@ -880,8 +880,8 @@ refinery_pages:
     - true
     - false
     - false
-    - 59
-    - 60
+    - 39
+    - 40
     - 2
     - products-homecream0301
     - application
@@ -897,8 +897,8 @@ refinery_pages:
     - true
     - false
     - false
-    - 61
-    - 62
+    - 41
+    - 42
     - 2
     - products-homecream0301
     - application
@@ -914,8 +914,8 @@ refinery_pages:
     - true
     - false
     - false
-    - 63
-    - 64
+    - 43
+    - 44
     - 2
     - products-homecream0301
     - application
@@ -931,8 +931,8 @@ refinery_pages:
     - true
     - false
     - false
-    - 65
-    - 66
+    - 45
+    - 46
     - 2
     - products-homecream0301
     - application
