@@ -48,7 +48,7 @@ gem 'refinerycms-i18n', '~> 2.1.0'
 #  gem 'refinerycms-blog', '~> 2.0.0'
 #  gem 'refinerycms-inquiries', '~> 2.0.0'
 #  gem 'refinerycms-search', '~> 2.0.0'
-gem 'refinerycms-page-images', :github => 'refinery/refinerycms-page-images', :branch => '2-1-stable'
+gem 'refinerycms-page-images', '~> 2.1.0'
 gem 'refinerycms-news', :github => 'ShowingCloud/refinerycms-news', :branch => 'master'
 gem 'refinerycms-faqs', :github => 'cnrk/refinerycms-faqs'
 

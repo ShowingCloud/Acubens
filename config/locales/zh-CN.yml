@@ -5,12 +5,17 @@ zh-CN:
   hello: "cn: Hello world"
   simple_captcha:
   message:
-    default: "cn: Secret Code did not match with the Image"
-    user: "cn: The secret Image and code were different"
+    default: "验证码和图片不匹配"
+    user: "验证图片和代码不一样"
   refinery:
     plugins:
       faqs:
         title: 常见问答
+      refinery_page_images:
+        tab_name: 页面图片
+        title: 页面图片
+        tab_name: 图片
+        description: 页面图片将一个或多个图片与Refinery中的任意页面关联，更方便地在前台页面显示中创建简单的弹出灯箱样式的图片画廊
     faqs:
       admin:
         faqs:
@@ -29,6 +34,16 @@ zh-CN:
       faqs:
         show:
           other: 其它问答
+    js:
+      admin:
+        page_images:
+          add_caption: 添加字幕
+          done: 完成
+    admin:
+      pages:
+        tabs:
+          images_bar:
+            add: 添加图片
   activerecord:
     attributes:
       'refinery/faqs/faq':
