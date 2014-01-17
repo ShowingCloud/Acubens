@@ -80,15 +80,36 @@ function spreeproduct(data) {
 								
 							var meta_description = ret.products[i].meta_description == null ? "" : ret.products[i].meta_description;									
 							var groupid = meta_description.split('&');
-							var m = groupid.length;
+							
 														
-							var g = 0;
+							
 					
-								for(var k=0;i<n;k++){
+								
+							
+							
+					}
+					
+				/*	if( ret.products[i].taxon_ids[0] == 1 && productid[1] != ret.products[i].id){
+						
+									var small_url = ret.products[i].variants[0].images[0] == null ? "" :ret.products[i].variants[0].images[0].small_url;
+									$('.pro-bot01-'+j+' input').val(ret.products[i].id);
+							//		alert('.pro-bot02-'+j+' .pro-lbot .pro-pic');
+									$('.pro-bot01-'+j+' .pro-lbot .pro-pic').prop ('src','https://libra.gelnic.com.cn/'+small_url); 
+									j++;
+				}   */
+							
+							//alert("1");					
+			}
+			
+			
+			var m = groupid.length;
+			var g = 0;
+			
+			for(var k=0;k<n;k++){
 									
-										for(var j=0;j<m;j++){
+						for(var j=0;j<m;j++){
 											
-												if( groupid[j] == ret.products[k].id){
+									if( groupid[j] == ret.products[k].variants[0].sku){
 															
 															if( g != 0){
 																$( ".gro-tab ul li:first-child" ).clone(true).prependTo( ".gro-tab ul" );
@@ -128,27 +149,12 @@ function spreeproduct(data) {
 															if ($('.gro-tab ul li:first-child #days01_detail').length)
 																$('.gro-tab ul li:first-child #days01_detail').html (days_detail);	
 													
-												}
+									}
 												
 													
 											
-										}
+						}
 									
-								}
-							
-							
-					}
-					
-				/*	if( ret.products[i].taxon_ids[0] == 1 && productid[1] != ret.products[i].id){
-						
-									var small_url = ret.products[i].variants[0].images[0] == null ? "" :ret.products[i].variants[0].images[0].small_url;
-									$('.pro-bot01-'+j+' input').val(ret.products[i].id);
-							//		alert('.pro-bot02-'+j+' .pro-lbot .pro-pic');
-									$('.pro-bot01-'+j+' .pro-lbot .pro-pic').prop ('src','https://libra.gelnic.com.cn/'+small_url); 
-									j++;
-				}   */
-							
-							//alert("1");					
 			}
 							
 }
