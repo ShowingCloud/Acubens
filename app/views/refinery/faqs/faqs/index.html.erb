@@ -1,0 +1,11 @@
+<% content_for :body do %>
+ <div id="faqs">
+  <% @faqs.each do |faq| %>
+      <h3 class="question"><%=raw faq.question %></h3>
+      <div class="answer">
+        <%=raw faq.answer %>
+      </div>
+  <% end %>
+  <div>
+<% end %>
+<%= render '/refinery/content_page' %>
