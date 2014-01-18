@@ -1,3 +1,5 @@
+<%= render :partial => "/refinery/faqs/faqs/help" %>
+
 <% content_for :body do %>
  <div id="faqs">
   <% @faqs.each do |faq| %>
@@ -6,6 +8,29 @@
         <%=raw faq.answer %>
       </div>
   <% end %>
-  <div>
+  </div>
 <% end %>
 <%= render '/refinery/content_page' %>
+
+<div style="clear:both"></div>
+	 </div>
+</div>
+
+<% content_for :javascripts do %>
+<script>
+
+$('.answer').hide();
+$('h3').bind('click', function(){$(this).next().slideToggle();});
+
+</script>
+<% end %>
+
+<% content_for :stylesheets do %>
+<style>
+h3{
+	
+	cursor: pointer;
+	
+}
+</style>
+<% end %>
