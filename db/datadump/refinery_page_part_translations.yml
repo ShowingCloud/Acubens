@@ -1,0 +1,1483 @@
+
+---
+refinery_page_part_translations:
+  columns:
+  - id
+  - refinery_page_part_id
+  - locale
+  - body
+  - created_at
+  - updated_at
+  records: 
+  - - 3
+    - 3
+    - en
+    - <h2>Sorry, there was a problem...</h2><p>The page you requested was not found.</p><p><a
+      href='/'>Return to the home page</a></p>
+    - 2013-07-31 17:59:13.000000000 Z
+    - 2013-07-31 17:59:13.000000000 Z
+  - - 4
+    - 4
+    - en
+    - |-
+      <p>This is just a standard text page example. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin metus dolor, hendrerit sit amet, aliquet nec, posuere sed, purus. Nullam et velit iaculis odio sagittis placerat. Duis metus tellus, pellentesque ut, luctus id, egestas a, lorem. Praesent vitae mauris. Aliquam sed nulla. Sed id nunc vitae leo suscipit viverra. Proin at leo ut lacus consequat rhoncus. In hac habitasse platea dictumst. Nunc quis tortor sed libero hendrerit dapibus.
+
+      Integer interdum purus id erat. Duis nec velit vitae dolor mattis euismod. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse pellentesque dignissim lacus. Nulla semper euismod arcu. Suspendisse egestas, erat a consectetur dapibus, felis orci cursus eros, et sollicitudin purus urna et metus. Integer eget est sed nunc euismod vestibulum. Integer nulla dui, tristique in, euismod et, interdum imperdiet, enim. Mauris at lectus. Sed egestas tortor nec mi.</p>
+    - 2013-07-31 17:59:13.000000000 Z
+    - 2013-07-31 17:59:13.000000000 Z
+  - - 5
+    - 5
+    - en
+    - <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus fringilla
+      nisi a elit. Duis ultricies orci ut arcu. Ut ac nibh. Duis blandit rhoncus magna.
+      Pellentesque semper risus ut magna. Etiam pulvinar tellus eget diam. Morbi blandit.
+      Donec pulvinar mauris at ligula. Sed pellentesque, ipsum id congue molestie,
+      lectus risus egestas pede, ac viverra diam lacus ac urna. Aenean elit.</p>
+    - 2013-07-31 17:59:13.000000000 Z
+    - 2013-07-31 17:59:13.000000000 Z
+  - - 6
+    - 6
+    - zh-CN
+    - ''
+    - 2013-07-31 18:37:18.000000000 Z
+    - 2013-07-31 18:37:18.000000000 Z
+  - - 7
+    - 7
+    - zh-CN
+    - ''
+    - 2013-07-31 18:37:18.000000000 Z
+    - 2013-07-31 18:37:18.000000000 Z
+  - - 14
+    - 14
+    - zh-CN
+    - ''
+    - 2013-07-31 18:38:45.000000000 Z
+    - 2013-07-31 18:38:45.000000000 Z
+  - - 15
+    - 15
+    - zh-CN
+    - ''
+    - 2013-07-31 18:38:45.000000000 Z
+    - 2013-07-31 18:38:45.000000000 Z
+  - - 16
+    - 16
+    - zh-CN
+    - ''
+    - 2013-07-31 18:39:08.000000000 Z
+    - 2013-07-31 18:39:08.000000000 Z
+  - - 17
+    - 17
+    - zh-CN
+    - ''
+    - 2013-07-31 18:39:08.000000000 Z
+    - 2013-07-31 18:39:08.000000000 Z
+  - - 18
+    - 18
+    - zh-CN
+    - ''
+    - 2013-07-31 18:39:26.000000000 Z
+    - 2013-07-31 18:39:26.000000000 Z
+  - - 19
+    - 19
+    - zh-CN
+    - ''
+    - 2013-07-31 18:39:26.000000000 Z
+    - 2013-07-31 18:39:26.000000000 Z
+  - - 20
+    - 20
+    - zh-CN
+    - ''
+    - 2013-07-31 18:40:22.000000000 Z
+    - 2013-07-31 18:40:22.000000000 Z
+  - - 21
+    - 21
+    - zh-CN
+    - ''
+    - 2013-07-31 18:40:22.000000000 Z
+    - 2013-07-31 18:40:22.000000000 Z
+  - - 22
+    - 22
+    - zh-CN
+    - ''
+    - 2013-07-31 18:40:54.000000000 Z
+    - 2013-07-31 18:40:54.000000000 Z
+  - - 23
+    - 23
+    - zh-CN
+    - ''
+    - 2013-07-31 18:40:54.000000000 Z
+    - 2013-07-31 18:40:54.000000000 Z
+  - - 24
+    - 24
+    - zh-CN
+    - ''
+    - 2013-07-31 18:41:14.000000000 Z
+    - 2013-07-31 18:41:14.000000000 Z
+  - - 25
+    - 25
+    - zh-CN
+    - ''
+    - 2013-07-31 18:41:14.000000000 Z
+    - 2013-07-31 18:41:14.000000000 Z
+  - - 26
+    - 26
+    - zh-CN
+    - ''
+    - 2013-07-31 18:41:32.000000000 Z
+    - 2013-07-31 18:41:32.000000000 Z
+  - - 27
+    - 27
+    - zh-CN
+    - ''
+    - 2013-07-31 18:41:32.000000000 Z
+    - 2013-07-31 18:41:32.000000000 Z
+  - - 28
+    - 28
+    - zh-CN
+    - ''
+    - 2013-07-31 18:42:03.000000000 Z
+    - 2013-07-31 18:42:03.000000000 Z
+  - - 29
+    - 29
+    - zh-CN
+    - ''
+    - 2013-07-31 18:42:03.000000000 Z
+    - 2013-07-31 18:42:03.000000000 Z
+  - - 30
+    - 30
+    - zh-CN
+    - ''
+    - 2013-07-31 18:42:43.000000000 Z
+    - 2013-07-31 18:42:43.000000000 Z
+  - - 31
+    - 31
+    - zh-CN
+    - ''
+    - 2013-07-31 18:42:43.000000000 Z
+    - 2013-07-31 18:42:43.000000000 Z
+  - - 32
+    - 32
+    - zh-CN
+    - ''
+    - 2013-07-31 18:43:01.000000000 Z
+    - 2013-07-31 18:43:01.000000000 Z
+  - - 33
+    - 33
+    - zh-CN
+    - ''
+    - 2013-07-31 18:43:01.000000000 Z
+    - 2013-07-31 18:43:01.000000000 Z
+  - - 34
+    - 34
+    - zh-CN
+    - ''
+    - 2013-07-31 18:47:46.000000000 Z
+    - 2013-07-31 18:47:46.000000000 Z
+  - - 35
+    - 35
+    - zh-CN
+    - ''
+    - 2013-07-31 18:47:46.000000000 Z
+    - 2013-07-31 18:47:46.000000000 Z
+  - - 36
+    - 36
+    - zh-CN
+    - ''
+    - 2013-07-31 18:48:23.000000000 Z
+    - 2013-07-31 18:48:23.000000000 Z
+  - - 37
+    - 37
+    - zh-CN
+    - ''
+    - 2013-07-31 18:48:23.000000000 Z
+    - 2013-07-31 18:48:23.000000000 Z
+  - - 38
+    - 38
+    - zh-CN
+    - ''
+    - 2013-07-31 18:48:37.000000000 Z
+    - 2013-07-31 18:48:37.000000000 Z
+  - - 39
+    - 39
+    - zh-CN
+    - ''
+    - 2013-07-31 18:48:37.000000000 Z
+    - 2013-07-31 18:48:37.000000000 Z
+  - - 41
+    - 41
+    - zh-CN
+    - ''
+    - 2013-07-31 18:49:06.000000000 Z
+    - 2013-07-31 18:49:06.000000000 Z
+  - - 42
+    - 42
+    - zh-CN
+    - ''
+    - 2013-07-31 18:49:23.000000000 Z
+    - 2013-07-31 18:49:23.000000000 Z
+  - - 43
+    - 43
+    - zh-CN
+    - ''
+    - 2013-07-31 18:49:23.000000000 Z
+    - 2013-07-31 18:49:23.000000000 Z
+  - - 47
+    - 47
+    - zh-CN
+    - ''
+    - 2013-07-31 18:49:52.000000000 Z
+    - 2013-07-31 18:49:52.000000000 Z
+  - - 52
+    - 52
+    - zh-CN
+    - ''
+    - 2013-08-15 12:33:25.000000000 Z
+    - 2013-08-15 12:33:25.000000000 Z
+  - - 53
+    - 53
+    - zh-CN
+    - ''
+    - 2013-08-15 12:33:25.000000000 Z
+    - 2013-08-15 12:33:25.000000000 Z
+  - - 55
+    - 55
+    - zh-CN
+    - ''
+    - 2013-08-20 07:11:49.000000000 Z
+    - 2013-08-20 07:11:49.000000000 Z
+  - - 57
+    - 57
+    - zh-CN
+    - ''
+    - 2013-08-20 07:12:22.000000000 Z
+    - 2013-08-20 07:12:22.000000000 Z
+  - - 59
+    - 59
+    - zh-CN
+    - ''
+    - 2013-08-20 07:12:49.000000000 Z
+    - 2013-08-20 07:12:49.000000000 Z
+  - - 61
+    - 61
+    - zh-CN
+    - ''
+    - 2013-08-20 07:14:07.000000000 Z
+    - 2013-08-20 07:14:07.000000000 Z
+  - - 62
+    - 62
+    - zh-CN
+    - ''
+    - 2013-08-20 08:34:06.000000000 Z
+    - 2013-08-20 08:34:06.000000000 Z
+  - - 63
+    - 63
+    - zh-CN
+    - ''
+    - 2013-08-20 08:34:06.000000000 Z
+    - 2013-08-20 08:34:06.000000000 Z
+  - - 64
+    - 64
+    - zh-CN
+    - ''
+    - 2013-08-20 08:36:18.000000000 Z
+    - 2013-08-20 08:36:18.000000000 Z
+  - - 65
+    - 65
+    - zh-CN
+    - ''
+    - 2013-08-20 08:36:18.000000000 Z
+    - 2013-08-20 08:36:18.000000000 Z
+  - - 69
+    - 69
+    - zh-CN
+    - ''
+    - 2013-08-21 10:26:29.000000000 Z
+    - 2013-08-21 10:26:29.000000000 Z
+  - - 73
+    - 73
+    - zh-CN
+    - ''
+    - 2013-08-21 11:06:54.000000000 Z
+    - 2013-08-21 11:06:54.000000000 Z
+  - - 74
+    - 74
+    - zh-CN
+    - ''
+    - 2013-08-21 17:41:07.000000000 Z
+    - 2013-08-21 17:41:07.000000000 Z
+  - - 75
+    - 75
+    - zh-CN
+    - ''
+    - 2013-08-21 17:41:07.000000000 Z
+    - 2013-08-21 17:41:07.000000000 Z
+  - - 76
+    - 76
+    - zh-CN
+    - ''
+    - 2013-08-21 17:41:32.000000000 Z
+    - 2013-08-21 17:41:32.000000000 Z
+  - - 77
+    - 77
+    - zh-CN
+    - ''
+    - 2013-08-21 17:41:32.000000000 Z
+    - 2013-08-21 17:41:32.000000000 Z
+  - - 78
+    - 78
+    - zh-CN
+    - ''
+    - 2013-08-22 18:40:34.000000000 Z
+    - 2013-08-22 18:40:34.000000000 Z
+  - - 79
+    - 79
+    - zh-CN
+    - ''
+    - 2013-08-22 18:40:34.000000000 Z
+    - 2013-08-22 18:40:34.000000000 Z
+  - - 80
+    - 80
+    - zh-CN
+    - ''
+    - 2013-08-22 18:44:41.000000000 Z
+    - 2013-08-22 18:44:41.000000000 Z
+  - - 81
+    - 81
+    - zh-CN
+    - ''
+    - 2013-08-22 18:44:41.000000000 Z
+    - 2013-08-22 18:44:41.000000000 Z
+  - - 82
+    - 82
+    - zh-CN
+    - ''
+    - 2013-08-26 17:56:59.000000000 Z
+    - 2013-08-26 17:56:59.000000000 Z
+  - - 83
+    - 83
+    - zh-CN
+    - ''
+    - 2013-08-26 17:56:59.000000000 Z
+    - 2013-08-26 17:56:59.000000000 Z
+  - - 86
+    - 86
+    - zh-CN
+    - "<div class=\"institution_middle_1\">\r\n                <div class=\"institution_middle_title\">\r\n
+      \                会员权益\r\n                </div>\r\n                <div class=\"middle_1_content\">\r\n
+      \                    <ul>\r\n                              <li>\r\n                                    \r\n
+      \                                   注册送积分：注册即送100积分，并有机会获得Gelnic惊喜体验套装\r\n                                    \r\n
+      \                             </li>\r\n                              <li>\r\n
+      \                                   \r\n                                    积分换礼：每年2次换礼申请，臻选心动好礼\r\n
+      \                                   \r\n                              </li>\r\n
+      \                             <li>\r\n                                   \r\n
+      \                                  最新促销信息：提前得知最新促销活动等信息\r\n                                  \r\n
+      \                             </li>\r\n                              <li>\r\n
+      \                                  \r\n                                   会员专享优惠：享受会员专属促销优惠\r\n
+      \                                  \r\n                              </li>\r\n
+      \                             <li>\r\n                                \r\n                                   新品体验：优先获得新品或限定品体验机会\r\n
+      \                                  \r\n                              </li>\r\n
+      \                             <li>\r\n                               \r\n                                   美研沙龙：有机会受邀参加美研沙龙或讲座\r\n
+      \                                 \r\n                              </li>\r\n
+      \                             <li>\r\n                                   \r\n
+      \                                  健康贴士及资讯：定期获取温馨健康贴士及专业资讯\r\n                                 \r\n
+      \                             </li>\r\n                              <li>\r\n
+      \                                  \r\n                                   电子会刊：定期会员电子专刊\r\n
+      \                                \r\n                              </li>\r\n
+      \                    </ul>\r\n                </div>\r\n           </div>\r\n<div
+      class=\"institution_middle_2\">\r\n                <div class=\"institution_middle_title\">\r\n
+      \               会员积分规则\r\n                </div>\r\n                <div class=\"middle_2_top\">\r\n
+      \                    <ul>\r\n                              <li>\r\n                              您在简妮官方网店上的每1元消费将累计1个积分\r\n
+      \                             </li>\r\n                              <li>\r\n
+      \                          绑定网店账号后，您在相应网店上购买gelnic商品后即可享受1元消费=1个积分的积分累计奖励。\r\n
+      \                             </li>\r\n                              <li>\r\n
+      \                             积分可在积分商城兑换相应礼品。</li>\r\n<li>当会员的淘宝和一号商城中的订单联系手机号码和官网注册手机号码一致时，账号积分系统会自动将官网账号和此淘宝或一号商城账号绑定。如您发现所绑定的账号和您的希望有出入，请联系客服。</li>\r\n
+      \                    </ul>\r\n                </div>\r\n                <div
+      class=\"middle_2_content\">\r\n                     <ul>\r\n                              <li>\r\n
+      \                                  \r\n                                     积分累计暂时只针对大陆地区会员开放。\r\n
+      \                                 \r\n                              </li>\r\n
+      \                             <li>\r\n                                     \r\n
+      \                                    会员积分有效期为2年。\r\n                                    \r\n
+      \                             </li>\r\n                              <li>\r\n
+      \                                    \r\n                                     发生退货时会相应地影响积分。\r\n
+      \                                   \r\n                              </li>\r\n
+      \                             <li>\r\n                                     \r\n
+      \                                    会员身份失效积分亦相应失效。\r\n                                   \r\n
+      \                             </li>\r\n                              <li>\r\n
+      \                                    \r\n                                     会员推荐好友至gelnic官网并注册成功，即或200积分奖励\r\n
+      \                                   \r\n                              </li>\r\n
+      \                             \r\n                     </ul>\r\n                </div>\r\n
+      \               <div class=\"middle_2_bottom\">\r\n                     <ul>\r\n
+      \                             <li>\r\n                              积分兑换及查询途径\r\n
+      \                             </li>\r\n                              \r\n                     </ul>\r\n
+      \               </div> \r\n<div class=\"middle_2_content\">\r\n                     <ul>\r\n
+      \                             <li>具体积分兑换活动及商品请留意网站通知\r\n                                  \r\n
+      \                             </li>\r\n                              <li>请登陆“积分兑换”界面进行兑换</li>\r\n
+      \                             <li>本网站保留积分兑换的最终解释权</li>\r\n                              \r\n
+      \                    </ul>\r\n                </div>  \r\n                \r\n
+      \         </div>"
+    - 2013-09-03 15:27:00.000000000 Z
+    - 2013-09-05 04:26:39.000000000 Z
+  - - 87
+    - 87
+    - zh-CN
+    - "<div class=\"tips1_top\">\r\n                 <div class=\"tips1_middle_pic01\">\r\n
+      \                      <img src=\"/assets/img/tips-tips.png\" width=\"720\"
+      height=\"181\" />\r\n                 </div>                \r\n           </div>\r\n
+      \          <div class=\"tips1_middle\">\r\n                <div class=\"tips1_middle_01\">\r\n
+      \                      <div class=\"tips1_middle_pic01\">\r\n                             <img
+      src=\"/assets/img/days-protect.png\" width=\"68\" height=\"73\" />\r\n                       </div>\r\n
+      \                      <div class=\"tips1_middle_txt01\">日常护肤</div>\r\n                       <div
+      class=\"tips1_middle_txt02\">需注意的事项</div>\r\n                </div>\r\n                <div
+      class=\"tips1_middle_left01\">\r\n                       <div class=\"tips1_middle_left02\">\r\n
+      \                            <div class=\"tips1_middle_txt03\">夏季护理注意事项：</div>\r\n
+      \                      </div>\r\n                       <div class=\"tips1_middle_left05\">\r\n
+      \                            <ul>\r\n                                 <li>\r\n
+      \                                      油性和混合性皮肤要关注控油的工作，一周最好做两次深入清洁的周护理，当然，千万别因为出油而过度清洁，这样做也会破坏肌肤PH值，给细菌乘虚而入的机会。\r\n
+      \                                </li>\r\n                                 <li>\r\n
+      \                              干性皮肤要更为注重保湿，流汗并不代表皮肤处于湿润状态，汗水蒸发后，表皮会更为干燥。\r\n
+      \                                </li>\r\n                            </ul>\r\n
+      \                      </div>\r\n                </div>\r\n                <div
+      class=\"tips1_middle_right01\">\r\n                        <img src=\"/assets/img/summer-pro-without-shadow.png\"
+      width=\"276\" height=\"210\" />\r\n                </div>\r\n                <div
+      class=\"tips1_middle_left06\">\r\n                        <img src=\"/assets/img/autumn-pro-only-without-shadow.png\"
+      width=\"276\" height=\"210\" />\r\n                </div>\r\n                <div
+      class=\"tips1_middle_right02\">\r\n                       <div class=\"tips1_middle_left02\">\r\n
+      \                            <div class=\"tips1_middle_txt03\">秋季护理注意事项：</div>\r\n
+      \                      </div>\r\n                       <div class=\"tips1_middle_right03\">\r\n
+      \                             <div class=\"tips1_middle_txt04\">美白防晒是一年四季的功课，千万不能\"三天打渔，两天晒网\"，夏季虽然过去，秋季还要坚持，秋冬季是重要的美白时机，如能及时的将夏季遗留下的黑色素分解，就会预防和缓解色斑的出现。</div>\r\n
+      \                            <div class=\"tips1_middle_txt04\">秋季也是特别适合\"进补\"的时节，在日常护理后，可以特别加入精华的护理，保护好肌底，秋季干燥阴冷，油脂，汗液分泌减少，需注意加强保湿，让皮肤喝饱水。</div>\r\n
+      \                      </div>\r\n                </div>\r\n                <div
+      class=\"tips1_middle_left07\">\r\n                       <div class=\"tips1_middle_left02\">\r\n
+      \                            <div class=\"tips1_middle_txt03\">卸妆注意事项：</div>\r\n
+      \                      </div>\r\n                      <div class=\"tips1_middle_left10\">\r\n
+      \                            <ul>\r\n                                    <li>\r\n
+      \                                         卸妆顺序：先卸除眼部、唇部的彩妆，再卸除脸部全部妆容。\r\n                                    </li>\r\n
+      \                                   <li>\r\n                                          卸妆前：要保持手和脸部干燥，以免减弱油分融合化妆品的能力。\r\n
+      \                                   </li>\r\n                                    <li>\r\n
+      \                                         卸妆后：不要让卸妆产品在皮肤上停留太久，以温水冲洗，之后再用洗面乳清洗一次，再用爽肤液对肌肤做最后的清洁。\r\n
+      \                                   </li>\r\n                            </ul>\r\n
+      \                     </div>\r\n                </div>\r\n                <div
+      class=\"tips1_middle_right04\">\r\n                       <img src=\"/assets/img/take-off-the-dress.png\"
+      width=\"230\" height=\"200\" />\r\n                </div>\r\n                <div
+      class=\"tips1_middle_left11\">\r\n                       <div class=\"tips1_middle_left02\">\r\n
+      \                            <div class=\"tips1_middle_txt03\">去角质注意事项：</div>\r\n
+      \                      </div>\r\n                       <div class=\"tips1_middle_left10\">\r\n
+      \                            <ul>\r\n                                     <li>\r\n
+      \                                            不是每个人都需要去角质\r\n                                     </li>\r\n
+      \                                    <li>\r\n                                            不可过度去角质\r\n
+      \                                    </li>\r\n                            </ul>\r\n
+      \                      </div>\r\n                </div>\r\n                <div
+      class=\"tips1_middle_left12\">\r\n                       <div class=\"tips1_middle_left02\">\r\n
+      \                            <span class=\"tips1_middle_txt03\">清洁注意事项：</span>\r\n
+      \                      </div>\r\n                        <div class=\"tips1_middle_left13\">\r\n
+      \                            <ul>\r\n                                   <li>\r\n
+      \                                        首先必须把手洗净，否则洗面乳都拿来洗手了，泡沫型的洗面乳也无法揉搓出丰富的泡沫。
+      \r\n                                   </li>\r\n                                   <li>\r\n
+      \                                        将洗面乳以螺旋状在面部轻轻按摩30″～1′,不可让清洁剂在脸部停留过久；油脂多的部位可重点多按摩一会儿,然后以流水冲洗干净。\r\n
+      \                                  </li>\r\n                                   <li>\r\n
+      \                                        不要用毛巾用力擦脸，而要用轻按方式将水拭干。\r\n                                   </li>\r\n
+      \                          </ul>\r\n                      </div>\r\n                </div>\r\n
+      \               <div class=\"tips1_middle_left14\">\r\n                       <img
+      src=\"/assets/img/notice-the-tips.png\" width=\"250\" height=\"230\" />\r\n
+      \               </div>\r\n                <div class=\"tips1_middle_right05\">\r\n
+      \                       <div class=\"tips1_middle_right06\">\r\n                            <ul>\r\n
+      \                                 <li>\r\n                                         洗脸的合适水温应在34゜C左右，用手试有温热感，但不觉得烫。水温过冷对皮肤
+      有收敛作用，但皮肤清洁会不彻底；水温过热有镇痛和扩张毛细血管的作用，但经常使用会使皮肤脱脂，皮肤变得松弛、出现皱纹。较推荐使用温水和冷水交替清洗法，温水清洗，最后用冷水冲洗，冷热交替可促进血液循环，增强皮肤呼吸。\r\n
+      \                                 </li>\r\n                                  <li>\r\n
+      \                                        不宜过度频繁洗脸，早晚各一次即可，油性皮肤夏季可酌情增加一次。\r\n
+      \                                 </li>\r\n                            </ul>\r\n
+      \                      </div>\r\n                       <div>\r\n                             <img
+      class=\"tips1_middle_pic02\" src=\"/assets/img/notice-the-tips-grass.png\" width=\"426\"
+      height=\"56\" />\r\n                       </div>\r\n                </div>\r\n
+      \          </div>\r\n           <div class=\"tips1_bottom\">\r\n                <div
+      class=\"tips1_bottom_01\">\r\n                       <div class=\"tips1_bottom_pic01\">\r\n
+      \                           <img src=\"/assets/img/steps-protect.png\" width=\"68\"
+      height=\"73\" />\r\n                       </div>\r\n                       <div
+      class=\"tips1_bottom_txt01\">护肤步骤</div>\r\n                       <div class=\"tips1_middle_txt02\">正确护肤步骤</div>\r\n
+      \               </div>\r\n                <div class=\"tips1_bottom_left01\">\r\n
+      \                      <div class=\"tips1_middle_left02\">\r\n                             <div
+      class=\"tips1_middle_txt03\">夏季护理注意事项：</div>\r\n                       </div>\r\n
+      \                      <div class=\"tips1_bottom_left02\">\r\n                             <ul>\r\n
+      \                                 <li>\r\n                                        每日步骤：清洁、爽肤、均衡滋润、保护\r\n
+      \                                 </li>\r\n                                  <li>\r\n
+      \                                       周护理步骤：可在清洁完毕后，涂抹面膜达到调整肌肤纹理\r\n                                  </li>\r\n
+      \                            </ul>\r\n                       </div>\r\n                       <div
+      class=\"tips1_bottom_left02\">\r\n                             <span class=\"tips1_middle_txt04\">产品使用顺序通用原则：由稀到厚，一般依次为：水-精华-露-乳-霜</span>\r\n
+      \                      </div>\r\n                </div>\r\n                <div
+      class=\"tips1_bottom_right01\">\r\n                       <img src=\"/assets/img/the-step-of-pro.png\"
+      width=\"285\" height=\"250\" />\r\n                </div>\r\n                <div
+      class=\"tips1_bottom_left03\">\r\n                       <img src=\"/assets/img/the-step-of-pro-face.png\"
+      width=\"250\" height=\"216\" />\r\n                </div>\r\n                <div
+      class=\"tips1_bottom_right02\">\r\n                       <div class=\"tips1_bottom_pic02\">\r\n
+      \                             <img src=\"/assets/img/the-step-of-pro-face-right-leaves.png\"
+      width=\"200\" height=\"50\" />\r\n                       </div>\r\n                       <div
+      class=\"tips1_bottom_right03\">\r\n                             <a class=\"tips_bottom_txt\">更多美肤养成秘技</a>\r\n
+      \                      </div>\r\n                       <div class=\"tips1_bottom_pic03\"><img
+      src=\"/assets/img/right-angle-green.jpg\" width=\"5\" height=\"10\" /></div>\r\n
+      \               </div>\r\n           </div>"
+    - 2013-09-03 15:41:59.000000000 Z
+    - 2013-09-03 15:41:59.000000000 Z
+  - - 88
+    - 88
+    - zh-CN
+    - "<div class=\"tips1_top\">\r\n                <div class=\"tips1_middle_pic01\">\r\n
+      \                      <img src=\"/assets/customer-voice_10.jpg\" height=\"181\"
+      width=\"720\" />\r\n                 </div>              \r\n           </div>
+      \r\n           <div class=\"customer_top\">\r\n                 <div class=\"customer_top_left\">\r\n
+      \                      <img src=\"/assets/img/customer-letter.png\" height=\"190\"
+      width=\"190\" />\r\n                 </div>\r\n                 <div>\r\n                       <div
+      class=\"customer_top_right01\">\r\n                            <div class=\"customer_top_txt01\">因为是直接在皮肤上使用的东西，所以怀着\"制作能让顾客持久爱用的产品\"的理念，用心制作，迎来上市销售后的第22个年头。对广大顾客表示衷心感谢。</div>\r\n
+      \                      </div>\r\n                       <div class=\"customer_top_right02\">\r\n
+      \                            <div class=\"customer_top_txt01\">许多顾客非常喜欢使用我们的产品,分享了很多快乐的声音给我们。虽然不多，下面就来分享一下这些客户发自内心的想法。</div>\r\n
+      \                            <div class=\"customer_top_txt01\">※ 以下为顾客实际撰写的内容。</div>\r\n
+      \                      </div>\r\n                       <div class=\"customer_top_right03\">\r\n
+      \                             <div class=\"customer_top_txt01\">(各位真的写得很认真呢。太感谢大家了！！)</div>\r\n
+      \                            <div class=\"customer_top_txt01\">今后也请大家多多关照，继续使用我们的产品。</div>\r\n
+      \                      </div>\r\n                       <div class=\"customer_top_right04\">\r\n
+      \                             <div class=\"customer_top_txt02\">等候各位发表您的声音！请大家多多投稿吧！！</div>\r\n
+      \                      </div>\r\n                 </div>\r\n           </div>
+      \r\n           <div class=\"tabbed_area\">\r\n                 <div class=\"tabs\">\r\n
+      \                      <ul>\r\n                               <li><a id=\"tab_1\"
+      class=\"active\">保湿润泽乳霜</a>\r\n</li>\r\n                               <li><a
+      id=\"tab_2\">清爽洁面啫喱</a>\r\n</li>\r\n                               <li><a id=\"tab_3\">去角质亮肤啫喱</a>\r\n</li>\r\n
+      \                      </ul>\r\n                 </div>\r\n                 <div
+      class=\"customer_middle\">\r\n                       <div id=\"content_1\">
+      \ \r\n                              <div class=\"content_1_1\">\r\n                                    <div
+      class=\"content_1_1_left\" style=\"margin-top:19px;\">\r\n                                         <div
+      class=\"content_1_pic01\">\r\n                                          <img
+      src=\"/assets/customer-voice-19.jpg\" /></div>\r\n                                    </div>
+      \r\n                                    <div class=\"content_1_1_right\">\r\n
+      \                                         <h3>東京都　Takada maya(21) </h3>\r\n
+      \                                         <h3>[ 能遇见这么好的商品，真是太好了 ]</h3>\r\n                                          <p>到冬天的话脸特别是嘴巴周围特别干燥，像是涂了层粉一般，特别苦恼，我的义母给我推荐了Home
+      Cream。实际试着使用之后，之前的干燥一下子就神奇地消失了，之前那么干燥的肌肤，整年都能保持滋润。这么好的商品，就把它推荐给了母亲和祖母，他们也非常喜欢，放弃了使用了几十年的化妆水和乳液，而改为使用此款Home
+      Cream了。能遇见这么好的商品，真是太好了。 </p>\r\n                                     </div>
+      \  \r\n                                     <div style=\"clear:both\"></div>
+      \                                \r\n                              </div>\r\n
+      \                             <div class=\"content_1_2\">\r\n                                     <div
+      class=\"content_1_1_left\">\r\n                                         <div
+      class=\"content_1_pic01\">\r\n                                          <img
+      src=\"/assets/customer-voice_23.jpg\" /></div>\r\n                                     </div>\r\n
+      \                                    <div class=\"content_1_1_right\">\r\n                                           <h3>山口县　Shibata
+      eri(42)  </h3>\r\n                                           <h3>[ 朋友夸我皮肤好呢！
+      ]</h3>\r\n                                           <p>朋友夸我「肌肤紧致，小皱纹很少」。</p>\r\n
+      \                                          <p>我每次都涂抹很多Home Cream。</p>\r\n                                           <p>替换装的话性价比很高，很喜欢。</p>\r\n
+      \                                    </div>\r\n                                     <div
+      style=\"clear:both\"></div>\r\n                              </div> \r\n                                <div
+      class=\"content_1_1\">\r\n                                    <div class=\"content_1_1_left\">\r\n
+      \                                         <div class=\"content_1_pic01\">\r\n
+      \                                         <img src=\"/assets/customer-voice_25.jpg\"
+      /></div>\r\n                                    </div> \r\n                                     <div
+      class=\"content_1_1_right\">\r\n                                          <h3>埼玉县　Tuchiya
+      sayuri(36)</h3>\r\n                                          <h3>[ 最适合怕麻烦的我啦！
+      ]</h3>\r\n                                          <p>洗完澡、洗完脸后，只需这一瓶就够了，最适合怕麻烦的我啦（笑）。抱着小宝宝的时候，使用按压装的话只要用一只手轻轻一按就能涂抹了…我的肌肤很干燥，一到冬天或者季节更替的时候，总是要去皮肤科看医生，皮肤和脖子周围也会有干燥的时候，用了2年之后，再也不用去皮肤科了，冬天的肌肤也不干燥了。尽情使用的话价格也很令人满意！</p>\r\n
+      \                                    </div>  \r\n                                     <div
+      style=\"clear:both\"></div>                                  \r\n                              </div>
+      \r\n                                <div class=\"content_1_2\">\r\n                                     <div
+      class=\"content_1_1_left\">\r\n                                          <div
+      class=\"content_1_pic01\">\r\n                                          <img
+      src=\"/assets/customer-voice_27.jpg\" /></div>\r\n                                     </div>\r\n
+      \                                    <div class=\"content_1_1_right\">\r\n                                           <h3>奈良县　Yamaguchi
+      sakura(30)  </h3>\r\n                                           <h3>[ 家里人都很喜欢用它来护理肌肤！
+      ]</h3>\r\n                                           <p>老公肌肤很干燥，为此很是烦恼，很多年来一直在寻找能温柔滋润肌肤的乳液，直到遇见了温和的简妮产品！有一次碰见老家的老妈正好在用，她强烈推荐我一定要试试看，所以就开始使用了。使用之后，老公和宝宝都会在洗完澡后涂抹，一家人用的不亦可乎。现在已经成了家人微笑护肤的必备品，我每天的化妆也更加令人期待呢。老公的肌肤比起之前虽然谈不上完美改善，但是干燥粗糙的情况已经大有改善呢。</p>\r\n
+      \                                          <p>今后也会继续使用的。</p>\r\n                                     </div>\r\n
+      \                                    <div style=\"clear:both\"></div>\r\n                              </div>\r\n
+      \                              <div class=\"content_1_1\">\r\n                                    <div
+      class=\"content_1_1_left\">\r\n                                          <div
+      class=\"content_1_pic01\">\r\n                                          <img
+      src=\"/assets/customer-voice_29.jpg\" /></div>\r\n                                    </div>
+      \r\n                                    <div class=\"content_1_1_right\">\r\n
+      \                                         <h3>北海道　Watabane naomi（46）</h3>\r\n
+      \                                         <h3>[ 今后又多了一个喜爱简妮的理由呢！ ]</h3>\r\n
+      \                                         <p>只需一个产品就能完成护肤，方便简单，我已经持续用了10年了。现在只要不涂抹的话，我和肌肤都会觉得有些缺少些什么呢。涂抹后的润泽感，直到第二天也能保持滋润，一点也不干燥紧绷。老公和小孩每天早晚也会使用，一家人整个冬天都没有肌肤干燥的感觉呢。</p>\r\n
+      \                                         <p>今后也会一直使用下去的！！</p>\r\n                                     </div>
+      \         \r\n                                     <div style=\"clear:both\"></div>
+      \                               \r\n                              </div> \r\n
+      \                            <div class=\"content_1_2\">\r\n                                     <div
+      class=\"content_1_1_left\">\r\n                                          <div
+      class=\"content_1_pic01\">\r\n                                          <img
+      src=\"/assets/customer-voice-31.jpg\" /></div>\r\n                                     </div>\r\n
+      \                                   <div class=\"content_1_1_right\">\r\n                                           <h3>千叶县　Masuda
+      seiko（50）</h3>\r\n                                           <h3>[ 我最必不可少的必需品！
+      ]</h3>\r\n                                           <p>肌肤干燥让我很是苦恼，尝试了很多种产品都不能让我满意。一个朋友向我推荐了这款产品，第一次用的瞬间便感觉\"太神奇了！！\"。之前的肌肤问题一扫而空。这款Home
+      Cream已经是我生存下去的必需品了呢。</p>\r\n                                           <p>作为礼物送给73岁的母亲的时候,\"第一次有这种感觉！！真不错！！\"，她也很开心。化完妆的时候，在需要留意的地方稍微涂抹后，不容易掉妆，持续滋润。</p>\r\n
+      \                                    </div>\r\n                                     <div
+      style=\"clear:both\"></div>\r\n                             </div> \r\n                             <div
+      class=\"content_1_1\">\r\n                                    <div class=\"content_1_1_left\">\r\n
+      \                                         <div class=\"content_1_pic01\">\r\n
+      \                                         <img src=\"/assets/customer-voice_33.jpg\"
+      /> </div>\r\n                                                                        </div>\r\n
+      \                                   <div class=\"content_1_1_right\">\r\n                                          <h3>愛知县　Ichikawa
+      hiroko（45）</h3>\r\n                                          <h3>[ 持续用了２０多年！
+      ]</h3>\r\n                                          <p>进入公司的20多年前开始就一直有在用。</p>\r\n
+      \                                         <p>使用简单，护肤效果也很好，向周围4个朋友都介绍了，都很喜欢。</p>\r\n
+      \                                         <p>今后也会继续使用的。</p>\r\n                                    </div>
+      \       \r\n                                    <div style=\"clear:both\"></div>
+      \                            \r\n                            </div>\r\n                             <div
+      class=\"content_1_2\">\r\n                                     <div class=\"content_1_1_left\">\r\n
+      \                                         <div class=\"content_1_pic01\">\r\n
+      \                                         <img src=\"/assets/customer-voice_35.jpg\"
+      /></div>\r\n                                                                         </div>\r\n
+      \                                   <div class=\"content_1_1_right\">\r\n                                           <h3>宮城县　Igawa
+      riko（35）</h3>\r\n                                           <h3>[ 家里人都很喜欢用 ]</h3>\r\n
+      \                                          <p>家里人都很喜欢用。</p>\r\n                                           <p>儿子出生的时候，朋友把这款产品作为礼物送给我，于是今后就一直用到现在。</p>\r\n
+      \                                          <p>听说宝宝也能用，于是马上就给宝宝试着涂抹了，现在到了中学，也会每天涂抹。</p>\r\n
+      \                                          <p>多亏了这个产品，连青春痘都没有发过，周围的妈妈们都来打听肌肤护理的诀窍呢。</p>\r\n
+      \                                          <p>我自己也在生完小孩后，身体变得非常干燥，涂抹在全身之后效果非常好，于是就再也放不下了。</p>\r\n
+      \                                          <p>最近也开始在干燥的头发上使用，比起润发素更加舒适，非常喜欢。</p>\r\n
+      \                                          <p>也给长期卧床需要照料的父亲洗完澡、洗完脸后使用，正式这个原因，护工和护士们都夸赞我父亲的皮肤好，也没有发生褥疮的症状。</p>\r\n
+      \                                          <p>母亲也在做淋巴按摩的时候使用，使用质地舒适，也没有令人厌烦的香味（母亲对香味过敏）</p>\r\n
+      \                                          <p>肌肤性质差的母亲有持续使用，一点问题也没有。</p>\r\n
+      \                                          <p>当然，老公在剃须的时候或是洗脸、洗澡后使用，连出差的时候都带着。</p>\r\n
+      \                                          <p>能遇到Home Cream这款产品是在太好了。</p>\r\n
+      \                                    </div>\r\n                                     <div
+      style=\"clear:both\"></div>\r\n                              </div>                      \r\n
+      \                      </div>\r\n                 </div>\r\n           \r\n
+      \         </div> "
+    - 2013-09-03 15:45:14.000000000 Z
+    - 2013-09-13 03:20:39.000000000 Z
+  - - 89
+    - 89
+    - zh-CN
+    - "<div class=\"classcontent_top\">\r\n                <img src=\"/assets/teacher_01_08.jpg\"
+      height=\"324\" width=\"720\" />\r\n                <div class=\"classcontent_top01\">\r\n
+      \                     最新·护肤妙招\r\n                </div>\r\n                <div
+      class=\"rightclass_middle_left\">\r\n                      <img class=\"rightclass_middle_pic01\"
+      src=\"/assets/img/MissJu-days-dress.png\" height=\"182\" width=\"170\" />\r\n
+      \               </div>\r\n                <div class=\"rightclass_middle_right\">\r\n
+      \                     <div class=\"rightclass_middle_right01\">\r\n                             <div
+      class=\"rightclass_middle_right02\">\r\n                                   <span
+      class=\"rightclass_middle_txt01\">保湿潤いケアの重要性</span>\r\n                             </div>\r\n
+      \                            <div class=\"rightclass_middle_right03\">\r\n                                   <span
+      class=\"rightclass_middle_txt02\">new!</span>\r\n                             </div>\r\n
+      \                     </div>\r\n                      <div class=\"rightclass_middle_right04\">
+      \                          \r\n                             <div class=\"rightclass_middle_txt03\">季節が変わる時期、お肌は乾燥しがちになるもの。またお肌が乾燥しすぎると、むず痒さすら感じる程、敏感になる場合があります。お肌にとって「保湿潤いケア」とは、何より一番先に解決しなければならない問題です。まずは「保湿潤いケア」から、その後にやっと「美白・吹出物ケア」が可能になります。<br
+      />&#160;「保湿ケア」では、保湿成分を含んだブロック力の強いクリームにて、水分や油分が不足している部分へすばやく浸透させ、バランスのとれた肌にします。「潤いケア」では、肌の乾燥がもたらす不調を和らげ、肌の新陳代謝と水分キープ力をアップさせることで、たるみや水分流出を防ぎ、小ジワやシワの発生を減少させ、しっとり滑らかでハリと潤いのある美肌にします。<br
+      />\r\n <p class=\"rightclass_middle_txt01\">【译文】保湿补水的重要性</p>\r\n<br />换季的时候，肌肤变得异常干燥，甚至会感到涩痒难忍继而出现敏感征兆，保湿补水是一切问题肌肤首要解决的问题。只有做好保湿补水工作，才能进一步为美白和祛痘打下基础。<br
+      />\r\n保湿要抹添加保湿成分、防护性强的面霜，将水份与油份恰如其分地释放至肌肤所需部位，快速渗透至肌肤底层，帮助皮肤达成最佳的水油平衡。\r\n补水可以缓解干燥带来的不适，增强细胞活力，有效锁住水分，避免皮肤保护层内弹性及水分的流失，使皮肤湿润光滑，时刻柔软舒适，减少细纹及皱纹的出现，缔造润泽美肌。</div>\r\n
+      \                     </div>\r\n\r\n                </div>\r\n           </div>\r\n
+      \          <div class=\"classcontent_middle\">\r\n                <div class=\"classcontent_middle_left\">\r\n
+      \                     <img src=\"/assets/img/Miss-course-three-pic-3.png\" height=\"170\"
+      width=\"176\" />\r\n                </div>\r\n                <div class=\"classcontent_middle_right\">\r\n
+      \                    <div class=\"classbox\">\r\n                          <span
+      class=\"bot\"></span>\r\n                          <span class=\"top\"></span>\r\n
+      \                         <div class=\"classcontent_middle_right01\">\r\n                                 秋季スキンケアの注意点\r\n
+      \                         </div>\r\n                           <div class=\"classcontent_middle_right02\">\r\n
+      \                                \r\n                          </div>\r\n                          <div
+      class=\"rightclass_middle_txt03\">\r\n                                「美白＆日焼け対策」とは、四季一年を通した課題です。決して「三日坊主」で片付けてはいけません。夏季は過ぎましたが、引き続き秋季も対策が必要です。特に「秋冬の美白対策」は重要なポイントに！この時期に、夏のメラニン色素を排除（抑制・還元・排出）することが出来れば、シミやソバカスの予防になります。また同時に、秋季は「スペシャルケア」に恰好の時期、日常ケアの後、美容液をプラスして、角質層まで十分にケアをしてあげましょう。秋季の乾燥した空気の冷たさは、肌の油分分泌を促し、反対に汗の分泌を減らしてしまいます。ですから、特に保湿と水分補給に注意し、潤いのある美肌をキープしましょう。\r\n<br
+      /><p style=\"color: rgb(110, 185, 43); font-size: 14px;\">【译文】秋季护理注意事项</p>\r\n美白防晒是一年四季的功课，千万不能“三天打渔，两天晒网”，夏季虽然已经过去，但秋季还要继续坚持，秋冬季是重要的美白时机，如能及时的将夏季遗留下的黑色素分解，就能预防和缓解色斑的出现。<br
+      /><br />\r\n秋季也是特别适合“进补”的时节，在日常护理后，可以特别加入精华的护理，保护好肌底。由于秋季的气候干燥阴冷，使得肌肤的油脂，汗液分泌也相对减少，所以需注意加强对肌肤保湿，让皮肤喝饱水份，时刻保持水润美肌。\r\n
+      \                         </div>\r\n                          \r\n                      </div>\r\n
+      \               </div>\r\n           </div>\r\n           <div class=\"classcontent_middle\">\r\n
+      \               <div class=\"classcontent_middle_left\">\r\n                      <img
+      src=\"/assets/img/Miss-course-three-pic-2.png\" height=\"170\" width=\"176\"
+      />\r\n                </div>\r\n                <div class=\"classcontent_middle_right\">\r\n
+      \                     <div class=\"classbox\">\r\n                          <span
+      class=\"bot\"></span>\r\n                          <span class=\"top\"></span>\r\n
+      \                         <div class=\"classcontent_middle_right01\">\r\n                                 洗顔時の注意点\r\n
+      \                         </div>\r\n                          <div class=\"rightclass_middle_txt03\">\r\n
+      \                               「洗顔」は、誰もが毎日行うことですが、美肌ケアの前の、最も重要なステップでもあります。では、どのような洗顔方法が正しいのか？　まずはじめに、手を洗い清潔にしましょう。そうでなければ、洗顔フォームで手を洗うことになってしまいます。「泡立てるタイプの洗顔料」は、手のひらで十分に泡立ててから顔に乗せ、30秒ほど螺旋状にやさしく手を滑らせて毛穴の汚れを落とします。テカリや吹き出物が出やすいTゾーンについても、力を入れてこすらないで下さい。「泡立てないタイプの洗顔料」は、そのまま直接顔に塗り、下から上へ内から外へ向けて顔全体に広げ、それから30秒ほど指の腹を使って軽く叩くようにマッサージをします。油分の出やすい部分は、少し念入りにマッサージしても良いでしょう。　その後はどちらの場合も、十分な水量（流水）で完全に洗顔料を洗い流しをしましょう。　尚、多くの人がやりがちな「タオルを使った洗顔後の水分ふき取り」ですが、そもそもタオルの繊維は毛穴よりも大きいので毛穴の汚れはふき取れませんし、肌を傷つけてしまう可能性がありますので、擦らず、軽く顔に押し付けて水分を取り除いてあげて下さい。<br
+      />\r\n<p style=\"color: rgb(110, 185, 43); font-size: 14px;\">【译文】清洁注意事项</p>\r\n洗脸，是每个人每天必须做的事情。脸部清洁绝对是保养之前最重要的步骤，那么，如何清洁面部才是正确的呢？首先必须把手洗净，否则洗面乳都用来洗手了，有泡沫的洗面乳可以先把洁面乳在手心充分打起泡沫，T字区非常容易出油、长痘痘，但是不能因此就用力揉搓，以螺旋状在面部轻轻按摩30秒左右，除去毛孔中的污垢；无泡沫的洗面乳可以直接涂在脸上，然后轻用手指指腹轻拍面部30秒左右，由下到上，由内到外，让洗面乳遍及整个面部，油脂多的部位可重点按摩，然后以流水冲洗干净；大多数人在洁面后选择用毛巾将面部拭干，由于毛巾圈绒比毛孔还大，很难清除皮肤深处的污垢、油脂，反而会让皮肤有受伤的可能性。所以不建议用毛巾用力擦脸，而是要用轻按方式将水拭干。&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;
+      </div>\r\n</div>\r\n</div>\r\n           </div>"
+    - 2013-09-03 15:53:04.000000000 Z
+    - 2013-09-12 16:10:59.000000000 Z
+  - - 91
+    - 91
+    - zh-CN
+    - "<div class=\"rightclass_middle\">\r\n                <div class=\"rightclass_middle_left\">\r\n
+      \                     <img class=\"rightclass_middle_pic01\" src=\"/assets/img/MissJu-days-dress.png\"
+      height=\"182\" width=\"170\" />\r\n                </div>\r\n                <div
+      class=\"rightclass_middle_right\">\r\n                      <div class=\"rightclass_middle_right01\">\r\n
+      \                            <div class=\"rightclass_middle_right02\">\r\n                                   <span
+      class=\"rightclass_middle_txt01\">在这个季节，你的肌肤是否有问题？</span>\r\n                             </div>\r\n
+      \                            <div class=\"rightclass_middle_right03\">\r\n                                   <span
+      class=\"rightclass_middle_txt02\">new!</span>\r\n                             </div>\r\n
+      \                     </div>\r\n                      <div class=\"rightclass_middle_right04\">\r\n
+      \                            <div class=\"rightclass_middle_txt03\">在有空调的室内肌肤很干燥，会像在沙漠中想立刻给肌肤补充水份的感觉。</div>\r\n
+      \                            <div class=\"rightclass_middle_txt03\">室外非常闷热，肌肤上因为汗水，油脂变得油光发亮了。</div>\r\n
+      \                            <div class=\"rightclass_middle_txt03\">强烈的阳光和紫外线让肌肤感到干燥，防晒霜对肌肤的不适应的原因也有。</div>\r\n
+      \                            <div class=\"rightclass_middle_txt03\">室内室外的温差使肌肤疲惫不堪，恶劣的环境让肌肤变得很粗糙。</div>\r\n
+      \                     </div>\r\n                      <div class=\"rightclass_middle_right05\">\r\n
+      \                            <img src=\"/assets/img/MissJu-days-comic.png\"
+      height=\"90\" width=\"468\" />\r\n                      </div>\r\n                      <div
+      class=\"rightclass_middle_right06\">\r\n                             <div class=\"rightclass_middle_txt03\">使肌肤保持滋润水盈</div>\r\n
+      \                            <div class=\"rightclass_middle_txt03\">室外湿度高，黏糊糊的，所以在室内的空调环境下肌肤会变得干燥。</div>\r\n
+      \                            <div class=\"rightclass_middle_txt03\">这样的温差，湿度差的环境更会让肌肤疲惫不堪。</div>\r\n
+      \                            <div class=\"rightclass_middle_txt03\">使用nature
+      home creamEX每天护肤，能调整肌肤的平衡，是肌肤滋润水盈。</div>\r\n                      </div>\r\n
+      \                     <div class=\"rightclass_middle_right07\">\r\n                             <div
+      class=\"rightclass_middle_txt03\">nature home cream EX</div>\r\n                             <div
+      class=\"rightclass_middle_txt03\">注目成分--α-葡聚糖寡</div>\r\n                             <div
+      class=\"rightclass_middle_txt03\">健康肌肤中的常在菌和病菌的存在比例是很平衡的，维持着肌肤的健康。但是，一些外在的刺激引起病菌的增加造成各种肌肤问题。α-葡聚糖寡是促进常在菌活跃的成份，保持肌肤清洁。能将紊乱的肌肤环境调整成健康状态的一种令人注目的成份。</div>\r\n
+      \                     </div>\r\n                      <div>\r\n                             <img
+      src=\"/assets/img/MissJu-days-last-pic.png\" height=\"505\" width=\"350\" />\r\n
+      \                     </div>\r\n                </div>\r\n           </div>"
+    - 2013-09-03 15:59:24.000000000 Z
+    - 2013-09-10 05:16:04.000000000 Z
+  - - 92
+    - 92
+    - zh-CN
+    - "<div class=\"concept_middle_1\">\r\n                <img class=\"concept_middle_1_pic\"
+      src=\"/assets/about-concept01_10.jpg\" />\r\n           </div>\r\n           <div
+      class=\"concept_middle_2\">\r\n                 <div class=\"concept_midle_2_left\">\r\n
+      \                        <div class=\"concept_middle_2_left_top\">\r\n                               Feel
+      the nature,Feel the power of skin--感·本源之力\r\n                         </div>\r\n
+      \                        <div class=\"concept_middle_2_left_middle\">\r\n                               <p>【Feel
+      the Nature】--源自天然，信赖自然，引导肌肤由内而外焕发活力</p>\r\n                               <p>【Feel
+      the Power of Skin】--绝不添加肌肤不需要的成分，激发肌肤本源之力</p>\r\n                         </div>\r\n
+      \                        <div class=\"concept_middle_2_left_bottem\">\r\n                               没有任何多余成分，减轻肌肤负担，引导肌肤自我修复。从婴儿到老人，甚至肌肤敏感人群都可使用。简妮gelnic怀着“让任何人都能够安心使用”的美好愿望，将呵护肌肤的商品送到每一位顾客手中。\r\n
+      \                        </div>\r\n                 </div>\r\n                 <div
+      class=\"concept_midle_2_right\">\r\n                         <div class=\"concept_middle_2_right01\">\r\n
+      \                              <div class=\"concept_middle_2_right02\">\r\n\t\t\t\t\t\t\t
+      \       <div class=\"concept_middle_2_txt03\">\r\n                                          <p>造成肌肤问题的几大原因是？</p>
+      \r\n\t\t\t\t\t\t\t\t\t</div>   \r\n                               </div>\r\n
+      \                              <div class=\"concept_middle_2_txt04\">\r\n                                    <p>睡眠不足</p>\r\n
+      \                                   <p>生理周期</p>\r\n                                    <p>工作忙碌</p>\r\n
+      \                                   <p>卸妆不干净</p>\r\n                                    <p>恶劣环境、干燥环境</p>\r\n
+      \                                   <p>化妆品在脸上时间过长(加班的时候)</p>\r\n                               </div>\r\n
+      \                        </div>\r\n                         <div class=\"concept_middle_2_right03\">\r\n
+      \                              <img src=\"/assets/img/everysection-percent.png\"
+      height=\"137\" width=\"76\" />\r\n                         </div>\r\n                 </div>
+      \               \r\n           </div>\r\n           <div>\r\n                 <div
+      class=\"concept_middle_3_txt01\">简妮gelnic认为“不必要的东西”是？</div>\r\n                 <div
+      class=\"concept_middle_3_txt02\">\r\n\t\t\t\t      <p>以下这些成分在简妮gelnic的所有产品中绝对不会出现。</p>\r\n\t\t\t
+      \    </div>\r\n                 <img class=\"concept_middle_3_pic\" src=\"/assets/img/4circle-1st.png\"
+      height=\"80\" width=\"80\" />\r\n                 <img class=\"concept_middle_3_pic\"
+      src=\"/assets/img/4circle-2nd.png\" height=\"80\" width=\"80\" />\r\n                 <img
+      class=\"concept_middle_3_pic\" src=\"/assets/img/4circle-3rd.png\" height=\"80\"
+      width=\"80\" />\r\n                 <img class=\"concept_middle_3_pic\" src=\"/assets/img/4circle-4th.png\"
+      height=\"80\" width=\"80\" />\r\n                 <img class=\"concept_middle_3_pic\"
+      src=\"/assets/img/4circle-5th.png\" height=\"80\" width=\"80\" />                 \r\n
+      \                <div class=\"concept_middle_3_bottom\">\r\n\t\t\t\t       <div
+      class=\"concept_middle_3_txt03\">\r\n                           这种成分会分解皮肤的保护膜——皮脂膜，令肌肤变得敏感脆弱，无法进行自我保护和自行修复。\r\n\t\t\t\t\t
+      \  </div>\r\n                 </div>\r\n                 <div class=\"concept_middle_3_bottom\">\r\n\t\t\t\t
+      \      <div class=\"concept_middle_3_txt03\">\r\n                           由于黏着度过高，会堵塞我们的毛孔；另外，由于紫外线可以轻易穿透矿物油，肌肤也会受到紫外线辐射的影响。\r\n\t\t\t\t\t
+      \  </div>\r\n                 </div>\r\n                 <div class=\"concept_middle_3_bottom\">\r\n\t\t\t\t
+      \      <div class=\"concept_middle_3_txt03\">\r\n                           挥发性高，会带走肌肤的水分，导致肌肤干燥紧绷，另外，酒精成分也会造成敏感肌肤的不适。\r\n\t\t\t\t\t
+      \  </div>\r\n                 </div>\r\n                 <div class=\"concept_middle_3_bottom\">\r\n\t\t\t\t
+      \      <div class=\"concept_middle_3_txt03\">\r\n                           对肌肤没有任何好处的合成香料只会平添负担，长期积累会导致肌肤粗糙。\r\n\t\t\t\t\t
+      \  </div>\r\n                 </div>\r\n                 <div class=\"concept_middle_3_bottom\">\r\n\t\t\t\t
+      \     <div class=\"concept_middle_3_txt03\">\r\n                           如果焦油色素的含量过多，长期使用会造成色素沉淀，令脸色灰暗枯黄。\r\n\t\t\t\t\t
+      \ </div>\r\n                 </div>\r\n           </div>"
+    - 2013-09-03 16:28:29.000000000 Z
+    - 2013-09-10 05:27:12.000000000 Z
+  - - 93
+    - 93
+    - zh-CN
+    - "<div class=\"safety_middle_1\">\r\n              <div class=\"history_middle_1_top\">\r\n
+      \                   <img class=\"history_middle_1_pic\" src=\"/assets/img/logo_05.jpg\"
+      width=\"221\" height=\"104\" />\r\n                    <div class=\"history_middle_1_txt01\">Feel
+      the Nature, Feel the Power of Skin——感·本源之力</div>\r\n              </div>\r\n
+      \             <div class=\"history_middle_1_txt02\">\r\n                    gelnic始终追求\"最完美的品质\"，从原料的甄选、生产到品质检测的整个环节都严格控制，并使用先进完善的设备，确保最高的品质。\r\n
+      \             </div>\r\n           </div>\r\n           <div>\r\n                    <img
+      class=\"safety_middle_2_pic\" src=\"/assets/img/about-JN-safety.png\" width=\"662\"
+      height=\"430\" />\r\n           </div>"
+    - 2013-09-03 16:31:21.000000000 Z
+    - 2013-09-03 16:31:21.000000000 Z
+  - - 94
+    - 94
+    - zh-CN
+    - "<div class=\"story_middle_1\">\r\n              <div class=\"history_middle_1_top\">\r\n
+      \                   <img class=\"history_middle_1_pic\" src=\"/assets/img/logo_05.jpg\"
+      width=\"221\" height=\"104\" />\r\n                    <div class=\"history_middle_1_txt01\">Feel
+      the Nature, Feel the Power of Skin——感·本源之力</div>\r\n              </div>\r\n
+      \             <div class=\"history_middle_1_txt02\">\r\n                    简妮（gelnic）是创立于1986年的日本高级美容护肤品牌，自面世以来一直深受日本女士的喜爱。简妮gelnic秉持着“纯天然•无添加”的品牌理念，严格选择对肌肤不产生负担的高品质原料，注重\"渗透力\"与\"保湿力\"的完美平衡，真正做到\"敏感肌肤也可以使用\"，温和有效地帮助肌肤达到理想状态，令肌肤由内而外焕然新生。\r\n
+      \             </div>\r\n           </div>\r\n           <div>\r\n                    <div
+      class=\"story_middle_2\">\r\n                           <div class=\"story_middle_2_left\">\r\n
+      \                                品牌创始人\r\n                           </div>\r\n
+      \                          <div class=\"story_middle_2_right\">\r\n                                 因爱而生的美好品牌，历经27年传承，只为让她轻松维持美丽容颜。\r\n
+      \                          </div>\r\n                    </div>\r\n                    <div
+      class=\"story_middle_3\">\r\n                           <div class=\"story_middle_3_left\">\r\n
+      \                                <img class=\"story_middle_3_pic01\" src=\"/assets/img/about-JN-who-creat-JN.png\"
+      width=\"192\" height=\"260\" />\r\n                           </div>\r\n                           <div
+      class=\"story_middle_3_right01\">\r\n                                简妮，浓缩了一位丈夫对妻子的爱。\r\n
+      \                          </div>\r\n                           <div class=\"story_middle_3_right02\">\r\n
+      \                               上世纪80年代，日本国内掀起了一阵护肤美容浪潮；当时涌现出了大量美肤品牌，令人目不暇接，选择起来也非常苦恼。山崎敬三先生发现，自己的妻子每天都要用大量时间来美容护肤，同时仍然要操持繁重家务，也因此疲惫不堪；有没有只需要一个步骤就能完成所有肌肤护理的产品呢？山崎敬三先生咨询了很多皮肤科医生和专家，对肌肤的构造、机能原理以及水分进行了透彻分析；最终成功研发出了一种啫喱状保湿乳霜；山崎夫人亲自试用后，感到非常惊喜，便推广给自己的朋友，得到了一致好评。\r\n
+      \                          </div>\r\n                    </div>\r\n                    <div
+      class=\"story_middle_4\">\r\n                           <div class=\"story_middle_4_left\">\r\n
+      \                               <div class=\"story_middle_5\">\r\n                                     品牌创始人山崎敬三先生及夫人\r\n
+      \                               </div>                           \r\n                                <div
+      class=\"story_middle_6\">\r\n                                     品牌诞生初期，简妮邀请了美发沙龙的洗发小姐们试用，她们常年被化学\r\n
+      \                               </div>\r\n                                <div
+      class=\"story_middle_7\">\r\n                                     品侵蚀的双手迅速感受到这款乳霜的强大保湿修复能力；这个消息不胫而走，在美容沙龙中引爆了一阵抢购热潮，时至今日，它仍然是美容院及美发沙龙中最受推崇的单品之一。\r\n
+      \                               </div>\r\n                                <div
+      class=\"story_middle_8\">\r\n                                     山崎敬三先生根据大量用户反馈，对产品成分进行了数次优化，在这种精益求精的认真态度下，极少投放广告的简妮gelnic品牌在日本护肤品界赢得了至高的口碑，至今27年，简妮由爱而生的初衷未改，品质依然。\r\n
+      \                               </div>\r\n                                <div
+      class=\"story_middle_9\">\r\n                                     倾注自然护肤二十余载，简妮荣获国民级卓越贡献\r\n
+      \                               </div>\r\n                                <div
+      class=\"story_middle_10\">\r\n                                     山崎敬三先生常年精心研究皮肤构造，探寻肌肤真正所需成分。因为对啫喱类产品的不断研究和对产业所做的贡献，山崎敬三先生荣获由日本文化振兴协会颁发的\"社会文化贡献奖\"。\r\n
+      \                               </div>\r\n                                <div
+      class=\"story_middle_11\">\r\n                                     <img class=\"story_middle_4_pic01\"
+      src=\"/assets/img/aword-present.png\" width=\"457\" height=\"149\" /></div>\r\n
+      \                               </div>\r\n                           </div>\r\n
+      \                          <div class=\"story_middle_4_right\">\r\n                                <img
+      class=\"story_middle_4_pic02\" src=\"/assets/img/manager-of-JN.png\" width=\"130\"
+      height=\"180\" />\r\n                                <div class=\"story_middle_12\">\r\n
+      \                                    <p>gelnic株式会社董事长</p>\r\n                                     <p>山崎美和子女士</p>\r\n
+      \                               </div>\r\n                                <div
+      class=\"story_middle_13\">\r\n                                     <img class=\"story_middle_4_pic02\"
+      src=\"/assets/img/the-present.png\" width=\"112\" height=\"230\" />\r\n                                </div>\r\n
+      \                          </div>\r\n                    </div>\r\n                    <div>\r\n
+      \                        <div class=\"story_middle_14_left\">\r\n                                <div
+      class=\"story_middle_14_txt01\">*</div>\r\n\t\t\t\t\t\t\t\t<div>社会文化贡献奖</div>\r\n
+      \                        </div>\r\n                         <div class=\"story_middle_14_right\">\r\n
+      \                               <p>由日本文化振兴协会发起的奖项，评选出各行业的优秀人才或对日本文化事业的振兴作出显著贡献的人士，经过评委会严格筛选，只在每年上半年和下半年各评选1位获奖者授予奖项，在日本民间被称为最具荣耀意义的奖项之一。</p>\r\n
+      \                        </div>\r\n                    </div>\r\n                     <div>\r\n
+      \                        <div class=\"story_middle_14_left\">\r\n                                <div
+      class=\"story_middle_14_txt01\">*</div>\r\n\t\t\t\t\t\t\t\t<div>日本文化振兴协会</div>\r\n
+      \                        </div>\r\n                         <div class=\"story_middle_14_right\">\r\n
+      \                               <p>由原日本皇族、43任内阁总理大臣東久邇稔彦先生在1971年创立的国际文化交流团体。现由原皇族伏見博明先生任总裁，致力于各种日本文化振兴及国际文化交流活动。</p>\r\n
+      \                        </div>\r\n\t\t\t\t\t \r\n\t\t </div>"
+    - 2013-09-03 16:47:06.000000000 Z
+    - 2013-09-05 04:22:42.000000000 Z
+  - - 95
+    - 95
+    - zh-CN
+    - "<div class=\"history_middle_1\">\r\n              <div class=\"history_middle_1_top\">\r\n
+      \                   <img class=\"history_middle_1_pic\" src=\"/assets/img/logo_05.jpg\"
+      width=\"221\" height=\"104\" />\r\n                    <div class=\"history_middle_1_txt01\">Feel
+      the Nature, Feel the Power of Skin——感·本源之力</div>\r\n              </div>\r\n
+      \             <div class=\"history_middle_1_txt02\">\r\n                    简妮（gelnic）是创立于1986年的日本高级美容护肤品牌，自面世以来一直深受日本女士的喜爱。简妮gelnic以\"重视客户体验，口碑至上\"的市场观念，通过美容沙龙、各种试用活动等方式，获取了一大批忠实客户。2013年，简妮gelnic已经进入中国内地，成为崇尚自然美肌的女性消费者的首选品牌。\r\n
+      \             </div>\r\n           </div>\r\n           <div>\r\n                    <div
+      class=\"history_middle_2_txt01\">大事记</div>\r\n                    <div class=\"history_middle_2_txt02\">\r\n
+      \                       <p> 『1986年6月』･･･ 株式会社Nayuta成立</p>\r\n                        <p>『1988年7月』･･･
+      明星产品Nature Gel Home Cream上市 </p>                    \r\n                        <p>『1995年6月』･･･因业务扩大，在日本崎玉县春日部设立自有工厂
+      </p>\r\n                        <p>『1996年』･･･因业务持续扩大，将工厂扩充搬迁至崎玉县三乡市</p>\r\n
+      \                       <p>『1996年4月』･･･ 株式会社简妮Gelnic成立，继续专注研究啫喱护肤产品</p>\r\n
+      \                       <p>『1999年』･･･ Cleansing gel 研发成功，在日本开始销售</p>\r\n                        <p>『1999年』･･･
+      Peeling gel 研发成功，在日本开始销售</p>\r\n                        <p>『2013年』･･･････ 品牌创始人
+      \ 山崎敬三先生去世。其女儿山崎美和子担任董事长，秉承父亲对Gelnic的理念，更积极研发更多高品质的Gelnic产品。</p>\r\n\t\t\t\t\t
+      </div>\r\n           </div>"
+    - 2013-09-03 16:50:00.000000000 Z
+    - 2013-09-05 06:31:27.000000000 Z
+  - - 98
+    - 98
+    - zh-CN
+    - "<ul>\r\n             <li class=\"text-all-color-green-contact\">\r\n                 若您需要对我们的产品了解更多，或有关于产品购买的问题，请随时同我们联络。\r\n
+      \            </li>\r\n             \r\n  </ul>\r\n      <div class=\"contact-us-customer-1\">\r\n
+      \           <div class=\"contact-us-height\">\r\n              <div class=\"ul-customer-tell\">\r\n
+      \                 客服电话\r\n                 </div>\r\n                  <img
+      class=\"tellphone-size\" src=\"/assets/img/phone.png\" />\r\n              </div>\r\n
+      \           <div>\r\n                  <img class=\"cesstte-contact\" src=\"/assets/img/cesstte.png\"
+      />\r\n            </div>\r\n<p class=\"number-800\">400-998-9870</p>\r\n<div
+      class=\"notice-contact\">   \r\n            客服工作时间：10:00-18:00 周一至周五，除国定节假日外</div>\r\n
+      \      </div>   \r\n       \r\n       <div class=\"contact-us-customer-1\">\r\n
+      \           <div class=\"contact-us-height\">\r\n              <div class=\"ul-customer-tell\">\r\n
+      \                 在线客服\r\n              </div>\r\n              <img class=\"person\"
+      src=\"/assets/img/person.png\" />\r\n         </div>\r\n            <div>\r\n
+      \               \r\n              <div class=\"notice-contact\" style=\"margin-left:10px;&quot;\">
+      <a target=\"_blank\" href=\"http://amos.alicdn.com/getcid.aw?v=2&amp;uid=gelnic%E7%AE%80%E5%A6%AE&amp;site=cntaobao&amp;s=1&amp;groupid=0&amp;charset=utf-8\"><img
+      src=\"http://amos.alicdn.com/online.aw?v=2&amp;uid=gelnic%E7%AE%80%E5%A6%AE&amp;site=cntaobao&amp;s=1&amp;charset=utf-8\"
+      alt=\"点击这里给我发消息\" /></a>\r\n            客服工作时间：9:00-20:00 周一至周五，除国定节假日外\r\n
+      \           </div>\r\n\r\n         </div>\r\n       </div>   \r\n    <div class=\"contact-us-customer-1\">\r\n
+      \           <div class=\"contact-us-height\">\r\n              <div class=\"ul-customer-tell\">\r\n
+      \                 官方微博\r\n              </div>\r\n              <img class=\"tellphone-size\"
+      src=\"/assets/img/MicBlog-gray.png\" />\r\n      </div>\r\n            <div>\r\n
+      \             \r\n               <a class=\"number-800-http-weibo\" href=\"http:www.weibo.com\">http://weibo.com/gelnicjapan\r\n</a>
+      \           \r\n\r\n            <div class=\"notice-contact-weibo\">\r\n            关注简妮官方微博，和小菊老师一起开启美丽新纪元！</div>\r\n</div>\r\n</div>"
+    - 2013-09-04 16:56:21.000000000 Z
+    - 2013-09-13 02:33:13.000000000 Z
+  - - 99
+    - 99
+    - zh-CN
+    - "<table style=\" background-color:#ffffff;\" border=\"0\" cellpadding=\"0\"
+      cellspacing=\"0\" width=\"485\">\r\n  <tbody><tr>\r\n    <td><img src=\"/system/images/W1siZiIsIjIwMTMvMDkvMDkvMDlfNDdfMDdfOTc0X2J1eV8xMy5naWYiXSxbInAiLCJ0aHVtYiIsIjIyNXgyNTU%2BIl1d/buy_13.gif\"
+      /></td>\r\n    <td><img src=\"/system/images/W1siZiIsIjIwMTMvMDkvMDkvMDlfNDdfMDhfMTEwX2J1eV8xNC5naWYiXSxbInAiLCJ0aHVtYiIsIjIyNXgyNTU%2BIl1d/buy_15.gif\"
+      class=\"selected_by_wym\" /></td>\r\n    <td><img src=\"/system/images/W1siZiIsIjIwMTMvMDkvMDkvMDlfNDdfMDhfMTYyX2J1eV8xNS5naWYiXSxbInAiLCJ0aHVtYiIsIjIyNXgyNTU%2BIl1d/buy_14.gif\"
+      /></td>\r\n  </tr>\r\n  <tr>\r\n    <td style=\"text-align:center;\"><a href=\"http://gelnic.taobao.com\"
+      title=\"http://gelnic.taobao.com\" target=\"_blank\">立即购买</a>\r\n</td>\r\n    <td
+      style=\"text-align:center;\"><a href=\"#\">敬请期待</a>\r\n</td>\r\n    <td style=\"text-align:center;\"><a
+      href=\"#\">敬请期待</a>\r\n</td>\r\n  </tr>\r\n</tbody>\r\n</table>\r\n\r\n"
+    - 2013-09-05 11:27:21.000000000 Z
+    - 2013-12-20 05:00:10.000000000 Z
+  - - 100
+    - 100
+    - zh-CN
+    - ''
+    - 2013-09-06 00:53:24.000000000 Z
+    - 2013-09-06 00:53:24.000000000 Z
+  - - 101
+    - 101
+    - zh-CN
+    - ''
+    - 2013-09-06 00:53:24.000000000 Z
+    - 2013-09-06 00:53:24.000000000 Z
+  - - 103
+    - 103
+    - zh-CN
+    - ''
+    - 2013-09-05 17:06:35.000000000 Z
+    - 2013-09-05 17:06:35.000000000 Z
+  - - 104
+    - 104
+    - zh-CN
+    - "<div style=\"margin: 0px auto; width: 750px;\">\r\n  \r\n<div>\r\n<img src=\"/assets/Products-c-10g_10.jpg\"
+      />\r\n</div>  \r\n<div style=\"margin-bottom: 5px;\">\r\n<img src=\"/assets/Products-c-10g_17.jpg\"
+      />\r\n</div>\r\n<div>\r\n<img src=\"/assets/Products-c-10g_21.gif\" />\r\n</div>\r\n<div>\r\n<img
+      src=\"/assets/Products-c-10g_23.gif\" />\r\n</div>\r\n<div>\r\n<img src=\"/assets/Products-c-10g_25.gif\"
+      />\r\n</div>\r\n<div>\r\n<img src=\"/assets/Products-c-10g_26.gif\" />\r\n</div>\r\n<div>\r\n<img
+      src=\"/assets/Products-c-10g_27.gif\" />\r\n</div>\r\n<div>\r\n<img src=\"/assets/Products-c-10g_28.gif\"
+      />\r\n</div>\r\n<div>\r\n<img src=\"/assets/Products-c-10g_29.gif\" />\r\n</div>\r\n<div>\r\n<img
+      src=\"/assets/Products-c-10g_31.gif\" />\r\n</div>\r\n<div>\r\n<img src=\"/assets/Products-c-10g_33.gif\"
+      />\r\n</div>\r\n\r\n\r\n\r\n\r\n\r\n</div>"
+    - 2013-09-05 17:06:35.000000000 Z
+    - 2013-09-12 05:14:13.000000000 Z
+  - - 106
+    - 106
+    - zh-CN
+    - ''
+    - 2013-09-05 17:06:47.000000000 Z
+    - 2013-09-05 17:06:47.000000000 Z
+  - - 107
+    - 107
+    - zh-CN
+    - "<div style=\"width:750px; margin:0 auto;\">\r\n  \r\n<div>\r\n<img src=\"/assets/Products-c-20g_09.gif\"
+      />\r\n</div>  \r\n<div>\r\n<img src=\"/assets/Products-c-20g_17.gif\" />\r\n</div>\r\n<div>\r\n<img
+      src=\"/assets/Products-c-20g_18.gif\" />\r\n</div>\r\n<div>\r\n<img src=\"/assets/Products-c-20g_20.gif\"
+      />\r\n</div>\r\n<div>\r\n<img src=\"/assets/Products-c-20g_21.gif\" />\r\n</div>\r\n<div>\r\n<img
+      src=\"/assets/Products-c-20g_22.gif\" />\r\n</div>\r\n<div>\r\n<img src=\"/assets/Products-c-20g_23.gif\"
+      />\r\n</div>\r\n<div>\r\n<img src=\"/assets/Products-c-20g_24.gif\" />\r\n</div>\r\n<div>\r\n<img
+      src=\"/assets/Products-c-20g_25.gif\" />\r\n</div>\r\n<div>\r\n<img src=\"/assets/Products-c-20g_26.gif\"
+      />\r\n</div>\r\n<div>\r\n<img src=\"/assets/Products-c-20g_27.gif\" />\r\n</div>\r\n<div>\r\n<img
+      src=\"/assets/Products-c-20g_29.gif\" />\r\n</div>\r\n<div>\r\n<img src=\"/assets/Products-c-20g_30.gif\"
+      />\r\n</div>\r\n<div>\r\n<img src=\"/assets/Products-c-20g_32.gif\" />\r\n</div>\r\n\r\n\r\n</div>"
+    - 2013-09-05 17:06:47.000000000 Z
+    - 2013-09-12 05:14:47.000000000 Z
+  - - 109
+    - 109
+    - zh-CN
+    - ''
+    - 2013-09-05 17:06:56.000000000 Z
+    - 2013-09-05 17:06:56.000000000 Z
+  - - 110
+    - 110
+    - zh-CN
+    - "<div style=\"width:750px; margin:0 auto;\">\r\n \r\n<div>\r\n<img src=\"/assets/Products-c-75g_09.gif\"
+      />\r\n</div>  \r\n<div>\r\n<img src=\"/assets/Products-c-75g_15.gif\" />\r\n</div>\r\n<div>\r\n<img
+      src=\"/assets/Products-c-75g_18.gif\" />\r\n</div>\r\n<div>\r\n<img src=\"/assets/Products-c-75g_20.gif\"
+      />\r\n</div>\r\n<div>\r\n<img src=\"/assets/Products-c-75g_22.gif\" />\r\n</div>\r\n<div>\r\n<img
+      src=\"/assets/Products-c-75g_23.gif\" />\r\n</div>\r\n<div>\r\n<img src=\"/assets/Products-c-75g_24.gif\"
+      />\r\n</div>\r\n<div>\r\n<img src=\"/assets/Products-c-75g_25.gif\" />\r\n</div>\r\n<div>\r\n<img
+      src=\"/assets/Products-c-75g_26.gif\" />\r\n</div>\r\n<div>\r\n<img src=\"/assets/Products-c-75g_27.gif\"
+      />\r\n</div>\r\n<div>\r\n<img src=\"/assets/Products-c-75g_28.gif\" />\r\n</div>\r\n<div>\r\n<img
+      src=\"/assets/Products-c-75g_29.gif\" />\r\n</div>\r\n<div>\r\n<img src=\"/assets/Products-c-75g_31.gif\"
+      />\r\n</div>\r\n\r\n\r\n</div>"
+    - 2013-09-05 17:06:56.000000000 Z
+    - 2013-09-12 05:15:17.000000000 Z
+  - - 112
+    - 112
+    - zh-CN
+    - ''
+    - 2013-09-05 17:08:37.000000000 Z
+    - 2013-09-05 17:08:37.000000000 Z
+  - - 113
+    - 113
+    - zh-CN
+    - "<div style=\"width:750px; margin:0 auto;\">\r\n  \r\n<div>\r\n<img src=\"/assets/Products-c-200g_08.gif\"
+      />\r\n</div>  \r\n<div>\r\n<img src=\"/assets/Products-c-200g_15.gif\" />\r\n</div>\r\n<div>\r\n<img
+      src=\"/assets/Products-c-200g_18.gif\" />\r\n</div>\r\n<div>\r\n<img src=\"/assets/Products-c-200g_20.gif\"
+      />\r\n</div>\r\n<div>\r\n<img src=\"/assets/Products-c-200g_21.gif\" />\r\n</div>\r\n<div>\r\n<img
+      src=\"/assets/Products-c-200g_22.gif\" />\r\n</div>\r\n<div>\r\n<img src=\"/assets/Products-c-200g_23.gif\"
+      />\r\n</div>\r\n<div>\r\n<img src=\"/assets/Products-c-200g_24.gif\" />\r\n</div>\r\n<div>\r\n<img
+      src=\"/assets/Products-c-200g_25.gif\" />\r\n</div>\r\n<div>\r\n<img src=\"/assets/Products-c-200g_26.gif\"
+      />\r\n</div>\r\n<div>\r\n<img src=\"/assets/Products-c-200g_27.gif\" />\r\n</div>\r\n<div>\r\n<img
+      src=\"/assets/Products-c-200g_28.gif\" />\r\n</div>\r\n<div style=\"width:720px;
+      float:left;\">\r\n<div style=\"float:left;\"><br />\r\n</div>\r\n<div style=\"float:left;
+      border:0px;\"><br />\r\n</div>\r\n<div style=\"float:right; border:0px;\"> <br
+      />\r\n</div>\r\n</div>\r\n\r\n</div>"
+    - 2013-09-05 17:08:37.000000000 Z
+    - 2013-09-12 05:15:37.000000000 Z
+  - - 115
+    - 115
+    - zh-CN
+    - ''
+    - 2013-09-05 17:08:48.000000000 Z
+    - 2013-09-05 17:08:48.000000000 Z
+  - - 116
+    - 116
+    - zh-CN
+    - "<div style=\"width:750px; margin:0 auto;\">\r\n\r\n<div>\r\n<img src=\"/assets/Products-p-10g_09.gif\"
+      />\r\n</div>  \r\n<div>\r\n<img src=\"/assets/Products-p-10g_09.gif\" />\r\n</div>\r\n<div>\r\n<img
+      src=\"/assets/Products-p-10g_15.gif\" />\r\n</div>\r\n<div>\r\n<img src=\"/assets/Products-p-10g_18.gif\"
+      />\r\n</div>\r\n<div>\r\n<img src=\"/assets/Products-p-10g_20.gif\" />\r\n</div>\r\n<div>\r\n<img
+      src=\"/assets/Products-p-10g_21.gif\" />\r\n</div>\r\n<div>\r\n<img src=\"/assets/Products-p-10g_22.gif\"
+      />\r\n</div>\r\n<div>\r\n<img src=\"/assets/Products-p-10g_23.gif\" />\r\n</div>\r\n<div>\r\n<img
+      src=\"/assets/Products-p-10g_25.gif\" />\r\n</div>\r\n<div>\r\n<img src=\"/assets/Products-p-10g_26.gif\"
+      />\r\n</div>\r\n<div>\r\n<img src=\"/assets/Products-p-10g_28.gif\" />\r\n</div>\r\n\r\n<div
+      style=\"width:720px; float:left;\">\r\n<div style=\"float:left;\"><br />\r\n</div>\r\n<div
+      style=\"float:left; border:0px;\"><br />\r\n</div>\r\n<div style=\"float:right;
+      border:0px;\"> <br />\r\n</div>\r\n</div>\r\n\r\n</div>"
+    - 2013-09-05 17:08:48.000000000 Z
+    - 2013-09-12 05:16:03.000000000 Z
+  - - 118
+    - 118
+    - zh-CN
+    - ''
+    - 2013-09-05 17:08:58.000000000 Z
+    - 2013-09-05 17:08:58.000000000 Z
+  - - 119
+    - 119
+    - zh-CN
+    - "<div style=\"width:750px; margin:0 auto;\">\r\n \r\n<div>\r\n<img src=\"/assets/Products-p-10gi_09.gif\"
+      />\r\n</div>  \r\n<div>\r\n<img src=\"/assets/Products-p-10gi_15.gif\" />\r\n</div>\r\n<div>\r\n<img
+      src=\"/assets/Products-p-10gi_18.gif\" />\r\n</div>\r\n<div>\r\n<img src=\"/assets/Products-p-10gi_20.gif\"
+      />\r\n</div>\r\n<div>\r\n<img src=\"/assets/Products-p-10gi_21.gif\" />\r\n</div>\r\n<div>\r\n<img
+      src=\"/assets/Products-p-10gi_22.gif\" />\r\n</div>\r\n<div>\r\n<img src=\"/assets/Products-p-10gi_23.gif\"
+      />\r\n</div>\r\n<div>\r\n<img src=\"/assets/Products-p-10gi_24.gif\" />\r\n</div>\r\n<div>\r\n<img
+      src=\"/assets/Products-p-10gi_25.gif\" />\r\n</div>\r\n<div>\r\n<img src=\"/assets/Products-p-10gi_26.gif\"
+      />\r\n</div>\r\n<div>\r\n<img src=\"/assets/Products-p-10gi_27.gif\" />\r\n</div>\r\n<div>\r\n<img
+      src=\"/assets/Products-p-10gi_29.gif\" />\r\n</div>\r\n<div style=\"width:720px;
+      float:left;\">\r\n<div style=\"float:left;\"><br />\r\n</div>\r\n<div style=\"float:left;
+      border:0px;\"><br />\r\n</div>\r\n<div style=\"float:right; border:0px;\"> <br
+      />\r\n</div>\r\n</div>\r\n\r\n</div>"
+    - 2013-09-05 17:08:58.000000000 Z
+    - 2013-09-12 05:16:20.000000000 Z
+  - - 121
+    - 121
+    - zh-CN
+    - ''
+    - 2013-09-05 17:09:07.000000000 Z
+    - 2013-09-05 17:09:07.000000000 Z
+  - - 122
+    - 122
+    - zh-CN
+    - "<div style=\"width:750px; margin:0 auto;\">\r\n\r\n<div>\r\n<img src=\"/assets/Products-p-75g_10.gif\"
+      />\r\n</div>  \r\n<div>\r\n<img src=\"/assets/Products-p-75g_16.gif\" />\r\n</div>\r\n<div>\r\n<img
+      src=\"/assets/Products-p-75g_19.gif\" />\r\n</div>\r\n<div>\r\n<img src=\"/assets/Products-p-75g_21.gif\"
+      />\r\n</div>\r\n<div>\r\n<img src=\"/assets/Products-p-75g_22.gif\" />\r\n</div>\r\n<div>\r\n<img
+      src=\"/assets/Products-p-75g_23.gif\" />\r\n</div>\r\n<div>\r\n<img src=\"/assets/Products-p-75g_24.gif\"
+      />\r\n</div>\r\n<div>\r\n<img src=\"/assets/Products-p-75g_25.gif\" />\r\n</div>\r\n<div>\r\n<img
+      src=\"/assets/Products-p-75g_26.gif\" />\r\n</div>\r\n<div>\r\n<img src=\"/assets/Products-p-75g_27.gif\"
+      />\r\n</div>\r\n<div>\r\n<img src=\"/assets/Products-p-75g_28.gif\" />\r\n</div>\r\n<div>\r\n<img
+      src=\"/assets/Products-p-75g_29.gif\" />\r\n</div>\r\n<div>\r\n<img src=\"/assets/Products-p-75g_31.gif\"
+      /></div>\r\n<div style=\"width:720px; float:left;\">\r\n<div style=\"float:left;\"><br
+      />\r\n</div>\r\n<div style=\"float:left; border:0px;\"><br />\r\n</div>\r\n<div
+      style=\"float:right; border:0px;\"> <br />\r\n</div>\r\n</div>\r\n\r\n</div>"
+    - 2013-09-05 17:09:07.000000000 Z
+    - 2013-09-12 05:16:38.000000000 Z
+  - - 124
+    - 124
+    - zh-CN
+    - ''
+    - 2013-09-05 17:09:52.000000000 Z
+    - 2013-09-05 17:09:52.000000000 Z
+  - - 125
+    - 125
+    - zh-CN
+    - "<div style=\"margin: 0px auto; width: 750px;\">\r\n<div>\r\n<img src=\"/assets/Products-p-300g_09.gif\"
+      />\r\n</div>  \r\n<div>\r\n<img src=\"/assets/Products-p-300g_15.gif\" />\r\n</div>\r\n<div>\r\n<img
+      src=\"/assets/Products-p-300g_19.gif\" />\r\n</div>\r\n<div>\r\n<img src=\"/assets/Products-p-300g_21.gif\"
+      />\r\n</div>\r\n<div>\r\n<img src=\"/assets/Products-p-300g_23.gif\" />\r\n</div>\r\n<div>\r\n<img
+      src=\"/assets/Products-p-300g_24.gif\" />\r\n</div>\r\n<div>\r\n<img src=\"/assets/Products-p-300g_25.gif\"
+      />\r\n</div>\r\n<div>\r\n<img src=\"/assets/Products-p-300g_26.gif\" />\r\n</div>\r\n<div>\r\n<img
+      src=\"/assets/Products-p-300g_28.gif\" />\r\n</div>\r\n<div>\r\n<img src=\"/assets/Products-p-300g_29.gif\"
+      />\r\n</div>\r\n<div>\r\n<img src=\"/assets/Products-p-300g_31.gif\" />\r\n</div>\r\n<div>\r\n<img
+      src=\"/assets/Products-p-300g_33.gif\" />\r\n</div>\r\n<div style=\"width: 720px;
+      float: left;\">\r\n<div style=\"float: left;\"><br />\r\n</div>\r\n<div style=\"border:
+      0px currentColor; float: left;\"><br />\r\n</div>\r\n<div style=\"border: 0px
+      currentColor; float: right;\"> <br />\r\n</div>\r\n</div>\r\n\r\n</div>"
+    - 2013-09-05 17:09:52.000000000 Z
+    - 2013-09-12 05:16:53.000000000 Z
+  - - 127
+    - 127
+    - zh-CN
+    - ''
+    - 2013-09-05 17:10:03.000000000 Z
+    - 2013-09-05 17:10:03.000000000 Z
+  - - 128
+    - 128
+    - zh-CN
+    - "<div style=\"width:750px; margin:0 auto;\">\r\n<div>\r\n<img src=\"/assets/Products-hc-gh-10g_11.jpg\"
+      />\r\n</div>  \r\n<div>\r\n<img src=\"/assets/Products-hc-gh-10g_18.jpg\" />\r\n</div>
+      \ \r\n<div>\r\n<img src=\"/assets/Products-hc-gh-10g_21.jpg\" />\r\n</div>\r\n<div>\r\n<img
+      src=\"/assets/Products-hc-gh-10g_23.jpg\" />\r\n</div>\r\n<div>\r\n<img src=\"/assets/Products-hc-gh-10g_24.jpg\"
+      />\r\n</div>\r\n<div>\r\n<img src=\"/assets/Products-hc-gh-10g_25.jpg\" />\r\n</div>\r\n<div>\r\n<img
+      src=\"/assets/Products-hc-gh-10g_26.jpg\" />\r\n</div>\r\n<div>\r\n<img src=\"/assets/Products-hc-gh-10g_27.jpg\"
+      />\r\n</div>\r\n<div>\r\n<img src=\"/assets/Products-hc-gh-10g_29.jpg\" />\r\n</div>\r\n<div>\r\n<img
+      src=\"/assets/Products-hc-gh-10g_30.jpg\" />\r\n</div>\r\n<div>\r\n<img src=\"/assets/Products-hc-gh-10g_31.jpg\"
+      />\r\n</div>\r\n\r\n</div>"
+    - 2013-09-05 17:10:03.000000000 Z
+    - 2013-09-12 04:01:23.000000000 Z
+  - - 130
+    - 130
+    - zh-CN
+    - ''
+    - 2013-09-05 17:10:15.000000000 Z
+    - 2013-09-05 17:10:15.000000000 Z
+  - - 131
+    - 131
+    - zh-CN
+    - "<div style=\"width:750px; margin:0 auto;\">\r\n<div>\r\n<img src=\"/assets/Products-hc-gh-30g_10.jpg\"
+      />\r\n</div>  \r\n<div>\r\n<img src=\"/assets/Products-hc-gh-30g_17.jpg\" />\r\n</div>
+      \ \r\n<div>\r\n<img src=\"/assets/Products-hc-gh-30g_20.jpg\" />\r\n</div>\r\n<div>\r\n<img
+      src=\"/assets/Products-hc-gh-30g_23.jpg\" />\r\n</div>\r\n<div>\r\n<img src=\"/assets/Products-hc-gh-30g_24.jpg\"
+      />\r\n</div>\r\n<div>\r\n<img src=\"/assets/Products-hc-gh-30g_25.jpg\" />\r\n</div>\r\n<div>\r\n<img
+      src=\"/assets/Products-hc-gh-30g_27.jpg\" />\r\n</div>\r\n<div>\r\n<img src=\"/assets/Products-hc-gh-30g_28.jpg\"
+      />\r\n</div>\r\n<div>\r\n<img src=\"/assets/Products-hc-gh-30g_29.jpg\" />\r\n</div>\r\n<div>\r\n<img
+      src=\"/assets/Products-hc-gh-30g_31.jpg\" />\r\n</div>\r\n<div>\r\n<img src=\"/assets/Products-hc-gh-30g_32.jpg\"
+      />\r\n</div>\r\n<div>\r\n<img src=\"/assets/Products-hc-gh-30g_33.jpg\" />\r\n</div>\r\n<div>\r\n<img
+      src=\"/assets/Products-hc-gh-30g_34.jpg\" />\r\n</div>\r\n</div>"
+    - 2013-09-05 17:10:15.000000000 Z
+    - 2013-09-12 04:58:58.000000000 Z
+  - - 134
+    - 134
+    - zh-CN
+    - "<div style=\"width:750px; margin:0 auto;\">\r\n<div>\r\n<img src=\"/assets/Products-hc-gh-50g_10.jpg\"
+      />\r\n</div>  \r\n<div>\r\n<img src=\"/assets/Products-hc-gh-50g_17.jpg\" />\r\n</div>
+      \ \r\n<div>\r\n<img src=\"/assets/Products-hc-gh-50g_20.jpg\" />\r\n</div>\r\n<div>\r\n<img
+      src=\"/assets/Products-hc-gh-50g_22.jpg\" />\r\n</div>\r\n<div>\r\n<img src=\"/assets/Products-hc-gh-50g_23.jpg\"
+      />\r\n</div>\r\n<div>\r\n<img src=\"/assets/Products-hc-gh-50g_24.jpg\" />\r\n</div>\r\n<div>\r\n<img
+      src=\"/assets/Products-hc-gh-50g_25.jpg\" />\r\n</div>\r\n<div>\r\n<img src=\"/assets/Products-hc-gh-50g_27.jpg\"
+      />\r\n</div>\r\n<div>\r\n<img src=\"/assets/Products-hc-gh-50g_28.jpg\" />\r\n</div>\r\n<div>\r\n<img
+      src=\"/assets/Products-hc-gh-50g_29.jpg\" />\r\n</div>\r\n<div>\r\n<img src=\"/assets/Products-hc-gh-50g_31.jpg\"
+      />\r\n</div>\r\n<div>\r\n<img src=\"/assets/Products-hc-gh-50g_32.jpg\" />\r\n</div>\r\n<div>\r\n<img
+      src=\"/assets/Products-hc-gh-50g_33.jpg\" />\r\n</div>\r\n<div>\r\n<img src=\"/assets/Products-hc-gh-50g_34.jpg\"
+      />\r\n</div>\r\n</div>"
+    - 2013-09-05 17:10:39.000000000 Z
+    - 2013-09-12 05:07:38.000000000 Z
+  - - 136
+    - 136
+    - zh-CN
+    - ''
+    - 2013-09-05 17:10:52.000000000 Z
+    - 2013-09-05 17:10:52.000000000 Z
+  - - 137
+    - 137
+    - zh-CN
+    - "<div style=\"width:750px; margin:0 auto;\">\r\n<div>\r\n<img src=\"/assets/Products-hc-gh-100g_10.jpg\"
+      />\r\n</div>  \r\n<div>\r\n<img src=\"/assets/Products-hc-gh-100g_17.jpg\" />\r\n</div>
+      \ \r\n<div>\r\n<img src=\"/assets/Products-hc-gh-100g_20.jpg\" />\r\n</div>\r\n<div>\r\n<img
+      src=\"/assets/Products-hc-gh-100g_22.jpg\" />\r\n</div>\r\n<div>\r\n<img src=\"/assets/Products-hc-gh-100g_23.jpg\"
+      />\r\n</div>\r\n<div>\r\n<img src=\"/assets/Products-hc-gh-100g_24.jpg\" />\r\n</div>\r\n<div>\r\n<img
+      src=\"/assets/Products-hc-gh-100g_25.jpg\" />\r\n</div>\r\n<div>\r\n<img src=\"/assets/Products-hc-gh-100g_26.jpg\"
+      />\r\n</div>\r\n<div>\r\n<img src=\"/assets/Products-hc-gh-100g_27.jpg\" />\r\n</div>\r\n<div>\r\n<img
+      src=\"/assets/Products-hc-gh-100g_29.jpg\" />\r\n</div>\r\n<div>\r\n<img src=\"/assets/Products-hc-gh-100g_30.jpg\"
+      />\r\n</div>\r\n<div>\r\n<img src=\"/assets/Products-hc-gh-100g_31.jpg\" />\r\n</div>\r\n<div>\r\n<img
+      src=\"/assets/Products-hc-gh-100g_32.jpg\" />\r\n</div>\r\n<div>\r\n<img src=\"/assets/Products-hc-gh-100g_33.jpg\"
+      />\r\n</div>\r\n</div>"
+    - 2013-09-05 17:10:52.000000000 Z
+    - 2013-09-12 05:13:27.000000000 Z
+  - - 138
+    - 138
+    - zh-CN
+    - ''
+    - 2013-09-05 17:11:18.000000000 Z
+    - 2013-09-05 17:11:18.000000000 Z
+  - - 139
+    - 139
+    - zh-CN
+    - ''
+    - 2013-09-05 17:11:19.000000000 Z
+    - 2013-09-05 17:11:19.000000000 Z
+  - - 140
+    - 140
+    - zh-CN
+    - "<div style=\"width:750px; margin:0 auto;\">\r\n<div>\r\n<img src=\"/assets/Products-hc-ex-10g_09.jpg\"
+      />\r\n</div>  \r\n<div>\r\n<img src=\"/assets/Products-hc-ex-10g_18.jpg\" />\r\n</div>
+      \ \r\n<div>\r\n<img src=\"/assets/Products-hc-ex-10g_23.jpg\" />\r\n</div>\r\n<div>\r\n<img
+      src=\"/assets/Products-hc-ex-10g_26.jpg\" />\r\n</div>\r\n<div>\r\n<img src=\"/assets/Products-hc-ex-10g_27.jpg\"
+      />\r\n</div>\r\n<div>\r\n<img src=\"/assets/Products-hc-ex-10g_28.jpg\" />\r\n</div>\r\n<div>\r\n<img
+      src=\"/assets/Products-hc-ex-10g_29.jpg\" />\r\n</div>\r\n<div>\r\n<img src=\"/assets/Products-hc-ex-10g_30.jpg\"
+      />\r\n</div>\r\n<div>\r\n<img src=\"/assets/Products-hc-ex-10g_31.jpg\" />\r\n</div>\r\n<div>\r\n<img
+      src=\"/assets/Products-hc-ex-10g_32.jpg\" />\r\n</div>\r\n<div>\r\n<img src=\"/assets/Products-hc-ex-10g_33.jpg\"
+      />\r\n</div>\r\n<div>\r\n<img src=\"/assets/Products-hc-ex-10g_35.jpg\" />\r\n</div>\r\n</div>"
+    - 2013-09-05 17:11:19.000000000 Z
+    - 2013-09-12 03:22:02.000000000 Z
+  - - 141
+    - 141
+    - zh-CN
+    - ''
+    - 2013-09-05 17:11:40.000000000 Z
+    - 2013-09-05 17:11:40.000000000 Z
+  - - 142
+    - 142
+    - zh-CN
+    - ''
+    - 2013-09-05 17:11:40.000000000 Z
+    - 2013-09-05 17:11:40.000000000 Z
+  - - 143
+    - 143
+    - zh-CN
+    - "<div style=\"width:750px; margin:0 auto;\">\r\n<div>\r\n<img src=\"/assets/Products-hc-ex-30g_09.jpg\"
+      />\r\n</div>  \r\n<div>\r\n<img src=\"/assets/Products-hc-ex-30g_18.jpg\" />\r\n</div>
+      \ \r\n<div>\r\n<img src=\"/assets/Products-hc-ex-30g_21.jpg\" />\r\n</div>\r\n<div>\r\n<img
+      src=\"/assets/Products-hc-ex-30g_23.jpg\" />\r\n</div>\r\n<div>\r\n<img src=\"/assets/Products-hc-ex-30g_24.jpg\"
+      />\r\n</div>\r\n<div>\r\n<img src=\"/assets/Products-hc-ex-30g_25.jpg\" />\r\n</div>\r\n<div>\r\n<img
+      src=\"/assets/Products-hc-ex-30g_26.jpg\" />\r\n</div>\r\n<div>\r\n<img src=\"/assets/Products-hc-ex-30g_27.jpg\"
+      />\r\n</div>\r\n<div>\r\n<img src=\"/assets/Products-hc-ex-30g_28.jpg\" />\r\n</div>\r\n<div>\r\n<img
+      src=\"/assets/Products-hc-ex-30g_29.jpg\" />\r\n</div>\r\n<div>\r\n<img src=\"/assets/Products-hc-ex-30g_31.jpg\"
+      />\r\n</div>\r\n<div>\r\n<img src=\"/assets/Products-hc-ex-30g_32.jpg\" />\r\n</div>\r\n<div>\r\n<img
+      src=\"/assets/Products-hc-ex-30g_38.jpg\" />\r\n</div>\r\n<div>\r\n<img src=\"/assets/Products-hc-ex-30g_39.jpg\"
+      />\r\n</div>\r\n</div>"
+    - 2013-09-05 17:11:40.000000000 Z
+    - 2013-09-12 03:32:48.000000000 Z
+  - - 144
+    - 144
+    - zh-CN
+    - ''
+    - 2013-09-05 17:11:52.000000000 Z
+    - 2013-09-05 17:11:52.000000000 Z
+  - - 145
+    - 145
+    - zh-CN
+    - ''
+    - 2013-09-05 17:11:52.000000000 Z
+    - 2013-09-05 17:11:52.000000000 Z
+  - - 146
+    - 146
+    - zh-CN
+    - "<div style=\"width:750px; margin:0 auto;\">\r\n<div>\r\n<img src=\"/assets/Products-hc-ex-50g_11.jpg\"
+      />\r\n</div>  \r\n<div>\r\n<img src=\"/assets/Products-hc-ex-50g_19.jpg\" />\r\n</div>
+      \ \r\n<div>\r\n<img src=\"/assets/Products-hc-ex-50g_22.jpg\" />\r\n</div>\r\n<div>\r\n<img
+      src=\"/assets/Products-hc-ex-50g_24.jpg\" />\r\n</div>\r\n<div>\r\n<img src=\"/assets/Products-hc-ex-50g_26.jpg\"
+      />\r\n</div>\r\n<div>\r\n<img src=\"/assets/Products-hc-ex-50g_27.jpg\" />\r\n</div>\r\n<div>\r\n<img
+      src=\"/assets/Products-hc-ex-50g_28.jpg\" />\r\n</div>\r\n<div>\r\n<img src=\"/assets/Products-hc-ex-50g_29.jpg\"
+      />\r\n</div>\r\n<div>\r\n<img src=\"/assets/Products-hc-ex-50g_30.jpg\" />\r\n</div>\r\n<div>\r\n<img
+      src=\"/assets/Products-hc-ex-50g_32.jpg\" />\r\n</div>\r\n<div>\r\n<img src=\"/assets/Products-hc-ex-50g_33.jpg\"
+      />\r\n</div>\r\n<div>\r\n<img src=\"/assets/Products-hc-ex-50g_35.jpg\" />\r\n</div>\r\n<div>\r\n<img
+      src=\"/assets/Products-hc-ex-50g_36.jpg\" />\r\n</div>\r\n<div>\r\n<img src=\"/assets/Products-hc-ex-50g_37.jpg\"
+      />\r\n</div>\r\n</div>"
+    - 2013-09-05 17:11:52.000000000 Z
+    - 2013-09-12 03:42:43.000000000 Z
+  - - 147
+    - 147
+    - zh-CN
+    - ''
+    - 2013-09-05 17:12:03.000000000 Z
+    - 2013-09-05 17:12:03.000000000 Z
+  - - 148
+    - 148
+    - zh-CN
+    - ''
+    - 2013-09-05 17:12:03.000000000 Z
+    - 2013-09-05 17:12:03.000000000 Z
+  - - 149
+    - 149
+    - zh-CN
+    - "<div style=\"width:750px; margin:0 auto;\">\r\n<div>\r\n<img src=\"/assets/Products-hc-ex-100g_09.jpg\"
+      />\r\n</div>  \r\n<div>\r\n<img src=\"/assets/Products-hc-ex-100g_18.jpg\" />\r\n</div>
+      \ \r\n<div>\r\n<img src=\"/assets/Products-hc-ex-100g_21.jpg\" />\r\n</div>\r\n<div>\r\n<img
+      src=\"/assets/Products-hc-ex-100g_23.jpg\" />\r\n</div>\r\n<div>\r\n<img src=\"/assets/Products-hc-ex-100g_24.jpg\"
+      />\r\n</div>\r\n<div>\r\n<img src=\"/assets/Products-hc-ex-100g_25.jpg\" />\r\n</div>\r\n<div>\r\n<img
+      src=\"/assets/Products-hc-ex-100g_26.jpg\" />\r\n</div>\r\n<div>\r\n<img src=\"/assets/Products-hc-ex-100g_27.jpg\"
+      />\r\n</div>\r\n<div>\r\n<img src=\"/assets/Products-hc-ex-100g_29.jpg\" />\r\n</div>\r\n<div>\r\n<img
+      src=\"/assets/Products-hc-ex-100g_30.jpg\" />\r\n</div>\r\n<div>\r\n<img src=\"/assets/Products-hc-ex-100g_31.jpg\"
+      />\r\n</div>\r\n<div>\r\n<img src=\"/assets/Products-hc-ex-100g_32.jpg\" />\r\n</div>\r\n<div>\r\n<img
+      src=\"/assets/Products-hc-ex-100g_33.jpg\" />\r\n</div>\r\n<div>\r\n<img src=\"/assets/Products-hc-ex-100g_34.jpg\"
+      />\r\n</div>\r\n</div>"
+    - 2013-09-05 17:12:03.000000000 Z
+    - 2013-09-12 03:51:35.000000000 Z
+  - - 150
+    - 150
+    - zh-CN
+    - ''
+    - 2013-09-05 17:12:25.000000000 Z
+    - 2013-09-05 17:12:25.000000000 Z
+  - - 151
+    - 151
+    - zh-CN
+    - ''
+    - 2013-09-05 17:12:25.000000000 Z
+    - 2013-09-05 17:12:25.000000000 Z
+  - - 152
+    - 152
+    - zh-CN
+    - "<div style=\"margin: 0px auto; width: 750px;\">\r\n<div>\r\n<img src=\"/assets/Products-g-c75g+p75g_09.gif\"
+      />\r\n</div>  \r\n<div>\r\n<img src=\"/assets/Products-g-c75g+p75g_15.gif\"
+      />\r\n</div>\r\n<div>\r\n<img src=\"/assets/Products-g-c75g+p75g_19.gif\" />\r\n</div>\r\n<div>\r\n<img
+      src=\"/assets/Products-g-c75g+p75g_20.gif\" />\r\n</div>\r\n<div>\r\n<img src=\"/assets/Products-g-c75g+p75g_21.gif\"
+      />\r\n</div>\r\n<div>\r\n<img src=\"/assets/Products-g-c75g+p75g_21.gif\" />\r\n</div>\r\n<div>\r\n<img
+      src=\"/assets/Products-g-c75g+p75g_24.gif\" />\r\n</div>\r\n<div>\r\n<img src=\"/assets/Products-g-c75g+p75g_25.gif\"
+      />\r\n</div>\r\n<div>\r\n<img src=\"/assets/Products-g-c75g+p75g_26.gif\" />\r\n</div>\r\n<div>\r\n<img
+      src=\"/assets/Products-g-c75g+p75g_27.gif\" />\r\n</div>\r\n<div>\r\n<img src=\"/assets/Products-g-c75g+p75g_28.gif\"
+      />\r\n</div>\r\n<div>\r\n<img src=\"/assets/Products-g-c75g+p75g_29.gif\" />\r\n</div>\r\n<div>\r\n<img
+      src=\"/assets/Products-g-c75g+p75g_32.gif\" />\r\n</div>\r\n<div>\r\n<img src=\"/assets/Products-g-c75g+p75g_33.gif\"
+      />\r\n</div>\r\n<div>\r\n<img src=\"/assets/Products-g-c75g+p75g_34.gif\" />\r\n</div>\r\n<div>\r\n<img
+      src=\"/assets/Products-g-c75g+p75g_36.gif\" />\r\n</div>\r\n<div>\r\n<img src=\"/assets/Products-g-c75g+p75g_38.gif\"
+      />\r\n</div>\r\n<div>\r\n<img src=\"/assets/Products-g-c75g+p75g_39.gif\" />\r\n</div>\r\n<div>\r\n<img
+      src=\"/assets/Products-g-c75g+p75g_40.gif\" />\r\n</div>\r\n<div>\r\n<img src=\"/assets/Products-g-c75g+p75g_41.gif\"
+      />\r\n</div>\r\n<div>\r\n<img src=\"/assets/Products-g-c75g+p75g_43.gif\" />\r\n</div>\r\n<div
+      style=\"width: 720px; float: left;\">\r\n<div style=\"float: left;\"><br />\r\n</div>\r\n<div
+      style=\"border: 0px currentColor; float: left;\"><br />\r\n</div>\r\n<div style=\"border:
+      0px currentColor; float: right;\"> <br />\r\n</div>\r\n</div>\r\n\r\n</div>"
+    - 2013-09-05 17:12:25.000000000 Z
+    - 2013-09-12 05:17:14.000000000 Z
+  - - 153
+    - 153
+    - zh-CN
+    - ''
+    - 2013-09-05 17:12:35.000000000 Z
+    - 2013-09-05 17:12:35.000000000 Z
+  - - 154
+    - 154
+    - zh-CN
+    - ''
+    - 2013-09-05 17:12:35.000000000 Z
+    - 2013-09-05 17:12:35.000000000 Z
+  - - 155
+    - 155
+    - zh-CN
+    - ''
+    - 2013-09-05 17:12:35.000000000 Z
+    - 2013-09-05 17:12:35.000000000 Z
+  - - 156
+    - 156
+    - zh-CN
+    - ''
+    - 2013-09-05 17:12:45.000000000 Z
+    - 2013-09-05 17:12:45.000000000 Z
+  - - 157
+    - 157
+    - zh-CN
+    - ''
+    - 2013-09-05 17:12:45.000000000 Z
+    - 2013-09-05 17:12:45.000000000 Z
+  - - 158
+    - 158
+    - zh-CN
+    - ''
+    - 2013-09-05 17:12:45.000000000 Z
+    - 2013-09-05 17:12:45.000000000 Z
+  - - 159
+    - 159
+    - zh-CN
+    - ''
+    - 2013-09-05 17:12:55.000000000 Z
+    - 2013-09-05 17:12:55.000000000 Z
+  - - 160
+    - 160
+    - zh-CN
+    - ''
+    - 2013-09-05 17:12:55.000000000 Z
+    - 2013-09-05 17:12:55.000000000 Z
+  - - 161
+    - 161
+    - zh-CN
+    - ''
+    - 2013-09-05 17:12:55.000000000 Z
+    - 2013-09-05 17:12:55.000000000 Z
+  - - 162
+    - 162
+    - zh-CN
+    - ''
+    - 2013-09-05 17:13:09.000000000 Z
+    - 2013-09-05 17:13:09.000000000 Z
+  - - 163
+    - 163
+    - zh-CN
+    - ''
+    - 2013-09-05 17:13:09.000000000 Z
+    - 2013-09-05 17:13:09.000000000 Z
+  - - 164
+    - 164
+    - zh-CN
+    - ''
+    - 2013-09-05 17:13:09.000000000 Z
+    - 2013-09-05 17:13:09.000000000 Z
+  - - 165
+    - 165
+    - zh-CN
+    - ''
+    - 2013-09-05 17:13:22.000000000 Z
+    - 2013-09-05 17:13:22.000000000 Z
+  - - 166
+    - 166
+    - zh-CN
+    - ''
+    - 2013-09-05 17:13:22.000000000 Z
+    - 2013-09-05 17:13:22.000000000 Z
+  - - 167
+    - 167
+    - zh-CN
+    - ''
+    - 2013-09-05 17:13:22.000000000 Z
+    - 2013-09-05 17:13:22.000000000 Z
+  - - 168
+    - 168
+    - zh-CN
+    - "<li><img src=\"/system/images/W1siZiIsIjIwMTMvMDkvMDYvMDNfMTRfMTRfODZfa3YxLnBuZyJdXQ/kv1.png\"
+      title=\"Kv1\" alt=\"Kv1\" data-rel=\"225x255\" width=\"950\" /></li>\r\n<li><img
+      src=\"/system/images/W1siZiIsIjIwMTMvMDkvMDYvMDNfMTRfMTRfODZfa3YxLnBuZyJdXQ/kv1.png\"
+      title=\"Kv1\" alt=\"Kv1\" data-rel=\"225x255\" width=\"950\" /></li>\r\n"
+    - 2013-09-05 17:56:34.000000000 Z
+    - 2013-12-20 04:47:30.000000000 Z
+  - - 169
+    - 169
+    - zh-CN
+    - ''
+    - 2013-09-05 17:56:34.000000000 Z
+    - 2014-01-14 09:11:17.000000000 Z
+  - - 170
+    - 170
+    - zh-CN
+    - "<p><a href=\"/home/%E8%B0%83%E6%9F%A5%E9%97%AE%E5%8D%B7\"><img src=\"/system/images/W1siZiIsIjIwMTMvMDkvMDYvMDFfNDlfNTVfMjA0X2FkdnQyLnBuZyJdXQ/advt2.png\"
+      width=\"260\" /></a>\r\n</p>"
+    - 2013-09-05 17:56:34.000000000 Z
+    - 2013-12-20 12:59:46.000000000 Z
+  - - 171
+    - 171
+    - zh-CN
+    - <embed src="http://player.youku.com/player.php/sid/XNjI5MTIyMDcy/v.swf" allowfullscreen="true"
+      height="225" width="400" allowscriptaccess="always" type="application/x-shockwave-flash"
+      />
+    - 2013-09-05 17:56:34.000000000 Z
+    - 2013-12-20 04:41:44.000000000 Z
+  - - 174
+    - 174
+    - zh-CN
+    - ''
+    - 2013-09-09 20:00:47.000000000 Z
+    - 2013-09-09 20:00:47.000000000 Z
+  - - 175
+    - 175
+    - zh-CN
+    - ''
+    - 2013-09-09 20:00:47.000000000 Z
+    - 2013-09-09 20:00:47.000000000 Z
+  - - 176
+    - 176
+    - zh-CN
+    - ''
+    - 2013-09-10 07:16:05.000000000 Z
+    - 2013-09-10 07:16:05.000000000 Z
+  - - 177
+    - 177
+    - zh-CN
+    - ''
+    - 2013-09-10 07:16:05.000000000 Z
+    - 2013-09-10 07:16:05.000000000 Z
+  - - 178
+    - 178
+    - zh-CN
+    - ''
+    - 2013-09-11 18:59:48.000000000 Z
+    - 2013-09-11 18:59:48.000000000 Z
+  - - 179
+    - 179
+    - zh-CN
+    - ''
+    - 2013-09-11 18:59:48.000000000 Z
+    - 2013-09-11 18:59:48.000000000 Z
+  - - 180
+    - 180
+    - zh-CN
+    - ''
+    - 2013-09-11 19:11:00.000000000 Z
+    - 2013-09-11 19:11:00.000000000 Z
+  - - 181
+    - 181
+    - zh-CN
+    - ''
+    - 2013-09-11 19:11:00.000000000 Z
+    - 2013-09-11 19:11:00.000000000 Z
+  - - 182
+    - 182
+    - zh-CN
+    - ''
+    - 2013-09-11 19:11:24.000000000 Z
+    - 2013-09-11 19:11:24.000000000 Z
+  - - 183
+    - 183
+    - zh-CN
+    - ''
+    - 2013-09-11 19:11:24.000000000 Z
+    - 2013-09-11 19:11:24.000000000 Z
