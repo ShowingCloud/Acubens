@@ -31,6 +31,8 @@ zh-CN:
             view_live_html: 在线查看这个问答<br/><em>（在新建窗口中）</em>
             edit: 编辑这个问答
             delete: 永远删除这个问答
+            class: 分类
+            faq: 问答
       faqs:
         show:
           other: 其它问答
@@ -49,3 +51,5 @@ zh-CN:
       'refinery/faqs/faq':
         question: 问题
         answer: 回答
+        is_class: 这是一个分类
+        class: 分类

@@ -5,6 +5,7 @@ class CreateFaqsFaqs < ActiveRecord::Migration
     create_table :refinery_faqs do |t|
       t.string :question
       t.text :answer
+      t.boolean :is_class, :default => false
       t.integer :position
 
       t.timestamps

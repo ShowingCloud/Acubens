@@ -50,8 +50,9 @@ gem 'refinerycms-i18n', '~> 2.1.0'
 #  gem 'refinerycms-search', '~> 2.0.0'
 gem 'refinerycms-page-images', '~> 2.1.0'
 gem 'refinerycms-news', :github => 'ShowingCloud/refinerycms-news', :branch => 'master'
-gem 'refinerycms-faqs', :github => 'cnrk/refinerycms-faqs'
+gem 'refinerycms-faqs', :github => 'ShowingCloud/refinerycms-faqs'
 
 gem 'yaml_db'
 gem 'savon'
-gem "galetahub-simple_captcha", :require => "simple_captcha"
+gem 'galetahub-simple_captcha', :require => "simple_captcha"
+gem 'acts_as_indexed'
