@@ -9,33 +9,11 @@ zh-CN:
     user: "验证图片和代码不一样"
   refinery:
     plugins:
-      faqs:
-        title: 常见问答
       refinery_page_images:
         tab_name: 页面图片
         title: 页面图片
         tab_name: 图片
         description: 页面图片将一个或多个图片与Refinery中的任意页面关联，更方便地在前台页面显示中创建简单的弹出灯箱样式的图片画廊
-    faqs:
-      admin:
-        faqs:
-          actions:
-            create_new: 新增问答
-            reorder: 重新排列问答
-            reorder_done: 重新排列问答结束
-          records:
-            title: 常见问答
-            sorry_no_results: 对不起！没有找到结果。
-            no_items_yet: 还没有常见问答。点击"新增问答"来添加您的第一个问答。
-          faq:
-            view_live_html: 在线查看这个问答<br/><em>（在新建窗口中）</em>
-            edit: 编辑这个问答
-            delete: 永远删除这个问答
-            class: 分类
-            faq: 问答
-      faqs:
-        show:
-          other: 其它问答
     js:
       admin:
         page_images:
@@ -46,10 +24,3 @@ zh-CN:
         tabs:
           images_bar:
             add: 添加图片
-  activerecord:
-    attributes:
-      'refinery/faqs/faq':
-        question: 问题
-        answer: 回答
-        is_class: 这是一个分类
-        class: 分类
