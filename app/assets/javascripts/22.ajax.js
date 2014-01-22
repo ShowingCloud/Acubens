@@ -482,8 +482,8 @@ function getmeminfoie8() {
 		} else {
 			if (resp.description != null)
 				alert (resp.description);
-			else
-				alert ("请求失败，请稍候再试");
+	//		else
+	//			alert ("请求失败，请稍候再试");
 		}
 	}).fail (function() {
 		alert ("请求发送失败，请稍候再试");
@@ -663,8 +663,8 @@ function getmeminfo() {
 		} else {
 			if (resp.description != null)
 				alert (resp.description);
-			else
-				alert ("请求失败，请稍候再试");
+		//	else
+		//		alert ("请求失败，请稍候再试");
 		}
 	}).fail (function() {
 		alert ("请求发送失败，请稍候再试");
@@ -1154,8 +1154,8 @@ function getdefaddr() {
 		} else {
 			if (resp.description != null)
 				alert (resp.description);
-			else
-				alert ("请求失败，请稍候再试");
+	//		else
+	//			alert ("请求失败，请稍候再试");
 		}
 	}).fail (function() {
 		alert ("请求发送失败，请稍候再试");
@@ -1168,7 +1168,7 @@ function login(){
 	$('body').css ("overflow", "hidden");
 	
 	$('#popup_shadow').click (function() {
-			location.href = "/";
+		//	location.href = "/";
 		});
 	//alert("xxx");
 }
@@ -1179,7 +1179,7 @@ function register(){
 	$('body').css ("overflow", "hidden");
 	
 	$('#popup_shadow').click (function() {
-			location.href = "/";
+		//	location.href = "/";
 		});
 }
 

@@ -44,10 +44,7 @@ function spreeproduct(data) {
 							
 							var skupro = meta_description.split('&');
 						//	var shu = ret.products[i].variants[0].sku == null? "" :ret.products[i].variants[0].sku;	
-							
-							
-							
-							
+						
 							if ($('#pro_name').length)
 								$('#pro_name').html (name);
 							if ($('#pro_name_1').length)
@@ -93,8 +90,6 @@ function spreeproduct(data) {
 			
 			for(i=0;i<skulen;i++){
 					
-					alert("1");
-					
 					for(j=0;j<n;j++){
 							
 							
@@ -107,6 +102,9 @@ function spreeproduct(data) {
 										$('.pro-bot01-'+i+' input').val(ret.products[i].id);			
 										$('.pro-bot01-'+i+' .pro-lbot .pro-pic').prop ('src','https://libra.gelnic.com.cn/'+mini_url); 
 										$('.pro-bot01-'+i+' .pro-rbot .pro-txt04 #pro_name02').html(name);
+										$('.pro-bot01-'+i+' .pro-rbot .pro-txt04 #pro_name01').html('简妮gelnic');
+								//		$('.pro-bot01-'+i+' .pro-rbot #prodetail').load ('.pro-bot01-0 .pro-rbot #prodetail');
+										
 								
 							}
 						
@@ -170,9 +168,9 @@ function spreeproduct(data) {
      <div class="resetpw">
            <div class="resetpw_head">
                 <ul>
-                        <li class="resetpw_head_txt1"><a>首页</a></li>
+                        <li class="resetpw_head_txt1"><a href="/">首页</a></li>
                         <li class="resetpw_head_txt2">&nbsp;&nbsp;>&nbsp;&nbsp;</li>
-                        <li class="resetpw_head_txt1"><a>产品资讯</a></li>
+                        <li class="resetpw_head_txt1"><a href="/%E4%BA%A7%E5%93%81%E8%B5%84%E8%AE%AF/%E4%BA%AE%E8%82%A4%E5%95%AB%E5%96%B1">产品资讯</a></li>
                         <li class="resetpw_head_txt2">&nbsp;&nbsp;>&nbsp;&nbsp;</li>
                         <li class="resetpw_head_txt1"><label id="pro_name"></label></li>
                 </ul>
@@ -307,9 +305,9 @@ function spreeproduct(data) {
                                             <label id="pro_name01">简妮gelnic</label>
                                        </div> 
                                        <div class="pro-txt04">
-                                            <label id="pro_name02">清爽亮肤啫喱 </label>
+                                            <label id="pro_name02"></label>
                                        </div> 
-                                       <div>
+                                       <div id="prodetail">
                                             <a class="pro-detail" href="#">更多详情</a>
                                             <img class="pro_pic02" src="/assets/img/triangle-1.jpg" width="12" height="18">
                                        </div>
@@ -321,14 +319,14 @@ function spreeproduct(data) {
                                </div>  
                                <div class="pro-rbot">
                                        <div class="pro-txt03">
-                                            <label id="pro_name03">简妮gelnic</label>
+                                            <label id="pro_name01">简妮gelnic</label>
                                        </div> 
                                        <div class="pro-txt04">
-                                            <label id="pro_name02">清爽亮肤啫喱 </label>
+                                            <label id="pro_name02"></label>
                                        </div> 
-                                       <div>
-                                            <a class="pro-detail" href="#">更多详情</a>
-                                            <img class="pro_pic02" src="/assets/img/triangle-1.jpg" width="12" height="18">
+                                       <div id="prodetail">
+                                           <a class="pro-detail" href="#">更多详情</a>
+                                            <img class="pro_pic02" src="/assets/img/triangle-1.jpg" width="12" height="18"> 
                                        </div>
                                </div>
                          </div>
@@ -338,14 +336,14 @@ function spreeproduct(data) {
                                </div>  
                                <div class="pro-rbot">
                                        <div class="pro-txt03">
-                                            <label id="pro_name05">简妮gelnic</label>
+                                            <label id="pro_name01">简妮gelnic</label>
                                        </div> 
                                        <div class="pro-txt04">
-                                            <label id="pro_name02">清爽亮肤啫喱 </label>
+                                            <label id="pro_name02"></label>
                                        </div> 
-                                       <div>
+                                       <div id="prodetail">
                                             <a class="pro-detail" href="#">更多详情</a>
-                                            <img class="pro_pic02" src="/assets/img/triangle-1.jpg" width="12" height="18">
+                                            <img class="pro_pic02" src="/assets/img/triangle-1.jpg" width="12" height="18"> 
                                        </div>
                                </div>
                          </div> 
