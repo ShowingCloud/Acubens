@@ -1,0 +1,19 @@
+
+---
+refinery_faqs:
+  columns:
+  - id
+  - question
+  - answer
+  - is_class
+  - position
+  - created_at
+  - updated_at
+  records: 
+  - - 1
+    - 问题一
+    - <p>回答一</p>
+    - false
+    - 0
+    - 2014-01-23 08:45:28.000000000 Z
+    - 2014-01-23 08:45:28.000000000 Z

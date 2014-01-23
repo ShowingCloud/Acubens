@@ -344,7 +344,7 @@ refinery_pages:
     - 2013-07-31 18:49:23.000000000 Z
     - 2013-08-21 16:59:20.000000000 Z
   - - 24
-    - 
+    - 73
     - 
     - 联系我们
     - true
@@ -353,9 +353,9 @@ refinery_pages:
     - true
     - false
     - false
-    - 127
     - 128
-    - 0
+    - 129
+    - 1
     - contactus-last
     - application
     - 2013-07-31 18:49:52.000000000 Z
@@ -659,8 +659,8 @@ refinery_pages:
     - false
     - false
     - false
-    - 129
-    - 130
+    - 131
+    - 132
     - 0
     - home
     - application
@@ -1125,3 +1125,20 @@ refinery_pages:
     - application
     - 2013-09-11 19:11:24.000000000 Z
     - 2013-09-11 19:11:38.000000000 Z
+  - - 73
+    - 
+    - 
+    - 帮助中心
+    - true
+    - /faqs
+    - 
+    - true
+    - false
+    - false
+    - 127
+    - 130
+    - 0
+    - show
+    - application
+    - 2014-01-23 08:42:15.000000000 Z
+    - 2014-01-23 08:44:15.000000000 Z
