@@ -23,6 +23,11 @@ zh-CN:
         form:
           preview: 预览
           preview_changes: 在页面上线前预览您的修改
+        form_advanced_options:
+          layout_template: 布局模板
+          layout_template_help: 您可以为此页面选择一个不同的布局模板
+          view_template: 视图模板
+          view_template_help: 您可以为此页面选择一个不同的视图模板
         tabs:
           images_bar:
             add: 添加图片
