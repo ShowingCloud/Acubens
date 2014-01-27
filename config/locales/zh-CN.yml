@@ -2,11 +2,10 @@
 # See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
 
 zh-CN:
-  hello: "cn: Hello world"
   simple_captcha:
-  message:
-    default: "验证码和图片不匹配"
-    user: "验证图片和代码不一样"
+    message:
+      default: "验证码和图片不匹配"
+      user: "验证图片和代码不一样"
   refinery:
     plugins:
       refinery_page_images:
@@ -21,6 +20,9 @@ zh-CN:
           done: 完成
     admin:
       pages:
+        form:
+          preview: 预览
+          preview_changes: 在页面上线前预览您的修改
         tabs:
           images_bar:
             add: 添加图片
