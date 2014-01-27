@@ -19,6 +19,9 @@ zh-CN:
           add_caption: 添加字幕
           done: 完成
     admin:
+      users:
+        form:
+          disable_all: 取消所有
       pages:
         form:
           preview: 预览
