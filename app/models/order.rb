@@ -3,7 +3,7 @@
 class Order
 	extend Savon::Model
 
-	client wsdl: "http://210.13.83.247/ECLGelnicWSTest/OfficialService.asmx?WSDL",
+	client wsdl: "http://121.196.130.3/ECLGelnicWS/OfficialService.asmx?WSDL",
 		namespace: "http://tempuri.org/",
 		convert_request_keys_to: :camelcase,
 		soap_version: 2,
