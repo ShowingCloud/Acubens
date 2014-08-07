@@ -56,3 +56,5 @@ gem 'yaml_db'
 gem 'savon'
 gem 'galetahub-simple_captcha', :require => "simple_captcha"
 gem 'acts_as_indexed'
+
+gem 'thin'
