@@ -6,7 +6,7 @@ gem 'rails', '~> 3.2.14'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 group :development, :test do
-  gem 'mysql2'
+  gem 'mysql2', '~> 0.3.0'
 end
 
 
@@ -57,4 +57,6 @@ gem 'savon'
 gem 'galetahub-simple_captcha', :require => "simple_captcha"
 gem 'acts_as_indexed'
 
-gem 'thin'
+gem 'puma'
+
+gem 'newrelic_rpm'
