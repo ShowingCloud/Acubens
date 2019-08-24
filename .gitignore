@@ -121,9 +121,6 @@ db/datadump/skin_surveys.yml
 .ruby-gemset
 .ruby-version
 
-# bundle cache
-Gemfile.lock
-
 # Don't upload third-party images
 vendor/assets/images
 
