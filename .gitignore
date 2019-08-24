@@ -7,6 +7,7 @@
 # Ignore all logfiles and tempfiles.
 /log/*.log
 /log/production.log.*
+/log/std*
 /tmp
 
 # Rails
@@ -125,3 +126,5 @@ Gemfile.lock
 
 # Don't upload third-party images
 vendor/assets/images
+
+config/newrelic.yml
