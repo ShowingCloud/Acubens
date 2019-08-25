@@ -50,7 +50,9 @@ Acubens::Application.configure do
 
   # Disable delivery errors, bad email addresses will be ignored
   if config.respond_to?(:action_mailer)
-    # config.action_mailer.raise_delivery_errors = false
+  if config.respond_to?(:action_mailer)
+      # config.action_mailer.raise_delivery_errors = false
+  end
   end
 
   # Enable threaded mode
