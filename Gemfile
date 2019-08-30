@@ -56,6 +56,8 @@ gem 'yaml_db'
 gem 'savon'
 gem 'galetahub-simple_captcha', :require => "simple_captcha"
 gem 'acts_as_indexed'
+gem 'redis-rails'
+gem 'redis-rack-cache'
 
 gem 'puma'
 

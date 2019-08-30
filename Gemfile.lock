@@ -190,6 +190,26 @@ GEM
       ffi (~> 1.0)
     rdoc (3.12.2)
       json (~> 1.4)
+    redis (4.1.2)
+    redis-actionpack (3.2.4)
+      actionpack (~> 3.2.0)
+      redis-rack (~> 1.4.4)
+      redis-store (~> 1.1.4)
+    redis-activesupport (3.2.5)
+      activesupport (~> 3.2.0)
+      redis-store (~> 1.1.0)
+    redis-rack (1.4.4)
+      rack (~> 1.4.0)
+      redis-store (~> 1.1.4)
+    redis-rack-cache (1.2.4)
+      rack-cache (~> 1.2)
+      redis-store (~> 1.1.0)
+    redis-rails (3.2.4)
+      redis-actionpack (~> 3.2.4)
+      redis-activesupport (~> 3.2.4)
+      redis-store (~> 1.1.4)
+    redis-store (1.1.7)
+      redis (>= 2.2)
     ref (2.0.0)
     refinerycms-i18n (2.1.0)
       rails-i18n (~> 0.7.3)
@@ -260,6 +280,8 @@ DEPENDENCIES
   newrelic_rpm
   puma
   rails (~> 3.2.14)
+  redis-rack-cache
+  redis-rails
   refinerycms (~> 2.1.0)!
   refinerycms-faqs!
   refinerycms-i18n (~> 2.1.0)
