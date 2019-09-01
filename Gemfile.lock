@@ -272,14 +272,14 @@ PLATFORMS
 
 DEPENDENCIES
   acts_as_indexed
-  coffee-rails (~> 3.2.1)
+  coffee-rails
   execjs
   galetahub-simple_captcha
   jquery-rails
   mysql2 (~> 0.3.0)
   newrelic_rpm
   puma
-  rails (~> 3.2.14)
+  rails
   redis-rack-cache
   redis-rails
   refinerycms (~> 2.1.0)!
@@ -287,11 +287,11 @@ DEPENDENCIES
   refinerycms-i18n (~> 2.1.0)
   refinerycms-news!
   refinerycms-page-images (~> 2.1.0)
-  sass-rails (~> 3.2.3)
+  sass-rails
   savon
   therubyracer
-  uglifier (>= 1.0.3)
+  uglifier
   yaml_db
 
 BUNDLED WITH
-   1.16.1
+   1.17.3
