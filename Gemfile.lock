@@ -1,5 +1,5 @@
 GIT
-  remote: git://github.com/ShowingCloud/refinerycms-faqs.git
+  remote: https://github.com/ShowingCloud/refinerycms-faqs.git
   revision: 54940699530ce77b47c8f1c922290ab365ceadc0
   specs:
     refinerycms-faqs (2.0.0)
@@ -7,7 +7,7 @@ GIT
       refinerycms-core (>= 2.0.0)
 
 GIT
-  remote: git://github.com/ShowingCloud/refinerycms-news.git
+  remote: https://github.com/ShowingCloud/refinerycms-news.git
   revision: dfa333bd67440e2291b999ab21350e019fc7b198
   branch: master
   specs:
@@ -17,7 +17,7 @@ GIT
       refinerycms-settings (~> 2.1.0)
 
 GIT
-  remote: git://github.com/refinery/refinerycms.git
+  remote: https://github.com/refinery/refinerycms.git
   revision: 7b8dc2d7d8e48c09e29aba44658bb55cc3737e35
   branch: 2-1-stable
   specs:
@@ -98,8 +98,8 @@ GEM
     arel (3.0.3)
     awesome_nested_set (2.1.6)
       activerecord (>= 3.0.0)
-    babosa (1.0.2)
-    bcrypt (3.1.13)
+    babosa (2.0.0)
+    bcrypt (3.1.17)
     bcrypt-ruby (3.1.5)
       bcrypt (>= 3.1.3)
     builder (3.0.4)
@@ -159,7 +159,7 @@ GEM
     nori (2.6.0)
     orm_adapter (0.5.0)
     polyglot (0.3.5)
-    puma (5.6.2)
+    puma (5.6.4)
       nio4r (~> 2.0)
     racc (1.6.0)
     rack (1.4.7)
